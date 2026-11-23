@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף כ&quot;ד עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף כ&quot;ד עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>ברכות</span><span>פרק שלישי</span><span>מי שמתו</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-24a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-25a.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 46</div>
+  <h1>מסכת ברכות, דף כ&quot;ד עמוד ב&#x27;</h1>
+  <p class="sub">פרק שלישי, &quot;מי שמתו&quot;. התנהגות בשעת התפילה, הגבהת הקול, עיטוש ורקיקה, וקריאת שמע במבואות מטונפים.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 4 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. מה עשה רבי בתפילה, ומה אומרת הברייתא</a><a href="#u2">2. קול בתפילה, והמעשה ברבי אבא</a><a href="#u3">3. כיסוי הגוף לקריאת שמע</a><a href="#u4">4. קריאת שמע במבואות מטונפים</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4,G5,G6">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>מה עשה רבי בתפילה, ומה אומרת הברייתא</h2>
+  <p class="lead">רבי חנינא ראה את רבי מגהק, מפהק, מתעטש ויורק בשעת התפילה. ברייתא מונה את כל אלה כהתנהגות פסולה. הגמרא מיישבת כל דבר בנפרד.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>וממשמש בבגדו אבל לא היה מתעטף</td><td>ומשמש בבגדו, אבל לא היה מתעטף.</td></tr>
+      <tr><td>וכשהוא מפהק היה מניח ידו על סנטרו</td><td>וכשהוא מפהק, היה מניח את ידו על סנטרו.</td></tr>
+      <tr><td>המשמיע קולו בתפלתו הרי זה מקטני אמנה</td><td>המשמיע את קולו בתפילתו, הרי הוא מקטני האמונה.</td></tr>
+      <tr><td>המגביה קולו בתפלתו הרי זה מנביאי השקר</td><td>המגביה את קולו בתפילתו, הרי הוא מנביאי השקר.</td></tr>
+      <tr><td>מגהק ומפהק הרי זה מגסי הרוח</td><td>המגהק והמפהק, הרי הוא מגסי הרוח.</td></tr>
+      <tr><td>המתעטש בתפלתו סימן רע לו</td><td>המתעטש בתפילתו, סימן רע לו.</td></tr>
+      <tr><td>הרק בתפלתו כאילו רק בפני המלך</td><td>הרוקק בתפילתו, כאילו רק לפני המלך.</td></tr>
+      <tr><td>כאן לאונסו כאן לרצונו</td><td>כאן שלא ברצונו, כאן ברצונו.</td></tr>
+      <tr><td>כאן מלמעלה כאן מלמטה</td><td>כאן מלמעלה, כאן מלמטה.</td></tr>
+      <tr><td>הא מילתא אבלעא לי בי רב המנונא</td><td>הדבר הזה נקלט אצלי בבית רב המנונא,</td></tr>
+      <tr><td>ותקילא לי כי כולי תלמודאי</td><td>והוא שקול בעיניי ככל תלמודי:</td></tr>
+      <tr><td>המתעטש בתפלתו סימן יפה לו</td><td>המתעטש בתפילתו, סימן יפה לו.</td></tr>
+      <tr><td>היה עומד בתפלה ונזדמן לו רוק מבליעו בטליתו</td><td>היה עומד בתפילה ובא לו רוק, בולע אותו בטליתו.</td></tr>
+      <tr><td>אנא אנינא דעתאי</td><td>אני, נפשי קצה בכך.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>מה ראה רבי חנינא:</b> רבי גיהק, פיהק, התעטש וירק. וגם משמש בבגדו אבל לא התעטף, וכשפיהק כיסה את פיו ביד.</p>
+  <p><b>הברייתא:</b> המגהק והמפהק מגסי הרוח, המתעטש סימן רע לו, והרוקק כאילו רק לפני המלך. היא גם קובעת שהמשמיע קולו בתפילה מקטני האמונה, והמגביה את קולו מנביאי השקר.</p>
+  <p><b>גיהוק ופיהוק:</b> רבי עשה זאת שלא ברצונו, והברייתא מדברת במי שעושה זאת ברצונו.</p>
+  <p><b>עיטוש:</b> עיטוש בא תמיד שלא ברצון, ולכן צריך חילוק אחר: עיטוש מלמעלה הוא סימן יפה, כמו שאמר רבי זירא בשם בית רב המנונא. עיטוש מלמטה, הפחה, הוא הסימן הרע שבברייתא.</p>
+  <p><b>רקיקה:</b> הברייתא מדברת כשאפשר לבלוע את הרוק בטלית או בסודר, כמו שאמר רב יהודה. ורבינא, שהיה איסטניס, זרק את הרוק לאחוריו.</p>
+  <div data-hl="R1,R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>וממשמש בבגדו – להעביר הכינה העוקצתו:</blockquote><blockquote>אבל לא היה מתעטף – אם נפלה טליתו כשהוא מתפלל לא היה נוטלה ומתעטף שלא להפסיק:</blockquote><blockquote>על סנטרו – מנטו"ן בלע"ז שלא תראה פתיחת פיו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: משמש בבגד כדי להסיר כינה שעוקצת. אם נפלה טליתו בתפילה, לא הרים אותה, כדי שלא להפסיק. ואת ידו הניח על סנטרו, שלא ייראה הפה הפתוח.</p></div>
+  <div data-hl="R4,R5" class="voice r"><span class="tag">רש"י</span><blockquote>הרי זה מקטני אמנה – כאילו אין הקב"ה שומע תפלת לחש ומגביה הרבה:</blockquote><blockquote>הרי זה מנביאי השקר – דכתיב ויקראו בקול גדול (מלכים א י״ח:כ״ח):</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: המשמיע קולו נוהג כאילו הקדוש ברוך הוא אינו שומע תפילה בלחש. ונביאי השקר הם נביאי הבעל, שעליהם נאמר "ויקראו בקול גדול".</p></div>
+  <div data-hl="R7,R8" class="voice r"><span class="tag">רש"י</span><blockquote>אלא עטוש אעטוש קשיא – דאין עטוש אלא לאונסו:</blockquote><blockquote>למטה – מפיח בקול:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: עיטוש בא רק שלא ברצון. ו"מלמטה" פירושו שמפיח בקול.</p></div>
+  <div data-hl="R12,R13" class="voice r"><span class="tag">רש"י</span><blockquote>אפשר כדרבי יהודה – להבליע באפרקסותו סודר שבראשו ושני ראשין תלויין בפניו:</blockquote><blockquote>פתקיה – זרקו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "אפרקסותו" הוא הסודר שעל ראשו, ששני קצותיו תלויים לפניו. "פתקיה" פירושו זרק אותו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה עיטוש הוא סימן יפה</h3>
+    <div data-hl="R9,R10,R11" class="voice r"><span class="tag">רש"י</span><blockquote>ותקילא לי כי כולי תלמודאי – שקולה עלי וחביבה לפי שהיה רגיל להתעטש:</blockquote><blockquote>כשם שעושים לו נחת רוח – שהעטוש נחת רוח לאדם:</blockquote><blockquote>כך עושים לו נחת רוח מלמעלה – מן השמים למלאת שאלתו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הדבר היה חביב על רבי זירא, כי היה רגיל להתעטש. העיטוש נותן לאדם הרגשה נוחה, וכמו שהוא מקבל נחת רוח בגופו, כך מן השמים ימלאו את בקשתו.</p></div>
+    <p>בכל אחד משלושת הדברים הגמרא מוצאת חילוק אחר: ברצון ושלא ברצון, למעלה ולמטה, אפשר ואי אפשר. כך היא מראה שרבי לא עבר על הברייתא, ובכל פעם מגדירה את הברייתא בצורה מדויקת יותר.</p>
+    <h3>התוספות: מה פירוש "ממשמש בבגדו"</h3>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>וממשמש בבגדו – פרש"י להעביר הכינה העוקצתו אבל לא מתעטף אם נפלה טליתו ותרי מילי נינהו. ור"ח פי' דחדא מילתא היא פי' ממשמש בבגדו תקן שלא יפול מעל ראשו אבל אם נפל מעל ראשו לא היה מתעטף שהרי היא הפסקה אם מתעטף כיון שנפל לגמרי אבל לתקן קצת שלא יפול לא הוי הפסקה:</blockquote><p><span class="say">מה התוספות אומרים:</span> לפי רש"י אלה שני דברים: משמוש בגלל הכינה, ואי התעטפות כשהטלית נפלה. רבנו חננאל מפרש שזה דבר אחד: היה מתקן את הטלית שלא תיפול, ותיקון קטן אינו הפסק. אבל אם נפלה לגמרי, להתעטף מחדש הוא הפסק.</p></div>
+  </div>
+  <p class="godeep">איזה חילוק שונה מצאה הגמרא לכל אחד מן הדברים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה רבי הניח את ידו על סנטרו כשפיהק?</summary><p>כדי שלא ייראה הפה הפתוח.</p></details>
+  <details><summary>איך מיישבים את הגיהוק והפיהוק של רבי?</summary><p>אצלו זה היה שלא ברצונו, והברייתא מדברת במי שעושה זאת ברצונו.</p></details>
+  <details><summary>מה עושה מי שבא לו רוק בתפילה, לפי רב יהודה?</summary><p>בולע אותו בטליתו, ואם הטלית יפה, בסודר שלו.</p></details>
+  <details class="deepq"><summary>למה לא אפשר לחלק בעיטוש בין ברצון לשלא ברצון?</summary><p>כי עיטוש בא תמיד שלא ברצון.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G7,G8,G9,G10">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>קול בתפילה, והמעשה ברבי אבא</h2>
+  <p class="lead">רב הונא מגביל את האיסור להשמיע קול בתפילה. אחר כך מסופר על רבי אבא, שנכנס לשמוע דבר אחד מבית המדרש של רב יהודה, ושמע את הדין של מי שמתעטש בתפילה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לא שנו אלא שיכול לכוין את לבו בלחש</td><td>לא שנו אלא כשהוא יכול לכוון את לבו בלחש,</td></tr>
+      <tr><td>אבל אין יכול לכוין את לבו בלחש מותר</td><td>אבל אם אינו יכול לכוון את לבו בלחש, מותר.</td></tr>
+      <tr><td>וה"מ ביחיד</td><td>ודברים אלה ביחיד,</td></tr>
+      <tr><td>אבל בצבור אתי למיטרד צבורא</td><td>אבל בציבור, יבוא להטריד את הציבור.</td></tr>
+      <tr><td>רבי אבא הוה קא משתמיט מיניה דרב יהודה</td><td>רבי אבא היה נשמט מפני רב יהודה,</td></tr>
+      <tr><td>דהוה קא בעי למיסק לארעא דישראל</td><td>כי היה רוצה לעלות לארץ ישראל.</td></tr>
+      <tr><td>כל העולה מבבל לא"י עובר בעשה</td><td>כל העולה מבבל לארץ ישראל עובר על מצוות עשה.</td></tr>
+      <tr><td>איזיל ואשמע מיניה מילתא מבית וועדא</td><td>אלך ואשמע ממנו דבר מבית הוועד,</td></tr>
+      <tr><td>והדר אפיק</td><td>ואחר כך אצא.</td></tr>
+      <tr><td>ממתין עד שיכלה הרוח וחוזר ומתפלל</td><td>ממתין עד שיכלה הריח, וחוזר ומתפלל.</td></tr>
+      <tr><td>מרחיק לאחריו ד' אמות ומתעטש</td><td>מתרחק לאחוריו ארבע אמות ומתעטש,</td></tr>
+      <tr><td>גלוי וידוע לפניך חרפתנו וכלימתנו</td><td>גלוי וידוע לפניך חרפתנו וכלימתנו,</td></tr>
+      <tr><td>ומתחיל ממקום שפסק</td><td>ומתחיל ממקום שפסק.</td></tr>
+      <tr><td>אילו לא באתי אלא לשמוע דבר זה דיי</td><td>אילו לא באתי אלא לשמוע את הדבר הזה, דיי.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רב הונא:</b> האיסור להשמיע קול בתפילה חל רק על מי שיכול לכוון את לבו בלחש. מי שאינו יכול, מותר לו. וזה רק ביחיד, כי בציבור הוא יטריד את המתפללים האחרים.</p>
+  <p><b>רבי אבא ורב יהודה:</b> רבי אבא רצה לעלות לארץ ישראל, ורב יהודה סבר שהעולה מבבל עובר על מצוות עשה, מן הפסוק "בבלה יובאו ושמה יהיו". לכן רבי אבא נמנע מלפגוש אותו, אבל רצה לשמוע ממנו דבר אחד לפני שיעלה.</p>
+  <p><b>מה שמע:</b> תנא שנה לפני רב יהודה: מי שהתעטש מלמטה בתפילה ממתין עד שהריח יתפזר, וחוזר להתפלל. ולפי נוסח אחר: מתרחק ארבע אמות, מתעטש, ממתין, ומבקש: "ריבונו של עולם, יצרת אותנו נקבים נקבים", ואחר כך ממשיך ממקום שפסק.</p>
+  <p><b>דיי:</b> רבי אבא אמר שאילו בא רק בשביל הדבר הזה, היה די לו.</p>
+  <div data-hl="R14,R15,R16" class="voice r"><span class="tag">רש"י</span><blockquote>מישתמיט מיניה – לא היה נראה אליו לפי שהיה רבי אבא חפץ לעלות לא"י ורב יהודה אוסר לו לפיכך לא היה נכנס לבית המדרש:</blockquote><blockquote>ואשמע מיניה מילתא – מבחוץ:</blockquote><blockquote>מבית וועדא – מבית המדרש:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: רב יהודה אסר על רבי אבא לעלות לארץ ישראל, ולכן רבי אבא לא נכנס לבית המדרש. הוא רצה לשמוע מבחוץ, ו"בית וועדא" הוא בית המדרש.</p></div>
+  <div data-hl="R17,R18,R19" class="voice r"><span class="tag">רש"י</span><blockquote>ונתעטש – מלמטה:</blockquote><blockquote>עד שיכלה הרוח – מגופו שנודף מאותו רוח:</blockquote><blockquote>וחוזר לתפלה – למקום שפסק:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מדובר בעיטוש מלמטה. ממתין עד שהריח שיצא מגופו יתפזר, וחוזר למקום שבו הפסיק.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מתי אומרים את הבקשה</h3>
+    <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>ואומר – בתוך התפלה דהא מופסקת ועומדת כבר על ידי הרוח לפיכך יכול להפסיק נמי ולומר דבר זה באמצע:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: את הבקשה אומרים בתוך התפילה. מכיוון שהתפילה כבר הופסקה בגלל הריח, אפשר להפסיק גם כדי לומר אותה.</p></div>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>ואומר רבון העולמים – מיד באמצע תפלתו ואח"כ מתחיל ממקום שפסק:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: אומר "ריבונו של עולם" מיד, באמצע התפילה, ואחר כך מתחיל ממקום שפסק.</p></div>
+    <p>הבקשה עצמה מכירה בחולשת הגוף: האדם נברא עם נקבים וחללים, והוא עומד לפני הקדוש ברוך הוא גם עם החרפה הזו. כך ההפסקה הופכת לחלק מן התפילה.</p>
+    <h3>שני גבולות לאיסור הקול</h3>
+    <p>רב הונא מגביל את הברייתא פעמיים. פעם לפי היחיד עצמו: אם אינו יכול לכוון בלחש, הכוונה גוברת. ופעם לפי הסביבה: בציבור, גם מי שצריך את הקול לא ישמיע אותו, כדי שלא יטריד את האחרים.</p>
+  </div>
+  <p class="godeep">למה מותר להפסיק באמצע התפילה כדי לומר "ריבונו של עולם"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מתי מותר להשמיע קול בתפילה?</summary><p>כשאינו יכול לכוון את לבו בלחש, וביחיד בלבד.</p></details>
+  <details><summary>למה רבי אבא נמנע מלפגוש את רב יהודה?</summary><p>כי רצה לעלות לארץ ישראל, ורב יהודה אסר זאת.</p></details>
+  <details><summary>מה עושה מי שהתעטש מלמטה בתפילה?</summary><p>ממתין עד שהריח יתפזר, וחוזר ומתפלל ממקום שפסק.</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה אפשר לומר את הבקשה באמצע התפילה?</summary><p>כי התפילה כבר הופסקה בגלל הריח.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G11,G12,G22">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>כיסוי הגוף לקריאת שמע</h2>
+  <p class="lead">שתי הלכות על מי שגופו אינו מכוסה כולו: ישן בטליתו, וטלית שחגורה על מותניו.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>היה ישן בטליתו ואינו יכול להוציא את ראשו</td><td>היה ישן בטליתו ואינו יכול להוציא את ראשו</td></tr>
+      <tr><td>מפני הצנה</td><td>מפני הקור,</td></tr>
+      <tr><td>חוצץ בטליתו על צוארו וקורא ק"ש</td><td>מפריד בטליתו על צווארו וקורא קריאת שמע.</td></tr>
+      <tr><td>וי"א על לבו</td><td>ויש אומרים: על לבו.</td></tr>
+      <tr><td>ותנא קמא הרי לבו רואה את הערוה</td><td>והתנא הראשון? הרי לבו רואה את הערווה!</td></tr>
+      <tr><td>קסבר לבו רואה את הערוה מותר</td><td>הוא סובר: לבו רואה את הערווה, מותר.</td></tr>
+      <tr><td>היתה טליתו חגורה לו על מתניו</td><td>אם הייתה טליתו חגורה על מותניו,</td></tr>
+      <tr><td>מותר לקרות ק"ש</td><td>מותר לקרוא קריאת שמע.</td></tr>
+      <tr><td>היתה טליתו של בגד ושל עור ושל שק</td><td>אם הייתה טליתו של בגד, של עור או של שק,</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ישן בטליתו:</b> מי שישן ערום בטליתו ואינו יכול להוציא את ראשו בגלל הקור, מצמיד את הטלית לצווארו, וכך יש הפרדה בין ראשו לבין גופו. אז קורא קריאת שמע.</p>
+  <p><b>מחלוקת:</b> יש אומרים שצריך להפריד על לבו. התנא הראשון מסתפק בצוואר, ומכאן שהוא סובר שאם לבו רואה את הערווה, מותר.</p>
+  <p><b>טלית חגורה:</b> רב הונא אומר שמי שטליתו חגורה על מותניו מותר לקרוא קריאת שמע, וברייתא מסייעת לו: בין טלית של בגד, של עור או של שק.</p>
+  <div data-hl="R21" class="voice r"><span class="tag">רש"י</span><blockquote>חוצץ בטליתו על צוארו – מה שיש מן הטלית ולמעלה מן כתפיו מדביק בצוארו ובישן ערום קאמר:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מדובר במי שישן ערום, והוא מצמיד לצוואר את החלק של הטלית שמעל לכתפיו.</p></div>
+  <div data-hl="R25" class="voice r"><span class="tag">רש"י</span><blockquote>היתה טליתו חגורה על מתניו – לכסותו ממתניו ולמטה אע"פ שממתניו ולמעלה הוא ערום קורא ק"ש:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הטלית מכסה מן המותניים ולמטה. אף שמן המותניים ולמעלה הוא ערום, קורא קריאת שמע.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>"לבו רואה את הערוה"</h3>
+    <p>השאלה היא אם צריך הפרדה בין הלב לבין הערווה, או די בהפרדה בין הראש, שבו הפה והעיניים, לבין הערווה. התנא הראשון מסתפק בהפרדה בצוואר. היש אומרים דורשים הפרדה גם בגובה הלב.</p>
+    <p>הדין של טלית חגורה דומה: הכיסוי מן המותניים ולמטה מספיק לקריאת שמע. העמוד הבא פותח בהמשך, שלתפילה צריך לכסות גם את הלב.</p>
+  </div>
+  <p class="godeep">מה ההבדל בין התנא הראשון ליש אומרים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה עושה מי שישן בטליתו ואינו יכול להוציא את ראשו?</summary><p>מפריד בטליתו על צווארו וקורא קריאת שמע.</p></details>
+  <details><summary>למה התנא הראשון מסתפק בצוואר?</summary><p>כי הוא סובר ש"לבו רואה את הערווה" מותר.</p></details>
+  <details><summary>האם מותר לקרוא קריאת שמע כשהטלית חגורה רק על המותניים?</summary><p>כן, אף שמן המותניים ולמעלה הוא ערום.</p></details>
+  <details class="deepq"><summary>מה הבדל בין הכיסוי לקריאת שמע לבין הכיסוי לתפילה, לפי מה שנרמז בסוף העמוד?</summary><p>לקריאת שמע די בכיסוי מן המותניים, ולתפילה צריך לכסות את הלב, כפי שיתבאר בעמוד הבא.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G13,G14,G15,G16,G17,G18,G19,G20,G21">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>קריאת שמע במבואות מטונפים</h2>
+  <p class="lead">מי שהולך בסמטאות מלוכלכות, האם יכול לקרוא קריאת שמע כשידו על פיו? רבי יוחנן מתיר, ורב חסדא דוחה בתוקף. הגמרא בודקת אם רב הונא ורבי יוחנן סותרים את עצמם, ומביאה פסוקים על מי שלא הפסיק ועל מי שהפסיק.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>היה מהלך במבואות המטונפות</td><td>היה הולך בסמטאות מטונפות,</td></tr>
+      <tr><td>מניח ידו על פיו וקורא ק"ש</td><td>מניח את ידו על פיו וקורא קריאת שמע.</td></tr>
+      <tr><td>אם אמרה לי ר' יוחנן בפומיה</td><td>אם רבי יוחנן אמר לי את זה בפיו,</td></tr>
+      <tr><td>לא צייתנא ליה</td><td>לא הייתי שומע לו.</td></tr>
+      <tr><td>ת"ח אסור לו לעמוד במקום הטנופת</td><td>תלמיד חכם אסור לו לעמוד במקום הטינופת,</td></tr>
+      <tr><td>לפי שאי אפשר לו לעמוד בלי הרהור תורה</td><td>כי אי אפשר לו לעמוד בלי הרהור תורה.</td></tr>
+      <tr><td>כאן בעומד כאן במהלך</td><td>כאן בעומד, כאן בהולך.</td></tr>
+      <tr><td>חוץ מבית המרחץ ומבית הכסא</td><td>חוץ מבית המרחץ ומבית הכסא.</td></tr>
+      <tr><td>כי מטא במבואות המטונפות אשתיק</td><td>כשהגיע לסמטאות המטונפות, שתק.</td></tr>
+      <tr><td>להיכן אהדר</td><td>לאן אחזור?</td></tr>
+      <tr><td>לדידי לא סבירא לי</td><td>אני, איני סובר כך;</td></tr>
+      <tr><td>ולא עוד אלא שאם היה קורא ובא פוסק</td><td>ולא עוד, אלא שאם היה קורא והגיע, מפסיק.</td></tr>
+      <tr><td>לא פסק מאי</td><td>לא הפסיק, מה (דינו)?</td></tr>
+      <tr><td>ואם פסק מה שכרו</td><td>ואם הפסיק, מה שכרו?</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המחלוקת:</b> רב הונא בשם רבי יוחנן, ולפי נוסח אחר רבה בר בר חנה בשם רבי יהושע בן לוי: ההולך במבואות מטונפים מניח את ידו על פיו וקורא. רב חסדא נשבע שאילו שמע זאת מפי החכם עצמו, לא היה מקבל.</p>
+  <p><b>רב הונא:</b> הוא עצמו אמר שתלמיד חכם אסור לעמוד במקום מטונף, כי אינו יכול לעמוד שם בלי לחשוב בדברי תורה. התשובה: האיסור הוא בעומד, וההיתר הוא בהולך.</p>
+  <p><b>רבי יוחנן:</b> הוא אסר להרהר בדברי תורה בבית המרחץ ובבית הכסא בלבד. אבל כשרבי אבהו שתק במבואות המטונפים, רבי יוחנן אמר לו שאם שהה כדי לגמור את כולה, יחזור לראש. התשובה: רבי יוחנן ענה לפי שיטת רבי אבהו, ולא לפי שיטתו שלו.</p>
+  <p><b>הברייתות והפסוקים:</b> יש ברייתא כרב הונא ויש ברייתא כרב חסדא. ומי שלא הפסיק, עליו נאמר "חוקים לא טובים", "מושכי העון בחבלי השוא" ו"כי דבר ה' בזה". ומי שהפסיק, עליו נאמר "ובדבר הזה תאריכו ימים".</p>
+  <div data-hl="R22" class="voice r"><span class="tag">רש"י</span><blockquote>לדידי לא סבירא לי – לא הייתי מזקיקו להפסיק:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "לדידי לא סבירא לי" פירושו שרבי יוחנן לא היה מחייב אותו להפסיק.</p></div>
+  <div data-hl="R24" class="voice r"><span class="tag">רש"י</span><blockquote>ובדבר הזה – בשביל דבור זה שנזהרתם עליו תאריכון ימים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: בשביל הדיבור הזה שנזהרתם בו, תאריכו ימים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>התוספות: למה רבי יוחנן אינו מחייב לחזור</h3>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>אמר ליה לדידי לא סבירא לי – פירוש משום תרתי מילי חדא דסבירנא דאינו חוזר לראש דאמר רבי יוחנן (ר"ה דף ל"ד:) שמע תשע תקיעות בתשע שעות יצא ועוד דסבירא לי מניח ידו על פיו ואם כן הוי ליה ראוי אלא לדידך דסבירא לך דחייב להפסיק וכו':</blockquote><p><span class="say">מה התוספות אומרים:</span> לרבי יוחנן יש שתי סיבות. האחת, הוא סובר שאין חוזרים לראש, כמו שאמר על מי ששמע תשע תקיעות בתשע שעות שיצא. השנייה, לשיטתו מניח את ידו על פיו וקורא, ולכן האיש ראוי. רק לשיטת רבי אבהו, שחייב להפסיק, חוזר לראש.</p></div>
+    <p>כך מתחברת הסוגיה הזו לסוגיה של תחילת דף כ"ג: מי שאינו ראוי לקרוא חוזר לראש, ומי שראוי ממשיך ממקום שפסק. ההבדל בין רבי יוחנן לרבי אבהו הוא האם במבואות המטונפים האיש ראוי.</p>
+    <h3>"בחבלי השוא"</h3>
+    <div data-hl="R23" class="voice r"><span class="tag">רש"י</span><blockquote>בחבלי השוא – בחבלים שאינם חזקים אלא נוחין להנתק הן מושכין העון על עצמם אף זה על ידי דבור בעלמא הוא נענש:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: החבלים חלשים ונקרעים בקלות. כך האדם מושך עליו עוון על ידי דיבור בלבד.</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>בחבלי השוא – כלומר בחנם מושכים עליהם עון כי טוב היה שלא היו מקיימין אותו כלל:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: בחינם הם מושכים עליהם עוון, כי טוב היה להם שלא יקיימו את המצווה כלל.</p></div>
+  </div>
+  <p class="godeep">איך הגמרא מיישבת את דברי רבי יוחנן לרבי אבהו? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אמר רב חסדא על ההיתר לקרוא ביד על הפה?</summary><p>שאילו שמע אותו מפי החכם עצמו, לא היה מקבל.</p></details>
+  <details><summary>איך מיישבים את שתי האמירות של רב הונא?</summary><p>האיסור הוא בעומד, וההיתר הוא בהולך.</p></details>
+  <details><summary>מה שכרו של מי שהפסיק?</summary><p>"ובדבר הזה תאריכו ימים".</p></details>
+  <details class="deepq"><summary>לפי התוספות, אילו שתי סיבות יש לרבי יוחנן שלא לחייב לחזור לראש?</summary><p>הוא סובר שאין חוזרים לראש, והוא סובר שמניח את ידו על פיו וקורא, ולכן האיש ראוי.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>מה עשה רבי בתפילה:</b> גיהק ופיהק שלא ברצונו, התעטש מלמעלה, וירק רק כשאי אפשר אחרת. כך אין סתירה לברייתא.</li>
+      <li><b>עיטוש:</b> עיטוש מלמעלה בתפילה הוא סימן יפה, ומלמטה הוא סימן רע.</li>
+      <li><b>הקול בתפילה:</b> אסור להשמיע קול, אלא למי שאינו יכול לכוון בלחש, וביחיד בלבד.</li>
+      <li><b>רבי אבא:</b> שמע בבית מדרשו של רב יהודה את הבקשה "יצרתנו נקבים נקבים", שאומרים אחרי עיטוש מלמטה בתפילה.</li>
+      <li><b>ישן בטליתו:</b> מפריד בטלית על צווארו וקורא, ויש אומרים על לבו.</li>
+      <li><b>מבואות מטונפים:</b> נחלקו אם מניח ידו על פיו וקורא, או מפסיק. על מי שלא הפסיק נאמרו פסוקים קשים, ועל מי שהפסיק "תאריכו ימים".</li>
+      <li><b>טלית חגורה:</b> מותר לקרוא קריאת שמע כשהגוף מכוסה מן המותניים ולמטה.</li>
+      <li><b>נשאר פתוח:</b> העמוד הבא ממשיך: לתפילה צריך לכסות גם את הלב.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>ממשמש בבגדו</td><td>מתקן את בגדו במגע יד</td></tr>
+      <tr><td>מקטני אמנה</td><td>מאנשים שאמונתם קטנה</td></tr>
+      <tr><td>מגסי הרוח</td><td>מן הגאוותנים</td></tr>
+      <tr><td>לאונסו · לרצונו</td><td>שלא ברצונו · ברצונו</td></tr>
+      <tr><td>אבלעא לי</td><td>נקלט אצלי, למדתי ושמרתי</td></tr>
+      <tr><td>ותקילא לי כי כולי תלמודאי</td><td>ושקולה בעיניי ככל תלמודי</td></tr>
+      <tr><td>פתקיה</td><td>זרק אותו</td></tr>
+      <tr><td>אנינא דעתאי</td><td>אני איסטניס, נפשי קצה בדבר</td></tr>
+      <tr><td>משתמיט</td><td>נשמט, נמנע מלהיפגש</td></tr>
+      <tr><td>בית וועדא</td><td>בית הוועד, בית המדרש</td></tr>
+      <tr><td>מבואות המטונפות</td><td>סמטאות מלוכלכות</td></tr>
+      <tr><td>לא צייתנא ליה</td><td>לא הייתי שומע לו</td></tr>
+      <tr><td>איני</td><td>האמנם? פותח קושיה על מה שנאמר</td></tr>
+      <tr><td>תניא כותיה</td><td>שנויה ברייתא כשיטתו</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-24a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-25a.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-25a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "וממשמש בבגדו אבל לא היה מתעטף וכשהוא מפהק היה מניח ידו על סנטרו", false, ""], ["G2", "מיתיבי המשמיע קולו בתפלתו הרי זה מקטני אמנה המגביה קולו בתפלתו הרי זה מנביאי השקר", false, ""], ["G3", "מגהק ומפהק הרי זה מגסי הרוח המתעטש בתפלתו סימן רע לו ויש אומרים ניכר שהוא מכוער הרק בתפלתו כאילו רק בפני המלך", false, ""], ["G4", "בשלמא מגהק ומפהק לא קשיא כאן לאונסו כאן לרצונו אלא מתעטש אמתעטש קשיא", false, ""], ["G5", "מתעטש אמתעטש נמי לא קשיא כאן מלמעלה כאן מלמטה דאמר רב זירא הא מילתא אבלעא לי בי רב המנונא ותקילא לי כי כולי תלמודאי המתעטש בתפלתו סימן יפה לו כשם שעושים לו נחת רוח מלמטה כך עושין לו נחת רוח מלמעלה", false, ""], ["G6", "אלא רק ארק קשיא רק ארק נמי לא קשיא אפשר כדרב יהודה דאמר רב יהודה היה עומד בתפלה ונזדמן לו רוק מבליעו בטליתו ואם טלית נאה הוא מבליעו באפרקסותו רבינא הוה קאי אחורי דרב אשי נזדמן לו רוק פתקיה לאחוריה א\"ל לא סבר לה מר להא דרב יהודה מבליעו באפרקסותו א\"ל אנא אנינא דעתאי:", false, ""], ["G7", "המשמיע קולו בתפלתו הרי זה מקטני אמנה: אמר רב הונא לא שנו אלא שיכול לכוין את לבו בלחש אבל אין יכול לכוין את לבו בלחש מותר וה\"מ ביחיד אבל בצבור אתי למיטרד צבורא:", true, ""], ["G8", "רבי אבא הוה קא משתמיט מיניה דרב יהודה דהוה קא בעי למיסק לארעא דישראל דאמר רב יהודה כל העולה מבבל לא\"י עובר בעשה שנאמר (ירמיהו כז, כב) בבלה יובאו ושמה יהיו עד יום פקדי אותם נאם ה' אמר איזיל ואשמע מיניה מילתא מבית וועדא והדר אפיק", true, ""], ["G9", "אזל אשכחיה לתנא דקתני קמיה דרב יהודה היה עומד בתפלה ונתעטש ממתין עד שיכלה הרוח וחוזר ומתפלל איכא דאמרי היה עומד בתפלה ובקש להתעטש מרחיק לאחריו ד' אמות ומתעטש וממתין עד שיכלה הרוח וחוזר ומתפלל ואומר רבש\"ע יצרתנו נקבים נקבים חלולים חלולים גלוי וידוע לפניך חרפתנו וכלימתנו בחיינו ובאחריתנו רמה ותולעה ומתחיל ממקום שפסק", false, ""], ["G10", "אמר ליה אילו לא באתי אלא לשמוע דבר זה דיי:", false, ""], ["G11", "ת\"ר היה ישן בטליתו ואינו יכול להוציא את ראשו מפני הצנה חוצץ בטליתו על צוארו וקורא ק\"ש וי\"א על לבו", true, ""], ["G12", "ותנא קמא הרי לבו רואה את הערוה קסבר לבו רואה את הערוה מותר", false, ""], ["G13", "אמר רב הונא א\"ר יוחנן היה מהלך במבואות המטונפות מניח ידו על פיו וקורא ק\"ש א\"ל רב חסדא האלהים אם אמרה לי ר' יוחנן בפומיה לא צייתנא ליה", true, ""], ["G14", "איכא דאמרי אמר רבה בר בר חנה אמר ריב\"ל היה מהלך במבואות המטונפות מניח ידו על פיו וקורא ק\"ש א\"ל ר' חסדא האלהים אם אמרה לי ריב\"ל בפומיה לא צייתנא ליה", false, ""], ["G15", "ומי אמר ר' הונא הכי והאמר רב הונא ת\"ח אסור לו לעמוד במקום הטנופת לפי שאי אפשר לו לעמוד בלי הרהור תורה לא קשיא כאן בעומד כאן במהלך", false, ""], ["G16", "ומי אמר רבי יוחנן הכי והאמר רבה בר בר חנה א\"ר יוחנן בכל מקום מותר להרהר בדברי תורה חוץ מבית המרחץ ומבית הכסא וכי תימא הכא נמי כאן בעומד כאן במהלך איני והא רבי אבהו הוה קא אזיל בתריה דרבי יוחנן והוה קא קרי ק\"ש כי מטא במבואות המטונפות אשתיק א\"ל לר' יוחנן להיכן אהדר א\"ל אם שהית כדי לגמור את כולה חזור לראש", false, ""], ["G17", "הכי קאמר ליה לדידי לא סבירא לי לדידך דסבירא לך אם שהית כדי לגמור את כולה חזור לראש", false, ""], ["G18", "תניא כותיה דרב הונא תניא כותיה דרב חסדא תניא כותיה דרב הונא המהלך במבואות המטונפות מניח ידו על פיו ויקרא ק\"ש תניא כותיה דרב חסדא היה מהלך במבואות המטונפות לא יקרא ק\"ש ולא עוד אלא שאם היה קורא ובא פוסק", false, ""], ["G19", "לא פסק מאי אמר ר' מיאשה בר בריה דריב\"ל עליו הכתוב אומר (יחזקאל כ, כה) וגם אני נתתי להם חוקים לא טובים ומשפטים לא יחיו [בהם]", false, ""], ["G20", "ר' אסי אמר (ישעיהו ה, יח) הוי מושכי העון בחבלי השוא רב אדא בר אהבה אמר מהכא (במדבר טו, לא) כי דבר ה' בזה", false, ""], ["G21", "ואם פסק מה שכרו אמר ר' אבהו עליו הכתוב אומר (דברים לב, מז) ובדבר הזה תאריכו ימים:", false, ""], ["G22", "אמר רב הונא היתה טליתו חגורה לו על מתניו מותר לקרות ק\"ש תניא נמי הכי היתה טליתו של בגד ושל עור ושל שק חגורה על מתניו מותר לקרות ק\"ש", true, ""]], "R": [["R1", "וממשמש בבגדו", "להעביר הכינה העוקצתו:", false], ["R2", "אבל לא היה מתעטף", "אם נפלה טליתו כשהוא מתפלל לא היה נוטלה ומתעטף שלא להפסיק:", false], ["R3", "על סנטרו", "מנטו\"ן בלע\"ז שלא תראה פתיחת פיו:", false], ["R4", "הרי זה מקטני אמנה", "כאילו אין הקב\"ה שומע תפלת לחש ומגביה הרבה:", false], ["R5", "הרי זה מנביאי השקר", "דכתיב ויקראו בקול גדול (מלכים א י״ח:כ״ח):", false], ["R6", "", "המגהק והמפהק הרי זה מגסי הרוח וי\"א ניכר שהוא מכוער גרסינן:", false], ["R7", "אלא עטוש אעטוש קשיא", "דאין עטוש אלא לאונסו:", false], ["R8", "למטה", "מפיח בקול:", false], ["R9", "ותקילא לי כי כולי תלמודאי", "שקולה עלי וחביבה לפי שהיה רגיל להתעטש:", false], ["R10", "כשם שעושים לו נחת רוח", "שהעטוש נחת רוח לאדם:", false], ["R11", "כך עושים לו נחת רוח מלמעלה", "מן השמים למלאת שאלתו:", false], ["R12", "אפשר כדרבי יהודה", "להבליע באפרקסותו סודר שבראשו ושני ראשין תלויין בפניו:", false], ["R13", "פתקיה", "זרקו:", false], ["R14", "מישתמיט מיניה", "לא היה נראה אליו לפי שהיה רבי אבא חפץ לעלות לא\"י ורב יהודה אוסר לו לפיכך לא היה נכנס לבית המדרש:", false], ["R15", "ואשמע מיניה מילתא", "מבחוץ:", false], ["R16", "מבית וועדא", "מבית המדרש:", false], ["R17", "ונתעטש", "מלמטה:", false], ["R18", "עד שיכלה הרוח", "מגופו שנודף מאותו רוח:", false], ["R19", "וחוזר לתפלה", "למקום שפסק:", false], ["R20", "ואומר", "בתוך התפלה דהא מופסקת ועומדת כבר על ידי הרוח לפיכך יכול להפסיק נמי ולומר דבר זה באמצע:", false], ["R21", "חוצץ בטליתו על צוארו", "מה שיש מן הטלית ולמעלה מן כתפיו מדביק בצוארו ובישן ערום קאמר:", false], ["R22", "לדידי לא סבירא לי", "לא הייתי מזקיקו להפסיק:", false], ["R23", "בחבלי השוא", "בחבלים שאינם חזקים אלא נוחין להנתק הן מושכין העון על עצמם אף זה על ידי דבור בעלמא הוא נענש:", false], ["R24", "ובדבר הזה", "בשביל דבור זה שנזהרתם עליו תאריכון ימים:", false], ["R25", "היתה טליתו חגורה על מתניו", "לכסותו ממתניו ולמטה אע\"פ שממתניו ולמעלה הוא ערום קורא ק\"ש:", false]], "T": [["T1", "וממשמש בבגדו", "פרש\"י להעביר הכינה העוקצתו אבל לא מתעטף אם נפלה טליתו ותרי מילי נינהו. ור\"ח פי' דחדא מילתא היא פי' ממשמש בבגדו תקן שלא יפול מעל ראשו אבל אם נפל מעל ראשו לא היה מתעטף שהרי היא הפסקה אם מתעטף כיון שנפל לגמרי אבל לתקן קצת שלא יפול לא הוי הפסקה:", false], ["T2", "ואומר רבון העולמים", "מיד באמצע תפלתו ואח\"כ מתחיל ממקום שפסק:", false], ["T3", "אמר ליה לדידי לא סבירא לי", "פירוש משום תרתי מילי חדא דסבירנא דאינו חוזר לראש דאמר רבי יוחנן (ר\"ה דף ל\"ד:) שמע תשע תקיעות בתשע שעות יצא ועוד דסבירא לי מניח ידו על פיו ואם כן הוי ליה ראוי אלא לדידך דסבירא לך דחייב להפסיק וכו':", false], ["T4", "בחבלי השוא", "כלומר בחנם מושכים עליהם עון כי טוב היה שלא היו מקיימין אותו כלל:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': מה ראה רבי חנינא אצל רבי", "x": "העמוד הקודם הסתיים בדברי רבי חנינא: אני ראיתי את רבי שגיהק, פיהק, התעטש וירק. כאן נמשכת הרשימה, ואחריה הגמרא מקשה עליה מברייתא שמונה התנהגויות פסולות בתפילה. אחר כך באים דינים של מי שהתעטש בתפילה, של קריאת שמע כשאדם ישן בטליתו, ושל מי שהולך במבואות מטונפים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1", "R2", "R3"], "t": "ממשמש בבגדו, אבל אינו מתעטף", "x": "עוד ראה רבי חנינא שרבי היה ממשמש בבגדו, אבל לא היה מתעטף. וכשפיהק, היה מניח את ידו על סנטרו. רש\"י מפרש: משמש בבגד כדי להסיר כינה שעוקצת אותו. ואם נפלה טליתו בשעת התפילה, לא היה מרים אותה ומתעטף, כדי שלא להפסיק. ואת ידו הניח על סנטרו, כדי שלא ייראה הפה הפתוח.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1"], "t": "התוספות: שני דברים או דבר אחד", "x": "לפי רש\"י אלה שני דברים נפרדים: משמוש בבגד בגלל הכינה, ואי התעטפות כשנפלה הטלית. רבנו חננאל פירש שזה דבר אחד: היה מתקן את הטלית שלא תיפול מעל ראשו. אבל אם כבר נפלה לגמרי, לא היה מתעטף, כי זה הפסק. תיקון קטן כדי שלא תיפול אינו הפסק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R4", "R5"], "t": "קושיה: המשמיע קולו בתפילתו", "x": "\"מיתיבי\", מקשים מברייתא. המשמיע את קולו בתפילתו, הרי הוא מקטני האמונה. רש\"י מפרש: כאילו הקדוש ברוך הוא אינו שומע תפילה בלחש. והמגביה את קולו בתפילתו, הרי הוא מנביאי השקר. רש\"י מביא את הפסוק על נביאי הבעל: \"ויקראו בקול גדול\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R6"], "t": "המגהק, המתעטש והרוקק", "x": "עוד בברייתא: המגהק והמפהק, הרי הוא מגסי הרוח. המתעטש בתפילתו, סימן רע לו. ויש אומרים: ניכר שהוא מכוער. והרוקק בתפילתו, כאילו רק לפני המלך. רש\"י מעיר על הנוסח הנכון של הברייתא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R7"], "t": "גיהוק ופיהוק: באונס וברצון", "x": "בגיהוק ובפיהוק אין קושיה: כאן, אצל רבי, באונס, וכאן, בברייתא, ברצון. אבל בעיטוש נשארת סתירה בין רבי לבין הברייתא. רש\"י מסביר: עיטוש בא תמיד באונס, ולכן החילוק הזה אינו מועיל בו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R8"], "t": "עיטוש: מלמעלה ומלמטה", "x": "גם עיטוש מול עיטוש אינו קושיה. כאן מלמעלה, וכאן מלמטה. רש\"י מפרש: \"מלמטה\" הוא מי שמפיח בקול, ועליו הברייתא אומרת שזה סימן רע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R9", "R10", "R11"], "t": "רבי זירא: סימן יפה", "x": "ראיה שעיטוש מלמעלה הוא סימן טוב: רבי זירא אמר, את הדבר הזה קלטתי בבית מדרשו של רב המנונא, והוא שקול בעיניי ככל תלמודי. מי שעיטוש תוקף אותו באמצע התפילה, זה סימן יפה בשבילו. כמו שעושים לו נחת רוח למטה, כך עושים לו נחת רוח מלמעלה. רש\"י מפרש: הדבר חביב עליו כי היה רגיל להתעטש. העיטוש נותן לאדם הרגשה נוחה, וכך מן השמים ימלאו את בקשתו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R12"], "t": "רקיקה: אפשר או אי אפשר", "x": "אבל רקיקה מול רקיקה קשה. גם זו אינה קושיה: הברייתא מדברת כשאפשר לנהוג כרב יהודה. רב יהודה אמר: מי שעומד בתפילה ובא לו רוק, בולע אותו בטליתו. ואם הטלית יפה, בולע אותו ב\"אפרקסותו\". רש\"י מפרש: הסודר שעל ראשו, ששני קצותיו תלויים לפניו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R13"], "t": "\"אנינא דעתאי\"", "x": "רבינא עמד מאחורי רב אשי בתפילה. בא לו רוק, והוא זרק אותו לאחוריו. אמר לו רב אשי: וכי אין אתה סובר כרב יהודה, שבולע אותו בסודר? השיב לו: \"אנא אנינא דעתאי\", אני איסטניס, ונפשי קצה בכך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "מתי מותר להשמיע את הקול", "x": "הגמרא חוזרת לתחילת הברייתא: \"המשמיע קולו בתפלתו הרי זה מקטני אמנה\". רב הונא אמר: זה רק כשהוא יכול לכוון את לבו בלחש. אבל אם אינו יכול לכוון בלחש, מותר. ודבר זה הוא ביחיד. אבל בציבור, הוא יבוא להטריד את הציבור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R14"], "t": "רבי אבא נמנע מלפגוש את רב יהודה", "x": "רבי אבא היה נשמט מפני רב יהודה, כי רצה לעלות לארץ ישראל. ורב יהודה אמר: כל העולה מבבל לארץ ישראל עובר על מצוות עשה, שנאמר \"בבלה יובאו ושמה יהיו עד יום פקדי אותם נאם ה'\". רש\"י מסביר: מפני שרב יהודה אסר עליו לעלות, רבי אבא לא נכנס לבית המדרש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R15", "R16"], "t": "\"אשמע דבר ואצא\"", "x": "אמר רבי אבא: אלך ואשמע ממנו דבר מבית הוועד, ואחר כך אצא. רש\"י מפרש: ישמע מבחוץ, ו\"בית וועדא\" הוא בית המדרש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R17", "R18", "R19"], "t": "התנא: מי שהתעטש בתפילה", "x": "הלך, ומצא את התנא ששונה לפני רב יהודה: מי שעמד בתפילה והתעטש, ממתין עד שיכלה הריח, וחוזר ומתפלל. רש\"י מפרש: התעטש מלמטה, וממתין עד שהריח יתפזר. וחוזר למקום שבו הפסיק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "נוסח אחר: ומבקש רחמים", "x": "ויש אומרים: מי שעמד בתפילה ורצה להתעטש, מתרחק לאחוריו ארבע אמות, מתעטש, ממתין עד שיכלה הריח, וחוזר ומתפלל. ואומר: ריבונו של עולם, יצרת אותנו נקבים נקבים, חלולים חלולים. גלוי וידוע לפניך חרפתנו וכלימתנו בחיינו, ובאחריתנו רימה ותולעה. ומתחיל ממקום שפסק.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G9", "R20", "T2"], "t": "רש\"י והתוספות: מתי אומרים את התפילה הזו", "x": "רש\"י מסביר: הוא אומר את הדברים בתוך התפילה. מכיוון שהתפילה כבר הופסקה בגלל הריח, הוא יכול להפסיק גם כדי לומר את הדבר הזה באמצע. וכך גם התוספות: אומר \"ריבונו של עולם\" מיד, באמצע התפילה, ואחר כך מתחיל ממקום שפסק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10"], "t": "\"דיי\"", "x": "אמר רבי אבא: אילו לא באתי אלא לשמוע את הדבר הזה, דיי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R21"], "t": "ישן בטליתו ואינו יכול להוציא את ראשו", "x": "ברייתא: מי שישן בטליתו ואינו יכול להוציא את ראשו בגלל הקור, מפריד בטליתו על צווארו וקורא קריאת שמע. ויש אומרים: על לבו. רש\"י מפרש: מדובר במי שישן ערום, והוא מצמיד לצווארו את החלק של הטלית שמעל לכתפיו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12"], "t": "ומה סובר התנא הראשון?", "x": "לפי התנא הראשון, שמפריד רק על צווארו, הרי לבו רואה את הערווה. התשובה: הוא סובר ש\"לבו רואה את הערווה\" מותר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13"], "t": "רבי יוחנן: מניח ידו על פיו", "x": "רב הונא אמר בשם רבי יוחנן: מי שהולך במבואות מטונפים מניח את ידו על פיו וקורא קריאת שמע. אמר לו רב חסדא: האלהים, אם רבי יוחנן היה אומר לי זאת בפיו, לא הייתי שומע לו.", "a": "\"האלהים\" כאן הוא לשון שבועה, כדי לחזק את הדברים."}, {"w": "גמרא", "cols": false, "hl": ["G14"], "t": "נוסח אחר של אותו מעשה", "x": "ויש אומרים: רבה בר בר חנה אמר זאת בשם רבי יהושע בן לוי. ורב חסדא אמר לו: אילו רבי יהושע בן לוי עצמו היה אומר לי את זה, לא הייתי מקבל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15"], "t": "והרי רב הונא אמר אחרת", "x": "הגמרא מקשה: וכי רב הונא אמר כך? והרי רב הונא אמר: תלמיד חכם אסור לו לעמוד במקום הטינופת, כי אינו יכול לעמוד בלי הרהור תורה. התשובה: אין קושיה. כאן מדובר בעומד, וכאן במהלך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16"], "t": "וכי רבי יוחנן אמר כך?", "x": "גם על רבי יוחנן מקשים: רבה בר בר חנה אמר בשמו שבכל מקום מותר להרהר בדברי תורה, חוץ מבית המרחץ ומבית הכסא. ואם תאמר שגם כאן מחלקים בין עומד למהלך, הרי רבי אבהו הלך אחרי רבי יוחנן וקרא קריאת שמע. כשהגיע למבואות המטונפים שתק, ושאל את רבי יוחנן לאן לחזור. אמר לו: אם שהית כדי לגמור את כולה, חזור לראש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17", "R22"], "t": "\"לדידי לא סבירא לי\"", "x": "כך אמר לו רבי יוחנן: אני איני סובר שצריך להפסיק. אבל לשיטתך, שאתה סובר שצריך להפסיק, הדין הוא שאם הפסקת זמן ארוך, תחזור להתחלה. רש\"י מפרש: אני לא הייתי מחייב אותו להפסיק.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G17", "T3"], "t": "התוספות: שתי סיבות", "x": "רבי יוחנן אינו סובר כך משתי סיבות. האחת, הוא סובר שאין חוזרים לראש, שהרי הוא אמר במסכת ראש השנה: מי ששמע תשע תקיעות בתשע שעות, יצא. והשנייה, הוא סובר שמניח את ידו על פיו וקורא, ואם כן האיש ראוי. אבל לשיטת רבי אבהו, שסובר שחייב להפסיק, חוזר לראש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18"], "t": "ברייתות כרב הונא וכרב חסדא", "x": "יש ברייתא כשיטת רב הונא, ויש ברייתא כשיטת רב חסדא. הברייתא שכרב הונא מתירה לקרוא שם כשהיד על הפה. כרב חסדא: ההולך במבואות מטונפים לא יקרא קריאת שמע. ולא עוד, אלא שאם היה קורא והגיע לשם, מפסיק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19"], "t": "\"חוקים לא טובים\"", "x": "ומי שהמשיך לקרוא שם ולא הפסיק? רבי מיאשא, נכדו של רבי יהושע בן לוי, אמר: עליו הכתוב אומר \"וגם אני נתתי להם חוקים לא טובים ומשפטים לא יחיו בהם\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20", "R23", "T4"], "t": "\"בחבלי השוא\"", "x": "רבי אסי אמר: מן הפסוק \"הוי מושכי העון בחבלי השוא\". רש\"י מפרש: בחבלים חלשים, שנקרעים בקלות, הם מושכים את העוון על עצמם. כך גם זה נענש על ידי דיבור בלבד. והתוספות מפרשים: בחינם הם מושכים עליהם עוון, כי טוב היה להם שלא יקיימו את המצווה כלל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20"], "t": "רב אדא בר אהבה: \"כי דבר ה' בזה\"", "x": "רב אדא בר אהבה אמר: מכאן, \"כי דבר ה' בזה\". מי שקורא במקום מטונף מבזה את דבר ה'.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21", "R24"], "t": "ואם הפסיק, מה שכרו", "x": "ואם הפסיק, מה שכרו? אמר רבי אבהו: עליו הכתוב אומר \"ובדבר הזה תאריכו ימים\". רש\"י מפרש: בשביל הדיבור הזה, שנזהרתם בו, תאריכו ימים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22", "R25"], "t": "טלית חגורה על מתניו", "x": "רב הונא אמר: אם טליתו חגורה על מותניו, מותר לקרוא קריאת שמע. וכך שנויה ברייתא: טלית של בגד, של עור או של שק, חגורה על מותניו, מותר לקרוא קריאת שמע. רש\"י מפרש: הטלית מכסה אותו מן המותניים ולמטה, ואף שמן המותניים ולמעלה הוא ערום, קורא קריאת שמע.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "רבי חנינא ראה את רבי עושה בתפילה דברים שהברייתא פוסלת, והגמרא חילקה: גיהוק באונס, עיטוש מלמעלה, ורקיקה רק כשאי אפשר אחרת. המשמיע קולו בתפילה מקטני האמונה, אלא אם אינו יכול לכוון בלחש, וביחיד בלבד. מי שהתעטש מלמטה ממתין ומבקש רחמים. במבואות מטונפים נחלקו אם מניח ידו על פיו וקורא, או מפסיק. עמוד א' הבא פותח בהמשך דברי הברייתא: לקריאת שמע מספיק כיסוי מן המותניים, אבל לתפילה צריך לכסות את הלב.", "a": ""}], "audio": "daf-24b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

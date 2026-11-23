@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף נ&quot;ח עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף נ&quot;ח עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>הרואה</span><span>פרק תשיעי</span><span>ברכות<b>נח.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-57b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-58b.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 113</div>
+  <h1>מסכת ברכות, דף נ&quot;ח עמוד א&#x27;</h1>
+  <p class="sub">פרק תשיעי, &quot;הרואה&quot;. ברכות על המון ישראל, על חכמים ועל מלכים, אורח טוב ואורח רע, רב ששת והמלך, ומעשה רבי שילא ודרשת &quot;לך ה&#x27; הגדולה&quot;.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 6 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. בבל ושכניה, ו"חכם הרזים"</a><a href="#u2">2. בן זומא: הכרת הטרחה של אחרים</a><a href="#u3">3. ברכות על חכמים ועל מלכים</a><a href="#u4">4. רב ששת, הצדוקי והמלך</a><a href="#u5">5. רבי שילא לפני השלטון</a><a href="#u6">6. "לך ה' הגדולה": דרשת רבי שילא ודרשת רבי עקיבא</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>בבל ושכניה, ו"חכם הרזים"</h2>
+  <p class="lead">דבר אחרון על קללתה של בבל, ואחריו הברכה על המון גדול של בני אדם, וטעמה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>נתקללה בבל נתקללו שכניה</td><td>נתקללה בבל, נתקללו שכניה.</td></tr>
+      <tr><td>נתקללה שומרון נתברכו שכניה</td><td>נתקללה שומרון, נתברכו שכניה.</td></tr>
+      <tr><td>ושמתיה למורש קפוד ואגמי מים</td><td>"ושמתיה למורש קפוד ואגמי מים".</td></tr>
+      <tr><td>ושמתי שומרון לעי השדה למטעי כרם</td><td>"ושמתי שומרון לעי השדה, למטעי כרם".</td></tr>
+      <tr><td>הרואה אוכלוסי ישראל אומר ברוך חכם הרזים</td><td>הרואה המון גדול מישראל, אומר: ברוך חכם הרזים.</td></tr>
+      <tr><td>שאין דעתם דומה זה לזה</td><td>שאין דעתם דומה זו לזו,</td></tr>
+      <tr><td>ואין פרצופיהן דומים זה לזה</td><td>ואין פרצופיהם דומים זה לזה.</td></tr>
+      <tr><td>בן זומא ראה אוכלוסא על גב מעלה בהר הבית</td><td>בן זומא ראה המון גדול על מדרגה בהר הבית.</td></tr>
+      <tr><td>וברוך שברא כל אלו לשמשני</td><td>וברוך שברא את כל אלה לשמש אותי.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>בבל ושומרון:</b> רבי ירמיה בן אלעזר מראה ששתי הקללות שונות. בבל נעשית מקום של קיפוד ואגמים, ושכניה נפגעים. שומרון נעשית שדות וכרמים, ושכניה נהנים.</p>
+  <p><b>ההמון:</b> הרואה המון גדול מישראל מברך "ברוך חכם הרזים". והרואה המון של עובדי עבודה זרה אומר את הפסוק "בושה אמכם".</p>
+  <p><b>הטעם:</b> כל אחד מן ההמון חושב אחרת ונראה אחרת. רק הקדוש ברוך הוא יודע את סודות לבם של כולם, ולכן הוא "חכם הרזים".</p>
+  <p><b>בן זומא:</b> כשראה המון בהר הבית, הוסיף ברכה משלו: "וברוך שברא כל אלו לשמשני". הוא ראה בכל ההמון את מי שמכינים לו את צרכיו.</p>
+  <div data-hl="R1,R2" class="voice r"><span class="tag">רש"י</span><blockquote>נתקללה בבל נתקללו שכניה – כלומר אוי לרשע אוי לשכנו:</blockquote><blockquote>קאת וקפוד – חיות ועופות רעים ומזיקין את השכנים אבל עי השדה ומטעי כרם שנתקללו בה ערי ישראל הנאה היא לשכנים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: אוי לרשע ואוי לשכנו. קפוד וחיות רעות מזיקים לשכנים, אבל ערימות בשדה ומטעי כרם, שבהם נתקללו ערי ישראל, מועילים לשכנים.</p></div>
+  <div data-hl="R3,R4" class="voice r"><span class="tag">רש"י</span><blockquote>אוכלוסי – חיל גדול של ששים רבוא:</blockquote><blockquote>חכם הרזים – היודע מה שבלב כל אלו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "אוכלוסא" הוא חיל גדול של שש מאות אלף. ו"חכם הרזים" הוא היודע מה שבלב כל אלה.</p></div>
+  <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>לשמשני – שהם חורשים וזורעים ואני מוצא מוכן:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "לשמשני" פירושו שהם חורשים וזורעים, ואני מוצא את הכול מוכן.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>קללה שיש בה ברכה</h3>
+    <p>גם על שומרון נאמרה קללה, ובכל זאת השכנים מתברכים ממנה. רש"י מסביר שזה תלוי במה שנשאר במקום אחרי החורבן: חיות מזיקות או שדות וכרמים.</p>
+    <p>כך מתקבל ניגוד בין בבל לשומרון גם בעונש עצמו. בבל מזיקה גם בחורבנה, ושומרון מועילה גם בחורבנה.</p>
+  </div>
+  <p class="godeep">למה השכנים של שומרון נהנים מקללתה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה מברכים על המון גדול מישראל?</summary><p>ברוך חכם הרזים.</p></details>
+  <details><summary>למה דווקא "חכם הרזים"?</summary><p>כי אין דעתם דומה זו לזו, ואין פרצופיהם דומים, והוא יודע מה שבלב כולם.</p></details>
+  <details><summary>מה הוסיף בן זומא כשראה המון בהר הבית?</summary><p>וברוך שברא כל אלו לשמשני.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מה ההבדל בין הקללה של בבל לקללה של שומרון?</summary><p>בבל נעשית מקום של חיות רעות שמזיקות לשכנים. שומרון נעשית שדות וכרמים שמועילים להם.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G4,G5,G6,G7">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>בן זומא: הכרת הטרחה של אחרים</h2>
+  <p class="lead">בן זומא מסביר את ברכתו: אדם הראשון עשה הכול בעצמו, ואני מוצא הכול מוכן. ובאותה רוח הוא מבחין בין אורח טוב לאורח רע. בסוף הגמרא עוסקת במספר של "אוכלוסא".</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>כמה יגיעות יגע אדם הראשון</td><td>כמה יגיעות יגע אדם הראשון</td></tr>
+      <tr><td>עד שמצא פת לאכול</td><td>עד שמצא לחם לאכול.</td></tr>
+      <tr><td>ואני משכים ומוצא כל אלו מתוקנין לפני</td><td>ואני משכים ומוצא את כל אלה מתוקנים לפניי.</td></tr>
+      <tr><td>כל אומות שוקדות ובאות לפתח ביתי</td><td>כל האומות שוקדות ובאות לפתח ביתי.</td></tr>
+      <tr><td>אורח טוב מהו אומר</td><td>אורח טוב, מה הוא אומר?</td></tr>
+      <tr><td>כמה טרחות טרח בעל הבית בשבילי</td><td>כמה טרחות טרח בעל הבית בשבילי.</td></tr>
+      <tr><td>אבל אורח רע מהו אומר</td><td>אבל אורח רע, מה הוא אומר?</td></tr>
+      <tr><td>פת אחת אכלתי חתיכה אחת אכלתי</td><td>פת אחת אכלתי, חתיכה אחת אכלתי.</td></tr>
+      <tr><td>לא טרח אלא בשביל אשתו ובניו</td><td>לא טרח אלא בשביל אשתו ובניו.</td></tr>
+      <tr><td>זה ישי אבי דוד</td><td>זה ישי, אבי דוד,</td></tr>
+      <tr><td>שיצא באוכלוסא ונכנס באוכלוסא</td><td>שיצא בהמון ונכנס בהמון.</td></tr>
+      <tr><td>אין אוכלוסא פחותה מששים רבוא</td><td>אין "אוכלוסא" פחות משש מאות אלף.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>אדם הראשון:</b> כדי לאכול לחם הוא עבר את כל השלבים בעצמו, מן החרישה ועד האפייה. וכדי ללבוש בגד, מן הגזיזה ועד האריגה. בן זומא קם בבוקר ומוצא את כל זה מוכן.</p>
+  <p><b>אורח טוב ואורח רע:</b> האורח הטוב רואה כמה בעל הבית טרח, ומרגיש שהכול נעשה בשבילו. האורח הרע מקטין את מה שקיבל, ואומר שבעל הבית טרח בשביל משפחתו.</p>
+  <p><b>הפסוקים:</b> על האורח הטוב נאמר "זכור כי תשגיא פעלו אשר שוררו אנשים", ועל האורח הרע "לכן יראוהו אנשים".</p>
+  <p><b>אוכלוסא:</b> הפסוק "בא באנשים" נדרש על ישי, שיצא, נכנס ודרש בהמון. ובסוף נקבע: אין "אוכלוסא" פחות משש מאות אלף, ועולא אומר שבבבל אין המון כזה.</p>
+  <div class="eg"><b>להמחשה:</b> אדם שקונה לחם במאפייה אינו רואה את החקלאי, את הטוחן ואת האופה. בן זומא מלמד לראות את כולם.</div>
+  <div data-hl="R6" class="voice r"><span class="tag">רש"י</span><blockquote>כל אומות שוקדות ובאות לפתחי – עשיר היה והכל באין אצלו לסחורה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "כל אומות שוקדות ובאות לפתחי": בן זומא היה עשיר, והכול באו אליו לסחור.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שתי דרכים להסתכל על אותה ארוחה</h3>
+    <p>האורח הטוב והאורח הרע אכלו אותה ארוחה. ההבדל הוא רק בפירוש. האחד רואה טרחה גדולה שנעשתה בשבילו, והשני רואה מעט שנעשה בשביל אחרים.</p>
+    <p>זה ממשיך את ברכתו של בן זומא על ההמון. גם שם הוא בוחר לראות את עבודתם של אחרים כדבר שנעשה בשבילו, ומברך עליה.</p>
+  </div>
+  <p class="godeep">מה הקשר בין ברכת בן זומא על ההמון לדבריו על אורח טוב? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה עשה אדם הראשון עד שאכל לחם?</summary><p>חרש, זרע, קצר, עימר, דש, זרה, ברר, טחן, ניפה, לש ואפה.</p></details>
+  <details><summary>מה אומר אורח רע?</summary><p>שאכל מעט, ושבעל הבית טרח בשביל אשתו ובניו.</p></details>
+  <details><summary>מה המספר הקטן ביותר של "אוכלוסא"?</summary><p>שש מאות אלף.</p></details>
+  <details class="deepq"><summary>על מי נדרש הפסוק "והאיש בימי שאול זקן בא באנשים", ולמה?</summary><p>על ישי אבי דוד, שיצא, נכנס ודרש בהמון.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G8,G9">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>ברכות על חכמים ועל מלכים</h2>
+  <p class="lead">ברייתא קובעת ברכות לרואה חכמים ומלכים, של ישראל ושל האומות, ורבי יוחנן מעודד לרוץ לראות מלכים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הרואה חכמי ישראל אומר</td><td>הרואה חכמי ישראל, אומר:</td></tr>
+      <tr><td>ברוך שחלק מחכמתו ליראיו</td><td>ברוך שחלק מחכמתו ליראיו.</td></tr>
+      <tr><td>ברוך שנתן מחכמתו לבריותיו</td><td>ברוך שנתן מחכמתו לבריותיו.</td></tr>
+      <tr><td>ברוך שחלק מכבודו ליראיו</td><td>ברוך שחלק מכבודו ליראיו.</td></tr>
+      <tr><td>ברוך שנתן מכבודו לבריותיו</td><td>ברוך שנתן מכבודו לבריותיו.</td></tr>
+      <tr><td>לעולם ישתדל אדם לרוץ לקראת מלכי ישראל</td><td>לעולם ישתדל אדם לרוץ לקראת מלכי ישראל,</td></tr>
+      <tr><td>אלא אפי' לקראת מלכי עובדי כוכבים</td><td>אלא אפילו לקראת מלכי האומות.</td></tr>
+      <tr><td>שאם יזכה יבחין</td><td>שאם יזכה, יבחין</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ארבע ברכות:</b> על חכמי ישראל, "שחלק מחכמתו ליראיו". על חכמי האומות, "שנתן מחכמתו לבריותיו". ובמלכים אותו דבר, עם "כבודו" במקום "חכמתו".</p>
+  <p><b>ההבדל בלשון:</b> אצל ישראל נאמר "חלק" ו"ליראיו". אצל האומות נאמר "נתן" ו"לבריותיו". הלשון מבחינה בין שני סוגי הנתינה.</p>
+  <p><b>רבי יוחנן:</b> אדם ישתדל לרוץ לראות מלכים, גם של ישראל וגם של האומות. כך, אם יזכה, יוכל להבחין ביניהם.</p>
+  <div data-hl="R7,R8" class="voice r"><span class="tag">רש"י</span><blockquote>שאם יזכה – לעולם הבא ויראה בכבוד מלך המשיח:</blockquote><blockquote>יבחין – כמה יתר כבוד נוטלי שכר מצות יותר ממה שהיה כבוד האומות בעוה"ז:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "שאם יזכה" פירושו שיזכה לעולם הבא ויראה בכבוד מלך המשיח. אז יבחין כמה גדול כבודם של מקבלי שכר המצוות, יותר מכבוד האומות בעולם הזה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה לראות מלך של אומה אחרת</h3>
+    <p>לפי רש"י, הראייה היא בשביל השוואה בעתיד. מי שראה את כבוד המלכים בעולם הזה, יוכל להבין כמה גדול יותר הכבוד שיראה כשיזכה לראות את מלך המשיח.</p>
+    <p>כך הריצה לקראת מלך אינה רק כבוד למלכות. יש בה גם הכנה להבנה של שכר המצוות.</p>
+  </div>
+  <p class="godeep">לפי רש"י, מה ההבחנה שאדם יוכל לעשות אם ראה מלכים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה מברכים על חכמים של אומות העולם?</summary><p>ברוך שנתן מחכמתו לבריותיו.</p></details>
+  <details><summary>מה מברכים על מלכי ישראל?</summary><p>ברוך שחלק מכבודו ליראיו.</p></details>
+  <details><summary>למה ירוץ אדם גם לקראת מלכי האומות?</summary><p>שאם יזכה, יבחין בין מלכי ישראל למלכי האומות.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מתי יבחין ובמה?</summary><p>כשיזכה לעולם הבא ויראה בכבוד מלך המשיח, יבחין כמה גדול כבוד מקבלי שכר המצוות.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G10,G11,G12">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>רב ששת, הצדוקי והמלך</h2>
+  <p class="lead">מעשה ברב ששת העיוור, שהלך לקבל את פני המלך. צדוקי לעג לו, ורב ששת הראה שהוא יודע מתי המלך בא, מתוך פסוק.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>רב ששת סגי נהור הוה</td><td>רב ששת היה עיוור.</td></tr>
+      <tr><td>הוו קאזלי כולי עלמא לקבולי אפי מלכא</td><td>כל העם היו הולכים לקבל את פני המלך,</td></tr>
+      <tr><td>וקם אזל בהדייהו רב ששת</td><td>וקם רב ששת והלך איתם.</td></tr>
+      <tr><td>חצבי לנהרא כגני לייא</td><td>הכדים לנהר, השבורים לאן?</td></tr>
+      <tr><td>תא חזי דידענא טפי מינך</td><td>בוא וראה שאני יודע יותר ממך.</td></tr>
+      <tr><td>חלף גונדא קמייתא כי קא אוושא</td><td>עברה כת ראשונה, ברעש.</td></tr>
+      <tr><td>חליף תליתאי כי קא שתקא</td><td>עברה השלישית, בשקט.</td></tr>
+      <tr><td>ודאי השתא אתי מלכא</td><td>ודאי עכשיו בא המלך.</td></tr>
+      <tr><td>דמלכותא דארעא כעין מלכותא דרקיעא</td><td>שמלכות הארץ היא כעין מלכות השמים.</td></tr>
+      <tr><td>ואחר האש קול דממה דקה</td><td>"ואחר האש, קול דממה דקה".</td></tr>
+      <tr><td>למאן דלא חזית ליה קא מברכת</td><td>מי שאינך רואה אותו, אתה מברך?</td></tr>
+      <tr><td>נתן עיניו בו ונעשה גל של עצמות</td><td>נתן בו את עיניו, והוא נעשה גל של עצמות.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הלעג:</b> הצדוקי אומר לרב ששת משל: כדים שלמים הולכים לנהר, ושבורים לאן? כלומר, עיוור שלא יראה את המלך, למה הוא הולך?</p>
+  <p><b>הסימן:</b> שתי קבוצות עברו ברעש, והצדוקי חשב בכל פעם שהמלך בא. רב ששת אמר שלא. כשעברה קבוצה בשקט, אמר רב ששת: עכשיו המלך בא.</p>
+  <p><b>המקור:</b> רב ששת למד זאת מן הפסוק על אליהו בהר. רוח, רעש ואש עברו, וה' לא היה בהם, ואחריהם "קול דממה דקה". מלכות הארץ היא כעין מלכות השמים, ולכן המלך בא בשקט אחרי הרעש.</p>
+  <p><b>הברכה והסוף:</b> רב ששת בירך על המלך, אף שלא ראה אותו, והצדוקי לעג שוב. על סופו של הצדוקי יש שתי גרסאות: חבריו ניקרו את עיניו, או שרב ששת נתן בו את עיניו והוא נעשה גל של עצמות.</p>
+  <div data-hl="R9,R10" class="voice r"><span class="tag">רש"י</span><blockquote>חצבי לנהרא – הכדין השלמים הולכים לנהר לשאוב מים:</blockquote><blockquote>כגני לייא – השבורים להיכן כלומר למה הולכים ואף אתה שאתה סומא ולא תראהו להיכן תלך:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "חצבי לנהרא" הם הכדים השלמים שהולכים לנהר לשאוב. "כגני לייא": השבורים לאן? וכך גם אתה העיוור, לאן תלך?</p></div>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>גונדא – כת:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "גונדא" היא כת.</p></div>
+  <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>כחלינהו לעיניה – נקרו לעיניו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "כחלינהו לעיניה" פירושו שניקרו את עיניו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מלכות הארץ כעין מלכות השמים</h3>
+    <p>רב ששת אינו רואה, אבל יודע. הוא משתמש בעיקרון: מה שנאמר על התגלות הקדוש ברוך הוא, נכון גם במלכות שבארץ. הגדולה האמיתית באה בשקט, אחרי הרעש.</p>
+    <p>העיקרון הזה חוזר במעשה הבא על רבי שילא, שאומר "ברוך הרחמן שנתן מלכות בארץ כעין מלכות השמים". שני המעשים קשורים לברכה על מלכים שבסוגיה הקודמת.</p>
+  </div>
+  <p class="godeep">איך העיקרון "מלכות הארץ כעין מלכות השמים" עוזר לרב ששת? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "סגי נהור"?</summary><p>עיוור. כינוי בלשון נקייה.</p></details>
+  <details><summary>איך ידע רב ששת שהמלך בא?</summary><p>כשעברה קבוצה בשקט אחרי הקבוצות הרועשות.</p></details>
+  <details><summary>מאיזה פסוק למד זאת?</summary><p>"ואחר האש קול דממה דקה".</p></details>
+  <details class="deepq"><summary>מה טען הצדוקי כשרב ששת בירך?</summary><p>שהוא מברך על מי שאינו רואה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G13,G14,G15">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>רבי שילא לפני השלטון</h2>
+  <p class="lead">רבי שילא הלקה אדם שעבר עבירה, והאיש הלשין עליו לשלטון. רבי שילא ניצל בכך שכיבד את המלכות, ולבסוף הרג את המלשין כרודף.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ר' שילא נגדיה לההוא גברא דבעל מצרית</td><td>רבי שילא הלקה אדם אחד שבא על מצרית.</td></tr>
+      <tr><td>אזל אכל ביה קורצי בי מלכא</td><td>הלך והלשין עליו בבית המלך:</td></tr>
+      <tr><td>דקא דיין דינא בלא הרמנא דמלכא</td><td>שדן דין בלי רשות המלך.</td></tr>
+      <tr><td>אית לך סהדי</td><td>יש לך עדים?</td></tr>
+      <tr><td>אתא אליהו אדמי ליה כאיניש ואסהיד</td><td>בא אליהו, נדמה לו כאדם, והעיד.</td></tr>
+      <tr><td>אי הכי בר קטלא הוא</td><td>אם כך, הוא חייב מיתה.</td></tr>
+      <tr><td>לית לן רשותא למקטל</td><td>אין לנו רשות להמית.</td></tr>
+      <tr><td>בריך רחמנא דיהיב מלכותא בארעא</td><td>ברוך הרחמן שנתן מלכות בארץ</td></tr>
+      <tr><td>חביבא עליה יקרא דמלכותא כולי האי</td><td>חביב עליו כבוד המלכות כל כך.</td></tr>
+      <tr><td>יהבי ליה קולפא אמרו ליה דון דינא</td><td>נתנו לו רצועה, ואמרו לו: דון דין.</td></tr>
+      <tr><td>עביד רחמנא ניסא לשקרי הכי</td><td>עושה הרחמן נס כזה לשקרנים?</td></tr>
+      <tr><td>האי רודף הוא</td><td>זה רודף הוא,</td></tr>
+      <tr><td>אם בא להרגך השכם להרגו</td><td>אם בא להרוג אותך, הקדם והרוג אותו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ההלשנה:</b> רבי שילא הלקה אדם שבא על אשה מצרית. האיש הלשין שרבי שילא דן בלי רשות המלך, והשלטון שלח שליח.</p>
+  <p><b>התשובה לשלטון:</b> רבי שילא אמר שהאיש בא על חמורה, ואליהו בא בדמות אדם והעיד. השלטון אמר שהאיש חייב מיתה, ורבי שילא השיב שמאז הגלות אין לישראל רשות להמית.</p>
+  <p><b>"לך ה' הגדולה":</b> בזמן שעיינו בדין, אמר רבי שילא את הפסוק, והסביר להם שהוא מברך על מלכות הארץ שהיא כעין מלכות השמים. הם ראו בכך כבוד למלכות, ונתנו לו רשות לדון.</p>
+  <p><b>הרודף:</b> האיש שאל אם הרחמן עושה נס לשקרנים. רבי שילא השיב שהמצרים נקראים חמורים בפסוק. כשראה שהאיש הולך לספר זאת לשלטון, אמר שהוא רודף, והרג אותו.</p>
+  <div data-hl="R13" class="voice r"><span class="tag">רש"י</span><blockquote>ורחמי דינא – אוהבים משפט:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "רחמי דינא" פירושו אוהבים משפט.</p></div>
+  <div data-hl="R14" class="voice r"><span class="tag">רש"י</span><blockquote>קולפא – מקל לרדות:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "קולפא" היא מקל להכות בו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>הדין של רודף</h3>
+    <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>התורה אמרה אם בא להרגך השכם להרגו – אם במחתרת וגו' (שמות כב) לפי שבא על עסקי נפשות שיודע הוא שאם ימצא ותמצאנו חותר לא תעמיד עצמך מלהציל ממונך והוא בא לדעת כן שיקום עליך ויהרגך אמרה תורה השכם אתה והרגהו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מביא את המקור מן הגנב שבא במחתרת. הגנב יודע שבעל הבית יעמוד על ממונו, ובא מוכן להרוג אותו. לכן התורה אומרת: הקדם אתה והרוג אותו.</p></div>
+    <p>רבי שילא מחיל את הדין הזה על המלשין. אילו סיפר שקרא לשלטון חמורים, היה מסכן את חייו של רבי שילא. לכן הוא נחשב רודף.</p>
+    <h3>האם רבי שילא שיקר?</h3>
+    <p>האיש טוען שרבי שילא שיקר כשאמר "חמורה". רבי שילא עונה שלא שיקר, כי בפסוק "אשר בשר חמורים בשרם" המצרים נמשלו לחמורים. הגמרא מציגה את תשובתו, ואינה מוסיפה עליה.</p>
+  </div>
+  <p class="godeep">למה רבי שילא ראה במלשין רודף? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>על מה הלשין האיש?</summary><p>שרבי שילא דן דין בלי רשות המלך.</p></details>
+  <details><summary>מי העיד לטובת רבי שילא?</summary><p>אליהו, שנדמה לאדם.</p></details>
+  <details><summary>למה רבי שילא לא דן את האיש למיתה?</summary><p>מיום שגלו מארצם אין להם רשות להמית.</p></details>
+  <details class="deepq"><summary>איך ענה רבי שילא לטענה שהוא שיקר?</summary><p>המצרים נקראים חמורים, שנאמר "אשר בשר חמורים בשרם".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="u6" data-hl="G16,G17">
+  <div class="kicker">יחידה 6 · גמרא</div>
+  <h2>"לך ה' הגדולה": דרשת רבי שילא ודרשת רבי עקיבא</h2>
+  <p class="lead">רבי שילא דורש את הפסוק שבו ניצל, וכל מילה בו מכוונת לאירוע גדול. הגמרא מביאה גם דרשה אחרת בשם רבי עקיבא.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הואיל ואתעביד לי ניסא בהאי קרא דרשינא ליה</td><td>הואיל ונעשה לי נס בפסוק הזה, אדרוש אותו.</td></tr>
+      <tr><td>הגדולה זו מעשה בראשית</td><td>"הגדולה": זה מעשה בראשית.</td></tr>
+      <tr><td>והגבורה זו יציאת מצרים</td><td>"והגבורה": זו יציאת מצרים.</td></tr>
+      <tr><td>והתפארת זו חמה ולבנה שיעמדו לו ליהושע</td><td>"והתפארת": החמה והלבנה שעמדו ליהושע.</td></tr>
+      <tr><td>והנצח זו מפלתה של רומי</td><td>"והנצח": מפלתה של רומי.</td></tr>
+      <tr><td>וההוד זו מלחמת נחלי ארנון</td><td>"וההוד": מלחמת נחלי ארנון.</td></tr>
+      <tr><td>כי כל בשמים ובארץ זו מלחמת סיסרא</td><td>"כי כל בשמים ובארץ": מלחמת סיסרא.</td></tr>
+      <tr><td>והמתנשא זו מלחמת גוג ומגוג</td><td>"והמתנשא": מלחמת גוג ומגוג.</td></tr>
+      <tr><td>אפילו ריש גרגיתא מן שמיא מנו ליה</td><td>אפילו הממונה על הבאר, מן השמים ממנים אותו.</td></tr>
+      <tr><td>הגדולה זו קריעת ים סוף</td><td>"הגדולה": זו קריעת ים סוף.</td></tr>
+      <tr><td>והתפארת זו מתן תורה</td><td>"והתפארת": זה מתן תורה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>דרשת רבי שילא:</b> כל מילה בפסוק מכוונת למעשה גדול של הקדוש ברוך הוא בעולם. "הגדולה" היא מעשה בראשית, "הגבורה" יציאת מצרים, "התפארת" החמה והלבנה שעמדו ליהושע, "הנצח" מפלתה של רומי, ו"ההוד" מלחמת נחלי ארנון.</p>
+  <p><b>המלחמות:</b> "כי כל בשמים ובארץ" היא מלחמת סיסרא, שבה הכוכבים נלחמו מן השמים. "הממלכה" היא מלחמת עמלק, ו"המתנשא" מלחמת גוג ומגוג. לכל דרשה יש פסוק שמשתמש באותה מילה או ברעיון קרוב.</p>
+  <p><b>"לכל לראש":</b> רבי יוחנן לומד מכאן שגם תפקיד קטן, הממונה על הבאר, נקבע מן השמים.</p>
+  <p><b>דרשת רבי עקיבא:</b> בברייתא נשנו פירושים אחרים: קריעת ים סוף, מכת בכורות, מתן תורה, ירושלים ובית המקדש.</p>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>הממלכה זו מלחמת עמלק – דכתיב בה כסא מלכות כי יד על כס יה (שמות י״ז:ט״ז) כלומר על ידי מלחמה ליי' בעמלק יתעלה כסאו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: במלחמת עמלק כתוב "כי יד על כס יה", ונזכר בה כיסא המלכות. על ידי המלחמה בעמלק יתעלה כיסאו.</p></div>
+  <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>המתנשא – מדכתיב לשון נשיאות משמע על נשיא ראש משך ותובל:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "המתנשא" נדרש על גוג, כי בפסוק עליו כתוב "נשיא", מאותו שורש.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>קשר לסוגיה</h3>
+    <div data-hl="R18,R19" class="voice r"><span class="tag">רש"י</span><blockquote>לכל לראש – לכל הקם להיות לראש הוא מתנשא כלומר שהוא גוזר ומעמידו:</blockquote><blockquote>ריש גרגיתא – בור הממונה על החופרין חפירות למלאותן מים כדי להשקות בהן שדותיהן:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "לכל לראש" פירושו שכל מי שקם להיות ראש, הקדוש ברוך הוא גוזר ומעמיד אותו. ו"ריש גרגיתא" הוא הממונה על החופרים בורות שממלאים אותם מים להשקות את השדות.</p></div>
+    <p>הדרשה הזו מחזירה לנושא של העמוד. כל שלטון, מן המלך ועד הממונה על הבאר, ניתן מן השמים. זה מסביר את הברכה על מלכים, ואת הכבוד שרב ששת ורבי שילא נתנו למלכות.</p>
+    <p>שתי הדרשות, של רבי שילא ושל רבי עקיבא, משתמשות באותו פסוק, אבל מוצאות בו אירועים שונים. רבי שילא רואה בעיקר מלחמות וניצחונות, ורבי עקיבא רואה את יציאת מצרים, מתן תורה ומקום המקדש.</p>
+  </div>
+  <p class="godeep">מה מלמדת הדרשה "אפילו ריש גרגיתא מן שמיא מנו ליה" על הסוגיה כולה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "והגבורה" לפי רבי שילא?</summary><p>יציאת מצרים.</p></details>
+  <details><summary>איזו מלחמה היא "כי כל בשמים ובארץ"?</summary><p>מלחמת סיסרא, שבה הכוכבים נלחמו מן השמים.</p></details>
+  <details><summary>מה פירוש "והנצח" לפי רבי עקיבא?</summary><p>ירושלים.</p></details>
+  <details class="deepq"><summary>לפי רש"י, איך "והמתנשא" מתאים למלחמת גוג ומגוג?</summary><p>בפסוק על גוג כתוב "נשיא", מאותו שורש של "מתנשא".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u6"> סיימתי את יחידה 6</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>בבל ושומרון:</b> קללתה של בבל פוגעת גם בשכניה, וקללתה של שומרון מביאה להם ברכה.</li>
+      <li><b>חכם הרזים:</b> על המון של שש מאות אלף מישראל מברכים "ברוך חכם הרזים", כי רק הוא יודע את לב כולם.</li>
+      <li><b>בן זומא:</b> הוא מכיר בטרחה של כל מי שהכין לו את לחמו ואת בגדו, ומלמד שאורח טוב מכיר בטרחת בעל הבית.</li>
+      <li><b>חכמים ומלכים:</b> ברכות שונות לחכמים ולמלכים של ישראל ושל האומות, ורבי יוחנן מעודד לרוץ לראות מלכים.</li>
+      <li><b>רב ששת:</b> מלכות הארץ כעין מלכות השמים, ולכן המלך בא בשקט אחרי הרעש.</li>
+      <li><b>רבי שילא:</b> ניצל מן השלטון בזכות כבוד המלכות, והרג את המלשין כרודף.</li>
+      <li><b>"לך ה' הגדולה":</b> רבי שילא ורבי עקיבא דורשים כל מילה בפסוק. העמוד הבא פותח בברכות על בתי ישראל בישובם ובחורבנם.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>אוכלוסא</td><td>המון גדול. לפי הגמרא, שש מאות אלף לפחות</td></tr>
+      <tr><td>הוא היה אומר</td><td>הוא היה רגיל לומר. כך מביאים עוד דבר מאותו חכם</td></tr>
+      <tr><td>ואיתימא</td><td>ויש אומרים. כך מביאים שם אחר של מי שאמר את הדבר</td></tr>
+      <tr><td>נקיטינן</td><td>מקובל בידינו</td></tr>
+      <tr><td>סגי נהור</td><td>&quot;רב אור&quot;: כינוי לעיוור, בלשון נקייה</td></tr>
+      <tr><td>תא חזי</td><td>בוא וראה</td></tr>
+      <tr><td>ומאי הוי עליה</td><td>ומה עלה בגורלו</td></tr>
+      <tr><td>אכל ביה קורצי</td><td>הלשין עליו</td></tr>
+      <tr><td>הרמנא</td><td>רשות של השלטון</td></tr>
+      <tr><td>בר קטלא</td><td>חייב מיתה</td></tr>
+      <tr><td>עד דמעייני ביה</td><td>בעוד שהם מעיינים בו</td></tr>
+      <tr><td>השכם להרגו</td><td>הקדם אותו והרוג אותו</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-57b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-58b.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-58b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "אמר רבי ירמיה בן אלעזר נתקללה בבל נתקללו שכניה נתקללה שומרון נתברכו שכניה נתקללה בבל נתקללו שכניה דכתיב (ישעיהו יד, כג) ושמתיה למורש קפוד ואגמי מים נתקללה שומרון נתברכו שכניה דכתיב (מיכה א, ו) ושמתי שומרון לעי השדה למטעי כרם וגו'", false, ""], ["G2", "ואמר רב המנונא הרואה אוכלוסי ישראל אומר ברוך חכם הרזים אוכלוסי עובדי כוכבים אומר (ירמיהו נ, יב) בושה אמכם וגו'", true, ""], ["G3", "ת\"ר הרואה אוכלוסי ישראל אומר ברוך חכם הרזים שאין דעתם דומה זה לזה ואין פרצופיהן דומים זה לזה בן זומא ראה אוכלוסא על גב מעלה בהר הבית אמר ברוך חכם הרזים וברוך שברא כל אלו לשמשני", false, ""], ["G4", "הוא היה אומר כמה יגיעות יגע אדם הראשון עד שמצא פת לאכול חרש וזרע וקצר ועמר ודש וזרה וברר וטחן והרקיד ולש ואפה ואח\"כ אכל ואני משכים ומוצא כל אלו מתוקנין לפני וכמה יגיעות יגע אדם הראשון עד שמצא בגד ללבוש גזז ולבן ונפץ וטוה וארג ואחר כך מצא בגד ללבוש ואני משכים ומוצא כל אלו מתוקנים לפני כל אומות שוקדות ובאות לפתח ביתי ואני משכים ומוצא כל אלו לפני", false, ""], ["G5", "הוא היה אומר אורח טוב מהו אומר כמה טרחות טרח בעל הבית בשבילי כמה בשר הביא לפני כמה יין הביא לפני כמה גלוסקאות הביא לפני וכל מה שטרח לא טרח אלא בשבילי אבל אורח רע מהו אומר מה טורח טרח בעל הבית זה פת אחת אכלתי חתיכה אחת אכלתי כוס אחד שתיתי כל טורח שטרח בעל הבית זה לא טרח אלא בשביל אשתו ובניו", false, ""], ["G6", "על אורח טוב מהו אומר (איוב לו, כד) זכור כי תשגיא פעלו אשר שוררו אנשים על אורח רע כתיב (איוב לז, כד) לכן יראוהו אנשים וגו'", false, ""], ["G7", "(שמואל א יז, יב) והאיש בימי שאול זקן בא באנשים אמר רבא ואיתימא רב זביד ואיתימא רב אושעיא זה ישי אבי דוד שיצא באוכלוסא ונכנס באוכלוסא ודרש באוכלוסא אמר עולא נקיטינן אין אוכלוסא בבבל תנא אין אוכלוסא פחותה מששים רבוא", false, ""], ["G8", "ת\"ר הרואה חכמי ישראל אומר ברוך שחלק מחכמתו ליראיו חכמי עובדי כוכבים אומר ברוך שנתן מחכמתו לבריותיו הרואה מלכי ישראל אומר ברוך שחלק מכבודו ליראיו מלכי עובדי כוכבים אומר ברוך שנתן מכבודו לבריותיו", true, ""], ["G9", "א\"ר יוחנן לעולם ישתדל אדם לרוץ לקראת מלכי ישראל ולא לקראת מלכי ישראל בלבד אלא אפי' לקראת מלכי עובדי כוכבים שאם יזכה יבחין בין מלכי ישראל למלכי עובדי כוכבים", false, ""], ["G10", "רב ששת סגי נהור הוה הוו קאזלי כולי עלמא לקבולי אפי מלכא וקם אזל בהדייהו רב ששת אשכחיה ההוא צדוקי אמר ליה חצבי לנהרא כגני לייא אמר ליה תא חזי דידענא טפי מינך חלף גונדא קמייתא כי קא אוושא אמר ליה ההוא צדוקי אתא מלכא אמר ליה רב ששת לא קאתי חלף גונדא תניינא כי קא אוושא אמר ליה ההוא צדוקי השתא קא אתי מלכא אמר ליה רב ששת לא קא אתי מלכא חליף תליתאי כי קא שתקא אמר ליה רב ששת ודאי השתא אתי מלכא", false, ""], ["G11", "אמר ליה ההוא צדוקי מנא לך הא אמר ליה דמלכותא דארעא כעין מלכותא דרקיעא דכתיב (מלכים א יט, יא) צא ועמדת בהר לפני ה' והנה ה' עובר ורוח גדולה וחזק מפרק הרים ומשבר סלעים לפני ה' לא ברוח ה' ואחר הרוח רעש לא ברעש ה' ואחר הרעש אש לא באש ה' ואחר האש קול דממה דקה", false, ""], ["G12", "כי אתא מלכא פתח רב ששת וקא מברך ליה אמר ליה ההוא צדוקי למאן דלא חזית ליה קא מברכת ומאי הוי עליה דההוא צדוקי איכא דאמרי חברוהי כחלינהו לעיניה ואיכא דאמרי רב ששת נתן עיניו בו ונעשה גל של עצמות", false, ""], ["G13", "ר' שילא נגדיה לההוא גברא דבעל מצרית אזל אכל ביה קורצי בי מלכא אמר איכא חד גברא ביהודאי דקא דיין דינא בלא הרמנא דמלכא שדר עליה פריסתקא כי אתא אמרי ליה מה טעמא נגדתיה להאי אמר להו דבא על חמרתא אמרי ליה אית לך סהדי אמר להו אין אתא אליהו אדמי ליה כאיניש ואסהיד אמרי ליה אי הכי בר קטלא הוא אמר להו אנן מיומא דגלינן מארעין לית לן רשותא למקטל אתון מאי דבעיתון עבידו ביה", true, ""], ["G14", "עד דמעייני ביה בדינא פתח ר' שילא ואמר (דברי הימים א כט, יא) לך ה' הגדולה והגבורה וגו' אמרי ליה מאי קאמרת אמר להו הכי קאמינא בריך רחמנא דיהיב מלכותא בארעא כעין מלכותא דרקיעא ויהב לכו שולטנא ורחמי דינא אמרו חביבא עליה יקרא דמלכותא כולי האי יהבי ליה קולפא אמרו ליה דון דינא", false, ""], ["G15", "כי הוה נפיק אמר ליה ההוא גברא עביד רחמנא ניסא לשקרי הכי אמר ליה רשע לאו חמרי איקרו דכתיב (יחזקאל כג, כ) אשר בשר חמורים בשרם חזייה דקאזיל למימרא להו דקרינהו חמרי אמר האי רודף הוא והתורה אמרה אם בא להרגך השכם להרגו מחייה בקולפא וקטליה", false, ""], ["G16", "אמר הואיל ואתעביד לי ניסא בהאי קרא דרשינא ליה לך ה' הגדולה זו מעשה בראשית וכן הוא אומר (איוב ט, י) עושה גדולות עד אין חקר והגבורה זו יציאת מצרים שנאמר (שמות יד, לא) וירא ישראל את היד הגדולה וגו' והתפארת זו חמה ולבנה שיעמדו לו ליהושע שנאמר (יהושע י, יג) וידום השמש וירח עמד וגו' והנצח זו מפלתה של רומי וכן הוא אומר (ישעיהו סג, ג) ויז נצחם על בגדי וגו' וההוד זו מלחמת נחלי ארנון שנאמר (במדבר כא, יד) על כן יאמר בספר מלחמות ה' את והב בסופה וגו' כי כל בשמים ובארץ זו מלחמת סיסרא שנאמר (שופטים ה, כ) מן שמים נלחמו הכוכבים ממסלותם וגו' לך ה' הממלכה זו מלחמת עמלק וכן הוא אומר (שמות יז, טז) כי יד על כס יה והמתנשא זו מלחמת גוג ומגוג וכן הוא אומר (יחזקאל לח, ג) הנני אליך גוג נשיא ראש משך ותובל לכל לראש אמר רב חנן בר רבא אמר ר' יוחנן אפילו ריש גרגיתא מן שמיא מנו ליה", false, ""], ["G17", "במתניתא תנא משמיה דרבי עקיבא לך ה' הגדולה זו קריעת ים סוף והגבורה זו מכת בכורות והתפארת זו מתן תורה והנצח זו ירושלים וההוד זו בית המקדש:", false, ""]], "R": [["R1", "נתקללה בבל נתקללו שכניה", "כלומר אוי לרשע אוי לשכנו:", false], ["R2", "קאת וקפוד", "חיות ועופות רעים ומזיקין את השכנים אבל עי השדה ומטעי כרם שנתקללו בה ערי ישראל הנאה היא לשכנים:", false], ["R3", "אוכלוסי", "חיל גדול של ששים רבוא:", false], ["R4", "חכם הרזים", "היודע מה שבלב כל אלו:", false], ["R5", "לשמשני", "שהם חורשים וזורעים ואני מוצא מוכן:", false], ["R6", "כל אומות שוקדות ובאות לפתחי", "עשיר היה והכל באין אצלו לסחורה:", false], ["R7", "שאם יזכה", "לעולם הבא ויראה בכבוד מלך המשיח:", false], ["R8", "יבחין", "כמה יתר כבוד נוטלי שכר מצות יותר ממה שהיה כבוד האומות בעוה\"ז:", false], ["R9", "חצבי לנהרא", "הכדין השלמים הולכים לנהר לשאוב מים:", false], ["R10", "כגני לייא", "השבורים להיכן כלומר למה הולכים ואף אתה שאתה סומא ולא תראהו להיכן תלך:", false], ["R11", "גונדא", "כת:", false], ["R12", "כחלינהו לעיניה", "נקרו לעיניו:", false], ["R13", "ורחמי דינא", "אוהבים משפט:", false], ["R14", "קולפא", "מקל לרדות:", false], ["R15", "התורה אמרה אם בא להרגך השכם להרגו", "אם במחתרת וגו' (שמות כב) לפי שבא על עסקי נפשות שיודע הוא שאם ימצא ותמצאנו חותר לא תעמיד עצמך מלהציל ממונך והוא בא לדעת כן שיקום עליך ויהרגך אמרה תורה השכם אתה והרגהו:", false], ["R16", "הממלכה זו מלחמת עמלק", "דכתיב בה כסא מלכות כי יד על כס יה (שמות י״ז:ט״ז) כלומר על ידי מלחמה ליי' בעמלק יתעלה כסאו:", false], ["R17", "המתנשא", "מדכתיב לשון נשיאות משמע על נשיא ראש משך ותובל:", false], ["R18", "לכל לראש", "לכל הקם להיות לראש הוא מתנשא כלומר שהוא גוזר ומעמידו:", false], ["R19", "ריש גרגיתא", "בור הממונה על החופרין חפירות למלאותן מים כדי להשקות בהן שדותיהן:", false]], "T": [], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': סוף עניין בבל, וברכות על מראות", "x": "העמוד הקודם נגמר בחמש הברכות שרב המנונא קבע לרואה את בבל, ובמעשי חכמים שקיללו אותה וטאטאו את עפרה. כאן נאמר עוד דבר על קללתה של בבל, ואחריו ברכות על מראות של בני אדם: המון גדול, חכמים ומלכים. העמוד מסתיים בשני מעשים על כבוד המלכות, ובדרשה על הפסוק \"לך ה' הגדולה\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1"], "t": "בבל ושומרון", "x": "רבי ירמיה בן אלעזר אמר: נתקללה בבל, נתקללו שכניה. נתקללה שומרון, נתברכו שכניה. על בבל כתוב \"ושמתיה למורש קפוד ואגמי מים\". ועל שומרון כתוב \"ושמתי שומרון לעי השדה למטעי כרם\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G1", "R1", "R2"], "t": "רש\"י: למה השכנים נפגעים או נהנים", "x": "רש\"י מסכם את הצד של בבל במשפט: אוי לרשע, ואוי לשכנו. הקללה של בבל היא חיות ועופות רעים, שמזיקים גם לשכנים. אבל הקללה של ערי ישראל היא ערימות בשדה ומטעי כרמים, ומהם השכנים נהנים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R3", "R4"], "t": "רב המנונא: הרואה המון גדול", "x": "רב המנונא אמר: הרואה \"אוכלוסי ישראל\", המון גדול מישראל, אומר \"ברוך חכם הרזים\". והרואה המון של עובדי עבודה זרה אומר \"בושה אמכם\". רש\"י: \"אוכלוסא\" הוא חיל גדול של שש מאות אלף. ו\"חכם הרזים\" הוא היודע מה שבלב כל אלה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3"], "t": "למה \"חכם הרזים\"", "x": "ברייתא מסבירה את הברכה: דעתם של בני האדם אינה דומה זו לזו, ופרצופיהם אינם דומים זה לזה. רק הקדוש ברוך הוא יודע את כל הלבבות האלה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R5"], "t": "בן זומא על הר הבית", "x": "בן זומא ראה המון גדול על אחת המדרגות בהר הבית. הוא אמר: ברוך חכם הרזים, וברוך שברא את כל אלה לשמש אותי. רש\"י: הם חורשים וזורעים, ואני מוצא הכול מוכן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4"], "t": "כמה יגע אדם הראשון עד שאכל לחם", "x": "\"הוא היה אומר\", בן זומא היה אומר: כמה יגיעות יגע אדם הראשון עד שמצא לחם לאכול. חרש, זרע, קצר, עימר, דש, זרה, ברר, טחן, ניפה בנפה, לש ואפה, ורק אחר כך אכל. ואני משכים ומוצא את כל אלה מתוקנים לפניי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R6"], "t": "וכמה יגע עד שלבש בגד", "x": "וכך בבגד: אדם הראשון גזז, ליבן, ניפץ, טווה וארג, ורק אחר כך היה לו בגד ללבוש. וכל האומות שוקדות ובאות לפתח ביתי, ואני משכים ומוצא הכול לפניי. רש\"י: בן זומא היה עשיר, והכול באו אליו לסחור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "אורח טוב", "x": "עוד היה בן זומא אומר: אורח טוב מה הוא אומר? כמה טרח בעל הבית בשבילי. כמה בשר, כמה יין וכמה \"גלוסקאות\", לחמים משובחים, הביא לפניי. וכל מה שטרח, לא טרח אלא בשבילי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "אורח רע", "x": "האורח הרע מקטין את הטרחה: פת אחת אכלתי, חתיכה אחת אכלתי, כוס אחת שתיתי. ולדבריו, בעל הבית עשה את כל זה רק בשביל אשתו ובניו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6"], "t": "הפסוקים על שני האורחים", "x": "על אורח טוב מה נאמר? \"זכור כי תשגיא פעלו אשר שוררו אנשים\": האורח הטוב מזכיר את מעשיו של המארח ומשבח אותם. ועל אורח רע כתוב \"לכן יראוהו אנשים\".", "a": "הגמרא אינה מפרטת איך הפסוק השני מתאים לאורח הרע."}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "ישי, שיצא ונכנס בהמון", "x": "על הפסוק \"והאיש בימי שאול זקן בא באנשים\", אמר רבא, ויש אומרים רב זביד, ויש אומרים רב אושעיא: זה ישי אבי דוד. הוא יצא בהמון, נכנס בהמון ודרש בהמון.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "כמה הם \"אוכלוסא\"", "x": "עולא אמר: \"נקיטינן\", מקובל בידינו, אין \"אוכלוסא\" בבבל. ונשנה בברייתא: אין אוכלוסא פחות משש מאות אלף.", "a": "כלומר, הברכה \"חכם הרזים\" נאמרת רק על המון של שש מאות אלף."}, {"w": "גמרא", "cols": false, "hl": ["G8"], "t": "חכמים: ברכה לישראל וברכה לאומות", "x": "\"תנו רבנן\": הרואה חכמי ישראל אומר \"ברוך שחלק מחכמתו ליראיו\". והרואה חכמים של אומות העולם אומר \"ברוך שנתן מחכמתו לבריותיו\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8"], "t": "מלכים: ברכה לישראל וברכה לאומות", "x": "וכך במלכים. על מלכי ישראל מברכים \"שחלק מכבודו ליראיו\". ועל מלך של אחת האומות מזכירים שהקדוש ברוך הוא נתן מכבודו לבריותיו.", "a": "אצל ישראל נאמר \"חלק\", כאילו נתן חלק ממה שלו, ואצל האומות נאמר \"נתן\"."}, {"w": "גמרא", "cols": false, "hl": ["G9", "R7", "R8"], "t": "רבי יוחנן: לרוץ לקראת מלכים", "x": "רבי יוחנן אמר: לעולם ישתדל אדם לרוץ לקראת מלכי ישראל, ולא רק לקראתם, אלא גם לקראת מלכי האומות. שאם יזכה, יבחין בין מלכי ישראל למלכי האומות. רש\"י: אם יזכה לעולם הבא ויראה בכבוד מלך המשיח, יבחין כמה גדול כבודם של מי שמקבלים שכר מצוות, יותר מכבוד האומות בעולם הזה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R9", "R10"], "t": "רב ששת הולך לקבל את המלך", "x": "רב ששת היה \"סגי נהור\", עיוור. כל העם הלכו לקבל את פני המלך, והוא קם והלך איתם. מצא אותו צדוקי אחד ואמר לו: \"חצבי לנהרא, כגני לייא?\". רש\"י מפרש: הכדים השלמים הולכים לנהר לשאוב מים, והשבורים לאן? כלומר, אתה העיוור, שלא תראה את המלך, לאן אתה הולך?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R11"], "t": "שלוש קבוצות עוברות", "x": "אמר לו רב ששת: בוא וראה שאני יודע יותר ממך. עברה \"גונדא\", כת של חיילים, ראשונה ברעש, ואמר הצדוקי: המלך בא. אמר רב ששת: אינו בא. עברה קבוצה שנייה ברעש, ושוב אמר הצדוקי שהמלך בא, ורב ששת אמר שלא. עברה השלישית בשקט, ואמר רב ששת: עכשיו ודאי המלך בא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11"], "t": "קול דממה דקה", "x": "שאל הצדוקי: מניין לך? אמר לו: מלכות הארץ היא כעין מלכות השמים. שכתוב \"צא ועמדת בהר לפני ה'\", ואחר כך: לא ברוח ה', לא ברעש ה', לא באש ה', \"ואחר האש קול דממה דקה\". כך גם המלך בא אחרי הרעש, בשקט.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12"], "t": "רב ששת מברך את המלך", "x": "כשבא המלך, פתח רב ששת ובירך עליו. אמר לו הצדוקי: מי שאינך רואה אותו, אתה מברך עליו?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R12"], "t": "מה עלה בגורל הצדוקי", "x": "יש אומרים: חבריו ניקרו את עיניו. ויש אומרים: רב ששת נתן בו את עיניו, והוא נעשה גל של עצמות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13"], "t": "רבי שילא מלקה אדם", "x": "רבי שילא הלקה אדם שבא על אשה מצרית. האיש הלך והלשין עליו בבית המלך: יש יהודי אחד שדן דינים בלי רשות המלך. שלחו אליו שליח של השלטון.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13"], "t": "העדות של אליהו", "x": "כשהגיע, שאלו אותו: למה הלקית את זה? אמר להם: כי בא על חמורה. שאלו: יש לך עדים? אמר: כן. בא אליהו, נדמה לאדם, והעיד. אמרו לו: אם כך, הוא חייב מיתה. אמר להם: אנחנו, מיום שגלינו מארצנו, אין לנו רשות להמית. אתם עשו בו מה שתרצו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R13"], "t": "\"לך ה' הגדולה\"", "x": "בעוד הם עיינו בדין, פתח רבי שילא ואמר \"לך ה' הגדולה והגבורה\". שאלו אותו: מה אתה אומר? אמר להם: כך אני אומר: ברוך הרחמן שנתן מלכות בארץ כעין מלכות השמים, ונתן לכם שלטון ו\"רחמי דינא\". רש\"י: אוהבים משפט.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R14"], "t": "נותנים לו רצועה", "x": "אמרו: כבוד המלכות חביב עליו כל כך. נתנו לו \"קולפא\", ולפי רש\"י מקל להכות בו, ואמרו לו: דון דין.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15"], "t": "השאלה של האיש", "x": "כשיצא רבי שילא, אמר לו האיש: האם הרחמן עושה נס כזה לשקרנים? אמר לו: רשע, האם אינם נקראים חמורים? שכתוב \"אשר בשר חמורים בשרם\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R15"], "t": "רודף", "x": "ראה רבי שילא שהאיש הולך לספר להם שקרא להם חמורים. אמר: זה רודף, והתורה אמרה \"אם בא להרגך, השכם להרגו\". הכה אותו ברצועה והרג אותו. רש\"י מביא את המקור, הגנב שבא במחתרת: הוא יודע שבעל הבית יעמוד על ממונו, ובא מתוך כוונה להרוג אותו אם יעמוד. לכן אמרה התורה: השכם אתה והרוג אותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16"], "t": "הגדולה, הגבורה והתפארת", "x": "אמר רבי שילא: הואיל ונעשה לי נס בפסוק הזה, אדרוש אותו. \"לך ה' הגדולה\", זה מעשה בראשית, שנאמר \"עושה גדולות עד אין חקר\". \"והגבורה\", זו יציאת מצרים, שנאמר \"וירא ישראל את היד הגדולה\". \"והתפארת\", זו החמה והלבנה שעמדו ליהושע, שנאמר \"וידום השמש וירח עמד\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16"], "t": "הנצח, ההוד, ומה שבשמים ובארץ", "x": "\"והנצח\", זו מפלתה של רומי, שנאמר \"ויז נצחם על בגדי\". \"וההוד\", זו מלחמת נחלי ארנון, שנאמר \"על כן יאמר בספר מלחמות ה' את והב בסופה\". \"כי כל בשמים ובארץ\", זו מלחמת סיסרא, שנאמר \"מן שמים נלחמו הכוכבים ממסלותם\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R16"], "t": "הממלכה: מלחמת עמלק", "x": "\"לך ה' הממלכה\", זו מלחמת עמלק, שנאמר \"כי יד על כס יה\". רש\"י: בפסוק נזכר כיסא המלכות. כלומר, על ידי המלחמה בעמלק יתעלה כיסאו של הקדוש ברוך הוא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R17"], "t": "המתנשא: גוג ומגוג", "x": "\"והמתנשא\", זו מלחמת גוג ומגוג, שנאמר \"הנני אליך גוג נשיא ראש משך ותובל\". רש\"י: הדרשה בנויה על המילה \"נשיא\", שהיא מאותו שורש של \"מתנשא\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R18", "R19"], "t": "לכל לראש: אפילו ממונה על הבאר", "x": "על המילים \"לכל לראש\" אמר רב חנן בר רבא בשם רבי יוחנן: אפילו \"ריש גרגיתא\", הממונה על הבאר, מן השמים ממנים אותו. רש\"י: כל מי שקם להיות ראש, הקדוש ברוך הוא גוזר ומעמיד אותו. ו\"ריש גרגיתא\" הוא הממונה על החופרים בורות, שממלאים אותם מים כדי להשקות את השדות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17"], "t": "דרשת רבי עקיבא", "x": "בברייתא נשנה בשם רבי עקיבא דרשה אחרת לאותו פסוק. \"הגדולה\", זו קריעת ים סוף. \"והגבורה\", זו מכת בכורות. \"והתפארת\", זה מתן תורה. \"והנצח\", זו ירושלים. \"וההוד\", זה בית המקדש.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "העמוד פתח בקללתה של בבל, ועבר לברכות על בני אדם: \"חכם הרזים\" על המון של שש מאות אלף מישראל, וברכות שונות לחכמים ולמלכים של ישראל ושל האומות. בן זומא לימד להכיר בטרחתם של אחרים, ורב ששת ורבי שילא הראו כבוד למלכות הארץ, כעין מלכות השמים. העמוד הבא פותח בברכות על בתי ישראל בישובם ובחורבנם, ועל בתי האומות.", "a": ""}], "audio": "daf-58a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

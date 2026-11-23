@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף כ&quot;ח עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף כ&quot;ח עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>תפלת השחר</span><span>פרק רביעי</span><span>ברכות<b>כח.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-27b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-28b.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 53</div>
+  <h1>מסכת ברכות, דף כ&quot;ח עמוד א&#x27;</h1>
+  <p class="sub">פרק רביעי, &quot;תפלת השחר&quot;. רבי אלעזר בן עזריה מתמנה, &quot;בו ביום&quot; ויהודה הגר העמוני, הפיוס עם רבי יהושע, וזמן המוסף.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. רבי אלעזר בן עזריה מתמנה, ובית המדרש נפתח</a><a href="#u2">2. יהודה הגר העמוני</a><a href="#u3">3. הפיוס עם רבי יהושע והפשרה</a><a href="#u4">4. מוסף ומנחה: מי קודם</a><a href="#u5">5. "נוגי ממועד": המאחר את התפילה</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1a,G1b,G2,G3a,G3b,G4">
+  <div class="kicker">יחידה 1 · אגדה</div>
+  <h2>רבי אלעזר בן עזריה מתמנה, ובית המדרש נפתח</h2>
+  <p class="lead">רבי אלעזר בן עזריה מתייעץ עם אשתו ומקבל את התפקיד. באותו יום נפתח בית המדרש לכל התלמידים, ונפתרו בו כל ההלכות שעמדו בספק.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>דלמא מעברין לך</td><td>שמא יעבירו אותך.</td></tr>
+      <tr><td>יומא חדא בכסא דמוקרא ולמחר ליתבר</td><td>(ישתמש אדם) יום אחד בכוס יקרה, ולמחר שתישבר.</td></tr>
+      <tr><td>לית לך חיורתא</td><td>אין לך שיער לבן.</td></tr>
+      <tr><td>ההוא יומא בר תמני סרי שני הוה</td><td>באותו יום בן שמונה עשרה שנה היה.</td></tr>
+      <tr><td>אתרחיש ליה ניסא</td><td>נעשה לו נס,</td></tr>
+      <tr><td>ואהדרו ליה תמני סרי דרי חיורתא</td><td>והפכו לו שמונה עשרה שורות של שיער לבן.</td></tr>
+      <tr><td>הרי אני כבן שבעים שנה ולא בן שבעים שנה</td><td>הרי אני כבן שבעים שנה, ולא בן שבעים שנה.</td></tr>
+      <tr><td>אותו היום סלקוהו לשומר הפתח</td><td>באותו יום הסירו את שומר הפתח.</td></tr>
+      <tr><td>כל תלמיד שאין תוכו כברו לא יכנס לבית המדרש</td><td>כל תלמיד שאין פנימיותו כמו חיצוניותו, לא ייכנס לבית המדרש.</td></tr>
+      <tr><td>ההוא יומא אתוספו כמה ספסלי</td><td>באותו יום נוספו כמה ספסלים.</td></tr>
+      <tr><td>דלמא ח"ו מנעתי תורה מישראל</td><td>שמא, חס וחלילה, מנעתי תורה מישראל.</td></tr>
+      <tr><td>אחזו ליה בחלמיה חצבי חיורי דמליין קטמא</td><td>הראו לו בחלומו כדים לבנים מלאים אפר.</td></tr>
+      <tr><td>ליתובי דעתיה הוא דאחזו ליה</td><td>ליישב את דעתו הוא שהראו לו.</td></tr>
+      <tr><td>ולא היתה הלכה שהיתה תלויה בבית המדרש שלא פירשוה</td><td>ולא הייתה הלכה תלויה בבית המדרש שלא פירשו אותה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ההתייעצות:</b> אשתו חששה שיעבירו גם אותו, כמו את רבן גמליאל. הוא ענה במשל: מוטב להשתמש בכוס יקרה יום אחד, גם אם תישבר מחר. כלומר, כדאי לקבל את הכבוד גם אם לא יימשך.</p>
+  <p><b>הנס:</b> אשתו העירה שאין לו שיער לבן, ורש"י מסביר שיפה לדרשן להיות זקן. הוא היה בן שמונה עשרה, ונעשה לו נס: שמונה עשרה שורות בזקנו הלבינו. מכאן הלשון "כבן שבעים שנה", ולא בן שבעים ממש.</p>
+  <p><b>בית המדרש נפתח:</b> רבן גמליאל הקפיד שרק תלמיד ש"תוכו כברו" ייכנס. באותו יום הוסר השומר, ונוספו מאות ספסלים. רבן גמליאל חשש שמנע תורה מישראל, וראה בחלום כדים מלאים אפר. הגמרא אומרת שזה נועד רק ליישב את דעתו.</p>
+  <p><b>"בו ביום":</b> באותו יום נשנתה מסכת עדויות, וכל מקום שבו נאמר "בו ביום" מדבר עליו. כל הלכה שעמדה בספק התפרשה, ורבן גמליאל עצמו לא נעדר מבית המדרש אפילו שעה.</p>
+  <div class="eg"><b>להמחשה:</b> לדוגמה, מי שמציעים לו תפקיד חשוב לזמן קצר, ואומר "גם אם זה רק לשנה, אני מקבל", חושב כמו רבי אלעזר בן עזריה במשל של הכוס.</div>
+  <div data-hl="R1,R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>מעברין לך – יורידוך מן הנשיאות בשביל אחר:</blockquote><blockquote>ה"ג דלמא מעברין לך אמר לה יומא חדא בכסא דמוקרא ולמחר ליתבר ול"ג מעלין בקדש:</blockquote><blockquote>כסא דמוקרא – כוס זכוכית יקרה שקורין לה בלשון ישמעאל ערקי"א ואומרים בני אדם במשל הדיוט יום אחד ישתמש בו בעליו ויתכבד בו ואם ישבר ישבר:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "מעברין לך" פירושו יורידו אותך מן הנשיאות. "כסא דמוקרא" היא כוס זכוכית יקרה, ובני אדם אומרים במשל: יום אחד ישתמש בה בעליה ויתכבד, ואם תישבר, תישבר.</p></div>
+  <div data-hl="R4,R5" class="voice r"><span class="tag">רש"י</span><blockquote>לית לך חיורתא – אין לך שערות לבנות של זקנה ונאה לדרשן להיות זקן:</blockquote><blockquote>י"ח דרי חיורתא – י"ח שורות של זקנה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: יפה לדרשן להיות זקן, ולכן אשתו העירה על השיער. "תמני סרי דרי" הן שמונה עשרה שורות של שיער לבן.</p></div>
+  <div data-hl="R6,R7" class="voice r"><span class="tag">רש"י</span><blockquote>קא חלשא דעתיה דר"ג – כשראה שנתוספו היום תלמידים רבים והיה דואג שלא יענש במה שמנעם בימיו מלבא:</blockquote><blockquote>דמליין קטמא – כלומר אף אלו אינם ראויים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: רבן גמליאל דאג שייענש על שמנע מן התלמידים לבוא. והכדים המלאים אפר אמרו לו: גם התלמידים האלה אינם ראויים.</p></div>
+  <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>תלויה – בספק שלא פירשוה מתוך שרבו התלמידים רב החדוד והפלפול:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הלכה "תלויה" היא הלכה שעמדה בספק. באותו יום פירשו אותה, כי רבו התלמידים וגדלו החידוד והפלפול.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>"ולא היא": מה הראו לרבן גמליאל</h3>
+    <p>החלום אמר לרבן גמליאל שהתלמידים החדשים אינם ראויים. הגמרא מוסיפה מיד "ולא היא": החלום לא אמר את האמת, אלא נועד להרגיע אותו. כך הגמרא מראה שפתיחת בית המדרש הייתה נכונה, אף שרבן גמליאל קיבל נחמה.</p>
+    <p>ההוכחה לכך באה בהמשך: באותו יום נפתרו כל ההלכות שעמדו בספק. רש"י קושר זאת לריבוי התלמידים, שהביא חידוד ופלפול.</p>
+  </div>
+  <p class="godeep">מה אומרים המילים "ולא היא" על החלום של רבן גמליאל? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה ענה רבי אלעזר בן עזריה לאשתו?</summary><p>שישתמש אדם יום אחד בכוס יקרה, ולמחר שתישבר.</p></details>
+  <details><summary>מה הנס שנעשה לו?</summary><p>שמונה עשרה שורות בזקנו הלבינו.</p></details>
+  <details><summary>מה הכריז רבן גמליאל על התלמידים?</summary><p>כל תלמיד שאין תוכו כברו לא ייכנס לבית המדרש.</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה נפתרו באותו יום כל הלכות שעמדו בספק?</summary><p>כי רבו התלמידים, וגדלו החידוד והפלפול.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G5,G6,G7,G8">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>יהודה הגר העמוני</h2>
+  <p class="lead">באותו יום בא לבית המדרש גר עמוני ושאל אם מותר לו לבוא בקהל. רבן גמליאל אוסר, רבי יהושע מתיר, והחכמים מכריעים כרבי יהושע.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>בא יהודה גר עמוני לפניהם בבית המדרש</td><td>בא יהודה, גר עמוני, לפניהם בבית המדרש.</td></tr>
+      <tr><td>מה אני לבא בקהל</td><td>מה אני, לבוא בקהל?</td></tr>
+      <tr><td>א"ל ר"ג אסור אתה לבא בקהל</td><td>אמר לו רבן גמליאל: אסור אתה לבוא בקהל.</td></tr>
+      <tr><td>לא יבא עמוני ומואבי בקהל ה'</td><td>"לא יבוא עמוני ומואבי בקהל ה'".</td></tr>
+      <tr><td>וכי עמון ומואב במקומן הן יושבין</td><td>וכי עמון ומואב במקומם הם יושבים?</td></tr>
+      <tr><td>כבר עלה סנחריב מלך אשור ובלבל את כל האומות</td><td>כבר עלה סנחריב מלך אשור ובלבל את כל האומות.</td></tr>
+      <tr><td>וכל דפריש מרובא פריש</td><td>וכל מי שיוצא, מן הרוב הוא יוצא.</td></tr>
+      <tr><td>ואחרי כן אשיב את שבות בני עמון</td><td>"ואחרי כן אשיב את שבות בני עמון".</td></tr>
+      <tr><td>וכבר שבו</td><td>וכבר חזרו.</td></tr>
+      <tr><td>ושבתי את שבות עמי ישראל ועדיין לא שבו</td><td>"ושבתי את שבות עמי ישראל", ועדיין לא חזרו.</td></tr>
+      <tr><td>מיד התירוהו לבא בקהל</td><td>מיד התירו אותו לבוא בקהל.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>השאלה:</b> "לבוא בקהל" פירושו לשאת אשה מישראל. התורה אוסרת זאת על עמוני ועל מואבי. יהודה הגר שואל אם האיסור חל עליו.</p>
+  <p><b>רבי יהושע:</b> סנחריב מלך אשור ערבב את כל האומות והעביר אותן ממקומן. לכן מי שבא היום מארץ עמון אינו בהכרח עמוני. "כל דפריש מרובא פריש": מי שיוצא מתוך קבוצה מעורבת, נחשב כמו הרוב.</p>
+  <p><b>רבן גמליאל:</b> הנביא אמר שבני עמון ישובו, וכבר שבו. אם כך, עמון שוב במקומו. <b>רבי יהושע עונה:</b> הנביא אמר גם שישראל ישובו, והם עדיין לא שבו. כמו שהבטחה זו עוד לא התקיימה, כך גם ההבטחה על עמון.</p>
+  <p><b>ההכרעה:</b> מיד התירו את יהודה לבוא בקהל. זו אחת ההלכות שנפסקו "בו ביום".</p>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>המחלוקת על הפסוקים</h3>
+    <p>שני החכמים מסכימים על האיסור שבתורה. המחלוקת היא אם העמונים של היום הם אותם עמונים. רבן גמליאל אומר שהם חזרו, כי כך הבטיח הנביא. רבי יהושע משיב בפסוק מקביל, ומראה שהבטחה של נביא עוד לא אומרת שכבר התקיימה.</p>
+    <p>הגמרא מביאה את המעשה כדי להראות מה קרה "בו ביום": גם מחלוקת בין רבן גמליאל לרבי יהושע הוכרעה מיד, כשבית המדרש היה פתוח לכולם.</p>
+  </div>
+  <p class="godeep">איך רבי יהושע עונה לראיה מן הפסוק על שיבת עמון? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה שאל יהודה הגר העמוני?</summary><p>האם מותר לו לבוא בקהל.</p></details>
+  <details><summary>מה הנימוק של רבי יהושע להתיר?</summary><p>סנחריב בלבל את כל האומות, וכל מי שיוצא, מן הרוב הוא יוצא.</p></details>
+  <details><summary>מה הוכרע?</summary><p>מיד התירו אותו לבוא בקהל.</p></details>
+  <details class="deepq"><summary>מה ההקבלה שרבי יהושע מביא?</summary><p>כמו שישראל עוד לא שבו אף שהנביא הבטיח, כך עמון עוד לא שב.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G9,G10,G11a,G11b,G12a,G12b,G13">
+  <div class="kicker">יחידה 3 · אגדה</div>
+  <h2>הפיוס עם רבי יהושע והפשרה</h2>
+  <p class="lead">אחרי ההכרעה על יהודה הגר, רבן גמליאל הולך לפייס את רבי יהושע. החכמים צריכים להחליט מה לעשות עם שני נשיאים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הואיל והכי הוה איזיל ואפייסיה לר' יהושע</td><td>כיוון שכך הוא, אלך ואפייס את רבי יהושע.</td></tr>
+      <tr><td>מכותלי ביתך אתה ניכר שפחמי אתה</td><td>מקירות ביתך ניכר שפחמי אתה.</td></tr>
+      <tr><td>אוי לו לדור שאתה פרנסו</td><td>אוי לו לדור שאתה מנהיגו,</td></tr>
+      <tr><td>במה הם מתפרנסים ובמה הם נזונים</td><td>במה הם מתפרנסים ובמה הם ניזונים.</td></tr>
+      <tr><td>נעניתי לך מחול לי</td><td>דיברתי נגדך, מחל לי.</td></tr>
+      <tr><td>עשה בשביל כבוד אבא</td><td>עשה בשביל כבוד אבי.</td></tr>
+      <tr><td>מאן דלביש מדא ילבש מדא</td><td>מי שלובש את המעיל, ילבש את המעיל.</td></tr>
+      <tr><td>טרוקו גלי דלא ליתו עבדי דר"ג</td><td>נעלו את השערים, שלא יבואו עבדי רבן גמליאל.</td></tr>
+      <tr><td>מוטב דאיקום ואיזיל אנא לגבייהו</td><td>מוטב שאקום ואלך אני אליהם.</td></tr>
+      <tr><td>מימיך מי מערה ואפרך אפר מקלה</td><td>המים שלך מי מערה, והאפר שלך אפר מקלה?</td></tr>
+      <tr><td>כלום עשינו אלא בשביל כבודך</td><td>האם עשינו דבר אלא בשביל כבודך?</td></tr>
+      <tr><td>גמירי מעלין בקדש ואין מורידין</td><td>מסורת בידינו: מעלים בקדושה ואין מורידים.</td></tr>
+      <tr><td>אתי לקנאויי</td><td>יבוא לידי קנאה.</td></tr>
+      <tr><td>אלא לדרוש ר"ג תלתא שבתי וראב"ע חדא שבתא</td><td>אלא ידרוש רבן גמליאל שלוש שבתות, ורבי אלעזר בן עזריה שבת אחת.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>בבית רבי יהושע:</b> רבן גמליאל ראה קירות שחורים, והבין שרבי יהושע מתפרנס מעבודה קשה. רבי יהושע אמר לו שאינו יודע את צערם של תלמידי החכמים. רבן גמליאל ביקש מחילה, ורבי יהושע נתפייס רק כשביקש בשביל כבוד אביו.</p>
+  <p><b>ההודעה לחכמים:</b> רבי יהושע שלח משל: מי שלובש את המעיל, ילבש אותו. רבי עקיבא חשש ונעל את השערים. אז בא רבי יהושע בעצמו, ואמר משל נוסף: הכהן בן הכהן הוא שיזה את מי החטאת, ולא מי שאינו כהן.</p>
+  <p><b>הפשרה:</b> אי אפשר להוריד את רבי אלעזר בן עזריה, כי "מעלין בקדש ואין מורידין". חלוקה שווה תביא לקנאה. לכן רבן גמליאל ידרוש שלוש שבתות, ורבי אלעזר בן עזריה שבת אחת.</p>
+  <p><b>תוספת:</b> התלמיד ששאל על תפילת ערבית, שממנו התחיל המעשה, היה רבי שמעון בן יוחאי.</p>
+  <div data-hl="R9,R10" class="voice r"><span class="tag">רש"י</span><blockquote>לאשיתא דביתיה דמשחרן – כותלי ביתו של ר' יהושע שהיו שחורות:</blockquote><blockquote>שפחמי אתה – עושה פחמים וי"א נפח:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: קירות ביתו של רבי יהושע היו שחורים. "פחמי" פירושו עושה פחמים, ויש אומרים נפח.</p></div>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>נעניתי לך – דברתי למולך יותר מן הראוי:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "נעניתי לך" פירושו דיברתי נגדך יותר מן הראוי.</p></div>
+  <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>דלביש מדא – הרגיל ללבוש המעיל ילבש כלומר הרגיל בנשיאות יהיה נשיא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: המשל על המעיל אומר: מי שרגיל בנשיאות, הוא יהיה הנשיא.</p></div>
+  <div data-hl="R13,R14" class="voice r"><span class="tag">רש"י</span><blockquote>מזה בן מזה – כהן בן כהן יזה את מי חטאת:</blockquote><blockquote>אפר מקלה – אפר הקלוי בתנורים ובכירות כלומר אפר סתם:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "מזה בן מזה" הוא כהן בן כהן שמזה את מי החטאת. "אפר מקלה" הוא אפר רגיל.</p></div>
+  <div data-hl="R15,R16" class="voice r"><span class="tag">רש"י</span><blockquote>שבת של מי היתה – במסכת חגיגה:</blockquote><blockquote>ואותו תלמיד – ששאל תפלת ערבית רשות או חובה רשב"י הוא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "שבת של מי הייתה" מובא במסכת חגיגה. ואותו תלמיד הוא מי ששאל אם תפילת ערבית רשות או חובה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שני המשלים של רבי יהושע</h3>
+    <p>שני המשלים אומרים אותו דבר במילים שונות: המעיל והזאת מי החטאת שייכים למי שרגיל בהם מדורות. כך רבי יהושע מודיע שהוא רוצה את רבן גמליאל בחזרה בנשיאות.</p>
+    <p>הפשרה שומרת על שני כללים יחד. את רבי אלעזר בן עזריה אין מורידים, כי מעלים בקדושה ולא מורידים. ואת רבן גמליאל מחזירים לרוב השבתות, כדי שלא תהיה קנאה.</p>
+  </div>
+  <p class="godeep">איזה כלל מונע מן החכמים להוריד את רבי אלעזר בן עזריה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה ראה רבן גמליאל בבית רבי יהושע?</summary><p>קירות שחורים.</p></details>
+  <details><summary>איך נתפייס רבי יהושע?</summary><p>כשרבן גמליאל ביקש ממנו בשביל כבוד אביו.</p></details>
+  <details><summary>מה הייתה הפשרה?</summary><p>רבן גמליאל דורש שלוש שבתות, ורבי אלעזר בן עזריה שבת אחת.</p></details>
+  <details class="deepq"><summary>למה לא חילקו את השבתות שווה בשווה?</summary><p>כי זה היה מביא לידי קנאה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G14,G15,G16,G17">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>מוסף ומנחה: מי קודם</h2>
+  <p class="lead">חוזרים למשנה, "ושל מוספין כל היום". רבי יוחנן מוסיף שמי שמאחר נקרא פושע, ופוסק מה עושים כששתי התפילות עומדות לפני אדם.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ושל מוספין כל היום</td><td>ותפילת המוספים, כל היום.</td></tr>
+      <tr><td>א"ר יוחנן ונקרא פושע</td><td>אמר רבי יוחנן: ונקרא פושע.</td></tr>
+      <tr><td>אחת של מנחה ואחת של מוסף</td><td>אחת של מנחה ואחת של מוסף.</td></tr>
+      <tr><td>שזו מצוה עוברת וזו מצוה שאינה עוברת</td><td>שזו מצווה שזמנה עובר, וזו מצווה שזמנה אינו עובר.</td></tr>
+      <tr><td>הלכה מתפלל של מנחה ואח"כ מתפלל של מוסף</td><td>ההלכה: מתפלל של מנחה, ואחר כך מתפלל של מוסף.</td></tr>
+      <tr><td>כי הוה חליש מגירסיה</td><td>כשהיה עייף מלימודו,</td></tr>
+      <tr><td>הוה אזיל ויתיב אפתחא דבי ר' נתן בר טובי</td><td>היה הולך ויושב בפתח ביתו של רבי נתן בר טובי.</td></tr>
+      <tr><td>כי חלפי רבנן אז איקום מקמייהו ואקבל אגרא</td><td>כשיעברו החכמים, אקום מפניהם ואקבל שכר.</td></tr>
+      <tr><td>מאן אמר הלכה בי מדרשא</td><td>מי אמר הלכה בבית המדרש?</td></tr>
+      <tr><td>אין הלכה כר' יהודה</td><td>אין הלכה כרבי יהודה.</td></tr>
+      <tr><td>רבי יוחנן אמרה</td><td>רבי יוחנן אמר אותה?</td></tr>
+      <tr><td>תנא מיניה ארבעין זמנין</td><td>חזר עליה ממנו ארבעים פעמים.</td></tr>
+      <tr><td>חדא היא לך או חדת היא לך</td><td>אחת היא לך, או חדשה היא לך?</td></tr>
+      <tr><td>משום דמספקא לי בר' יהושע בן לוי</td><td>כי הסתפקתי ברבי יהושע בן לוי.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>"ונקרא פושע":</b> אף שזמן המוסף כל היום, מי שמאחר אותו כל כך נקרא פושע.</p>
+  <p><b>הפסק:</b> בברייתא נחלקו חכמים ורבי יהודה מה קודם, מנחה או מוסף. רבי יוחנן פוסק כחכמים: קודם מנחה, ואחר כך מוסף. רש"י מסביר: את המנחה יתפלל בתחילת זמנה, כדי שלא ייקרא פושע גם עליה. והמוסף, שכבר איחר, אינו עובר.</p>
+  <p><b>המסורת של רבי זירא:</b> רבי זירא ישב בפתח בית רבי נתן בר טובי, כדי לקום מפני החכמים ולקבל שכר. כשיצא רבי נתן, שאל מי אמר את ההלכה בבית המדרש. נאמר לו שרבי יוחנן אמר שאין הלכה כרבי יהודה.</p>
+  <p><b>ארבעים פעמים:</b> רבי זירא חזר על ההלכה ארבעים פעמים. כשנשאל אם זו ההלכה היחידה שלמד בשם רבי יוחנן, ענה שהיא חדשה לו, כי חשב שאמר אותה רבי יהושע בן לוי.</p>
+  <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>ונקרא פושע – המאחר כ"כ:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: נקרא פושע מי שמאחר כל כך.</p></div>
+  <div data-hl="R18,R19,R20" class="voice r"><span class="tag">רש"י</span><blockquote>מתפלל של מנחה – מאחר שהגיע זמנה כדי להקדימה בתחלת זמנה שלא יקרא פושע גם עליה:</blockquote><blockquote>ואח"כ של מוספין – הואיל ואיחר זמנה אינו עובר דהא אמרי רבנן ושל מוספים כל היום:</blockquote><blockquote>שזו מצוה עוברת – ר' יהודה לטעמיה דאמר עד שבע שעות ותו לא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מתפלל קודם מנחה, בתחילת זמנה, שלא ייקרא פושע גם עליה. והמוסף כבר איחר, וזמנו אינו עובר, כי לחכמים זמנו כל היום. ורבי יהודה הולך לשיטתו, שזמן המוסף עד שבע שעות.</p></div>
+  <div data-hl="R21,R22" class="voice r"><span class="tag">רש"י</span><blockquote>כי חלפי רבנן – תלמידים היוצאים מבית ר' נתן:</blockquote><blockquote>מאן אמר הלכה בי מדרשא – מי מבני הישיבה אמר בבית המדרש שהלכה כר' יהודה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: החכמים שעברו הם התלמידים שיצאו מבית רבי נתן. ורבי זירא שאל מי מבני הישיבה אמר בבית המדרש שהלכה כרבי יהודה.</p></div>
+  <div data-hl="R23,R24" class="voice r"><span class="tag">רש"י</span><blockquote>חדא היא לך או חדת היא לך – אחת היא לך שלא למדת דבר משמו של ר' יוחנן אלא זו בלבד לכך חביבה היא לך או חדשה היא לך שהיית סבור שאחד מן האחרים אמרה:</blockquote><blockquote>ה"ג א"ל חדת היא לי דמספקא לי בר' יהושע בן לוי – סבור הייתי שרבי יהושע בן לוי אמרה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "חדא היא לך" פירושו: האם זו ההלכה היחידה שלמדת בשם רבי יוחנן, ולכן היא חביבה עליך? "חדת היא לך": האם חדשה היא לך, כי חשבת שאחר אמר אותה? והתשובה: חשבתי שרבי יהושע בן לוי אמר אותה.</p></div>
+  <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>ושל מוספין כל היום – הקשה הרב רבינו שמשון ז"ל דאמרי' בפרק תמיד נשחט (פסחים דף נח.) מוספין בשש בזיכין בשבע וכ"ת ה"מ למצוה אבל דיעבד כל יומא נמי זמניה הוא הרי בתמורה (פ"ב ד' יד) משמע שהמוספין היו נשחטין עם התמיד ונקטרין עמו. ותירץ דהתם מיירי בשבת:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מביאים את קושיית רבנו שמשון: במסכת פסחים נאמר שהמוספים קרבו בשש שעות, ובמסכת תמורה משמע שקרבו עם התמיד של הבוקר. ותירץ שבמסכת פסחים מדובר בשבת.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מתי מקדימים מנחה למוסף</h3>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>הלכה מתפלל של מנחה ואח"כ מתפלל של מוסף – מכאן יש ליזהר ביוה"כ להתפלל תפלת שחרית קודם שש שעות ומחצה דהיינו קודם שיגיע שעת המנחה דאל"כ היו צריכין להתפלל תפלת המנחה קודם והר"י אומר דאינו צריך דהא דקאמר שיתפלל תפלת המנחה קודם היינו כשיש לו לעשות צרכיו שלא יוכל להתפלל תפלת המנחה בזמנה וצריך להתפלל שניהם מיד כגון שהיה לו לילך לסעודה גדולה כמו לנשואין ומתיירא שמא ימשוך בסעודתו או …</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: יש שלמדו מכאן שביום הכיפורים צריך להתפלל שחרית לפני שש שעות וחצי, כדי שלא יצטרכו להקדים מנחה למוסף. רבי יצחק אומר שאין צורך. מקדימים מנחה רק כשאדם לא יוכל להתפלל אותה בזמנה, כמו מי שהולך לסעודת חתונה וחושש שיימשך או שישתכר. מי שיש לו זמן, מתפלל כסדר: מוסף ואחר כך מנחה.</p></div>
+    <p>לפי רבי יצחק, פסק ההלכה של רבי יוחנן חל רק כששתי התפילות צריכות להיאמר עכשיו, זו אחר זו. כשיש זמן, הסדר הרגיל נשמר.</p>
+  </div>
+  <p class="godeep">מתי, לפי רבי יצחק, מתפללים מנחה לפני מוסף? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אמר רבי יוחנן על מי שמאחר את המוסף?</summary><p>נקרא פושע.</p></details>
+  <details><summary>כמי פסק רבי יוחנן במחלוקת על מנחה ומוסף?</summary><p>כחכמים: קודם מנחה ואחר כך מוסף.</p></details>
+  <details><summary>למה רבי זירא ישב בפתח בית רבי נתן בר טובי?</summary><p>כדי לקום מפני החכמים שעוברים ולקבל שכר.</p></details>
+  <details class="deepq"><summary>מה שאל רבי נתן את רבי זירא, לפי רש"י?</summary><p>האם זו ההלכה היחידה שלמד בשם רבי יוחנן, או שהיא חדשה לו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G18,G19">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>"נוגי ממועד": המאחר את התפילה</h2>
+  <p class="lead">שני אמוראים דורשים את אותו פסוק על מי שמאחר את התפילה לדעת רבי יהודה: האחד על המוסף, והשני על שחרית.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>כל המתפלל תפלה של מוספין לאחר שבע שעות</td><td>כל המתפלל תפילה של מוספים אחרי שבע שעות,</td></tr>
+      <tr><td>נוגי ממועד אספתי ממך היו</td><td>"נוגי ממועד אספתי ממך היו".</td></tr>
+      <tr><td>דהאי נוגי לישנא דתברא הוא</td><td>ש"נוגי" זה לשון שבר הוא.</td></tr>
+      <tr><td>תברא אתי על שנאיהון דבית ישראל</td><td>שבר בא על שונאיהם של בית ישראל,</td></tr>
+      <tr><td>על דאחרו זמני מועדיא דבירושלים</td><td>על שאיחרו את זמני המועדים שבירושלים.</td></tr>
+      <tr><td>כל המתפלל תפלה של שחרית לאחר ארבע שעות</td><td>כל המתפלל תפילה של שחרית אחרי ארבע שעות,</td></tr>
+      <tr><td>דהאי נוגי לישנא דצערא הוא</td><td>ש"נוגי" זה לשון צער הוא,</td></tr>
+      <tr><td>דלפה נפשי מתוגה</td><td>"דלפה נפשי מתוגה".</td></tr>
+      <tr><td>בתולותיה נוגות והיא מר לה</td><td>"בתולותיה נוגות, והיא מר לה".</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רבי יהושע בן לוי:</b> מי שמתפלל מוסף אחרי שבע שעות, לדעת רבי יהודה, עליו נאמר "נוגי ממועד". "נוגי" לשון שבר, כמו שתרגם רב יוסף: שבר בא על שאיחרו את זמני המועדים.</p>
+  <p><b>רבי אלעזר:</b> מי שמתפלל שחרית אחרי ארבע שעות, לדעת רבי יהודה, עליו נאמר אותו פסוק. אצלו "נוגי" לשון צער, כמו "דלפה נפשי מתוגה".</p>
+  <p><b>רב נחמן בר יצחק:</b> מביא ראיה אחרת לפירוש של צער: "בתולותיה נוגות".</p>
+  <p><b>מה משותף:</b> שניהם מדברים לדעת רבי יהודה, שלפיו לכל תפילה יש גבול: שחרית עד ארבע שעות, ומוסף עד שבע שעות.</p>
+  <div data-hl="R25" class="voice r"><span class="tag">רש"י</span><blockquote>אמר ריב"ל גרסי' ול"ג דאמר:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מעיר על הנוסח: "אמר רבי יהושע בן לוי", ולא "דאמר".</p></div>
+  <div data-hl="R26" class="voice r"><span class="tag">רש"י</span><blockquote>ממועד – מחמת שהעבירו מועדי התפלות וחגים יהיו נוגים ואסופים וכלים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "ממועד" פירושו מפני שהעבירו את זמני התפילות והחגים, הם יהיו נוגים, אסופים וכלים.</p></div>
+  <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>כדמתרגם רב יוסף על דאחרו זמני מועדיא – ואי משתעי ברגלים אין שייך לומר לשון איחור שהרי אין להם תשלומין אלא ע"כ בתפלה משתעי קרא:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: אילו הפסוק דיבר ברגלים, לא היה מתאים לומר "איחרו", כי לרגלים אין תשלומים. על כורחנו הכתוב מדבר בתפילה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה הפסוק מדבר בתפילה</h3>
+    <p>תרגום רב יוסף אומר "על דאחרו זמני מועדיא", על שאיחרו את הזמנים. התוספות שואלים: איחור שייך רק במה שאפשר לעשות גם מאוחר. חג שעבר אינו חוזר, ולכן לא שייך לומר עליו "איחרו". תפילה, לעומת זאת, אפשר להתפלל מאוחר. לכן הפסוק מדבר בתפילה.</p>
+    <p>שני האמוראים נבדלים בפירוש המילה. לרבי יהושע בן לוי "נוגי" הוא שבר, עונש. לרבי אלעזר הוא צער. אבל שניהם מסכימים שהפסוק מדבר במי שמאחר את זמן התפילה.</p>
+  </div>
+  <p class="godeep">למה התוספות מסיקים שהפסוק מדבר בתפילה ולא בחגים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>על מי דורש רבי יהושע בן לוי "נוגי ממועד"?</summary><p>על מי שמתפלל מוסף אחרי שבע שעות, לדעת רבי יהודה.</p></details>
+  <details><summary>על מי דורש רבי אלעזר את אותו פסוק?</summary><p>על מי שמתפלל שחרית אחרי ארבע שעות, לדעת רבי יהודה.</p></details>
+  <details><summary>מה פירוש "נוגי" לפי רבי אלעזר?</summary><p>לשון צער, כמו "דלפה נפשי מתוגה".</p></details>
+  <details class="deepq"><summary>מה הקושי בפירוש הפסוק על רגלים, לפי התוספות?</summary><p>לרגלים אין תשלומים, ולכן לא שייך לומר עליהם לשון איחור.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>רבי אלעזר בן עזריה:</b> קיבל את הנשיאות, ונעשה לו נס של שמונה עשרה שורות שיער לבן.</li>
+      <li><b>בו ביום:</b> בית המדרש נפתח לכולם, נשנתה מסכת עדויות, ונפתרו כל ההלכות שעמדו בספק.</li>
+      <li><b>יהודה הגר העמוני:</b> הותר לבוא בקהל, כי סנחריב בלבל את האומות.</li>
+      <li><b>הפיוס:</b> רבן גמליאל פייס את רבי יהושע, וחזר לדרוש שלוש שבתות מתוך ארבע.</li>
+      <li><b>מוסף:</b> מי שמאחר אותו נקרא פושע. רבי יוחנן פוסק שמתפללים מנחה לפני מוסף.</li>
+      <li><b>"נוגי ממועד":</b> נדרש על מי שמאחר מוסף או שחרית לדעת רבי יהודה.</li>
+      <li><b>העמוד הבא:</b> מעשה ברב אויא, והשאלה אם מותר לטעום לפני תפילת המוסף.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>דלמא מעברין לך</td><td>שמא יעבירו אותך</td></tr>
+      <tr><td>כסא דמוקרא</td><td>כוס יקרה</td></tr>
+      <tr><td>חיורתא</td><td>שיער לבן</td></tr>
+      <tr><td>אין תוכו כברו</td><td>פנימיותו אינה כמו מה שנראה ממנו בחוץ</td></tr>
+      <tr><td>בו ביום</td><td>באותו יום</td></tr>
+      <tr><td>וכל דפריש מרובא פריש</td><td>כל מי שיוצא, מן הרוב הוא יוצא</td></tr>
+      <tr><td>נעניתי לך</td><td>דיברתי נגדך</td></tr>
+      <tr><td>מאן דלביש מדא</td><td>מי שלובש את המעיל, כלומר מי שרגיל בשררה</td></tr>
+      <tr><td>טרוקו גלי</td><td>נעלו את השערים</td></tr>
+      <tr><td>מזה בן מזה</td><td>כהן בן כהן, שמזה את מי החטאת</td></tr>
+      <tr><td>מעלין בקדש ואין מורידין</td><td>מעלים בקדושה, ואין מורידים</td></tr>
+      <tr><td>גמירי</td><td>מסורת בידינו</td></tr>
+      <tr><td>ונקרא פושע</td><td>ונקרא חוטא, מזלזל במצווה</td></tr>
+      <tr><td>חדא היא לך או חדת היא לך</td><td>האם זה דבר יחיד שלך, או דבר חדש לך</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-27b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-28b.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-28b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1a", "דלמא מעברין לך אמר לה [לשתמש אינש] יומא חדא בכסא דמוקרא ולמחר ליתבר", false, ""], ["G1b", "אמרה ליה לית לך חיורתא ההוא יומא בר תמני סרי שני הוה אתרחיש ליה ניסא ואהדרו ליה תמני סרי דרי חיורתא היינו דקאמר ר' אלעזר בן עזריה הרי אני כבן שבעים שנה ולא בן שבעים שנה", false, ""], ["G2", "תנא אותו היום סלקוהו לשומר הפתח ונתנה להם רשות לתלמידים ליכנס שהיה ר\"ג מכריז ואומר כל תלמיד שאין תוכו כברו לא יכנס לבית המדרש", false, ""], ["G3a", "ההוא יומא אתוספו כמה ספסלי א\"ר יוחנן פליגי בה אבא יוסף בן דוסתאי ורבנן חד אמר אתוספו ארבע מאה ספסלי וחד אמר שבע מאה ספסלי", false, ""], ["G3b", "הוה קא חלשא דעתיה דר\"ג אמר דלמא ח\"ו מנעתי תורה מישראל אחזו ליה בחלמיה חצבי חיורי דמליין קטמא ולא היא ההיא ליתובי דעתיה הוא דאחזו ליה", false, ""], ["G4", "תנא עדיות בו ביום נשנית וכל היכא דאמרינן בו ביום ההוא יומא הוה ולא היתה הלכה שהיתה תלויה בבית המדרש שלא פירשוה ואף ר\"ג לא מנע עצמו מבית המדרש אפילו שעה אחת", false, ""], ["G5", "דתנן בו ביום בא יהודה גר עמוני לפניהם בבית המדרש אמר להם מה אני לבא בקהל", true, ""], ["G6", "א\"ל ר\"ג אסור אתה לבא בקהל א\"ל ר' יהושע מותר אתה לבא בקהל א\"ל ר\"ג והלא כבר נאמר (דברים כג, ד) לא יבא עמוני ומואבי בקהל ה' א\"ל ר' יהושע וכי עמון ומואב במקומן הן יושבין כבר עלה סנחריב מלך אשור ובלבל את כל האומות שנאמר (ישעיהו י, יג) ואסיר גבולות עמים ועתידותיהם שוסתי ואוריד כאביר יושבים וכל דפריש מרובא פריש", false, ""], ["G7", "אמר לו ר\"ג והלא כבר נאמר (ירמיהו מט, ו) ואחרי כן אשיב את שבות בני עמון נאם ה' וכבר שבו", false, ""], ["G8", "אמר לו ר' יהושע והלא כבר נאמר (עמוס ט, יד) ושבתי את שבות עמי ישראל ועדיין לא שבו מיד התירוהו לבא בקהל", false, ""], ["G9", "אר\"ג הואיל והכי הוה איזיל ואפייסיה לר' יהושע כי מטא לביתיה חזינהו לאשיתא דביתיה דמשחרן א\"ל מכותלי ביתך אתה ניכר שפחמי אתה א\"ל אוי לו לדור שאתה פרנסו שאי אתה יודע בצערן של ת\"ח במה הם מתפרנסים ובמה הם נזונים", false, ""], ["G10", "אמר לו נעניתי לך מחול לי לא אשגח ביה עשה בשביל כבוד אבא פייס", false, ""], ["G11a", "אמרו מאן ניזיל ולימא להו לרבנן אמר להו ההוא כובס אנא אזילנא שלח להו ר' יהושע לבי מדרשא מאן דלביש מדא ילבש מדא ומאן דלא לביש מדא יימר ליה למאן דלביש מדא שלח מדך ואנא אלבשיה", false, ""], ["G11b", "אמר להו ר\"ע לרבנן טרוקו גלי דלא ליתו עבדי דר\"ג ולצערו לרבנן", false, ""], ["G12a", "א\"ר יהושע מוטב דאיקום ואיזיל אנא לגבייהו אתא טרף אבבא א\"ל מזה בן מזה יזה ושאינו לא מזה ולא בן מזה יאמר למזה בן מזה מימיך מי מערה ואפרך אפר מקלה", false, ""], ["G12b", "א\"ל ר\"ע רבי יהושע נתפייסת כלום עשינו אלא בשביל כבודך למחר אני ואתה נשכים לפתחו", false, ""], ["G13", "אמרי היכי נעביד נעבריה גמירי מעלין בקדש ואין מורידין נדרוש מר חדא שבתא ומר חדא שבתא אתי לקנאויי אלא לדרוש ר\"ג תלתא שבתי וראב\"ע חדא שבתא והיינו דאמר מר שבת של מי היתה של ראב\"ע היתה ואותו תלמיד ר' שמעון בן יוחאי הוה:", false, ""], ["G14", "ושל מוספין כל היום: א\"ר יוחנן ונקרא פושע", true, ""], ["G15", "ת\"ר היו לפניו שתי תפלות אחת של מנחה ואחת של מוסף מתפלל של מנחה ואח\"כ מתפלל של מוסף שזו תדירה וזו אינה תדירה ר' יהודה אומר מתפלל של מוסף ואח\"כ מתפלל של מנחה שזו מצוה עוברת וזו מצוה שאינה עוברת א\"ר יוחנן הלכה מתפלל של מנחה ואח\"כ מתפלל של מוסף", false, ""], ["G16", "ר' זירא כי הוה חליש מגירסיה הוה אזיל ויתיב אפתחא דבי ר' נתן בר טובי אמר כי חלפי רבנן אז איקום מקמייהו ואקבל אגרא נפק אתא ר' נתן בר טובי א\"ל מאן אמר הלכה בי מדרשא א\"ל הכי א\"ר יוחנן אין הלכה כר' יהודה דאמר מתפלל אדם של מוסף ואח\"כ מתפלל של מנחה", false, ""], ["G17", "א\"ל רבי יוחנן אמרה אמר ליה אין תנא מיניה ארבעין זמנין א\"ל חדא היא לך או חדת היא לך א\"ל חדת היא לי משום דמספקא לי בר' יהושע בן לוי:", false, ""], ["G18", "אריב\"ל כל המתפלל תפלה של מוספין לאחר שבע שעות לר' יהודה עליו הכתוב אומר (צפניה ג, יח) נוגי ממועד אספתי ממך היו מאי משמע דהאי נוגי לישנא דתברא הוא כדמתרגם רב יוסף תברא אתי על שנאיהון דבית ישראל על דאחרו זמני מועדיא דבירושלים", true, ""], ["G19", "א\"ר אלעזר כל המתפלל תפלה של שחרית לאחר ארבע שעות לר' יהודה עליו הכתוב אומר נוגי ממועד אספתי ממך היו מאי משמע דהאי נוגי לישנא דצערא הוא דכתיב (תהלים קיט, כח) דלפה נפשי מתוגה רב נחמן בר יצחק אמר מהכא (איכה א, ד) בתולותיה נוגות והיא מר לה", false, ""]], "R": [["R1", "מעברין לך", "יורידוך מן הנשיאות בשביל אחר:", false], ["R2", "", "ה\"ג דלמא מעברין לך אמר לה יומא חדא בכסא דמוקרא ולמחר ליתבר ול\"ג מעלין בקדש:", false], ["R3", "כסא דמוקרא", "כוס זכוכית יקרה שקורין לה בלשון ישמעאל ערקי\"א ואומרים בני אדם במשל הדיוט יום אחד ישתמש בו בעליו ויתכבד בו ואם ישבר ישבר:", false], ["R4", "לית לך חיורתא", "אין לך שערות לבנות של זקנה ונאה לדרשן להיות זקן:", false], ["R5", "י\"ח דרי חיורתא", "י\"ח שורות של זקנה:", false], ["R6", "קא חלשא דעתיה דר\"ג", "כשראה שנתוספו היום תלמידים רבים והיה דואג שלא יענש במה שמנעם בימיו מלבא:", false], ["R7", "דמליין קטמא", "כלומר אף אלו אינם ראויים:", false], ["R8", "תלויה", "בספק שלא פירשוה מתוך שרבו התלמידים רב החדוד והפלפול:", false], ["R9", "לאשיתא דביתיה דמשחרן", "כותלי ביתו של ר' יהושע שהיו שחורות:", false], ["R10", "שפחמי אתה", "עושה פחמים וי\"א נפח:", false], ["R11", "נעניתי לך", "דברתי למולך יותר מן הראוי:", false], ["R12", "דלביש מדא", "הרגיל ללבוש המעיל ילבש כלומר הרגיל בנשיאות יהיה נשיא:", false], ["R13", "מזה בן מזה", "כהן בן כהן יזה את מי חטאת:", false], ["R14", "אפר מקלה", "אפר הקלוי בתנורים ובכירות כלומר אפר סתם:", false], ["R15", "שבת של מי היתה", "במסכת חגיגה:", false], ["R16", "ואותו תלמיד", "ששאל תפלת ערבית רשות או חובה רשב\"י הוא:", false], ["R17", "ונקרא פושע", "המאחר כ\"כ:", false], ["R18", "מתפלל של מנחה", "מאחר שהגיע זמנה כדי להקדימה בתחלת זמנה שלא יקרא פושע גם עליה:", false], ["R19", "ואח\"כ של מוספין", "הואיל ואיחר זמנה אינו עובר דהא אמרי רבנן ושל מוספים כל היום:", false], ["R20", "שזו מצוה עוברת", "ר' יהודה לטעמיה דאמר עד שבע שעות ותו לא:", false], ["R21", "כי חלפי רבנן", "תלמידים היוצאים מבית ר' נתן:", false], ["R22", "מאן אמר הלכה בי מדרשא", "מי מבני הישיבה אמר בבית המדרש שהלכה כר' יהודה:", false], ["R23", "חדא היא לך או חדת היא לך", "אחת היא לך שלא למדת דבר משמו של ר' יוחנן אלא זו בלבד לכך חביבה היא לך או חדשה היא לך שהיית סבור שאחד מן האחרים אמרה:", false], ["R24", "ה\"ג א\"ל חדת היא לי דמספקא לי בר' יהושע בן לוי", "סבור הייתי שרבי יהושע בן לוי אמרה:", false], ["R25", "", "אמר ריב\"ל גרסי' ול\"ג דאמר:", false], ["R26", "ממועד", "מחמת שהעבירו מועדי התפלות וחגים יהיו נוגים ואסופים וכלים:", false]], "T": [["T1", "ושל מוספין כל היום", "הקשה הרב רבינו שמשון ז\"ל דאמרי' בפרק תמיד נשחט (פסחים דף נח.) מוספין בשש בזיכין בשבע וכ\"ת ה\"מ למצוה אבל דיעבד כל יומא נמי זמניה הוא הרי בתמורה (פ\"ב ד' יד) משמע שהמוספין היו נשחטין עם התמיד ונקטרין עמו. ותירץ דהתם מיירי בשבת:", false], ["T2", "הלכה מתפלל של מנחה ואח\"כ מתפלל של מוסף", "מכאן יש ליזהר ביוה\"כ להתפלל תפלת שחרית קודם שש שעות ומחצה דהיינו קודם שיגיע שעת המנחה דאל\"כ היו צריכין להתפלל תפלת המנחה קודם והר\"י אומר דאינו צריך דהא דקאמר שיתפלל תפלת המנחה קודם היינו כשיש לו לעשות צרכיו שלא יוכל להתפלל תפלת המנחה בזמנה וצריך להתפלל שניהם מיד כגון שהיה לו לילך לסעודה גדולה כמו לנשואין ומתיירא שמא ימשוך בסעודתו או שישתכר אבל אם היה לו שהות להתפלל אחר תפלת מוסף תפלת המנחה בזמנה אין לו להקדים תפלת המנחה אלא יתפלל כסדר מוסף ואח\"כ מנחה:", false], ["T3", "כדמתרגם רב יוסף על דאחרו זמני מועדיא", "ואי משתעי ברגלים אין שייך לומר לשון איחור שהרי אין להם תשלומין אלא ע\"כ בתפלה משתעי קרא:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': תשובת האשה", "x": "העמוד הקודם הסתיים באמצע מעשה. החכמים החליטו להעביר את רבן גמליאל מן הנשיאות, ובחרו ברבי אלעזר בן עזריה. הוא אמר שילך להתייעץ עם אשתו, והלך. כאן באה תשובתה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1a", "R1"], "t": "\"דלמא מעברין לך\"", "x": "אשתו אמרה לו: \"דלמא מעברין לך\", שמא יעבירו גם אותך. רש\"י מפרש: יורידו אותך מן הנשיאות וימנו אחר במקומך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1a", "R2", "R3"], "t": "\"כסא דמוקרא\": כוס יקרה ליום אחד", "x": "אמר לה: שישתמש אדם יום אחד בכוס יקרה, ולמחר שתישבר. רש\"י מפרש: כוס זכוכית יקרה, ובני אדם אומרים במשל: יום אחד ישתמש בה בעליה ויתכבד בה, ואם תישבר, תישבר. רש\"י גם מעיר על הנוסח הנכון של המשפט.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1b", "R4", "R5"], "t": "שמונה עשרה שורות של שיער לבן", "x": "אמרה לו: \"לית לך חיורתא\", אין לך שיער לבן. רש\"י מסביר: יפה לדרשן להיות זקן. באותו יום היה בן שמונה עשרה שנה. נעשה לו נס, והפכו לו שמונה עשרה שורות של שיער לבן. וזה מה שאמר רבי אלעזר בן עזריה: \"הרי אני כבן שבעים שנה\", ולא בן שבעים שנה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "השומר הוסר מן הפתח", "x": "\"תנא\", שנינו בברייתא: באותו יום הורידו את שומר הפתח, וניתנה רשות לתלמידים להיכנס. כי רבן גמליאל היה מכריז: כל תלמיד ש\"אין תוכו כברו\", שפנימיותו אינה כמו מה שנראה בחוץ, לא ייכנס לבית המדרש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3a"], "t": "ארבע מאות או שבע מאות ספסלים", "x": "באותו יום נוספו ספסלים רבים. אמר רבי יוחנן: נחלקו בכך אבא יוסף בן דוסתאי וחכמים. אחד אמר שנוספו ארבע מאות ספסלים, ואחד אמר שבע מאות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3b", "R6", "R7"], "t": "החלום של רבן גמליאל", "x": "רבן גמליאל נחלש בדעתו, ואמר: שמא, חס וחלילה, מנעתי תורה מישראל. רש\"י מסביר: הוא דאג שייענש על שמנע מהם לבוא בימיו. הראו לו בחלומו כדים לבנים מלאים אפר, ורש\"י מפרש: כלומר, גם התלמידים האלה אינם ראויים. \"ולא היא\", ולא כך היה. רק כדי ליישב את דעתו הראו לו זאת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R8"], "t": "\"בו ביום\"", "x": "שנינו: מסכת עדויות נשנתה באותו יום, וכל מקום שאומרים \"בו ביום\", הכוונה לאותו יום. ולא נשארה הלכה תלויה בבית המדרש שלא פירשו אותה. רש\"י מסביר: הלכה שעמדה בספק, ובאותו יום פירשו אותה, כי רבו התלמידים וגדלו החידוד והפלפול. ואף רבן גמליאל לא מנע עצמו מבית המדרש אפילו שעה אחת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "יהודה הגר העמוני", "x": "הגמרא מביאה דוגמה לדבר שנאמר \"בו ביום\". שנינו במשנה: באותו יום בא יהודה, גר עמוני, לפני החכמים בבית המדרש. שאל אותם: מה אני לבוא בקהל? כלומר, האם מותר לי לשאת אשה מישראל?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6"], "t": "רבן גמליאל אוסר, רבי יהושע מתיר", "x": "אמר לו רבן גמליאל: אסור אתה. ורבי יהושע אמר: מותר אתה. רבן גמליאל הקשה: והרי נאמר \"לא יבא עמוני ומואבי בקהל ה'\". ענה רבי יהושע: וכי עמון ומואב יושבים במקומם? כבר עלה סנחריב מלך אשור ובלבל את כל האומות, כמו שנאמר \"ואסיר גבולות עמים\". \"וכל דפריש מרובא פריש\", מי שבא מהם, מן הרוב הוא בא, והרוב אינם עמונים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "רבן גמליאל: הם כבר חזרו", "x": "אמר לו רבן גמליאל: והרי נאמר \"ואחרי כן אשיב את שבות בני עמון, נאם ה'\", וכבר חזרו למקומם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8"], "t": "רבי יהושע: וישראל עוד לא שבו", "x": "אמר לו רבי יהושע: והרי נאמר \"ושבתי את שבות עמי ישראל\", ועדיין לא שבו. מיד התירו את יהודה לבוא בקהל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R9", "R10"], "t": "רבן גמליאל הולך לפייס", "x": "אמר רבן גמליאל: כיוון שכך, אלך ואפייס את רבי יהושע. כשהגיע לביתו, ראה שקירות הבית שחורים. אמר לו: מקירות ביתך ניכר שאתה \"פחמי\". רש\"י מפרש: עושה פחמים, ויש אומרים נפח. אמר לו רבי יהושע: אוי לו לדור שאתה מנהיגו, שאינך יודע את צערם של תלמידי החכמים, במה הם מתפרנסים ובמה הם ניזונים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R11"], "t": "\"עשה בשביל כבוד אבא\"", "x": "אמר לו רבן גמליאל: \"נעניתי לך\", ורש\"י מפרש: דיברתי נגדך יותר מן הראוי. מחל לי. רבי יהושע לא שם לב אליו. אמר לו: עשה זאת בשביל כבוד אבי. ונתפייס.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11a", "R12"], "t": "\"מאן דלביש מדא\"", "x": "אמרו: מי ילך ויאמר לחכמים? אמר כובס אחד: אני אלך. שלח רבי יהושע לבית המדרש: מי שלובש את המעיל, ילבש את המעיל. ומי שאינו לובש את המעיל, יאמר למי שלובש: הסר את מעילך ואני אלבש אותו? רש\"י מפרש: מי שרגיל בנשיאות, הוא יהיה הנשיא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11b"], "t": "רבי עקיבא: נעלו את השערים", "x": "אמר רבי עקיבא לחכמים: נעלו את השערים, שלא יבואו עבדיו של רבן גמליאל ויצערו את החכמים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12a", "R13", "R14"], "t": "רבי יהושע בא בעצמו", "x": "אמר רבי יהושע: מוטב שאקום ואלך אני אליהם. בא ודפק על הדלת. אמר להם: \"מזה בן מזה\", ורש\"י מפרש: כהן בן כהן, יזה את מי החטאת. ומי שאינו מזה ואינו בן מזה, יאמר למזה בן מזה: המים שלך מי מערה, והאפר שלך אפר מקלה? רש\"י מפרש: אפר רגיל, שנשרף בתנורים ובכיריים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12b"], "t": "רבי עקיבא: נשכים לפתחו", "x": "אמר לו רבי עקיבא: רבי יהושע, נתפייסת? לא עשינו דבר אלא בשביל כבודך. מחר אני ואתה נשכים לפתחו של רבן גמליאל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13"], "t": "הפשרה: שלוש שבתות ושבת אחת", "x": "אמרו החכמים: מה נעשה? נעביר את רבי אלעזר בן עזריה? \"גמירי\", מסורת בידינו: \"מעלין בקודש ואין מורידין\". שידרוש כל אחד שבת אחת? זה יביא לידי קנאה. אלא ידרוש רבן גמליאל שלוש שבתות, ורבי אלעזר בן עזריה שבת אחת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R15", "R16"], "t": "\"של מי הייתה השבת\"", "x": "וזה מה שנאמר במקום אחר: \"שבת של מי הייתה? של רבי אלעזר בן עזריה הייתה\". רש\"י מציין שזה במסכת חגיגה. ואותו תלמיד ששאל אם תפילת ערבית רשות או חובה, היה רבי שמעון בן יוחאי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R17"], "t": "מוסף כל היום, \"ונקרא פושע\"", "x": "חוזרים למשנה: \"ושל מוספין כל היום\". אמר רבי יוחנן: ונקרא פושע. רש\"י מפרש: מי שמאחר כל כך את המוסף נקרא פושע.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G14", "T1"], "t": "התוספות: הקושיה של רבנו שמשון", "x": "רבנו שמשון הקשה: במסכת פסחים נאמר שקרבנות המוסף קרבו בשש שעות, והבזיכים בשבע. ואם תאמר שזה רק לכתחילה, ובדיעבד כל היום זמנו, הרי במסכת תמורה משמע שהמוספים נשחטו והוקטרו יחד עם התמיד של הבוקר. ותירץ: הדברים שבמסכת פסחים נאמרו בשבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R18", "R19", "R20"], "t": "שתי תפילות: רבי יוחנן פוסק", "x": "הגמרא חוזרת לברייתא: מי שעומדות לפניו תפילת מנחה ותפילת מוסף, לחכמים מתפלל קודם מנחה, כי היא תדירה. לרבי יהודה קודם מוסף, כי הוא מצווה שזמנה עובר. רבי יוחנן פוסק: מתפלל מנחה ואחר כך מוסף. רש\"י מסביר: את המנחה מתפלל בתחילת זמנה, כדי שלא ייקרא פושע גם עליה. והמוסף, שכבר איחר אותו, אינו עובר, כי לחכמים זמנו כל היום.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T2"], "t": "התוספות: מה עושים ביום הכיפורים", "x": "מכאן יש אומרים שיש להיזהר ביום הכיפורים להתפלל שחרית לפני שש שעות וחצי, כלומר לפני שמגיע זמן המנחה. אחרת היו צריכים להתפלל מנחה לפני מוסף. רבי יצחק אומר שאין צורך. ההלכה להקדים מנחה נאמרה רק במי שלא יוכל להתפלל מנחה בזמנה, למשל מי שהולך לסעודה גדולה כמו חתונה, וחושש שיימשך בה או שישתכר. אבל מי שיש לו זמן להתפלל מנחה אחרי המוסף, יתפלל כסדר: מוסף ואחר כך מנחה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R21", "R22"], "t": "רבי זירא יושב בפתח", "x": "רבי זירא, כשהיה עייף מלימודו, היה יושב בפתח ביתו של רבי נתן בר טובי. אמר: כשיעברו החכמים, אקום מפניהם ואקבל שכר. רש\"י מפרש: אלה התלמידים שיצאו מבית רבי נתן. יצא רבי נתן בר טובי, ונשאל: מי אמר הלכה בבית המדרש? רש\"י מסביר שהשאלה היא מי אמר שם שהלכה כרבי יהודה. ענה: כך אמר רבי יוחנן, אין הלכה כרבי יהודה שאמר שמתפללים מוסף ואחר כך מנחה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17", "R23", "R24"], "t": "\"חדא היא לך או חדת היא לך\"", "x": "שאל: רבי יוחנן אמר זאת? ענה: כן. רבי זירא חזר על הדבר ארבעים פעמים. שאל אותו: האם זה דבר יחיד שלמדת, או דבר חדש לך? רש\"י מסביר: האם זו ההלכה היחידה שלמדת בשם רבי יוחנן, ולכן היא חביבה עליך, או שחשבת שאחר אמר אותה? ענה: חדשה היא לי, כי חשבתי שרבי יהושע בן לוי אמר אותה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18", "R25", "R26"], "t": "רבי יהושע בן לוי: מוסף אחרי שבע שעות", "x": "אמר רבי יהושע בן לוי: מי שמתפלל מוסף אחרי שבע שעות, לדעת רבי יהודה, עליו הכתוב אומר \"נוגי ממועד אספתי ממך היו\". רש\"י מפרש: מפני שהעבירו את זמני התפילות והחגים, יהיו נוגים, אסופים וכלים. ומניין ש\"נוגי\" לשון שבר? כמו שרב יוסף מתרגם: שבר בא על שונאיהם של בית ישראל, על שאיחרו את זמני המועדים בירושלים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G18", "T3"], "t": "התוספות: הפסוק מדבר בתפילה", "x": "אילו הפסוק היה מדבר ברגלים, לא היה מתאים לומר עליהם לשון איחור, כי אין להם תשלומים. על כורחנו הכתוב מדבר בתפילה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19"], "t": "רבי אלעזר: שחרית אחרי ארבע שעות", "x": "אמר רבי אלעזר: מי שמתפלל שחרית אחרי ארבע שעות, לדעת רבי יהודה, עליו נאמר אותו פסוק. והוא לומד את \"נוגי\" מלשון \"תוגה\", צער, כמו בפסוק \"דלפה נפשי מתוגה\". רב נחמן בר יצחק אמר: מכאן, \"בתולותיה נוגות והיא מר לה\".", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "רבי אלעזר בן עזריה מונה, ובאותו יום נפתח בית המדרש לכולם, ונפסקו בו הלכות רבות, ביניהן היתר ליהודה הגר העמוני. רבן גמליאל פייס את רבי יהושע וחזר, והוסכם שידרוש שלוש שבתות ורבי אלעזר בן עזריה אחת. מי שמאחר את המוסף נקרא פושע, ורבי יוחנן פוסק שמתפללים מנחה לפני מוסף. העמוד הבא פותח במעשה ברב אויא, שלא בא לשיעור של רב יוסף, ובשאלה אם מותר לטעום לפני תפילת המוסף.", "a": ""}], "audio": "daf-28a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

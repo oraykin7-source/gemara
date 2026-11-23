@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף ל&quot;ד עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף ל&quot;ד עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>ברכות</span><span>פרק חמישי</span><span>אין עומדין</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-34a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-35a.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 66</div>
+  <h1>מסכת ברכות, דף ל&quot;ד עמוד ב&#x27;</h1>
+  <p class="sub">פרק חמישי, &quot;אין עומדין&quot;. כריעה בתפילה, המתפלל וטעה, ורבי חנינא בן דוסא. סוף הפרק.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 6 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. כל אחד כורע לפי מעמדו</a><a href="#u2">2. הכריעה בהודאה: משובח או מגונה</a><a href="#u3">3. המתפלל וטעה, סימן רע לו</a><a href="#u4">4. "עין לא ראתה"</a><a href="#u5">5. תפילותיו של רבי חנינא בן דוסא</a><a href="#u6">6. מקום התפילה, וכיסוי החטא</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>כל אחד כורע לפי מעמדו</h2>
+  <p class="lead">בר קפרא מבחין בין אדם רגיל, כהן גדול ומלך. אחר כך ברייתא מגדירה שלוש צורות של השתחוויה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>כהן גדול בסוף כל ברכה וברכה</td><td>כהן גדול, בסוף כל ברכה וברכה,</td></tr>
+      <tr><td>והמלך תחלת כל ברכה וברכה וסוף כל ברכה וברכה</td><td>והמלך, בתחילת כל ברכה וברכה ובסוף כל ברכה וברכה.</td></tr>
+      <tr><td>לדידי מפרשא לי מיניה דריב"ל</td><td>לי עצמי פירש זאת רבי יהושע בן לוי:</td></tr>
+      <tr><td>כהן גדול תחלת כל ברכה וברכה</td><td>כהן גדול, בתחילת כל ברכה וברכה.</td></tr>
+      <tr><td>המלך כיון שכרע שוב אינו זוקף</td><td>המלך, כיוון שכרע, שוב אינו זוקף.</td></tr>
+      <tr><td>קידה על אפים</td><td>קידה היא על הפנים,</td></tr>
+      <tr><td>כריעה על ברכים</td><td>כריעה היא על הברכיים,</td></tr>
+      <tr><td>השתחואה זו פשוט ידים ורגלים</td><td>השתחוויה היא פשיטת ידיים ורגליים.</td></tr>
+      <tr><td>חזינא להו לאביי ורבא דמצלו אצלויי</td><td>ראיתי את אביי ורבא שהיו מטים את עצמם על הצד.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>בר קפרא:</b> אדם רגיל כורע רק במקומות שנקבעו. כהן גדול כורע בסוף כל ברכה. המלך כורע בתחילת כל ברכה ובסופה.</p>
+  <p><b>רבי יצחק בר נחמני</b> מוסר את הדברים אחרת, כפי ששמע מרבי יהושע בן לוי: כהן גדול כורע בתחילת כל ברכה, והמלך כורע פעם אחת ואינו זוקף עד סוף התפילה. הוא לומד זאת משלמה, שקם "מכרוע על ברכיו" רק כשסיים להתפלל.</p>
+  <p><b>שלוש צורות:</b> קידה היא על הפנים, כריעה היא על הברכיים, והשתחוויה היא השתטחות בידיים וברגליים פשוטות. לכל אחת מובא פסוק.</p>
+  <p><b>אביי ורבא</b> לא השתטחו לגמרי, אלא הטו את עצמם על הצד.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>כהן גדול בסוף כל ברכה – כל מה שהוא גדול ביותר צריך להכניע ולהשפיל עצמו:</blockquote><p><span class="say">מה רש"י אומר:</span> כל מי שגדול יותר צריך להכניע ולהשפיל את עצמו יותר.</p></div>
+  <div data-hl="R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>אינו זוקף – עד שיגמור:</blockquote><blockquote>קם מלפני מזבח ה' מכרוע – רישיה דקרא ויהי ככלות שלמה להתפלל והדר קם מכרוע:</blockquote><p><span class="say">מה רש"י אומר:</span> המלך אינו זוקף עד שיגמור. בפסוק נאמר קודם "ויהי ככלות שלמה להתפלל", ורק אחר כך "קם מכרוע".</p></div>
+  <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>ארצה – לשון משתטח משמע:</blockquote><p><span class="say">מה רש"י אומר:</span> "ארצה" משמעו השתטחות.</p></div>
+  <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>דמצלו אצלויי – כשנופלין על פניהם אין פושטין ידיהם ורגליהם אלא מטין על צדיהן:</blockquote><p><span class="say">מה רש"י אומר:</span> כשנופלים על פניהם, אינם פושטים ידיים ורגליים, אלא מטים על צידם.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מן הקבלה ומן הפסוק</h3>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>קידה על אפים – ומייתי קרא אע"ג דאשכחן נמי בענין אחר יש לומר דקים ליה מקבלה דקידה על אפים ומייתי קרא דמסייעו:</blockquote><p><span class="say">מה התוספות אומרים:</span> המילה "קידה" באה בתורה גם בעניין אחר, ולכן הפסוק לבדו אינו מוכיח. התוספות אומרים: הברייתא ידעה מן הקבלה שקידה היא על הפנים, והפסוק מובא רק כסיוע.</p></div>
+    <p>לפי רש"י, הכלל שמאחורי בר קפרא הוא ענווה לפי גודל: מי שמעמדו גבוה יותר, משפיל את עצמו יותר בתפילה.</p>
+  </div>
+  <p class="godeep">מה הכלל שעומד מאחורי ההבדל בין אדם רגיל לכהן גדול ולמלך? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>כמה פעמים כורע המלך לפי רבי יצחק בר נחמני?</summary><p>פעם אחת, ואינו זוקף עד שיגמור.</p></details>
+  <details><summary>מה ההבדל בין קידה, כריעה והשתחוויה?</summary><p>קידה על הפנים, כריעה על הברכיים, השתחוויה בפשיטת ידיים ורגליים.</p></details>
+  <details><summary>איך נפלו אביי ורבא על פניהם?</summary><p>הטו את עצמם על הצד, בלי לפשוט ידיים ורגליים.</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה המלך כורע יותר מכולם?</summary><p>כל מי שגדול יותר צריך להשפיל את עצמו יותר.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G5,G6,G7,G8,G9,G10,G11">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>הכריעה בהודאה: משובח או מגונה</h2>
+  <p class="lead">שתי ברייתות סותרות על הכריעה בברכת ההודאה. הגמרא מיישבת, ואחר כך בודקת את המעשה של רבא.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>תני חדא הכורע בהודאה הרי זה משובח</td><td>שנויה ברייתא אחת: הכורע בהודאה, הרי זה משובח.</td></tr>
+      <tr><td>ותניא אידך הרי זה מגונה</td><td>ושנויה אחרת: הרי זה מגונה.</td></tr>
+      <tr><td>לא קשיא הא בתחלה הא לבסוף</td><td>אין סתירה: זו בתחילה, וזו בסוף.</td></tr>
+      <tr><td>רבא כרע בהודאה תחלה וסוף</td><td>רבא כרע בהודאה, בתחילה ובסוף.</td></tr>
+      <tr><td>אמאי קא עביד מר הכי</td><td>למה אדוני עושה כך?</td></tr>
+      <tr><td>חזינא לרב נחמן דכרע</td><td>ראיתי את רב נחמן שכרע,</td></tr>
+      <tr><td>וחזינא ליה לרב ששת דקא עבד הכי</td><td>וראיתי את רב ששת שעשה כך.</td></tr>
+      <tr><td>ההיא בהודאה שבהלל</td><td>ההיא, בהודאה שבהלל.</td></tr>
+      <tr><td>הכורע בהודאה ובהודאה של הלל הרי זה מגונה</td><td>הכורע בהודאה ובהודאה של הלל, הרי זה מגונה.</td></tr>
+      <tr><td>כי תניא ההיא בהודאה דברכת המזון</td><td>כשנשנתה ההיא, בהודאה של ברכת המזון.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>שתי ברייתות:</b> אחת משבחת את הכורע בהודאה, ואחת קוראת לזה מגונה. הגמרא מיישבת: בתחילת הברכה משובח, ובסופה מגונה.</p>
+  <p><b>רבא</b> כרע גם בתחילה וגם בסוף, והחכמים שאלו אותו למה. הוא ענה שראה כך את רב נחמן ואת רב ששת.</p>
+  <p><b>הקושיה:</b> הרי יש ברייתא שקוראת לכריעה בהודאה מגונה. התשובה הראשונה: היא מדברת על ההודאה שבהלל. אבל ברייתא אחרת מונה את שתיהן בנפרד, ההודאה וההודאה שבהלל. לכן התשובה האחרונה: "ההודאה" שבה היא של ברכת המזון.</p>
+  <p>כך מתברר שהכריעה של רבא בתפילה אינה סותרת שום ברייתא.</p>
+  <div data-hl="R6" class="voice r"><span class="tag">רש"י</span><blockquote>בתחלה – כורע:</blockquote><p><span class="say">מה רש"י אומר:</span> "בתחלה": בתחילת הברכה כורע.</p></div>
+  <div data-hl="R7" class="voice r"><span class="tag">רש"י</span><blockquote>חזינא לרב נחמן דכרע – תחלה וסוף:</blockquote><p><span class="say">מה רש"י אומר:</span> רב נחמן ורב ששת כרעו בתחילה ובסוף.</p></div>
+  <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>בהודאה דהלל – הודו לה' כי טוב:</blockquote><p><span class="say">מה רש"י אומר:</span> ההודאה שבהלל היא "הודו לה' כי טוב".</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך ברייתא אחת מכריעה</h3>
+    <p>התשובה "ההיא בהודאה שבהלל" נופלת כשמביאים ברייתא שמזכירה את שתיהן יחד. אם הברייתא מונה את ההודאה ואת ההודאה שבהלל כשני דברים, "ההודאה" שבה אינה של ההלל. לכן מחפשים הודאה שלישית, זו של ברכת המזון.</p>
+    <p>הדרך הזו מוכרת: מקור שמונה שני דברים בנפרד מראה שאינם אותו דבר.</p>
+  </div>
+  <p class="godeep">למה התשובה הראשונה, ההודאה שבהלל, אינה מספיקה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>איך מיישבים את שתי הברייתות הראשונות?</summary><p>אחת מדברת על תחילת הברכה, והשנייה על סופה.</p></details>
+  <details><summary>על מי סמך רבא?</summary><p>על רב נחמן ועל רב ששת, שראה אותם כורעים.</p></details>
+  <details><summary>לפי התשובה האחרונה, על איזו הודאה נאמר "מגונה"?</summary><p>על ההודאה שבברכת המזון.</p></details>
+  <details class="deepq"><summary>למה נדחתה התשובה שמדובר בהודאה שבהלל?</summary><p>כי ברייתא אחרת מונה את ההודאה ואת ההודאה של הלל כשני דברים.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G12,G13,G14,G15,G16,G17">
+  <div class="kicker">יחידה 3 · משנה</div>
+  <h2>המתפלל וטעה, סימן רע לו</h2>
+  <p class="lead">המשנה האחרונה בפרק מלמדת שטעות בתפילה היא סימן, ומביאה את רבי חנינא בן דוסא, שידע מתוך תפילתו אם החולה יחיה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>המתפלל וטעה סימן רע לו</td><td>המתפלל וטעה, סימן רע לו.</td></tr>
+      <tr><td>ואם שליח צבור הוא סימן רע לשולחיו</td><td>ואם שליח ציבור הוא, סימן רע לשולחיו,</td></tr>
+      <tr><td>מפני ששלוחו של אדם כמותו</td><td>מפני ששלוחו של אדם כמותו.</td></tr>
+      <tr><td>שהיה מתפלל על החולים ואומר זה חי וזה מת</td><td>שהיה מתפלל על החולים, ואומר: זה חי וזה מת.</td></tr>
+      <tr><td>אם שגורה תפלתי בפי</td><td>אם שגורה תפילתי בפי,</td></tr>
+      <tr><td>יודע אני שהוא מקובל</td><td>יודע אני שהיא מקובלת,</td></tr>
+      <tr><td>ואם לאו יודע אני שהוא מטורף</td><td>ואם לא, יודע אני שהיא דחויה.</td></tr>
+      <tr><td>אהייא</td><td>על איזו (ברכה)?</td></tr>
+      <tr><td>משום חד דבי רבי באבות</td><td>בשם אחד מבית רבי: בברכת "אבות".</td></tr>
+      <tr><td>איכא דמתני לה אברייתא</td><td>יש ששונים זאת על ברייתא:</td></tr>
+      <tr><td>המתפלל צריך שיכוין את לבו בכולן</td><td>המתפלל צריך לכוון את לבו בכולן.</td></tr>
+      <tr><td>ואם אינו יכול לכוין בכולן יכוין את לבו באחת</td><td>ואם אינו יכול לכוון בכולן, יכוון את לבו באחת.</td></tr>
+      <tr><td>בורא ניב שפתים שלום שלום</td><td>בורא ניב שפתיים: שלום, שלום.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> טעות בתפילה היא סימן רע למתפלל. ואם שליח ציבור טעה, הסימן הרע הוא לציבור ששלח אותו, כי השליח הוא כמו מי ששלח אותו.</p>
+  <p><b>רבי חנינא בן דוסא</b> ידע מתוך תפילתו מה יהיה עם החולה. כשהתפילה זרמה בפיו, ידע שהיא התקבלה.</p>
+  <p><b>"אהייא":</b> הגמרא שואלת באיזו ברכה הטעות היא סימן רע. התשובה: בברכת "אבות". יש ששונים את אותה תשובה על ברייתא אחרת: מי שאינו יכול לכוון בכל הברכות, יכוון באחת, והיא ברכת "אבות".</p>
+  <p><b>המקור לרבי חנינא:</b> "בורא ניב שפתים, שלום שלום". כשהדיבור בא בשלמות, יש שלום.</p>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' אם שגורה – אם סדורה תפלתי בפי במרוצה ואיני נכשל ותחנתי נובעת מלבי אל פי כל מה שאני חפץ להאריך בתחנונים:</blockquote><p><span class="say">מה רש"י אומר:</span> "שגורה": תפילתי סדורה בפי ובאה במהירות, אינני נכשל, והתחנונים נובעים מלבי אל פי.</p></div>
+  <div data-hl="R11,R12" class="voice r"><span class="tag">רש"י</span><blockquote>גמ' אהייא – בהיכא ובאיזו מן הברכות הוי טעות בסימן רע:</blockquote><blockquote>באבות – שהוא תחלת התפלה רמז הוא שאין חפץ בה:</blockquote><p><span class="say">מה רש"י אומר:</span> "אהייא": באיזו ברכה הטעות היא סימן רע? בברכת "אבות", שהיא תחילת התפילה, וטעות בה היא רמז שאין רצון בתפילה.</p></div>
+  <div data-hl="R13" class="voice r"><span class="tag">רש"י</span><blockquote>בורא ניב שפתים – כשהניב בריא באדם אז מובטח על השלום:</blockquote><p><span class="say">מה רש"י אומר:</span> כשהניב, הדיבור, בריא בפי האדם, מובטח לו השלום.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מי "מטורף"</h3>
+    <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>שהוא מטורף – החולה לשון אחר [לשון] טורפין לו תפלתו בפניו כלומר התפלה שהתפללו עליו מטורפת וטרודה ממנו ואינה מקובלת:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מביא שני פירושים. לפי האחד, "מטורף" הוא החולה. לפי השני, התפילה שהתפללו עליו נדחית, כמו "טורפין לו תפילתו בפניו": היא טרודה ממנו ואינה מקובלת.</p></div>
+    <h3>כוונה בברכה אחת</h3>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>יכוין לבו באחת מהן – והא דאמרי' בסוף פרק ת"ה (ברכות ל ב) לעולם ימוד אדם דעתו אם יכול לכוין יתפלל ואם לאו אל יתפלל יש לפרש התם נמי באחת מהן:</blockquote><p><span class="say">מה התוספות אומרים:</span> בסוף פרק "תפילת השחר" נאמר: אדם יאמוד את דעתו, ואם אינו יכול לכוון, אל יתפלל. התוספות מיישבים בעזרת הברייתא שכאן: גם שם הכוונה לכוונה באחת מן הברכות, ברכת "אבות".</p></div>
+  </div>
+  <p class="godeep">מה עושה מי שאינו יכול לכוון בכל התפילה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה טעות של שליח ציבור היא סימן רע לציבור?</summary><p>כי שלוחו של אדם כמותו.</p></details>
+  <details><summary>איך ידע רבי חנינא בן דוסא אם החולה יחיה?</summary><p>אם התפילה הייתה שגורה בפיו, ידע שהיא מקובלת.</p></details>
+  <details><summary>באיזו ברכה הטעות היא סימן רע?</summary><p>בברכת "אבות".</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה דווקא בברכת "אבות"?</summary><p>כי היא תחילת התפילה, וטעות בה היא רמז שאין רצון בתפילה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G18,G19,G20,G21,G22,G23,G24,G25,G26">
+  <div class="kicker">יחידה 4 · אגדה</div>
+  <h2>"עין לא ראתה"</h2>
+  <p class="lead">שלושה מאמרים של רבי יוחנן על מה שהנביאים ניבאו, ומה שנשאר מעבר לנבואה. בשניים מהם הגמרא מציינת שאמוראים אחרים חולקים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>כל הנביאים כולן לא נתנבאו אלא</td><td>כל הנביאים כולם לא ניבאו אלא</td></tr>
+      <tr><td>למשיא בתו לתלמיד חכם</td><td>למשיא את בתו לתלמיד חכם,</td></tr>
+      <tr><td>ולמהנה ת"ח מנכסיו</td><td>ולמי שמהנה תלמיד חכם מנכסיו.</td></tr>
+      <tr><td>אבל לעולם הבא עין לא ראתה אלהים זולתך</td><td>אבל לעולם הבא: "עין לא ראתה אלהים זולתך".</td></tr>
+      <tr><td>אין בין העוה"ז לימות המשיח</td><td>אין הבדל בין העולם הזה לימות המשיח</td></tr>
+      <tr><td>אלא שעבוד מלכיות בלבד</td><td>אלא שעבוד מלכויות בלבד.</td></tr>
+      <tr><td>מקום שבעלי תשובה עומדין</td><td>במקום שבעלי תשובה עומדים,</td></tr>
+      <tr><td>צדיקים גמורים אינם עומדין</td><td>צדיקים גמורים אינם עומדים.</td></tr>
+      <tr><td>לרחוק ברישא והדר לקרוב</td><td>"לרחוק" קודם, ורק אחר כך "לקרוב".</td></tr>
+      <tr><td>שהיה רחוק מדבר עבירה מעיקרא</td><td>שהיה רחוק מעבירה מתחילתו.</td></tr>
+      <tr><td>שהיה קרוב לדבר עבירה ונתרחק ממנו השתא</td><td>שהיה קרוב לעבירה, והתרחק ממנה עכשיו.</td></tr>
+      <tr><td>זה יין המשומר בענביו מששת ימי בראשית</td><td>זה היין המשומר בענביו מששת ימי בראשית.</td></tr>
+      <tr><td>זה עדן שלא שלטה בו עין כל בריה</td><td>זה עדן, שלא שלטה בו עין של שום בריה.</td></tr>
+      <tr><td>גן לחוד ועדן לחוד</td><td>הגן לבד, והעדן לבד.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המאמר הראשון:</b> הנביאים תיארו את השכר של מי שתומך בתלמידי חכמים. השכר של תלמידי החכמים עצמם לא נגלה לשום נביא, "עין לא ראתה".</p>
+  <p><b>המאמר השני:</b> הנביאים ניבאו על ימות המשיח, אבל לא על העולם הבא. שמואל חולק: ההבדל היחיד בין העולם הזה לימות המשיח הוא סוף שעבוד המלכויות, שהרי "לא יחדל אביון מקרב הארץ".</p>
+  <p><b>המאמר השלישי:</b> הנביאים ניבאו לבעלי תשובה, אבל השכר של צדיקים גמורים לא נגלה. רבי אבהו חולק: בעלי התשובה עומדים במקום גבוה יותר, כי בפסוק "לרחוק" בא לפני "לקרוב". ורבי יוחנן מפרש: "רחוק" הוא הצדיק שהיה רחוק מעבירה מתחילתו.</p>
+  <p><b>מהו "עין לא ראתה":</b> לרבי יהושע בן לוי, היין המשומר בענביו מששת ימי בראשית. לרבי שמואל בר נחמני, עדן, שאפילו אדם הראשון לא ראה, כי הוא היה בגן, והגן והעדן הם שני מקומות.</p>
+  <div data-hl="R14" class="voice r"><span class="tag">רש"י</span><blockquote>לא נתנבאו – הטובות והנחמות:</blockquote><p><span class="say">מה רש"י אומר:</span> מה שהנביאים ניבאו הוא הטובות והנחמות.</p></div>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>עין לא ראתה – לא נראית ולא נגלית לשום נביא:</blockquote><p><span class="say">מה רש"י אומר:</span> "עין לא ראתה": לא נראה ולא נגלה לשום נביא.</p></div>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>רחוק – שהיה רחוק כל ימיו מן העבירה דהיינו צדיק מעיקרו:</blockquote><p><span class="say">מה רש"י אומר:</span> "רחוק" הוא מי שהיה רחוק מן העבירה כל ימיו, כלומר צדיק מתחילתו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שני פירושים לפסוק אחד</h3>
+    <p>רבי אבהו ורבי יוחנן קוראים את אותו פסוק, "שלום שלום לרחוק ולקרוב". לרבי אבהו, "רחוק" הוא בעל התשובה, ולכן בעל התשובה מוזכר ראשון. לרבי יוחנן, "רחוק" הוא מי שהיה רחוק מן העבירה, כלומר הצדיק, ולכן הצדיק מוזכר ראשון.</p>
+    <p>כך המחלוקת בין רבי יוחנן לרבי אבהו על מעלת בעלי התשובה תלויה בפירוש המילה "רחוק".</p>
+    <h3>הגן והעדן</h3>
+    <p>רבי שמואל בר נחמני צופה שתי קושיות. אולי אדם הראשון ראה את העדן? לא, הוא היה בגן. ואולי הגן הוא העדן? לא, שהרי הנהר "יוצא מעדן להשקות את הגן". מכאן שהם שני מקומות.</p>
+  </div>
+  <p class="godeep">איך שני חכמים מפרשים את המילה "רחוק" הפוך? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>לפי רבי יוחנן, למי ניבאו הנביאים בעניין תלמידי חכמים?</summary><p>למי שמשיא את בתו לתלמיד חכם, עושה מסחר בשבילו ומהנה אותו מנכסיו.</p></details>
+  <details><summary>מה ההבדל בין העולם הזה לימות המשיח לפי שמואל?</summary><p>רק שעבוד מלכויות.</p></details>
+  <details><summary>מה לומד רבי אבהו מ"לרחוק ולקרוב"?</summary><p>"לרחוק" קודם, ולכן בעלי תשובה עומדים במקום שצדיקים גמורים אינם עומדים.</p></details>
+  <details class="deepq"><summary>מניין שהגן והעדן הם שני מקומות?</summary><p>מן הפסוק "ונהר יוצא מעדן להשקות את הגן".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G27,G28">
+  <div class="kicker">יחידה 5 · אגדה</div>
+  <h2>תפילותיו של רבי חנינא בן דוסא</h2>
+  <p class="lead">שני מעשים מראים את כוח התפילה של רבי חנינא בן דוסא: האחד בבנו של רבן גמליאל, והשני בבנו של רבן יוחנן בן זכאי.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>שגר שני ת"ח אצל רבי חנינא בן דוסא</td><td>ששלח שני תלמידי חכמים אל רבי חנינא בן דוסא</td></tr>
+      <tr><td>לבקש עליו רחמים</td><td>לבקש עליו רחמים.</td></tr>
+      <tr><td>עלה לעלייה ובקש עליו רחמים</td><td>עלה לעלייה וביקש עליו רחמים.</td></tr>
+      <tr><td>לכו שחלצתו חמה</td><td>לכו, כי החום עזב אותו.</td></tr>
+      <tr><td>וכי נביא אתה</td><td>וכי נביא אתה?</td></tr>
+      <tr><td>לא נביא אנכי ולא בן נביא אנכי</td><td>לא נביא אנכי ולא בן נביא אנכי,</td></tr>
+      <tr><td>ישבו וכתבו וכוונו אותה שעה</td><td>ישבו, כתבו וכיוונו את אותה שעה.</td></tr>
+      <tr><td>העבודה לא חסרתם ולא הותרתם</td><td>(נשבע) בעבודת המקדש: לא החסרתם ולא הוספתם.</td></tr>
+      <tr><td>הניח ראשו בין ברכיו ובקש עליו רחמים וחיה</td><td>הניח את ראשו בין ברכיו, ביקש עליו רחמים, וחיה.</td></tr>
+      <tr><td>וכי חנינא גדול ממך</td><td>וכי חנינא גדול ממך?</td></tr>
+      <tr><td>הוא דומה כעבד לפני המלך</td><td>הוא דומה כעבד לפני המלך,</td></tr>
+      <tr><td>ואני דומה כשר לפני המלך</td><td>ואני דומה כשר לפני המלך.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המעשה הראשון:</b> רבן גמליאל שלח שני תלמידים לרבי חנינא. הוא התפלל בעלייה, וכשירד אמר להם שהחולה הבריא. הוא אינו טוען שהוא נביא. הוא אומר שזו מסורת שקיבל: אם התפילה שגורה בפיו, היא מקובלת.</p>
+  <p>התלמידים רשמו את השעה. רבן גמליאל אישר בשבועה שבדיוק באותה שעה עזב החום את בנו, והוא ביקש מים לשתות.</p>
+  <p><b>המעשה השני:</b> בנו של רבן יוחנן בן זכאי חלה. רבי חנינא הניח את ראשו בין ברכיו, התפלל, והבן חיה. רבן יוחנן אמר שאילו הוא עצמו היה עושה כך כל היום, לא היו משגיחים בו.</p>
+  <p><b>עבד ושר:</b> רבן יוחנן אינו אומר שרבי חנינא גדול ממנו. הוא מסביר שיש לכל אחד מעמד אחר לפני המלך.</p>
+  <div class="eg"><b>להמחשה:</b> לדוגמה, במשרד גדול, עובד ותיק שנכנס לחדר המנהל בכל שעה יכול לבקש דבר קטן מיד, ואילו בעל תפקיד בכיר צריך לקבוע פגישה.</div>
+  <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>חלצתו חמה – שלפתו ניטלה מגופו החמה הוא החולי הקודחו חלצתו לשון חלץ מהם:</blockquote><p><span class="say">מה רש"י אומר:</span> "חלצתו חמה": החום, שהוא החולי שקדח בו, יצא מגופו. "חלצתו" מלשון "חלץ מהם".</p></div>
+  <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>לא חסרתם – שעה:</blockquote><p><span class="say">מה רש"י אומר:</span> "לא חסרתם" מדבר על השעה: לא טעיתם בה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>עבד ושר</h3>
+    <div data-hl="R19,R20" class="voice r"><span class="tag">רש"י</span><blockquote>כעבד – בן בית נכנס ויוצא שלא ברשות:</blockquote><blockquote>כשר לפני המלך – שאינו רגיל לבא לפניו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מפרש: העבד הוא בן בית, שנכנס ויוצא בלי רשות. השר אינו רגיל לבוא לפני המלך.</p></div>
+    <p>לפי זה, היתרון של רבי חנינא אינו בגדולה בתורה, אלא בקרבה. ההבחנה הזאת מסבירה את דברי רבן יוחנן: הוא גדול יותר, ובכל זאת אינו נענה כמו רבי חנינא.</p>
+  </div>
+  <p class="godeep">למה רבן יוחנן בן זכאי לא נענה, אף על פי שאינו קטן מרבי חנינא? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה ענה רבי חנינא כששאלו אם הוא נביא?</summary><p>לא נביא ולא בן נביא, אלא כך קיבל: אם התפילה שגורה בפיו, היא מקובלת.</p></details>
+  <details><summary>איך בדקו התלמידים את דבריו?</summary><p>כתבו את השעה, ורבן גמליאל אישר שבאותה שעה עזב החום את בנו.</p></details>
+  <details><summary>איך הסביר רבן יוחנן בן זכאי את ההבדל בינו לבין רבי חנינא?</summary><p>רבי חנינא כעבד לפני המלך, והוא כשר לפני המלך.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מה ההבדל בין עבד לשר?</summary><p>העבד נכנס ויוצא בלי רשות, והשר אינו רגיל לבוא לפני המלך.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="u6" data-hl="G29,G30,G31,G32">
+  <div class="kicker">יחידה 6 · גמרא</div>
+  <h2>מקום התפילה, וכיסוי החטא</h2>
+  <p class="lead">לסיום הפרק, דברים על המקום שבו מתפללים ועל הדרך שבה מתוודים. ובסוף, "הדרן עלך".</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אל יתפלל אדם אלא בבית שיש שם חלונות</td><td>אל יתפלל אדם אלא בבית שיש בו חלונות.</td></tr>
+      <tr><td>וכוין פתיחן ליה בעליתיה</td><td>וחלונות פתוחים לו בעלייתו</td></tr>
+      <tr><td>אמר רב כהנא חציף עלי מאן דמצלי בבקתא</td><td>אמר רב כהנא: חצוף בעיניי מי שמתפלל בבקעה.</td></tr>
+      <tr><td>חציף עלי מאן דמפרש חטאיה</td><td>חצוף בעיניי מי שמפרט את חטאיו,</td></tr>
+      <tr><td>אשרי נשוי פשע כסוי חטאה</td><td>"אשרי נשוי פשע, כסוי חטאה".</td></tr>
+      <tr><td>הדרן עלך אין עומדין</td><td>נחזור אליך, פרק "אין עומדין".</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>חלונות:</b> רבי יוחנן לומד מדניאל, שהתפלל בעלייה עם חלונות פתוחים כנגד ירושלים, שמתפללים בבית שיש בו חלונות.</p>
+  <p><b>בבקעה:</b> רב כהנא אומר שמי שמתפלל בבקעה פתוחה הוא חצוף. רש"י מסביר שבמקום מוצנע לב האדם נשבר מאימת המלך.</p>
+  <p><b>החטאים:</b> רב כהנא אומר גם שחצוף מי שמפרט את חטאיו, כי נאמר "אשרי נשוי פשע, כסוי חטאה".</p>
+  <p><b>הדרן עלך:</b> כאן נגמר הפרק החמישי של מסכת ברכות. במילים האלה מסיימים פרק, ומבטיחים לחזור אליו.</p>
+  <div data-hl="R21" class="voice r"><span class="tag">רש"י</span><blockquote>חלונות – שגורמין לו שיכוין לבו שהוא מסתכל כלפי שמים ולבו נכנע:</blockquote><p><span class="say">מה רש"י אומר:</span> החלונות גורמים לו לכוון את לבו, כי הוא מסתכל כלפי השמים, ולבו נכנע.</p></div>
+  <div data-hl="R22" class="voice r"><span class="tag">רש"י</span><blockquote>דמצלי בבקתא – בבקעה שכשהוא במקום צניעות חלה עליו אימת מלך ולבו נשבר:</blockquote><p><span class="say">מה רש"י אומר:</span> "בקתא" היא בקעה. במקום צנוע אימת המלך חלה עליו ולבו נשבר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>והרי יצחק התפלל בשדה</h3>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>חציף עלי מאן דמצלי בבקתא – וא"ת הכתיב ויצא יצחק לשוח בשדה (בראשית כ״ד:ס״ג) י"ל דהתם מיירי בהר המוריה כדאמרי' בפסחים פרק האשה (פסחים פח א) לא כיצחק שקראו שדה וכו' א"נ בקתא דהכא מיירי בבקעה במקום שרגילין שם בני אדם לעבור והולכי דרכים:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מקשים: הרי כתוב "ויצא יצחק לשוח בשדה". תשובה ראשונה: שם מדובר בהר המוריה, שיצחק קרא לו "שדה". תשובה שנייה: ה"בקתא" שכאן היא בקעה שעוברים בה אנשים והולכי דרכים.</p></div>
+    <h3>למה לכסות את החטא</h3>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>כסוי חטאה – וטעמא לפי שאז מתבייש על חטאו אבל אם מפרש חטאיו דומה שאינו מתבייש עליו ואמרינן לעיל פרק קמא (ברכות ד' יב:) כל העושה דבר ומתבייש מוחלים לו מיד:</blockquote><p><span class="say">מה התוספות אומרים:</span> מי שמכסה את חטאו מתבייש בו. מי שמפרט את חטאיו נראה כאילו אינו מתבייש. ובפרק הראשון של המסכת נאמר: כל העושה דבר ומתבייש, מוחלים לו מיד.</p></div>
+    <p>שני הדברים של רב כהנא מדברים על אותה תכונה: התפילה צריכה לבוא מתוך הכנעה ובושה, ולא מתוך תחושה של ביטחון והפגנה.</p>
+  </div>
+  <p class="godeep">איך מתיישב "ויצא יצחק לשוח בשדה"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מניין שמתפללים בבית עם חלונות?</summary><p>מדניאל, שהיו לו חלונות פתוחים בעלייתו כנגד ירושלים.</p></details>
+  <details><summary>למה חצוף מי שמתפלל בבקעה?</summary><p>כי במקום מוצנע אימת המלך חלה עליו ולבו נשבר.</p></details>
+  <details><summary>מה הפסוק שמראה שאין לפרט חטאים?</summary><p>"אשרי נשוי פשע, כסוי חטאה".</p></details>
+  <details class="deepq"><summary>לפי התוספות, למה עדיף לכסות את החטא?</summary><p>כי מי שמכסה מתבייש, ומי שעושה דבר ומתבייש מוחלים לו מיד.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u6"> סיימתי את יחידה 6</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>כריעה לפי מעמד:</b> אדם רגיל כורע במקומות שנקבעו, כהן גדול בכל ברכה, והמלך כורע ואינו זוקף עד סוף התפילה.</li>
+      <li><b>קידה, כריעה והשתחוויה:</b> על הפנים, על הברכיים, ובפשיטת ידיים ורגליים. אביי ורבא הטו על הצד.</li>
+      <li><b>הכריעה בהודאה:</b> בתחילה משובח, בסוף מגונה. הברייתא שקוראת לה מגונה מדברת על ברכת המזון.</li>
+      <li><b>המתפלל וטעה:</b> סימן רע לו ולשולחיו, בעיקר בברכת "אבות". תפילה שגורה היא סימן שהתקבלה.</li>
+      <li><b>עין לא ראתה:</b> רבי יוחנן מלמד מה נשאר מעבר לנבואה, ושמואל ורבי אבהו חולקים עליו.</li>
+      <li><b>רבי חנינא בן דוסא:</b> תפילותיו נענו, כי הוא כעבד לפני המלך.</li>
+      <li><b>מקום ודרך התפילה:</b> בבית עם חלונות, לא בבקעה פתוחה, ובלי לפרט את החטאים.</li>
+      <li><b>סוף הפרק:</b> כאן נגמר פרק "אין עומדין". בעמוד הבא נפתח הפרק השישי, "כיצד מברכין".</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>מצלו אצלויי</td><td>הטו את עצמם על הצד</td></tr>
+      <tr><td>קידה · כריעה · השתחואה</td><td>נפילה על הפנים · על הברכיים · פשיטת ידיים ורגליים</td></tr>
+      <tr><td>אהייא</td><td>על איזו מהן? על מה נאמרו הדברים</td></tr>
+      <tr><td>איכא דמתני לה</td><td>יש ששונים זאת אחרת: גרסה נוספת של אותה מסורת</td></tr>
+      <tr><td>מנא הני מילי</td><td>מניין הדברים האלה? בקיצור: מנה&quot;מ</td></tr>
+      <tr><td>ופליגא ד</td><td>וחולקת על דברי: הדברים האלה חולקים על חכם אחר</td></tr>
+      <tr><td>עין לא ראתה</td><td>מה שלא נגלה לשום נביא</td></tr>
+      <tr><td>תלמוד לומר</td><td>לכן נאמר בפסוק</td></tr>
+      <tr><td>שגורה</td><td>רגילה, סדורה ושוטפת בפה</td></tr>
+      <tr><td>העבודה</td><td>לשון שבועה: בעבודת בית המקדש</td></tr>
+      <tr><td>חלצתו חמה</td><td>החום עזב אותו, הוא החלים</td></tr>
+      <tr><td>חציף עלי</td><td>חצוף בעיניי</td></tr>
+      <tr><td>הדרן עלך</td><td>נחזור אליך: כך מסיימים פרק</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-34a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-35a.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-35a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "כהן גדול בסוף כל ברכה וברכה והמלך תחלת כל ברכה וברכה וסוף כל ברכה וברכה", false, ""], ["G2", "אמר רבי יצחק בר נחמני לדידי מפרשא לי מיניה דריב\"ל הדיוט כמו שאמרנו כהן גדול תחלת כל ברכה וברכה המלך כיון שכרע שוב אינו זוקף שנאמר (מלכים א ח, נד) ויהי ככלות שלמה להתפלל וגו' קם מלפני מזבח ה' מכרוע על ברכיו:", false, ""], ["G3", "ת\"ר קידה על אפים שנאמר (מלכים א א, לא) ותקד בת שבע אפים ארץ כריעה על ברכים שנאמר מכרוע על ברכיו השתחואה זו פשוט ידים ורגלים שנאמר (בראשית לז, י) הבא נבא אני ואמך ואחיך להשתחות לך ארצה", false, ""], ["G4", "אמר רב חייא בריה דרב הונא חזינא להו לאביי ורבא דמצלו אצלויי", false, ""], ["G5", "תני חדא הכורע בהודאה הרי זה משובח ותניא אידך הרי זה מגונה", false, ""], ["G6", "לא קשיא הא בתחלה הא לבסוף", false, ""], ["G7", "רבא כרע בהודאה תחלה וסוף אמרי ליה רבנן אמאי קא עביד מר הכי אמר להו חזינא לרב נחמן דכרע וחזינא ליה לרב ששת דקא עבד הכי", false, ""], ["G8", "והתניא הכורע בהודאה הרי זה מגונה", false, ""], ["G9", "ההיא בהודאה שבהלל", false, ""], ["G10", "והתניא הכורע בהודאה ובהודאה של הלל הרי זה מגונה", false, ""], ["G11", "כי תניא ההיא בהודאה דברכת המזון:", false, ""], ["G12", "המתפלל וטעה סימן רע לו ואם שליח צבור הוא סימן רע לשולחיו מפני ששלוחו של אדם כמותו אמרו עליו על ר' חנינא בן דוסא שהיה מתפלל על החולים ואומר זה חי וזה מת אמרו לו מנין אתה יודע אמר להם אם שגורה תפלתי בפי יודע אני שהוא מקובל ואם לאו יודע אני שהוא מטורף:", false, "מתני׳"], ["G13", "אהייא", false, "גמ׳"], ["G14", "א\"ר חייא אמר רב ספרא משום חד דבי רבי באבות", false, ""], ["G15", "איכא דמתני לה אברייתא המתפלל צריך שיכוין את לבו בכולן ואם אינו יכול לכוין בכולן יכוין את לבו באחת", false, ""], ["G16", "א\"ר חייא אמר רב ספרא משום חד דבי רבי באבות", false, ""], ["G17", "אמרו עליו על רבי חנינא וכו': מנא הני מילי א\"ר יהושע בן לוי דאמר קרא (ישעיהו נז, יט) בורא ניב שפתים שלום שלום לרחוק ולקרוב אמר ה' ורפאתיו", false, ""], ["G18", "א\"ר חייא בר אבא א\"ר יוחנן כל הנביאים כולן לא נתנבאו אלא למשיא בתו לתלמיד חכם ולעושה פרקמטיא לת\"ח ולמהנה ת\"ח מנכסיו אבל תלמידי חכמים עצמן (ישעיהו סד, ג) עין לא ראתה אלהים זולתך יעשה למחכה לו", false, ""], ["G19", "ואמר רבי חייא בר אבא אמר רבי יוחנן כל הנביאים כולן לא נתנבאו אלא לימות המשיח אבל לעולם הבא עין לא ראתה אלהים זולתך", false, ""], ["G20", "ופליגא דשמואל דאמר שמואל אין בין העוה\"ז לימות המשיח אלא שעבוד מלכיות בלבד שנאמר (דברים טו, יא) כי לא יחדל אביון מקרב הארץ", false, ""], ["G21", "וא\"ר חייא בר אבא א\"ר יוחנן כל הנביאים כולן לא נתנבאו אלא לבעלי תשובה אבל צדיקים גמורים עין לא ראתה אלהים זולתך", false, ""], ["G22", "ופליגא דר' אבהו דא\"ר אבהו מקום שבעלי תשובה עומדין צדיקים גמורים אינם עומדין שנאמר (ישעיהו נז, יט) שלום שלום לרחוק ולקרוב לרחוק ברישא והדר לקרוב", false, ""], ["G23", "ורבי יוחנן אמר לך מאי רחוק שהיה רחוק מדבר עבירה מעיקרא ומאי קרוב שהיה קרוב לדבר עבירה ונתרחק ממנו השתא", false, ""], ["G24", "מאי עין לא ראתה אמר רבי יהושע בן לוי זה יין המשומר בענביו מששת ימי בראשית רבי שמואל בר נחמני אמר זה עדן שלא שלטה בו עין כל בריה", false, ""], ["G25", "שמא תאמר אדם הראשון היכן היה בגן", false, ""], ["G26", "ושמא תאמר הוא גן הוא עדן תלמוד לומר (בראשית ב, י) ונהר יוצא מעדן להשקות את הגן גן לחוד ועדן לחוד:", false, ""], ["G27", "ת\"ר מעשה שחלה בנו של ר\"ג שגר שני ת\"ח אצל רבי חנינא בן דוסא לבקש עליו רחמים כיון שראה אותם עלה לעלייה ובקש עליו רחמים בירידתו אמר להם לכו שחלצתו חמה אמרו לו וכי נביא אתה אמר להן לא נביא אנכי ולא בן נביא אנכי אלא כך מקובלני אם שגורה תפלתי בפי יודע אני שהוא מקובל ואם לאו יודע אני שהוא מטורף ישבו וכתבו וכוונו אותה שעה וכשבאו אצל ר\"ג אמר להן העבודה לא חסרתם ולא הותרתם אלא כך היה מעשה באותה שעה חלצתו חמה ושאל לנו מים לשתות", false, ""], ["G28", "ושוב מעשה ברבי חנינא בן דוסא שהלך ללמוד תורה אצל ר' יוחנן בן זכאי וחלה בנו של ריב\"ז אמר לו חנינא בני בקש עליו רחמים ויחיה הניח ראשו בין ברכיו ובקש עליו רחמים וחיה אמר רבי יוחנן בן זכאי אלמלי הטיח בן זכאי את ראשו בין ברכיו כל היום כולו לא היו משגיחים עליו אמרה לו אשתו וכי חנינא גדול ממך אמר לה לאו אלא הוא דומה כעבד לפני המלך ואני דומה כשר לפני המלך:", false, ""], ["G29", "ואמר רבי חייא בר אבא אמר רבי יוחנן אל יתפלל אדם אלא בבית שיש שם חלונות שנאמר (דניאל ו, יא) וכוין פתיחן ליה בעליתיה (לקבל) [נגד]", false, ""], ["G30", "ירושלם אמר רב כהנא חציף עלי מאן דמצלי בבקתא", false, ""], ["G31", "ואמר רב כהנא חציף עלי מאן דמפרש חטאיה שנאמר (תהלים לב, א) אשרי נשוי פשע כסוי חטאה:", false, ""], ["G32", "הדרן עלך אין עומדין", false, ""]], "R": [["R1", "כהן גדול בסוף כל ברכה", "כל מה שהוא גדול ביותר צריך להכניע ולהשפיל עצמו:", false], ["R2", "אינו זוקף", "עד שיגמור:", false], ["R3", "קם מלפני מזבח ה' מכרוע", "רישיה דקרא ויהי ככלות שלמה להתפלל והדר קם מכרוע:", false], ["R4", "ארצה", "לשון משתטח משמע:", false], ["R5", "דמצלו אצלויי", "כשנופלין על פניהם אין פושטין ידיהם ורגליהם אלא מטין על צדיהן:", false], ["R6", "בתחלה", "כורע:", false], ["R7", "חזינא לרב נחמן דכרע", "תחלה וסוף:", false], ["R8", "בהודאה דהלל", "הודו לה' כי טוב:", false], ["R9", "מתני' אם שגורה", "אם סדורה תפלתי בפי במרוצה ואיני נכשל ותחנתי נובעת מלבי אל פי כל מה שאני חפץ להאריך בתחנונים:", false], ["R10", "שהוא מטורף", "החולה לשון אחר [לשון] טורפין לו תפלתו בפניו כלומר התפלה שהתפללו עליו מטורפת וטרודה ממנו ואינה מקובלת:", false], ["R11", "גמ' אהייא", "בהיכא ובאיזו מן הברכות הוי טעות בסימן רע:", false], ["R12", "באבות", "שהוא תחלת התפלה רמז הוא שאין חפץ בה:", false], ["R13", "בורא ניב שפתים", "כשהניב בריא באדם אז מובטח על השלום:", false], ["R14", "לא נתנבאו", "הטובות והנחמות:", false], ["R15", "עין לא ראתה", "לא נראית ולא נגלית לשום נביא:", false], ["R16", "רחוק", "שהיה רחוק כל ימיו מן העבירה דהיינו צדיק מעיקרו:", false], ["R17", "חלצתו חמה", "שלפתו ניטלה מגופו החמה הוא החולי הקודחו חלצתו לשון חלץ מהם:", false], ["R18", "לא חסרתם", "שעה:", false], ["R19", "כעבד", "בן בית נכנס ויוצא שלא ברשות:", false], ["R20", "כשר לפני המלך", "שאינו רגיל לבא לפניו:", false], ["R21", "חלונות", "שגורמין לו שיכוין לבו שהוא מסתכל כלפי שמים ולבו נכנע:", false], ["R22", "דמצלי בבקתא", "בבקעה שכשהוא במקום צניעות חלה עליו אימת מלך ולבו נשבר:", false], ["R23", "", "הדרן עלך אין עומדין", false]], "T": [["T1", "קידה על אפים", "ומייתי קרא אע\"ג דאשכחן נמי בענין אחר יש לומר דקים ליה מקבלה דקידה על אפים ומייתי קרא דמסייעו:", false], ["T2", "חזינא לאביי ורבא דמצלו אצלויי", "פירוש שהיו מטין על צדיהן:", false], ["T3", "יכוין לבו באחת מהן", "והא דאמרי' בסוף פרק ת\"ה (ברכות ל ב) לעולם ימוד אדם דעתו אם יכול לכוין יתפלל ואם לאו אל יתפלל יש לפרש התם נמי באחת מהן:", false], ["T4", "חציף עלי מאן דמצלי בבקתא", "וא\"ת הכתיב ויצא יצחק לשוח בשדה (בראשית כ״ד:ס״ג) י\"ל דהתם מיירי בהר המוריה כדאמרי' בפסחים פרק האשה (פסחים פח א) לא כיצחק שקראו שדה וכו' א\"נ בקתא דהכא מיירי בבקעה במקום שרגילין שם בני אדם לעבור והולכי דרכים:", false], ["T5", "כסוי חטאה", "וטעמא לפי שאז מתבייש על חטאו אבל אם מפרש חטאיו דומה שאינו מתבייש עליו ואמרינן לעיל פרק קמא (ברכות ד' יב:) כל העושה דבר ומתבייש מוחלים לו מיד:", false], ["T6", "", "הדרן עלך אין עומדין", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': כריעה, ומשנה אחרונה בפרק", "x": "העמוד הקודם קבע שכורעים בתחילת ברכת \"אבות\" ובסופה, ובתחילת ההודאה ובסופה. הוא נגמר בדברי בר קפרא: אדם רגיל כורע כמו שאמרנו. כאן בר קפרא ממשיך לכהן גדול ולמלך. אחר כך באה המשנה האחרונה של הפרק, על מי שטעה בתפילתו, וסיפורים על רבי חנינא בן דוסא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "כהן גדול ומלך", "x": "כהן גדול כורע בסוף כל ברכה, והמלך כורע בתחילת כל ברכה ובסופה. רש\"י מסביר: כל מי שגדול יותר צריך להכניע ולהשפיל את עצמו יותר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "רבי יצחק בר נחמני: גרסה אחרת", "x": "רבי יצחק בר נחמני אומר: לי פירש זאת רבי יהושע בן לוי אחרת. הדיוט כמו שאמרנו. כהן גדול בתחילת כל ברכה. והמלך, כיוון שכרע, שוב אינו זוקף, שנאמר על שלמה \"ויהי ככלות שלמה להתפלל, קם מלפני מזבח ה' מכרוע על ברכיו\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G2", "R2", "R3"], "t": "רש\"י: עד מתי כורע המלך", "x": "המלך אינו זוקף עד שיגמור את תפילתו. כך עולה מן הפסוק: תחילתו \"ויהי ככלות שלמה להתפלל\", ורק אחר כך \"קם מכרוע\", כלומר כל זמן התפילה היה כורע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3"], "t": "קידה, כריעה והשתחוויה", "x": "ברייתא מבחינה בין שלוש צורות. קידה היא על הפנים, שנאמר \"ותקד בת שבע אפים ארץ\". כריעה היא על הברכיים, שנאמר \"מכרוע על ברכיו\". השתחוויה היא פשיטת ידיים ורגליים, שנאמר \"הבוא נבוא אני ואמך ואחיך להשתחות לך ארצה\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G3", "R4"], "t": "רש\"י: המילה \"ארצה\"", "x": "המילה \"ארצה\" משמעה השתטחות על הארץ, בידיים וברגליים פשוטות.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3", "T1"], "t": "התוספות: למה פסוק", "x": "הרי המילה \"קידה\" נמצאת בתורה גם בעניין אחר, ואם כן איך הפסוק מוכיח? התוספות עונים: הברייתא ידעה מן הקבלה שקידה היא על הפנים, והביאה את הפסוק רק כסיוע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R5", "T2"], "t": "אביי ורבא מטים על צידם", "x": "רב חייא בנו של רב הונא אומר: ראיתי את אביי ורבא \"דמצלו אצלויי\". רש\"י והתוספות מפרשים: כשנפלו על פניהם, לא פשטו ידיים ורגליים, אלא הטו את עצמם על צידם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "G6", "R6"], "t": "משובח או מגונה", "x": "ברייתא אחת אומרת: הכורע בהודאה, הרי זה משובח. וברייתא אחרת אומרת: הרי זה מגונה. \"לא קשיא\", אין סתירה: אחת מדברת על תחילת הברכה, והשנייה על סופה. רש\"י מפרש שבתחילה כורע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R7"], "t": "רבא כרע בשני המקומות", "x": "רבא כרע בהודאה בתחילה ובסוף. שאלו אותו החכמים: למה אדוני עושה כך? ענה להם: ראיתי את רב נחמן כורע, וראיתי את רב ששת עושה כך. רש\"י מוסיף: הם כרעו בתחילה ובסוף.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "G9", "R8"], "t": "ההודאה שבהלל", "x": "והרי שנינו שהכורע בהודאה הרי זה מגונה! התשובה: הברייתא ההיא מדברת על ההודאה שבהלל. רש\"י מפרש: \"הודו לה' כי טוב\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "G11"], "t": "ההודאה שבברכת המזון", "x": "אבל יש ברייתא שמונה במפורש שני דברים מגונים: כריעה בהודאה, וכריעה בהודאה של הלל. אם כן \"ההודאה\" שם אינה של ההלל. הגמרא מיישבת: \"ההודאה\" שבה היא ברכת ההודאה שבברכת המזון.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G12"], "t": "משנה: המתפלל וטעה", "x": "זו המשנה האחרונה בפרק \"אין עומדין\". המתפלל וטעה, סימן רע לו. ואם הוא שליח ציבור, סימן רע לשולחיו, מפני ששלוחו של אדם כמותו. ועוד מסופר בה על רבי חנינא בן דוסא: היה מתפלל על החולים ואומר \"זה חי וזה מת\". שאלו אותו מניין הוא יודע. אמר: אם שגורה תפילתי בפי, יודע אני שהיא מקובלת, ואם לא, יודע אני שהיא \"מטורפת\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G12", "R9"], "t": "רש\"י: מהי \"שגורה\"", "x": "תפילתי סדורה בפי ובאה במהירות, אינני נכשל, והתחנונים נובעים מלבי אל פי ככל שאני רוצה להאריך.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G12", "R10"], "t": "רש\"י: מי \"מטורף\"", "x": "שני פירושים. לפי האחד, החולה הוא ה\"מטורף\". לפי האחר, התפילה שהתפללו עליו מטורפת, טרודה ממנו ואינה מקובלת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "G14", "R11", "R12"], "t": "באיזו ברכה טעה", "x": "\"אהייא\", על איזו ברכה נאמר שהטעות היא סימן רע? רבי חייא אמר בשם רב ספרא, משמו של אחד מבית רבי: בברכת \"אבות\". רש\"י מסביר: היא תחילת התפילה, וטעות בה היא רמז שאין רצון בתפילה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "G16"], "t": "יש ששונים זאת על ברייתא אחרת", "x": "\"איכא דמתני לה\", יש ששונים את הדברים על ברייתא: המתפלל צריך לכוון את לבו בכל הברכות. ואם אינו יכול לכוון בכולן, יכוון את לבו באחת. ועל זה נאמרה אותה תשובה: בברכת \"אבות\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T3"], "t": "התוספות: ומה עם מי שאינו יכול לכוון", "x": "בסוף פרק \"תפילת השחר\" נאמר שאדם יאמוד את דעתו, ואם אינו יכול לכוון, אל יתפלל. התוספות מיישבים: גם שם הכוונה לכוונה באחת מן הברכות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17", "R13"], "t": "מניין לרבי חנינא", "x": "\"מנא הני מילי\", מניין הדברים של רבי חנינא בן דוסא? רבי יהושע בן לוי אומר: מן הפסוק \"בורא ניב שפתים, שלום שלום לרחוק ולקרוב, אמר ה', ורפאתיו\". רש\"י מפרש: כשהדיבור, הניב, בריא בפי האדם, מובטח לו השלום.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18", "R14", "R15"], "t": "למי ניבאו הנביאים", "x": "רבי חייא בר אבא אמר בשם רבי יוחנן: כל הנביאים ניבאו רק למי שמשיא את בתו לתלמיד חכם, למי שעושה מסחר בשביל תלמיד חכם, ולמי שמהנה תלמיד חכם מנכסיו. אבל לתלמידי החכמים עצמם, \"עין לא ראתה אלהים זולתך\". רש\"י מפרש: הנביאים ניבאו את הטובות והנחמות, ומה שלתלמידי חכמים לא נגלה לשום נביא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19", "G20"], "t": "ימות המשיח והעולם הבא", "x": "עוד אמר רבי יוחנן: הנביאים ניבאו רק על ימות המשיח, אבל על העולם הבא, \"עין לא ראתה\". ובזה הוא חולק על שמואל, שאמר: אין הבדל בין העולם הזה לימות המשיח אלא שעבוד מלכויות בלבד, שנאמר \"כי לא יחדל אביון מקרב הארץ\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21", "G22"], "t": "בעלי תשובה וצדיקים גמורים", "x": "ובדבר שלישי אמר רבי יוחנן: הנבואות נאמרו על השבים מחטאם, ואת השכר של הצדיקים הגמורים לא ראתה עין. ובזה הוא חולק על רבי אבהו, שאמר: במקום שבעלי תשובה עומדים, צדיקים גמורים אינם עומדים, שנאמר \"שלום שלום לרחוק ולקרוב\". קודם \"לרחוק\", ורק אחר כך \"לקרוב\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G23", "R16"], "t": "רבי יוחנן מפרש את הפסוק", "x": "ורבי יוחנן יאמר: \"רחוק\" הוא מי שהיה רחוק מן העבירה מתחילתו, כלומר צדיק. ו\"קרוב\" הוא מי שהיה קרוב לעבירה, ועכשיו התרחק ממנה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G24"], "t": "מהו \"עין לא ראתה\"", "x": "מה פירוש \"עין לא ראתה\"? רבי יהושע בן לוי אומר: זה היין שמשומר בענביו מששת ימי בראשית. רבי שמואל בר נחמני אומר: זה עדן, שלא שלטה בו עין של שום בריה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G25", "G26"], "t": "גן לחוד ועדן לחוד", "x": "שמא תאמר: אדם הראשון, היכן היה? בגן. ושמא תאמר: הגן הוא העדן. לכן נאמר \"ונהר יוצא מעדן להשקות את הגן\". הגן לבד והעדן לבד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G27"], "t": "בנו של רבן גמליאל", "x": "ברייתא. בנו של רבן גמליאל חלה, והוא שלח שני תלמידי חכמים לרבי חנינא בן דוסא שיבקש עליו רחמים. רבי חנינא עלה לעלייה ובקש רחמים. כשירד אמר להם: לכו, החום עזב אותו. שאלו: וכי נביא אתה? ענה: לא נביא אנכי ולא בן נביא אנכי, אלא כך מקובלני, אם שגורה תפילתי בפי, יודע אני שהיא מקובלת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G27", "R17", "R18"], "t": "\"לא חסרתם ולא הותרתם\"", "x": "התלמידים כתבו וכיוונו את השעה. כשבאו לרבן גמליאל, נשבע להם \"העבודה\", כלומר בעבודת בית המקדש: לא החסרתם ולא הוספתם. בדיוק באותה שעה עזב אותו החום, והוא ביקש מים לשתות. רש\"י מפרש: \"חלצתו חמה\", החום, שהוא החולי שקודח אותו, יצא מגופו. ו\"לא חסרתם\", בשעה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G28"], "t": "בנו של רבן יוחנן בן זכאי", "x": "רבי חנינא בן דוסא למד תורה אצל רבן יוחנן בן זכאי, ובנו של רבן יוחנן חלה. אמר לו: חנינא בני, בקש עליו רחמים ויחיה. רבי חנינא הניח את ראשו בין ברכיו, ביקש רחמים, והבן חיה. אמר רבן יוחנן: אילו הטיח בן זכאי את ראשו בין ברכיו כל היום, לא היו משגיחים עליו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G28", "R19", "R20"], "t": "עבד ושר", "x": "אשתו שאלה: וכי חנינא גדול ממך? אמר לה: לא. הוא דומה לעבד לפני המלך, ואני דומה לשר לפני המלך. רש\"י מפרש: העבד הוא בן בית שנכנס ויוצא בלי רשות. השר אינו רגיל לבוא לפני המלך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G29", "G30", "R21"], "t": "בית עם חלונות", "x": "רבי חייא בר אבא אמר בשם רבי יוחנן: אל יתפלל אדם אלא בבית שיש בו חלונות, שנאמר בדניאל: \"וכוין פתיחן ליה בעליתיה נגד ירושלם\", חלונות פתוחים לו בעלייתו כנגד ירושלים. רש\"י מסביר: החלונות גורמים לו לכוון את לבו, כי הוא מסתכל כלפי השמים, ולבו נכנע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G30", "R22"], "t": "רב כהנא: מי שמתפלל בבקעה", "x": "רב כהנא אומר: \"חציף עלי\", חצוף בעיניי מי שמתפלל בבקעה. רש\"י מסביר: כשהוא במקום צנוע, אימת המלך חלה עליו ולבו נשבר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G30", "T4"], "t": "התוספות: והרי יצחק התפלל בשדה", "x": "והרי כתוב \"ויצא יצחק לשוח בשדה\"! התוספות עונים: שם מדובר בהר המוריה, כמו שנאמר במסכת פסחים שיצחק קרא לו \"שדה\". ועוד תשובה: ה\"בקתא\" כאן היא בקעה שעוברים בה אנשים והולכי דרכים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G31"], "t": "מי שמפרט את חטאיו", "x": "עוד אמר רב כהנא: חצוף בעיניי מי שמפרט את חטאיו, שנאמר \"אשרי נשוי פשע, כסוי חטאה\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G31", "T5"], "t": "התוספות: למה לכסות", "x": "כשמכסה את חטאו, הוא מתבייש בו. אבל מי שמפרט את חטאיו נראה כמי שאינו מתבייש. ובפרק הראשון נאמר: כל מי שעושה דבר ומתבייש בו, מוחלים לו מיד.", "a": ""}, {"w": "הדף", "cols": false, "hl": ["G32", "R23", "T6"], "t": "הדרן עלך אין עומדין", "x": "כאן נגמר הפרק החמישי של המסכת. \"הדרן עלך\" פירושו: נחזור אליך, פרק \"אין עומדין\".", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "כל אדם כורע לפי מעמדו, וכמה שהוא גדול יותר, כך הוא משפיל את עצמו יותר. טעות בתפילה היא סימן רע, ותפילה שגורה היא סימן שהתקבלה, כמו אצל רבי חנינא בן דוסא. בעמוד הבא נפתח פרק חדש, הפרק השישי, \"כיצד מברכין\", במשנה על הברכות שמברכים על פירות האילן ועל פירות הארץ.", "a": ""}], "audio": "daf-34b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

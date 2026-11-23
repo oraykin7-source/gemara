@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף מ&quot;ח עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף מ&quot;ח עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>ברכות</span><span>פרק שביעי</span><span>שלשה שאכלו</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-48a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-49a.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 94</div>
+  <h1>מסכת ברכות, דף מ&quot;ח עמוד ב&#x27;</h1>
+  <p class="sub">פרק שביעי, &quot;שלשה שאכלו&quot;. מי תיקן את ברכות ברכת המזון, סדרן ושבת, המקור בתורה לברכה שאחרי האוכל ושלפניו, וברכת התורה.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. ההלכה בצירוף, ומי תיקן את ארבע הברכות</a><a href="#u2">2. סדר הברכות, וקדושת היום בשבת</a><a href="#u3">3. ברכת המזון מן התורה, והברכה שלפני האוכל</a><a href="#u4">4. ברכת התורה, וברכה על הרעה</a><a href="#u5">5. מה חייבים להזכיר בברכת הארץ ובבונה ירושלים</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1a,G1b,G2a,G2b">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>ההלכה בצירוף, ומי תיקן את ארבע הברכות</h2>
+  <p class="lead">תחילה נגמרת ההלכה מן העמוד הקודם: מי מצטרף ומי מוציא. אחר כך רב נחמן מספר מי תיקן כל אחת מארבע הברכות של ברכת המזון, ובאיזה רגע בהיסטוריה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ולהוציא את הרבים ידי חובתם</td><td>ולהוציא את הרבים ידי חובתם,</td></tr>
+      <tr><td>אינו מוציא עד שיאכל כזית דגן</td><td>אינו מוציא עד שיאכל כזית דגן.</td></tr>
+      <tr><td>הלכתא אכל עלה ירק ושתה כוס של יין מצטרף</td><td>ההלכה: אכל עלה ירק ושתה כוס יין, מצטרף.</td></tr>
+      <tr><td>משה תקן לישראל ברכת הזן</td><td>משה תיקן לישראל את ברכת "הזן"</td></tr>
+      <tr><td>בשעה שירד להם מן</td><td>בשעה שירד להם המן.</td></tr>
+      <tr><td>יהושע תקן להם ברכת הארץ</td><td>יהושע תיקן להם את ברכת הארץ</td></tr>
+      <tr><td>כיון שנכנסו לארץ</td><td>כשנכנסו לארץ.</td></tr>
+      <tr><td>דוד ושלמה תקנו בונה ירושלים</td><td>דוד ושלמה תיקנו את "בונה ירושלים".</td></tr>
+      <tr><td>הטוב והמטיב ביבנה תקנוה</td><td>את "הטוב והמטיב" תיקנו ביבנה,</td></tr>
+      <tr><td>כנגד הרוגי ביתר</td><td>כנגד הרוגי ביתר.</td></tr>
+      <tr><td>אותו היום שניתנו הרוגי ביתר לקבורה</td><td>באותו היום שניתנו הרוגי ביתר לקבורה,</td></tr>
+      <tr><td>הטוב שלא הסריחו</td><td>"הטוב", שלא הסריחו;</td></tr>
+      <tr><td>והמטיב שניתנו לקבורה</td><td>"והמטיב", שניתנו לקבורה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ההלכה בצירוף:</b> רבא פוסק שמי שאכל עלה ירק ושתה כוס יין מצטרף לזימון. אבל כדי להוציא את הרבים, צריך לאכול כזית דגן.</p>
+  <p><b>שלוש הברכות הראשונות:</b> כל אחת קשורה לשלב בחיי העם. ברכת "הזן", על המזון, תוקנה במדבר כשירד המן. ברכת הארץ תוקנה כשנכנסו לארץ. "בונה ירושלים" תוקנה בידי דוד, שהזכיר את ישראל ואת ירושלים, ובידי שלמה, שהוסיף את בית המקדש.</p>
+  <p><b>הברכה הרביעית:</b> "הטוב והמטיב" תוקנה ביבנה, אחרי חורבן ביתר. ביום שבו הותר לקבור את ההרוגים, תיקנו ברכה של הודאה: "הטוב", שהגופות לא הסריחו, "והמטיב", שניתנו לקבורה.</p>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>ברכה שתוקנה מתוך צער</h3>
+    <p>שלוש הברכות הראשונות מודות על טובה גלויה: מזון, ארץ, עיר ומקדש. הברכה הרביעית תוקנה דווקא ביום של אבל, על הרוגים. ההודאה היא על הטוב שנמצא בתוך המצב הקשה: שלא הסריחו, ושניתנו לקבורה.</p>
+    <p>מכאן גם ההבדל במקור. את שלוש הברכות הראשונות הברייתא שבהמשך לומדת מן הפסוק. על הרביעית יש מחלוקת: התנא הראשון לומד אותה מ"אשר נתן לך", ורבי אומר שתוקנה ביבנה.</p>
+  </div>
+  <p class="godeep">על מה מודים בברכת "הטוב והמטיב", לפי רב מתנא? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מי תיקן את ברכת "הזן", ומתי?</summary><p>משה, בשעה שירד המן.</p></details>
+  <details><summary>מה תיקן דוד, ומה תיקן שלמה, בברכת "בונה ירושלים"?</summary><p>דוד: "על ישראל עמך ועל ירושלים עירך". שלמה: "על הבית הגדול והקדוש".</p></details>
+  <details><summary>מה פירוש "הטוב" ו"המטיב" לפי רב מתנא?</summary><p>"הטוב", שהרוגי ביתר לא הסריחו. "המטיב", שניתנו לקבורה.</p></details>
+  <details class="deepq"><summary>מה פסק רבא במי שאכל עלה ירק ושתה כוס יין?</summary><p>מצטרף לזימון, אבל אינו מוציא את הרבים עד שיאכל כזית דגן.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G3,G4">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>סדר הברכות, וקדושת היום בשבת</h2>
+  <p class="lead">הברייתא מסדרת את ארבע הברכות, ושואלת היכן מזכירים את השבת בברכת המזון. רבי אליעזר מקל, וחכמים מחמירים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>סדר ברכת המזון כך היא</td><td>הסדר של ברכת המזון כך הוא:</td></tr>
+      <tr><td>ברכה ראשונה ברכת הזן</td><td>ברכה ראשונה, ברכת הזן;</td></tr>
+      <tr><td>שניה ברכת הארץ</td><td>שנייה, ברכת הארץ;</td></tr>
+      <tr><td>שלישית בונה ירושלים</td><td>שלישית, בונה ירושלים;</td></tr>
+      <tr><td>רביעית הטוב והמטיב</td><td>רביעית, הטוב והמטיב.</td></tr>
+      <tr><td>ובשבת מתחיל בנחמה ומסיים בנחמה</td><td>ובשבת מתחיל בנחמה ומסיים בנחמה,</td></tr>
+      <tr><td>ואומר קדושת היום באמצע</td><td>ואומר את קדושת היום באמצע.</td></tr>
+      <tr><td>רצה לאומרה בנחמה אומרה</td><td>רצה לומר אותה בנחמה, אומר;</td></tr>
+      <tr><td>וחכמים אומרים אינו אומרה אלא בנחמה בלבד</td><td>וחכמים אומרים: אינו אומר אותה אלא בנחמה בלבד.</td></tr>
+      <tr><td>חכמים היינו תנא קמא</td><td>החכמים הם התנא הראשון!</td></tr>
+      <tr><td>איכא בינייהו דיעבד</td><td>יש ביניהם הבדל בדיעבד.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הסדר:</b> הזן, הארץ, בונה ירושלים, הטוב והמטיב. בשבת מוסיפים את קדושת היום בתוך הברכה השלישית, ברכת הנחמה, כך שהיא נפתחת ונחתמת בנחמה, והשבת באמצע.</p>
+  <p><b>רבי אליעזר:</b> אפשר לומר את קדושת היום בכל אחת משלוש הברכות: בנחמה, בברכת הארץ, או ב"הטוב והמטיב". <b>חכמים:</b> רק בנחמה.</p>
+  <p><b>השאלה:</b> דעת החכמים נראית זהה לדעת התנא הראשון. הגמרא עונה שההבדל הוא בדיעבד, במי שכבר אמר במקום אחר. לפי רש"י, לדעת החכמים שבסוף מחזירים אותו לברך שוב.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>ובשבת מתחיל בנחמה – כלומר אינו צריך לא לסיים ולא להתחיל בשל שבת אלא מתחיל ומסיים בנחמה בנין ירושלים קרי נחמה כל היכי דמתחיל בין רחם בין נחמנו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: אין צורך לפתוח או לחתום בשבת. פותחים וחותמים בנחמה, וברכת בונה ירושלים נקראת "נחמה", בין שפותחים "רחם" ובין שפותחים "נחמנו".</p></div>
+  <div data-hl="R2" class="voice r"><span class="tag">רש"י</span><blockquote>בברכה שתקנו חכמים – בהטוב והמטיב:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "הברכה שתקנו חכמים ביבנה" היא "הטוב והמטיב".</p></div>
+  <div data-hl="R3" class="voice r"><span class="tag">רש"י</span><blockquote>איכא בינייהו דיעבד – לרבנן בתראי מהדרינן ליה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: ההבדל בדיעבד הוא שלפי החכמים שבסוף מחזירים אותו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>"רחם" או "נחמנו"</h3>
+    <div data-hl="T1a" class="voice t"><span class="tag">תוספות</span><blockquote>מתחיל בנחמה – פי' הקונטרס לאו דוק' מתחיל בנחמה ומסיים אלא כלומר דאין צריך להזכיר של שבת לא בפתיחה ולא בנחמה אלא באמצע אבל מתחיל ומסיים בנחמת ירושלים כמו בחול שאומר רחם וחותם בבונה ירושלים ויש שמתחילין בנחמנו וחותמים בנחמת ציון עירך ובבנין ירושלים ונותנים טעם לדבריהם דרחם הוי לשון תחנה ואין אומרים תחנונים בשבת אבל נחם אינו לשון תחנונים אלא כמו והנחם על הרעה לעמך (שמות ל״ב:י״ב)</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מביאים שיש הפותחים בשבת ב"נחמנו" ולא ב"רחם". טעמם: "רחם" היא לשון תחנה, ואין אומרים תחנונים בשבת, ו"נחם" אינה לשון תחנה.</p></div>
+    <div data-hl="T1b" class="voice t"><span class="tag">תוספות</span><blockquote>ולא נהירא דהכל משמע לשון תחנונים ואין להקפיד אפילו אי הוי לשון בקשה כדאמר בירושלמי דשבת בפרק אלו קשרים מהו לומר רוענו זוננו פרנסנו בשבת א"ל טופס ברכות כך הוא ומנהג שטות הוא המשנה ברכה של חול:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות דוחים: גם "נחם" משמעו תחנונים. ובירושלמי אמרו שמותר לומר בשבת "רוענו זוננו פרנסנו", כי כך הוא טופס הברכות. ומנהג שטות הוא לשנות ברכה של חול.</p></div>
+    <p>המחלוקת היא אם בקשה בברכת המזון של שבת פוגעת בשבת. לפי התוספות, נוסח קבוע של ברכה אינו נחשב תחנונים של יום חול, ולכן אומרים אותו בשבת כמו שהוא.</p>
+  </div>
+  <p class="godeep">למה, לפי התוספות, אין לשנות בשבת את הנוסח "רחם"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מהו סדר ארבע הברכות?</summary><p>הזן, הארץ, בונה ירושלים, הטוב והמטיב.</p></details>
+  <details><summary>היכן אומרים את קדושת היום בשבת?</summary><p>בברכת הנחמה, בונה ירושלים, באמצעה.</p></details>
+  <details><summary>מה ההבדל בין החכמים לתנא הראשון?</summary><p>ההבדל בדיעבד: לפי החכמים שבסוף מחזירים אותו.</p></details>
+  <details class="deepq"><summary>מה אמרו בירושלמי על "רוענו זוננו פרנסנו" בשבת?</summary><p>שמותר, כי כך הוא טופס הברכות.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G5a,G5b,G6a,G6b,G7,G8,G9">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>ברכת המזון מן התורה, והברכה שלפני האוכל</h2>
+  <p class="lead">מאיזה פסוק לומדים שברכת המזון היא מן התורה, ומניין שמברכים גם לפני האוכל? כמה תנאים, וכל אחד מביא לימוד אחר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מנין לברכת המזון מן התורה</td><td>מניין לברכת המזון מן התורה?</td></tr>
+      <tr><td>ואכלת ושבעת וברכת זו ברכת הזן</td><td>"ואכלת ושבעת וברכת": זו ברכת הזן.</td></tr>
+      <tr><td>את ה' אלהיך זו ברכת הזמון</td><td>"את ה' אלהיך": זו ברכת הזימון.</td></tr>
+      <tr><td>על הארץ זו ברכת הארץ</td><td>"על הארץ": זו ברכת הארץ.</td></tr>
+      <tr><td>הטובה זו בונה ירושלים</td><td>"הטובה": זו בונה ירושלים.</td></tr>
+      <tr><td>אין לי אלא לאחריו לפניו מנין</td><td>אין לי אלא (ברכה) שאחריו. לפניו מניין?</td></tr>
+      <tr><td>כשהוא שבע מברך</td><td>כשהוא שבע, מברך;</td></tr>
+      <tr><td>כשהוא רעב לא כל שכן</td><td>כשהוא רעב, לא כל שכן?</td></tr>
+      <tr><td>מגדלו לה' אתי נפקא</td><td>מ"גדלו לה' אתי" זה נלמד.</td></tr>
+      <tr><td>אשר נתן לך משנתן לך</td><td>"אשר נתן לך": משעה שנתן לך.</td></tr>
+      <tr><td>אל תקרי ובירך אלא וברך</td><td>אל תקרא "ובירך" אלא "וברך".</td></tr>
+      <tr><td>ואימתי קרוי לחם קודם שיאכלנו</td><td>ומתי הוא נקרא לחם? לפני שיאכל אותו.</td></tr>
+      <tr><td>וכל כך למה</td><td>ולמה כל כך?</td></tr>
+      <tr><td>לפי שאין מלכות נוגעת בחברתה</td><td>לפי שאין מלכות נוגעת בחברתה</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>התנא הראשון:</b> כל חלק בפסוק "ואכלת ושבעת וברכת את ה' אלהיך על הארץ הטובה אשר נתן לך" מלמד ברכה: הזן, הזימון, הארץ, בונה ירושלים, והטוב והמטיב.</p>
+  <p><b>לפני האוכל:</b> הפסוק מדבר על ברכה שאחרי האוכל. את הברכה שלפניו התנא הראשון לומד בקל וחומר: אם מודים כשהוא שבע, כל שכן כשהוא רעב ועומד ליהנות.</p>
+  <p><b>רבי:</b> לומד את הזימון מ"גדלו לה' אתי", ואת "הטוב והמטיב" אינו לומד מן הפסוק, כי תוקנה ביבנה. את הברכה שלפני האוכל הוא לומד מ"אשר נתן לך": משעה שנתן לך, עוד לפני האכילה.</p>
+  <p><b>רבי יצחק ורבי נתן:</b> רבי יצחק לומד מ"וברך את לחמך": "לחם" נקרא כך לפני שנאכל. רבי נתן לומד מן הפסוק על שמואל הנביא, "כי הוא יברך הזבח, אחרי כן יאכלו הקרואים".</p>
+  <p><b>הנערות ושאול:</b> בפסוק של רבי נתן הנערות האריכו בדבריהן לשאול. הגמרא מביאה שלושה טעמים: נשים מרבות בדיבור; כדי להסתכל ביופיו של שאול; ולפי רבי יוחנן, כי זמנו של שאול למלוך עוד לא הגיע, ומלכות אינה נוגעת בחברתה.</p>
+  <div data-hl="R4,R7" class="voice r"><span class="tag">רש"י</span><blockquote>בדתנא קמא גרסינן אשר נתן לך זו הטוב והמטיב ולא גרסינן ביבנה תקנוה אלא בדרבי:</blockquote><blockquote>אינו צריך – לק"ו זה ולא גרסי' בדרבי אשר נתן לך זה הטוב והמטיב:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: בדברי התנא הראשון גורסים "אשר נתן לך, זו הטוב והמטיב". בדברי רבי לא גורסים זאת, אלא "ביבנה תקנוה".</p></div>
+  <div data-hl="R5,R6" class="voice r"><span class="tag">רש"י</span><blockquote>כשהוא שבע – מצוה לברך ולהודות על שבעו:</blockquote><blockquote>כשהוא רעב – והוא בא להפיק את רעבו ע"י ברייתו של הקב"ה לא כל שכן שזה צריך לברך להקב"ה יותר:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: כשהוא שבע, מצווה להודות על שובעו. כשהוא רעב ובא להשקיט רעבו בבריאה של הקדוש ברוך הוא, כל שכן שצריך לברך.</p></div>
+  <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>אלא וברך את לחמך – ברך על לחמך:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "וברך את לחמך" פירושו ברך על לחמך.</p></div>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>כי הוא יברך הזבח ואחרי כן יאכלו הקרואים – למדך שטעון לברך לפני אכילה על הזבח הוא אומר ברוך אשר קדשנו במצותיו וצונו לאכול את הזבח והיכן צונו והבשר תאכל (דברים יב):</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מכאן שצריך לברך לפני אכילת הזבח: "אשר קדשנו במצוותיו וצונו לאכול את הזבח". והציווי הוא "והבשר תאכל".</p></div>
+  <div data-hl="R10,R11" class="voice r"><span class="tag">רש"י</span><blockquote>וכל כך למה – היו מאריכות בדבריהן:</blockquote><blockquote>שאין מלכות נוגעת בחברתה – לפי ששמואל היה מנהיג את ישראל ושאול היה נוטל את השררה משדבר שמואל אליו ואורך דברים עכב לפי שעה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הנערות האריכו בדבריהן. ושמואל היה מנהיג את ישראל, ושאול היה עתיד לקבל את השררה משעה ששמואל ידבר איתו, ולכן אריכות הדברים עיכבה אותו לפי שעה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>ארבע דרכים לאותו דין</h3>
+    <p>כל התנאים מסכימים שמברכים לפני האוכל. הם חלוקים רק במקור. התנא הראשון לומד מסברא, בקל וחומר. רבי לומד מלשון "נתן", שמשמעה רגע הנתינה. רבי יצחק לומד מן השם "לחם". רבי נתן לומד ממעשה שבספר שמואל.</p>
+    <p>גם בברכות שאחרי האוכל יש הבדל: לפי התנא הראשון כל ארבע הברכות רמוזות בפסוק אחד, ולפי רבי הזימון נלמד מפסוק אחר, והרביעית אינה מן התורה כלל.</p>
+    <h3>מלכות אינה נוגעת בחברתה</h3>
+    <p>הטעם של רבי יוחנן אינו תלוי בנערות עצמן. לפיו, כל מלכות יש לה זמן, ומלכות חדשה אינה מתחילה אפילו רגע לפני שהקודמת נגמרת. האריכות בדברים עיכבה את שאול, כדי ששמואל ימשיך להנהיג עד הרגע שנקבע.</p>
+  </div>
+  <p class="godeep">מה ההבדל בין הלימוד של התנא הראשון ללימוד של רבי, לגבי הברכה שלפני האוכל? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה לומדים מ"את ה' אלהיך", לפי התנא הראשון?</summary><p>את ברכת הזימון.</p></details>
+  <details><summary>איך התנא הראשון לומד את הברכה שלפני האוכל?</summary><p>בקל וחומר: כשהוא שבע מברך, כשהוא רעב לא כל שכן.</p></details>
+  <details><summary>מה לומד רבי יצחק מ"וברך את לחמך"?</summary><p>שמברכים לפני האוכל, כי לחם נקרא כך לפני שאוכלים אותו.</p></details>
+  <details><summary>מה הטעם של רבי יוחנן לאריכות הנערות?</summary><p>שאין מלכות נוגעת בחברתה אפילו כמלוא נימה.</p></details>
+  <details class="deepq"><summary>מאיזה פסוק לומד רבי את ברכת הזימון?</summary><p>"גדלו לה' אתי".</p></details>
+  <details class="deepq"><summary>מה מברכים לפני אכילת הזבח, לפי רש"י?</summary><p>"אשר קדשנו במצוותיו וצונו לאכול את הזבח".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G10a,G10b,G11,G12">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>ברכת התורה, וברכה על הרעה</h2>
+  <p class="lead">מן הלימוד של ברכת המזון הגמרא עוברת לברכת התורה, ולברכה על מה שבא על האדם לרעה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ואין לי אלא ברכת המזון</td><td>ואין לי אלא ברכת המזון.</td></tr>
+      <tr><td>ברכת התורה מנין</td><td>ברכת התורה מניין?</td></tr>
+      <tr><td>על חיי שעה מברך</td><td>על חיי שעה מברך;</td></tr>
+      <tr><td>על חיי עוה"ב לא כ"ש</td><td>על חיי העולם הבא, לא כל שכן?</td></tr>
+      <tr><td>על הארץ הטובה אשר נתן לך</td><td>"על הארץ הטובה אשר נתן לך",</td></tr>
+      <tr><td>ואתנה לך את לחות האבן</td><td>"ואתנה לך את לחות האבן".</td></tr>
+      <tr><td>כשם שמברך על הטובה כך מברך על הרעה</td><td>כשם שמברך על הטובה, כך מברך על הרעה.</td></tr>
+      <tr><td>דיינך בכל דין שדנך</td><td>הדיין שלך, בכל דין שדן אותך,</td></tr>
+      <tr><td>בין מדה טובה ובין מדה פורענות</td><td>בין במידה טובה ובין במידת פורענות.</td></tr>
+      <tr><td>טובה זו תורה</td><td>"טובה": זו התורה.</td></tr>
+      <tr><td>כי לקח טוב נתתי לכם</td><td>"כי לקח טוב נתתי לכם".</td></tr>
+      <tr><td>הטובה זו בנין ירושלים</td><td>"הטובה": זו בניין ירושלים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ברכת התורה בקל וחומר:</b> רבי ישמעאל אומר: אם על המזון, שנותן חיי שעה, מברכים, כל שכן על התורה, שנותנת חיי העולם הבא.</p>
+  <p><b>ברכת התורה מן הפסוק:</b> רבי חייא בר נחמני אומר בשם רבי ישמעאל שאין צורך בקל וחומר. בברכת המזון נאמר "אשר נתן לך", ועל התורה נאמר "ואתנה לך את לחות האבן והתורה". הנתינה בשני המקומות מחברת ביניהם.</p>
+  <p><b>על הרעה:</b> רבי מאיר לומד מ"ה' אלהיך" שהקדוש ברוך הוא הוא הדיין, בכל דין שהוא דן, טוב או רע. לכן מברכים גם על הרעה.</p>
+  <p><b>רבי יהודה בן בתירה:</b> לומד מן הכפילות "טובה" ו"הטובה": "טובה" היא התורה, כמו "לקח טוב", ו"הטובה" היא בניין ירושלים, כמו "ההר הטוב".</p>
+  <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>בין מדה טובה – התורה מדה טובה היא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מעיר על המילים "מידה טובה": התורה היא מידה טובה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה רבי יהודה בן בתירה בא לחדש</h3>
+    <p>הוא אומר "אינו צריך", כלומר אין צורך בלימוד שקדם לו. הגמרא אינה מפרשת במפורש על איזה לימוד הוא חולק. בפשטות דבריו עוסקים בברכת התורה: במקום ללמוד אותה מ"נתן", הוא מוצא את התורה במילה "טובה" שבפסוק של ברכת המזון עצמו.</p>
+    <p>כך שלושת הלימודים של ברכת התורה מתקדמים: קל וחומר מסברא, לימוד ממילה משותפת לשני פסוקים, ולבסוף מציאת התורה בתוך הפסוק עצמו.</p>
+  </div>
+  <p class="godeep">מה ההבדל בין הלימוד של רבי ישמעאל ללימוד של רבי חייא בר נחמני? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הקל וחומר של רבי ישמעאל?</summary><p>על חיי שעה מברך, על חיי העולם הבא לא כל שכן?</p></details>
+  <details><summary>מאילו שני פסוקים לומד רבי חייא בר נחמני?</summary><p>"על הארץ הטובה אשר נתן לך", ו"ואתנה לך את לחות האבן והתורה".</p></details>
+  <details><summary>מניין לרבי מאיר שמברכים גם על הרעה?</summary><p>מ"ה' אלהיך": הוא הדיין בכל דין, בין במידה טובה ובין במידת פורענות.</p></details>
+  <details class="deepq"><summary>מה מפרש רבי יהודה בן בתירה במילים "טובה" ו"הטובה"?</summary><p>"טובה" היא התורה, ו"הטובה" היא בניין ירושלים.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G13">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>מה חייבים להזכיר בברכת הארץ ובבונה ירושלים</h2>
+  <p class="lead">הברייתא קובעת מילים שבלעדיהן לא יצא ידי חובה, ומוסיפה אילו נושאים צריך להזכיר בברכת הארץ ובאיזה סדר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>כל שלא אמר ארץ חמדה טובה ורחבה</td><td>כל מי שלא אמר "ארץ חמדה טובה ורחבה"</td></tr>
+      <tr><td>בברכת הארץ ומלכות בית דוד בבונה ירושלים</td><td>בברכת הארץ, ו"מלכות בית דוד" בבונה ירושלים,</td></tr>
+      <tr><td>לא יצא ידי חובתו</td><td>לא יצא ידי חובתו.</td></tr>
+      <tr><td>נחום הזקן אומר צריך שיזכור בה ברית</td><td>נחום הזקן אומר: צריך שיזכיר בה ברית.</td></tr>
+      <tr><td>רבי יוסי אומר צריך שיזכור בה תורה</td><td>רבי יוסי אומר: צריך שיזכיר בה תורה.</td></tr>
+      <tr><td>פלימו אומר צריך שיקדים ברית לתורה</td><td>פלימו אומר: צריך שיקדים ברית לתורה,</td></tr>
+      <tr><td>שזו נתנה בשלש בריתות</td><td>שזו ניתנה בשלוש בריתות.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רבי אליעזר:</b> בברכת הארץ חייבים לומר "ארץ חמדה טובה ורחבה", ובבונה ירושלים "מלכות בית דוד". רש"י מסביר: על ידי דוד נתקדשה ירושלים.</p>
+  <p><b>ברית ותורה:</b> נחום הזקן מוסיף שבברכת הארץ צריך להזכיר את הברית, ורבי יוסי מוסיף את התורה. לפי רש"י, שניהם קשורים לארץ: היא ניתנה לאברהם בברית המילה, ונירשה בזכות התורה והמצוות.</p>
+  <p><b>הסדר:</b> פלימו אומר שהברית קודמת לתורה. הטעם מתחיל כאן, "שזו ניתנה בשלוש בריתות", ונמשך בעמוד הבא.</p>
+  <div data-hl="R14,R15" class="voice r"><span class="tag">רש"י</span><blockquote>צריך שיזכור בה ברית – בברכת הארץ שעל ידי ברית נתנה לאברהם בפרשת מילה (בראשית י״ז:ח׳) ונתתי לך ולזרעך אחריך את ארץ מגריך:</blockquote><blockquote>צריך שיזכור בה תורה – שאף בזכות התורה והמצות ירשו את הארץ שנאמר למען תחיון ורביתם ובאתם וירשתם את הארץ (דברים ח׳:א׳):</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הברית נזכרת בברכת הארץ כי בפרשת המילה נאמר "ונתתי לך ולזרעך אחריך את ארץ מגוריך". והתורה נזכרת כי בזכותה ירשו את הארץ, שנאמר "למען תחיון ורביתם ובאתם וירשתם את הארץ".</p></div>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>צריך שיקדים ברית לתורה – כגון על בריתך שחתמת בבשרנו ועל תורתך שלמדתנו ועל חיים שחוננתנו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מביא את הנוסח: "על בריתך שחתמת בבשרנו ועל תורתך שלמדתנו ועל חיים שחוננתנו".</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה הברית קודמת</h3>
+    <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>תורה נתנה בשלש בריתות – בשלשה מקומות נתנה התורה לישראל בסיני ובאהל מועד ובהר גרזים ובערבות מואב ובכל אחד נכרתה ברית כדתניא במסכת סוטה (דף לז.) ארור בכלל וארור בפרט וכו' וכן באהל מועד שנא' (דברים כ״ח:ס״ט) אלה דברי הברית אשר צוה ה' את משה לכרות את בני ישראל בארץ מואב מלבד הברית אשר כרת אתם בחורב וכתיב (שם כט) ושמרתם את דברי הברית וגו':</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: התורה ניתנה לישראל בכמה מקומות, ובכל אחד נכרתה ברית. הוא מביא את מסכת סוטה, ואת הפסוק "מלבד הברית אשר כרת אתם בחורב".</p></div>
+    <p>פלימו משווה בין שתי בריתות: הברית של התורה, והברית של המילה. כאן נאמר רק שהתורה ניתנה בשלוש בריתות. בעמוד הבא הוא משלים: המילה ניתנה בשלוש עשרה בריתות, ולכן היא קודמת.</p>
+  </div>
+  <p class="godeep">מה מסביר רש"י על הקשר בין הברית לבין הארץ? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה חייבים לומר בברכת הארץ, לפי רבי אליעזר?</summary><p>"ארץ חמדה טובה ורחבה".</p></details>
+  <details><summary>למה מזכירים את מלכות בית דוד בבונה ירושלים, לפי רש"י?</summary><p>כי על ידי דוד נתקדשה ירושלים.</p></details>
+  <details><summary>מה אמר פלימו?</summary><p>שצריך להקדים ברית לתורה.</p></details>
+  <details class="deepq"><summary>למה צריך להזכיר תורה בברכת הארץ, לפי רש"י?</summary><p>כי גם בזכות התורה והמצוות ירשו את הארץ.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>צירוף והוצאה:</b> מי שאכל ירק ושתה יין מצטרף לזימון, אבל להוציא את הרבים צריך כזית דגן.</li>
+      <li><b>מי תיקן:</b> משה תיקן את "הזן", יהושע את ברכת הארץ, דוד ושלמה את "בונה ירושלים", וחכמי יבנה את "הטוב והמטיב" כנגד הרוגי ביתר.</li>
+      <li><b>שבת:</b> את קדושת היום אומרים באמצע ברכת הנחמה. רבי אליעזר מתיר גם בברכות אחרות.</li>
+      <li><b>מן התורה:</b> "ואכלת ושבעת וברכת" מלמד את ברכת המזון, ותנאים שונים לומדים מפסוקים שונים שמברכים גם לפני האוכל.</li>
+      <li><b>ברכת התורה:</b> נלמדת בקל וחומר מברכת המזון, או מן המילה "נתן".</li>
+      <li><b>על הרעה:</b> הקדוש ברוך הוא הוא הדיין בכל דין, ולכן מברכים גם על הרעה.</li>
+      <li><b>ברית ותורה:</b> בברכת הארץ מזכירים ברית ותורה, והברית קודמת.</li>
+      <li><b>נשאר פתוח:</b> הטעם של פלימו נגמר בעמוד הבא: התורה ניתנה בשלוש בריתות, והמילה בשלוש עשרה.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>הלכתא</td><td>כך ההלכה</td></tr>
+      <tr><td>ברכת הזן</td><td>הברכה הראשונה בברכת המזון, &quot;הזן את הכל&quot;</td></tr>
+      <tr><td>הטוב והמטיב</td><td>הברכה הרביעית בברכת המזון, שתוקנה ביבנה</td></tr>
+      <tr><td>נחמה</td><td>ברכת &quot;בונה ירושלים&quot;, השלישית בברכת המזון</td></tr>
+      <tr><td>קדושת היום</td><td>הזכרת השבת או החג בתפילה ובברכה</td></tr>
+      <tr><td>היינו תנא קמא</td><td>זהו התנא הראשון. כך שואלים מה ההבדל בין שתי דעות שנראות זהות</td></tr>
+      <tr><td>איכא בינייהו</td><td>יש ביניהם הבדל</td></tr>
+      <tr><td>דיעבד</td><td>אחרי שכבר נעשה. מה הדין אם כבר עשה אחרת</td></tr>
+      <tr><td>אין לי אלא</td><td>אין לי (מן הפסוק) אלא. פתיחה לשאלה מניין לומדים מקרה נוסף</td></tr>
+      <tr><td>קל וחומר</td><td>לימוד מן הקל אל החמור</td></tr>
+      <tr><td>אל תקרי</td><td>אל תקרא כך, אלא כך. דרשה שקוראת מילה בניקוד אחר</td></tr>
+      <tr><td>דברניות</td><td>מרבות בדיבור</td></tr>
+      <tr><td>כמלא נימא</td><td>כמלוא חוט השערה</td></tr>
+      <tr><td>מדת פורענות</td><td>מידת עונש. מה שבא על האדם לרעה</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-48a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-49a.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-49a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1a", "טבל עמהם אלא בציר ולא אכל עמהם אלא גרוגרת אחת מצטרף ולהוציא את הרבים ידי חובתם אינו מוציא עד שיאכל כזית דגן", false, ""], ["G1b", "אמר רב חנא בר יהודה משמיה דרבא הלכתא אכל עלה ירק ושתה כוס של יין מצטרף להוציא אינו מוציא עד שיאכל כזית דגן", false, ""], ["G2a", "אמר רב נחמן משה תקן לישראל ברכת הזן בשעה שירד להם מן יהושע תקן להם ברכת הארץ כיון שנכנסו לארץ דוד ושלמה תקנו בונה ירושלים דוד תקן על ישראל עמך ועל ירושלים עירך ושלמה תקן על הבית הגדול והקדוש", true, ""], ["G2b", "הטוב והמטיב ביבנה תקנוה כנגד הרוגי ביתר דאמר רב מתנא אותו היום שניתנו הרוגי ביתר לקבורה תקנו ביבנה הטוב והמטיב הטוב שלא הסריחו והמטיב שניתנו לקבורה:", false, ""], ["G3", "תנו רבנן סדר ברכת המזון כך היא ברכה ראשונה ברכת הזן שניה ברכת הארץ שלישית בונה ירושלים רביעית הטוב והמטיב ובשבת מתחיל בנחמה ומסיים בנחמה ואומר קדושת היום באמצע רבי אליעזר אומר רצה לאומרה בנחמה אומרה בברכת הארץ אומרה בברכה שתקנו חכמים ביבנה אומרה וחכמים אומרים אינו אומרה אלא בנחמה בלבד", false, ""], ["G4", "חכמים היינו תנא קמא איכא בינייהו דיעבד:", false, ""], ["G5a", "תנו רבנן מנין לברכת המזון מן התורה שנאמר (דברים ח, י) ואכלת ושבעת וברכת זו ברכת הזן את ה' אלהיך זו ברכת הזמון על הארץ זו ברכת הארץ הטובה זו בונה ירושלים וכן הוא אומר (דברים ג, כה) ההר הטוב הזה והלבנון אשר נתן לך זו הטוב והמטיב", true, ""], ["G5b", "אין לי אלא לאחריו לפניו מנין אמרת קל וחומר כשהוא שבע מברך כשהוא רעב לא כל שכן", false, ""], ["G6a", "רבי אומר [אינו צריך] ואכלת ושבעת וברכת זו ברכת הזן אבל ברכת הזמון (תהלים לד, ד) מגדלו לה' אתי נפקא על הארץ זו ברכת הארץ הטובה זו בונה ירושלים וכן הוא אומר ההר הטוב הזה והלבנון הטוב והמטיב ביבנה תקנוה", false, ""], ["G6b", "אין לי אלא לאחריו לפניו מנין תלמוד לומר אשר נתן לך משנתן לך", false, ""], ["G7", "רבי יצחק אומר אינו צריך הרי הוא אומר (שמות כג, כה) וברך את לחמך ואת מימיך אל תקרי ובירך אלא וברך ואימתי קרוי לחם קודם שיאכלנו", false, ""], ["G8", "ר' נתן אומר אינו צריך הרי הוא אומר (שמואל א ט, יג) כבאכם העיר כן תמצאון אותו בטרם יעלה הבמתה לאכול כי לא יאכל העם עד באו כי הוא יברך הזבח אחרי כן יאכלו הקרואים", false, ""], ["G9", "וכל כך למה לפי שהנשים דברניות הן ושמואל אמר כדי להסתכל ביפיו של שאול דכתיב (שמואל א ט, ב) משכמו ומעלה גבוה מכל העם ורבי יוחנן אמר לפי שאין מלכות נוגעת בחברתה אפי' כמלא נימא", false, ""], ["G10a", "ואין לי אלא ברכת המזון ברכת התורה מנין אמר ר' ישמעאל ק\"ו על חיי שעה מברך על חיי עוה\"ב לא כ\"ש", true, ""], ["G10b", "רבי חייא בר נחמני תלמידו של רבי ישמעאל אומר משום רבי ישמעאל אינו צריך הרי הוא אומר (דברים ח, י) על הארץ הטובה אשר נתן לך ולהלן הוא אומר (שמות כד, יב) ואתנה לך את לחות האבן והתורה והמצוה וגו'", false, ""], ["G11", "ר\"מ אומר ומנין שכשם שמברך על הטובה כך מברך על הרעה ת\"ל אשר נתן לך ה' אלהיך דיינך בכל דין שדנך בין מדה טובה ובין מדה פורענות", false, ""], ["G12", "רבי יהודה בן בתירה אומר אינו צריך הרי הוא אומר טובה הטובה טובה זו תורה וכן הוא אומר (משלי ד, ב) כי לקח טוב נתתי לכם הטובה זו בנין ירושלים וכן הוא אומר ההר הטוב הזה והלבנון:", false, ""], ["G13", "תניא רבי אליעזר אומר כל שלא אמר ארץ חמדה טובה ורחבה בברכת הארץ ומלכות בית דוד בבונה ירושלים לא יצא ידי חובתו נחום הזקן אומר צריך שיזכור בה ברית רבי יוסי אומר צריך שיזכור בה תורה פלימו אומר צריך שיקדים ברית לתורה שזו נתנה בשלש בריתות", false, ""]], "R": [["R1", "ובשבת מתחיל בנחמה", "כלומר אינו צריך לא לסיים ולא להתחיל בשל שבת אלא מתחיל ומסיים בנחמה בנין ירושלים קרי נחמה כל היכי דמתחיל בין רחם בין נחמנו:", false], ["R2", "בברכה שתקנו חכמים", "בהטוב והמטיב:", false], ["R3", "איכא בינייהו דיעבד", "לרבנן בתראי מהדרינן ליה:", false], ["R4", "", "בדתנא קמא גרסינן אשר נתן לך זו הטוב והמטיב ולא גרסינן ביבנה תקנוה אלא בדרבי:", false], ["R5", "כשהוא שבע", "מצוה לברך ולהודות על שבעו:", false], ["R6", "כשהוא רעב", "והוא בא להפיק את רעבו ע\"י ברייתו של הקב\"ה לא כל שכן שזה צריך לברך להקב\"ה יותר:", false], ["R7", "אינו צריך", "לק\"ו זה ולא גרסי' בדרבי אשר נתן לך זה הטוב והמטיב:", false], ["R8", "אלא וברך את לחמך", "ברך על לחמך:", false], ["R9", "כי הוא יברך הזבח ואחרי כן יאכלו הקרואים", "למדך שטעון לברך לפני אכילה על הזבח הוא אומר ברוך אשר קדשנו במצותיו וצונו לאכול את הזבח והיכן צונו והבשר תאכל (דברים יב):", false], ["R10", "וכל כך למה", "היו מאריכות בדבריהן:", false], ["R11", "שאין מלכות נוגעת בחברתה", "לפי ששמואל היה מנהיג את ישראל ושאול היה נוטל את השררה משדבר שמואל אליו ואורך דברים עכב לפי שעה:", false], ["R12", "בין מדה טובה", "התורה מדה טובה היא:", false], ["R13", "ומלכות בית דוד בבונה ירושלים", "שעל ידו נתקדשה ירושלים:", false], ["R14", "צריך שיזכור בה ברית", "בברכת הארץ שעל ידי ברית נתנה לאברהם בפרשת מילה (בראשית י״ז:ח׳) ונתתי לך ולזרעך אחריך את ארץ מגריך:", false], ["R15", "צריך שיזכור בה תורה", "שאף בזכות התורה והמצות ירשו את הארץ שנאמר למען תחיון ורביתם ובאתם וירשתם את הארץ (דברים ח׳:א׳):", false], ["R16", "צריך שיקדים ברית לתורה", "כגון על בריתך שחתמת בבשרנו ועל תורתך שלמדתנו ועל חיים שחוננתנו:", false], ["R17", "תורה נתנה בשלש בריתות", "בשלשה מקומות נתנה התורה לישראל בסיני ובאהל מועד ובהר גרזים ובערבות מואב ובכל אחד נכרתה ברית כדתניא במסכת סוטה (דף לז.) ארור בכלל וארור בפרט וכו' וכן באהל מועד שנא' (דברים כ״ח:ס״ט) אלה דברי הברית אשר צוה ה' את משה לכרות את בני ישראל בארץ מואב מלבד הברית אשר כרת אתם בחורב וכתיב (שם כט) ושמרתם את דברי הברית וגו':", false]], "T": [["T1a", "מתחיל בנחמה", "פי' הקונטרס לאו דוק' מתחיל בנחמה ומסיים אלא כלומר דאין צריך להזכיר של שבת לא בפתיחה ולא בנחמה אלא באמצע אבל מתחיל ומסיים בנחמת ירושלים כמו בחול שאומר רחם וחותם בבונה ירושלים ויש שמתחילין בנחמנו וחותמים בנחמת ציון עירך ובבנין ירושלים ונותנים טעם לדבריהם דרחם הוי לשון תחנה ואין אומרים תחנונים בשבת אבל נחם אינו לשון תחנונים אלא כמו והנחם על הרעה לעמך (שמות ל״ב:י״ב)", false], ["T1b", "", "ולא נהירא דהכל משמע לשון תחנונים ואין להקפיד אפילו אי הוי לשון בקשה כדאמר בירושלמי דשבת בפרק אלו קשרים מהו לומר רוענו זוננו פרנסנו בשבת א\"ל טופס ברכות כך הוא ומנהג שטות הוא המשנה ברכה של חול:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': סוף ההלכה, וארבע הברכות", "x": "העמוד הקודם הבחין בין מי שמצטרף לזימון לבין מי שמוציא את הרבים, ונקטע באמצע דברי רבא. כאן הדברים נגמרים בהלכה. אחר כך הגמרא עוברת לברכת המזון עצמה: מי תיקן כל אחת מארבע הברכות, באיזה סדר הן נאמרות, ומניין שהן מן התורה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1a"], "t": "רבא חוזר על הברייתא", "x": "אפילו לא טבל איתם אלא במי מלח, ולא אכל איתם אלא גרוגרת אחת, מצטרף. ולהוציא את הרבים ידי חובתם אינו מוציא עד שיאכל כזית דגן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1b"], "t": "ההלכה: עלה ירק וכוס יין", "x": "רב חנא בר יהודה אמר בשם רבא: \"הלכתא\", כך ההלכה. אכל עלה ירק ושתה כוס יין, מצטרף. אבל כדי לברך בשביל כולם, צריך כזית דגן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a"], "t": "רב נחמן: משה, יהושע, דוד ושלמה", "x": "משה תיקן לישראל את ברכת \"הזן\" בשעה שירד להם המן. יהושע תיקן להם את ברכת הארץ כשנכנסו לארץ. דוד ושלמה תיקנו את \"בונה ירושלים\": דוד תיקן \"על ישראל עמך ועל ירושלים עירך\", ושלמה תיקן \"על הבית הגדול והקדוש\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2b"], "t": "\"הטוב והמטיב\" ביבנה", "x": "את ברכת \"הטוב והמטיב\" תיקנו ביבנה כנגד הרוגי ביתר. אמר רב מתנא: באותו היום שבו ניתנו הרוגי ביתר לקבורה, תיקנו ביבנה \"הטוב והמטיב\". \"הטוב\", שלא הסריחו. \"והמטיב\", שניתנו לקבורה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3"], "t": "ברייתא: סדר ברכת המזון", "x": "שנו חכמים: הסדר של ברכת המזון כך הוא. ברכה ראשונה, ברכת הזן. שנייה, ברכת הארץ. שלישית, בונה ירושלים. רביעית, הטוב והמטיב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R1"], "t": "ובשבת: מתחיל בנחמה ומסיים בנחמה", "x": "בשבת מתחיל בנחמה ומסיים בנחמה, ואומר את קדושת היום באמצע. רש\"י מפרש: ברכת בונה ירושלים נקראת \"נחמה\", בין אם פותחים אותה ב\"רחם\" ובין אם ב\"נחמנו\". אין צורך לפתוח או לחתום בשבת, אלא לפתוח ולחתום בנחמה, ואת השבת להזכיר באמצע.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3", "T1a"], "t": "התוספות: \"רחם\" או \"נחמנו\"", "x": "רש\"י פירש שפותחים ב\"רחם\" וחותמים ב\"בונה ירושלים\", כמו ביום חול. ויש שפותחים בשבת ב\"נחמנו\". הם נותנים טעם: \"רחם\" היא לשון תחנה, ואין אומרים תחנונים בשבת. אבל \"נחם\" אינה לשון תחנה, אלא כמו \"והנחם על הרעה לעמך\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3", "T1b"], "t": "התוספות: אין לשנות את הנוסח", "x": "התוספות אומרים שאין זה נראה. גם \"נחם\" משמעו תחנונים. ואין להקפיד אפילו אם זו לשון בקשה. בירושלמי נשאל אם מותר לומר בשבת \"רוענו זוננו פרנסנו\", והתשובה הייתה: כך הוא טופס הברכות. ומנהג שטות הוא לשנות ברכה של חול.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R2"], "t": "רבי אליעזר וחכמים", "x": "רבי אליעזר אומר: אם רצה לומר את קדושת היום בברכת הנחמה, אומר. בברכת הארץ, אומר. בברכה שתיקנו חכמים ביבנה, אומר. רש\"י מפרש שזו ברכת \"הטוב והמטיב\". וחכמים אומרים: אינו אומר אותה אלא בברכת הנחמה בלבד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R3"], "t": "מה בין חכמים לתנא קמא", "x": "\"חכמים היינו תנא קמא\", החכמים שבסוף הם התנא הראשון, ומה הם מוסיפים? \"איכא בינייהו דיעבד\", יש ביניהם הבדל במי שכבר עשה אחרת. רש\"י: לפי החכמים שבסוף, מחזירים אותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5a"], "t": "ברייתא: ברכת המזון מן התורה", "x": "מניין לברכת המזון מן התורה? שנאמר \"ואכלת ושבעת וברכת\": זו ברכת הזן. \"את ה' אלהיך\": זו ברכת הזימון. \"על הארץ\": זו ברכת הארץ. \"הטובה\": זו בונה ירושלים, וכן הוא אומר \"ההר הטוב הזה והלבנון\". \"אשר נתן לך\": זו הטוב והמטיב.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5a", "R4"], "t": "רש\"י: הגרסה בברייתא", "x": "בדברי התנא הראשון גורסים \"אשר נתן לך, זו הטוב והמטיב\", ולא גורסים \"ביבנה תקנוה\". הלשון הזו שייכת רק לדברי רבי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5b", "R5", "R6"], "t": "ומניין לברכה שלפני האוכל?", "x": "\"אין לי אלא לאחריו\", אין לי אלא ברכה שאחרי האוכל. לפניו מניין? קל וחומר: כשהוא שבע מברך, כשהוא רעב לא כל שכן? רש\"י: כשהוא שבע, מצווה להודות על שובעו. וכשהוא רעב ובא להשקיט את רעבו בבריאה של הקדוש ברוך הוא, כל שכן שצריך לברך.", "a": "\"קל וחומר\" הוא לימוד מן הקל אל החמור: אם במקרה הקל יש חיוב, כל שכן במקרה החמור."}, {"w": "גמרא", "cols": false, "hl": ["G6a", "R7"], "t": "רבי: הזימון מפסוק אחר", "x": "רבי אומר שאין צורך בקל וחומר הזה. רבי מסכים שהפסוק הראשון מלמד את ברכת הזן. אבל את ברכת הזימון לומדים מ\"גדלו לה' אתי\". את ברכת הארץ ובונה ירושלים הוא לומד כמו התנא הראשון. ואת \"הטוב והמטיב\", לדבריו, אין לומדים מן הפסוק, כי תיקנו אותה ביבנה. רש\"י מוסיף שבדברי רבי אין גורסים ש\"אשר נתן לך\" היא הטוב והמטיב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6b"], "t": "רבי: \"אשר נתן לך\"", "x": "ומניין לברכה שלפני האוכל? \"תלמוד לומר\", הכתוב מלמד: \"אשר נתן לך\", משעה שנתן לך. כלומר, מברכים כבר כשהמאכל ניתן, לפני שאוכלים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R8"], "t": "רבי יצחק: \"וברך את לחמך\"", "x": "רבי יצחק אומר: אין צורך. הרי נאמר \"וברך את לחמך ואת מימיך\". אל תקרא \"ובירך\", אלא \"וברך\", ורש\"י מפרש: ברך על לחמך. ומתי הוא נקרא לחם? לפני שאוכלים אותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R9"], "t": "רבי נתן: \"כי הוא יברך הזבח\"", "x": "גם רבי נתן לומד את הברכה שלפני האוכל מפסוק אחר, בספר שמואל: \"כבאכם העיר כן תמצאון אותו\", \"כי לא יאכל העם עד באו כי הוא יברך הזבח אחרי כן יאכלו הקרואים\". רש\"י: מכאן שצריך לברך לפני אכילת הזבח, \"אשר קדשנו במצוותיו וצונו לאכול את הזבח\", והציווי הוא \"והבשר תאכל\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R10"], "t": "ולמה האריכו הנערות בדבריהן?", "x": "\"וכל כך למה\", ולמה כל כך הרבה דברים? רש\"י: הנערות שענו לשאול האריכו בדבריהן. התשובה הראשונה: לפי שהנשים \"דברניות\", מרבות בדיבור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "שמואל: יופיו של שאול", "x": "שמואל, האמורא, אמר טעם אחר: הנערות האריכו כדי להסתכל ביופיו של שאול, שנאמר עליו \"משכמו ומעלה גבוה מכל העם\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R11"], "t": "רבי יוחנן: מלכות אינה נוגעת בחברתה", "x": "רבי יוחנן אמר: לפי שאין מלכות נוגעת בחברתה אפילו כמלוא נימה, כחוט השערה. רש\"י: שמואל הנביא היה מנהיג את ישראל, ושאול היה עתיד לקבל את השררה משעה ששמואל ידבר איתו. אריכות הדברים עיכבה את הפגישה לפי שעה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10a"], "t": "ברכת התורה: קל וחומר", "x": "אין לי אלא ברכת המזון. ברכת התורה מניין? אמר רבי ישמעאל: קל וחומר. על חיי שעה, חיי העולם הזה שהמזון נותן, מברך. על חיי העולם הבא, לא כל שכן?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10b"], "t": "רבי חייא בר נחמני: \"נתן\" ו\"נתן\"", "x": "רבי חייא בר נחמני, תלמידו של רבי ישמעאל, אמר בשמו: אין צורך. הרי נאמר \"על הארץ הטובה אשר נתן לך\", ובמקום אחר נאמר \"ואתנה לך את לחות האבן והתורה והמצוה\". מה שם על התורה, אף כאן הנתינה כוללת את התורה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R12"], "t": "רבי מאיר: מברכים גם על הרעה", "x": "רבי מאיר אומר: מניין שכמו שמברך על הטובה, כך מברך על הרעה? \"תלמוד לומר\", \"אשר נתן לך ה' אלהיך\": \"דיינך\", הדיין שלך, בכל דין שדן אותך, בין במידה טובה ובין במידת פורענות. רש\"י מעיר על \"מידה טובה\": התורה היא מידה טובה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12"], "t": "רבי יהודה בן בתירה: \"טובה\" ו\"הטובה\"", "x": "רבי יהודה בן בתירה אומר: אין צורך. הרי נאמר \"טובה\" ו\"הטובה\". \"טובה\" היא התורה, וכן הוא אומר \"כי לקח טוב נתתי לכם\". ו\"הטובה\" היא בניין ירושלים, כמו שלמדנו קודם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R13"], "t": "רבי אליעזר: ארץ חמדה ומלכות בית דוד", "x": "רבי אליעזר אומר: מי שלא אמר \"ארץ חמדה טובה ורחבה\" בברכת הארץ, ו\"מלכות בית דוד\" בבונה ירושלים, לא יצא ידי חובתו. רש\"י: את מלכות בית דוד מזכירים בבונה ירושלים, כי על ידי דוד נתקדשה ירושלים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R14", "R15"], "t": "נחום הזקן ורבי יוסי: ברית ותורה", "x": "נחום הזקן אומר: צריך להזכיר בה ברית. רש\"י: בברכת הארץ, כי הארץ ניתנה לאברהם על ידי ברית המילה, שנאמר בפרשת המילה \"ונתתי לך ולזרעך אחריך את ארץ מגוריך\". רבי יוסי אומר: צריך להזכיר בה תורה. רש\"י: כי גם בזכות התורה והמצוות ירשו את הארץ.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R16"], "t": "פלימו: ברית לפני תורה", "x": "פלימו אומר: צריך להקדים את הברית לתורה. רש\"י מביא את הנוסח: \"על בריתך שחתמת בבשרנו ועל תורתך שלמדתנו\". והטעם: \"שזו נתנה בשלש בריתות\", התורה ניתנה בשלוש בריתות.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G13", "R17"], "t": "רש\"י: שלוש הבריתות של התורה", "x": "התורה ניתנה לישראל בכמה מקומות, ובכל אחד מהם נכרתה ברית. רש\"י מביא את מסכת סוטה, ואת הפסוק \"מלבד הברית אשר כרת אתם בחורב\". ההמשך של דברי פלימו, על הברית של המילה, נמצא בעמוד הבא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "מי שאכל ירק ושתה יין מצטרף לזימון, אבל להוציא את הרבים צריך כזית דגן. ארבע ברכות המזון תוקנו בידי משה, יהושע, דוד ושלמה, וחכמי יבנה. בשבת מזכירים את קדושת היום בברכת הנחמה. שלוש הברכות הראשונות והזימון נלמדים מן התורה, וגם הברכה שלפני האוכל, וברכת התורה. העמוד הבא משלים את דברי פלימו: התורה ניתנה בשלוש בריתות, והמילה בשלוש עשרה, ולכן הברית קודמת.", "a": ""}], "audio": "daf-48b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

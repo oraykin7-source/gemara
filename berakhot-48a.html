@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף מ&quot;ח עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף מ&quot;ח עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>שלשה שאכלו</span><span>פרק שביעי</span><span>ברכות<b>מח.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-47b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-48b.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 93</div>
+  <h1>מסכת ברכות, דף מ&quot;ח עמוד א&#x27;</h1>
+  <p class="sub">פרק שביעי, &quot;שלשה שאכלו&quot;. קטן שיודע למי מברכים, תשעה שאכלו דגן ואחד ירק, ינאי המלך ושמעון בן שטח, ומי מוציא את הרבים בברכה.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 4 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. קטן שיודע למי מברכים</a><a href="#u2">2. תשעה שאכלו דגן ואחד ירק</a><a href="#u3">3. ינאי המלך ושמעון בן שטח</a><a href="#u4">4. להצטרף או להוציא את הרבים</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>קטן שיודע למי מברכים</h2>
+  <p class="lead">הגמרא משלימה את התשובה מן העמוד הקודם, קטן פורח, ומיד פוסקת אחרת: מזמנים על קטן שיודע למי מברכים. המעשה באביי ורבא מראה מה פירוש "יודע".</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לאתויי קטן פורח</td><td>להוסיף קטן פורח.</td></tr>
+      <tr><td>ולית הלכתא ככל הני שמעתתא</td><td>ואין ההלכה כאף אחת מן השמועות האלה,</td></tr>
+      <tr><td>אלא כי הא דאמר רב נחמן</td><td>אלא כמו שאמר רב נחמן:</td></tr>
+      <tr><td>קטן היודע למי מברכין מזמנין עליו</td><td>קטן שיודע למי מברכים, מזמנים עליו.</td></tr>
+      <tr><td>אביי ורבא הוו יתבי קמיה דרבה</td><td>אביי ורבא ישבו לפני רבה.</td></tr>
+      <tr><td>אמר להו רבה למי מברכין</td><td>אמר להם רבה: למי מברכים?</td></tr>
+      <tr><td>אמרי ליה לרחמנא</td><td>אמרו לו: לרחמן.</td></tr>
+      <tr><td>ורחמנא היכא יתיב</td><td>והרחמן, היכן יושב?</td></tr>
+      <tr><td>רבא אחוי לשמי טללא</td><td>רבא הצביע אל הגג.</td></tr>
+      <tr><td>אביי נפק לברא אחוי כלפי שמיא</td><td>אביי יצא החוצה והצביע כלפי השמים.</td></tr>
+      <tr><td>תרווייכו רבנן הויתו</td><td>שניכם תהיו חכמים.</td></tr>
+      <tr><td>היינו דאמרי אינשי</td><td>זה מה שאומרים אנשים:</td></tr>
+      <tr><td>בוצין בוצין מקטפיה ידיע</td><td>דלעת, דלעת, מפרחה ניכרת.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>קטן פורח:</b> הברייתא אמרה "אין מדקדקין בקטן" כדי להוסיף קטן פורח. רש"י מפרש: אין בודקים אם כבר הגיע לשלוש עשרה שנה ויום אחד.</p>
+  <p><b>ההלכה:</b> הגמרא דוחה את השמועות שהובאו, ופוסקת כרב נחמן: המבחן אינו גיל ואינו סימנים, אלא אם הקטן יודע למי מברכים.</p>
+  <p><b>אביי ורבא:</b> רבה שאל אותם למי מברכים ואיפה הוא. שניהם ידעו שמברכים לקדוש ברוך הוא. רבא הצביע לגג, ואביי יצא החוצה כדי להצביע לשמים. רבה אמר שניכר בהם כבר עכשיו שיהיו חכמים, כמו דלעת שאיכותה ניכרת כבר מתחילתה.</p>
+  <div class="eg"><b>להמחשה:</b> לדוגמה, מורה שואל ילד צעיר שאלה פשוטה, ולפי האופן שבו הילד עונה הוא יודע אם הבין באמת.</div>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>לאתויי קטן פורח – שאין מדקדקין בו אם בא לכלל שנים או לאו ומה הן שנים י"ג שנים ויום אחד:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "קטן פורח" הוא קטן שאין מדקדקים בו אם הגיע לשנים. השנים הן שלוש עשרה שנה ויום אחד.</p></div>
+  <div data-hl="R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>טללא – גג:</blockquote><blockquote>בוצין – דלעת ואית דגרסי מקטפיה וקטף הוא שרף האילן כלומר משעה שהוא חונט ויוצא מתוך השרף ניכר אם יהיה טוב:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "טללא" הוא גג. "בוצין" הוא דלעת, ו"קטף" הוא השרף של האילן: משעה שהפרי מתחיל לצאת ניכר אם יהיה טוב.</p></div>
+  <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>אביי ורבא הוו יתבי וכו' – ואם תאמר היכי דמי אי הוו קטנים פורחים מאי רבותא הוה בהו שהביטו כלפי מעלה אלא צריך לומר דהאי לאו לאזמוני עלייהו קא מנסי להו כי היו קטנים טובא אלא לנסותינהו קא עביד שהיה בהם בינה:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: אם אביי ורבא היו קטנים פורחים, מה החידוש שהביטו כלפי מעלה? לכן רבה לא ניסה אותם כדי לזמן עליהם, כי היו קטנים מאוד, אלא כדי לראות שיש בהם בינה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>על מה נאמר "ולית הלכתא"</h3>
+    <div data-hl="T1a" class="voice t"><span class="tag">תוספות</span><blockquote>ולית הלכתא ככל הני שמעתתא אלא כי הא קטן היודע – משמע דקאי נמי ארבי יוחנן ולא נהירא שהרי אין דרך הגמרא שסותר דברי אמוראים והברייתא שהביא ראיה לדברי ר' יוחנן בלא שום טעם וי"ל דקאי אקטן פורח כלומר קטן פורח מזמנין עליו היינו דוקא היודע למי מברכין ותרווייהו בעינן ולפירושינו צ"ל דלא מייתי עובדא דאביי ורבא לענין אזמוני עלייהו אלא לפרש מהו קטן היודע למי מברכין דמסתמא לא פורחים הוו דאם …</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: אין דרך הגמרא לדחות בלי טעם את רבי יוחנן, שברייתא מסייעת לו. לכן הדחייה נאמרת על קטן פורח: מזמנים עליו רק אם גם יודע למי מברכים, וצריך את שניהם. והמעשה באביי ורבא בא רק להראות מהו "יודע".</p></div>
+    <div data-hl="T1b,T1c" class="voice t"><span class="tag">תוספות</span><blockquote>ואומר ר"ת אף על פי דלית הלכתא ככל הני שמעתתא מיהו הלכה כריב"ל דאמר קטן ממש עושין אותו סניף לעשרה והכא דבעינן פורח ויודע היינו דוקא בשלשה ולית הלכתא ככל הני שמעתתא לא קאי אריב"ל ודיקא נמי שהרי מפסיק הגמרא בינתיים באותו מעשה [דר' אליעזר] דלעולם ישכים אדם ותניא כוותיה אלא קאי אהני שמעתתא דבתר תניא כוותיה דישכים כגון תשעה וארון ושבת ושנים ותשעה נראין כעשרה ושנים מחדדים וקטן פורח</blockquote><blockquote>אע"ג דתנא ברייתא הכי לאתויי פורח יעמידנה רב נחמן באינו יודע למי מברכין והיינו נמי כריב"ל דאמר לעיל קטן אין מזמנין עליו פי' מוטל בעריסה עד שידע למי מברכין אבל עושין אותו סניף לעשרה פי' לברכת המזון וה"ה לתפלה דבהא לא פליג רב נחמן דכי בעי יודע ופורח כדפי' ה"מ לזמון שלשה אבל לסניף מודה לריב"ל דסניף לעשרה וה"ה לתפלה דקטן מצטרף ודיקא נמי דפריך עלה ממעשה דר' אליעזר שהיה לתפלה לריב"ל …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם: ההלכה כרבי יהושע בן לוי, שקטן עושים אותו סניף לעשרה, בברכת המזון וגם בתפילה. הדחייה נאמרת רק על השמועות שאחרי "לעולם ישכים אדם". והדרישה לפורח ויודע היא רק בזימון של שלושה.</p></div>
+    <h3>קטן, חומש ומניין</h3>
+    <div data-hl="T1d" class="voice t"><span class="tag">תוספות</span><blockquote>ומיהו תימה דבב"ר (פ' צא) קאמר עלה דריב"ל הדא הוא דתימא לברכת המזון אבל לתפלה לא והיה אומר ר"ת דאין הלכה כן לפי שחולק על הגמרא שלנו דודאי ריב"ל לענין תפלה נמי קאמר מדפריך מעובדא דר' אליעזר דמיירי בתפלה. ויש מצרפין קטן לתפלה רק שיהא חומש בידו ואומר ר"ת דמנהג שטות הוא דכי היכי דאמר אטו ארון גברא הוא ה"נ אטו חומש גברא הוא ועוד הא דקאמר קטן מצטרף היינו אפי' בלא חומש ועוד דלא חזינן …</blockquote><p><span class="say">מה התוספות אומרים:</span> יש שמצרפים קטן רק אם חומש בידו. רבנו תם קורא לזה מנהג שטות: כמו שארון אינו אדם, גם חומש אינו אדם. וספר תורה נזכר רק בעיבור השנה, וגם שם מדובר בספר שלם על קלף.</p></div>
+    <div data-hl="T1e,T1f" class="voice t"><span class="tag">תוספות</span><blockquote>ומיהו קאמר בירושלמי א"ר יוסי זמנין אכלית עם ר' חלפתא אבא ועם ר' חנינא בר סרסי חביבי ולא מזמנין עלואי עד שהבאתי שתי שערות ומשם משמע דלהצטרף לזמון לא עבדין עובדא עד שיביא שתי שערות הא לתפלה עבדי ומתוך ירושלמי זה פי' ר"י דאין עושין קטן סניף לעשרה לא לתפלה ולא לברכת המזון וגם היה אומר ר"י שגם רבינו תם עצמו לא היה נוהג לעשות כן לעשות קטן סניף לעשרה ולא עשה מעשה והלכך אפי' חומש בידו …</blockquote><blockquote>ומיהו קטן פורח ויודע למי מברכין משמע שמברכין עליו גם בשלשה כברייתא וליכא מאן דפליג וזה לשון רבינו שפוסק מסקנא דמלתא אין עושין קטן סניף לעשרה לזמון ולתפלה ולשלשה עד שיביא שתי שערות כעובדא דר' יוסי ברבי חלפתא בירושלמי והא דאמרינן בירושלמי קטן וס"ת עושין אותו סניף אומר ר"י דגרס התם קטן לס"ת כלומר סניף לקריאת התורה קאמר ודוקא התם כדאיתא במגילה (פ"ג דף כג.) דקטן עולה למנין שבעה …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבי יצחק לומד מן הירושלמי, שבו רבי יוסי מספר שלא זימנו עליו עד שהביא שתי שערות, שאין עושים קטן סניף כלל. ומסקנת רבנו: אין עושים קטן סניף, לא לעשרה ולא לשלושה, עד שיביא שתי שערות. ולפי רבנו תם, קטן אחד לבדו הוא סניף, אבל לא שניים.</p></div>
+    <p>לפני התוספות שלוש שאלות נפרדות: מה צריך כדי לזמן על קטן בשלושה, מה צריך כדי לעשות אותו סניף בעשרה, והאם זה חל גם בתפילה. רבנו תם מבחין בין שלושה לעשרה. רבי יצחק אינו מבחין, ואינו עושה קטן סניף כלל.</p>
+  </div>
+  <p class="godeep">במה חולקים רבנו תם ורבי יצחק לגבי קטן כסניף לעשרה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>כמי ההלכה בקטן?</summary><p>כרב נחמן: קטן שיודע למי מברכים, מזמנים עליו.</p></details>
+  <details><summary>מה ענו אביי ורבא לשאלה "למי מברכים"?</summary><p>לרחמנא, לקדוש ברוך הוא.</p></details>
+  <details><summary>מה עשה אביי כששאל רבה היכן הקדוש ברוך הוא יושב?</summary><p>יצא החוצה והצביע כלפי השמים.</p></details>
+  <details class="deepq"><summary>לפי התוספות, למה רבה ניסה את אביי ורבא?</summary><p>לא כדי לזמן עליהם, כי היו קטנים מאוד, אלא כדי לראות שיש בהם בינה.</p></details>
+  <details class="deepq"><summary>מה אמר רבנו תם על המנהג לצרף קטן שחומש בידו?</summary><p>שזה מנהג שטות: כמו שארון אינו אדם, גם חומש אינו אדם.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G4a,G4b">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>תשעה שאכלו דגן ואחד ירק</h2>
+  <p class="lead">האם מי שלא אכל פת מצטרף לזימון של עשרה? רב אומר שאחד מצטרף, ורבי זירא ורבי ירמיה דנים כמה מותר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>תשעה אכלו דגן ואחד אכל ירק מצטרפין</td><td>תשעה אכלו דגן ואחד אכל ירק, מצטרפים.</td></tr>
+      <tr><td>בעאי מיניה מרב יהודה</td><td>שאלתי את רב יהודה:</td></tr>
+      <tr><td>שמנה מהו שבעה מהו</td><td>שמונה, מה דינם? שבעה, מה דינם?</td></tr>
+      <tr><td>א"ל לא שנא</td><td>אמר לי: אין הבדל.</td></tr>
+      <tr><td>ששה ודאי לא מיבעיא לי</td><td>שישה, ודאי לא שאלתי.</td></tr>
+      <tr><td>שפיר עבדת דלא איבעיא לך</td><td>עשית טוב שלא שאלת.</td></tr>
+      <tr><td>התם טעמא מאי משום דאיכא רובא</td><td>שם, מה הטעם? משום שיש רוב.</td></tr>
+      <tr><td>הכא נמי איכא רובא</td><td>כאן גם יש רוב.</td></tr>
+      <tr><td>ואיהו סבר רובא דמינכר בעינן</td><td>והוא סבר: רוב ניכר אנו צריכים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הדין:</b> רב אמר שתשעה שאכלו דגן ואחד שאכל ירק מצטרפים לזימון של עשרה.</p>
+  <p><b>כמה מותר:</b> רבי זירא שאל את רב יהודה על שמונה ועל שבעה, וקיבל תשובה שאין הבדל. על שישה לא שאל.</p>
+  <p><b>המחלוקת:</b> רבי ירמיה אמר שטוב שלא שאל, כי הטעם הוא הרוב, וגם בשישה יש רוב. אבל רבי זירא סבר שצריך רוב ניכר, ושישה מתוך עשרה אינם רוב ניכר. רש"י מפרש שרבי זירא הצטער על שלא שאל, כי חשש שבשישה רב יהודה לא היה מתיר.</p>
+  <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>ואיהו סבר – רבי זירא שהיה קובל ומתחרט על שלא שאל על הששה סבר דילמא רובא דמנכר שפיר בעינן דליכול דגן ואי בעי מיניה ששה לא היה מתיר:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: רבי זירא קבל והתחרט על שלא שאל על שישה. הוא סבר שאולי צריך רוב שאוכל דגן ניכר היטב, ואילו שאל, רב יהודה לא היה מתיר.</p></div>
+  <div data-hl="T3a" class="voice t"><span class="tag">תוספות</span><blockquote>תשעה שאכלו דגן ואחד ירק מצטרפין – והכי הלכתא שאחד שאכל ירק או שתה כוס יין מצטרף ואפילו נברך שאכלנו יכולין לומר שהרי שתיה בכלל אכילה ויש שרוצים לומר דהיינו דוקא לזמון עשרה אבל לשלשה לא מצטרפי דהרי לעיל נמי מחמרינן טפי בצירוף שלשה מעשרה</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: כך ההלכה. מי שאכל ירק או שתה כוס יין מצטרף, ואפשר לומר "שאכלנו", כי שתייה בכלל אכילה. יש שאומרים שזה רק בעשרה, כי בשלושה מחמירים יותר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>עשרה ושלושה</h3>
+    <div data-hl="T3b" class="voice t"><span class="tag">תוספות</span><blockquote>ומיהו בירושלמי תני שנים שאכלו פת ואחד ירק מזמנין וכן פסק ר"י בתוספתו</blockquote><p><span class="say">מה התוספות אומרים:</span> בירושלמי שנויה ברייתא: שניים שאכלו פת ואחד שאכל ירק, מזמנים. וכך פסק רבי יצחק.</p></div>
+    <div data-hl="T3c" class="voice t"><span class="tag">תוספות</span><blockquote>והשר מקוצי מפרש דאין הלכה כאותה ברייתא דירושלמי חדא שהרי מסיק עלה התם מתני' כרבן שמעון בן גמליאל כלומר ורבנן פליגי דלא מצטרפי ואין הלכה כיחיד ועוד דא"כ קשה דרבי יוחנן אדר' יוחנן דהכא א"ר יוחנן דלעולם אינו מוציא עד שיאכל כזית דגן הא מצטרף שפיר אפי' לא טעם אלא שתיה כעובדא דר"ש בן שטח ובירושלמי קא"ר יוחנן לעולם אין מזמנין עד שיאכל כזית ומשמע אפי' מצטרף אלא ש"מ כאן לעשרה ובירושלמי …</blockquote><p><span class="say">מה התוספות אומרים:</span> השר מקוצי חולק: הברייתא בירושלמי היא דעת יחיד, רבן שמעון בן גמליאל, ואין הלכה כמותו. ועוד, אחרת דברי רבי יוחנן סותרים זה את זה. לכן כאן מדובר בעשרה ושם בשלושה. בעשרה מצטרפים אפילו שניים או שלושה ששתו, ומקפידים רק על רוב ניכר.</p></div>
+    <p>הדיון הוא על היחס בין האוכלים פת לשאר. בעשרה, הרוב הוא שקובע, ונחלקו אם די ברוב רגיל או שצריך רוב ניכר. בשלושה אין מקום לחשבון של רוב, ולכן יש שמחמירים שם.</p>
+  </div>
+  <p class="godeep">למה רבי זירא חשב שבשישה אולי הדין שונה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>האם מי שאכל ירק מצטרף לתשעה שאכלו דגן?</summary><p>כן, לפי רב הם מצטרפים.</p></details>
+  <details><summary>מה ענה רב יהודה על שמונה ושבעה?</summary><p>אין הבדל.</p></details>
+  <details><summary>מה הטעם של רבי ירמיה?</summary><p>יש רוב, וגם בשישה יש רוב.</p></details>
+  <details class="deepq"><summary>מה סבר רבי זירא, לפי רש"י?</summary><p>שצריך רוב ניכר שאוכל דגן, ושבשישה רב יהודה לא היה מתיר.</p></details>
+  <details class="deepq"><summary>איך השר מקוצי מיישב את הברייתא שבירושלמי?</summary><p>היא דעת יחיד, ואין הלכה כמותה. כאן מדובר בעשרה, ושם בשלושה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G5a,G5b,G6">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>ינאי המלך ושמעון בן שטח</h2>
+  <p class="lead">ינאי המלך הרג את החכמים, ולא נשאר לו מי שיברך לו. המלכה הביאה את אחיה, שמעון בן שטח, והמעשה מראה גם את כבוד התורה וגם שאלה הלכתית: האם מי שלא אכל יכול לברך.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ינאי מלכא ומלכתא כריכו ריפתא בהדי הדדי</td><td>ינאי המלך והמלכה אכלו פת יחד.</td></tr>
+      <tr><td>ומדקטל להו לרבנן</td><td>ומאחר שהרג את החכמים,</td></tr>
+      <tr><td>לא הוה ליה איניש לברוכי להו</td><td>לא היה לו אדם שיברך להם.</td></tr>
+      <tr><td>מאן יהיב לן גברא דמברך לן</td><td>מי ייתן לנו אדם שיברך לנו?</td></tr>
+      <tr><td>דאי מייתינא לך גברא דלא מצערת ליה</td><td>שאם אביא לך אדם, לא תצער אותו.</td></tr>
+      <tr><td>אותביה בין דידיה לדידה</td><td>הושיב אותו בינו לבינה.</td></tr>
+      <tr><td>חזית כמה יקרא עבדינא לך</td><td>רואה אתה כמה כבוד אני עושה לך?</td></tr>
+      <tr><td>לאו את קא מוקרת לי</td><td>לא אתה מכבד אותי,</td></tr>
+      <tr><td>אלא אורייתא היא דמוקרא לי</td><td>אלא התורה היא שמכבדת אותי.</td></tr>
+      <tr><td>קא חזית דלא מקבל מרות</td><td>רואה את שאינו מקבל מרות.</td></tr>
+      <tr><td>יהבו ליה כסא לברוכי</td><td>נתנו לו כוס לברך.</td></tr>
+      <tr><td>ברוך שאכל ינאי וחביריו משלו</td><td>ברוך שאכלו ינאי וחבריו משלו?</td></tr>
+      <tr><td>שתייה לההוא כסא</td><td>שתה את הכוס ההיא.</td></tr>
+      <tr><td>יהבו ליה כסא אחרינא ובריך</td><td>נתנו לו כוס אחרת, ובירך.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הרקע:</b> ינאי המלך הרג את החכמים, ולכן כשאכל עם המלכה לא היה מי שיברך להם. המלכה ביקשה שבועה שלא יפגע במי שתביא, והביאה את אחיה, שמעון בן שטח.</p>
+  <p><b>הכבוד:</b> ינאי הושיב אותו ביניהם, וציפה להכרת תודה. שמעון בן שטח אמר שהתורה מכבדת אותו, ולא המלך, והביא את הפסוק "סלסלה ותרוממך תכבדך כי תחבקנה". ינאי ראה בכך שאינו מקבל מרות.</p>
+  <p><b>הברכה:</b> כשנתנו לו כוס לברך, אמר שאינו יכול לומר "שאכלו ינאי וחבריו משלו", שהרי הוא עצמו לא אכל. הוא שתה כוס אחת, ואחר כך בירך על כוס אחרת.</p>
+  <div data-hl="R6" class="voice r"><span class="tag">רש"י</span><blockquote>ינאי מלכא – ממלכי בית חשמונאי היה והרג חכמי ישראל שבאו לפסלו מן הכהונה במסכת קידושין (דף סו.):</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: ינאי היה ממלכי בית חשמונאי, והרג את חכמי ישראל שבאו לפסול אותו מן הכהונה.</p></div>
+  <div data-hl="R7" class="voice r"><span class="tag">רש"י</span><blockquote>סלסלה ותרוממך – סיפיה דקרא תכבדך כי תחבקנה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י משלים את סוף הפסוק: "תכבדך כי תחבקנה".</p></div>
+  <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>היכי אבריך – ולא נהניתי אומר נברך שאכל ינאי וחביריו משלו בתמיה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "היכי אבריך" היא שאלה של תמיהה. אם לא נהניתי, איך אומר "נברך שאכלו ינאי וחבריו משלו"?</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה שתה קודם</h3>
+    <p>נוסח הזימון הוא "נברך שאכלנו משלו". מי שמברך כולל את עצמו באוכלים. שמעון בן שטח לא אכל, ולכן לא יכול היה לומר את הנוסח בלי לשנות אותו לנוסח שמוציא את עצמו. הכוס ששתה הפכה אותו לאחד מן הנהנים.</p>
+    <p>השאלה שנשארת היא אם כוס יין מספיקה כדי להוציא אחרים. על כך עוסקת הגמרא מיד אחרי המעשה, והתשובה של רבי יוחנן היא שלא.</p>
+  </div>
+  <p class="godeep">למה שמעון בן שטח לא יכול היה לברך בלי לשתות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה לא היה לינאי מי שיברך לו?</summary><p>כי הרג את החכמים.</p></details>
+  <details><summary>מה ענה שמעון בן שטח כשינאי אמר שהוא מכבד אותו?</summary><p>לא אתה מכבד אותי, אלא התורה מכבדת אותי.</p></details>
+  <details><summary>מה עשה שמעון בן שטח לפני שבירך?</summary><p>שתה כוס אחת, ואחר כך בירך על כוס אחרת.</p></details>
+  <details class="deepq"><summary>מה הקושי בנוסח "ברוך שאכלו ינאי וחבריו משלו"?</summary><p>הוא מוציא את המברך מן האוכלים, כי המברך עצמו לא נהנה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G7,G8,G9,G10">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>להצטרף או להוציא את הרבים</h2>
+  <p class="lead">רבי יוחנן אומר ששמעון בן שטח עשה על דעת עצמו, כי מי שלא אכל כזית דגן אינו מוציא אחרים. הגמרא מבחינה בין הצטרפות לזימון לבין הוצאת הרבים ידי חובתם.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>שמעון בן שטח דעבד</td><td>שמעון בן שטח, שעשה כך,</td></tr>
+      <tr><td>לגרמיה הוא דעבד</td><td>לעצמו עשה.</td></tr>
+      <tr><td>לעולם אינו מוציא את הרבים ידי חובתן</td><td>לעולם אינו מוציא את הרבים ידי חובתם</td></tr>
+      <tr><td>עד שיאכל כזית דגן</td><td>עד שיאכל כזית דגן.</td></tr>
+      <tr><td>עלה והסיב עמהם</td><td>עלה והסב איתם,</td></tr>
+      <tr><td>אפילו לא טבל עמהם אלא בציר</td><td>אפילו לא טבל איתם אלא במי מלח,</td></tr>
+      <tr><td>ולא אכל עמהם אלא גרוגרת אחת מצטרף</td><td>ולא אכל איתם אלא תאנה מיובשת אחת, מצטרף.</td></tr>
+      <tr><td>אצטרופי מצטרף</td><td>להצטרף, מצטרף.</td></tr>
+      <tr><td>אבל להוציא את הרבים ידי חובתן</td><td>אבל להוציא את הרבים ידי חובתם,</td></tr>
+      <tr><td>איתמר נמי</td><td>נאמר גם כן:</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רבי יוחנן:</b> שמעון בן שטח בירך להוציא את ינאי וחבריו אחרי שרק שתה כוס. רבי יוחנן אומר שזה היה על דעת עצמו, כי אין מוציאים את הרבים בלי כזית דגן.</p>
+  <p><b>הקושיה:</b> רבן שמעון בן גמליאל אומר שמי שהסב איתם ואכל רק גרוגרת, מצטרף. אם כך, גם מי שלא אכל דגן נחשב איתם.</p>
+  <p><b>ההבחנה:</b> להצטרף לזימון, אכן מצטרף. אבל להיות זה שמברך ומוציא את כולם, צריך כזית דגן. ודברי רבא, שנאמרו בסוף העמוד, מחזקים זאת בעמוד הבא.</p>
+  <div data-hl="R9,R10" class="voice r"><span class="tag">רש"י</span><blockquote>שמעון בן שטח דעבד – שבירך להוציאם ידי חובתם בשביל כוס אחד ששתה:</blockquote><blockquote>לגרמיה הוא דעבד – אין אדם מודה לו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: שמעון בן שטח בירך להוציא אותם בשביל כוס אחת ששתה. "לגרמיה הוא דעבד" פירושו שאין מי שמודה לו.</p></div>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>עד שיאכל כזית דגן – ומכי אכל כזית דגן מיהא מפיק אף על גב דכזית דגן שיעורא דרבנן הוא כדאמר בפרק מי שמתו (ברכות דף כ:) מיהו כיון דמיחייב מדרבנן מחוייב בדבר קרינן ביה ומוציא רבים ידי חובתן וא"ת בקטן שהגיע לחינוך הא לא אמר הכי ההוא אפי' מדרבנן לא מיחייב דעליה דאבוה הוא דרמי לחנוכיה. ובעל ה"ג פסק דוקא דאכלו אינהו כזית או כביצה דכוותיה אבל אכלו ושבעו לא מפיק ואי אפשר להעמידה דהא …</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: משאכל כזית דגן הוא מוציא, אף שכזית הוא שיעור מדברי חכמים, כי מי שחייב מדבריהם נקרא "מחויב בדבר". וקטן שהגיע לחינוך שונה, כי החיוב מוטל על אביו ולא עליו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך מי שאכל כזית מוציא את מי ששבע</h3>
+    <div data-hl="T4a" class="voice t"><span class="tag">תוספות</span><blockquote>עד שיאכל כזית דגן – משמע שאם אכל כזית דגן שיכול להוציא אף אחרים שאכלו על השובע ותימה והרי כזית אינו חייב אלא מדרבנן והיכי אתי דרבנן ופטר דאורייתא דהא אמרינן בפרק מי שמתו (ברכות ד' כ:) תבא מארה למי שאשתו ובניו מברכים לו ולא מצי לאוקומי [הא] דשרו לקטן שיכול להוציא אביו אלא בדאכל אביו כזית דאתי קטן דרבנן שהגיע לחינוך ופטר אביו שאינו חייב אלא מדרבנן הא אם אכל אביו כדי שביעה אינו …</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: מי שאכל כזית חייב רק מדברי חכמים, ומי ששבע חייב מן התורה. איך הראשון מוציא את השני? הרי בפרק "מי שמתו" קטן מוציא את אביו רק כשהאב אכל כזית.</p></div>
+    <div data-hl="T4b,T4c" class="voice t"><span class="tag">תוספות</span><blockquote>ופרש"י דמחויב דרבנן מחויב קרינן ביה אבל קטן שהגיע לחינוך לא מיקרי מחויב דרבנן דאביו חייב לחנכו אבל עליו אין שום חיוב וקשה לפירושו מכל מקום כיון שאינו מן התורה אינו מוציא אחרים שמחויבים ועוד דוחק לומר בקטן שהגיע לחינוך קרי אינו מחויב מדרבנן דאם אינו מחויב אפילו מדרבנן אם כן אינו פוטר את אביו</blockquote><blockquote>ובה"ג פירש דאחד שאכל כזית אינו יכול להוציא אחרים שאכלו כדי שביעה דלא אתי דרבנן ופוטר דאורייתא אבל כשלא אכלו גם האחרים רק כזית פוטר אותם ולא היא דהא סמכינן אעובדא דינאי וחבריו והם אכלו כדי שביעה ואפילו הכי קא חזינן דקא פטר להו שמעון בן שטח</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מקשים על רש"י: סוף סוף אין זה מן התורה, ואיך יוציא את המחויב מן התורה? ודוחים את בעל הלכות גדולות, שאמר שמוציא רק את מי שאכל כזית, כי ינאי וחבריו אכלו עד שביעה ושמעון בן שטח הוציא אותם.</p></div>
+    <div data-hl="T4d" class="voice t"><span class="tag">תוספות</span><blockquote>אלא נראה לחלק דקטן שאינו בר חיוב כלל דאורייתא אפילו אכל כדי שביעה הלכך אינו מחויב בדבר קרינן ביה ולכך לא מפיק ליה אי אכל שיעורא דאורייתא אבל גדול שהוא בר חיובא מן התורה כי אכיל כדי שביעה מחויב בדבר קרינן ביה אפילו לא אכל כלל כדאמרי' בראש השנה (פ"ג ד' כט.) כל הברכות אף על פי שיצא מוציא חוץ מברכת הלחם וברכת היין והיינו טעמא דכל ישראל ערבין זה בזה והוא הדין בברכת המזון אף ע"פ …</blockquote><p><span class="say">מה התוספות אומרים:</span> ההבחנה של התוספות: קטן אינו בר חיוב מן התורה כלל, ולכן אינו מוציא. גדול הוא בר חיוב מן התורה, ונקרא מחויב בדבר אפילו לא אכל, כי כל ישראל ערבים זה בזה. הכזית נחוץ רק כדי שיוכל לומר "שאכלנו משלו".</p></div>
+    <p>רש"י והתוספות מסכימים שמי שאכל כזית מוציא את מי ששבע, ושקטן אינו מוציא את אביו ששבע. הם חולקים בהסבר. לרש"י, הכזית עושה אותו מחויב. לתוספות, הוא מחויב בכל מקרה מדין ערבות, והכזית רק מאפשר לו לומר את נוסח הברכה.</p>
+  </div>
+  <p class="godeep">למה, לפי התוספות, צריך המברך לאכול כזית דגן? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אמר רבי יוחנן על שמעון בן שטח?</summary><p>שעשה על דעת עצמו, כי אין מוציאים את הרבים עד שאוכלים כזית דגן.</p></details>
+  <details><summary>מה אמר רבן שמעון בן גמליאל על מי שאכל גרוגרת אחת?</summary><p>שהוא מצטרף לזימון.</p></details>
+  <details><summary>איך הגמרא מיישבת בין שתי השמועות?</summary><p>להצטרף מצטרף, אבל להוציא את הרבים צריך כזית דגן.</p></details>
+  <details class="deepq"><summary>למה, לפי רש"י, מי שאכל כזית מוציא את הרבים?</summary><p>כי מי שחייב מדברי חכמים נקרא "מחויב בדבר".</p></details>
+  <details class="deepq"><summary>מה ההבדל בין קטן לגדול, לפי התוספות?</summary><p>קטן אינו בר חיוב מן התורה כלל, וגדול נקרא מחויב בדבר אפילו לא אכל, כי כל ישראל ערבים זה בזה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>קטן פורח:</b> הברייתא באה להוסיף אותו, אבל ההלכה כרב נחמן: קטן שיודע למי מברכים, מזמנים עליו.</li>
+      <li><b>אביי ורבא:</b> ידעו כבר בילדותם שמברכים לקדוש ברוך הוא שבשמים, ורבה אמר ששניהם יהיו חכמים.</li>
+      <li><b>קטן כסניף:</b> התוספות מביאים מחלוקת בין רבנו תם, שעושה קטן סניף לעשרה, לבין רבי יצחק, שאינו עושה.</li>
+      <li><b>ירק ודגן:</b> אחד שאכל ירק מצטרף לתשעה שאכלו דגן. רבי זירא חושש שצריך רוב ניכר.</li>
+      <li><b>ינאי ושמעון בן שטח:</b> התורה מכבדת את החכם, ומי שלא נהנה אינו יכול לומר "שאכלנו משלו".</li>
+      <li><b>להצטרף ולהוציא:</b> מי שאכל גרוגרת מצטרף לזימון, אבל להוציא את הרבים צריך כזית דגן.</li>
+      <li><b>נשאר פתוח:</b> דברי רבא שהתחילו בסוף העמוד נמשכים בעמוד הבא, ואחריהם מי תיקן כל ברכה בברכת המזון.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>ולית הלכתא ככל הני שמעתתא</td><td>ואין ההלכה כאף אחת מן השמועות האלה</td></tr>
+      <tr><td>רחמנא</td><td>&quot;הרחמן&quot;: כינוי לקדוש ברוך הוא</td></tr>
+      <tr><td>טללא</td><td>גג</td></tr>
+      <tr><td>בוצין בוצין מקטפיה ידיע</td><td>&quot;דלעת, דלעת, מפרחה ניכרת&quot;: כבר בתחילתו ניכר מה יצא מאדם</td></tr>
+      <tr><td>בעאי מיניה</td><td>שאלתי אותו</td></tr>
+      <tr><td>לא שנא</td><td>אין הבדל</td></tr>
+      <tr><td>שפיר עבדת</td><td>עשית טוב</td></tr>
+      <tr><td>רובא דמינכר</td><td>רוב ניכר, שרואים אותו בבירור</td></tr>
+      <tr><td>דביתהו</td><td>אשתו</td></tr>
+      <tr><td>לא מקבל מרות</td><td>אינו מקבל את מרותו, אינו נכנע לסמכותו</td></tr>
+      <tr><td>לגרמיה הוא דעבד</td><td>לעצמו עשה: נהג על דעת עצמו, ואין לומדים ממנו</td></tr>
+      <tr><td>מחויב בדבר</td><td>מי שחייב במצווה בעצמו, ולכן יכול להוציא אחרים</td></tr>
+      <tr><td>גרוגרת</td><td>תאנה מיובשת</td></tr>
+      <tr><td>אצטרופי מצטרף</td><td>להצטרף, הוא מצטרף</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-47b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-48b.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-48b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "לאתויי קטן פורח.", false, ""], ["G2", "ולית הלכתא ככל הני שמעתתא אלא כי הא דאמר רב נחמן קטן היודע למי מברכין מזמנין עליו", false, ""], ["G3", "אביי ורבא הוו יתבי קמיה דרבה אמר להו רבה למי מברכין אמרי ליה לרחמנא ורחמנא היכא יתיב רבא אחוי לשמי טללא אביי נפק לברא אחוי כלפי שמיא אמר להו רבה תרווייכו רבנן הויתו היינו דאמרי אינשי בוצין בוצין מקטפיה ידיע:", false, ""], ["G4a", "א\"ר יהודה בריה דרב שמואל בר שילת משמיה דרב תשעה אכלו דגן ואחד אכל ירק מצטרפין", false, ""], ["G4b", "א\"ר זירא בעאי מיניה מרב יהודה שמנה מהו שבעה מהו א\"ל לא שנא ששה ודאי לא מיבעיא לי א\"ל רבי ירמיה שפיר עבדת דלא איבעיא לך התם טעמא מאי משום דאיכא רובא הכא נמי איכא רובא ואיהו סבר רובא דמינכר בעינן.", false, ""], ["G5a", "ינאי מלכא ומלכתא כריכו ריפתא בהדי הדדי ומדקטל להו לרבנן לא הוה ליה איניש לברוכי להו אמר לה לדביתהו מאן יהיב לן גברא דמברך לן אמרה ליה אשתבע לי דאי מייתינא לך גברא דלא מצערת ליה אשתבע לה אייתיתיה לשמעון בן שטח אחוה", false, ""], ["G5b", "אותביה בין דידיה לדידה אמר ליה חזית כמה יקרא עבדינא לך אמר ליה לאו את קא מוקרת לי אלא אורייתא היא דמוקרא לי דכתיב (משלי ד, ח) סלסלה ותרוממך תכבדך כי תחבקנה אמר ליה קא חזית דלא מקבל מרות", false, ""], ["G6", "יהבו ליה כסא לברוכי אמר היכי אבריך ברוך שאכל ינאי וחביריו משלו שתייה לההוא כסא יהבו ליה כסא אחרינא ובריך", false, ""], ["G7", "א\"ר אבא בריה דרב חייא בר אבא (א\"ר יוחנן) שמעון בן שטח דעבד לגרמיה הוא דעבד דהכי אמר ר' חייא בר אבא אר\"י לעולם אינו מוציא את הרבים ידי חובתן עד שיאכל כזית דגן", false, ""], ["G8", "מיתיבי רשב\"ג אומר עלה והסיב עמהם אפילו לא טבל עמהם אלא בציר ולא אכל עמהם אלא גרוגרת אחת מצטרף", false, ""], ["G9", "אצטרופי מצטרף אבל להוציא את הרבים ידי חובתן עד שיאכל כזית דגן", false, ""], ["G10", "איתמר נמי אמר רב חנא בר יהודה משמיה דרבא אפי' לא", false, ""]], "R": [["R1", "לאתויי קטן פורח", "שאין מדקדקין בו אם בא לכלל שנים או לאו ומה הן שנים י\"ג שנים ויום אחד:", false], ["R2", "טללא", "גג:", false], ["R3", "בוצין", "דלעת ואית דגרסי מקטפיה וקטף הוא שרף האילן כלומר משעה שהוא חונט ויוצא מתוך השרף ניכר אם יהיה טוב:", false], ["R4", "מקניה", "מקן שלו מקטנותו:", false], ["R5", "ואיהו סבר", "רבי זירא שהיה קובל ומתחרט על שלא שאל על הששה סבר דילמא רובא דמנכר שפיר בעינן דליכול דגן ואי בעי מיניה ששה לא היה מתיר:", false], ["R6", "ינאי מלכא", "ממלכי בית חשמונאי היה והרג חכמי ישראל שבאו לפסלו מן הכהונה במסכת קידושין (דף סו.):", false], ["R7", "סלסלה ותרוממך", "סיפיה דקרא תכבדך כי תחבקנה:", false], ["R8", "היכי אבריך", "ולא נהניתי אומר נברך שאכל ינאי וחביריו משלו בתמיה:", false], ["R9", "שמעון בן שטח דעבד", "שבירך להוציאם ידי חובתם בשביל כוס אחד ששתה:", false], ["R10", "לגרמיה הוא דעבד", "אין אדם מודה לו:", false], ["R11", "עד שיאכל כזית דגן", "ומכי אכל כזית דגן מיהא מפיק אף על גב דכזית דגן שיעורא דרבנן הוא כדאמר בפרק מי שמתו (ברכות דף כ:) מיהו כיון דמיחייב מדרבנן מחוייב בדבר קרינן ביה ומוציא רבים ידי חובתן וא\"ת בקטן שהגיע לחינוך הא לא אמר הכי ההוא אפי' מדרבנן לא מיחייב דעליה דאבוה הוא דרמי לחנוכיה. ובעל ה\"ג פסק דוקא דאכלו אינהו כזית או כביצה דכוותיה אבל אכלו ושבעו לא מפיק ואי אפשר להעמידה דהא ינאי וחבריו אכלו ושבעו ואפקינהו שמעון בן שטח ואע\"ג דלגרמיה הוא דעבד טעמא משום דלא אכל כזית דגן הא אכל כזית דגן הכי נמי:", false]], "T": [["T1a", "ולית הלכתא ככל הני שמעתתא אלא כי הא קטן היודע", "משמע דקאי נמי ארבי יוחנן ולא נהירא שהרי אין דרך הגמרא שסותר דברי אמוראים והברייתא שהביא ראיה לדברי ר' יוחנן בלא שום טעם וי\"ל דקאי אקטן פורח כלומר קטן פורח מזמנין עליו היינו דוקא היודע למי מברכין ותרווייהו בעינן ולפירושינו צ\"ל דלא מייתי עובדא דאביי ורבא לענין אזמוני עלייהו אלא לפרש מהו קטן היודע למי מברכין דמסתמא לא פורחים הוו דאם כן מהו רבותייהו אם יודעים למי מברכין ורבה נמי דעבד היינו להראות שיש בהם בינה והם קטנים ולא מזמנין עלייהו.", false], ["T1b", "", "ואומר ר\"ת אף על פי דלית הלכתא ככל הני שמעתתא מיהו הלכה כריב\"ל דאמר קטן ממש עושין אותו סניף לעשרה והכא דבעינן פורח ויודע היינו דוקא בשלשה ולית הלכתא ככל הני שמעתתא לא קאי אריב\"ל ודיקא נמי שהרי מפסיק הגמרא בינתיים באותו מעשה [דר' אליעזר] דלעולם ישכים אדם ותניא כוותיה אלא קאי אהני שמעתתא דבתר תניא כוותיה דישכים כגון תשעה וארון ושבת ושנים ותשעה נראין כעשרה ושנים מחדדים וקטן פורח", false], ["T1c", "", "אע\"ג דתנא ברייתא הכי לאתויי פורח יעמידנה רב נחמן באינו יודע למי מברכין והיינו נמי כריב\"ל דאמר לעיל קטן אין מזמנין עליו פי' מוטל בעריסה עד שידע למי מברכין אבל עושין אותו סניף לעשרה פי' לברכת המזון וה\"ה לתפלה דבהא לא פליג רב נחמן דכי בעי יודע ופורח כדפי' ה\"מ לזמון שלשה אבל לסניף מודה לריב\"ל דסניף לעשרה וה\"ה לתפלה דקטן מצטרף ודיקא נמי דפריך עלה ממעשה דר' אליעזר שהיה לתפלה לריב\"ל דמיירי בבהמ\"ז", false], ["T1d", "", "ומיהו תימה דבב\"ר (פ' צא) קאמר עלה דריב\"ל הדא הוא דתימא לברכת המזון אבל לתפלה לא והיה אומר ר\"ת דאין הלכה כן לפי שחולק על הגמרא שלנו דודאי ריב\"ל לענין תפלה נמי קאמר מדפריך מעובדא דר' אליעזר דמיירי בתפלה. ויש מצרפין קטן לתפלה רק שיהא חומש בידו ואומר ר\"ת דמנהג שטות הוא דכי היכי דאמר אטו ארון גברא הוא ה\"נ אטו חומש גברא הוא ועוד הא דקאמר קטן מצטרף היינו אפי' בלא חומש ועוד דלא חזינן בשום דוכתא דמהני אלא בעובדא דעבור השנה כשעולין בעליה בפרקי דרבי אליעזר (פ\"ח) דקאמר בשלשה מעברין את השנה ר' אליעזר אומר בעשרה ואם נתמעטו מביאין ספר תורה ועושין עגולה וכו' ואין מזכיר שם שיהא הקטן אוחז הס\"ת והתם נמי לא קאמר אלא ספר תורה העשוי בגליון אבל חומשין שלנו לא", false], ["T1e", "", "ומיהו קאמר בירושלמי א\"ר יוסי זמנין אכלית עם ר' חלפתא אבא ועם ר' חנינא בר סרסי חביבי ולא מזמנין עלואי עד שהבאתי שתי שערות ומשם משמע דלהצטרף לזמון לא עבדין עובדא עד שיביא שתי שערות הא לתפלה עבדי ומתוך ירושלמי זה פי' ר\"י דאין עושין קטן סניף לעשרה לא לתפלה ולא לברכת המזון וגם היה אומר ר\"י שגם רבינו תם עצמו לא היה נוהג לעשות כן לעשות קטן סניף לעשרה ולא עשה מעשה והלכך אפי' חומש בידו לא מהני כדפירשנו כיון דלא אתהני קטן לבדו גם חומש בידו לא אתהני", false], ["T1f", "", "ומיהו קטן פורח ויודע למי מברכין משמע שמברכין עליו גם בשלשה כברייתא וליכא מאן דפליג וזה לשון רבינו שפוסק מסקנא דמלתא אין עושין קטן סניף לעשרה לזמון ולתפלה ולשלשה עד שיביא שתי שערות כעובדא דר' יוסי ברבי חלפתא בירושלמי והא דאמרינן בירושלמי קטן וס\"ת עושין אותו סניף אומר ר\"י דגרס התם קטן לס\"ת כלומר סניף לקריאת התורה קאמר ודוקא התם כדאיתא במגילה (פ\"ג דף כג.) דקטן עולה למנין שבעה דקאמר הכל עולין למנין שבעה אפי' קטן אפי' אשה אי לא הוה משום כבוד צבור אבל לשאר דברים לא ואפי' אם אשכחן בשום דוכתא דקטן [וחומש מצטרף] אפי' לתפלה היינו דוקא העשוי בגליון אבל חומשין שלנו לא ולפי' ר\"ת חומש אינו מועיל כלל ביד קטן אבל קטן לחוד הוי סניף אבל תרי לא כדקאמר גבי עובדא דר' אליעזר ור\"ת פי' דההיא דירושלמי דרבי יוסי בר' חלפתא דוקא בשלשה מיירי:", false], ["T2", "אביי ורבא הוו יתבי וכו'", "ואם תאמר היכי דמי אי הוו קטנים פורחים מאי רבותא הוה בהו שהביטו כלפי מעלה אלא צריך לומר דהאי לאו לאזמוני עלייהו קא מנסי להו כי היו קטנים טובא אלא לנסותינהו קא עביד שהיה בהם בינה:", false], ["T3a", "תשעה שאכלו דגן ואחד ירק מצטרפין", "והכי הלכתא שאחד שאכל ירק או שתה כוס יין מצטרף ואפילו נברך שאכלנו יכולין לומר שהרי שתיה בכלל אכילה ויש שרוצים לומר דהיינו דוקא לזמון עשרה אבל לשלשה לא מצטרפי דהרי לעיל נמי מחמרינן טפי בצירוף שלשה מעשרה", false], ["T3b", "", "ומיהו בירושלמי תני שנים שאכלו פת ואחד ירק מזמנין וכן פסק ר\"י בתוספתו", false], ["T3c", "", "והשר מקוצי מפרש דאין הלכה כאותה ברייתא דירושלמי חדא שהרי מסיק עלה התם מתני' כרבן שמעון בן גמליאל כלומר ורבנן פליגי דלא מצטרפי ואין הלכה כיחיד ועוד דא\"כ קשה דרבי יוחנן אדר' יוחנן דהכא א\"ר יוחנן דלעולם אינו מוציא עד שיאכל כזית דגן הא מצטרף שפיר אפי' לא טעם אלא שתיה כעובדא דר\"ש בן שטח ובירושלמי קא\"ר יוחנן לעולם אין מזמנין עד שיאכל כזית ומשמע אפי' מצטרף אלא ש\"מ כאן לעשרה ובירושלמי איירי בזמון שלשה ולהשלים לעשרה אפי' איכא שנים ושלשה ששתו מצטרפין ושתיה בכלל אכילה ולא קפדינן אלא ארובא דמינכר:", false], ["T4a", "עד שיאכל כזית דגן", "משמע שאם אכל כזית דגן שיכול להוציא אף אחרים שאכלו על השובע ותימה והרי כזית אינו חייב אלא מדרבנן והיכי אתי דרבנן ופטר דאורייתא דהא אמרינן בפרק מי שמתו (ברכות ד' כ:) תבא מארה למי שאשתו ובניו מברכים לו ולא מצי לאוקומי [הא] דשרו לקטן שיכול להוציא אביו אלא בדאכל אביו כזית דאתי קטן דרבנן שהגיע לחינוך ופטר אביו שאינו חייב אלא מדרבנן הא אם אכל אביו כדי שביעה אינו יכול לפטרו", false], ["T4b", "", "ופרש\"י דמחויב דרבנן מחויב קרינן ביה אבל קטן שהגיע לחינוך לא מיקרי מחויב דרבנן דאביו חייב לחנכו אבל עליו אין שום חיוב וקשה לפירושו מכל מקום כיון שאינו מן התורה אינו מוציא אחרים שמחויבים ועוד דוחק לומר בקטן שהגיע לחינוך קרי אינו מחויב מדרבנן דאם אינו מחויב אפילו מדרבנן אם כן אינו פוטר את אביו", false], ["T4c", "", "ובה\"ג פירש דאחד שאכל כזית אינו יכול להוציא אחרים שאכלו כדי שביעה דלא אתי דרבנן ופוטר דאורייתא אבל כשלא אכלו גם האחרים רק כזית פוטר אותם ולא היא דהא סמכינן אעובדא דינאי וחבריו והם אכלו כדי שביעה ואפילו הכי קא חזינן דקא פטר להו שמעון בן שטח", false], ["T4d", "", "אלא נראה לחלק דקטן שאינו בר חיוב כלל דאורייתא אפילו אכל כדי שביעה הלכך אינו מחויב בדבר קרינן ביה ולכך לא מפיק ליה אי אכל שיעורא דאורייתא אבל גדול שהוא בר חיובא מן התורה כי אכיל כדי שביעה מחויב בדבר קרינן ביה אפילו לא אכל כלל כדאמרי' בראש השנה (פ\"ג ד' כט.) כל הברכות אף על פי שיצא מוציא חוץ מברכת הלחם וברכת היין והיינו טעמא דכל ישראל ערבין זה בזה והוא הדין בברכת המזון אף ע\"פ שיצא מוציא כדפרישית וכזית דגן אינו צריך אלא שיוכל לומר שאכלנו משלו:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': קטן פורח, ומי מוציא את הרבים", "x": "העמוד הקודם נגמר בקושיה על ברייתא: היא אומרת שקטן שלא הביא שתי שערות אין מזמנים עליו, ובכל זאת מוסיפה \"אין מדקדקין בקטן\". את מי היא באה להוסיף? כאן באה התשובה. אחריה ההלכה בקטן, צירוף של מי שאכל ירק, והמעשה בינאי המלך ושמעון בן שטח, שממנו הגמרא לומדת מתי אדם מוציא אחרים בברכת המזון.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "התשובה: קטן פורח", "x": "הברייתא באה להוסיף \"קטן פורח\". רש\"י מפרש: אין מדקדקים בו אם הגיע לשנים או לא, והשנים הן שלוש עשרה שנה ויום אחד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "ההלכה כרב נחמן", "x": "\"ולית הלכתא ככל הני שמעתתא\", ואין ההלכה כאף אחת מן השמועות האלה. אלא כמו שאמר רב נחמן: קטן שיודע למי מברכים, מזמנים עליו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1a"], "t": "התוספות: על אילו שמועות זה נאמר", "x": "משמע שהגמרא דוחה גם את דברי רבי יוחנן. התוספות אומרים שאין זה נראה, כי אין דרך הגמרא לדחות בלי טעם אמורא שברייתא מסייעת לו. לכן הם מפרשים: זה נאמר על קטן פורח. מזמנים עליו רק אם הוא גם יודע למי מברכים, וצריך את שניהם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1b"], "t": "התוספות: רבנו תם, ההלכה כרבי יהושע בן לוי", "x": "לדעת רבנו תם, ההלכה כרבי יהושע בן לוי, שקטן ממש עושים אותו סניף לעשרה. מה שכאן דורשים קטן פורח ויודע, הוא רק בזימון של שלושה. והדחייה \"ככל הני שמעתתא\" נאמרת רק על השמועות שבאו אחרי \"לעולם ישכים אדם\": תשעה וארון, שניים ושבת, תשעה שנראים כעשרה, שני תלמידי חכמים מחדדים, וקטן פורח.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1c"], "t": "התוספות: סניף לעשרה, גם בתפילה", "x": "רב נחמן יעמיד את הברייתא על קטן פורח בקטן שאינו יודע למי מברכים. הדרישה שלו נוגעת לשלושה בלבד. אבל לסניף לעשרה הוא מודה לרבי יהושע בן לוי, בברכת המזון וגם בתפילה. וראיה לכך: הגמרא הקשתה על רבי יהושע בן לוי ממעשה רבי אליעזר, שהיה בתפילה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1d"], "t": "התוספות: קטן עם חומש בידו", "x": "במדרש בראשית רבה נאמר שדברי רבי יהושע בן לוי הם רק לברכת המזון, ולא לתפילה. רבנו תם אומר שאין הלכה כך, כי המדרש חולק על הגמרא שלנו. ויש שמצרפים קטן לתפילה רק אם חומש בידו. רבנו תם קורא לזה מנהג שטות: כמו שנאמר \"וכי ארון הוא אדם\", כך וכי חומש הוא אדם? וגם ספר תורה נזכר רק בעיבור השנה, בפרקי דרבי אליעזר, ושם מדובר בספר תורה שלם על קלף, ולא בחומשים שלנו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1e"], "t": "התוספות: הירושלמי ורבי יצחק", "x": "בירושלמי רבי יוסי מספר שאכל עם אביו רבי חלפתא ועם רבי חנינא בר סרסי, ולא זימנו עליו עד שהביא שתי שערות. מכאן רבי יצחק מפרש שאין עושים קטן סניף לעשרה, לא לתפילה ולא לברכת המזון. ורבי יצחק מעיד שגם רבנו תם עצמו לא עשה מעשה כזה. ולכן גם חומש ביד הקטן אינו מועיל.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1f"], "t": "התוספות: מסקנת הדברים", "x": "קטן פורח שיודע למי מברכים, מזמנים עליו גם בשלושה, כמו בברייתא. ומסקנת רבנו: אין עושים קטן סניף, לא לעשרה ולא לשלושה, עד שיביא שתי שערות. ובירושלמי, \"קטן לספר תורה\" הוא לקריאת התורה בלבד, כמו שקטן עולה למניין שבעה. ולפי רבנו תם, קטן אחד לבדו הוא סניף, אבל לא שניים, והמעשה ברבי יוסי בירושלמי עוסק רק בשלושה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R2"], "t": "אביי ורבא לפני רבה", "x": "אביי ורבא, כשהיו ילדים, ישבו לפני רבה. שאל אותם רבה: למי מברכים? אמרו לו: לרחמנא, לקדוש ברוך הוא. ורחמנא היכן יושב? רבא הצביע אל הגג, ורש\"י מפרש ש\"טללא\" הוא גג. אביי יצא החוצה והצביע כלפי השמים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R3", "R4"], "t": "\"בוצין בוצין מקטפיה ידיע\"", "x": "אמר להם רבה: שניכם תהיו חכמים. זהו שאומרים אנשים: דלעת, דלעת, מפרחה ניכרת. רש\"י מפרש: \"בוצין\" הוא דלעת, ו\"קטף\" הוא השרף של האילן. משעה שהפרי מתחיל לצאת ניכר אם יהיה טוב. ויש גורסים \"מקניה\", מקטנותו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3", "T2"], "t": "התוספות: למה ניסה אותם רבה", "x": "אם היו קטנים פורחים, מה החידוש שהביטו כלפי מעלה? התוספות עונים שרבה לא ניסה אותם כדי לזמן עליהם, כי הם היו קטנים מאוד. הוא ניסה אותם כדי לראות שיש בהם בינה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4a"], "t": "תשעה שאכלו דגן ואחד ירק", "x": "רב יהודה, בנו של רב שמואל בר שילת, אמר בשם רב: תשעה שאכלו דגן ואחד שאכל ירק מצטרפים לזימון של עשרה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4a", "T3a"], "t": "התוספות: וכך ההלכה", "x": "מי שאכל ירק או שתה כוס יין מצטרף, ואפשר לומר \"נברך שאכלנו\", כי שתייה בכלל אכילה. יש שרוצים לומר שזה רק בזימון של עשרה, ולא של שלושה, כי כבר ראינו שבצירוף לשלושה מחמירים יותר מבעשרה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4a", "T3b"], "t": "התוספות: הירושלמי ורבי יצחק", "x": "בירושלמי שנויה ברייתא: שניים שאכלו פת ואחד שאכל ירק, מזמנים. וכך פסק רבי יצחק בתוספות שלו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4a", "T3c"], "t": "התוספות: השר מקוצי חולק", "x": "השר מקוצי אומר שאין הלכה כברייתא הזו מן הירושלמי. ראשית, שם נאמר שהיא כרבן שמעון בן גמליאל, וחכמים חולקים, ואין הלכה כיחיד. ושנית, אחרת דברי רבי יוחנן כאן סותרים את דבריו בירושלמי. לכן כאן מדובר בעשרה, ובירושלמי בשלושה. ולהשלים עשרה, אפילו שניים או שלושה ששתו מצטרפים, ומקפידים רק שיהיה רוב ניכר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4b"], "t": "רבי זירא: שמונה? שבעה?", "x": "אמר רבי זירא: שאלתי את רב יהודה, שמונה מה דינם? שבעה מה דינם? אמר לי: \"לא שנא\", אין הבדל. ושישה ודאי לא שאלתי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4b", "R5"], "t": "רבי ירמיה: עשית טוב", "x": "אמר לו רבי ירמיה: \"שפיר עבדת\", עשית טוב שלא שאלת. מה הטעם שם? משום שיש רוב. גם כאן יש רוב. \"ואיהו סבר\", ורבי זירא סבר שצריך \"רובא דמינכר\", רוב ניכר. רש\"י מפרש שרבי זירא הצטער על שלא שאל על שישה, כי חשב שאולי צריך רוב ניכר שאוכל דגן, ואילו שאל, רב יהודה לא היה מתיר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5a", "R6"], "t": "ינאי המלך מחפש מברך", "x": "ינאי המלך והמלכה אכלו פת יחד. ומאחר שהרג את החכמים, לא היה לו אדם שיברך להם. רש\"י: ינאי היה ממלכי בית חשמונאי, והרג את חכמי ישראל שבאו לפסול אותו מן הכהונה. אמר לאשתו: מי ייתן לנו אדם שיברך לנו? אמרה לו: השבע לי שאם אביא לך אדם, לא תצער אותו. נשבע לה, והביאה את שמעון בן שטח, אחיה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5b", "R7"], "t": "\"סלסלה ותרוממך\"", "x": "ינאי הושיב אותו בינו לבין המלכה. אמר לו: רואה אתה כמה כבוד אני עושה לך? ענה שמעון בן שטח: לא אתה מכבד אותי, אלא התורה מכבדת אותי, שנאמר \"סלסלה ותרוממך תכבדך כי תחבקנה\". אמר ינאי למלכה: רואה את שאינו מקבל מרות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R8"], "t": "\"היכי אבריך\"", "x": "נתנו לשמעון בן שטח כוס כדי לברך. אמר: איך אברך? \"ברוך שאכל ינאי וחבריו משלו\"? רש\"י מסביר: הרי לא נהניתי מן הסעודה. שתה את הכוס ההיא, נתנו לו כוס אחרת, ובירך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R9", "R10"], "t": "רבי יוחנן: לעצמו עשה", "x": "רבי אבא, בנו של רבי חייא בר אבא, אמר: שמעון בן שטח, שבירך להוציא אותם בשביל כוס אחת ששתה, \"לגרמיה הוא דעבד\", עשה על דעת עצמו. רש\"י: אין מי שמודה לו. כי כך אמר רבי יוחנן: לעולם אינו מוציא את הרבים ידי חובתם עד שיאכל כזית דגן.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G7", "R11"], "t": "רש\"י: כזית דגן מספיק", "x": "משעה שאכל כזית דגן, הוא מוציא. אף ששיעור כזית הוא מדברי חכמים, מי שחייב מדברי חכמים נקרא \"מחויב בדבר\", ומוציא את הרבים. וקטן שהגיע לחינוך שונה, כי עליו עצמו אין חיוב, אלא על אביו לחנך אותו. ובעל הלכות גדולות פסק שמוציא רק את מי שאכל כזית כמוהו, ורש\"י דוחה: ינאי וחבריו אכלו ושבעו, והחיסרון אצל שמעון בן שטח היה רק שלא אכל כזית דגן.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T4a"], "t": "התוספות: איך מי שחייב מדרבנן מוציא", "x": "משמע שמי שאכל כזית דגן מוציא גם את מי שאכל עד שביעה. וקשה: על כזית חייבים רק מדברי חכמים, ואיך מי שחייב מדבריהם פוטר את מי שחייב מן התורה? בפרק \"מי שמתו\" העמדנו קטן שמוציא את אביו רק כשהאב אכל כזית. אבל אם האב אכל עד שביעה, הקטן אינו פוטר אותו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T4b"], "t": "התוספות: קושיות על פירוש רש\"י", "x": "רש\"י פירש שמי שחייב מדרבנן נקרא מחויב, וקטן שהגיע לחינוך אינו נקרא כך. התוספות מקשים: סוף סוף אין זה מן התורה, ואיך יוציא את המחויבים מן התורה? ועוד: אם הקטן אינו מחויב אפילו מדרבנן, איך הוא פוטר את אביו?", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T4c"], "t": "התוספות: דוחים את בעל הלכות גדולות", "x": "בעל הלכות גדולות פירש שמי שאכל כזית אינו מוציא את מי שאכל עד שביעה, אבל מוציא את מי שאכל רק כזית. התוספות דוחים: ינאי וחבריו אכלו עד שביעה, ובכל זאת שמעון בן שטח פטר אותם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T4d"], "t": "התוספות: ההבחנה בין קטן לגדול", "x": "הקטן אינו בר חיוב מן התורה כלל, אפילו אכל עד שביעה. לכן אינו מוציא מי שאכל שיעור של תורה. אבל גדול שחייב מן התורה כשהוא שבע, נקרא מחויב בדבר אפילו לא אכל כלל. כמו שנאמר בראש השנה: בכל הברכות, אף על פי שיצא, מוציא, כי כל ישראל ערבים זה בזה. והכזית נחוץ רק כדי שיוכל לומר \"שאכלנו משלו\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8"], "t": "רבן שמעון בן גמליאל: גרוגרת אחת", "x": "\"מיתיבי\", הגמרא מקשה מברייתא. רבן שמעון בן גמליאל אומר: מי שעלה והסב איתם, אפילו טבל איתם רק במי מלח, ואכל איתם רק גרוגרת אחת, מצטרף.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "התשובה: להצטרף ולא להוציא", "x": "להצטרף, הוא מצטרף. אבל להוציא את הרבים ידי חובתם, אינו מוציא עד שיאכל כזית דגן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10"], "t": "\"איתמר נמי\"", "x": "\"איתמר נמי\", וכך גם נאמר בשם אמורא: רב חנא בר יהודה אמר בשם רבא, \"אפילו לא\". המשפט נקטע כאן, ובעמוד הבא מתברר שהוא חוזר על הברייתא ומוסיף את ההלכה.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "ההלכה נפסקה כרב נחמן, והקובע בקטן הוא שהוא מבין למי הוא מברך. אביי ורבא ידעו כבר בילדותם שהקדוש ברוך הוא בשמים. מי שאכל ירק מצטרף לתשעה שאכלו דגן. ומהמעשה בינאי המלך עלה שמי שלא אכל כזית דגן מצטרף, אבל אינו מוציא את הרבים. העמוד הבא ממשיך את דברי רבא, ואחר כך עובר לשאלה מי תיקן כל אחת מברכות ברכת המזון.", "a": ""}], "audio": "daf-48a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

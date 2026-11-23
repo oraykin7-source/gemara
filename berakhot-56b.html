@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף נ&quot;ו עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף נ&quot;ו עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>ברכות</span><span>פרק תשיעי</span><span>הרואה</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-56a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-57a.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 110</div>
+  <h1>מסכת ברכות, דף נ&quot;ו עמוד ב&#x27;</h1>
+  <p class="sub">פרק תשיעי, &quot;הרואה&quot;. סופו של בר הדיא, חלומות שפתרו רבי ישמעאל ורבי, ומה מבשרים בחלום נהר, ציפור, קדרה, שור, חמור ושאר מראות.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. סוף בר הדיא, ופתרונות לטובה</a><a href="#u2">2. הצדוקי ורבי ישמעאל</a><a href="#u3">3. באר, שלושה שלומות, ופסוק שמקדים</a><a href="#u4">4. קנה, דלועים ושור</a><a href="#u5">5. חמור, חתול, סוס, גמל ופיל</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3a,G3b">
+  <div class="kicker">יחידה 1 · אגדה</div>
+  <h2>סוף בר הדיא, ופתרונות לטובה</h2>
+  <p class="lead">הסיפור על בר הדיא נגמר בעונש קשה. אחריו באים שני מעשים בחכמים שפתרו חלומות מפחידים לטובה: רבי ישמעאל לבן אחותו, ורבי לבר קפרא.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>כפיתו תרין ארזי בחבלא</td><td>קשרו שני ארזים בחבל,</td></tr>
+      <tr><td>אסור חד כרעיה לחד ארזא</td><td>קשרו רגל אחת שלו לארז אחד,</td></tr>
+      <tr><td>ושרו לחבלא עד דאצטליק רישיה</td><td>ושחררו את החבל, עד שנבקע ראשו.</td></tr>
+      <tr><td>ואצטליק ונפל בתרין</td><td>ונבקע ונפל לשניים.</td></tr>
+      <tr><td>ראיתי שני לחיי שנשרו</td><td>ראיתי ששתי לחיי נשרו.</td></tr>
+      <tr><td>שני גדודי רומי יעצו עליך רעה ומתו</td><td>שני גדודים של רומי יעצו עליך רעה, ומתו.</td></tr>
+      <tr><td>ראיתי חוטמי שנשר</td><td>ראיתי שחוטמי נשר.</td></tr>
+      <tr><td>חרון אף נסתלק ממך</td><td>הכעס הסתלק ממך.</td></tr>
+      <tr><td>לא תצטרך למעשה ידיך</td><td>לא תצטרך למעשה ידיך.</td></tr>
+      <tr><td>על סוס אתה רוכב</td><td>על סוס אתה רוכב.</td></tr>
+      <tr><td>באדר מיתת וניסן לא חזית</td><td>באדר תמות, וניסן לא תראה.</td></tr>
+      <tr><td>באדרותא מיתת ולא אתית לידי נסיון</td><td>בכבוד תמות, ולא תבוא לידי ניסיון.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>סוף בר הדיא:</b> אנשי המלך קשרו שני ארזים בחבל, וקשרו רגל אחת שלו לכל ארז. אחר כך שחררו את החבל. כל ארז חזר למקומו, ובר הדיא נקרע לשניים. כך התקיימה קללת רבא, שיימסר למלכות שלא תרחם עליו.</p>
+  <p><b>בן דמא:</b> ראה ששתי לחייו נשרו. רבי ישמעאל פתר שני גדודים של רומי שיעצו עליו רעה ומתו. הלחיים הן הפה, ובפה יועצים.</p>
+  <p><b>בר קפרא:</b> כל חלום של איבר שנפל נפתר לטובה. חוטם שנשר: הכעס הסתלק. ידיים שנחתכו: לא יצטרך לעבוד בהן. רגליים שנקטעו: ירכב על סוס.</p>
+  <p><b>אדר וניסן:</b> בר קפרא שמע בחלום שימות באדר ולא יראה את ניסן. רבי פתר לפי צליל המילים: "באדרותא", בכבוד ובהדר ימות, ולא יבוא "לידי נסיון".</p>
+  <div data-hl="R2" class="voice r"><span class="tag">רש"י</span><blockquote>דאצטליק – נחלק לב' ודוגמתו בהעור והרוטב (דף קכד.) דצלקי מצלק:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "דאצטליק" פירושו נחלק לשניים.</p></div>
+  <div data-hl="R3" class="voice r"><span class="tag">רש"י</span><blockquote>יעצו עליך רעה – והם הלחיים פה שיעץ עליך רעה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הלחיים הן הפה שיעץ עליו רעה.</p></div>
+  <div data-hl="R4,R5" class="voice r"><span class="tag">רש"י</span><blockquote>חרון אף – ניכר בחוטם שמתחמם ומוציא הבל על כן הוא קרוי חרון אף:</blockquote><blockquote>לא תצטרך למעשה ידיך – שתתעשר:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הכעס ניכר בחוטם, שמתחמם ומוציא הבל, ולכן הכעס נקרא "חרון אף". ו"לא תצטרך למעשה ידיך" פירושו שיתעשר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך פותרים איבר שנפל</h3>
+    <p>בכל הפתרונות של רבי האיבר מייצג את מה שהוא עושה או את מה שקשור אליו. החוטם הוא מקום הכעס, הידיים הן העבודה, והרגליים הן ההליכה. אבדן האיבר נפתר כפטור מן הצורך בו, ולא כנזק.</p>
+    <div data-hl="R6" class="voice r"><span class="tag">רש"י</span><blockquote>באדרותא מיתת – בכבוד ובהדר תמות:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "באדרותא מיתת" פירושו בכבוד ובהדר תמות. מילת החודש "אדר" נדרשת מלשון הדר.</p></div>
+  </div>
+  <p class="godeep">איך רבי מצא פתרון טוב לחלום על מוות באדר? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>איך הומת בר הדיא?</summary><p>קשרו את רגליו לשני ארזים, ושחררו את החבל עד שנקרע לשניים.</p></details>
+  <details><summary>מה פתר רבי ישמעאל על הלחיים שנשרו?</summary><p>שני גדודים של רומי שיעצו על בן דמא רעה מתו.</p></details>
+  <details><summary>מה פתר רבי על החוטם שנשר?</summary><p>שהכעס, "חרון אף", הסתלק ממנו.</p></details>
+  <details class="deepq"><summary>מה פירוש "באדרותא מיתת", לפי רש"י?</summary><p>בכבוד ובהדר תמות.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G4a,G4b,G4c,G5,G6">
+  <div class="kicker">יחידה 2 · אגדה</div>
+  <h2>הצדוקי ורבי ישמעאל</h2>
+  <p class="lead">צדוקי סיפר לרבי ישמעאל שורה של חלומות, ורבי ישמעאל פתר כל אחד מהם כרמז לחטא שהצדוקי עשה. בסוף, חלום אחד הוביל אותו למטמון.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ראיתי שאני משקה שמן לזיתים</td><td>ראיתי שאני משקה שמן לזיתים.</td></tr>
+      <tr><td>חזאי דקטיף לי כוכבא</td><td>ראיתי שקטפתי כוכב.</td></tr>
+      <tr><td>בר ישראל גנבת</td><td>אדם מישראל גנבת.</td></tr>
+      <tr><td>בר ישראל זבנתיה ואכלת לדמיה</td><td>אדם מישראל מכרת, ואכלת את מחירו.</td></tr>
+      <tr><td>חזאי דדריכנא בטונא דאסא</td><td>ראיתי שאני דורך בצל של הדס.</td></tr>
+      <tr><td>חזאי דקליפנא ביעי</td><td>ראיתי שאני מקלף ביצים.</td></tr>
+      <tr><td>שכבי קא משלחת</td><td>מתים אתה מפשיט.</td></tr>
+      <tr><td>כולהו איתנהו בי בר מהא דליתיה</td><td>כולם ישנם בי, חוץ מזה, שאינו.</td></tr>
+      <tr><td>האי גלימא דמכסא דגברא פלוני הוא</td><td>הגלימה הזו שאתה מכוסה בה, של פלוני היא,</td></tr>
+      <tr><td>שבק לך אבוך נכסי בקפודקיא</td><td>אביך השאיר לך נכסים בקפוטקיא.</td></tr>
+      <tr><td>אית לך נכסי בקפודקיא</td><td>יש לך נכסים בקפוטקיא?</td></tr>
+      <tr><td>קפא כשורא דיקא עשרה</td><td>"קפא" היא קורה, "דיקא" הוא עשרה.</td></tr>
+      <tr><td>זיל חזי קפא דריש עשרה</td><td>לך ראה את הקורה שבראש עשר.</td></tr>
+      <tr><td>אזל אשכח שהיא מלאה זוזי</td><td>הלך ומצא שהיא מלאה זוזים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>שיטת הפתרון:</b> רבי ישמעאל פירש כל תמונה בחלום כמשל. שמן בתוך זית רמז לחטא עם האם, כוכב רמז לאדם מישראל, ובליעת הכוכב רמזה שמכר אותו ואכל את מחירו. כך גם העיניים, הירח וההדס רמזו לאיסורי עריות שונים.</p>
+  <p><b>העורבים והיונים:</b> עורבים סביב המיטה נפתרו כבגידה של אשתו, ויונים כחטאים שלו עם נשים רבות. שתי יונים שעפו נפתרו כשתי נשים שנשא ושילח בלי גט.</p>
+  <p><b>החלום שהוכחש:</b> כשרבי ישמעאל פתר שקילוף ביצים הוא הפשטת מתים, הצדוקי הודה בכל השאר אבל הכחיש את זה. בדיוק אז באה אשה וזיהתה את הגלימה שעליו כגלימה של אדם מת שהוא הפשיט.</p>
+  <p><b>המטמון:</b> הצדוקי חלם שאביו השאיר לו נכסים בקפוטקיא. רבי ישמעאל בירר שאין לו שם נכסים ושאביו לא היה שם, ולכן פירק את שם המקום לשתי מילים: "קפא", קורה, ו"דיקא", עשרה. הצדוקי מצא את הקורה העשירית מלאה זוזים.</p>
+  <div data-hl="R7" class="voice r"><span class="tag">רש"י</span><blockquote>אמו בעל – דומיא דשמן שהוא בתוך הזית השקה את אמו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: כמו השמן שבתוך הזית, כך השקה את אמו. התמונה של החלום משקפת את החטא.</p></div>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>גנבת – שנמשלו לכוכבים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "גנבת" אדם מישראל, כי ישראל נמשלו לכוכבים.</p></div>
+  <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>שכבי משלחת – מתים הפשטת:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "שכבי משלחת" פירושו שאתה מפשיט מתים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>ההדס והנערה המאורסה</h3>
+    <div data-hl="R10,R11" class="voice r"><span class="tag">רש"י</span><blockquote>טונא דאסא – טולא דאסא:</blockquote><blockquote>נערה המאורסה – היו רגילין לעשות לה חופה של הדס בכניסתה לחופה וקורין לה הינומא כדאמרינן בכתובות (דף טו:) שיצאתה בהינומא וראשה פרוע:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "טונא דאסא" הוא הצל של ההדס. ונהגו לעשות לנערה מאורסה חופה של הדס כשנכנסה לחופה, וקראו לזה "הינומא". לכן דריכה בצל ההדס רמזה לחטא עם נערה מאורסה.</p></div>
+    <p>רוב הפתרונות כאן מבוססים על מנהג או על משל מוכר: ההדס של החופה, הכוכבים שישראל נמשלו להם, השמן שבתוך הזית. בלי ההקשר הזה החלומות נראים תמימים.</p>
+    <h3>קפוטקיא</h3>
+    <div data-hl="R13,R14,R15,R16" class="voice r"><span class="tag">רש"י</span><blockquote>אם כן – דלית לך התם נכסי ואבוך לא שכיב התם:</blockquote><blockquote>קפא – דאמרי לך היא כשורא שבלשון פרס ויון קורין לכשורא קפא:</blockquote><blockquote>דיקא – הוא עשרה שבלשון יוני קורין לעשרה דיקא והכי אמרי לך יש לך ממון בקורה עשירית:</blockquote><blockquote>דריש עשרה – קורה שבראש עשרה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: אם אין לך שם נכסים ואביך לא מת שם, החלום רומז לדבר אחר. "קפא" היא קורה ו"דיקא" עשרה, בלשון פרס ויוון. כלומר יש לך ממון בקורה העשירית, הקורה שבראש עשר.</p></div>
+    <p>רבי ישמעאל בדק קודם אם החלום מתקיים כפשוטו. רק כשהתברר שלא, פירק את המילה. ההצלחה של הפתרון מראה שהוא נכון.</p>
+  </div>
+  <p class="godeep">איך רבי ישמעאל הגיע לפתרון של "קפוטקיא"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פתר רבי ישמעאל על קטיפת כוכב?</summary><p>שגנב אדם מישראל, כי ישראל נמשלו לכוכבים.</p></details>
+  <details><summary>איזה חלום הכחיש הצדוקי, ומה הוכיח שהפתרון נכון?</summary><p>קילוף ביצים, שנפתר כהפשטת מתים. אשה באה וזיהתה את הגלימה של מת שעליו.</p></details>
+  <details><summary>מה מצא הצדוקי בקורה העשירית?</summary><p>שהיא מלאה זוזים.</p></details>
+  <details class="deepq"><summary>למה דריכה בצל של הדס רמזה לנערה מאורסה, לפי רש"י?</summary><p>נהגו לעשות לה חופה של הדס כשנכנסה לחופה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G7,G8,G9a,G9b,G9c,G10a,G10b,G11,G12a,G12b,G13a,G13b,G13c,G15">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>באר, שלושה שלומות, ופסוק שמקדים</h2>
+  <p class="lead">הגמרא עוברת לפתרון מראות לפי פסוקים. רבי חנינא ורבי חנן מונים מראות שמבשרים שלום, ורבי יהושע בן לוי מלמד מה עושים כשלאותו מראה יש פסוק טוב ופסוק רע.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הרואה באר בחלום רואה שלום</td><td>הרואה באר בחלום, רואה שלום.</td></tr>
+      <tr><td>ר' נתן אומר מצא תורה</td><td>רבי נתן אומר: מצא תורה.</td></tr>
+      <tr><td>רבא אמר חיים ממש</td><td>רבא אמר: חיים ממש.</td></tr>
+      <tr><td>שלש שלומות הן נהר צפור וקדרה</td><td>שלושה (מראות של) שלום הם: נהר, ציפור וקדרה.</td></tr>
+      <tr><td>ובקדרה שאין בה בשר שנינו</td><td>ובקדרה שאין בה בשר שנינו.</td></tr>
+      <tr><td>הרואה נהר בחלום ישכים ויאמר</td><td>הרואה נהר בחלום, ישכים ויאמר:</td></tr>
+      <tr><td>הנני נוטה אליה כנהר שלום</td><td>"הנני נוטה אליה כנהר שלום",</td></tr>
+      <tr><td>קודם שיקדמנו פסוק אחר</td><td>לפני שיקדים אותו פסוק אחר:</td></tr>
+      <tr><td>כי יבא כנהר צר</td><td>"כי יבא כנהר צר".</td></tr>
+      <tr><td>כצפרים עפות כן יגן</td><td>"כצפרים עפות כן יגן".</td></tr>
+      <tr><td>מה נאוו על ההרים רגלי מבשר</td><td>"מה נאוו על ההרים רגלי מבשר".</td></tr>
+      <tr><td>על ההרים אשא בכי ונהי</td><td>"על ההרים אשא בכי ונהי".</td></tr>
+      <tr><td>בכור שורו הדר לו</td><td>"בכור שורו הדר לו".</td></tr>
+      <tr><td>כי יגח שור את איש</td><td>"כי יגח שור את איש".</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הבאר:</b> רבי חנינא אומר שהרואה באר רואה שלום, ומביא את הפסוק על הבאר שמצאו עבדי יצחק. רבי נתן אומר שמצא תורה: על התורה נאמר "כי מוצאי מצא חיים", ועל הבאר "באר מים חיים". ורבא אומר: חיים כפשוטם.</p>
+  <p><b>נהר, ציפור וקדרה:</b> רבי חנן אומר שהם מבשרים שלום, ולכל אחד פסוק שיש בו שלום או הגנה. אבל רבי חנינא מגביל את הקדרה: רק קדרה שאין בה בשר, כי בשר בסיר מופיע בפסוק של פורענות.</p>
+  <p><b>להקדים את הטוב:</b> רבי יהושע בן לוי מלמד שלרוב המראות יש בתנ"ך פסוק לטובה ופסוק לרעה. נהר מופיע ב"כנהר שלום" וגם ב"כנהר צר". ציפור מופיעה ב"כצפרים עפות כן יגן" וגם ב"כצפור נודדת". לכן הרואה ישכים ויאמר את הפסוק הטוב, לפני שהפסוק הרע יקדים אותו.</p>
+  <p><b>הרשימה:</b> כך גם בענבים, בהר, בשופר, בכלב, באריה, בתגלחת, בבאר, בקנה ובשור. לכל אחד פסוק של ברכה ופסוק של צער, והרואה בוחר להקדים את הברכה.</p>
+  <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>שלש שלומות הם – שלש חלומות המבשרים שלום:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "שלש שלומות" הם שלושה חלומות שמבשרים שלום.</p></div>
+  <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>ופרשו כאשר בסיר – אלמא פורענותא היא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מן הפסוק "ופרשו כאשר בסיר וכבשר בתוך קלחת" רואים שקדרה עם בשר היא פורענות.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך בנויים הזוגות</h3>
+    <p>בכל זוג של רבי יהושע בן לוי שני הפסוקים מכילים את אותה מילה: נהר ונהר, ציפור וציפור, הרים והרים, שופר ושופר. המראה עצמו אינו טוב ואינו רע. מה שמכריע הוא באיזה פסוק הוא נקרא, ולכן ממהרים לומר את הטוב.</p>
+    <h3>שלוש דעות על הבאר</h3>
+    <p>רבי חנינא, רבי נתן ורבא קוראים את אותה באר בשלוש דרכים. לרבי חנינא היא שלום, לפי הסיפור על יצחק. לרבי נתן היא תורה, כי היא "מים חיים", ו"חיים" נאמר על התורה. לרבא היא חיים ממש.</p>
+  </div>
+  <p class="godeep">למה הרואה מראה בחלום ממהר לומר פסוק בבוקר? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה שלוש הדעות על הרואה באר?</summary><p>רבי חנינא: שלום. רבי נתן: מצא תורה. רבא: חיים ממש.</p></details>
+  <details><summary>אילו שלושה מראות מבשרים שלום, לרבי חנן?</summary><p>נהר, ציפור וקדרה.</p></details>
+  <details><summary>מה יאמר הרואה נהר בחלום?</summary><p>"הנני נוטה אליה כנהר שלום", לפני שיקדים אותו "כי יבא כנהר צר".</p></details>
+  <details class="deepq"><summary>איזו קדרה מבשרת שלום, ולמה?</summary><p>קדרה שאין בה בשר, כי קדרה עם בשר מופיעה בפסוק של פורענות.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G14a,G14b,G16,G17">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>קנה, דלועים ושור</h2>
+  <p class="lead">ברייתות ודברי רבי זירא מפרטים מה מבשרים צמחים ובעלי חיים מסוימים בחלום: קנה, דלעת, שעווה, ושור על כל מעשיו.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הרואה קנה בחלום יצפה לחכמה</td><td>הרואה קנה בחלום, יצפה לחכמה.</td></tr>
+      <tr><td>קנים יצפה לבינה</td><td>(הרואה) קנים, יצפה לבינה.</td></tr>
+      <tr><td>ובכל קנינך קנה בינה</td><td>"ובכל קנינך קנה בינה".</td></tr>
+      <tr><td>קרא קורא קירא קניא כולהו מעלו לחלמא</td><td>דלעת, ענף רך של דקל, שעווה, קנה: כולם טובים לחלום.</td></tr>
+      <tr><td>אין מראין דלועין</td><td>אין מראים דלועים</td></tr>
+      <tr><td>אלא למי שהוא ירא שמים בכל כחו</td><td>אלא למי שהוא ירא שמים בכל כוחו.</td></tr>
+      <tr><td>חמשה דברים נאמרו בשור</td><td>חמישה דברים נאמרו בשור:</td></tr>
+      <tr><td>האוכל מבשרו מתעשר</td><td>האוכל מבשרו, מתעשר.</td></tr>
+      <tr><td>נגחו הויין ליה בנים שמנגחים בתורה</td><td>נגח אותו, יהיו לו בנים שמנגחים בתורה.</td></tr>
+      <tr><td>נשכו יסורין באים עליו</td><td>נשך אותו, ייסורים באים עליו.</td></tr>
+      <tr><td>בעטו דרך רחוקה נזדמנה לו</td><td>בעט בו, דרך רחוקה נזדמנה לו.</td></tr>
+      <tr><td>רכבו עולה לגדולה</td><td>רכב עליו, עולה לגדולה.</td></tr>
+      <tr><td>והתניא רכבו מת</td><td>והרי שנינו: רכב עליו, מת.</td></tr>
+      <tr><td>הא דרכיב הוא לתורא</td><td>זה כשהוא רוכב על השור,</td></tr>
+      <tr><td>הא דרכיב תורא לדידיה</td><td>וזה כשהשור רוכב עליו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>קנה וקנים:</b> הרואה קנה יצפה לחכמה, לפי "קנה חכמה", וקנים יצפה לבינה, לפי "ובכל קנינך קנה בינה". הפתרון נשען על דמיון המילים: קנה הצמח, וקנה מלשון קנייה.</p>
+  <p><b>ארבעה טובים:</b> רבי זירא מונה ארבעה מראות שכולם טובים לחלום: "קרא", דלעת, "קורא", ענף רך של דקל, "קירא", שעווה, ו"קניא", קנה. וברייתא מוסיפה שדלועים מראים רק למי שירא שמים בכל כוחו.</p>
+  <p><b>השור:</b> ברייתא מונה חמישה מעשים של שור בחלום. אכילת בשרו מבשרת עושר, נגיחה מבשרת בנים שמתווכחים בתורה, נשיכה מבשרת ייסורים, בעיטה מבשרת דרך רחוקה, ורכיבה עליו מבשרת עלייה לגדולה.</p>
+  <p><b>קושיה ותירוץ:</b> ברייתא אחרת אומרת שרכיבה על שור מבשרת מוות. התירוץ: כשהאדם רוכב על השור, זו גדולה. כשהשור רוכב על האדם, זה מוות.</p>
+  <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>ובכל קנינך – לשון מרובה הוא אף קנים הרבה קנה של בינה הוא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "ובכל קנינך" היא לשון מרובה, ולכן גם קנים רבים הם קנייה של בינה.</p></div>
+  <div data-hl="R21,R22,R23" class="voice r"><span class="tag">רש"י</span><blockquote>קורא – רך הגדל בענפי הדקל בכל שנה כדרך שאר אילנות ולשנה שניה הוא מתקשה ונעשה עץ:</blockquote><blockquote>קירא – שעוה:</blockquote><blockquote>קניא – קנה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "קורא" הוא הענף הרך שגדל בדקל כל שנה ומתקשה בשנה השנייה. "קירא" היא שעווה, ו"קניא" קנה.</p></div>
+  <div data-hl="R24" class="voice r"><span class="tag">רש"י</span><blockquote>האוכל מבשרו – בחלום:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "האוכל מבשרו" פירושו בחלום.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>דלעת ויראת שמים</h3>
+    <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>קרא קורא קירא קניא – קרא דלעת כדאמרינן לקמן הרואה דלועין בחלום ירא שמים הוא לשון דלו עיני למרום (ישעיהו ל״ח:י״ד):</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "קרא" היא דלעת, כמו שנאמר בהמשך שהרואה דלועים בחלום ירא שמים הוא. והקשר הוא ללשון "דלו עיני למרום".</p></div>
+    <p>גם כאן הפתרון בנוי על צליל המילה. "דלועין" קרובה ל"דלו", ו"דלו עיני למרום" הוא מבט כלפי מעלה, כמו של ירא שמים.</p>
+    <h3>אותה תמונה בשני כיוונים</h3>
+    <p>התירוץ על הרכיבה דומה לתירוצים אחרים בפרק: אותה תמונה, אבל מי עושה למי משנה את הכול. אדם שרוכב על שור שולט בו, ושור שרוכב על אדם מכריע אותו.</p>
+  </div>
+  <p class="godeep">מה הקשר בין דלעת ליראת שמים, לפי רש"י? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה מבשר קנה בחלום, ומה קנים?</summary><p>קנה: חכמה. קנים: בינה.</p></details>
+  <details><summary>מה מבשר שור שנגח את הרואה?</summary><p>בנים שמנגחים בתורה.</p></details>
+  <details><summary>איך מיישבים בין "רכבו עולה לגדולה" לבין "רכבו מת"?</summary><p>כשהוא רוכב על השור, גדולה. כשהשור רוכב עליו, מוות.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מה זה "קורא"?</summary><p>הענף הרך שגדל בדקל בכל שנה, ומתקשה בשנה השנייה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G18a,G18b,G18c,G19a,G19b,G20,G21">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>חמור, חתול, סוס, גמל ופיל</h2>
+  <p class="lead">הגמרא ממשיכה במראות של בעלי חיים, פירות ואנשים. חלק מן הפתרונות נשענים על פסוק, וחלק על צליל השם.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הרואה חמור בחלום יצפה לישועה</td><td>הרואה חמור בחלום, יצפה לישועה.</td></tr>
+      <tr><td>באתרא דקרו ליה שונרא</td><td>במקום שקוראים לו "שונרא",</td></tr>
+      <tr><td>נעשית לו שירה נאה</td><td>נעשית לו שירה נאה.</td></tr>
+      <tr><td>שינרא נעשה לו שינוי רע</td><td>(ובמקום שקוראים לו) "שינרא", נעשה לו שינוי רע.</td></tr>
+      <tr><td>שחורות בזמנן יפות שלא בזמנן רעות</td><td>(ענבים) שחורים, בזמנם יפים, שלא בזמנם רעים.</td></tr>
+      <tr><td>אדום בנחת יפה ברדוף קשה</td><td>(סוס) אדום, בנחת יפה, בריצה קשה.</td></tr>
+      <tr><td>הרואה ישמעאל בחלום תפלתו נשמעת</td><td>הרואה ישמעאל בחלום, תפילתו נשמעת.</td></tr>
+      <tr><td>אבל טייעא בעלמא לא</td><td>אבל סתם ערבי, לא.</td></tr>
+      <tr><td>מיתה נקנסה לו מן השמים והצילוהו ממנה</td><td>מיתה נגזרה עליו מן השמים, והצילו אותו ממנה.</td></tr>
+      <tr><td>ואנכי אעלך גם עלה</td><td>"ואנכי אעלך גם עלה".</td></tr>
+      <tr><td>הרואה פינחס בחלום פלא נעשה לו</td><td>הרואה פנחס בחלום, פלא נעשה לו.</td></tr>
+      <tr><td>פילים פלאי פלאות נעשו לו</td><td>(הרואה) פילים, פלאי פלאות נעשו לו.</td></tr>
+      <tr><td>כל מיני חיות יפין לחלום</td><td>כל מיני חיות יפים לחלום,</td></tr>
+      <tr><td>חוץ מן הפיל ומן הקוף</td><td>חוץ מן הפיל ומן הקוף.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>חמור:</b> הרואה חמור יצפה לישועה, כמו שנאמר על המלך העתיד "ונושע הוא עני ורוכב על חמור".</p>
+  <p><b>לפי השם:</b> החתול נפתר לפי השם שלו במקום. "שונרא" נשמע כמו שירה נאה, ו"שינרא" נשמע כמו שינוי רע. גם ישמעאל, פנחס ופיל נפתרים לפי צליל השם: ישמעאל לשמיעת תפילה, פנחס ופיל לפלא.</p>
+  <p><b>צבע וזמן:</b> ענבים לבנים טובים תמיד, ושחורים רק בעונתם. סוס לבן טוב תמיד, ואדום טוב רק כשהולך בנחת, ולא כשהוא רץ.</p>
+  <p><b>גמל:</b> הרואה גמל, נגזרה עליו מיתה והצילו אותו. רבי חמא ברבי חנינא לומד זאת מ"ואנכי אעלך גם עלה", ורב נחמן בר יצחק מ"גם ה' העביר חטאתך לא תמות". בסוף העמוד הגמרא מקשה מברייתא שהפיל אינו טוב לחלום.</p>
+  <div data-hl="R25" class="voice r"><span class="tag">רש"י</span><blockquote>בין ברדוף – כשהוא רץ:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "ברדוף" פירושו כשהסוס רץ.</p></div>
+  <div data-hl="R27" class="voice r"><span class="tag">רש"י</span><blockquote>פלא נעשה לו – כמו שנעשה לפינחס כדאמרינן בסנהדרין (דף פב:):</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הרואה פנחס, נעשה לו פלא כמו שנעשה לפנחס.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>גמל ו"גם עלה"</h3>
+    <div data-hl="R26" class="voice r"><span class="tag">רש"י</span><blockquote>גם עלה – קרוב לנוטריקון של גמל:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "גם עלה" קרוב לראשי תיבות של "גמל". כך הפסוק שבו הקדוש ברוך הוא מבטיח ליעקב להעלות אותו ממצרים מתאים לגמל.</p></div>
+    <p>בשני המקורות יש המילה "גם". אצל רב נחמן בר יצחק הפסוק מדבר במפורש על מוות שנמנע, "לא תמות". כך הפתרון מתאים לשני חלקיו: מיתה נגזרה, ונעשתה הצלה.</p>
+    <h3>ישמעאל דווקא</h3>
+    <p>הגמרא מדייקת שרק ישמעאל בן אברהם מבשר שהתפילה נשמעת, ולא סתם "טייעא", ערבי. המסר בא מן האיש ששמו ידוע מן התורה, ולא מכל אדם שנראה כמותו.</p>
+  </div>
+  <p class="godeep">מה הקשר בין גמל ל"גם עלה"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה מבשר חמור בחלום?</summary><p>ישועה.</p></details>
+  <details><summary>מה ההבדל בין "שונרא" ל"שינרא"?</summary><p>"שונרא": שירה נאה. "שינרא": שינוי רע.</p></details>
+  <details><summary>מתי ענבים שחורים טובים בחלום?</summary><p>בזמנם, בעונתם.</p></details>
+  <details><summary>איזו קושיה נשארת בסוף העמוד?</summary><p>שנינו שכל החיות יפות לחלום חוץ מן הפיל והקוף, ואילו כאן הפיל מבשר פלאות.</p></details>
+  <details class="deepq"><summary>מה פירש רש"י ב"גם עלה"?</summary><p>שזה קרוב לראשי תיבות של "גמל".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>סוף בר הדיא:</b> נקרע בין שני ארזים, וקללת רבא התקיימה.</li>
+      <li><b>פתרונות לטובה:</b> רבי ישמעאל ורבי פתרו לטובה חלומות על לחיים, חוטם, ידיים ורגליים שנפלו, ועל מוות באדר.</li>
+      <li><b>הצדוקי:</b> רבי ישמעאל פתר את חלומותיו כרמזים לחטאיו, ופתרון אחד הוכח במקום. חלום על קפוטקיא הוביל אותו לקורה מלאה זוזים.</li>
+      <li><b>באר ושלום:</b> באר מבשרת שלום, תורה או חיים. נהר, ציפור וקדרה בלי בשר מבשרים שלום.</li>
+      <li><b>להקדים את הטוב:</b> לרוב המראות יש פסוק טוב ופסוק רע, והרואה ישכים ויאמר את הטוב לפני שהרע יקדים אותו.</li>
+      <li><b>קנה ושור:</b> קנה מבשר חכמה, דלועים מראים לירא שמים, ולשור חמישה פתרונות לפי מה שעשה.</li>
+      <li><b>לפי השם:</b> חמור לישועה, חתול לפי שמו במקום, ישמעאל לתפילה שנשמעת, גמל להצלה ממוות, פנחס ופיל לפלא.</li>
+      <li><b>נשאר להמשך:</b> והרי שנינו שהפיל אינו טוב לחלום? התירוץ בא בעמוד הבא.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>כפיתו</td><td>קשרו</td></tr>
+      <tr><td>דאצטליק</td><td>שנחלק לשניים</td></tr>
+      <tr><td>גדודי</td><td>גדודים, חיילות</td></tr>
+      <tr><td>חרון אף</td><td>כעס. מילולית: חום האף</td></tr>
+      <tr><td>באדרותא</td><td>בכבוד ובהדר</td></tr>
+      <tr><td>צדוקי</td><td>אחד מכת שכפרה בתורה שבעל פה</td></tr>
+      <tr><td>קטיף</td><td>קטף, עקר</td></tr>
+      <tr><td>שכבי</td><td>מתים</td></tr>
+      <tr><td>אדהכי והכי</td><td>בינתיים</td></tr>
+      <tr><td>ישכים ויאמר</td><td>יקום מוקדם בבוקר ויאמר</td></tr>
+      <tr><td>קודם שיקדמנו פסוק אחר</td><td>לפני שיקדים אותו פסוק אחר, שמשמעו לרעה</td></tr>
+      <tr><td>תנו רבנן</td><td>שנו רבותינו. כך פותחת ברייתא</td></tr>
+      <tr><td>טייעא</td><td>ערבי, סוחר נודד</td></tr>
+      <tr><td>פלאי פלאות</td><td>פלאים גדולים</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-56a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-57a.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-57a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "שיראי דמלכא כפיתו תרין ארזי בחבלא אסור חד כרעיה לחד ארזא וחד כרעיה לחד ארזא ושרו לחבלא עד דאצטליק רישיה אזל כל חד וחד וקם אדוכתיה ואצטליק ונפל בתרין", false, ""], ["G2", "שאל בן דמא בן אחותו של ר' ישמעאל את ר' ישמעאל ראיתי שני לחיי שנשרו אמר שני גדודי רומי יעצו עליך רעה ומתו", false, ""], ["G3a", "אמר ליה בר קפרא לרבי ראיתי חוטמי שנשר אמר ליה חרון אף נסתלק ממך אמר ליה ראיתי שני ידי שנחתכו אמר ליה לא תצטרך למעשה ידיך אמר ליה ראיתי ב' רגלי שנקטעו אמר ליה על סוס אתה רוכב", false, ""], ["G3b", "חזאי דאמרי לי באדר מיתת וניסן לא חזית אמר ליה באדרותא מיתת ולא אתית לידי נסיון", false, ""], ["G4a", "אמר ליה ההוא צדוקי לר' ישמעאל ראיתי שאני משקה שמן לזיתים אמר ליה בא על אמו אמר ליה חזאי דקטיף לי כוכבא אמר ליה בר ישראל גנבת אמר ליה חזאי דבלעתי לכוכבא אמר ליה בר ישראל זבנתיה ואכלת לדמיה", false, ""], ["G4b", "אמר ליה חזאי עיני דנשקן אהדדי אמר ליה בא על אחותו אמר ליה חזאי דנשקי סיהרא אמר ליה בא על אשת ישראל אמר ליה חזאי דדריכנא בטונא דאסא אמר ליה בא על נערה המאורסה אמר ליה חזאי טונא מעילאי והוא מתתאי אמר ליה משכבך הפוך", false, ""], ["G4c", "אמר ליה חזאי עורבי דהדרי לפורייה אמר ליה אשתך זנתה מאנשים הרבה אמר ליה חזאי יוני דהדרי לפורייה אמר ליה נשים הרבה טמאת אמר ליה חזאי דנקיט תרי יוני ופרחן אמר ליה תרתי נשי נסבת ופטרתינון בלא גט", false, ""], ["G5", "אמר ליה חזאי דקליפנא ביעי אמר ליה שכבי קא משלחת אמר ליה כולהו איתנהו בי בר מהא דליתיה אדהכי והכי אתיא האי איתתא ואמרה ליה האי גלימא דמכסא דגברא פלוני הוא דמית ואשלחתיה", false, ""], ["G6", "אמר ליה חזאי דאמרי לי שבק לך אבוך נכסי בקפודקיא אמר ליה אית לך נכסי בקפודקיא אמר ליה לאו אזל אבוך לקפודקיא אמר ליה לאו אם כן קפא כשורא דיקא עשרה זיל חזי קפא דריש עשרה שהיא מלאה זוזי אזל אשכח שהיא מלאה זוזי", false, ""], ["G7", "אמר רבי חנינא הרואה באר בחלום רואה שלום שנאמר (בראשית כו, יט) ויחפרו עבדי יצחק בנחל וימצאו שם באר מים חיים ר' נתן אומר מצא תורה שנאמר (משלי ח, לה) כי מוצאי מצא חיים וכתיב הכא באר מים חיים רבא אמר חיים ממש", false, ""], ["G8", "אמר רבי חנן שלש שלומות הן נהר צפור וקדרה נהר דכתיב (ישעיהו סו, יב) הנני נוטה אליה כנהר שלום צפור דכתיב (ישעיהו לא, ה) כצפרים עפות כן יגן ה' צבאות וגו' קדרה דכתיב (שם כו) ה' תשפות שלום לנו אמר ר' חנינא ובקדרה שאין בה בשר שנינו (מיכה ג, ג) ופרשו כאשר בסיר וכבשר בתוך קלחת", false, ""], ["G9a", "אמר ר' יהושע בן לוי הרואה נהר בחלום ישכים ויאמר הנני נוטה אליה כנהר שלום קודם שיקדמנו פסוק אחר (ישעיהו נט, יט) כי יבא כנהר צר", false, ""], ["G9b", "הרואה צפור בחלום ישכים ויאמר כצפרים עפות כן יגן וגו' קודם שיקדמנו פסוק אחר (משלי כז, ח) כצפור נודדת מן קנה וגו'", false, ""], ["G9c", "הרואה קדרה בחלום ישכים ויאמר ה' תשפות שלום לנו קודם שיקדמנו פסוק אחר (יחזקאל כד, ג) שפות הסיר שפות", false, ""], ["G10a", "הרואה ענבים בחלום ישכים ויאמר (הושע ט, י) כענבים במדבר קודם שיקדמנו פסוק אחר (דברים לב, לב) ענבימו ענבי רוש", false, ""], ["G10b", "הרואה הר בחלום ישכים ויאמר (ישעיהו נב, ז) מה נאוו על ההרים רגלי מבשר קודם שיקדמנו פסוק אחר (ירמיהו ט, ט) על ההרים אשא בכי ונהי", false, ""], ["G11", "הרואה שופר בחלום ישכים ויאמר (ישעיהו כז, יג) והיה ביום ההוא יתקע בשופר גדול קודם שיקדמנו פסוק אחר (הושע ה, ח) תקעו שופר בגבעה", false, ""], ["G12a", "הרואה כלב בחלום ישכים ויאמר (שמות יא, ז) ולכל בני ישראל לא יחרץ כלב לשונו קודם שיקדמנו פסוק אחר (ישעיהו נו, יא) והכלבים עזי נפש", false, ""], ["G12b", "הרואה ארי בחלום ישכים ויאמר (עמוס ג, ח) אריה שאג מי לא יירא קודם שיקדמנו פסוק אחר (ירמיהו ד, ז) עלה אריה מסבכו", false, ""], ["G13a", "הרואה תגלחת בחלום ישכים ויאמר (בראשית מא, יד) ויגלח ויחלף שמלותיו קודם שיקדמנו פסוק אחר ((שופטים טז, יז) כי) אם גלחתי וסר ממני כחי", false, ""], ["G13b", "הרואה באר בחלום ישכים ויאמר (שיר השירים ד, טו) באר מים חיים קודם שיקדמנו פסוק אחר (ירמיהו ו, ז) כהקיר ביר מימיה", false, ""], ["G13c", "הרואה קנה בחלום ישכים ויאמר (ישעיהו מב, ג) קנה רצוץ לא ישבר קודם שיקדמנו פסוק אחר (מלכים ב יח, כא) הנה בטחת לך על משענת הקנה הרצוץ", false, ""], ["G14a", "תנו רבנן הרואה קנה בחלום יצפה לחכמה שנאמר (משלי ד, ה) קנה חכמה קנים יצפה לבינה שנאמר (משלי ד, ז) ובכל קנינך קנה בינה אמר רבי זירא קרא קורא קירא קניא כולהו מעלו לחלמא", false, ""], ["G14b", "תניא אין מראין דלועין אלא למי שהוא ירא שמים בכל כחו", false, ""], ["G15", "הרואה שור בחלום ישכים ויאמר (דברים לג, יז) בכור שורו הדר לו קודם שיקדמנו פסוק אחר (שמות כא, כח) כי יגח שור את איש", false, ""], ["G16", "תנו רבנן חמשה דברים נאמרו בשור האוכל מבשרו מתעשר נגחו הויין ליה בנים שמנגחים בתורה נשכו יסורין באים עליו בעטו דרך רחוקה נזדמנה לו רכבו עולה לגדולה", false, ""], ["G17", "והתניא רכבו מת לא קשיא הא דרכיב הוא לתורא הא דרכיב תורא לדידיה", false, ""], ["G18a", "הרואה חמור בחלום יצפה לישועה שנאמר (זכריה ט, ט) הנה מלכך יבא לך צדיק ונושע הוא עני ורוכב על חמור", false, ""], ["G18b", "הרואה חתול בחלום באתרא דקרו ליה שונרא נעשית לו שירה נאה שינרא נעשה לו שינוי רע", false, ""], ["G18c", "הרואה ענבים בחלום לבנות בין בזמנן בין שלא בזמנן יפות שחורות בזמנן יפות שלא בזמנן רעות הרואה סוס לבן בחלום בין בנחת בין ברדוף יפה לו אדום בנחת יפה ברדוף קשה", false, ""], ["G19a", "הרואה ישמעאל בחלום תפלתו נשמעת ודוקא ישמעאל בן אברהם אבל טייעא בעלמא לא", false, ""], ["G19b", "הרואה גמל בחלום מיתה נקנסה לו מן השמים והצילוהו ממנה אמר רבי חמא ברבי חנינא מאי קראה (בראשית מו, ד) ואנכי ארד עמך מצרימה ואנכי אעלך גם עלה רב נחמן בר יצחק אמר מהכא (שמואל ב יב, יג) גם ה' העביר חטאתך לא תמות", false, ""], ["G20", "הרואה פינחס בחלום פלא נעשה לו הרואה פיל בחלום פלאות נעשו לו פילים פלאי פלאות נעשו לו", false, ""], ["G21", "והתניא כל מיני חיות יפין לחלום חוץ מן הפיל ומן הקוף לא קשיא", false, ""]], "R": [["R1", "שיראי דמלכא", "מעילים של מלך:", false], ["R2", "דאצטליק", "נחלק לב' ודוגמתו בהעור והרוטב (דף קכד.) דצלקי מצלק:", false], ["R3", "יעצו עליך רעה", "והם הלחיים פה שיעץ עליך רעה:", false], ["R4", "חרון אף", "ניכר בחוטם שמתחמם ומוציא הבל על כן הוא קרוי חרון אף:", false], ["R5", "לא תצטרך למעשה ידיך", "שתתעשר:", false], ["R6", "באדרותא מיתת", "בכבוד ובהדר תמות:", false], ["R7", "אמו בעל", "דומיא דשמן שהוא בתוך הזית השקה את אמו:", false], ["R8", "קטיף לי כוכבא", "עקרתי כוכב בחלום:", false], ["R9", "גנבת", "שנמשלו לכוכבים:", false], ["R10", "טונא דאסא", "טולא דאסא:", false], ["R11", "נערה המאורסה", "היו רגילין לעשות לה חופה של הדס בכניסתה לחופה וקורין לה הינומא כדאמרינן בכתובות (דף טו:) שיצאתה בהינומא וראשה פרוע:", false], ["R12", "שכבי משלחת", "מתים הפשטת:", false], ["R13", "אם כן", "דלית לך התם נכסי ואבוך לא שכיב התם:", false], ["R14", "קפא", "דאמרי לך היא כשורא שבלשון פרס ויון קורין לכשורא קפא:", false], ["R15", "דיקא", "הוא עשרה שבלשון יוני קורין לעשרה דיקא והכי אמרי לך יש לך ממון בקורה עשירית:", false], ["R16", "דריש עשרה", "קורה שבראש עשרה:", false], ["R17", "שלש שלומות הם", "שלש חלומות המבשרים שלום:", false], ["R18", "ופרשו כאשר בסיר", "אלמא פורענותא היא:", false], ["R19", "ובכל קנינך", "לשון מרובה הוא אף קנים הרבה קנה של בינה הוא:", false], ["R20", "קרא קורא קירא קניא", "קרא דלעת כדאמרינן לקמן הרואה דלועין בחלום ירא שמים הוא לשון דלו עיני למרום (ישעיהו ל״ח:י״ד):", false], ["R21", "קורא", "רך הגדל בענפי הדקל בכל שנה כדרך שאר אילנות ולשנה שניה הוא מתקשה ונעשה עץ:", false], ["R22", "קירא", "שעוה:", false], ["R23", "קניא", "קנה:", false], ["R24", "האוכל מבשרו", "בחלום:", false], ["R25", "בין ברדוף", "כשהוא רץ:", false], ["R26", "גם עלה", "קרוב לנוטריקון של גמל:", false], ["R27", "פלא נעשה לו", "כמו שנעשה לפינחס כדאמרינן בסנהדרין (דף פב:):", false]], "T": [], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': עונשו של בר הדיא", "x": "העמוד הקודם הסתיים בבר הדיא, שהובא לפני אנשי המלך ברומי. אמרו לו: בגלל הזוז שלך נהרס המשי של המלך. כאן מסופר עונשו, ואחריו חלומות שפתרו רבי ישמעאל ורבי, ורשימה ארוכה של מראות בחלום ומה הם מבשרים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1", "R2"], "t": "שני הארזים", "x": "\"שיראי דמלכא\", המשי של המלך, נהרס בגללו. קשרו שני ארזים בחבל, רגל אחת שלו לארז אחד ורגל אחת לארז השני, ושחררו את החבל. כל ארז חזר למקומו, ובר הדיא נקרע מראשו ונפל לשני חלקים. רש\"י: \"דאצטליק\" פירושו נחלק לשניים.", "a": "כך התקיימה קללת רבא, שיימסר לידי מלכות שלא ירחמו עליו."}, {"w": "גמרא", "cols": false, "hl": ["G2", "R3"], "t": "בן דמא: שתי הלחיים", "x": "בן דמא, בן אחותו של רבי ישמעאל, שאל את רבי ישמעאל: ראיתי ששתי לחיי נשרו. אמר לו: שני גדודים של רומי יעצו עליך רעה, ומתו. רש\"י: הלחיים הן הפה, שבו יועצים רעה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3a", "R4", "R5"], "t": "בר קפרא ורבי: חוטם, ידיים ורגליים", "x": "בר קפרא אמר לרבי: ראיתי שחוטמי נשר. אמר לו: \"חרון אף\" נסתלק ממך. רש\"י: הכעס ניכר בחוטם, שמתחמם ומוציא הבל, ולכן הוא נקרא חרון אף. ראיתי ששתי ידיי נחתכו. אמר לו: לא תצטרך למעשה ידיך, כלומר תתעשר. ראיתי ששתי רגליי נקטעו. אמר לו: על סוס אתה רוכב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3b", "R6"], "t": "\"באדר מתת\"", "x": "ראיתי שאמרו לי: באדר תמות, וניסן לא תראה. אמר לו: \"באדרותא מיתת\", בכבוד תמות, \"ולא אתית לידי נסיון\", ולא תבוא לידי ניסיון. רש\"י: בכבוד ובהדר תמות. הפתרון בנוי על דמיון המילים: אדר ואדרותא, ניסן וניסיון.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4a", "R7"], "t": "צדוקי ורבי ישמעאל: שמן לזיתים", "x": "צדוקי אחד אמר לרבי ישמעאל: ראיתי שאני משקה שמן לזיתים. אמר לו: חטאת עם אמך. רש\"י: כמו השמן שבתוך הזית, השקה את מי שהוא ממנה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4a", "R8", "R9"], "t": "כוכב שנקטף וכוכב שנבלע", "x": "ראיתי שקטפתי כוכב. אמר לו: אדם מישראל גנבת. רש\"י: ישראל נמשלו לכוכבים. ראיתי שבלעתי כוכב. אמר לו: אדם מישראל מכרת, ואכלת את מחירו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4b", "R10", "R11"], "t": "עיניים, ירח והדס", "x": "ראיתי שעיניי מנשקות זו את זו. הפתרון: עם אחותו חטא. ראיתי שנישקתי את הירח: חטאת עם אשת איש מישראל. ראיתי שדרכתי בצל של הדס: חטאת עם נערה מאורסה. רש\"י: נהגו לעשות לנערה כזו חופה של הדס כשנכנסה לחופה. ראיתי את ההדס מעליי, והוא מתחתיי. אמר לו: משכבך הפוך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4c"], "t": "עורבים ויונים", "x": "ראיתי עורבים שמסתובבים סביב מיטתי. אמר לו: אשתך זנתה עם אנשים רבים. ראיתי יונים שמסתובבות סביב מיטתי: טימאת נשים רבות. ראיתי שלקחתי שתי יונים והן עפו: שתי נשים נשאת, ושלחת אותן בלי גט.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R12"], "t": "קילוף ביצים", "x": "ראיתי שאני מקלף ביצים. אמר לו: מתים אתה מפשיט. אמר הצדוקי: כל אלה ישנם בי, חוץ מזה. בינתיים באה אשה ואמרה לו: הגלימה שאתה מכוסה בה היא של פלוני שמת, ואתה הפשטת אותה ממנו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R13"], "t": "נכסים בקפוטקיא", "x": "ראיתי שאמרו לי: אביך השאיר לך נכסים בקפוטקיא. שאל רבי ישמעאל: יש לך נכסים בקפוטקיא? לא. אביך הלך לקפוטקיא? לא. רש\"י: אם כך, אין לך שם נכסים, ואביך לא מת שם, והחלום רומז לדבר אחר.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6", "R14", "R15", "R16"], "t": "\"קפא\" ו\"דיקא\"", "x": "רבי ישמעאל פירק את המילה לשני חלקים: \"קפא\" היא קורה, ו\"דיקא\" היא עשרה. רש\"י: כך הדבר בלשון פרס ויוון. לך ראה את הקורה שבראש עשר הקורות, שהיא מלאה זוזים. הלך ומצא שהיא מלאה זוזים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "הרואה באר", "x": "אמר רבי חנינא: הרואה באר בחלום, רואה שלום, שנאמר \"ויחפרו עבדי יצחק בנחל וימצאו שם באר מים חיים\". רבי נתן אומר: מצא תורה, שנאמר על התורה \"כי מוצאי מצא חיים\", וכאן נאמר \"באר מים חיים\". רבא אמר: חיים ממש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R17"], "t": "שלושה שמבשרים שלום", "x": "אמר רבי חנן: שלושה מראות מבשרים שלום: נהר, ציפור וקדרה. רש\"י: שלושה חלומות שמבשרים שלום. נהר, שנאמר \"הנני נוטה אליה כנהר שלום\". ציפור, שנאמר \"כצפרים עפות כן יגן ה' צבאות\". וקדרה, שנאמר \"ה' תשפות שלום לנו\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R18"], "t": "קדרה שאין בה בשר", "x": "אמר רבי חנינא: וזה שנינו בקדרה שאין בה בשר. כי על קדרה עם בשר נאמר \"ופרשו כאשר בסיר וכבשר בתוך קלחת\". רש\"י: מכאן שזו פורענות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9a"], "t": "רבי יהושע בן לוי: להקדים פסוק טוב", "x": "אמר רבי יהושע בן לוי: הרואה נהר בחלום, ישכים ויאמר \"הנני נוטה אליה כנהר שלום\", לפני שיקדים אותו פסוק אחר, \"כי יבא כנהר צר\".", "a": "לכל מראה יש פסוק לטובה ופסוק לרעה, והרואה ממהר לומר את הטוב."}, {"w": "גמרא", "cols": false, "hl": ["G9b", "G9c"], "t": "ציפור וקדרה", "x": "הרואה ציפור יאמר \"כצפרים עפות\", לפני שיקדים אותו \"כצפור נודדת מן קנה\". הרואה קדרה יאמר \"ה' תשפות שלום לנו\", לפני שיקדים אותו \"שפות הסיר שפות\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10a", "G10b"], "t": "ענבים והר", "x": "הרואה ענבים יאמר \"כענבים במדבר\", לפני \"ענבימו ענבי רוש\". הרואה הר יאמר \"מה נאוו על ההרים רגלי מבשר\", לפני \"על ההרים אשא בכי ונהי\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11"], "t": "שופר", "x": "הרואה שופר יאמר \"והיה ביום ההוא יתקע בשופר גדול\", לפני \"תקעו שופר בגבעה\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12a", "G12b"], "t": "כלב ואריה", "x": "הרואה כלב יאמר \"ולכל בני ישראל לא יחרץ כלב לשונו\", לפני \"והכלבים עזי נפש\". הרואה אריה יאמר \"אריה שאג מי לא יירא\", לפני \"עלה אריה מסבכו\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13a", "G13b", "G13c"], "t": "תגלחת, באר וקנה", "x": "הרואה תגלחת יאמר \"ויגלח ויחלף שמלותיו\", שנאמר ביוסף, לפני \"אם גלחתי וסר ממני כחי\". הרואה באר יאמר \"באר מים חיים\", לפני \"כהקיר ביר מימיה\". והרואה קנה יאמר \"קנה רצוץ לא ישבר\", לפני \"הנה בטחת לך על משענת הקנה הרצוץ\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14a", "R19"], "t": "ברייתא: קנה וקנים", "x": "תנו רבנן: הרואה קנה בחלום, יצפה לחכמה, שנאמר \"קנה חכמה\". קנים, יצפה לבינה, שנאמר \"ובכל קנינך קנה בינה\". רש\"י: \"ובכל קנינך\" היא לשון מרובה, ולכן גם קנים רבים הם קנייה של בינה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14a", "R20", "R21", "R22", "R23"], "t": "רבי זירא: ארבעה טובים לחלום", "x": "אמר רבי זירא: \"קרא\", \"קורא\", \"קירא\" ו\"קניא\" כולם טובים לחלום. רש\"י: \"קרא\" היא דלעת, \"קורא\" הוא הענף הרך שגדל בדקל בכל שנה ומתקשה בשנה השנייה, \"קירא\" היא שעווה, ו\"קניא\" הוא קנה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14b"], "t": "דלועים", "x": "\"תניא\", שנינו בברייתא: אין מראים דלועים בחלום אלא למי שהוא ירא שמים בכל כוחו. רש\"י, בדבריו על \"קרא\", קושר זאת ללשון \"דלו עיני למרום\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15"], "t": "שור", "x": "הרואה שור בחלום, ישכים ויאמר \"בכור שורו הדר לו\", לפני שיקדים אותו פסוק אחר, \"כי יגח שור את איש\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R24"], "t": "חמישה דברים בשור", "x": "תנו רבנן: חמישה דברים נאמרו בשור. האוכל מבשרו, יתעשר. רש\"י: בחלום. נגח אותו, יהיו לו בנים שמנגחים בתורה, מתווכחים בה בחריפות. נשך אותו, ייסורים באים עליו. בעט בו, דרך רחוקה נזדמנה לו. רכב עליו, עולה לגדולה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17"], "t": "רכב עליו: גדולה או מוות?", "x": "\"והתניא\", והרי שנינו בברייתא אחרת: רכב עליו, מת. \"לא קשיא\": כאן כשהוא רוכב על השור, וכאן כשהשור רוכב עליו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18a"], "t": "חמור", "x": "הרואה חמור בחלום, יצפה לישועה, שנאמר \"הנה מלכך יבא לך צדיק ונושע הוא עני ורוכב על חמור\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18b"], "t": "חתול: שונרא ושינרא", "x": "הרואה חתול בחלום: במקום שקוראים לו \"שונרא\", נעשית לו שירה נאה. ובמקום שקוראים לו \"שינרא\", נעשה לו שינוי רע. הפתרון הולך אחר צליל השם במקום.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18c", "R25"], "t": "ענבים וסוס", "x": "ענבים לבנים יפים בין בזמנם ובין שלא בזמנם. ענבים שחורים, בזמנם יפים, ושלא בזמנם רעים. סוס לבן יפה בין בנחת בין בריצה. סוס אדום, בנחת יפה, ובריצה קשה. רש\"י: \"ברדוף\" פירושו כשהוא רץ.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19a"], "t": "ישמעאל", "x": "הרואה ישמעאל בחלום, תפילתו נשמעת. ודווקא ישמעאל בן אברהם, אבל סתם ערבי, \"טייעא בעלמא\", לא.", "a": "השם ישמעאל מורכב מן המילים \"ישמע אל\"."}, {"w": "גמרא", "cols": false, "hl": ["G19b", "R26"], "t": "גמל: גם עלה", "x": "הרואה גמל בחלום, נגזרה עליו מיתה מן השמים, והצילו אותו ממנה. אמר רבי חמא ברבי חנינא: מאיזה פסוק? \"ואנכי ארד עמך מצרימה ואנכי אעלך גם עלה\". רש\"י: \"גם עלה\" קרוב לראשי תיבות של \"גמל\". רב נחמן בר יצחק לומד מ\"גם ה' העביר חטאתך לא תמות\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20", "R27"], "t": "פנחס ופיל", "x": "הרואה פנחס בחלום, פלא נעשה לו. רש\"י: כמו שנעשה לפנחס. הרואה פיל, פלאות נעשו לו. פילים, פלאי פלאות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21"], "t": "והרי הפיל אינו טוב?", "x": "\"והתניא\", והרי שנינו: כל מיני חיות יפים לחלום, חוץ מן הפיל ומן הקוף. \"לא קשיא\", אין זה קשה. התירוץ עצמו נמשך בעמוד הבא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "בר הדיא נקרע בין שני ארזים, וקללת רבא התקיימה. רבי ישמעאל ורבי פתרו חלומות לפי דמיון של מילים ותמונות, ואצל הצדוקי הפתרונות חשפו את חטאיו. אחר כך הגמרא מונה מראות בחלום: באר, נהר, ציפור, קדרה, שור, חמור ועוד, ולכל אחד פסוק לטובה שיש להקדים. העמוד הבא פותח בתירוץ על הפיל: כאן כשהוא חבוש באוכף, וכאן כשאינו חבוש.", "a": ""}], "audio": "daf-56b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

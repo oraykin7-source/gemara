@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף מ&quot;ו עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף מ&quot;ו עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>ברכות</span><span>פרק שביעי</span><span>שלשה שאכלו</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-46a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-47a.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 90</div>
+  <h1>מסכת ברכות, דף מ&quot;ו עמוד ב&#x27;</h1>
+  <p class="sub">פרק שביעי, &quot;שלשה שאכלו&quot;. &quot;הטוב והמטיב&quot; ברכה בפני עצמה, הברכה בבית האבל, היכן חוזרים בזימון, וסדר ההסבה והנטילה בסעודה.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 4 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. "הטוב והמטיב": ברכה בפני עצמה, ובבית האבל</a><a href="#u2">2. להיכן הוא חוזר</a><a href="#u3">3. ריש גלותא ורב ששת: מנהגי הסעודה של הפרסים</a><a href="#u4">4. הברייתא של רב ששת, ומי מברך</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>"הטוב והמטיב": ברכה בפני עצמה, ובבית האבל</h2>
+  <p class="lead">הברייתא על פתיחה וחתימה ב"ברוך" נגמרת, ומלמדת ש"הטוב והמטיב" היא ברכה בפני עצמה. אחר כך באה ראיה נוספת שאינה מן התורה, מן הברכה בבית האבל, ומעשה במר זוטרא.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ויש מהן שחותם בהן בברוך ואין פותח בברוך</td><td>ויש מהן שחותם בהן ב"ברוך" ואינו פותח ב"ברוך".</td></tr>
+      <tr><td>והטוב והמטיב פותח בברוך ואין חותם בברוך</td><td>ו"הטוב והמטיב" פותח ב"ברוך" ואינו חותם ב"ברוך".</td></tr>
+      <tr><td>מכלל דברכה בפני עצמה היא</td><td>מכאן שהיא ברכה בפני עצמה.</td></tr>
+      <tr><td>שהרי עוקרין אותה בבית האבל</td><td>שהרי עוקרים אותה בבית האבל.</td></tr>
+      <tr><td>מה הם אומרים בבית האבל</td><td>מה הם אומרים בבית האבל?</td></tr>
+      <tr><td>ברוך הטוב והמטיב</td><td>"ברוך הטוב והמטיב".</td></tr>
+      <tr><td>ר"ע אומר ברוך דיין האמת</td><td>רבי עקיבא אומר: "ברוך דיין האמת".</td></tr>
+      <tr><td>הטוב והמטיב אין דיין אמת לא</td><td>"הטוב והמטיב" כן, "דיין האמת" לא?</td></tr>
+      <tr><td>אלא אימא אף הטוב והמטיב</td><td>אלא אמור: אף "הטוב והמטיב".</td></tr>
+      <tr><td>מר זוטרא איקלע לבי רב אשי</td><td>מר זוטרא הזדמן לבית רב אשי.</td></tr>
+      <tr><td>איתרע ביה מלתא פתח ובריך</td><td>אירע לו (לרב אשי) אסון. פתח ובירך:</td></tr>
+      <tr><td>הטוב והמטיב אל אמת דיין אמת</td><td>"הטוב והמטיב, אל אמת, דיין אמת".</td></tr>
+      <tr><td>הוא יגדור את הפרצה הזאת בישראל לחיים</td><td>הוא יגדור את הפרצה הזאת בישראל לחיים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>סוף הברייתא:</b> יש ברכות שחותמות ב"ברוך" ואינן פותחות בו, כי הן סמוכות לברכה שלפניהן. "הטוב והמטיב" פותחת ב"ברוך", ומכאן שאינה סמוכה, והיא ברכה בפני עצמה.</p>
+  <p><b>בית האבל:</b> רב נחמן בר יצחק מביא ראיה שאינה מן התורה. לפי רבי עקיבא אומרים בבית האבל "ברוך דיין האמת". הגמרא מתקנת: לא במקום "הטוב והמטיב", אלא גם וגם. ובכל זאת שינו אותה, והרי שאינה מן התורה.</p>
+  <p><b>מר זוטרא:</b> כשאירע אסון לרב אשי, מר זוטרא בירך "הטוב והמטיב", והכניס לתוכה את "דיין האמת" ותיאור של משפט הקדוש ברוך הוא, ובסופה בקשה שיגדור את הפרצה.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>ויש מהם חותם ולא פותח – כגון ברכה הסמוכה לחברתה שהרי כבר פתח בברכה ראשונה וברכה אחרונה שבקריאת שמע אמת ויציב אמת ואמונה שאע"פ שק"ש מפסיק בינתים אברכות דלפניה סמוכה והויא לה סמוכה לחברתה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: ברכה שחותמת ואינה פותחת היא כמו ברכה הסמוכה לחברתה. וכך הברכה שאחרי קריאת שמע, שסמוכה לברכות שלפניה אף שקריאת שמע ביניהן.</p></div>
+  <div data-hl="R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>הטוב והמטיב וכו' – דלאו סמוכה לחברתה היא שאינה מברכת המזון אלא על קבורת הרוגי ביתר תקנוה:</blockquote><blockquote>שהרי עוקרים אותה בבית האבל – אליבא דר"ע:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "הטוב והמטיב" אינה חלק מברכת המזון, אלא תוקנה על קבורת הרוגי ביתר. והעקירה בבית האבל היא לשיטת רבי עקיבא.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>פתיחה וחתימה של "הטוב והמטיב"</h3>
+    <div data-hl="T1a" class="voice t"><span class="tag">תוספות</span><blockquote>והטוב והמטיב – וא"ת ואמאי פותחת בברוך והלא סמוכה לחברתה היא ויש לומר דנתקנה בפני עצמה (היא) בשביל הרוגי ביתר</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: היא פותחת ב"ברוך" אף שבאה אחרי ברכה אחרת, כי נתקנה בפני עצמה בשביל הרוגי ביתר.</p></div>
+    <div data-hl="T1b" class="voice t"><span class="tag">תוספות</span><blockquote>וא"ת אמאי אינה חותמת בברוך וי"ל משום דקצרה היא רק שתקנו לאחר כך שלש מלכיות ושלש גמולות ושלש הטבות</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: היא אינה חותמת ב"ברוך" כי היא קצרה. רק אחר כך הוסיפו בה שלוש מלכויות, שלוש גמולות ושלוש הטבות.</p></div>
+    <div data-hl="T1c" class="voice t"><span class="tag">תוספות</span><blockquote>ונאמן אתה של ברכת ההפטרה הוא מן הברכה העליונה ולכך הוא נכתב גדול שבימים הראשונים היו רגילין לעמוד כל הקהל ולומר בקול רם נאמן אתה וכו' כשהיה התינוק מגיע שם:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מוסיפים ש"נאמן אתה" שבברכת ההפטרה שייך לברכה שלפניו, ונכתב באותיות גדולות, כי כל הקהל היה עומד ואומר אותו בקול רם.</p></div>
+    <h3>הנוסח בבית האבל</h3>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>מר זוטרא איקלע לבי רב אשי איתרע ביה מילתא – וכוותיה קיימא לן והכי מברכין בא"י אמ"ה האל הטוב והמטיב אל אמת דיין אמת שופט בצדק ולוקח במשפט ושליט במעשיו ואנחנו עבדיו ועמו ובכל אנחנו חייבין להודות לו ולברכו גודר פרצות בישראל הוא יגדור פרצה זאת מעלינו ומעל האבל שבתוכנו לחיים ולשלום הרחמן הוא ימלוך עלינו לעולם ועד וגו' ופירש בה"ג דאין לומר במשפט דקיימא לן בפ' במה בהמה יוצאה (שבת דף …</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות פוסקים כמר זוטרא ומביאים את הנוסח, ובו בקשה שיגדור את הפרצה "מעלינו ומעל האבל שבתוכנו". בעל הלכות גדולות אמר שאין לומר "במשפט", כי יש מיתה בלי חטא. והתוספות כותבים שבכל זאת אין למחוק את המילה.</p></div>
+  </div>
+  <p class="godeep">מה אפשר ללמוד מכך שברכה פותחת ב"ברוך"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה מלמד הדין ש"הטוב והמטיב" פותחת ב"ברוך"?</summary><p>שהיא ברכה בפני עצמה, ואינה סמוכה לברכות שלפניה.</p></details>
+  <details><summary>מה אומרים בבית האבל לפי רבי עקיבא?</summary><p>גם "הטוב והמטיב" וגם "דיין האמת".</p></details>
+  <details><summary>מה בירך מר זוטרא כשאירע אסון לרב אשי?</summary><p>"הטוב והמטיב", ובתוכה "אל אמת, דיין אמת", ובסופה "הוא יגדור את הפרצה הזאת".</p></details>
+  <details class="deepq"><summary>למה, לפי התוספות, "הטוב והמטיב" אינה חותמת ב"ברוך"?</summary><p>כי בתחילה הייתה קצרה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G5">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>להיכן הוא חוזר</h2>
+  <p class="lead">שאלה קצרה בדיני ברכת המזון: מי שהפסיק, מאיזה מקום ימשיך לברך? המפרשים חולקים על מי מדובר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>להיכן הוא חוזר</td><td>להיכן הוא חוזר?</td></tr>
+      <tr><td>רב זביד משמיה דאביי אמר</td><td>רב זביד אמר בשם אביי:</td></tr>
+      <tr><td>חוזר לראש</td><td>חוזר להתחלה.</td></tr>
+      <tr><td>ורבנן אמרי</td><td>וחכמים אומרים:</td></tr>
+      <tr><td>למקום שפסק</td><td>למקום שהפסיק.</td></tr>
+      <tr><td>והלכתא למקום שפסק</td><td>וההלכה: למקום שהפסיק.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>השאלה:</b> הגמרא אינה אומרת כאן במפורש מי חוזר ולאן. היא שואלת "להיכן הוא חוזר", ומביאה שתי דעות.</p>
+  <p><b>הדעות:</b> רב זביד בשם אביי אומר שחוזר להתחלה. חכמים אומרים שממשיך מן המקום שהפסיק, וכך ההלכה.</p>
+  <p><b>הפירושים:</b> המפרשים מחפשים במה מדובר. רש"י מפרש על מי שהפסיק את סעודתו כדי להצטרף לזימון. התוספות מציעים פירושים אחרים.</p>
+  <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>להיכן הוא חוזר – מי שנצטרף לזימון ואמרן לעיל אליבא דרב ששת ברכת זימון עד הזן והוצרך זה להיות מפסיק אכילתו עד שיגמור המברך ברכת הזן וחזר זה שהפסיק לשנים וגמר סעודתו להיכן הוא חוזר לברך לאחר שיגמור סעודתו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מדובר במי שהפסיק את אכילתו בשביל שניים, עד שהמברך גמר את "הזן", כשיטת רב ששת. אחר כך חזר וגמר את סעודתו. השאלה היא מאיזה מקום יברך.</p></div>
+  <div data-hl="R5,R6" class="voice r"><span class="tag">רש"י</span><blockquote>חוזר לראש – לתחלת הזן שהרי נתחייב בזימון שבתחלה הוקבע בג':</blockquote><blockquote>למקום שפסק – לברכת הארץ כשאר יחיד:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "חוזר לראש" פירושו לתחילת "הזן", כי נתחייב בזימון כשנקבע עם השלושה. "למקום שפסק" פירושו לברכת הארץ, כמו כל יחיד.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שלושה פירושים</h3>
+    <div data-hl="T3a" class="voice t"><span class="tag">תוספות</span><blockquote>להיכן הוא חוזר – פירש רש"י דקאי לאחד דפסיק לשנים וממתין לאחרים עד הזן והיכן חוזר לאחר סעודתו רבנן אמרי למקום שפסק והלכתא למקום שפסק ותימה דא"כ היכי הלכתא למקום שפסק אחרי שאכל אחר כך פשיטא דיחזור אפילו להזן דהא הזן דאורייתא</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מקשים על רש"י: הוא אכל אחרי ששמע את "הזן", ופשוט שיברך אותה שוב, כי היא מן התורה. אם כך, איך ההלכה "למקום שפסק"?</p></div>
+    <div data-hl="T3b" class="voice t"><span class="tag">תוספות</span><blockquote>ע"כ צריך לומר דקאי אהא דאמרינן לעיל דהמברך אומר נברך שאכלנו משלו והמסובין עונים ברוך שאכלנו משלו ובטובו חיינו להיכן הוא חוזר המברך לאחר שיענו המסובין חוזר לראש שהמברך חוזר ואומר נברך שאכלנו משלו ובטובו חיינו ורבנן אמרי למקום שפסק שאומר ברוך שאכלנו משלו וכן הלכתא</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מפרשים שמדובר במזמן. אחרי שהמסובים עונים "ברוך שאכלנו משלו ובטובו חיינו", לדעה אחת הוא חוזר ואומר "נברך", ולדעת חכמים ממשיך "ברוך שאכלנו משלו". וכך ההלכה.</p></div>
+    <div data-hl="T3c" class="voice t"><span class="tag">תוספות</span><blockquote>והר"מ מאייבר"א פירש דקאי אשלשה שאכלו ויצא אחד מהם לשוק קוראים לו ומזמנים עליו ולעיל נמי הכי פירושו עד היכן מקום זימון שצריך להו לאותו אחד דקרו ליה ועני עד נברך ומכאן ואילך ילך לדרכו ואינם צריכים האחרים עוד לצירופו והכא בעי לאותו מן השוק להיכן הוא חוזר למקום שפסק דהיינו למר מהזן ואילך ולמר מנברך והשתא ניחא דלא קשה מהזן שהרי לא ספר בינתיים:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו מאיר מאיברא מפרש שמדובר במי שיצא לשוק ועונה לזימון. אחרי "נברך" הוא הולך לדרכו, וכשהוא בא לברך, ממשיך מן המקום שפסק. כאן אין קושיה, כי לא אכל בינתיים.</p></div>
+    <p>המחלוקת בין המפרשים היא בעיקר על מי השאלה מדברת. ההבדל בין "לראש" ל"מקום שפסק" ברור בכל הפירושים, אבל המשמעות של "ראש" משתנה לפי המקרה.</p>
+  </div>
+  <p class="godeep">למה התוספות אינם מקבלים את פירוש רש"י? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אומר רב זביד בשם אביי?</summary><p>חוזר לראש.</p></details>
+  <details><summary>כמי ההלכה?</summary><p>כחכמים: למקום שפסק.</p></details>
+  <details><summary>לפי רש"י, מה פירוש "למקום שפסק"?</summary><p>לברכת הארץ, כמו כל יחיד.</p></details>
+  <details class="deepq"><summary>לפי התוספות, להיכן חוזר המזמן לדעת חכמים?</summary><p>הוא ממשיך "ברוך שאכלנו משלו", ואינו חוזר ל"נברך".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G6,G7,G8,G9,G10,G11">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>ריש גלותא ורב ששת: מנהגי הסעודה של הפרסים</h2>
+  <p class="lead">ריש גלותא טען לפני רב ששת שהפרסים מבינים בסדרי סעודה יותר מן החכמים, ותיאר את סדר ההסבה והנטילה. רב ששת שאל על כל פרט.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אע"ג דרבנן קשישי אתון</td><td>אף על פי שאתם חכמים זקנים,</td></tr>
+      <tr><td>פרסאי בצרכי סעודה בקיאי מינייכו</td><td>הפרסים בקיאים מכם בצורכי סעודה.</td></tr>
+      <tr><td>בזמן שהן שתי מטות גדול מסב בראש</td><td>כשהן שתי מיטות, הגדול מסב בראש,</td></tr>
+      <tr><td>ושני לו למעלה הימנו</td><td>והשני לו למעלה ממנו.</td></tr>
+      <tr><td>בזמן שהם שלש גדול מסב באמצע</td><td>כשהן שלוש, הגדול מסב באמצע.</td></tr>
+      <tr><td>וכי בעי אשתעויי בהדיה מתריץ תרוצי ויתיב</td><td>וכשרוצה לדבר איתו, יזדקף וישב?</td></tr>
+      <tr><td>שאני פרסאי דמחוי ליה במחוג</td><td>הפרסים שונים, שמראים לו ברמיזה.</td></tr>
+      <tr><td>מים ראשונים מהיכן מתחילין אמר ליה מן הגדול</td><td>מים ראשונים, ממי מתחילים? אמר לו: מן הגדול.</td></tr>
+      <tr><td>ישב גדול וישמור ידיו עד שנוטלין כולן</td><td>ישב הגדול וישמור את ידיו עד שכולם נוטלים?</td></tr>
+      <tr><td>לאלתר מייתו תכא קמיה</td><td>מיד מביאים שולחן לפניו.</td></tr>
+      <tr><td>מים אחרונים מהיכן מתחילין אמר ליה מן הקטן</td><td>מים אחרונים, ממי מתחילים? אמר לו: מן הקטן.</td></tr>
+      <tr><td>וגדול יתיב וידיו מזוהמות</td><td>והגדול יושב וידיו מלוכלכות?</td></tr>
+      <tr><td>לא מסלקי תכא מקמיה עד דנמטי מיא לגביה</td><td>אין מסלקים את השולחן מלפניו עד שהמים מגיעים אליו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>סדר ההסבה:</b> בשתי מיטות, הגדול בראש והשני למעלה ממנו. בשלוש, הגדול באמצע, השני למעלה ממנו והשלישי למטה ממנו.</p>
+  <p><b>הקושיה של רב ששת:</b> אם השני מסב למעלה מן הגדול, הוא נמצא מאחורי ראשו, והגדול יצטרך להזדקף כדי לדבר איתו. ריש גלותא ענה שהפרסים מדברים בתנועות ידיים.</p>
+  <p><b>הנטילה:</b> מים ראשונים מתחילים מן הגדול, וכדי שלא ימתין, מביאים לפניו מיד שולחן. מים אחרונים מתחילים מן הקטן, וכדי שלא ישב בידיים מלוכלכות, אין מסלקים את השולחן שלו עד שהמים מגיעים אליו.</p>
+  <div data-hl="R8,R9,R10,R11" class="voice r"><span class="tag">רש"י</span><blockquote>בזמן שהן שתי מטות – רגילין היו לאכול בהסבה על צדו השמאלית מוטה ורגליו לארץ איש איש על מטה אחת:</blockquote><blockquote>בזמן שהן שנים גדול מסב בראש – כלומר מסב תחלה על מטתו:</blockquote><blockquote>ושני לו למעלה הימנו – מטת השני לצד מראשותיו של גדול:</blockquote><blockquote>ובזמן שהן שלשה גדול מסב באמצע שני לו למעלה הימנו שלישי לו למטה הימנו – לצד מרגלותיו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: היו אוכלים כשהם מוטים על הצד השמאלי, כל אחד על מיטה. "למעלה ממנו" הוא בצד הראש של הגדול, ו"למטה ממנו" בצד הרגליים.</p></div>
+  <div data-hl="R13,R14" class="voice r"><span class="tag">רש"י</span><blockquote>וכי בעי אשתעויי מתריץ תרוצי ויתיב – ואם רצה הגדול לדבר עם שני לו צריך הוא לזקוף עצמו ממסיבתו לישב זקוף דכל זמן שהוא מוטה אינו יכול לדבר עמו לפי שהשני לו אחורי ראשו של גדול הוא ופני הגדול מסובין לצד אחר וטוב לו שישב שני לו למטה הימנו וישמע דבריו כשהוא מוטה:</blockquote><blockquote>במחוג – מראים בידיהם ובאצבעותיה' ברמיזה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: כשהגדול מוטה, השני שמעליו נמצא מאחורי ראשו, והוא צריך לשבת זקוף כדי לדבר איתו. "במחוג" הוא רמיזה בידיים ובאצבעות.</p></div>
+  <div data-hl="R16,R17" class="voice r"><span class="tag">רש"י</span><blockquote>לאלתר מייתו תכא קמיה – שלחן שלו מביאין מיד לפניו ואוכל ולפני כל אחד ואחד היו מביאין שלחן קטן:</blockquote><blockquote>לא מסלקי תכא – מקמי גדול עד דמשו כולהו ובעוד שהוא אוכל האחרים נוטלין מים אחרונים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: לפני כל אחד היו מביאים שולחן קטן. ובמים אחרונים, הגדול עוד אוכל בזמן שהאחרים נוטלים.</p></div>
+  <div class="eg"><b>להמחשה:</b> בשולחן ערוך שבו כל אחד יושב לפני צלחת משלו, אפשר להגיש למכובד ראשון, ולפנות את צלחתו אחרון.</div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למעלה ולמטה</h3>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>בזמן שהן שתי מטות גדול מסב בראש שני לו למעלה הימנו – דהיינו כלפי ראשו שמסב על המטה דרך שמאל ולמטה מקרי דרך מרגלותיו דהיינו מימינו ובזה מדקדק רב ששת דאם כן בעי גדול לתרוצי כפשוטיה כשמדבר עם השני כיון שהשני למעלה הימנו ולקמן במתניתא גרס גדול מסב בראש השני למטה הימנו וזהו כלפי מרגלותיו והוא מימינו ואז לא מתריץ ויתיב כי בעי לאשתעויי בהדי שני:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: הגדול מסב על צד שמאל, ולכן "למעלה ממנו" הוא כלפי ראשו, ו"למטה ממנו" הוא כלפי רגליו, לימינו. מכאן רב ששת מדייק שהגדול יצטרך להזדקף. ובברייתא שרב ששת מביא, השני למטה ממנו, ואז אינו צריך להזדקף.</p></div>
+    <p>שני השיקולים בסוגיה הם כבודו של הגדול ונוחותו: שלא ימתין, שלא ישב בידיים מלוכלכות, ושיוכל לדבר עם השני בלי לשנות את תנוחתו.</p>
+  </div>
+  <p class="godeep">למה רב ששת מקשה על סדר ההסבה של הפרסים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>לפי ריש גלותא, היכן מסב הגדול כשהן שלוש מיטות?</summary><p>באמצע.</p></details>
+  <details><summary>מאיפה מתחילים מים ראשונים, ומאיפה מים אחרונים?</summary><p>מים ראשונים מן הגדול, מים אחרונים מן הקטן.</p></details>
+  <details><summary>איך הגדול אינו יושב בידיים מלוכלכות?</summary><p>אין מסלקים את השולחן מלפניו עד שהמים מגיעים אליו.</p></details>
+  <details class="deepq"><summary>מה פירוש "למעלה ממנו", לפי רש"י והתוספות?</summary><p>בצד הראש של הגדול, שמסב על צד שמאל.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G12a,G12b,G13,G14,G15">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>הברייתא של רב ששת, ומי מברך</h2>
+  <p class="lead">רב ששת מביא ברייתא שמסדרת את ההסבה והנטילה אחרת, וקובעת שמי שנוטל ראשון במים האחרונים מברך. מכאן סיוע לרב, ומעשה ברבי, רב ורבי חייא.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אנא מתניתא ידענא</td><td>אני ברייתא יודע.</td></tr>
+      <tr><td>כיצד סדר הסבה</td><td>כיצד סדר ההסבה?</td></tr>
+      <tr><td>גדול מסב בראש ושני לו למטה הימנו</td><td>הגדול מסב בראש, והשני לו למטה ממנו.</td></tr>
+      <tr><td>מים אחרונים בזמן שהם ה' מתחילין מן הגדול</td><td>מים אחרונים: כשהם חמישה, מתחילים מן הגדול.</td></tr>
+      <tr><td>ובזמן שהם מאה מתחילין מן הקטן</td><td>וכשהם מאה, מתחילים מן הקטן,</td></tr>
+      <tr><td>עד שמגיעים אצל ה' וחוזרין ומתחילין מן הגדול</td><td>עד שמגיעים לחמישה, וחוזרים ומתחילים מן הגדול.</td></tr>
+      <tr><td>ולמקום שמים אחרונים חוזרין לשם ברכה חוזרת</td><td>ולמקום שהמים האחרונים חוזרים, לשם הברכה חוזרת.</td></tr>
+      <tr><td>כל הנוטל ידיו באחרונה תחלה הוא מזומן לברכה</td><td>כל הנוטל ידיו ראשון במים האחרונים, הוא מזומן לברכה.</td></tr>
+      <tr><td>קום משי ידך</td><td>קום, טול את ידיך.</td></tr>
+      <tr><td>חזייה דקא מרתת</td><td>ראה אותו שהוא רועד.</td></tr>
+      <tr><td>בר פחתי עיין בברכת מזונא קאמר לך</td><td>בן אצילים, עיין בברכת המזון הוא אומר לך.</td></tr>
+      <tr><td>אין מכבדין לא בדרכים ולא בגשרים</td><td>אין מכבדים, לא בדרכים ולא בגשרים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ההסבה לפי הברייתא:</b> בשתי מיטות השני מסב למטה מן הגדול, כדי שהגדול יוכל לדבר איתו. בשלוש, הגדול בראש, השני מעליו והשלישי מתחתיו.</p>
+  <p><b>הנטילה לפי הברייתא:</b> מים ראשונים מן הגדול. מים אחרונים, כשהם חמישה, מן הגדול. כשהם רבים, מתחילים מן הקטן עד שמגיעים לחמשת האחרונים, ואז מתחילים מן הגדול.</p>
+  <p><b>מי מברך:</b> במקום שהמים האחרונים חוזרים להתחלה, שם חוזרת הברכה. כלומר, מי שנוטל ראשון בחמשת האחרונים הוא שמברך. וכך אמר רב: מי שנוטל ראשון במים האחרונים, מזומן לברכה.</p>
+  <p><b>המעשה:</b> רבי אמר לרב "קום, טול את ידיך". רב נבהל, ורבי חייא הסביר לו שרבי אינו מעיר לו, אלא מכבד אותו בברכת המזון.</p>
+  <div data-hl="R18,R19" class="voice r"><span class="tag">רש"י</span><blockquote>שני לו למטה הימנו – שאם הוצרך גדול לספר עמו לא יהא צריך לזקוף:</blockquote><blockquote>ובזמן שהם ג' שני לו למעלה הימנו – ואם בא לספר מספר עם השלישי לו ואם בא לספר עם השני לו טוב הוא שיזקוף ואל ישפיל את השני לו לפני קטן ממנו שיהא הוא למטה וקטן ממנו למעלה הימנו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: השני מסב למטה מן הגדול, כדי שהגדול לא יצטרך להזדקף. בשלוש, הגדול מדבר עם השלישי, ואם ירצה לדבר עם השני יזדקף, כדי שלא ישפילו את השני מתחת לקטן ממנו.</p></div>
+  <div data-hl="R21,R22" class="voice r"><span class="tag">רש"י</span><blockquote>ובזמן שהם מאה – לאו דוקא דה"ה עשרה ולכל יותר מה' שגנאי הוא שיסלקו השלחן מלפני הגדול כשיטול ידיו וימתין שם יושב ובטל עד שיטלו כלם לפיכך כשהם יותר מחמשה מתחילין מן הקטן היושב בסוף ואין מסלקין שלחן מלפני הגדול עד שיגיעו המים לחמשה שאצלו:</blockquote><blockquote>וחוזרים ומתחילין מן הגדול – ונוטלין שלחן מלפניו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "מאה" אינו דווקא, אלא כל יותר מחמישה. גנאי הוא שהגדול יישב בטל עד שכולם ייטלו, ולכן מתחילים מן הקטן, ואין מסלקים את השולחן של הגדול עד שהמים מגיעים לחמשת הקרובים אליו.</p></div>
+  <div data-hl="R23,R24" class="voice r"><span class="tag">רש"י</span><blockquote>למקום שמים אחרונים חוזרים – כשמגיעים לחמשה אם נטל הגדול הוא מברך ואם צוה לאחר ליטול קודם לו הוא מברך:</blockquote><blockquote>הנוטל ידיו באחרונה תחלה – אותו שנוטל בתחלת החמשה אחרונים קורא תחלה באחרונה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: כשמגיעים לחמישה, אם הגדול נטל ראשון, הוא מברך. ואם ציווה לאחר ליטול לפניו, אותו אחר מברך.</p></div>
+  <div data-hl="R25,R26" class="voice r"><span class="tag">רש"י</span><blockquote>אין מכבדין – לומר היה אתה קודם:</blockquote><blockquote>לא בדרכים – הולכי דרכים לומר לגדול הימנו לך לפני:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "אין מכבדין" פירושו שאין אומרים לגדול "לך לפני" בדרך.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מתי מכבדים בדרך</h3>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>אין מכבדין וכו' – וא"ת הא אמרינן בשבת בפ' במה בהמה (שבת ד' נא:) לוי ורב הונא בר חייא הוו קא אזלי באורחא קדמה חמריה דרב הונא לחמרא דלוי בעי רב הונא לאפוקי מדעתיה דלוי כו' אלמא מכבדים בדרכים וי"ל כשיצאו לדרך כאחד מכבדין בדרכים אבל אם כל אחד ילך לדרכו ופגעו זה בזה ואירע להם דרך למקום אחד אין מכבדים:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מקשים: במסכת שבת מסופר שרב הונא בר חייא ביקש לפייס את לוי כשחמורו הקדים את חמורו של לוי, ומשמע שמכבדים בדרך. התשובה: כשיצאו לדרך יחד, מכבדים. כשכל אחד הלך לדרכו והם נפגשו, אין מכבדים.</p></div>
+    <h3>בין ריש גלותא לברייתא</h3>
+    <p>הברייתא אינה מסכימה עם ריש גלותא בשני פרטים: היכן מסב השני כשהם שניים, והיכן מסב הגדול כשהם שלושה. והיא מוסיפה הבחנה בין מעטים לרבים במים האחרונים.</p>
+  </div>
+  <p class="godeep">למה בברייתא מתחילים מים אחרונים מן הקטן רק כשהם יותר מחמישה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>לפי הברייתא, היכן מסב השני כשהם שניים?</summary><p>למטה מן הגדול.</p></details>
+  <details><summary>מי מברך ברכת המזון לפי רב?</summary><p>מי שנוטל ראשון במים האחרונים.</p></details>
+  <details><summary>למה רב רעד, ומה אמר לו רבי חייא?</summary><p>הוא חשב שרבי מעיר לו. רבי חייא אמר שרבי מכבד אותו בברכת המזון.</p></details>
+  <details class="deepq"><summary>לפי התוספות, מתי מכבדים בדרך?</summary><p>כשיצאו לדרך יחד, ולא כשנפגשו באמצע.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>הטוב והמטיב:</b> היא פותחת ב"ברוך", ולכן היא ברכה בפני עצמה, ואינה מן התורה.</li>
+      <li><b>בית האבל:</b> לרבי עקיבא אומרים גם "דיין האמת", ומר זוטרא הכניס את "דיין האמת" לתוך "הטוב והמטיב".</li>
+      <li><b>להיכן חוזר:</b> ההלכה למקום שפסק. המפרשים חולקים על מי השאלה מדברת.</li>
+      <li><b>מנהגי הפרסים:</b> ריש גלותא תיאר סדר הסבה ונטילה, ורב ששת הקשה שהגדול יצטרך להזדקף ולהמתין.</li>
+      <li><b>הברייתא:</b> השני מסב למטה מן הגדול, ובמים אחרונים מתחילים מן הקטן רק כשהם רבים.</li>
+      <li><b>מי מברך:</b> מי שנוטל ראשון במים האחרונים, כמו שאמר רב, וכמו שרבי כיבד את רב.</li>
+      <li><b>בעמוד הבא:</b> המשך הברייתא, שאין מכבדים גם בידיים מלוכלכות, ומעשה ברבין ואביי בדרך.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>מכלל</td><td>&quot;מכלל הדברים&quot;: מכאן משמע</td></tr>
+      <tr><td>בית האבל</td><td>בית שבו יושבים אבלים על מת</td></tr>
+      <tr><td>איקלע</td><td>הזדמן, הגיע במקרה</td></tr>
+      <tr><td>איתרע ביה מלתא</td><td>אירע לו דבר רע, מת לו קרוב</td></tr>
+      <tr><td>חוזר לראש · למקום שפסק</td><td>מתחיל מן ההתחלה · ממשיך מן המקום שהפסיק</td></tr>
+      <tr><td>ריש גלותא</td><td>ראש הגולה, מנהיג יהודי בבל</td></tr>
+      <tr><td>קשישי</td><td>זקנים</td></tr>
+      <tr><td>מטות</td><td>מיטות שעליהן הסבו בסעודה</td></tr>
+      <tr><td>מים ראשונים · מים אחרונים</td><td>נטילת ידיים לפני הסעודה · נטילת ידיים אחריה</td></tr>
+      <tr><td>מזוהמות</td><td>מלוכלכות</td></tr>
+      <tr><td>תכא</td><td>שולחן</td></tr>
+      <tr><td>מסייע ליה</td><td>מחזק את דבריו</td></tr>
+      <tr><td>בר פחתי</td><td>בן אצילים</td></tr>
+      <tr><td>אין מכבדין</td><td>אין אומרים לאחר &quot;לך לפני&quot;</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-46a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-47a.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-47a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "ויש מהן שחותם בהן בברוך ואין פותח בברוך והטוב והמטיב פותח בברוך ואין חותם בברוך מכלל דברכה בפני עצמה היא", false, ""], ["G2", "ואמר רב נחמן בר יצחק תדע דהטוב והמטיב לאו דאורייתא שהרי עוקרין אותה בבית האבל כדתניא מה הם אומרים בבית האבל ברוך הטוב והמטיב ר\"ע אומר ברוך דיין האמת", false, ""], ["G3", "הטוב והמטיב אין דיין אמת לא אלא אימא אף הטוב והמטיב", false, ""], ["G4", "מר זוטרא איקלע לבי רב אשי איתרע ביה מלתא פתח ובריך הטוב והמטיב אל אמת דיין אמת שופט בצדק לוקח במשפט ושליט בעולמו לעשות בו כרצונו כי כל דרכיו משפט שהכל שלו ואנחנו עמו ועבדיו ובכל אנחנו חייבים להודות לו ולברכו גודר פרצות בישראל הוא יגדור את הפרצה הזאת בישראל לחיים", false, ""], ["G5", "להיכן הוא חוזר רב זביד משמיה דאביי אמר חוזר לראש ורבנן אמרי למקום שפסק והלכתא למקום שפסק:", true, ""], ["G6", "א\"ל ריש גלותא לרב ששת אע\"ג דרבנן קשישי אתון פרסאי בצרכי סעודה בקיאי מינייכו בזמן שהן שתי מטות גדול מסב בראש ושני לו למעלה הימנו ובזמן שהם שלש גדול מסב באמצע שני לו למעלה הימנו שלישי לו למטה הימנו", true, ""], ["G7", "אמר ליה וכי בעי אשתעויי בהדיה מתריץ תרוצי ויתיב ומשתעי בהדיה א\"ל שאני פרסאי דמחוי ליה במחוג", false, ""], ["G8", "מים ראשונים מהיכן מתחילין אמר ליה מן הגדול", false, ""], ["G9", "ישב גדול וישמור ידיו עד שנוטלין כולן א\"ל לאלתר מייתו תכא קמיה", false, ""], ["G10", "מים אחרונים מהיכן מתחילין אמר ליה מן הקטן", false, ""], ["G11", "וגדול יתיב וידיו מזוהמות עד שנוטלין כולן א\"ל לא מסלקי תכא מקמיה עד דנמטי מיא לגביה", false, ""], ["G12a", "אמר רב ששת אנא מתניתא ידענא דתניא כיצד סדר הסבה בזמן שהן שתי מטות גדול מסב בראש ושני לו למטה הימנו בזמן שהן שלש מטות גדול מסב בראש שני לו למעלה הימנו שלישי לו למטה הימנו", false, ""], ["G12b", "מים הראשונים מתחילין מן הגדול מים אחרונים בזמן שהם ה' מתחילין מן הגדול ובזמן שהם מאה מתחילין מן הקטן עד שמגיעים אצל ה' וחוזרין ומתחילין מן הגדול ולמקום שמים אחרונים חוזרין לשם ברכה חוזרת", false, ""], ["G13", "מסייע ליה לרב דא\"ר חייא בר אשי אמר רב כל הנוטל ידיו באחרונה תחלה הוא מזומן לברכה", false, ""], ["G14", "רב ורבי חייא הוו יתבי בסעודתא קמיה דרבי אמר ליה רבי לרב קום משי ידך חזייה דקא מרתת אמר ליה בר פחתי עיין בברכת מזונא קאמר לך", false, ""], ["G15", "ת\"ר אין מכבדין לא בדרכים ולא בגשרים", true, ""]], "R": [["R1", "ויש מהם חותם ולא פותח", "כגון ברכה הסמוכה לחברתה שהרי כבר פתח בברכה ראשונה וברכה אחרונה שבקריאת שמע אמת ויציב אמת ואמונה שאע\"פ שק\"ש מפסיק בינתים אברכות דלפניה סמוכה והויא לה סמוכה לחברתה:", false], ["R2", "הטוב והמטיב וכו'", "דלאו סמוכה לחברתה היא שאינה מברכת המזון אלא על קבורת הרוגי ביתר תקנוה:", false], ["R3", "שהרי עוקרים אותה בבית האבל", "אליבא דר\"ע:", false], ["R4", "להיכן הוא חוזר", "מי שנצטרף לזימון ואמרן לעיל אליבא דרב ששת ברכת זימון עד הזן והוצרך זה להיות מפסיק אכילתו עד שיגמור המברך ברכת הזן וחזר זה שהפסיק לשנים וגמר סעודתו להיכן הוא חוזר לברך לאחר שיגמור סעודתו:", false], ["R5", "חוזר לראש", "לתחלת הזן שהרי נתחייב בזימון שבתחלה הוקבע בג':", false], ["R6", "למקום שפסק", "לברכת הארץ כשאר יחיד:", false], ["R7", "", "ה\"ג אף על גב דרבנן אתון פרסאי בצרכי סעודה בקיאי מינייכו:", false], ["R8", "בזמן שהן שתי מטות", "רגילין היו לאכול בהסבה על צדו השמאלית מוטה ורגליו לארץ איש איש על מטה אחת:", false], ["R9", "בזמן שהן שנים גדול מסב בראש", "כלומר מסב תחלה על מטתו:", false], ["R10", "ושני לו למעלה הימנו", "מטת השני לצד מראשותיו של גדול:", false], ["R11", "ובזמן שהן שלשה גדול מסב באמצע שני לו למעלה הימנו שלישי לו למטה הימנו", "לצד מרגלותיו:", false], ["R12", "א\"ל", "רב ששת לריש גלותא:", false], ["R13", "וכי בעי אשתעויי מתריץ תרוצי ויתיב", "ואם רצה הגדול לדבר עם שני לו צריך הוא לזקוף עצמו ממסיבתו לישב זקוף דכל זמן שהוא מוטה אינו יכול לדבר עמו לפי שהשני לו אחורי ראשו של גדול הוא ופני הגדול מסובין לצד אחר וטוב לו שישב שני לו למטה הימנו וישמע דבריו כשהוא מוטה:", false], ["R14", "במחוג", "מראים בידיהם ובאצבעותיה' ברמיזה:", false], ["R15", "מים ראשונים מהיכן מתחילין", "רב ששת קא\"ל לריש גלותא מהיכן מתחילין פרסיים מים ראשונים:", false], ["R16", "לאלתר מייתו תכא קמיה", "שלחן שלו מביאין מיד לפניו ואוכל ולפני כל אחד ואחד היו מביאין שלחן קטן:", false], ["R17", "לא מסלקי תכא", "מקמי גדול עד דמשו כולהו ובעוד שהוא אוכל האחרים נוטלין מים אחרונים:", false], ["R18", "שני לו למטה הימנו", "שאם הוצרך גדול לספר עמו לא יהא צריך לזקוף:", false], ["R19", "ובזמן שהם ג' שני לו למעלה הימנו", "ואם בא לספר מספר עם השלישי לו ואם בא לספר עם השני לו טוב הוא שיזקוף ואל ישפיל את השני לו לפני קטן ממנו שיהא הוא למטה וקטן ממנו למעלה הימנו:", false], ["R20", "מתחילין מן הגדול", "ולאלתר מעיילי תכא קמיה:", false], ["R21", "ובזמן שהם מאה", "לאו דוקא דה\"ה עשרה ולכל יותר מה' שגנאי הוא שיסלקו השלחן מלפני הגדול כשיטול ידיו וימתין שם יושב ובטל עד שיטלו כלם לפיכך כשהם יותר מחמשה מתחילין מן הקטן היושב בסוף ואין מסלקין שלחן מלפני הגדול עד שיגיעו המים לחמשה שאצלו:", false], ["R22", "וחוזרים ומתחילין מן הגדול", "ונוטלין שלחן מלפניו:", false], ["R23", "למקום שמים אחרונים חוזרים", "כשמגיעים לחמשה אם נטל הגדול הוא מברך ואם צוה לאחר ליטול קודם לו הוא מברך:", false], ["R24", "הנוטל ידיו באחרונה תחלה", "אותו שנוטל בתחלת החמשה אחרונים קורא תחלה באחרונה:", false], ["R25", "אין מכבדין", "לומר היה אתה קודם:", false], ["R26", "לא בדרכים", "הולכי דרכים לומר לגדול הימנו לך לפני:", false]], "T": [["T1a", "והטוב והמטיב", "וא\"ת ואמאי פותחת בברוך והלא סמוכה לחברתה היא ויש לומר דנתקנה בפני עצמה (היא) בשביל הרוגי ביתר", false], ["T1b", "", "וא\"ת אמאי אינה חותמת בברוך וי\"ל משום דקצרה היא רק שתקנו לאחר כך שלש מלכיות ושלש גמולות ושלש הטבות", false], ["T1c", "", "ונאמן אתה של ברכת ההפטרה הוא מן הברכה העליונה ולכך הוא נכתב גדול שבימים הראשונים היו רגילין לעמוד כל הקהל ולומר בקול רם נאמן אתה וכו' כשהיה התינוק מגיע שם:", false], ["T2", "מר זוטרא איקלע לבי רב אשי איתרע ביה מילתא", "וכוותיה קיימא לן והכי מברכין בא\"י אמ\"ה האל הטוב והמטיב אל אמת דיין אמת שופט בצדק ולוקח במשפט ושליט במעשיו ואנחנו עבדיו ועמו ובכל אנחנו חייבין להודות לו ולברכו גודר פרצות בישראל הוא יגדור פרצה זאת מעלינו ומעל האבל שבתוכנו לחיים ולשלום הרחמן הוא ימלוך עלינו לעולם ועד וגו' ופירש בה\"ג דאין לומר במשפט דקיימא לן בפ' במה בהמה יוצאה (שבת דף נה:) דיש מיתה בלא חטא ויש יסורין בלא עון ומיהו בכך אין למחקו:", false], ["T3a", "להיכן הוא חוזר", "פירש רש\"י דקאי לאחד דפסיק לשנים וממתין לאחרים עד הזן והיכן חוזר לאחר סעודתו רבנן אמרי למקום שפסק והלכתא למקום שפסק ותימה דא\"כ היכי הלכתא למקום שפסק אחרי שאכל אחר כך פשיטא דיחזור אפילו להזן דהא הזן דאורייתא", false], ["T3b", "", "ע\"כ צריך לומר דקאי אהא דאמרינן לעיל דהמברך אומר נברך שאכלנו משלו והמסובין עונים ברוך שאכלנו משלו ובטובו חיינו להיכן הוא חוזר המברך לאחר שיענו המסובין חוזר לראש שהמברך חוזר ואומר נברך שאכלנו משלו ובטובו חיינו ורבנן אמרי למקום שפסק שאומר ברוך שאכלנו משלו וכן הלכתא", false], ["T3c", "", "והר\"מ מאייבר\"א פירש דקאי אשלשה שאכלו ויצא אחד מהם לשוק קוראים לו ומזמנים עליו ולעיל נמי הכי פירושו עד היכן מקום זימון שצריך להו לאותו אחד דקרו ליה ועני עד נברך ומכאן ואילך ילך לדרכו ואינם צריכים האחרים עוד לצירופו והכא בעי לאותו מן השוק להיכן הוא חוזר למקום שפסק דהיינו למר מהזן ואילך ולמר מנברך והשתא ניחא דלא קשה מהזן שהרי לא ספר בינתיים:", false], ["T4", "בזמן שהן שתי מטות גדול מסב בראש שני לו למעלה הימנו", "דהיינו כלפי ראשו שמסב על המטה דרך שמאל ולמטה מקרי דרך מרגלותיו דהיינו מימינו ובזה מדקדק רב ששת דאם כן בעי גדול לתרוצי כפשוטיה כשמדבר עם השני כיון שהשני למעלה הימנו ולקמן במתניתא גרס גדול מסב בראש השני למטה הימנו וזהו כלפי מרגלותיו והוא מימינו ואז לא מתריץ ויתיב כי בעי לאשתעויי בהדי שני:", false], ["T5", "אין מכבדין וכו'", "וא\"ת הא אמרינן בשבת בפ' במה בהמה (שבת ד' נא:) לוי ורב הונא בר חייא הוו קא אזלי באורחא קדמה חמריה דרב הונא לחמרא דלוי בעי רב הונא לאפוקי מדעתיה דלוי כו' אלמא מכבדים בדרכים וי\"ל כשיצאו לדרך כאחד מכבדין בדרכים אבל אם כל אחד ילך לדרכו ופגעו זה בזה ואירע להם דרך למקום אחד אין מכבדים:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': המשך הברייתא על \"ברוך\"", "x": "העמוד הקודם הסתיים בראיה ש\"הטוב והמטיב\" אינה מן התורה, מפני שהיא פותחת ב\"ברוך\" ואינה חותמת. הגמרא הביאה ברייתא שמונה ברכות שאינן פותחות ואינן חותמות ב\"ברוך\", והברייתא ממשיכה כאן. אחר כך באים דיני הברכה בבית האבל, וסדר הישיבה והנטילה בסעודה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "ברכות שחותמות ואינן פותחות", "x": "ויש ברכות שחותמים בהן ב\"ברוך\" ואין פותחים בהן ב\"ברוך\". רש\"י מפרש: כמו ברכה הסמוכה לחברתה, שכבר פתח בברכה הראשונה. וכך הברכה שאחרי קריאת שמע, \"אמת ויציב\" ו\"אמת ואמונה\": אף שקריאת שמע מפסיקה, היא סמוכה לברכות שלפניה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R2"], "t": "ומכאן: ברכה בפני עצמה", "x": "ו\"הטוב והמטיב\" פותחת ב\"ברוך\" ואינה חותמת. \"מכלל\", מכאן, שהיא ברכה בפני עצמה. רש\"י מפרש: היא אינה סמוכה לחברתה, כי אינה חלק מברכת המזון, אלא תוקנה על קבורת הרוגי ביתר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1a"], "t": "התוספות: למה היא פותחת ב\"ברוך\"", "x": "ואם תשאל: למה \"הטוב והמטיב\" פותחת ב\"ברוך\"? הרי היא באה מיד אחרי ברכה אחרת. התשובה: היא נתקנה בפני עצמה, בשביל הרוגי ביתר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1b"], "t": "התוספות: ולמה אינה חותמת", "x": "ומצד שני, החתימה ב\"ברוך\" חסרה בה מפני שהיא קצרה. רק אחר כך הוסיפו בה שלוש מלכויות, שלוש גמולות ושלוש הטבות.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1c"], "t": "התוספות: \"נאמן אתה\" בברכת ההפטרה", "x": "\"נאמן אתה\" שבברכה שאחרי ההפטרה שייך לברכה שלפניו, ולכן הוא נכתב באותיות גדולות. בימים הראשונים כל הקהל היה נוהג לעמוד ולומר \"נאמן אתה\" בקול רם, כשהילד שקרא את ההפטרה הגיע לשם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R3"], "t": "רב נחמן בר יצחק: עוקרים אותה בבית האבל", "x": "רב נחמן בר יצחק אמר: דע לך ש\"הטוב והמטיב\" אינה מן התורה, שהרי עוקרים אותה בבית האבל. כך שנינו: מה אומרים בבית האבל? \"ברוך הטוב והמטיב\". ורבי עקיבא אומר: \"ברוך דיין האמת\". רש\"י מפרש: העקירה היא לשיטת רבי עקיבא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3"], "t": "\"אף הטוב והמטיב\"", "x": "הגמרא שואלת: וכי לרבי עקיבא אומרים \"הטוב והמטיב\" ולא \"דיין האמת\"? אלא \"אימא\", אמור: אף \"הטוב והמטיב\". כלומר, לרבי עקיבא אומרים את שתיהן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4"], "t": "מר זוטרא בבית רב אשי", "x": "מר זוטרא הזדמן לבית רב אשי, ואירע לרב אשי אסון. מר זוטרא פתח ובירך \"הטוב והמטיב\", והכניס בה את \"דיין האמת\": אל אמת, דיין אמת, שופט בצדק, לוקח במשפט, ושליט בעולמו לעשות בו כרצונו. והוסיף: אנחנו עמו ועבדיו, ובכל אנחנו חייבים להודות לו. ובסוף: גודר פרצות בישראל, הוא יגדור את הפרצה הזאת בישראל לחיים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4", "T2"], "t": "התוספות: כך מברכים", "x": "התוספות כותבים שכך ההלכה, ומביאים את הנוסח שמברכים בבית האבל, ובו \"הוא יגדור פרצה זאת מעלינו ומעל האבל שבתוכנו\". בעל הלכות גדולות אמר שאין לומר \"במשפט\", כי נאמר במסכת שבת שיש מיתה בלי חטא. ובכל זאת, התוספות מסיימים שאין למחוק את המילה מן הנוסח בגלל זה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R4"], "t": "להיכן הוא חוזר", "x": "להיכן הוא חוזר? רב זביד אמר בשם אביי: חוזר לראש. וחכמים אומרים: למקום שפסק. וההלכה: למקום שפסק. רש\"י מפרש שמדובר במי שהפסיק את סעודתו בשביל שניים, עד שגמרו את \"הזן\", כשיטת רב ששת. אחרי שגמר לאכול, מאיזה מקום יברך?", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5", "R5", "R6"], "t": "רש\"י: לראש או למקום שפסק", "x": "\"חוזר לראש\" פירושו לתחילת \"הזן\", כי הוא נתחייב בזימון כשנקבע בתחילה עם השלושה. ו\"למקום שפסק\" פירושו לברכת הארץ, כמו כל יחיד.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5", "T3a"], "t": "התוספות: קושיה על רש\"י", "x": "התוספות מקשים: אם כך, איך ההלכה \"למקום שפסק\"? הרי הוא אכל אחרי ששמע את \"הזן\", ופשוט שיחזור לברך גם את \"הזן\", שהיא מן התורה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5", "T3b"], "t": "התוספות: מדובר במברך עצמו", "x": "לכן התוספות מפרשים שמדובר במזמן. הוא אומר \"נברך שאכלנו משלו\", והמסובים עונים \"ברוך שאכלנו משלו ובטובו חיינו\". להיכן חוזר המזמן אחרי שענו? לדעה הראשונה, לראש: הוא חוזר ואומר \"נברך שאכלנו משלו ובטובו חיינו\". ולדעת חכמים, למקום שפסק: הוא אומר \"ברוך שאכלנו משלו\". וכך ההלכה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5", "T3c"], "t": "התוספות: פירוש רבנו מאיר מאיברא", "x": "רבנו מאיר מאיברא פירש שמדובר באחד מן השלושה שיצא לשוק, וקוראים לו ומזמנים עליו. הוא צריך להיות שם עד \"נברך\", ומשם הולך לדרכו. וכשהוא חוזר לברך, הוא ממשיך מן המקום שפסק: לשיטה אחת מ\"הזן\" והלאה, ולשיטה האחרת מ\"נברך\". כך אין קושיה מ\"הזן\", כי הוא לא אכל בינתיים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R7"], "t": "ריש גלותא: הפרסים בקיאים בסעודה", "x": "ריש גלותא אמר לרב ששת: אף על פי שאתם חכמים זקנים, הפרסים בקיאים מכם בצורכי סעודה. כשיש שתי מיטות, הגדול מסב בראש, והשני לו מסב למעלה ממנו. וכשהן שלוש, הגדול באמצע, השני לו למעלה ממנו, והשלישי למטה ממנו.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6", "R8", "R9", "R10", "R11"], "t": "רש\"י: איך הסבו", "x": "היו רגילים לאכול כשהם מוטים על צדם השמאלי, ורגליהם לארץ, כל אחד על מיטה. הגדול מסב ראשון על מיטתו. \"למעלה ממנו\" פירושו שמיטת השני בצד הראש של הגדול. ו\"למטה ממנו\" פירושו בצד הרגליים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T4"], "t": "התוספות: מה רב ששת מדייק", "x": "\"למעלה ממנו\" הוא כלפי ראשו, כי הוא מסב על צד שמאל, ו\"למטה\" הוא כלפי רגליו, לימינו. מכאן רב ששת מדייק: אם השני למעלה ממנו, הגדול צריך להזדקף כשהוא רוצה לדבר איתו. ובברייתא שתובא בהמשך גורסים \"השני למטה הימנו\", לימינו, ואז אינו צריך להזדקף.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R12", "R13", "R14"], "t": "רב ששת: ואיך ידבר איתו", "x": "רב ששת אמר לריש גלותא: וכשהגדול רוצה לדבר עם השני, יזדקף וישב וידבר איתו? רש\"י מפרש: כשהוא מוטה, השני נמצא מאחורי ראשו, ופניו פונות לצד אחר. אמר לו ריש גלותא: הפרסים שונים, כי הם מדברים \"במחוג\", בתנועות ידיים ואצבעות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R15"], "t": "מים ראשונים: מן הגדול", "x": "רב ששת שאל: הנטילה לפני האוכל, \"מים ראשונים\", ממי מתחילים? ריש גלותא ענה: מן הגדול.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R16"], "t": "והגדול ימתין?", "x": "וכי הגדול ישב וישמור את ידיו נקיות עד שכולם ייטלו? ענה ריש גלותא: מיד מביאים לפניו שולחן. רש\"י מפרש: לפני כל אחד היו מביאים שולחן קטן, והגדול אוכל מיד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10"], "t": "מים אחרונים: מן הקטן", "x": "ובנטילה שבסוף הסעודה, \"מים אחרונים\", הסדר הפוך: לפי ריש גלותא מתחילים מן הקטן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R17"], "t": "והגדול ישב בידיים מלוכלכות?", "x": "רב ששת הקשה: אם כך, הגדול יחכה אחרון כשידיו \"מזוהמות\", מלוכלכות? ענה: אין מסלקים את השולחן מלפניו עד שהמים מגיעים אליו. רש\"י מפרש: בזמן שהוא עוד אוכל, האחרים נוטלים מים אחרונים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12a", "R18", "R19"], "t": "רב ששת: הברייתא על ההסבה", "x": "רב ששת אמר: אני יודע ברייתא, והיא שונה ממה שאמר ריש גלותא. כשהם שניים, השני מסב לרגלי הגדול ולא לראשו. וכשהם שלושה, הגדול אינו באמצע אלא בראש, והשני מעליו והשלישי מתחתיו. רש\"י מפרש: השני למטה ממנו, כדי שהגדול לא יצטרך להזדקף. ובשלוש, הגדול מדבר עם השלישי, ואם ירצה לדבר עם השני, יזדקף, ולא ישפילו את השני מתחת לקטן ממנו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12b", "R20", "R21", "R22", "R23"], "t": "הברייתא על הנטילה", "x": "מים ראשונים מתחילים מן הגדול. מים אחרונים, כשהם חמישה, מתחילים מן הגדול. כשהם מאה, מתחילים מן הקטן עד שמגיעים לחמישה, וחוזרים ומתחילים מן הגדול. ובמקום שהמים האחרונים חוזרים, לשם חוזרת הברכה. רש\"י מפרש שזה כשהם יותר מחמישה, שגנאי לגדול לשבת בטל. וכשהמים מגיעים לחמשת האחרונים, מי שנוטל ראשון ביניהם הוא שמברך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R24"], "t": "סיוע לרב", "x": "זה מסייע לרב. כי רבי חייא בר אשי אמר בשם רב: מי שנוטל את ידיו ראשון במים האחרונים, הוא המזומן לברכה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14"], "t": "רבי, רב ורבי חייא", "x": "רב ורבי חייא ישבו בסעודה לפני רבי. אמר רבי לרב: קום, טול את ידיך. רבי חייא ראה שרב רועד, ואמר לו: \"בר פחתי\", בן אצילים, עיין בברכת המזון הוא אומר לך. כלומר, רבי לא בא להעיר לו, אלא לכבד אותו בברכה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R25", "R26"], "t": "אין מכבדים בדרכים", "x": "\"תנו רבנן\", חכמים שנו בברייתא: אין מכבדים, לא בדרכים ולא בגשרים. רש\"י מפרש: אין אומרים לגדול \"לך לפני\". הברייתא נמשכת בעמוד הבא.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T5"], "t": "התוספות: והרי כיבדו בדרך", "x": "ואם תשאל: במסכת שבת מסופר על לוי ורב הונא בר חייא שהלכו בדרך. החמור של רב הונא הקדים את החמור של לוי, ורב הונא רצה לפייס את לוי. משמע שמכבדים בדרך. התשובה: כשיצאו לדרך יחד, מכבדים. אבל אם כל אחד הלך לדרכו, והם נפגשו בדרך שמובילה לאותו מקום, אין מכבדים.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "\"הטוב והמטיב\" היא ברכה בפני עצמה, ואינה מן התורה. בבית האבל מכניסים בה את \"דיין האמת\", כמו שבירך מר זוטרא. נחלקו להיכן חוזרים בברכה, וההלכה למקום שפסק. ריש גלותא ורב ששת דנו בסדר ההסבה ובנטילת הידיים, ומי שנוטל ראשון במים האחרונים הוא שמברך. העמוד הבא ממשיך את הברייתא, שאין מכבדים גם בידיים מלוכלכות, ומביא מעשה ברבין ואביי שהלכו בדרך.", "a": ""}], "audio": "daf-46b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף מ&#x27; עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף מ&#x27; עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>כיצד מברכין</span><span>פרק שישי</span><span>ברכות<b>מ.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-39b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-40b.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 77</div>
+  <h1>מסכת ברכות, דף מ&#x27; עמוד א&#x27;</h1>
+  <p class="sub">פרק שישי, &quot;כיצד מברכין&quot;. הפסק בין הברכה לאכילה, מלח ולפתן, עצות לבריאות, ומשנה על ברכה שנאמרה על פרי אחר.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. דיבור בין הברכה לאכילה, ומלח ולפתן</a><a href="#u2">2. עצות לבריאות</a><a href="#u3">3. "בורא מיני דשאים", וכלי מלא שמחזיק</a><a href="#u4">4. ברכה שנאמרה על פרי אחר, ועיקר האילן</a><a href="#u5">5. עץ הדעת, ומתי מברכים "בורא פרי העץ"</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>דיבור בין הברכה לאכילה, ומלח ולפתן</h2>
+  <p class="lead">הבוצע בירך "המוציא" ועוד לא טעם. אם דיבר באמצע, האם עליו לברך שוב? החכמים מבחינים בין דיבור שהוא לצורך הסעודה לבין דיבור אחר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>טול ברוך טול ברוך</td><td>קח מן המבורך, קח מן המבורך:</td></tr>
+      <tr><td>אינו צריך לברך</td><td>אינו צריך לברך (שוב).</td></tr>
+      <tr><td>הבא מלח הבא לפתן</td><td>הבא מלח, הבא לפתן:</td></tr>
+      <tr><td>צריך לברך</td><td>צריך לברך.</td></tr>
+      <tr><td>אפי' הביאו מלח הביאו לפתן</td><td>אפילו "הביאו מלח, הביאו לפתן",</td></tr>
+      <tr><td>נמי א"צ לברך</td><td>גם כן אינו צריך לברך.</td></tr>
+      <tr><td>גביל לתורי גביל לתורי</td><td>גבלו (מאכל) לשוורים, גבלו לשוורים:</td></tr>
+      <tr><td>אסור לאדם שיאכל קודם שיתן מאכל לבהמתו</td><td>אסור לאדם לאכול לפני שנתן מאכל לבהמתו.</td></tr>
+      <tr><td>ונתתי עשב בשדך לבהמתך</td><td>"ונתתי עשב בשדך לבהמתך",</td></tr>
+      <tr><td>והדר ואכלת ושבעת</td><td>ואחר כך "ואכלת ושבעת".</td></tr>
+      <tr><td>אין הבוצע רשאי לבצוע</td><td>אין הבוצע רשאי לבצוע</td></tr>
+      <tr><td>עד שיביאו מלח או לפתן לפני כל אחד ואחד</td><td>עד שיביאו מלח או לפתן לפני כל אחד ואחד.</td></tr>
+      <tr><td>אמרו ליה הדר מר משמעתיה</td><td>אמרו לו: האם חזר בו אדוני מן ההלכה שלו?</td></tr>
+      <tr><td>אמר להו לית דין צריך בשש</td><td>אמר להם: זה אינו צריך המתנה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>שלוש דעות:</b> לרב, רק "טול ברוך" אינו הפסק, אבל "הבא מלח" מחייב ברכה חדשה. לרבי יוחנן, גם "הבא מלח, הבא לפתן" אינו הפסק, אבל "גבלו לשוורים" כן. לרב ששת, אפילו "גבלו לשוורים" אינו הפסק.</p>
+  <p><b>הטעם של רב ששת:</b> רב אמר בעצמו שאסור לאדם לאכול לפני שהאכיל את בהמתו, כי בפסוק הבהמה קודמת: "ונתתי עשב בשדך לבהמתך" ורק אחר כך "ואכלת ושבעת". אם כן, הדאגה לבהמה היא חלק מן הסעודה.</p>
+  <p><b>רבא בר שמואל:</b> הבוצע לא יבצע עד שיביאו מלח או לפתן לפני כל אחד. ובבית ראש הגולה בצע מיד, והסביר שהלחם שם משובח ואינו צריך לחכות לתוספת.</p>
+  <div class="eg"><b>להמחשה:</b> לדוגמה, מי שבירך על הלחם ואמר לבן משפחתו "תעביר לי את המלח", לפי רבי יוחנן לא הפסיק, כי זה לצורך האכילה.</div>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>טול ברוך – הבוצע קודם שטעם מן הפרוסה בצע ממנה והושיט למי שאצלו וא"ל טול מפרוסת הברכה אף על פי שסח בינתים אין צריך לחזור לברך ואף על גב דשיחה הויא הפסקה כדאמרינן במנחות (פרק ג' דף לו.) סח בין תפילין לתפילין צריך לברך וכן בכסוי הדם הך שיחה צורך ברכה ולא מפסקא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הבוצע הושיט חתיכה למי שלידו ואמר "טול מפרוסת הברכה". אף שבדרך כלל דיבור הוא הפסק, כמו בין תפילין לתפילין, הדיבור הזה הוא לצורך הברכה.</p></div>
+  <div data-hl="R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>הביאו מלח – נמי אין צריך לברך שאף זו צורך ברכה שתהא פרוסה של ברכה נאכלת בטעם:</blockquote><blockquote>גביל לתורי – גביל את המורסן במים לצורך השוורים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: לרבי יוחנן, גם המלח הוא לצורך הברכה, כדי שהפרוסה תיאכל בטעם. "גביל לתורי" פירושו ללוש סובין במים בשביל השוורים.</p></div>
+  <div data-hl="R4,R5" class="voice r"><span class="tag">רש"י</span><blockquote>ובצע לה להדיא – כלומר מיד ולא המתין למלח ולפתן:</blockquote><blockquote>בשש – עכוב כמו בושש רכבו (שופטים ה) כלומר פת נקיה היא זו ואין צריכה לפתן:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: רבא בר שמואל בצע מיד, בלי לחכות. "בשש" הוא עיכוב, כמו "בושש רכבו": הפת נקייה ואינה צריכה לפתן.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה נחשב הפסק</h3>
+    <div data-hl="T1a" class="voice t"><span class="tag">תוספות</span><blockquote>הבא מלח כו' צריך לברך – דהוי היסח הדעת והכי אמרי' בפ"ג דמנחות (דף לו.) סח בין תפילין לתפילין צריך לברך וכן הלכה אם סח בין ברכת המוציא לאכילה ובין ברכת קידוש לשתיה צריך לחזור ולברך אי לאו מילתא דשייכא לסעודה כמו טול ברוך וכן בשחיטה צריך לחזור ולברך אי לאו ממילתא דשחיטה כמו העוד יותר בהמות ותרנגולים לשחוט או שיאמר אחוז היטב שלא ישמט לך שלא תפסל השחיטה אין זו הפסקה</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: "הבא מלח" נחשב היסח הדעת לפי רב. וכך ההלכה: דיבור בין "המוציא" לאכילה או בין הקידוש לשתייה מחייב ברכה חדשה, אלא אם הוא שייך לסעודה. וכן בשחיטה, דיבור על עניין השחיטה עצמה אינו הפסק.</p></div>
+    <div data-hl="T1b" class="voice t"><span class="tag">תוספות</span><blockquote>ואנו אין אנו רגילים להביא על השלחן לא מלח ולא לפתן משום דפת שלנו חשוב והרי הוא כי הא דאמר בסמוך לית דין צריך בשש מיהו רבי מנחם היה מדקדק מאד להביא מלח על השלחן כדאיתא במדרש כשישראל יושבין על השלחן וממתינין זה את זה עד שיטלו ידיהם והן בלא מצות השטן מקטרג עליהם וברית מלח מגין עליהם:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: אצלנו לא נהגו להביא מלח ולפתן, כי הפת חשובה, כמו בדברי רבא בר שמואל. אבל רבי מנחם הקפיד להביא מלח, על פי מדרש: כשמחכים בלי מצוות, השטן מקטרג, וברית המלח מגינה.</p></div>
+    <p>המחלוקת היא בעצם על השאלה עד היכן מגיע "צורך הסעודה". רב מצמצם אותו לחלוקת הלחם המבורך. רבי יוחנן מרחיב אותו למה שמוסיף טעם ללחם. ורב ששת מרחיב אותו גם לבהמה, שהרי יש איסור לאכול לפני שהאכיל אותה.</p>
+  </div>
+  <p class="godeep">מה הגבול בין דיבור שמפסיק לדיבור שאינו מפסיק? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אומר רב על "הבא מלח, הבא לפתן"?</summary><p>צריך לברך שוב.</p></details>
+  <details><summary>מה אומר רבי יוחנן על "גבלו לשוורים"?</summary><p>צריך לברך שוב.</p></details>
+  <details><summary>למה לפי רב ששת גם "גבלו לשוורים" אינו הפסק?</summary><p>כי אסור לאדם לאכול לפני שנתן מאכל לבהמתו.</p></details>
+  <details class="deepq"><summary>לפי התוספות, למה רבי מנחם הקפיד להביא מלח לשולחן?</summary><p>על פי מדרש: בזמן ההמתנה בלי מצוות השטן מקטרג, וברית המלח מגינה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G3,G4,G5,G6,G7,G8,G9">
+  <div class="kicker">יחידה 2 · אגדה</div>
+  <h2>עצות לבריאות</h2>
+  <p class="lead">בהמשך לדברי רבא בר שמואל בשם רבי חייא, הגמרא מביאה סדרה של עצות לבריאות הגוף בשם חכמים שונים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אין מי רגלים כלים אלא בישיבה</td><td>מי רגלים אינם יוצאים עד הסוף אלא בישיבה.</td></tr>
+      <tr><td>ובעפר תיחוח אפילו בעמידה</td><td>ועל עפר רך, אפילו בעמידה.</td></tr>
+      <tr><td>אחר כל אכילתך אכול מלח</td><td>אחרי כל אכילתך אכול מלח,</td></tr>
+      <tr><td>ואחר כל שתייתך שתה מים ואי אתה נזוק</td><td>ואחרי כל שתייתך שתה מים, ולא תינזק.</td></tr>
+      <tr><td>ביום ידאג מן ריח הפה</td><td>ביום ידאג מריח הפה,</td></tr>
+      <tr><td>ובלילה ידאג מפני אסכרה</td><td>ובלילה ידאג מפני אסכרה.</td></tr>
+      <tr><td>המקפה אכילתו במים</td><td>מי שמציף את אכילתו במים</td></tr>
+      <tr><td>אינו בא לידי חולי מעים</td><td>אינו בא לידי חולי מעיים.</td></tr>
+      <tr><td>הרגיל בעדשים אחת לשלשים יום</td><td>הרגיל בעדשים פעם בשלושים יום</td></tr>
+      <tr><td>מונע אסכרה מתוך ביתו</td><td>מונע אסכרה מביתו.</td></tr>
+      <tr><td>משום דקשה לחולשא דלבא</td><td>מפני שהוא קשה לחולשת הלב.</td></tr>
+      <tr><td>הרגיל בקצח אינו בא לידי כאב לב</td><td>הרגיל בקצח אינו בא לידי כאב לב.</td></tr>
+      <tr><td>קצח אחד מששים סמני המות הוא</td><td>קצח הוא אחד מששים סמני המוות.</td></tr>
+      <tr><td>לא קשיא הא בריחו הא בטעמו</td><td>אין סתירה: זה בריחו, וזה בטעמו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>עצות של רבא בר שמואל:</b> מי רגלים יוצאים עד הסוף רק בישיבה, ורב כהנא מוסיף שעל עפר רך אפשר גם בעמידה. ואחרי אכילה אוכלים מלח, ואחרי שתייה שותים מים.</p>
+  <p><b>עדשים, חרדל ודגים:</b> עדשים פעם בשלושים יום מונעות אסכרה, וחרדל פעם בשלושים יום מונע חולאים. אבל לא בכל יום, כי העדשים קשות לריח הפה והחרדל מחליש את הלב. ודגים קטנים מונעים חולי מעיים ומבריאים את כל הגוף.</p>
+  <p><b>קצח:</b> רבי חמא ברבי חנינא אומר שהקצח מונע כאב לב. ורבן שמעון בן גמליאל אומר שהוא מסמני המוות. התשובה: הריח מזיק, והטעם מועיל. ולכן אמו של רבי ירמיה הדביקה קצח על הלחם וקילפה אותו לפני האכילה.</p>
+  <div data-hl="R6,R7" class="voice r"><span class="tag">רש"י</span><blockquote>אין מי רגלים כלים – מן הגוף אלא בישיבה לפי שכשהקלוח קרוב לפיסוק הוא דואג שלא יפלו נצוצות על רגליו ומפסיק:</blockquote><blockquote>בעפר תיחוח – ליכא נצוצות:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: העומד חושש שייפלו טיפות על רגליו, ולכן מפסיק לפני הסוף. על עפר רך אין ניתוז טיפות.</p></div>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>המקפה אכילתו במים – שותה מים הרבה אחר אכילתו עד שאכילתו צפה במים ויצף הברזל מתרגמינן וקפא פרזלא (מלכים ב ו׳:ו׳):</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "המקפה אכילתו במים" הוא השותה מים רבים אחרי האוכל, עד שהאוכל צף.</p></div>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>מונע אסכרה – שהחולי בא מחמת עצור בני מעים והעדשים משלשלים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: האסכרה באה מעצירות, והעדשים משלשלים.</p></div>
+  <div data-hl="R12,R13" class="voice r"><span class="tag">רש"י</span><blockquote>למזרח גורנו – של קצח שרוח מערבית רוח לחה ומתונתה היא ומכנסת הריח בתוך הגוף:</blockquote><blockquote>הא בריחו הא בטעמו – הריח קשה והטעם טוב:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: ריח הקצח מזיק, ורוח מערבית מכניסה אותו לגוף של מי שישן ממזרח לגורן. והטעם שלו טוב.</p></div>
+  <div data-hl="R14,R15" class="voice r"><span class="tag">רש"י</span><blockquote>מדבקא ליה – בריפתא עד שקלט הטעם:</blockquote><blockquote>ומקלפא ליה – בשביל הריח:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: אמו של רבי ירמיה הדביקה את הקצח עד שהלחם קלט את הטעם, וקילפה אותו בגלל הריח.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך הגמרא מיישבת סתירה בין מקורות</h3>
+    <p>הגמרא מביאה מקור שנראה סותר: הקצח מבריא את הלב, והקצח מסמני המוות. היא אינה דוחה אחד מהם, אלא מחלקת: כל מקור מדבר בצד אחר של אותו צמח. המעשה באמו של רבי ירמיה מראה איך הדבר נעשה בפועל.</p>
+    <p>גם בעדשים ובחרדל הגמרא מבחינה בין מידה למידה: פעם בחודש מועיל, ובכל יום מזיק. ההבחנה היא לפי התדירות, ולא לפי המאכל עצמו.</p>
+  </div>
+  <p class="godeep">איך אפשר שאותו צמח גם מבריא וגם מסוכן? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה ממליץ רבא בר שמואל לאכול ולשתות אחרי הסעודה?</summary><p>מלח אחרי האוכל, ומים אחרי השתייה.</p></details>
+  <details><summary>למה אין לאכול עדשים בכל יום?</summary><p>כי הן קשות לריח הפה.</p></details>
+  <details><summary>מה התשובה לסתירה בעניין הקצח?</summary><p>הריח מזיק, והטעם מועיל.</p></details>
+  <details class="deepq"><summary>מה עשתה אמו של רבי ירמיה, ולמה?</summary><p>הדביקה קצח על הלחם כדי שיקלוט את הטעם, וקילפה אותו בגלל הריח.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G10,G11">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>"בורא מיני דשאים", וכלי מלא שמחזיק</h2>
+  <p class="lead">הגמרא חוזרת לדעת רבי יהודה במשנה, שעל ירקות מברכים "בורא מיני דשאים". אחר כך באים דברי אגדה של אותו חכם על כלי מלא וכלי ריק.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אין הלכה כרבי יהודה</td><td>אין הלכה כרבי יהודה.</td></tr>
+      <tr><td>וכי ביום מברכין אותו</td><td>וכי ביום מברכים אותו</td></tr>
+      <tr><td>ובלילה אין מברכין אותו</td><td>ובלילה אין מברכים אותו?</td></tr>
+      <tr><td>כל יום ויום תן לו מעין ברכותיו</td><td>בכל יום ויום תן לו ברכה המתאימה לו.</td></tr>
+      <tr><td>הכא נמי כל מין ומין</td><td>כאן גם כן, כל מין ומין</td></tr>
+      <tr><td>מדת בשר ודם כלי ריקן מחזיק</td><td>מידת בשר ודם: כלי ריק מחזיק,</td></tr>
+      <tr><td>מלא אינו מחזיק</td><td>מלא אינו מחזיק.</td></tr>
+      <tr><td>אבל הקב"ה אינו כן</td><td>אבל הקדוש ברוך הוא אינו כך:</td></tr>
+      <tr><td>מלא מחזיק ריקן אינו מחזיק</td><td>מלא מחזיק, ריק אינו מחזיק.</td></tr>
+      <tr><td>אם שמוע תשמע ואם לאו לא תשמע</td><td>אם שמוע, תשמע; ואם לא, לא תשמע.</td></tr>
+      <tr><td>אם שמוע בישן תשמע בחדש</td><td>אם תשמע בישן, תשמע בחדש.</td></tr>
+      <tr><td>ואם יפנה לבבך שוב לא תשמע</td><td>ואם יפנה לבבך, שוב לא תשמע.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ההלכה:</b> רבי זירא, ויש אומרים רבי חיננא בר פפא, אמר שאין הלכה כרבי יהודה, ועל ירקות מברכים "בורא פרי האדמה".</p>
+  <p><b>הטעם של רבי יהודה:</b> הפסוק "ברוך ה' יום יום" אינו בא לומר שמברכים רק ביום. הוא מלמד שבכל יום נותנים לקדוש ברוך הוא ברכה המתאימה לאותו יום. ומכאן לברכות הנהנין: לכל מין ברכה המתאימה לו, ולכן לירקות ברכה מיוחדת.</p>
+  <p><b>כלי מלא:</b> אצל בני אדם, כלי ריק מקבל וכלי מלא אינו מקבל עוד. אצל הקדוש ברוך הוא להפך: מי שמלא בתורה מקבל עוד, ומי שריק אינו מקבל. כך דורשים "אם שמוע תשמע".</p>
+  <div class="eg"><b>להמחשה:</b> כדוגמה בלבד: מי שכבר מכיר נושא היטב, קל לו יותר להבין הרצאה חדשה עליו ממי ששומע עליו בפעם הראשונה.</div>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>כל יום ויום – בשבת מעין שבת ביום טוב מעין יו"ט:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "כל יום ויום" פירושו: בשבת ברכה מעין שבת, וביום טוב ברכה מעין יום טוב.</p></div>
+  <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>כלי מלא – אדם חכם:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הכלי המלא הוא אדם חכם.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שני פירושים ל"אם שמוע תשמע"</h3>
+    <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>אם שמוע – פעם אחת סופך שתטה אזן פעם אחרת:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י לפירוש הראשון: אם שמעת פעם אחת, בסופך תטה אוזן גם בפעם אחרת. השמיעה הראשונה פותחת את הדרך לבאות.</p></div>
+    <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>אם תשמע בישן – ששנית ושלשת מה ששמעת אשתקד:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י לפירוש השני: "בישן" הוא מה ששמעת בשנה שעברה וחזרת עליו ושנית אותו. מי שחוזר על מה שלמד, יוכל לשמוע ולקלוט דברים חדשים.</p></div>
+    <p>הפירוש השני מוסיף גם את הצד ההפוך: "ואם יפנה לבבך", מי שמסיח את דעתו מן הלימוד הישן, שוב לא ישמע. הכפילות בפסוק, "שמוע" ו"תשמע", היא שמאפשרת את הדרשה.</p>
+    <h3>הקשר בין הדרשות</h3>
+    <p>שתי הדרשות של אותו חכם בנויות על כפילות בפסוק: "יום יום" ו"שמוע תשמע". בשתיהן הכפילות אינה מיותרת, אלא מלמדת דבר נוסף.</p>
+  </div>
+  <p class="godeep">מה מלמדת הכפילות "שמוע תשמע" לפי שני הפירושים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>האם ההלכה כרבי יהודה שמברכים "בורא מיני דשאים"?</summary><p>לא.</p></details>
+  <details><summary>מה לומד רבי יהודה מן הפסוק "ברוך ה' יום יום"?</summary><p>שבכל יום נותנים ברכה המתאימה לו, וכך לכל מין ברכה המתאימה לו.</p></details>
+  <details><summary>מה ההבדל בין מידת בשר ודם למידת הקדוש ברוך הוא?</summary><p>אצל בשר ודם כלי ריק מחזיק ומלא לא; אצל הקדוש ברוך הוא מלא מחזיק וריק לא.</p></details>
+  <details class="deepq"><summary>מהו "הכלי המלא" לפי רש"י?</summary><p>אדם חכם.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G12,G13">
+  <div class="kicker">יחידה 4 · משנה</div>
+  <h2>ברכה שנאמרה על פרי אחר, ועיקר האילן</h2>
+  <p class="lead">משנה חדשה עוסקת במי שבירך על פרי ברכה שאינה שלו. הגמרא מבררת מי התנא שסובר שפרי העץ הוא גם פרי האדמה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>בירך על פירות האילן בורא פרי האדמה יצא</td><td>בירך על פירות האילן "בורא פרי האדמה", יצא.</td></tr>
+      <tr><td>ועל פירות הארץ בורא פרי העץ לא יצא</td><td>ועל פירות הארץ "בורא פרי העץ", לא יצא.</td></tr>
+      <tr><td>ועל כולם אם אמר שהכל נהיה בדברו יצא</td><td>ועל כולם, אם אמר "שהכל נהיה בדברו", יצא.</td></tr>
+      <tr><td>מאן תנא דעיקר אילן ארעא היא</td><td>מי התנא שסובר שעיקר האילן הוא האדמה?</td></tr>
+      <tr><td>ר' יהודה היא</td><td>זה רבי יהודה.</td></tr>
+      <tr><td>יבש המעין ונקצץ האילן</td><td>יבש המעיין ונקצץ האילן:</td></tr>
+      <tr><td>מביא ואינו קורא</td><td>מביא (ביכורים) ואינו קורא.</td></tr>
+      <tr><td>ר' יהודה אומר מביא וקורא</td><td>רבי יהודה אומר: מביא וקורא.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> "בורא פרי האדמה" מועילה גם לפרי העץ, אבל "בורא פרי העץ" אינה מועילה לפרי האדמה. ו"שהכל" מועילה לכל.</p>
+  <p><b>ההיגיון:</b> האילן גדל מן האדמה, ולכן פריו הוא גם פרי האדמה. אבל לא כל מה שגדל מן האדמה גדל על עץ.</p>
+  <p><b>מי התנא:</b> רב נחמן בר יצחק מוצא את המקור בדעת רבי יהודה בדיני ביכורים. מי שהביא ביכורים, ואחר כך יבש המעיין שהשקה את שדהו או נקצץ האילן, חכמים אומרים שמביא ואינו קורא, ורבי יהודה אומר שמביא וקורא. לרבי יהודה האדמה היא העיקר, והיא עדיין קיימת.</p>
+  <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>דעיקר אילן ארעא היא – דעיקר כל הפירות היא הארץ והכל גדל הימנה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: עיקר כל הפירות הוא הארץ, והכול גדל ממנה.</p></div>
+  <div data-hl="R21" class="voice r"><span class="tag">רש"י</span><blockquote>יבש המעין ונקצץ האילן – היה לו בית השלחין ובו מעין שהוא משקהו ממנו וקצר בכורים ממנו ואחר כך יבש המעין וכן שדה האילן וקצץ בכורים ממנו ואח"כ נקצץ האילן:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מדובר במי שקצר ביכורים משדה מושקה או משדה אילן, ואחר כך יבש המעיין או נקצץ האילן.</p></div>
+  <div data-hl="R22,R23" class="voice r"><span class="tag">רש"י</span><blockquote>מביא ואינו קורא – שאינו יכול לומר מן האדמה אשר נתתה לי דכיון דיבש המעין ונקצץ האילן ממנה בטלה לה ארעא:</blockquote><blockquote>מביא וקורא – שהארץ היא עיקר:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: לחכמים אינו יכול לומר "מן האדמה אשר נתתה לי", כי האדמה בטלה. לרבי יהודה הארץ היא העיקר, ולכן קורא.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>ההלכה ופירוש אחר</h3>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>רבי יהודה היא דתנן יבש המעין וכו' -ונראה דהלכה כרבי יהודה דסתם לן תנא כוותיה ואם ברך על פירות האילן בורא פרי האדמה יצא:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: נראה שההלכה כרבי יהודה, כי המשנה שלנו נשנתה בלי שם כדעתו. ולכן מי שבירך על פרי העץ "בורא פרי האדמה", יצא.</p></div>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>יבש המעין כו'. יש מפרשים לכך מביא ואינו קורא מפני שאינו נראה כמשבח להקב"ה אלא כקובל על מה שנתן לו אדמה שאינה ראויה לפירות:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: יש מפרשים טעם אחר לחכמים. אם יקרא, לא ייראה כמשבח את הקדוש ברוך הוא, אלא כמתלונן שקיבל אדמה שאינה ראויה לפירות.</p></div>
+    <p>הגמרא מקשרת שני תחומים רחוקים, ברכות וביכורים, דרך שאלה אחת: מה עיקר הפרי, העץ או האדמה. מי שסובר שהאדמה עיקר, גם מתיר לקרוא בביכורים כשהעץ נקצץ, וגם מתיר לברך "בורא פרי האדמה" על פרי העץ.</p>
+  </div>
+  <p class="godeep">איך מחלוקת בדיני ביכורים מסבירה את המשנה בברכות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מי שבירך על פרי העץ "בורא פרי האדמה", יצא?</summary><p>כן.</p></details>
+  <details><summary>מי שבירך על פרי האדמה "בורא פרי העץ", יצא?</summary><p>לא.</p></details>
+  <details><summary>לפי מי שנויה המשנה?</summary><p>לפי רבי יהודה, שסובר שעיקר האילן הוא האדמה.</p></details>
+  <details class="deepq"><summary>לפי התוספות, כמי ההלכה, ולמה?</summary><p>כרבי יהודה, כי המשנה שלנו נשנתה בלי שם כדעתו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G14,G15">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>עץ הדעת, ומתי מברכים "בורא פרי העץ"</h2>
+  <p class="lead">המשנה אמרה שמי שבירך על פרי האדמה "בורא פרי העץ" לא יצא. הגמרא שואלת למה צריך לומר זאת, והתשובה מביאה אותה למחלוקת על העץ שאכל ממנו אדם הראשון.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>על פירות הארץ וכו': פשיטא</td><td>"על פירות הארץ": זה מובן מאליו!</td></tr>
+      <tr><td>לא נצרכה אלא לר' יהודה</td><td>לא נצרכה אלא לדעת רבי יהודה,</td></tr>
+      <tr><td>דאמר חטה מין אילן היא</td><td>שאמר: חיטה מין אילן היא.</td></tr>
+      <tr><td>אילן שאכל ממנו אדם הראשון</td><td>האילן שאכל ממנו אדם הראשון:</td></tr>
+      <tr><td>רבי מאיר אומר גפן היה</td><td>רבי מאיר אומר: גפן היה,</td></tr>
+      <tr><td>רבי נחמיה אומר תאנה היתה</td><td>רבי נחמיה אומר: תאנה הייתה,</td></tr>
+      <tr><td>שבדבר שנתקלקלו בו נתקנו</td><td>שבדבר שבו התקלקלו, בו נתקנו.</td></tr>
+      <tr><td>ר"י אומר חטה היתה</td><td>רבי יהודה אומר: חיטה הייתה,</td></tr>
+      <tr><td>שאין התינוק יודע לקרות אבא ואמא</td><td>שאין התינוק יודע לקרוא "אבא" ו"אמא"</td></tr>
+      <tr><td>עד שיטעום טעם דגן</td><td>עד שיטעם טעם דגן.</td></tr>
+      <tr><td>ליברך עליה בורא פרי העץ</td><td>יברכו עליה "בורא פרי העץ".</td></tr>
+      <tr><td>היכא מברכינן בורא פרי העץ</td><td>היכן מברכים "בורא פרי העץ"?</td></tr>
+      <tr><td>היכא דכי שקלת ליה לפירי איתיה לגווזא</td><td>היכן שכאשר לוקחים את הפרי, הענף נשאר</td></tr>
+      <tr><td>והדר מפיק</td><td>וחוזר ומוציא (פרי).</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הקושיה:</b> ברור שעל פרי האדמה אין מברכים "בורא פרי העץ". למה המשנה צריכה לומר זאת?</p>
+  <p><b>התשובה:</b> רבי יהודה אמר שהעץ שאכל ממנו אדם הראשון היה חיטה, ומכאן שחיטה נקראת "מין אילן". אולי לדעתו מברכים על חיטה "בורא פרי העץ"? המשנה מלמדת שלא.</p>
+  <p><b>המחלוקת על עץ הדעת:</b> רבי מאיר אומר גפן, כי היין מביא יללה על האדם. רבי נחמיה אומר תאנה, כי בעלי התאנה תיקנו את מה שקלקלו. רבי יהודה אומר חיטה, כי התינוק מתחיל לדעת רק כשטעם דגן.</p>
+  <p><b>הכלל:</b> מברכים "בורא פרי העץ" רק כשהענף נשאר אחרי שלוקחים את הפרי, וחוזר ומוציא פרי. החיטה אינה כזו, ולכן ברכתה אינה "בורא פרי העץ".</p>
+  <div data-hl="R24" class="voice r"><span class="tag">רש"י</span><blockquote>שהוא הביא יללה – וזה הביא מיתה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: היין הביא יללה, והעץ הזה הביא מיתה.</p></div>
+  <div data-hl="R25" class="voice r"><span class="tag">רש"י</span><blockquote>שאין התינוק יודע לקרא אבא ואמא – וזה נקרא עץ הדעת:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מן הטעם של רבי יהודה מובן למה נקרא "עץ הדעת": הדגן מביא את התינוק לידי דעת.</p></div>
+  <div data-hl="R26,R27" class="voice r"><span class="tag">רש"י</span><blockquote>גווזא – הענף של עץ:</blockquote><blockquote>מפיק – פירי אחריני:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "גווזא" הוא הענף של העץ, ו"מפיק" פירושו שמוציא פירות אחרים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>פירות של צמח שמתקיים</h3>
+    <div data-hl="T4a" class="voice t"><span class="tag">תוספות</span><blockquote>איתיה לגווזא והדר אתי – מהכא נראה דתותים ופריזיי"ש ובונטונ"ש וכיוצא בהן צריכין לברך עליהם בורא פרי העץ שהרי דרך העץ להתקיים ימים רבים וכי שקיל הפרי בשנה זו הדר אתי פרי באותו העץ עצמו</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: מכאן נראה שעל תותים ופירות דומים מברכים "בורא פרי העץ", כי הצמח מתקיים ימים רבים, ושנה אחר שנה חוזר הפרי באותו עץ.</p></div>
+    <div data-hl="T4b" class="voice t"><span class="tag">תוספות</span><blockquote>מיהו הרב רבי מנחם הביא ראיה מירושלמי דמסכת כלאים דמברכין על כל מיני דאטד בורא פרי האדמה דקאמר התם ההגין ואטדין מין אילן הם ואינן כלאים בכרם ופריך והתניא אלו הן מיני דשאים הקונדס והאטד ומשני תמן לברכה והכא לכלאים אלמא לענין ברכה מיני דשאין ומיהו לדברי הכל פריזיי"ש צריך לברך עליהם בפה"ע דאינו גדל על אטדין ועצו מתקיים משנה לשנה:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבי מנחם הביא ראיה מן הירושלמי שעל מיני "אטד", שיח קוצני, מברכים "בורא פרי האדמה". שם נאמר שהם מין אילן לעניין כלאיים, אבל לעניין ברכה הם ממיני הדשאים. ובכל זאת, פרי שאינו גדל על אטד ועצו מתקיים משנה לשנה, ברכתו "בורא פרי העץ".</p></div>
+    <p>הגמרא מבחינה בין שם לבין ברכה. רבי יהודה קורא לחיטה "אילן", אבל הברכה נקבעת לפי מבחן מעשי: האם הצמח נשאר ומוציא פרי שוב. כך גם בירושלמי שבתוספות, אותו צמח נחשב אילן לעניין אחד ודשא לעניין אחר.</p>
+  </div>
+  <p class="godeep">למה רבי יהודה קורא לחיטה "אילן", ובכל זאת אין מברכים עליה "בורא פרי העץ"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה רבי מאיר אומר שעץ הדעת היה גפן?</summary><p>כי אין דבר שמביא יללה על האדם כמו יין.</p></details>
+  <details><summary>למה רבי נחמיה אומר שהיה תאנה?</summary><p>כי בדבר שבו התקלקלו, בו נתקנו: "ויתפרו עלה תאנה".</p></details>
+  <details><summary>מה הכלל לברכת "בורא פרי העץ"?</summary><p>כשלוקחים את הפרי, הענף נשאר וחוזר ומוציא פרי.</p></details>
+  <details class="deepq"><summary>לפי הירושלמי שבתוספות, האם אטד הוא אילן?</summary><p>לעניין כלאיים כן, ולעניין ברכה הוא ממיני הדשאים.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>דיבור אחרי הברכה:</b> "טול ברוך" אינו הפסק לדעת כולם. ב"הבא מלח" וב"גבלו לשוורים" נחלקו רב, רבי יוחנן ורב ששת.</li>
+      <li><b>מלח ולפתן:</b> הבוצע מחכה להם, אבל פת משובחת אינה צריכה המתנה.</li>
+      <li><b>עצות לבריאות:</b> מלח אחרי האוכל ומים אחרי השתייה, עדשים וחרדל פעם בחודש, דגים קטנים, וטעם הקצח בלי ריחו.</li>
+      <li><b>"בורא מיני דשאים":</b> אין הלכה כרבי יהודה, וטעמו מן הפסוק "ברוך ה' יום יום".</li>
+      <li><b>כלי מלא מחזיק:</b> מי שלמד וחזר על לימודו, יוכל לקלוט עוד.</li>
+      <li><b>ברכה על פרי אחר:</b> "בורא פרי האדמה" מועילה לפרי העץ, כדעת רבי יהודה שעיקר האילן הוא האדמה.</li>
+      <li><b>"בורא פרי העץ":</b> רק כשהענף נשאר ומוציא פרי שוב. ולכן גם לרבי יהודה, שעץ הדעת היה חיטה, אין מברכים כך על חיטה.</li>
+      <li><b>בעמוד הבא:</b> השלמת הכלל, ומחלוקת על מי שאמר "שהכל" על הפת ועל היין.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>טול ברוך</td><td>קח מן הלחם שבירכו עליו</td></tr>
+      <tr><td>לפתן</td><td>מאכל שאוכלים יחד עם הלחם</td></tr>
+      <tr><td>גביל לתורי</td><td>לושו מאכל לשוורים</td></tr>
+      <tr><td>הדר מר משמעתיה</td><td>האם חזר בו אדוני מן ההלכה שלו</td></tr>
+      <tr><td>לית דין צריך בשש</td><td>זה אינו צריך המתנה</td></tr>
+      <tr><td>תניא נמי הכי</td><td>שנינו כך גם בברייתא</td></tr>
+      <tr><td>מיתיבי</td><td>מקשים עליו ממקור של תנאים</td></tr>
+      <tr><td>לא קשיא</td><td>אין סתירה: כל מקור מדבר במקרה אחר</td></tr>
+      <tr><td>ואיתימא</td><td>ויש אומרים: כשאין ודאות מי אמר את הדבר</td></tr>
+      <tr><td>מאן תנא</td><td>מי התנא ששנה זאת</td></tr>
+      <tr><td>לא נצרכה אלא</td><td>לא נאמר הדבר אלא בשביל מקרה מסוים</td></tr>
+      <tr><td>גווזא</td><td>ענף של עץ</td></tr>
+      <tr><td>קמשמע לן</td><td>בא להשמיע לנו</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-39b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-40b.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-40b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "אמר רב טול ברוך טול ברוך אינו צריך לברך הבא מלח הבא לפתן צריך לברך ור' יוחנן אמר אפי' הביאו מלח הביאו לפתן נמי א\"צ לברך גביל לתורי גביל לתורי צריך לברך ורב ששת אמר אפילו גביל לתורי נמי אינו צריך לברך דאמר רב יהודה אמר רב אסור לאדם שיאכל קודם שיתן מאכל לבהמתו שנא' (דברים יא, טו) ונתתי עשב בשדך לבהמתך והדר ואכלת ושבעת:", false, ""], ["G2", "אמר רבא בר שמואל משום רבי חייא אין הבוצע רשאי לבצוע עד שיביאו מלח או לפתן לפני כל אחד ואחד רבא בר שמואל אקלע לבי ריש גלותא אפיקו ליה ריפתא ובצע להדיא אמרו ליה הדר מר משמעתיה אמר להו לית דין צריך בשש:", false, ""], ["G3", "ואמר רבא בר שמואל משום רבי חייא אין מי רגלים כלים אלא בישיבה אמר רב כהנא ובעפר תיחוח אפילו בעמידה ואי ליכא עפר תיחוח יעמוד במקום גבוה וישתין למקום מדרון:", false, ""], ["G4", "ואמר רבא בר שמואל משמיה דר' חייא אחר כל אכילתך אכול מלח ואחר כל שתייתך שתה מים ואי אתה נזוק תניא נמי הכי אחר כל אכילתך אכול מלח ואחר כל שתייתך שתה מים ואי אתה נזוק תניא אידך אכל כל מאכל ולא אכל מלח שתה כל משקין ולא שתה מים ביום ידאג מן ריח הפה ובלילה ידאג מפני אסכרה:", false, ""], ["G5", "ת\"ר המקפה אכילתו במים אינו בא לידי חולי מעים וכמה אמר רב חסדא קיתון לפת", false, ""], ["G6", "אמר רב מרי א\"ר יוחנן הרגיל בעדשים אחת לשלשים יום מונע אסכרה מתוך ביתו אבל כל יומא לא מ\"ט משום דקשה לריח הפה", false, ""], ["G7", "ואמר רב מרי אמר רבי יוחנן הרגיל בחרדל אחת לשלשים יום מונע חלאים מתוך ביתו אבל כל יומא לא מ\"ט משום דקשה לחולשא דלבא", false, ""], ["G8", "אמר רב חייא בר אשי אמר רב הרגיל בדגים קטנים אינו בא לידי חולי מעים ולא עוד אלא שדגים קטנים מפרין ומרבין ומברין כל גופו של אדם", false, ""], ["G9", "א\"ר חמא ברבי חנינא הרגיל בקצח אינו בא לידי כאב לב מיתיבי רשב\"ג אומר קצח אחד מששים סמני המות הוא והישן למזרח גרנו דמו בראשו לא קשיא הא בריחו הא בטעמו אימיה דרבי ירמיה אפיא ליה ריפתא ומדבקא ליה ומקלפא ליה:", false, ""], ["G10", "ר' יהודה אומר בורא מיני דשאים: א\"ר זירא ואיתימא ר' חיננא בר פפא אין הלכה כרבי יהודה וא\"ר זירא ואיתימא ר' חיננא בר פפא מ\"ט דרבי יהודה אמר קרא (תהלים סח, כ) ברוך ה' יום יום וכי ביום מברכין אותו ובלילה אין מברכין אותו אלא לומר לך כל יום ויום תן לו מעין ברכותיו הכא נמי כל מין ומין תן לו מעין ברכותיו.", true, ""], ["G11", "וא\"ר זירא ואיתימא ר' חיננא בר פפא בא וראה שלא כמדת הקב\"ה מדת בשר ודם מדת בשר ודם כלי ריקן מחזיק מלא אינו מחזיק אבל הקב\"ה אינו כן מלא מחזיק ריקן אינו מחזיק שנאמר (שמות טו, כו) ויאמר אם שמוע תשמע אם שמוע תשמע ואם לאו לא תשמע ד\"א אם שמוע בישן תשמע בחדש ואם יפנה לבבך שוב לא תשמע:", false, ""], ["G12", "בירך על פירות האילן בורא פרי האדמה יצא ועל פירות הארץ בורא פרי העץ לא יצא ועל כולם אם אמר שהכל נהיה בדברו יצא:", false, "מתני׳"], ["G13", "מאן תנא דעיקר אילן ארעא היא אמר רב נחמן בר יצחק ר' יהודה היא דתנן יבש המעין ונקצץ האילן מביא ואינו קורא ר' יהודה אומר מביא וקורא:", false, "גמ׳"], ["G14", "על פירות הארץ וכו': פשיטא א\"ר נחמן בר יצחק לא נצרכה אלא לר' יהודה דאמר חטה מין אילן היא דתניא אילן שאכל ממנו אדם הראשון רבי מאיר אומר גפן היה שאין לך דבר שמביא יללה על האדם אלא יין שנאמר (בראשית ט, כא) וישת מן היין וישכר רבי נחמיה אומר תאנה היתה שבדבר שנתקלקלו בו נתקנו שנאמר (בראשית ג, ז) ויתפרו עלה תאנה ר\"י אומר חטה היתה שאין התינוק יודע לקרות אבא ואמא עד שיטעום טעם דגן", false, ""], ["G15", "ס\"ד אמינא הואיל ואמר רבי יהודה חטה מין אילן היא ליברך עליה בורא פרי העץ קמשמע לן היכא מברכינן בורא פרי העץ היכא דכי שקלת ליה לפירי איתיה לגווזא והדר מפיק", false, ""]], "R": [["R1", "טול ברוך", "הבוצע קודם שטעם מן הפרוסה בצע ממנה והושיט למי שאצלו וא\"ל טול מפרוסת הברכה אף על פי שסח בינתים אין צריך לחזור לברך ואף על גב דשיחה הויא הפסקה כדאמרינן במנחות (פרק ג' דף לו.) סח בין תפילין לתפילין צריך לברך וכן בכסוי הדם הך שיחה צורך ברכה ולא מפסקא:", false], ["R2", "הביאו מלח", "נמי אין צריך לברך שאף זו צורך ברכה שתהא פרוסה של ברכה נאכלת בטעם:", false], ["R3", "גביל לתורי", "גביל את המורסן במים לצורך השוורים:", false], ["R4", "ובצע לה להדיא", "כלומר מיד ולא המתין למלח ולפתן:", false], ["R5", "בשש", "עכוב כמו בושש רכבו (שופטים ה) כלומר פת נקיה היא זו ואין צריכה לפתן:", false], ["R6", "אין מי רגלים כלים", "מן הגוף אלא בישיבה לפי שכשהקלוח קרוב לפיסוק הוא דואג שלא יפלו נצוצות על רגליו ומפסיק:", false], ["R7", "בעפר תיחוח", "ליכא נצוצות:", false], ["R8", "אסכרה", "בו\"ן מלאנ\"ט:", false], ["R9", "המקפה אכילתו במים", "שותה מים הרבה אחר אכילתו עד שאכילתו צפה במים ויצף הברזל מתרגמינן וקפא פרזלא (מלכים ב ו׳:ו׳):", false], ["R10", "מונע אסכרה", "שהחולי בא מחמת עצור בני מעים והעדשים משלשלים:", false], ["R11", "קצח", "רבותינו מפרשים נייל\"א בלע\"ז אבל אני שמעתי מין זרעים שזורעין אותו בארץ ישמעאל:", false], ["R12", "למזרח גורנו", "של קצח שרוח מערבית רוח לחה ומתונתה היא ומכנסת הריח בתוך הגוף:", false], ["R13", "הא בריחו הא בטעמו", "הריח קשה והטעם טוב:", false], ["R14", "מדבקא ליה", "בריפתא עד שקלט הטעם:", false], ["R15", "ומקלפא ליה", "בשביל הריח:", false], ["R16", "כל יום ויום", "בשבת מעין שבת ביום טוב מעין יו\"ט:", false], ["R17", "כלי מלא", "אדם חכם:", false], ["R18", "אם שמוע", "פעם אחת סופך שתטה אזן פעם אחרת:", false], ["R19", "אם תשמע בישן", "ששנית ושלשת מה ששמעת אשתקד:", false], ["R20", "דעיקר אילן ארעא היא", "דעיקר כל הפירות היא הארץ והכל גדל הימנה:", false], ["R21", "יבש המעין ונקצץ האילן", "היה לו בית השלחין ובו מעין שהוא משקהו ממנו וקצר בכורים ממנו ואחר כך יבש המעין וכן שדה האילן וקצץ בכורים ממנו ואח\"כ נקצץ האילן:", false], ["R22", "מביא ואינו קורא", "שאינו יכול לומר מן האדמה אשר נתתה לי דכיון דיבש המעין ונקצץ האילן ממנה בטלה לה ארעא:", false], ["R23", "מביא וקורא", "שהארץ היא עיקר:", false], ["R24", "שהוא הביא יללה", "וזה הביא מיתה:", false], ["R25", "שאין התינוק יודע לקרא אבא ואמא", "וזה נקרא עץ הדעת:", false], ["R26", "גווזא", "הענף של עץ:", false], ["R27", "מפיק", "פירי אחריני:", false]], "T": [["T1a", "הבא מלח כו' צריך לברך", "דהוי היסח הדעת והכי אמרי' בפ\"ג דמנחות (דף לו.) סח בין תפילין לתפילין צריך לברך וכן הלכה אם סח בין ברכת המוציא לאכילה ובין ברכת קידוש לשתיה צריך לחזור ולברך אי לאו מילתא דשייכא לסעודה כמו טול ברוך וכן בשחיטה צריך לחזור ולברך אי לאו ממילתא דשחיטה כמו העוד יותר בהמות ותרנגולים לשחוט או שיאמר אחוז היטב שלא ישמט לך שלא תפסל השחיטה אין זו הפסקה", false], ["T1b", "", "ואנו אין אנו רגילים להביא על השלחן לא מלח ולא לפתן משום דפת שלנו חשוב והרי הוא כי הא דאמר בסמוך לית דין צריך בשש מיהו רבי מנחם היה מדקדק מאד להביא מלח על השלחן כדאיתא במדרש כשישראל יושבין על השלחן וממתינין זה את זה עד שיטלו ידיהם והן בלא מצות השטן מקטרג עליהם וברית מלח מגין עליהם:", false], ["T2", "", "רבי יהודה היא דתנן יבש המעין וכו' -ונראה דהלכה כרבי יהודה דסתם לן תנא כוותיה ואם ברך על פירות האילן בורא פרי האדמה יצא:", false], ["T3", "", "יבש המעין כו'. יש מפרשים לכך מביא ואינו קורא מפני שאינו נראה כמשבח להקב\"ה אלא כקובל על מה שנתן לו אדמה שאינה ראויה לפירות:", false], ["T4a", "איתיה לגווזא והדר אתי", "מהכא נראה דתותים ופריזיי\"ש ובונטונ\"ש וכיוצא בהן צריכין לברך עליהם בורא פרי העץ שהרי דרך העץ להתקיים ימים רבים וכי שקיל הפרי בשנה זו הדר אתי פרי באותו העץ עצמו", false], ["T4b", "", "מיהו הרב רבי מנחם הביא ראיה מירושלמי דמסכת כלאים דמברכין על כל מיני דאטד בורא פרי האדמה דקאמר התם ההגין ואטדין מין אילן הם ואינן כלאים בכרם ופריך והתניא אלו הן מיני דשאים הקונדס והאטד ומשני תמן לברכה והכא לכלאים אלמא לענין ברכה מיני דשאין ומיהו לדברי הכל פריזיי\"ש צריך לברך עליהם בפה\"ע דאינו גדל על אטדין ועצו מתקיים משנה לשנה:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': מה מפסיק בין הברכה לאכילה", "x": "העמוד הקודם עסק בבציעת הפת: מברך ואחר כך בוצע, פרוסה ושלמה, ולחם משנה בשבת. כאן הגמרא שואלת מה קורה כשהבוצע מדבר אחרי הברכה, לפני שטעם. אחר כך באות עצות לבריאות בשם חכמים, ולבסוף משנה חדשה על מי שבירך על פרי ברכה של מין אחר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "רב: \"טול ברוך\"", "x": "רב אמר: האומר \"טול ברוך, טול ברוך\", כלומר קח מן הלחם שבירכו עליו, אינו צריך לברך שוב. רש\"י מסביר: הבוצע, לפני שטעם, הושיט חתיכה למי שלידו ואמר לו כך. אף שבדרך כלל דיבור הוא הפסק, כמו שלמדנו במסכת מנחות על מי שדיבר בין תפילין לתפילין, הדיבור הזה הוא לצורך הברכה, ואינו מפסיק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1"], "t": "\"הבא מלח, הבא לפתן\"", "x": "אבל מי שאמר \"הבא מלח, הבא לפתן\", צריך לברך שוב. לפתן הוא מאכל שאוכלים יחד עם הלחם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R2"], "t": "רבי יוחנן: גם מלח ולפתן אינם הפסק", "x": "רבי יוחנן אומר: אפילו מי שאמר \"הביאו מלח, הביאו לפתן\" אינו צריך לברך. רש\"י מבאר: גם זה לצורך הברכה, כדי שהפרוסה של הברכה תיאכל בטעם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R3"], "t": "מאכל לשוורים", "x": "אבל מי שאמר \"גביל לתורי\", גבלו מאכל לשוורים, צריך לברך. רש\"י מסביר: הכוונה ללוש את הסובין במים בשביל השוורים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1"], "t": "רב ששת: גם זה אינו הפסק", "x": "רב ששת אומר: אפילו \"גביל לתורי\" אינו מחייב ברכה חדשה. כי רב יהודה אמר בשם רב: אסור לאדם לאכול לפני שנתן מאכל לבהמתו, שנאמר \"ונתתי עשב בשדך לבהמתך\", ורק אחר כך \"ואכלת ושבעת\". אם כן, גם זה צורך הסעודה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1a"], "t": "התוספות: כך ההלכה, ועוד דוגמאות", "x": "\"הבא מלח\" נחשב היסח הדעת. וכך ההלכה: מי שדיבר בין ברכת \"המוציא\" לאכילה, או בין ברכת הקידוש לשתייה, חוזר ומברך, אלא אם הדיבור שייך לסעודה, כמו \"טול ברוך\". וכן בשחיטה: דיבור שנוגע לשחיטה, כמו שאלה אם יש עוד בהמות ותרנגולים לשחוט, או \"אחוז היטב שלא יישמט לך\", אינו הפסק.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1b"], "t": "התוספות: מנהג המלח על השולחן", "x": "אצלנו לא נהגו להביא לשולחן מלח או לפתן, כי הפת שלנו חשובה, כמו שנאמר בהמשך \"לית דין צריך בשש\". אבל רבי מנחם הקפיד מאוד להביא מלח לשולחן, על פי המדרש: כשישראל יושבים לשולחן ומחכים זה לזה עד שייטלו ידיהם, והם בלי מצוות, השטן מקטרג עליהם, וברית המלח מגינה עליהם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "רבא בר שמואל: לחכות למלח", "x": "רבא בר שמואל אמר בשם רבי חייא: הבוצע אינו רשאי לבצוע עד שיביאו מלח או לפתן לפני כל אחד ואחד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R4", "R5"], "t": "בבית ראש הגולה", "x": "רבא בר שמואל הזדמן לבית ראש הגולה. הוציאו לו לחם, והוא בצע מיד, בלי לחכות למלח ולפתן. אמרו לו: וכי חזר בו אדוני מן ההלכה שלו? אמר להם: \"לית דין צריך בשש\", הלחם הזה אינו צריך המתנה. רש\"י מסביר: \"בשש\" הוא עיכוב, כמו \"בושש רכבו\", והכוונה שזו פת נקייה ואינה צריכה לפתן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R6"], "t": "רבא בר שמואל: מי רגלים", "x": "עוד אמר רבא בר שמואל בשם רבי חייא: מי רגלים אינם כלים, כלומר אינם יוצאים מן הגוף עד הסוף, אלא בישיבה. רש\"י מסביר: כשהזרם קרוב להיפסק, האדם העומד חושש שייפלו טיפות על רגליו, ומפסיק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R7"], "t": "רב כהנא: בעפר תיחוח", "x": "רב כהנא אמר: על עפר תיחוח, עפר רך, אפשר גם בעמידה, כי רש\"י מסביר שאין שם ניתוז טיפות. ואם אין עפר תיחוח, יעמוד במקום גבוה וישתין אל מקום מדרון.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R8"], "t": "מלח אחרי האוכל, מים אחרי השתייה", "x": "עוד אמר רבא בר שמואל בשם רבי חייא: אחרי כל אכילתך אכול מלח, ואחרי כל שתייתך שתה מים, ולא תינזק. וכך שנינו גם בברייתא. וברייתא אחרת: מי שאכל ולא אכל מלח, ושתה ולא שתה מים, ביום ידאג מריח הפה, ובלילה ידאג מן האסכרה.", "a": "אסכרה היא מחלה קשה בגרון."}, {"w": "גמרא", "cols": false, "hl": ["G5", "R9"], "t": "\"המקפה אכילתו במים\"", "x": "שנו חכמים: המקפה את אכילתו במים לא יבוא לידי חולי מעיים. רש\"י מסביר: שותה הרבה מים אחרי האוכל, עד שהאוכל צף במים. וכמה? רב חסדא אמר: קיתון, כלי של מים, לכל פת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R10"], "t": "עדשים פעם בשלושים יום", "x": "רב מרי אמר בשם רבי יוחנן: הרגיל לאכול עדשים פעם בשלושים יום, מונע אסכרה מביתו. אבל לא בכל יום, כי הן קשות לריח הפה. רש\"י מסביר: המחלה באה מעצירות, והעדשים משלשלים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "חרדל פעם בשלושים יום", "x": "באותה מסורת נאמר גם על החרדל: מי שאוכל אותו בקביעות, אחת לחודש, מרחיק מחלות מבני ביתו. באכילה יומיומית החרדל מזיק, כי הוא מחליש את הלב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8"], "t": "דגים קטנים", "x": "רב חייא בר אשי אמר בשם רב: הרגיל בדגים קטנים לא יבוא לידי חולי מעיים. ולא עוד, אלא שדגים קטנים מפרים, מרבים ומבריאים את כל גופו של אדם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R11"], "t": "קצח: טוב ללב", "x": "רבי חמא ברבי חנינא אמר: הרגיל בקצח לא יבוא לידי כאב לב. רש\"י מביא שרבותיו פירשו שזה צמח מסוים, ושהוא עצמו שמע שזה מין זרעים שזורעים בארץ ישמעאל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R12"], "t": "קושיה: אחד מששים סמני המוות", "x": "\"מיתיבי\", מקשים: רבן שמעון בן גמליאל אומר שהקצח הוא אחד מששים סמני המוות, והישן ממזרח לגורן שלו, דמו בראשו. רש\"י מסביר: רוח מערבית היא לחה ומתונה, ומכניסה את ריח הקצח לתוך הגוף.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R13", "R14", "R15"], "t": "התשובה: הריח והטעם", "x": "\"לא קשיא\", אין סתירה: זה מדבר על הריח שלו, וזה על הטעם שלו. הריח מזיק, והטעם טוב. אמו של רבי ירמיה הייתה אופה לו לחם, מדביקה עליו קצח ומקלפת אותו. רש\"י מסביר: הדביקה עד שהלחם קלט את הטעם, וקילפה בגלל הריח.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10"], "t": "\"בורא מיני דשאים\": אין הלכה כרבי יהודה", "x": "הגמרא חוזרת למשנה, שבה רבי יהודה אומר שעל ירקות מברכים \"בורא מיני דשאים\". רבי זירא, ויש אומרים רבי חיננא בר פפא, אמר: אין הלכה כרבי יהודה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R16"], "t": "מה טעמו של רבי יהודה", "x": "אותו חכם הסביר את טעמו של רבי יהודה. כתוב \"ברוך ה' יום יום\". וכי ביום מברכים אותו ובלילה לא? אלא הפסוק מלמד: בכל יום ויום תן לו ברכה המתאימה ליום. וכך גם בכל מין ומין, תן לו ברכה המתאימה לו. רש\"י מבאר: בשבת ברכה מעין שבת, וביום טוב ברכה מעין יום טוב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R17"], "t": "כלי מלא מחזיק", "x": "ועוד אמר אותו חכם: בוא וראה שמידת הקדוש ברוך הוא אינה כמידת בשר ודם. אצל בשר ודם, כלי ריק מחזיק, וכלי מלא אינו מחזיק. אבל אצל הקדוש ברוך הוא להפך: מלא מחזיק, וריק אינו מחזיק. רש\"י מסביר: הכלי המלא הוא אדם חכם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R18", "R19"], "t": "\"אם שמוע תשמע\"", "x": "המקור הוא הפסוק \"אם שמוע תשמע\": אם שמעת, תוסיף לשמוע, ואם לא, לא תשמע. רש\"י מסביר: אם שמעת פעם אחת, בסופך תטה אוזן גם בפעם אחרת. ופירוש נוסף: אם תשמע בישן, תשמע בחדש. רש\"י מפרש: אם חזרת ושנית מה ששמעת בשנה שעברה. ואם יפנה לבבך, שוב לא תשמע.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G12"], "t": "משנה: ברכה שנאמרה על פרי אחר", "x": "משנה חדשה. מי שבירך על פירות האילן \"בורא פרי האדמה\", יצא. ועל פירות הארץ \"בורא פרי העץ\", לא יצא. ועל כולם, אם אמר \"שהכל נהיה בדברו\", יצא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R20"], "t": "מי התנא שהאילן עיקרו באדמה", "x": "\"מאן תנא\", מי התנא שסובר שעיקר האילן הוא האדמה, ולכן \"בורא פרי האדמה\" מתאימה גם לפרי העץ? רש\"י מסביר: עיקר כל הפירות הוא הארץ, והכול גדל ממנה. רב נחמן בר יצחק ענה: זה רבי יהודה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R21"], "t": "המשנה על הבאת ביכורים", "x": "\"דתנן\", כך שנינו: אם יבש המעיין או נקצץ האילן, מביא ביכורים ואינו קורא. רש\"י מתאר: היה לו שדה שהשקה ממעיין, וקצר ממנו ביכורים, ואחר כך יבש המעיין. וכן בשדה אילן, קצץ ממנו ביכורים, ואחר כך נקצץ האילן.", "a": "ביכורים הם הפירות הראשונים שמביאים לבית המקדש, ועליהם קוראים פסוקים מן התורה."}, {"w": "רש\"י", "cols": false, "hl": ["G13", "R22", "R23"], "t": "רש\"י: למה אינו קורא, ולמה רבי יהודה מתיר", "x": "לדעת חכמים אינו יכול לומר \"מן האדמה אשר נתתה לי\", כי כשיבש המעיין ונקצץ האילן, האדמה בטלה. רבי יהודה אומר שמביא וקורא, כי הארץ היא העיקר, והיא עדיין קיימת.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G13", "T2", "T3"], "t": "התוספות: ההלכה, ופירוש אחר", "x": "התוספות כותבים שנראה שההלכה כרבי יהודה, כי המשנה שלנו נשנתה בלי שם כדעתו. ולפי זה, ברכת האדמה על פרי העץ מועילה גם להלכה. ויש שמפרשים טעם אחר לחכמים: אם יקרא, לא ייראה כמשבח את הקדוש ברוך הוא, אלא כמתלונן שנתן לו אדמה שאינה ראויה לפירות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14"], "t": "\"פשיטא\": למה צריך לומר זאת", "x": "\"על פירות הארץ\", המשנה אומרת שמי שבירך עליהם \"בורא פרי העץ\" לא יצא. הגמרא שואלת: \"פשיטא\", זה מובן מאליו! ענה רב נחמן בר יצחק: ההלכה הזו נצרכה רק לדעת רבי יהודה, שאמר שחיטה היא מין אילן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R24"], "t": "העץ שאכל ממנו אדם הראשון", "x": "\"דתניא\", שנינו בברייתא: מה היה העץ שאכל ממנו אדם הראשון? רבי מאיר אומר: גפן, כי אין דבר שמביא יללה על האדם כמו יין, שנאמר \"וישת מן היין וישכר\". רש\"י מוסיף: היין הביא יללה, והעץ הזה הביא מיתה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14"], "t": "רבי נחמיה: תאנה", "x": "רבי נחמיה אומר: תאנה הייתה, כי בדבר שבו התקלקלו, בו נתקנו, שנאמר \"ויתפרו עלה תאנה\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R25"], "t": "רבי יהודה: חיטה", "x": "רבי יהודה אומר: חיטה הייתה, כי התינוק אינו יודע לקרוא \"אבא\" ו\"אמא\" עד שיטעם טעם דגן. רש\"י מוסיף: לכן הוא נקרא \"עץ הדעת\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R26", "R27"], "t": "איפה מברכים \"בורא פרי העץ\"", "x": "\"סלקא דעתך אמינא\", היה עולה על הדעת: כיון שרבי יהודה אמר שחיטה מין אילן, יברכו עליה \"בורא פרי העץ\". לכן המשנה מלמדת שלא. מברכים \"בורא פרי העץ\" רק במקום שכאשר לוקחים את הפרי, הענף נשאר וחוזר ומוציא פירות אחרים. רש\"י: \"גווזא\" הוא ענף של עץ.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T4a"], "t": "התוספות: פירות על צמח שמתקיים", "x": "מכאן נראה שעל תותים ועל פירות דומים, שהתוספות מכנים בשמות לועזיים, מברכים \"בורא פרי העץ\". הטעם: הצמח שלהם מתקיים ימים רבים, וכשלוקחים את הפרי השנה, חוזר ובא פרי באותו העץ עצמו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T4b"], "t": "התוספות: ראיה מן הירושלמי על הסנה", "x": "רבי מנחם הביא ראיה מן הירושלמי במסכת כלאיים שעל כל מיני \"אטד\", שיח קוצני, מברכים \"בורא פרי האדמה\". שם נאמר שוורדים ואטדים הם מין אילן, ואינם כלאיים בכרם. ושואלים: הרי שנינו שהאטד הוא ממיני הדשאים? ומשיבים: שם לעניין ברכה, וכאן לעניין כלאיים. ובכל זאת, לדעת כולם, פרי שאינו גדל על אטד, ועצו מתקיים משנה לשנה, ברכתו \"בורא פרי העץ\".", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "דיבור שהוא לצורך הסעודה אינו מפסיק בין הברכה לאכילה, ונחלקו החכמים אילו דיבורים נחשבים כך. באמצע העמוד באו עצות לבריאות ודברי אגדה על כלי מלא שמחזיק. במשנה החדשה למדנו ש\"בורא פרי האדמה\" מועילה גם לפרי העץ, ושאר הסוגיה מבררת מתי מברכים \"בורא פרי העץ\". העמוד הבא משלים: כשהענף אינו נשאר ומוציא שוב, מברכים \"בורא פרי האדמה\", ואחר כך דן במי שאמר \"שהכל\" על הפת ועל היין.", "a": ""}], "audio": "daf-40a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>
