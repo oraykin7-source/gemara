@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף ל&quot;א עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף ל&quot;א עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>ברכות</span><span>פרק חמישי</span><span>אין עומדין</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-31a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-33a.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 60</div>
+  <h1>מסכת ברכות, דף ל&quot;א עמוד ב&#x27;</h1>
+  <p class="sub">פרק חמישי, &quot;אין עומדין&quot;. המשך הדרשות על תפילת חנה, ותחילת הדרשות על אליהו.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. עלי וחנה: תוכחה, חשד ופיוס</a><a href="#u2">2. "ה' צבאות" ו"אם ראה תראה"</a><a href="#u3">3. "אמתך" ו"זרע אנשים"</a><a href="#u4">4. ארבע אמות של תפילה, ושמואל לפני עלי</a><a href="#u5">5. לבה של חנה, תענית בשבת, ודברים כלפי מעלה</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4,G5">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>עלי וחנה: תוכחה, חשד ופיוס</h2>
+  <p class="lead">עלי ראה את חנה מתפללת בשפתיים בלי קול, וחשב שהיא שיכורה. מן הדו שיח ביניהם רבי אלעזר וחכמים אחרים לומדים כמה הלכות בין אדם לחברו.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>דבר שאינו הגון צריך להוכיחו</td><td>(מי שרואה בחברו) דבר שאינו ראוי, צריך להוכיח אותו.</td></tr>
+      <tr><td>ותען חנה ותאמר לא אדני</td><td>"ותען חנה ותאמר: לא, אדני".</td></tr>
+      <tr><td>לא אדון אתה בדבר זה</td><td>אינך אדון בדבר הזה,</td></tr>
+      <tr><td>ולא רוח הקודש שורה עליך</td><td>ורוח הקודש אינה שורה עליך,</td></tr>
+      <tr><td>שאתה חושדני בדבר זה</td><td>שאתה חושד בי בדבר הזה.</td></tr>
+      <tr><td>לאו איכא שכינה ורוח הקודש גבך</td><td>האם אין אצלך שכינה ורוח הקודש,</td></tr>
+      <tr><td>שדנתני לכף חובה ולא דנתני לכף זכות</td><td>שדנת אותי לכף חובה, ולא דנת אותי לכף זכות?</td></tr>
+      <tr><td>מי לא ידעת דאשה קשת רוח אנכי</td><td>וכי לא ידעת שאני אשה קשת רוח?</td></tr>
+      <tr><td>מכאן לנחשד בדבר שאין בו שצריך להודיעו</td><td>מכאן שמי שנחשד בדבר שאין בו, צריך להודיע לו.</td></tr>
+      <tr><td>מכאן לשכור שמתפלל כאלו עובד ע"ז</td><td>מכאן ששיכור שמתפלל, כאילו עובד עבודה זרה.</td></tr>
+      <tr><td>מה להלן ע"ז אף כאן ע"ז</td><td>מה שם עבודה זרה, אף כאן עבודה זרה.</td></tr>
+      <tr><td>מכאן לחושד את חברו בדבר שאין בו שצריך לפייסו</td><td>מכאן שמי שחושד את חברו בדבר שאין בו, צריך לפייס אותו.</td></tr>
+      <tr><td>ולא עוד אלא שצריך לברכו</td><td>ולא עוד, אלא שצריך לברך אותו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>התוכחה:</b> רבי אלעזר לומד מן הפסוק "עד מתי תשתכרין" שמי שרואה בחברו דבר שאינו ראוי, צריך להוכיח אותו. עלי ראה מה שנראה לו כשכרות, ואמר זאת לחנה.</p>
+  <p><b>התשובה של חנה, "לא אדני":</b> לפי עולא, או רבי יוסי ברבי חנינא, היא אמרה לו שאינו אדון בעניין הזה ורוח הקודש אינה עליו, ולכן חשד בה. לפי לשון אחרת היא שאלה: האם אין אצלך רוח הקודש, שדנת אותי לכף חובה? לא ידעת שאני אשה שרוחה קשה עליה?</p>
+  <p><b>מי שנחשד:</b> חנה אמרה "ויין ושכר לא שתיתי". מכאן שמי שחושדים בו בדבר שאין בו, צריך להודיע שאינו כך.</p>
+  <p><b>מי שחשד:</b> עלי ענה "לכי לשלום", והוסיף ברכה. מכאן שמי שחשד בחברו לשווא צריך לפייס אותו, וגם לברך אותו.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>שצריך להודיעו – הנחשד צריך לנקות את עצמו ולהודיע את חושדו שאין בו אותו דבר מגונה:</blockquote><p><span class="say">מה רש"י אומר:</span> הנחשד צריך לנקות את עצמו, ולהודיע לחושד שאין בו אותו דבר מגונה.</p></div>
+  <div data-hl="R2" class="voice r"><span class="tag">רש"י</span><blockquote>לפני בת בליעל – אל תתנני כבת בליעל לחשדני בשכרות:</blockquote><p><span class="say">מה רש"י אומר:</span> "אל תתן את אמתך לפני בת בליעל" פירושו: אל תחשוב אותי כבת בליעל, לחשוד בי בשכרות.</p></div>
+  <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>דבר שאינו הגון – פירוש אע"ג דליכא איסורא דאורייתא דאי איכא איסורא דאורייתא פשיטא הוכח תוכיח כתיב (ויקרא י״ט:י״ז):</blockquote><p><span class="say">מה התוספות אומרים:</span> "דבר שאינו הגון" הוא אפילו דבר שאין בו איסור תורה. שאם יש בו איסור תורה, פשוט שצריך להוכיח, שהרי כתוב "הוכח תוכיח".</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>השיכור והעבודה הזרה</h3>
+    <p>רבי אלעזר לומד בגזרה שווה: "בת בליעל" כאן, ו"בני בליעל" בפסוק שעוסק בעבודה זרה. מה שם עבודה זרה, אף כאן. כך נאמר שחנה אמרה לעלי: אם אני שיכורה ומתפללת, אני כמו מי שעובדת עבודה זרה.</p>
+    <h3>שני הצדדים של החשד</h3>
+    <p>שלוש ההלכות בונות תמונה שלמה. הרואה דבר לא ראוי מוכיח. הנחשד מודיע שאין בו. והחושד שטעה מפייס ומברך. כל אחת נלמדת מפסוק אחר באותו סיפור.</p>
+  </div>
+  <p class="godeep">איך שלוש ההלכות משלימות זו את זו? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה לומדים מן "ויין ושכר לא שתיתי"?</summary><p>שמי שנחשד בדבר שאין בו צריך להודיע.</p></details>
+  <details><summary>מה צריך לעשות מי שחשד בחברו לשווא?</summary><p>לפייס אותו, ולא עוד אלא לברך אותו.</p></details>
+  <details><summary>לפי הלשון השנייה, במה האשימה חנה את עלי?</summary><p>שדן אותה לכף חובה ולא לכף זכות.</p></details>
+  <details class="deepq"><summary>מאיזו גזרה שווה לומד רבי אלעזר ששיכור שמתפלל כאילו עובד עבודה זרה?</summary><p>"בת בליעל" כאן, ו"בני בליעל" בפסוק על עבודה זרה.</p></details>
+  <details class="deepq"><summary>לפי התוספות, באיזה דבר צריך להוכיח?</summary><p>אפילו בדבר שאין בו איסור תורה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G6,G7,G8,G9,G10,G11,G12a,G12b,G13">
+  <div class="kicker">יחידה 2 · אגדה</div>
+  <h2>"ה' צבאות" ו"אם ראה תראה"</h2>
+  <p class="lead">רבי אלעזר דורש שתי לשונות בנדר של חנה. מן הראשונה עולה טענה עם משל, ומן השנייה תוכנית נועזת. הגמרא בודקת אם התוכנית מתאימה לכל הדעות על מי סוטה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ותדר נדר ותאמר ה' צבאות</td><td>"ותדר נדר ותאמר: ה' צבאות".</td></tr>
+      <tr><td>לא היה אדם שקראו להקב"ה צבאות</td><td>לא היה אדם שקרא לקדוש ברוך הוא "צבאות",</td></tr>
+      <tr><td>עד שבאתה חנה וקראתו צבאות</td><td>עד שבאה חנה וקראה לו "צבאות".</td></tr>
+      <tr><td>מכל צבאי צבאות שבראת בעולמך</td><td>מכל צבאות הצבאות שבראת בעולמך,</td></tr>
+      <tr><td>קשה בעיניך שתתן לי בן אחד</td><td>קשה בעיניך לתת לי בן אחד?</td></tr>
+      <tr><td>משל למה הדבר דומה</td><td>משל, למה הדבר דומה?</td></tr>
+      <tr><td>אם ראה מוטב ואם לאו תראה</td><td>אם תראה, מוטב. ואם לא, "תראה".</td></tr>
+      <tr><td>אלך ואסתתר בפני אלקנה בעלי</td><td>אלך ואסתתר לפני אלקנה בעלי,</td></tr>
+      <tr><td>וכיון דמסתתרנא משקו לי מי סוטה</td><td>ומכיוון שאסתתר, ישקו אותי מי סוטה,</td></tr>
+      <tr><td>ואי אתה עושה תורתך פלסתר</td><td>ואתה לא תעשה את תורתך שקר.</td></tr>
+      <tr><td>אם היתה עקרה נפקדת</td><td>אם הייתה עקרה, נפקדת.</td></tr>
+      <tr><td>אם כן ילכו כל העקרות כולן ויסתתרו</td><td>אם כן, ילכו כל העקרות כולן ויסתתרו,</td></tr>
+      <tr><td>אלא מלמד שאם היתה יולדת בצער יולדת בריוח</td><td>אלא (הפסוק) מלמד: אם הייתה יולדת בצער, תלד בריווח.</td></tr>
+      <tr><td>דברה תורה כלשון בני אדם</td><td>התורה דיברה כלשון בני אדם.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>"ה' צבאות":</b> לפי רבי אלעזר חנה הייתה הראשונה שקראה לקדוש ברוך הוא בשם הזה. בשם עצמו יש טענה: לפניך צבאות רבים כל כך, וכי קשה לך לתת לי בן אחד?</p>
+  <p><b>המשל:</b> עני עומד בפתח של סעודת המלך ומבקש פרוסה אחת. איש אינו שם לב אליו, והוא נדחק ופונה אל המלך עצמו. הבקשה קטנה מאוד לעומת הסעודה כולה.</p>
+  <p><b>"אם ראה תראה":</b> רבי אלעזר דורש את הכפילות כשני חלקים. אם תראה את צערי, מוטב. ואם לא, אסתתר עם אחרים, בעלי יחשוד, ישקו אותי מי סוטה, ואז התורה מבטיחה לאשה שנמצאה טהורה "ונקתה ונזרעה זרע".</p>
+  <p><b>הקושיה:</b> התוכנית מתאימה לרבי ישמעאל, שהפסוק מבטיח לעקרה שתיפקד. אבל רבי עקיבא אומר שהפסוק מבטיח רק לידה טובה יותר למי שכבר יולדת. לפיו, הכפילות "אם ראה תראה" היא כדרך הדיבור של בני אדם, ואינה מלמדת דבר.</p>
+  <div data-hl="R3,R4" class="voice r"><span class="tag">רש"י</span><blockquote>ואסתתר – אתייחד עם אחרים ויחשדני בעלי:</blockquote><blockquote>פלסתר – שקר:</blockquote><p><span class="say">מה רש"י אומר:</span> "ואסתתר" פירושו אתייחד עם אחרים, כדי שבעלי יחשוד בי. "פלסתר" פירושו שקר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>המחלוקת של רבי ישמעאל ורבי עקיבא</h3>
+    <p>רבי ישמעאל קורא את "ונזרעה זרע" כהבטחה שעקרה תלד. רבי עקיבא דוחה: אם כן, כל העקרות יסתתרו בכוונה ויזכו בבנים, ודווקא אשה שלא קלקלה תפסיד. לכן לפיו ההבטחה היא שיפור בלידה: בריווח במקום בצער, ארוכים במקום קצרים, לבנים במקום שחורים, שניים במקום אחד.</p>
+    <p>הגמרא אינה דוחה את הדרשה של רבי אלעזר. היא מראה שהיא תלויה בשיטה. לפי רבי עקיבא צריך לפרש את "אם ראה תראה" אחרת, ותשובתה היא שהתורה דיברה כלשון בני אדם.</p>
+    <h3>"דברה תורה כלשון בני אדם"</h3>
+    <p>זה כלל בדרכי הלימוד: לא כל כפילות של מילה בתורה באה ללמד דבר. לפעמים היא סגנון הדיבור הרגיל. כאן הכלל משמש כדי להסביר את הפסוק לשיטה שאינה מקבלת את הדרשה.</p>
+  </div>
+  <p class="godeep">למה לפי רבי עקיבא התוכנית של חנה לא הייתה עוזרת? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מי הייתה הראשונה שקראה לקדוש ברוך הוא "צבאות", לפי רבי אלעזר?</summary><p>חנה.</p></details>
+  <details><summary>מה אומר העני במשל למלך?</summary><p>מכל הסעודה שעשית, קשה בעיניך לתת לי פרוסה אחת?</p></details>
+  <details><summary>מה הייתה התוכנית של חנה לפי הדרשה של "אם ראה תראה"?</summary><p>להסתתר עם אחרים, כדי שישקו אותה מי סוטה, והתורה מבטיחה "ונקתה ונזרעה זרע".</p></details>
+  <details class="deepq"><summary>מה טוען רבי עקיבא נגד רבי ישמעאל?</summary><p>אם כן, כל העקרות יסתתרו, וזו שלא קלקלה תיפקד?</p></details>
+  <details class="deepq"><summary>לפי רבי עקיבא, מה פירוש הכפילות "אם ראה תראה"?</summary><p>דברה תורה כלשון בני אדם.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G14,G15,G16,G17a,G17b,G18">
+  <div class="kicker">יחידה 3 · אגדה</div>
+  <h2>"אמתך" ו"זרע אנשים"</h2>
+  <p class="lead">עוד שתי דרשות בתפילה של חנה. האחת על המילה "אמתך" שחוזרת שלוש פעמים, והשנייה על הבקשה "זרע אנשים", שיש לה ארבעה פירושים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>בעני אמתך אל תשכח את אמתך ונתתה לאמתך</td><td>"בעני אמתך... ולא תשכח את אמתך, ונתתה לאמתך".</td></tr>
+      <tr><td>ג' אמתות הללו למה</td><td>שלוש "אמתך" האלה, למה?</td></tr>
+      <tr><td>שלשה בדקי מיתה בראת באשה</td><td>שלושה דברים שנבדקים בהם למיתה בראת באשה.</td></tr>
+      <tr><td>נדה וחלה והדלקת הנר</td><td>נידה, חלה והדלקת הנר.</td></tr>
+      <tr><td>כלום עברתי על אחת מהן</td><td>האם עברתי על אחת מהן?</td></tr>
+      <tr><td>מאי זרע אנשים אמר רב גברא בגוברין</td><td>מה פירוש "זרע אנשים"? אמר רב: אדם בין אנשים.</td></tr>
+      <tr><td>זרע שמושח שני אנשים</td><td>זרע שימשח שני אנשים,</td></tr>
+      <tr><td>ומאן אינון שאול ודוד</td><td>ומי הם? שאול ודוד.</td></tr>
+      <tr><td>זרע ששקול כשני אנשים</td><td>זרע ששקול כשני אנשים,</td></tr>
+      <tr><td>ומאן אינון משה ואהרן</td><td>ומי הם? משה ואהרן.</td></tr>
+      <tr><td>זרע שמובלע בין אנשים</td><td>זרע שנבלע בין אנשים.</td></tr>
+      <tr><td>לא ארוך ולא גוץ ולא קטן</td><td>לא ארוך, ולא נמוך, ולא קטן,</td></tr>
+      <tr><td>ולא חכם ולא טפש</td><td>ולא חכם (יותר מדי), ולא טיפש.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>שלוש פעמים "אמתך":</b> רבי יוסי ברבי חנינא שואל למה המילה חוזרת שלוש פעמים. התשובה: חנה רמזה לשלוש המצוות שהאשה נבדקת בהן, נידה, חלה והדלקת הנר, ושאלה: האם עברתי על אחת מהן?</p>
+  <p><b>"זרע אנשים", ארבעה פירושים:</b> רב: אדם חשוב בין אנשים. שמואל: בן שימשח שני מלכים, שאול ודוד. רבי יוחנן: בן ששקול כשניים, משה ואהרן. וחכמים: בן שנבלע בין האנשים.</p>
+  <p><b>הפירוש של רבי יוחנן</b> נשען על הפסוק "משה ואהרן בכהניו ושמואל בקוראי שמו". שמואל מוזכר שם לצד משה ואהרן יחד.</p>
+  <p><b>רב דימי</b> מפרש את דברי החכמים: בן שאין בו דבר בולט, לא בגוף ולא בשכל.</p>
+  <div data-hl="R5,R6,R7" class="voice r"><span class="tag">רש"י</span><blockquote>שלש אמתות – דריש להו לשון מיתה:</blockquote><blockquote>בדקי מיתה – שהאשה נבדקת בהן בשעת הסכנה שאם ימצא בה אחד מהם תמות:</blockquote><blockquote>נדה וחלה והדלקת נר – של שבת על ג' עברות הללו נשים מתות וטעמא יליף במסכת שבת (ד' לא:):</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "אמתך" נדרש מלשון מיתה. בשלושת הדברים האלה האשה נבדקת בשעת סכנה, ואם יימצא בה אחד מהם, תמות. הנר הוא נר של שבת.</p></div>
+  <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>שמובלע בין אנשים – רב דימי מפרש לה לא ארוך ולא גוץ וכו':</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: רב דימי הוא שמפרש מהו "מובלע בין אנשים".</p></div>
+  <div data-hl="R9,R10,R11" class="voice r"><span class="tag">רש"י</span><blockquote>אלם – פי' עב:</blockquote><blockquote>צחור – רו"ש בלע"ז:</blockquote><blockquote>גיחור – שהוא לבן יותר מדאי:</blockquote><p><span class="say">מה רש"י אומר:</span> "אלם" פירושו עבה. את "צחור" רש"י מתרגם במילה בלעז. "גיחור" הוא לבן יותר מדי.</p></div>
+  <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>גברא בגוברין – פי' אדם שיהא חשוב לימנות בין אנשים:</blockquote><p><span class="say">מה התוספות אומרים:</span> "גברא בגוברין" פירושו אדם שיהיה חשוב, ראוי להימנות בין האנשים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה לא חכם?</h3>
+    <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>ולא חכם – יותר מדאי שלא יהיה תימה בעיני הבריות ומתוך שנדברין בו שולטת בו עין הרע:</blockquote><p><span class="say">מה רש"י אומר:</span> "ולא חכם" פירושו לא חכם יותר מדי. כך לא יהיה פלא בעיני הבריות, שמתוך שמדברים בו שולטת בו עין הרע.</p></div>
+    <p>לפי זה הרשימה של רב דימי אינה מבקשת בן חסר. היא מבקשת בן שלא יבלוט באף צד, ולכן לא יעורר תשומת לב.</p>
+    <h3>ארבעה פירושים, שני כיוונים</h3>
+    <p>שלושת הפירושים הראשונים מבקשים בן גדול: חשוב, מושח מלכים, שקול כמשה ואהרן. הפירוש של החכמים הולך בכיוון אחר: בן רגיל, שאינו בולט. הגמרא מביאה את כולם בלי להכריע.</p>
+  </div>
+  <p class="godeep">איך "לא חכם" יכול להיות ברכה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>אילו שלוש מצוות רמזה חנה במילה "אמתך"?</summary><p>נידה, חלה והדלקת הנר.</p></details>
+  <details><summary>את מי משח שמואל, לפי הפירוש של שמואל האמורא?</summary><p>את שאול ואת דוד.</p></details>
+  <details><summary>לפי רבי יוחנן, כנגד מי שקול שמואל?</summary><p>כנגד משה ואהרן.</p></details>
+  <details class="deepq"><summary>למה לפי רש"י ביקשה חנה בן שאינו חכם יותר מדי?</summary><p>כדי שלא יהיה פלא בעיני הבריות, שמתוך שמדברים בו שולטת בו עין הרע.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G19,G20,G21a,G21b,G22a,G22b">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>ארבע אמות של תפילה, ושמואל לפני עלי</h2>
+  <p class="lead">מן המילים "הנצבת עמכה" לומדים איסור לשבת ליד המתפלל. ומן "אל הנער הזה התפללתי" רבי אלעזר מספר מעשה: שמואל הילד הורה הלכה לפני עלי.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מכאן שאסור לישב בתוך ארבע אמות של תפלה</td><td>מכאן שאסור לשבת בתוך ארבע אמות של תפילה.</td></tr>
+      <tr><td>שמואל מורה הלכה לפני רבו היה</td><td>שמואל היה מורה הלכה לפני רבו.</td></tr>
+      <tr><td>משום דוישחטו את הפר הביאו הנער אל עלי</td><td>וכי מפני ש"וישחטו את הפר", הביאו את הנער אל עלי?</td></tr>
+      <tr><td>אלא אמר להן עלי קראו כהן ליתי ולשחוט</td><td>אלא, אמר להם עלי: קראו כהן שיבוא וישחט.</td></tr>
+      <tr><td>למה לכו לאהדורי בתר כהן למישחט</td><td>למה לכם לחפש כהן כדי לשחוט?</td></tr>
+      <tr><td>שחיטה בזר כשרה</td><td>שחיטה כשרה בזר.</td></tr>
+      <tr><td>מי כתיב ושחט הכהן והקריבו הכהנים כתיב</td><td>וכי כתוב "ושחט הכהן"? "והקריבו הכהנים" כתוב.</td></tr>
+      <tr><td>מקבלה ואילך מצות כהונה</td><td>מקבלת (הדם) ואילך, מצוות כהונה.</td></tr>
+      <tr><td>מימר שפיר קא אמרת</td><td>לומר, יפה אתה אומר,</td></tr>
+      <tr><td>מיהו מורה הלכה בפני רבך את</td><td>אבל אתה מורה הלכה בפני רבך.</td></tr>
+      <tr><td>שבקי לי דאענשיה ובעינא רחמי</td><td>עזבי אותי, שאעניש אותו, ואבקש רחמים,</td></tr>
+      <tr><td>ויהיב לך רבא מיניה</td><td>ויתן לך גדול ממנו.</td></tr>
+      <tr><td>אמרה ליה אל הנער הזה התפללתי</td><td>אמרה לו: "אל הנער הזה התפללתי".</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ארבע אמות:</b> חנה אמרה לעלי "הנצבת עמכה בזה". רבי יהושע בן לוי לומד מכאן שאסור לשבת בתוך ארבע אמות של מי שמתפלל. לפי רש"י, המילים מלמדות שגם עלי עמד עמה.</p>
+  <p><b>המעשה:</b> עלי ביקש שיקראו כהן לשחוט את הפר. שמואל ראה שמחפשים כהן ואמר: אין צורך, שחיטה כשרה גם בזר. כשהביאו אותו לעלי, הוכיח זאת מן הפסוק: כתוב "והקריבו הכהנים" ולא "ושחט הכהן", ולכן רק מקבלת הדם ואילך העבודה היא של כהנים.</p>
+  <p><b>התגובה של עלי:</b> ההלכה נכונה, אבל מי שמורה הלכה לפני רבו חייב מיתה. חנה התחננה, ועלי הציע לבקש עבורה בן גדול ממנו. היא סירבה: "אל הנער הזה התפללתי".</p>
+  <p>כך רבי אלעזר מסביר את הפסוק "וישחטו את הפר ויביאו את הנער אל עלי": הסמיכות של השחיטה להבאת הנער היא בגלל ההוראה על השחיטה.</p>
+  <div data-hl="R13" class="voice r"><span class="tag">רש"י</span><blockquote>הנצבת עמכה – משמע אף הוא עמה בעמידה:</blockquote><p><span class="say">מה רש"י אומר:</span> "הנצבת עמכה" משמע שגם הוא עמד יחד איתה.</p></div>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>והקריבו הכהנים – אמרו בפרק קמא דחגיגה (ד' יא.) והקריבו זה קבלת הדם:</blockquote><p><span class="say">מה רש"י אומר:</span> במסכת חגיגה נאמר ש"והקריבו" זו קבלת הדם.</p></div>
+  <div data-hl="R14" class="voice r"><span class="tag">רש"י</span><blockquote>אל הנער הזה – על זה ולא לאחר מכאן שחטא לעלי ורצה לענשו ולהתפלל שינתן לה בן אחר:</blockquote><p><span class="say">מה רש"י אומר:</span> "אל הנער הזה": על זה, ולא על אחר. מכאן ששמואל חטא כלפי עלי, ועלי רצה להעניש אותו ולהתפלל שיינתן לה בן אחר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>עמכה, עם ה"א</h3>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>[עמכה] – עמך משמע בתוך ארבע אמות משום דכתיב עמכה מלא בה"א כלומר שלא היה יושב בתוך ארבע אמות שלה כי אם בחמישית:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: "עמך" לבד משמע בתוך ארבע אמות. אבל כתוב "עמכה", עם ה"א, שהיא האות החמישית. כלומר עלי לא ישב בתוך ארבע האמות שלה, אלא באמה החמישית.</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>מכאן שאסור לישב בד' אמות של תפלה – בין מלפניו (בין מלאחריו) ובין מן הצדדין ופירשו תשובת הגאונים דוקא ביושב ובטל אבל אם היה עוסק בק"ש ובברכותיה וכיוצא בהם אפילו יושב שפיר דמי:</blockquote><p><span class="say">מה התוספות אומרים:</span> האיסור הוא גם מלפני המתפלל וגם מן הצדדים. בתשובות הגאונים פירשו: דווקא מי שיושב ובטל. מי שעוסק בקריאת שמע ובברכותיה וכדומה, מותר לו לשבת.</p></div>
+    <h3>האם עלי היה רבו?</h3>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>מורה הלכה בפני רבך את – ואף ע"פ שלא למד עדיין בפניו מ"מ גדול הדור היה ובא ללמוד לפניו:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מעירים שעדיין לא למד שמואל לפני עלי. ובכל זאת עלי היה גדול הדור, ושמואל בא ללמוד לפניו, ולכן נחשב רבו.</p></div>
+  </div>
+  <p class="godeep">איך לומדים מן האות ה"א שעלי עמד באמה החמישית? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אסור לעשות בתוך ארבע אמות של המתפלל?</summary><p>לשבת.</p></details>
+  <details><summary>מאיזה פסוק הוכיח שמואל שהשחיטה כשרה בזר?</summary><p>כתוב "והקריבו הכהנים" ולא "ושחט הכהן". מקבלת הדם ואילך מצוות כהונה.</p></details>
+  <details><summary>מה ענתה חנה כשעלי הציע לבקש עבורה בן אחר?</summary><p>"אל הנער הזה התפללתי".</p></details>
+  <details class="deepq"><summary>לפי תשובות הגאונים שמביאים התוספות, מתי מותר לשבת ליד המתפלל?</summary><p>כשעוסק בקריאת שמע ובברכותיה וכדומה. האיסור הוא דווקא ביושב ובטל.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G23,G24,G25,G26,G27">
+  <div class="kicker">יחידה 5 · אגדה</div>
+  <h2>לבה של חנה, תענית בשבת, ודברים כלפי מעלה</h2>
+  <p class="lead">עוד דרשות של רבי אלעזר: מה פירוש "מדברת על לבה", מה דינו של מי שמתענה בשבת, ואיך חנה ואליהו דיברו בחריפות כלפי מעלה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>על עסקי לבה אמרה לפניו</td><td>על עניין הלב שלה אמרה לפניו:</td></tr>
+      <tr><td>כל מה שבראת באשה</td><td>כל מה שבראת באשה,</td></tr>
+      <tr><td>לא בראת דבר אחד לבטלה</td><td>לא בראת דבר אחד לבטלה.</td></tr>
+      <tr><td>דדים הללו שנתת על לבי למה</td><td>הדדים האלה שנתת על לבי, למה?</td></tr>
+      <tr><td>לא להניק בהן תן לי בן ואניק בהן</td><td>לא כדי להניק בהם? תן לי בן, ואניק בהם.</td></tr>
+      <tr><td>כל היושב בתענית בשבת</td><td>כל מי שיושב בתענית בשבת,</td></tr>
+      <tr><td>קורעין לו גזר דינו של שבעים שנה</td><td>קורעים לו גזר דין של שבעים שנה,</td></tr>
+      <tr><td>ואף על פי כן חוזרין ונפרעין ממנו דין עונג שבת</td><td>ובכל זאת חוזרים ונפרעים ממנו על עונג השבת.</td></tr>
+      <tr><td>מאי תקנתיה</td><td>מה התיקון שלו?</td></tr>
+      <tr><td>ליתיב תעניתא לתעניתא</td><td>ישב בתענית בשביל התענית.</td></tr>
+      <tr><td>חנה הטיחה דברים כלפי מעלה</td><td>חנה דיברה דברים חריפים כלפי מעלה,</td></tr>
+      <tr><td>שנאמר ותתפלל על ה'</td><td>שנאמר "ותתפלל על ה'".</td></tr>
+      <tr><td>אליהו הטיח דברים כלפי מעלה</td><td>אליהו דיבר דברים חריפים כלפי מעלה,</td></tr>
+      <tr><td>מנין שחזר הקב"ה והודה לו לאליהו</td><td>מניין שהקדוש ברוך הוא חזר והודה לאליהו?</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>"מדברת על לבה":</b> רבי אלעזר בשם רבי יוסי בן זמרא קורא את המילים "על לבה" כפשוטן: היא דיברה על הדדים שעל לבה. כל איבר נברא לתכליתו, ואם לא תיתן לה בן, הדדים יהיו לבטלה.</p>
+  <p><b>תענית בשבת:</b> מי שמתענה בשבת, קורעים לו גזר דין קשה. אבל מפני שביטל את עונג השבת, נפרעים ממנו. התיקון לפי רב נחמן בר יצחק: תענית נוספת בשביל התענית הזו.</p>
+  <p><b>"הטיחה דברים":</b> בפסוק כתוב "ותתפלל על ה'", ולא "אל ה'". רבי אלעזר לומד מכאן שחנה דיברה בחריפות כלפי מעלה. וכך גם אליהו, שאמר "ואתה הסבת את לבם אחורנית", כאילו הקדוש ברוך הוא עצמו הסב את לבם של ישראל.</p>
+  <p>הגמרא שואלת מניין שהקדוש ברוך הוא הודה לאליהו, והתשובה באה בעמוד הבא.</p>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>של שבעים שנה – כלומר אפילו נגזר עליו מנעוריו לפי שתענית קשה בשבת לפי שהכל מתענגים בו והוא מתענה:</blockquote><p><span class="say">מה רש"י אומר:</span> גזר דין "של שבעים שנה" פירושו אפילו גזר דין שנגזר עליו מנעוריו. כי התענית בשבת קשה, שהכול מתענגים והוא מתענה.</p></div>
+  <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>תעניתא לתעניתא – יתענה למחר:</blockquote><p><span class="say">מה רש"י אומר:</span> "תעניתא לתעניתא": יתענה למחרת.</p></div>
+  <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>ותתפלל על ה' – כך כתוב הוא במקרא ולא גרסינן הכא אל תקרי:</blockquote><p><span class="say">מה רש"י אומר:</span> "על ה'" כך כתוב בפסוק עצמו. לכן לא גורסים כאן "אל תקרי", כאילו משנים את הקריאה.</p></div>
+  <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>שחזר והודה לאליהו – לדבריו הודה לאחר זמן בנבואת נביאים אחרים:</blockquote><p><span class="say">מה רש"י אומר:</span> הקדוש ברוך הוא הודה לדברי אליהו לאחר זמן, בנבואה של נביאים אחרים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איזו תענית בשבת</h3>
+    <div data-hl="T6" class="voice t"><span class="tag">תוספות</span><blockquote>כל היושב בתענית בשבת – פירש ר"ח בתענית חלום וכן איתא במדרש תהלים וכשיושב בתענית חלום בשבת פי' בה"ג שאומר עננו באלהי נצור ואפילו קובע ברכה לעצמו כיון שאינו בתוך י"ח:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו חננאל פירש שמדובר בתענית חלום, וכך גם במדרש תהלים. בעל הלכות גדולות פירש שמי שמתענה תענית חלום בשבת אומר "עננו" ב"אלהי נצור", ואפילו קובע לה ברכה לעצמה, כיוון שאינה בתוך שמונה עשרה.</p></div>
+    <p>לפי הפירוש הזה מובן למה מתענים בשבת בכלל: התענית באה בגלל חלום, וזה טעם שמצדיק אותה גם בשבת. ובכל זאת נשאר החוב על עונג השבת.</p>
+    <h3>דרשה בלי "אל תקרי"</h3>
+    <p>לפעמים חכמים דורשים מילה כאילו כתוב בה דבר אחר, "אל תקרי כך אלא כך". רש"י מדגיש שכאן אין צורך בכך: "על ה'" כתוב בפסוק, והדרשה נשענת על הנוסח עצמו.</p>
+  </div>
+  <p class="godeep">למה רש"י מדגיש שכאן אין "אל תקרי"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>על מה דיברה חנה לפי הדרשה של "מדברת על לבה"?</summary><p>על הדדים שעל לבה, שנבראו כדי להניק.</p></details>
+  <details><summary>מה התיקון למי שהתענה בשבת?</summary><p>לשבת בתענית נוספת, לפי רש"י למחרת.</p></details>
+  <details><summary>מאיזו מילה לומדים שחנה הטיחה דברים כלפי מעלה?</summary><p>"ותתפלל על ה'", ולא "אל ה'".</p></details>
+  <details class="deepq"><summary>לפי רבנו חננאל, באיזו תענית בשבת מדובר?</summary><p>בתענית חלום.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>תוכחה וחשד:</b> מי שרואה דבר לא ראוי מוכיח. הנחשד מודיע שאין בו. והחושד שטעה מפייס ומברך.</li>
+      <li><b>שיכור שמתפלל:</b> כאילו עובד עבודה זרה, בגזרה שווה של "בליעל".</li>
+      <li><b>"ה' צבאות":</b> חנה הראשונה שקראה כך, וטענה: מכל הצבאות, קשה לתת בן אחד?</li>
+      <li><b>"אם ראה תראה":</b> התוכנית של חנה להסתתר ולשתות מי סוטה מתאימה לרבי ישמעאל. לרבי עקיבא הכפילות היא כלשון בני אדם.</li>
+      <li><b>"אמתך" ו"זרע אנשים":</b> שלוש מצוות שהאשה נבדקת בהן, וארבעה פירושים לבן שביקשה.</li>
+      <li><b>ארבע אמות ושמואל:</b> אסור לשבת ליד המתפלל. שמואל הורה שחיטה בזר לפני עלי, וחנה הצילה אותו.</li>
+      <li><b>תענית בשבת:</b> קורעים גזר דין, אבל נפרעים על עונג שבת, והתיקון הוא תענית נוספת.</li>
+      <li><b>נשאר פתוח:</b> מניין שהקדוש ברוך הוא הודה לאליהו? העמוד הבא פותח בתשובה.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>דבר שאינו הגון</td><td>דבר שאינו ראוי</td></tr>
+      <tr><td>איכא דאמרי</td><td>יש אומרים</td></tr>
+      <tr><td>לכף זכות · לכף חובה</td><td>לצד הזכות · לצד החובה, כשדנים מעשה של אדם</td></tr>
+      <tr><td>הניחא למאן דאמר</td><td>זה מסתדר לפי מי שאומר</td></tr>
+      <tr><td>מאי איכא למימר</td><td>מה יש לומר</td></tr>
+      <tr><td>פלסתר</td><td>שקר</td></tr>
+      <tr><td>דברה תורה כלשון בני אדם</td><td>התורה מדברת כדרך שאנשים מדברים, ולא כל כפילות באה ללמד</td></tr>
+      <tr><td>גברא בגוברין</td><td>אדם בין אנשים, אדם חשוב</td></tr>
+      <tr><td>מנא לך הא</td><td>מניין לך זאת</td></tr>
+      <tr><td>מורה הלכה בפני רבו</td><td>פוסק הלכה בנוכחות מי שלימד אותו</td></tr>
+      <tr><td>שבקי לי</td><td>עזבי אותי</td></tr>
+      <tr><td>מאי תקנתיה</td><td>מה התיקון שלו</td></tr>
+      <tr><td>הטיחה דברים כלפי מעלה</td><td>דיברה בחריפות כלפי הקדוש ברוך הוא</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-31a.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-33a.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-33a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "דבר שאינו הגון צריך להוכיחו ותען חנה ותאמר לא אדני אמר עולא ואיתימא רבי יוסי ברבי חנינא אמרה ליה לא אדון אתה בדבר זה ולא רוח הקודש שורה עליך שאתה חושדני בדבר זה", false, ""], ["G2", "איכא דאמרי הכי אמרה ליה לא אדון אתה לאו איכא שכינה ורוח הקודש גבך שדנתני לכף חובה ולא דנתני לכף זכות מי לא ידעת דאשה קשת רוח אנכי", false, ""], ["G3", "ויין ושכר לא שתיתי אמר רבי אלעזר מכאן לנחשד בדבר שאין בו שצריך להודיעו", false, ""], ["G4", "אל תתן את אמתך לפני בת בליעל אמר רבי אלעזר מכאן לשכור שמתפלל כאלו עובד ע\"ז כתיב הכא לפני בת בליעל וכתיב התם (דברים יג, יד) יצאו אנשים בני בליעל מקרבך מה להלן ע\"ז אף כאן ע\"ז", false, ""], ["G5", "ויען עלי ויאמר לכי לשלום אמר רבי אלעזר מכאן לחושד את חברו בדבר שאין בו שצריך לפייסו ולא עוד אלא שצריך לברכו שנאמר ואלהי ישראל יתן את שלתך:", false, ""], ["G6", "ותדר נדר ותאמר ה' צבאות אמר רבי אלעזר מיום שברא הקב\"ה את עולמו לא היה אדם שקראו להקב\"ה צבאות עד שבאתה חנה וקראתו צבאות", true, ""], ["G7", "אמרה חנה לפני הקב\"ה רבש\"ע מכל צבאי צבאות שבראת בעולמך קשה בעיניך שתתן לי בן אחד", false, ""], ["G8", "משל למה הדבר דומה למלך בשר ודם שעשה סעודה לעבדיו בא עני אחד ועמד על הפתח אמר להם תנו לי פרוסה אחת ולא השגיחו עליו דחק ונכנס אצל המלך א\"ל אדוני המלך מכל סעודה שעשית קשה בעיניך ליתן לי פרוסה אחת:", false, ""], ["G9", "אם ראה תראה א\"ר אלעזר אמרה חנה לפני הקב\"ה רבש\"ע אם ראה מוטב ואם לאו תראה", true, ""], ["G10", "אלך ואסתתר בפני אלקנה בעלי וכיון דמסתתרנא משקו לי מי סוטה ואי אתה עושה תורתך פלסתר שנאמר (במדבר ה, כח) ונקתה ונזרעה זרע", false, ""], ["G11", "הניחא למאן דאמר אם היתה עקרה נפקדת שפיר אלא למאן דאמר אם היתה יולדת בצער יולדת בריוח נקבות יולדת זכרים שחורים יולדת לבנים קצרים יולדת ארוכים מאי איכא למימר", false, ""], ["G12a", "דתניא ונקתה ונזרעה זרע מלמד שאם היתה עקרה נפקדת דברי ר' ישמעאל א\"ל רבי עקיבא אם כן ילכו כל העקרות כולן ויסתתרו וזו שלא קלקלה נפקדת", false, ""], ["G12b", "אלא מלמד שאם היתה יולדת בצער יולדת בריוח קצרים יולדת ארוכים שחורים יולדת לבנים אחד יולדת שנים", false, ""], ["G13", "מאי אם ראה תראה דברה תורה כלשון בני אדם:", false, ""], ["G14", "בעני אמתך אל תשכח את אמתך ונתתה לאמתך", true, ""], ["G15", "א\"ר יוסי בר' חנינא ג' אמתות הללו למה אמרה חנה לפני הקב\"ה רבש\"ע שלשה בדקי מיתה בראת באשה ואמרי לה שלשה דבקי מיתה ואלו הן נדה וחלה והדלקת הנר כלום עברתי על אחת מהן:", false, ""], ["G16", "נתתה לאמתך זרע אנשים", false, ""], ["G17a", "מאי זרע אנשים אמר רב גברא בגוברין ושמואל אמר זרע שמושח שני אנשים ומאן אינון שאול ודוד", false, ""], ["G17b", "ורבי יוחנן אמר זרע ששקול כשני אנשים ומאן אינון משה ואהרן שנאמר (תהלים צט, ו) משה ואהרן בכהניו ושמואל בקוראי שמו רבנן אמרי זרע אנשים זרע שמובלע בין אנשים", false, ""], ["G18", "כי אתא רב דימי אמר לא ארוך ולא גוץ ולא קטן ולא אלם ולא צחור ולא גיחור ולא חכם ולא טפש:", false, ""], ["G19", "אני האשה הנצבת עמכה בזה אמר ריב\"ל מכאן שאסור לישב בתוך ארבע אמות של תפלה:", true, ""], ["G20", "אל הנער הזה התפללתי א\"ר אלעזר שמואל מורה הלכה לפני רבו היה שנאמר וישחטו את הפר ויביאו את הנער אל עלי משום דוישחטו את הפר הביאו הנער אל עלי", true, ""], ["G21a", "אלא אמר להן עלי קראו כהן ליתי ולשחוט חזנהו שמואל דהוו מהדרי בתר כהן למישחט אמר להו למה לכו לאהדורי בתר כהן למישחט שחיטה בזר כשרה", false, ""], ["G21b", "אייתוהו לקמיה דעלי אמר ליה מנא לך הא אמר ליה מי כתיב ושחט הכהן והקריבו הכהנים כתיב מקבלה ואילך מצות כהונה מכאן לשחיטה שכשרה בזר", false, ""], ["G22a", "אמר ליה מימר שפיר קא אמרת מיהו מורה הלכה בפני רבך את וכל המורה הלכה בפני רבו חייב מיתה", false, ""], ["G22b", "אתיא חנה וקא צוחה קמיה אני האשה הנצבת עמכה בזה וגו' אמר לה שבקי לי דאענשיה ובעינא רחמי ויהיב לך רבא מיניה אמרה ליה אל הנער הזה התפללתי:", false, ""], ["G23", "וחנה היא מדברת על לבה אמר רבי אלעזר משום רבי יוסי בן זמרא על עסקי לבה אמרה לפניו רבונו של עולם כל מה שבראת באשה לא בראת דבר אחד לבטלה עינים לראות ואזנים לשמוע חוטם להריח פה לדבר ידים לעשות בהם מלאכה רגלים להלך בהן דדים להניק בהן דדים הללו שנתת על לבי למה לא להניק בהן תן לי בן ואניק בהן:", true, ""], ["G24", "ואמר רבי אלעזר משום רבי יוסי בן זמרא כל היושב בתענית בשבת קורעין לו גזר דינו של שבעים שנה ואף על פי כן חוזרין ונפרעין ממנו דין עונג שבת", true, ""], ["G25", "מאי תקנתיה אמר רב נחמן בר יצחק ליתיב תעניתא לתעניתא:", false, ""], ["G26", "ואמר רבי אלעזר חנה הטיחה דברים כלפי מעלה שנאמר ותתפלל על ה' מלמד שהטיחה דברים כלפי מעלה", true, ""], ["G27", "ואמר רבי אלעזר אליהו הטיח דברים כלפי מעלה שנאמר (מלכים א יח, לז) ואתה הסבות את לבם אחורנית א\"ר שמואל בר רבי יצחק מנין שחזר הקב\"ה והודה לו לאליהו", false, ""]], "R": [["R1", "שצריך להודיעו", "הנחשד צריך לנקות את עצמו ולהודיע את חושדו שאין בו אותו דבר מגונה:", false], ["R2", "לפני בת בליעל", "אל תתנני כבת בליעל לחשדני בשכרות:", false], ["R3", "ואסתתר", "אתייחד עם אחרים ויחשדני בעלי:", false], ["R4", "פלסתר", "שקר:", false], ["R5", "שלש אמתות", "דריש להו לשון מיתה:", false], ["R6", "בדקי מיתה", "שהאשה נבדקת בהן בשעת הסכנה שאם ימצא בה אחד מהם תמות:", false], ["R7", "נדה וחלה והדלקת נר", "של שבת על ג' עברות הללו נשים מתות וטעמא יליף במסכת שבת (ד' לא:):", false], ["R8", "שמובלע בין אנשים", "רב דימי מפרש לה לא ארוך ולא גוץ וכו':", false], ["R9", "אלם", "פי' עב:", false], ["R10", "צחור", "רו\"ש בלע\"ז:", false], ["R11", "גיחור", "שהוא לבן יותר מדאי:", false], ["R12", "ולא חכם", "יותר מדאי שלא יהיה תימה בעיני הבריות ומתוך שנדברין בו שולטת בו עין הרע:", false], ["R13", "הנצבת עמכה", "משמע אף הוא עמה בעמידה:", false], ["R14", "אל הנער הזה", "על זה ולא לאחר מכאן שחטא לעלי ורצה לענשו ולהתפלל שינתן לה בן אחר:", false], ["R15", "והקריבו הכהנים", "אמרו בפרק קמא דחגיגה (ד' יא.) והקריבו זה קבלת הדם:", false], ["R16", "של שבעים שנה", "כלומר אפילו נגזר עליו מנעוריו לפי שתענית קשה בשבת לפי שהכל מתענגים בו והוא מתענה:", false], ["R17", "תעניתא לתעניתא", "יתענה למחר:", false], ["R18", "ותתפלל על ה'", "כך כתוב הוא במקרא ולא גרסינן הכא אל תקרי:", false], ["R19", "שחזר והודה לאליהו", "לדבריו הודה לאחר זמן בנבואת נביאים אחרים:", false]], "T": [["T1", "דבר שאינו הגון", "פירוש אע\"ג דליכא איסורא דאורייתא דאי איכא איסורא דאורייתא פשיטא הוכח תוכיח כתיב (ויקרא י״ט:י״ז):", false], ["T2", "גברא בגוברין", "פי' אדם שיהא חשוב לימנות בין אנשים:", false], ["T3", "[עמכה]", "עמך משמע בתוך ארבע אמות משום דכתיב עמכה מלא בה\"א כלומר שלא היה יושב בתוך ארבע אמות שלה כי אם בחמישית:", false], ["T4", "מכאן שאסור לישב בד' אמות של תפלה", "בין מלפניו (בין מלאחריו) ובין מן הצדדין ופירשו תשובת הגאונים דוקא ביושב ובטל אבל אם היה עוסק בק\"ש ובברכותיה וכיוצא בהם אפילו יושב שפיר דמי:", false], ["T5", "מורה הלכה בפני רבך את", "ואף ע\"פ שלא למד עדיין בפניו מ\"מ גדול הדור היה ובא ללמוד לפניו:", false], ["T6", "כל היושב בתענית בשבת", "פירש ר\"ח בתענית חלום וכן איתא במדרש תהלים וכשיושב בתענית חלום בשבת פי' בה\"ג שאומר עננו באלהי נצור ואפילו קובע ברכה לעצמו כיון שאינו בתוך י\"ח:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': ממשיכים בפסוקים של חנה", "x": "העמוד הקודם נגמר באמצע דברי רבי אלעזר על הפסוק \"עד מתי תשתכרין\": מכאן למי שרואה בחברו. כאן המשפט נגמר, והגמרא ממשיכה לדרוש את הפסוקים של חנה ועלי, פסוק אחר פסוק. בסוף העמוד עוברים לדברים שחנה ואליהו אמרו כלפי מעלה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1"], "t": "צריך להוכיח", "x": "המשפט של רבי אלעזר נגמר: מי שרואה בחברו \"דבר שאינו הגון\", דבר שאינו ראוי, צריך להוכיח אותו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1"], "t": "התוספות: גם בלי איסור תורה", "x": "התוספות מפרשים שמדובר אפילו בדבר שאין בו איסור מן התורה. שאם יש בו איסור תורה, פשוט שצריך להוכיח, שהרי כתוב \"הוכח תוכיח\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1"], "t": "\"לא אדני\": התשובה של חנה", "x": "\"ותען חנה ותאמר לא אדני\". עולא, ויש אומרים רבי יוסי ברבי חנינא, מפרש: חנה אמרה לעלי, אינך אדון בדבר הזה, ורוח הקודש אינה שורה עליך, שאתה חושד בי בדבר כזה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "לשון אחרת של התשובה", "x": "\"איכא דאמרי\", יש אומרים שכך אמרה לו: אינך אדון. האם אין אצלך שכינה ורוח הקודש, שדנת אותי לכף חובה ולא לכף זכות? וכי לא ידעת שאני \"אשה קשת רוח\", אשה שרוחה קשה עליה?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R1"], "t": "מי שנחשד צריך להודיע", "x": "\"ויין ושכר לא שתיתי\". רבי אלעזר אומר: מכאן שמי שנחשד בדבר שאין בו, צריך להודיע. רש\"י מפרש: הוא צריך לנקות את עצמו ולהודיע למי שחושד בו שאין בו אותו דבר מגונה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R2"], "t": "שיכור שמתפלל", "x": "\"אל תתן את אמתך לפני בת בליעל\". רבי אלעזר אומר: מכאן ששיכור שמתפלל, כאילו עובד עבודה זרה. כאן נאמר \"בת בליעל\", ושם נאמר \"יצאו אנשים בני בליעל מקרבך\". מה שם עבודה זרה, אף כאן עבודה זרה. רש\"י מפרש את דברי חנה: אל תחשוב אותי כבת בליעל, לחשוד בי בשכרות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "מי שחשד צריך לפייס ולברך", "x": "\"ויען עלי ויאמר לכי לשלום\". ומן הצד השני דורש רבי אלעזר: החושד את חברו בדבר שאין בו חייב לפייס אותו. ולא רק זה, אלא שצריך גם לברך אותו, שנאמר \"ואלהי ישראל יתן את שלתך\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6"], "t": "הראשונה שקראה \"צבאות\"", "x": "\"ותדר נדר ותאמר ה' צבאות\". רבי אלעזר אומר: מיום שברא הקדוש ברוך הוא את עולמו, לא היה אדם שקרא לו \"צבאות\", עד שבאה חנה וקראה לו כך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "מה ביקשה במילה הזו", "x": "חנה אמרה לפני הקדוש ברוך הוא: ריבונו של עולם, מכל צבאות הצבאות שבראת בעולמך, קשה בעיניך לתת לי בן אחד?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8"], "t": "משל: העני בסעודת המלך", "x": "מלך בשר ודם עשה סעודה לעבדיו. בא עני, עמד בפתח, וביקש פרוסה אחת, ולא שמו לב אליו. הוא נדחק ונכנס אל המלך ואמר: אדוני המלך, מכל הסעודה שעשית, קשה בעיניך לתת לי פרוסה אחת?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "\"אם ראה תראה\"", "x": "רבי אלעזר דורש את הכפילות במילים \"אם ראה תראה\". חנה אמרה: ריבונו של עולם, אם תראה, מוטב. ואם לא, \"תראה\", כלומר אני אגרום לכך שתראה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R3", "R4"], "t": "התוכנית של חנה", "x": "אלך ואסתתר עם אחרים לפני אלקנה בעלי. מכיוון שהסתתרתי, ישקו אותי מי סוטה, ואתה לא תעשה את התורה שלך \"פלסתר\", שקר. שהרי נאמר על אשה שנמצאה טהורה \"ונקתה ונזרעה זרע\".", "a": "רש\"י מפרש \"ואסתתר\": אתייחד עם אחרים, ובעלי יחשוד בי."}, {"w": "גמרא", "cols": false, "hl": ["G11"], "t": "קושיה: לפי מי זה עובד?", "x": "\"הניחא\", זה מסתדר לפי מי שאומר שאשה כזאת, אם הייתה עקרה, נפקדת ויולדת. אבל לפי מי שאומר שהפסוק מבטיח רק לידה טובה יותר, למשל שאם ילדה בצער תלד בריווח, מה אפשר לומר? הרי חנה לא ילדה כלל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12a"], "t": "רבי ישמעאל ורבי עקיבא", "x": "ברייתא. \"ונקתה ונזרעה זרע\" מלמד שאם הייתה עקרה, נפקדת. אלה דברי רבי ישמעאל. אמר לו רבי עקיבא: אם כן, ילכו כל העקרות ויסתתרו, וזו שלא קלקלה תיפקד?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12b"], "t": "הפירוש של רבי עקיבא", "x": "אלא הפסוק מלמד שאם הייתה יולדת בצער, תלד בריווח. קצרים, תלד ארוכים. שחורים, תלד לבנים. אחד, תלד שניים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13"], "t": "ולפי רבי עקיבא, מה הכפילות?", "x": "לפי רבי עקיבא, שאינו מקבל את הדרשה, מה לומדים מן הכפילות \"אם ראה תראה\"? התשובה: \"דברה תורה כלשון בני אדם\". התורה דיברה כדרך שאנשים מדברים, והכפילות אינה באה ללמד דבר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "G15"], "t": "שלוש פעמים \"אמתך\"", "x": "בפסוק של חנה נאמר שלוש פעמים \"אמתך\". רבי יוסי ברבי חנינא שואל למה. חנה אמרה: ריבונו של עולם, שלושה \"בדקי מיתה\" בראת באשה, ויש אומרים \"דבקי מיתה\": נידה, חלה והדלקת הנר. האם עברתי על אחת מהן?", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G15", "R5", "R6", "R7"], "t": "רש\"י: מהם \"בדקי מיתה\"", "x": "רש\"י מסביר שהוא דורש את \"אמתך\" מלשון מיתה. האשה נבדקת בשלושת הדברים האלה בשעת סכנה, ואם יימצא בה אחד מהם, תמות. הנר הוא נר של שבת, והטעם נלמד במסכת שבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "G17a"], "t": "מהו \"זרע אנשים\"", "x": "\"ונתתה לאמתך זרע אנשים\". רב אומר: \"גברא בגוברין\", אדם בין אנשים. שמואל אומר: זרע שימשח שני אנשים, ומי הם? שאול ודוד.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G17a", "T2"], "t": "התוספות: \"גברא בגוברין\"", "x": "אדם שיהיה חשוב, כך שימנו אותו בין האנשים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17b"], "t": "עוד שני פירושים", "x": "לדעת רבי יוחנן הכוונה לבן ששקול כנגד שניים, כמשה ואהרן, שנאמר \"משה ואהרן בכהניו ושמואל בקוראי שמו\". וחכמים אומרים: זרע שנבלע בין האנשים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17b", "G18", "R8"], "t": "רב דימי: מה פירוש \"נבלע בין אנשים\"", "x": "רש\"י מציין שרב דימי מפרש את דברי החכמים. כשבא רב דימי אמר: לא ארוך ולא גוץ, לא קטן ולא \"אלם\", לא \"צחור\" ולא \"גיחור\", לא חכם ולא טיפש.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G18", "R9", "R10", "R11", "R12"], "t": "רש\"י: המילים הקשות", "x": "\"אלם\" פירושו עבה. את \"צחור\" רש\"י מתרגם במילה בלעז, ו\"גיחור\" הוא לבן יותר מדי. ו\"לא חכם\" פירושו לא חכם יותר מדי, כדי שלא יהיה פלא בעיני הבריות, שמתוך שמדברים בו שולטת בו עין הרע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19", "R13"], "t": "לא לשבת ליד המתפלל", "x": "\"אני האשה הנצבת עמכה בזה\". רבי יהושע בן לוי אומר: מכאן שאסור לשבת בתוך ארבע אמות של תפילה. רש\"י מסביר: \"הנצבת עמכה\" משמע שגם עלי עמד יחד איתה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G19", "T3"], "t": "התוספות: הה\"א של \"עמכה\"", "x": "\"עמך\" משמע בתוך ארבע אמות. אבל כתוב \"עמכה\", עם אות ה\"א, האות החמישית. כלומר עלי לא ישב בתוך ארבע האמות שלה, אלא באמה החמישית.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G19", "T4"], "t": "התוספות: מתי הדבר אסור", "x": "האיסור הוא מלפני המתפלל וגם מן הצדדים. ובתשובות הגאונים פירשו: דווקא מי שיושב ובטל. אבל מי שעוסק בקריאת שמע ובברכותיה וכדומה, מותר לו לשבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20"], "t": "שמואל הורה הלכה לפני רבו", "x": "רבי אלעזר דורש מן המילים \"אל הנער הזה\" שבדברי חנה: שמואל הורה הלכה לפני רבו. שנאמר \"וישחטו את הפר ויביאו את הנער אל עלי\". הגמרא שואלת: וכי מפני ששחטו את הפר הביאו את הנער אל עלי?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21a"], "t": "מה קרה שם", "x": "עלי אמר להם: קראו כהן, שיבוא וישחט. שמואל ראה שהם מחפשים כהן לשחיטה, ואמר להם: למה לכם לחפש כהן? שחיטה כשרה גם בזר, באדם שאינו כהן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21b", "R15"], "t": "הראיה של שמואל", "x": "הביאו אותו לפני עלי, ושאל אותו: \"מנא לך הא\", מניין לך זאת? אמר לו: וכי כתוב \"ושחט הכהן\"? כתוב \"והקריבו הכהנים\". מקבלת הדם ואילך היא מצוות כהונה, ומכאן שהשחיטה כשרה בזר. רש\"י מציין שבמסכת חגיגה נאמר ש\"והקריבו\" זו קבלת הדם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22a"], "t": "התגובה של עלי", "x": "אמר לו עלי: יפה אמרת, אבל אתה מורה הלכה בפני רבך, וכל המורה הלכה בפני רבו חייב מיתה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G22a", "T5"], "t": "התוספות: והרי לא היה תלמידו", "x": "התוספות מעירים: שמואל עדיין לא למד לפני עלי. ובכל זאת עלי היה גדול הדור, ושמואל בא ללמוד לפניו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22b", "R14"], "t": "חנה מתחננת", "x": "באה חנה וצעקה לפניו: \"אני האשה הנצבת עמכה בזה\". אמר לה: עזבי אותי ואעניש אותו, ואבקש רחמים, ויתן לך בן גדול ממנו. אמרה לו: \"אל הנער הזה התפללתי\". רש\"י מפרש: על זה התפללתי, ולא על אחר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G23"], "t": "\"מדברת על לבה\"", "x": "רבי אלעזר בשם רבי יוסי בן זמרא דורש: על עניין הלב שלה דיברה. היא אמרה: ריבונו של עולם, מכל מה שבראת באשה, לא בראת דבר אחד לבטלה. עיניים לראות, אוזניים לשמוע, חוטם להריח, פה לדבר, ידיים לעשות מלאכה, רגליים ללכת, ודדים להניק. הדדים שנתת על לבי, למה? לא כדי להניק? תן לי בן, ואניק בהם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G24", "R16"], "t": "תענית בשבת", "x": "ועוד אמר רבי אלעזר בשם רבי יוסי בן זמרא: מי שיושב בתענית בשבת, קורעים לו גזר דין של שבעים שנה. ובכל זאת חוזרים ונפרעים ממנו על שביטל את עונג השבת. רש\"י מפרש: אפילו גזר דין שנגזר עליו מנעוריו, כי התענית בשבת קשה, שהכול מתענגים והוא מתענה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G24", "T6"], "t": "התוספות: באיזו תענית מדובר", "x": "רבנו חננאל פירש: בתענית חלום, וכך גם במדרש תהלים. ומי שמתענה תענית חלום בשבת, בעל הלכות גדולות פירש שהוא אומר \"עננו\" ב\"אלהי נצור\", ואפילו קובע לה ברכה לעצמה, כיוון שאינה בתוך שמונה עשרה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G25", "R17"], "t": "והתיקון", "x": "\"מאי תקנתיה\", מה התיקון שלו? רב נחמן בר יצחק אומר: יתענה תענית בשביל התענית. רש\"י מפרש: יתענה למחרת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G26", "R18"], "t": "חנה \"הטיחה דברים\"", "x": "ועוד אמר רבי אלעזר: חנה \"הטיחה דברים כלפי מעלה\", דיברה בחריפות כלפי הקדוש ברוך הוא. שנאמר \"ותתפלל על ה'\", ולא \"אל ה'\". רש\"י מעיר שכך כתוב בפסוק עצמו, ולא גורסים כאן \"אל תקרי\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G27", "R19"], "t": "גם אליהו", "x": "ועוד אמר רבי אלעזר: גם אליהו הטיח דברים כלפי מעלה, שנאמר \"ואתה הסבת את לבם אחורנית\". רבי שמואל בר רבי יצחק שואל: מניין שהקדוש ברוך הוא חזר והודה לאליהו? רש\"י מפרש: הודה לדבריו לאחר זמן, בנבואה של נביאים אחרים.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "מן הפסוקים של חנה ועלי נלמדו הלכות: להוכיח את מי שעושה דבר שאינו הגון, להודיע כשנחשדים, לפייס ולברך את מי שחשדנו בו, ולא לשבת בתוך ארבע אמות של המתפלל. ראינו את הבקשה של חנה ואת המעשה של שמואל לפני עלי. העמוד הבא פותח בתשובה לשאלה האחרונה: הקדוש ברוך הוא הודה לאליהו בפסוק \"ואשר הרעותי\".", "a": ""}], "audio": "daf-31b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>

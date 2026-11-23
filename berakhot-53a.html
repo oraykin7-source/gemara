@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות, דף נ&quot;ג עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>ברכות, דף נ&quot;ג עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>אלו דברים</span><span>פרק שמיני</span><span>ברכות<b>נג.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="berakhot-51b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-55a.html">העמוד הבא</a></nav>
+<header class="top">
+  <div class="brand">מורה לגמרא · שיעור 103</div>
+  <h1>מסכת ברכות, דף נ&quot;ג עמוד א&#x27;</h1>
+  <p class="sub">פרק שמיני, &quot;אלו דברים&quot;. אור ששבת, אור של נכרי, אור שעשוי להאיר, ונר ובשמים שאין מברכים עליהם.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 6 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. אור ששבת, ואור שנכרי הדליק</a><a href="#u2">2. אור שרואים בדרך</a><a href="#u3">3. מברכים רק על אור שנעשה להאיר</a><a href="#u4">4. אחד מברך לכולם, וביטול בית המדרש</a><a href="#u5">5. נר ובשמים שאינם עשויים לאור ולריח</a><a href="#u6">6. ריח שמריחים בדרך</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4,G5,G6,G7">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>אור ששבת, ואור שנכרי הדליק</h2>
+  <p class="lead">הברייתא אמרה שמברכים במוצאי שבת רק על אור "ששבת". הגמרא מבררת מהו אור כזה, ומשם עוברת לשאלה מתי מברכים על אור שנכרי הדליק.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אי נימא לא שבת מחמת מלאכה</td><td>אם נאמר: "לא שבת" מחמת מלאכה,</td></tr>
+      <tr><td>אפילו ממלאכה דהתירא</td><td>אפילו ממלאכה של היתר,</td></tr>
+      <tr><td>אור של חיה ושל חולה מברכין עליו</td><td>על אור של יולדת ושל חולה מברכים.</td></tr>
+      <tr><td>ששבת מחמת מלאכת עבירה</td><td>ששבת ממלאכה של עבירה.</td></tr>
+      <tr><td>עששית שהיתה דולקת והולכת כל היום כולו</td><td>עששית שהייתה דולקת והולכת כל היום כולו,</td></tr>
+      <tr><td>נכרי שהדליק מישראל וישראל שהדליק מנכרי</td><td>נכרי שהדליק מישראל, וישראל שהדליק מנכרי,</td></tr>
+      <tr><td>נכרי מנכרי אין מברכין עליו</td><td>נכרי מנכרי, אין מברכים עליו.</td></tr>
+      <tr><td>הך איסורא אזל ליה והא אחרינא הוא</td><td>האור האסור הלך לו, וזה אור אחר,</td></tr>
+      <tr><td>ובידא דישראל קא מתילדא</td><td>ובידו של ישראל הוא נולד.</td></tr>
+      <tr><td>המוציא שלהבת לר"ה חייב</td><td>המוציא שלהבת לרשות הרבים, חייב.</td></tr>
+      <tr><td>מה שעקר לא הניח ומה שהניח לא עקר</td><td>מה שעקר לא הניח, ומה שהניח לא עקר.</td></tr>
+      <tr><td>וכי קא מברך אתוספתא דהתירא קא מברך</td><td>וכשהוא מברך, על התוספת של ההיתר הוא מברך.</td></tr>
+      <tr><td>גזרה משום נכרי ראשון ועמוד ראשון</td><td>גזרה משום הנכרי הראשון והשלהבת הראשונה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>מהו "לא שבת":</b> אילו פירושו אור שעשו בו כל מלאכה בשבת, גם מלאכת היתר, לא היו מברכים על אור שדלק לצורך יולדת או חולה. אבל ברייתא אומרת שמברכים עליו. לכן רב נחמן בר יצחק מפרש: "שבת" פירושו ששבת ממלאכת עבירה. עששית שדלקה מערב שבת כל היום, מברכים עליה.</p>
+  <p><b>אור של נכרי:</b> נכרי שהדליק מישראל, וישראל שהדליק מנכרי, מברכים. נכרי שהדליק מנכרי, אין מברכים. הגמרא שואלת: אם הטעם הוא שהאור של הנכרי לא שבת, גם בישראל שהדליק מנכרי האור לא שבת.</p>
+  <p><b>ניסיון ראשון:</b> אולי השלהבת האסורה כבר חלפה, והשלהבת שבידי ישראל היא חדשה? הגמרא דוחה: לפי זה, המוציא שלהבת בשבת לא היה חייב, כי השלהבת שהניח אינה זו שעקר. והרי שנינו שהוא חייב. משמע שהשלהבת נחשבת אותה שלהבת.</p>
+  <p><b>התשובה:</b> האור האסור עדיין קיים, אבל המברך מברך על התוספת, על מה שנוסף באור בהיתר. ובנכרי שהדליק מנכרי, שגם בו יש תוספת, חכמים גזרו שלא לברך.</p>
+  <div data-hl="R2,R3,R4" class="voice r"><span class="tag">רש"י</span><blockquote>עששית – לנטירנ"א:</blockquote><blockquote>שהיתה דולקת והולכת – מע"ש ובבית ישראל:</blockquote><blockquote>למ"ש מברכין – לפי שלא נעבדה בה עבירה שלא הודלקה בשבת:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: העששית היא מין פנס, שדלקה מערב שבת בבית של ישראל. לא נעשתה בה עבירה, כי לא הודלקה בשבת, ולכן מברכים עליה.</p></div>
+  <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>נכרי שהדליק מישראל – משחשכה מ"ש:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הברייתא עוסקת בהדלקה אחרי שהחשיך, במוצאי שבת.</p></div>
+  <div data-hl="R6" class="voice r"><span class="tag">רש"י</span><blockquote>הך איסורא אזלא – מתוך ששלהבת דולקת והולכת קמא קמא פרח ליה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הטענה הייתה שבשלהבת שדולקת והולכת, החלקים הראשונים פורחים ונעלמים, ולכן היא מתחדשת כל הזמן.</p></div>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>גזירה משום נכרי ראשון ועמוד ראשון – אי שרית בנכרי שהדליק מנכרי משחשכה אתי לברוכי בנכרי שהדליק מבעוד יום ובאותו אור עצמו שלא נתוסף משחשכה כגון שמברך עליו סמוך לחשכה מיד:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: אילו התירו לברך על אור שנכרי הדליק מנכרי אחרי שהחשיך, היו באים לברך גם על אור שנכרי הדליק בעוד יום, ועל אותה שלהבת שלא נוסף בה דבר, כגון מי שמברך מיד סמוך לחשכה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>ההוכחה מהוצאת שלהבת</h3>
+    <div data-hl="R7,R8" class="voice r"><span class="tag">רש"י</span><blockquote>המוציא שלהבת לר"ה – בשבת חייב ומוקמינן לה במסכת ביצה כגון דשייפיה לחרס משחא ואתלי בה נורא דגחלת ליכא אלא שלהבת ומשום חרס לא מחייב דלית בה שיעורא:</blockquote><blockquote>מה שעקר לא הניח – והוצאת שבת לא מחייבא עד דאיכא עקירה מרשות זו והנחה ברשות זו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מלאכת הוצאה בשבת מחייבת רק כשיש עקירה מרשות אחת והנחה ברשות אחרת. במסכת ביצה העמידו את הברייתא בחרס שמשחו בשמן והדליקו בו אש. אין שם גחלת אלא שלהבת, ועל החרס עצמו אינו חייב כי אין בו שיעור. החיוב הוא אפוא על השלהבת לבדה.</p></div>
+    <p>אילו השלהבת הייתה מתחלפת כל רגע, לא הייתה כאן עקירה והנחה של אותו דבר. מזה שהוא חייב, הגמרא לומדת שהשלהבת נחשבת דבר אחד מתחילתה ועד סופה. לכן אי אפשר לומר שהאור האסור "הלך לו".</p>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>וכי תימא הך איסורא אזל ליה – ה"מ לאקשויי אי הכי נכרי מנכרי נמי אלא עדיפא מיניה פריך דה"מ לשנויי כדמשני בסמוך:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות שואלים: למה הגמרא לא הקשתה כאן "אם כך, גם נכרי מנכרי"? הם עונים: היא בחרה בקושיה עדיפה, כי את הקושיה מנכרי מנכרי אפשר היה לתרץ בגזרה, כמו שהגמרא מתרצת בהמשך.</p></div>
+    <h3>גזרה אחת</h3>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>גזירה משום נכרי ראשון ונכרי ראשון משום עמוד ראשון וכו' – חדא גזרה היא דגזרו חכמים כל אש נכרי שביד הנכרי דאי לא הא לא קיימא הא אבל נכרי שהדליק מישראל וישראל מנכרי מברכין עליו והכי קיימא לן:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות: "נכרי ראשון" ו"עמוד ראשון" הם גזרה אחת. חכמים גזרו על כל אש של נכרי שביד נכרי, כי האחת אינה עומדת בלי השנייה. אבל כשאחד מהם ישראל, מברכים.</p></div>
+  </div>
+  <p class="godeep">למה גזרו חכמים דווקא על נכרי שהדליק מנכרי? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "שבת" לפי רב נחמן בר יצחק?</summary><p>ששבת ממלאכה של עבירה.</p></details>
+  <details><summary>על איזה אור של נכרי אין מברכים?</summary><p>על אור שנכרי הדליק מנכרי.</p></details>
+  <details><summary>על מה מברך מי שמברך על אור שהדליק ישראל מנכרי?</summary><p>על התוספת, מה שנוסף באור בהיתר.</p></details>
+  <details class="deepq"><summary>מה מוכיחה הברייתא על המוציא שלהבת לרשות הרבים?</summary><p>שהשלהבת נחשבת אותה שלהבת, ואינה מתחלפת כל רגע.</p></details>
+  <details class="deepq"><summary>לפי רש"י, ממה חששו בגזרה?</summary><p>שיברכו גם על אור שנכרי הדליק בעוד יום, ועל אותה שלהבת שלא נוסף בה דבר.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G8,G9,G10,G11,G12,G13">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>אור שרואים בדרך</h2>
+  <p class="lead">מי שרואה אור מחוץ לעיר אינו יודע מי הדליק אותו. הברייתות קובעות מתי הוא מברך: לפי רוב התושבים, ולפי מי שמחזיק באור.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>היה מהלך חוץ לכרך וראה אור</td><td>היה הולך מחוץ לעיר וראה אור:</td></tr>
+      <tr><td>אם רוב נכרים אינו מברך</td><td>אם רוב נכרים, אינו מברך;</td></tr>
+      <tr><td>אם רוב ישראל מברך</td><td>אם רוב ישראל, מברך.</td></tr>
+      <tr><td>הא גופא קשיא</td><td>הדבר עצמו קשה.</td></tr>
+      <tr><td>הא מחצה על מחצה מברך</td><td>משמע: מחצה על מחצה, מברך.</td></tr>
+      <tr><td>בדין הוא דאפי' מחצה על מחצה נמי מברך</td><td>לפי הדין, אפילו מחצה על מחצה מברך,</td></tr>
+      <tr><td>תנא סיפא רוב ישראל</td><td>שנה בסוף "רוב ישראל".</td></tr>
+      <tr><td>וראה תינוק ואבוקה בידו</td><td>וראה תינוק ולפיד בידו,</td></tr>
+      <tr><td>בודק אחריו</td><td>בודק אחריו:</td></tr>
+      <tr><td>מאי איריא תינוק אפי' גדול נמי</td><td>למה דווקא תינוק? גם מבוגר!</td></tr>
+      <tr><td>הכא בסמוך לשקיעת החמה עסקי'</td><td>כאן עוסקים סמוך לשקיעת החמה.</td></tr>
+      <tr><td>גדול מוכחא מילתא דודאי נכרי הוא</td><td>מבוגר, הדבר מוכח שוודאי נכרי הוא.</td></tr>
+      <tr><td>תינוק אימר ישראל הוא אקרי ונקיט</td><td>תינוק, שמא ישראל הוא, נזדמן לו ואחז.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הולכים אחר הרוב:</b> מי שרואה אור מחוץ לעיר, אם רוב התושבים נכרים, אינו מברך. אם רובם ישראל, מברך.</p>
+  <p><b>הסתירה בברייתא:</b> מן הרישא משמע שבמחצה על מחצה מברך, ומן הסיפא משמע שאינו מברך. הגמרא מכריעה: לפי הדין, במחצה על מחצה מברך. הסיפא נאמרה "רוב ישראל" רק כדי להקביל ללשון הרישא.</p>
+  <p><b>תינוק ואבוקה:</b> מי שרואה תינוק עם לפיד, בודק אם הוא ישראל או נכרי. הגמרא שואלת למה דווקא תינוק. רב יהודה בשם רב עונה: מדובר סמוך לשקיעת החמה. מבוגר שמחזיק אש בשעה כזו ודאי נכרי. תינוק אולי ישראל, שנזדמן לו לפיד והחזיק בו.</p>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>גדול מוכחא מלתא דנכרי הוא – ואין צריך לבדוק אחריו דאי איתא דישראל הוא לא היה ממהר סמוך לחשכה מיד לאחוז האור בידו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: במבוגר אין צורך לבדוק, כי ישראל לא היה ממהר לאחוז אש בידו מיד סמוך לחשכה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך הגמרא קוראת ברייתא</h3>
+    <p>הגמרא מדייקת מכל צד של הברייתא מה הדין במקרה שלא נאמר. כשהדיוקים סותרים, היא קובעת איזה מהם הוא הדין, ומסבירה את הצד השני כלשון שנבחרה כדי להקביל. כך "איידי" מסביר מילים שאינן באות ללמד דין.</p>
+    <p>בתינוק ובמבוגר ההבדל אינו בדין אלא בראיות. מבוגר שמחזיק אש סמוך לשקיעה מראה במעשיו שאינו ישראל. בתינוק אין ראיה כזו, ולכן צריך לבדוק.</p>
+  </div>
+  <p class="godeep">למה מבוגר שמחזיק אש אינו צריך בדיקה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הדין במחצה נכרים ומחצה ישראל?</summary><p>מברך.</p></details>
+  <details><summary>למה הברייתא אמרה בסיפא "רוב ישראל"?</summary><p>כדי להקביל ללשון הרישא, "רוב נכרים".</p></details>
+  <details><summary>מתי מדובר במקרה של התינוק והאבוקה?</summary><p>סמוך לשקיעת החמה.</p></details>
+  <details class="deepq"><summary>למה מבוגר ודאי נכרי, לפי רש"י?</summary><p>כי ישראל לא היה ממהר לאחוז אש בידו מיד סמוך לחשכה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G14,G15,G16,G17,G18,G19,G20,G21,G22">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>מברכים רק על אור שנעשה להאיר</h2>
+  <p class="lead">ברכת האור במוצאי שבת היא על אור שנהנים ממנו. לכן הגמרא בודקת אור של כבשן, של תנור ושל בית הכנסת: מתי הוא עשוי להאיר ומתי לצורך אחר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אם עבה כפי הכבשן מברך עליו</td><td>אם הוא עבה כמו פי הכבשן, מברך עליו;</td></tr>
+      <tr><td>ואם לאו אינו מברך עליו</td><td>ואם לא, אינו מברך עליו.</td></tr>
+      <tr><td>תני חדא אור של כבשן מברכין עליו</td><td>ברייתא אחת: על אור של כבשן מברכים,</td></tr>
+      <tr><td>ותניא אידך אין מברכין עליו</td><td>וברייתא אחרת: אין מברכים עליו.</td></tr>
+      <tr><td>לא קשיא הא בתחלה הא לבסוף</td><td>אין סתירה: זו בתחילה, וזו בסוף.</td></tr>
+      <tr><td>אור של תנור ושל כירים</td><td>אור של תנור ושל כיריים.</td></tr>
+      <tr><td>אור של בית הכנסת ושל בית המדרש</td><td>אור של בית הכנסת ושל בית המדרש.</td></tr>
+      <tr><td>הא דאיכא אדם חשוב הא דליכא אדם חשוב</td><td>זו כשיש אדם חשוב, וזו כשאין אדם חשוב.</td></tr>
+      <tr><td>הא דאיכא חזנא הא דליכא חזנא</td><td>זו כשיש שמש, וזו כשאין שמש.</td></tr>
+      <tr><td>הא דאיכא סהרא והא דליכא סהרא</td><td>זו כשיש אור ירח, וזו כשאין אור ירח.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הכלל:</b> רש"י מסביר שמברכים רק על אור שנעשה להאיר. אור עבה כמו האור שיוצא מפי כבשן הסיד הוא אור חזק, שמשתמשים לאורו. אור חלש נעשה לבשל.</p>
+  <p><b>כבשן, תנור וכיריים:</b> בכל אחד מהם יש שתי ברייתות סותרות, והתשובה היא: בתחילה או בסוף. בתחילה האש היא לצורך העבודה, ובסוף מדליקים אש גם כדי להאיר.</p>
+  <p><b>בית הכנסת ובית המדרש:</b> גם כאן שתי ברייתות סותרות, והגמרא מציעה שלוש תשובות. א', יש אדם חשוב או אין. ב', יש שמש שאוכל שם או אין. ג', יש אור ירח או אין. בכל תשובה השאלה היא אם האור הודלק כדי להאיר או רק לכבוד.</p>
+  <div data-hl="R11,R12" class="voice r"><span class="tag">רש"י</span><blockquote>כפי הכבשן – ששורפים בו אבנים לסיד אם עבה כאור היוצא מפי הכבשן נהורא בריא היא ולהשתמש לאורה היא נעשית:</blockquote><blockquote>ואם לאו – לאו לאורה נעשית אלא לבשל ואין מברכין אלא על שנעשה להאיר:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הכבשן הוא מקום ששורפים בו אבנים לסיד. אור עבה כמו פי הכבשן נעשה להאיר; אור אחר נעשה לבשל, ואין מברכים אלא על אור שנעשה להאיר.</p></div>
+  <div data-hl="R13,R14" class="voice r"><span class="tag">רש"י</span><blockquote>בתחלה – בתחלת שרפת אבנים אין האור להאיר:</blockquote><blockquote>בסוף – לאחר שנשרפו האבנים רובן מדליקין אור גדול מלמעלה למרק שרפת האבנים ומשתמשין נמי לאורה:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: בתחילת שריפת האבנים האור אינו להאיר. בסוף, כשרוב האבנים נשרפו, מדליקים אש גדולה מלמעלה לגמור את השריפה, ומשתמשים גם לאורה.</p></div>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>של תנור – בסוף מברכין עליו לאחר שהוסק התנור והפת בתוכה מדליקין קסמין דקין בפיו להאיר ולקלוט חומו לתוכו וכיון דמשתמש לאורו מברכין עליו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: בתנור, בסוף, אחרי שהוסק והפת בתוכו, מדליקים קיסמים דקים בפיו כדי להאיר וכדי לשמור את החום בפנים, ולכן מברכים.</p></div>
+  <div data-hl="R16,R17" class="voice r"><span class="tag">רש"י</span><blockquote>אור של בית הכנסת – בדאיכא אדם חשוב לכבודו הדליקוה ולא שצריך לאור אלא לכבוד בעלמא ואין מברכין עליו:</blockquote><blockquote>ליכא אדם חשוב – להאיר להם הדליקוה ומברכין:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: כשיש אדם חשוב, הדליקו לכבודו, ואין מברכים. כשאין, הדליקו להאיר, ומברכים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>רש"י ורבנו חננאל באדם חשוב</h3>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>הא דאיכא אדם חשוב – אם כן משום כבודו של חשוב ולא לאורה כך פרש"י ור"ח פירש איפכא באדם חשוב לאורה ובדליכא אדם חשוב עשוי לכבוד בית הכנסת:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מביאים את פירוש רש"י, ואחריו את רבנו חננאל, שמפרש להפך: כשיש אדם חשוב, האור הוא להאיר לו; כשאין, האור הוא לכבוד בית הכנסת.</p></div>
+    <p>שני הפירושים מסכימים על העיקרון: מברכים על אור שנועד להאיר, ולא על אור שנועד לכבוד. הם חולקים רק במציאות: מתי האור בבית הכנסת נועד לזה ומתי לזה.</p>
+    <h3>שלוש התשובות זו על גבי זו</h3>
+    <div data-hl="R18,R19" class="voice r"><span class="tag">רש"י</span><blockquote>הא והא דאיכא אדם חשוב – ואי איכא חזנא שמש שאוכל בבית הכנסת אף לאורה עשויה שיאכל החזן לאורה ומברכין:</blockquote><blockquote>הא והא דאיכא חזנא – ואיכא סהרא שהחזן יכול לאכול לאורה אין מברכין על הנר שלא להאיר הדליקוה אלא לכבוד אדם חשוב:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: כשיש שמש שאוכל בבית הכנסת, האור עשוי גם כדי שיאכל לאורו, ומברכים. אבל אם יש אור ירח, השמש יכול לאכול לאורו, והנר הודלק רק לכבוד האדם החשוב, ואין מברכים.</p></div>
+    <p>כל תשובה מקבלת את ההנחה של קודמתה ומוסיפה עליה פרט. בשנייה יש אדם חשוב בשתי הברייתות, ובשלישית יש גם שמש בשתיהן. כך הגמרא מראה שאותו עיקרון מכריע גם כשהמקרים קרובים מאוד.</p>
+  </div>
+  <p class="godeep">במה חולקים רש"י ורבנו חננאל באור של בית הכנסת? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>על איזה אור מברכים, לפי רש"י?</summary><p>רק על אור שנעשה להאיר.</p></details>
+  <details><summary>מתי מברכים על אור של כבשן?</summary><p>בסוף, כשמדליקים אש גדולה ומשתמשים גם לאורה.</p></details>
+  <details><summary>מה שלוש התשובות על אור של בית הכנסת?</summary><p>יש אדם חשוב או אין; יש שמש או אין; יש אור ירח או אין.</p></details>
+  <details class="deepq"><summary>מה רבנו חננאל אומר על אור בבית הכנסת כשיש אדם חשוב?</summary><p>שהאור הוא להאיר לו, ולכן מברכים.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G23,G24,G25">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>אחד מברך לכולם, וביטול בית המדרש</h2>
+  <p class="lead">כשמביאים אור לפני הלומדים בבית המדרש, האם כל אחד מברך לעצמו, או שאחד מברך בשביל כולם?</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>היו יושבין בבית המדרש והביאו אור לפניהם</td><td>היו יושבים בבית המדרש והביאו לפניהם אור.</td></tr>
+      <tr><td>כל אחד ואחד מברך לעצמו</td><td>כל אחד ואחד מברך לעצמו.</td></tr>
+      <tr><td>אחד מברך לכולן</td><td>אחד מברך לכולם,</td></tr>
+      <tr><td>ברוב עם הדרת מלך</td><td>"ברוב עם הדרת מלך".</td></tr>
+      <tr><td>בשלמא ב"ה מפרשי טעמא</td><td>מובן שבית הלל מפרשים את הטעם,</td></tr>
+      <tr><td>אלא בית שמאי מאי טעמא</td><td>אבל בית שמאי, מה הטעם?</td></tr>
+      <tr><td>קסברי מפני בטול בית המדרש</td><td>הם סוברים: מפני ביטול בית המדרש.</td></tr>
+      <tr><td>לא היו אומרים מרפא בבית המדרש</td><td>לא היו אומרים "מרפא" בבית המדרש,</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>שתי הדעות:</b> בית שמאי אומרים שכל אחד מברך לעצמו. בית הלל אומרים שאחד מברך לכולם, כי "ברוב עם הדרת מלך": כשרבים עושים מצווה יחד, יש בזה כבוד למלך.</p>
+  <p><b>טעם בית שמאי:</b> הברייתא אינה אומרת אותו, והגמרא מסבירה: מפני ביטול בית המדרש. כשאחד מברך לכולם, כולם צריכים להפסיק מלימודם.</p>
+  <p><b>ראיה:</b> ברייתא אחרת מספרת שבבית רבן גמליאל לא אמרו "מרפא" למי שהתעטש בבית המדרש, מאותו טעם, כדי לא להפסיק את הלימוד.</p>
+  <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>מפני בטול בית המדרש – שבזמן שאחד מברך לכולם הם צריכים לשתוק מגרסתם כדי שיתכונו כולם וישמעו אליו ויענו אמן:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: כשאחד מברך לכולם, כולם צריכים לשתוק מלימודם כדי לכוון, לשמוע אותו ולענות אמן.</p></div>
+  <div data-hl="R21" class="voice r"><span class="tag">רש"י</span><blockquote>מרפא – לאדם המתעטש שרגילים לומר אסותא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "מרפא" אומרים למי שמתעטש, והיו רגילים לומר לו "אסותא", רפואה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שני ערכים</h3>
+    <p>לבית הלל, הכבוד שבמצווה שנעשית ברבים חשוב יותר. לבית שמאי, הלימוד שלא ייפסק חשוב יותר, ולכן כל אחד מברך בשקט לעצמו ואינו עוצר את האחרים.</p>
+    <p>הברייתא על בית רבן גמליאל מראה שהחשש מהפסקת הלימוד היה קיים גם בדבר קטן, כמו לומר "רפואה" למי שהתעטש.</p>
+  </div>
+  <p class="godeep">מה עדיף לבית הלל, ומה עדיף לבית שמאי? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה טעם בית הלל?</summary><p>"ברוב עם הדרת מלך".</p></details>
+  <details><summary>מה טעם בית שמאי?</summary><p>מפני ביטול בית המדרש.</p></details>
+  <details><summary>מה לא אמרו בבית רבן גמליאל?</summary><p>"מרפא" למי שהתעטש בבית המדרש.</p></details>
+  <details class="deepq"><summary>למה ברכה אחת לכולם מבטלת את הלימוד, לפי רש"י?</summary><p>כולם צריכים לשתוק כדי לשמוע ולענות אמן.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G26,G27,G28,G29,G30">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>נר ובשמים שאינם עשויים לאור ולריח</h2>
+  <p class="lead">המשנה אמרה שאין מברכים על נר ובשמים של מתים. הגמרא מסבירה למה, ומרחיבה את הכלל: על בשמים שאינם עשויים לריח אין מברכים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מ"ט נר לכבוד הוא דעבידא</td><td>מה הטעם? הנר, לכבוד הוא נעשה;</td></tr>
+      <tr><td>בשמים לעבורי ריחא הוא דעבידי</td><td>הבשמים, להעביר ריח הם נעשים.</td></tr>
+      <tr><td>כל שמוציאין לפניו ביום ובלילה</td><td>כל מי שמוציאים לפניו (נר) ביום ובלילה,</td></tr>
+      <tr><td>וכל שאין מוציאין לפניו אלא בלילה מברכין עליו</td><td>וכל מי שמוציאים לפניו רק בלילה, מברכים עליו.</td></tr>
+      <tr><td>בשמים של בית הכסא</td><td>בשמים של בית הכסא,</td></tr>
+      <tr><td>ושמן העשוי להעביר את הזוהמא</td><td>ושמן שעשוי להעביר את הלכלוך,</td></tr>
+      <tr><td>למימרא דכל היכא דלאו לריחא עבידא</td><td>כלומר, שכל מקום שאינו עשוי לריח,</td></tr>
+      <tr><td>הנכנס לחנותו של בשם והריח ריח</td><td>מי שנכנס לחנות של בשם והריח ריח,</td></tr>
+      <tr><td>אינו מברך אלא פעם אחד</td><td>אינו מברך אלא פעם אחת.</td></tr>
+      <tr><td>נכנס ויצא נכנס ויצא מברך על כל פעם ופעם</td><td>נכנס ויצא, נכנס ויצא, מברך על כל פעם.</td></tr>
+      <tr><td>אין לריחא נמי הוא דעבידא</td><td>כן, גם לריח הוא נעשה,</td></tr>
+      <tr><td>כי היכי דנירחו אינשי וניתו ונזבון מיניה</td><td>כדי שיריחו אנשים, יבואו ויקנו ממנו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>של מתים:</b> הנר שהולך לפני המת נועד לכבודו, והבשמים נועדו להעביר את הריח הרע. לכן אין מברכים עליהם.</p>
+  <p><b>רב יהודה בשם רב:</b> מת שמוציאים לפניו נר גם ביום, הנר לכבוד, ואין מברכים עליו. מת שמוציאים לפניו נר רק בלילה, הנר להאיר, ומברכים עליו.</p>
+  <p><b>רב הונא:</b> גם על בשמים של בית הכסא ועל שמן שמעביר זוהמא מן הידיים אין מברכים, כי הם לא נועדו לריח.</p>
+  <p><b>הקושיה והתשובה:</b> בחנות של בשם מברכים, אף שהבשמים נועדו למכירה. הגמרא עונה שגם שם הם עשויים לריח, כדי שאנשים יריחו ויבואו לקנות. ובחנות, מי שיושב כל היום מברך פעם אחת, ומי שנכנס ויוצא מברך בכל כניסה.</p>
+  <div data-hl="R22,R23" class="voice r"><span class="tag">רש"י</span><blockquote>נר לכבוד – המת עבידא:</blockquote><blockquote>בשמים עבידי לעבורי ריחא – דסרחונו של מת עבידי ולא להריח:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הנר לכבוד המת, והבשמים להעביר את הסרחון של המת, ולא כדי להריח.</p></div>
+  <div data-hl="R24,R25,R26" class="voice r"><span class="tag">רש"י</span><blockquote>כל – מת שהוא חשוב להוציא לפניו נר ביום אם הוציאו בלילה במוצאי שבת לקבורה אין מברכין על אותו נר דלכבוד עבידא ולא להאיר:</blockquote><blockquote>וכל – מת שאינו חשוב להוציא נר לפניו ביום אלא בלילה מברכין עליו אם הוציאוהו במוצאי שבת לקבורה:</blockquote><blockquote>מברכין עליו – דלהאיר עבידא:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: מדובר במת שהוציאוהו לקבורה במוצאי שבת. אם הוא חשוב, שמוציאים לפניו נר גם ביום, הנר לכבוד. ואם אינו חשוב, הנר להאיר, ומברכים.</p></div>
+  <div data-hl="R27,R28" class="voice r"><span class="tag">רש"י</span><blockquote>בשמים – שמוליך אדם אסטניס לבית הכסא להעביר ממנו ריח רע של בהכ"ס אין מברכין עליו:</blockquote><blockquote>ושמן העשוי להעביר את הזוהמא – שמביאים בסוף הסעודה לסוך ידים מזוהמות והוא מבושם בבשמים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: הבשמים הם מה שאדם אסטניס מביא לבית הכסא נגד הריח הרע. השמן הוא שמן מבושם שמביאים בסוף הסעודה לסוך בו את הידיים המלוכלכות.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איזו ברכה אין מברכים על השמן</h3>
+    <div data-hl="R29" class="voice r"><span class="tag">רש"י</span><blockquote>אין מברכין עליו – בורא עצי בשמים אלא בורא שמן ערב מברכין אם שמן של אפרסמון הוא והא דאמר בכיצד מברכין (דף מג.) האי משחא כבישה וטחינה מברכין עליו בע"ב לא בבא בתוך הסעודה קאמר אלא בבא להריח:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: אין מברכים על השמן "בורא עצי בשמים", אבל על שמן אפרסמון מברכים "בורא שמן ערב". ומה שנאמר בפרק "כיצד מברכין" שעל שמן כבוש וטחון מברכים "בורא עצי בשמים", מדובר בשמן שהביאו כדי להריח, ולא בתוך הסעודה.</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>אין מברכין עליו – פירש"י מיהו מברכין עליו ברוך שברא שמן ערב והא דאמר לעיל בכיצד מברכין (ברכות ד' מג.) האי משחא כבישא מברכין עליו בורא עצי בשמים היינו בבא להריח ולא מיירי בתוך הסעודה:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות מביאים את פירוש רש"י כמו שהוא, ומסבירים בדרכו את ההבדל בין המקרה כאן לבין המקרה בפרק "כיצד מברכין".</p></div>
+    <h3>הכלל: לשם מה נעשה הדבר</h3>
+    <p>בכל הדינים כאן השאלה אינה אם יש ריח או אור, אלא לשם מה הם נעשו. אותו נר יכול להיות לכבוד או להאיר, ואותם בשמים יכולים להיות להעביר ריח רע או להריח.</p>
+    <p>החנות של בשם מראה שהכלל רחב: גם מטרה מסחרית נחשבת "לריחא", כי המוכר רוצה שהאנשים ייהנו מן הריח.</p>
+  </div>
+  <p class="godeep">מה מכריע אם מברכים על אור או על בשמים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה אין מברכים על נר של מתים?</summary><p>כי הוא נעשה לכבוד המת, ולא להאיר.</p></details>
+  <details><summary>על איזה נר של מת מברכים?</summary><p>על נר של מת שמוציאים לפניו נר רק בלילה.</p></details>
+  <details><summary>למה מברכים בחנות של בשם?</summary><p>כי הבשמים עשויים לריח, כדי שאנשים יריחו ויבואו לקנות.</p></details>
+  <details class="deepq"><summary>מה אומר רש"י על השמן שבסוף הסעודה?</summary><p>אין מברכים עליו "בורא עצי בשמים", אבל על שמן אפרסמון מברכים "בורא שמן ערב".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="u6" data-hl="G31,G32,G33,G34">
+  <div class="kicker">יחידה 6 · גמרא</div>
+  <h2>ריח שמריחים בדרך</h2>
+  <p class="lead">מי שהולך בדרך ומריח ריח, אינו יודע אם הוא עשוי לריח. הברייתא ורבי יוחנן קובעים מתי מברכים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>היה מהלך חוץ לכרך והריח ריח</td><td>היה הולך מחוץ לעיר והריח ריח:</td></tr>
+      <tr><td>אם רוב עובדי כוכבים אינו מברך</td><td>אם רוב עובדי כוכבים, אינו מברך.</td></tr>
+      <tr><td>אפי' רוב ישראל נמי אינו מברך</td><td>אפילו רוב ישראל, גם אינו מברך,</td></tr>
+      <tr><td>מפני שבנות ישראל מקטרות לכשפים</td><td>מפני שבנות ישראל מקטירות לכשפים.</td></tr>
+      <tr><td>אטו כולהו לכשפים מקטרן</td><td>וכי כולן לכשפים מקטירות?</td></tr>
+      <tr><td>ומיעוטא נמי לגמר את הכלים</td><td>ומיעוט גם כדי לבשם את הבגדים.</td></tr>
+      <tr><td>אשתכח רובא דלאו לריחא עביד</td><td>נמצא שהרוב אינו עשוי לריח.</td></tr>
+      <tr><td>המהלך בערבי שבתות בטבריא</td><td>ההולך בערבי שבתות בטבריה</td></tr>
+      <tr><td>ובמוצאי שבתות בצפורי והריח ריח</td><td>ובמוצאי שבתות בציפורי, והריח ריח,</td></tr>
+      <tr><td>שחזקתו אינו עשוי אלא לגמר בו את הכלים</td><td>שבחזקתו אינו עשוי אלא לבשם בו את הבגדים.</td></tr>
+      <tr><td>היה מהלך בשוק של עכו"ם</td><td>היה הולך בשוק של עובדי כוכבים,</td></tr>
+      <tr><td>נתרצה להריח הרי זה חוטא</td><td>ורצה להריח, הרי זה חוטא.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הברייתא:</b> מי שמריח ריח מחוץ לעיר, הולך אחר רוב התושבים. ברוב עובדי כוכבים אינו מברך, וברוב ישראל מברך. רבי יוסי אומר שגם ברוב ישראל אינו מברך, כי יש מבנות ישראל שמקטירות לכשפים.</p>
+  <p><b>הגמרא מסבירה את רבי יוסי:</b> לא כולן מקטירות לכשפים. אבל מיעוט מקטירות לכשפים, ומיעוט מקטירות כדי לבשם בגדים. יחד הם רוב שאינו עשוי לריח, ועל כזה אין מברכים.</p>
+  <p><b>רבי יוחנן:</b> בטבריה בערבי שבתות, ובציפורי במוצאי שבתות, החזקה היא שהקטורת נועדה לבשם בגדים. לכן מי שמריח שם בזמנים האלה אינו מברך.</p>
+  <p><b>שוק של עובדי כוכבים:</b> מי שהולך שם ורוצה ליהנות מן הריח, נקרא חוטא.</p>
+  <div data-hl="R30" class="voice r"><span class="tag">רש"י</span><blockquote>לגמר את הכלים – לבשם בעשנו את הבגדים:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: "לגמר את הכלים" פירושו לבשם בעשן את הבגדים.</p></div>
+  <div data-hl="R31" class="voice r"><span class="tag">רש"י</span><blockquote>בטבריא – היו רגילים לגמר ערבי שבתות ובצפורי במו"ש:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י: בטבריה היו רגילים לבשם בגדים בערבי שבתות, ובציפורי במוצאי שבתות.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך מצטרפים שני מיעוטים</h3>
+    <p>כל אחד מן השימושים לבדו הוא מיעוט. אבל לשאלת הברכה שניהם שווים: בשניהם הקטורת אינה עשויה לריח. לכן הגמרא מצרפת אותם, וביחד הם רוב.</p>
+    <p>רבי יוחנן מוסיף שיש מקומות וזמנים שבהם ידוע מה רוב הקטורת עשויה. שם החזקה קובעת, גם בלי לבדוק את רוב התושבים.</p>
+  </div>
+  <p class="godeep">איך הגמרא מגיעה לרוב שאינו עשוי לריח? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה טעמו של רבי יוסי?</summary><p>שבנות ישראל מקטירות לכשפים.</p></details>
+  <details><summary>מה פירוש "לגמר את הכלים"?</summary><p>לבשם בעשן את הבגדים.</p></details>
+  <details><summary>מתי אין מברכים על ריח בטבריה, ומתי בציפורי?</summary><p>בטבריה בערבי שבתות, ובציפורי במוצאי שבתות.</p></details>
+  <details class="deepq"><summary>למה מצרפים את שני המיעוטים?</summary><p>כי בשניהם הקטורת אינה עשויה לריח, ולכן ביחד הם רוב שאינו עשוי לריח.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u6"> סיימתי את יחידה 6</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>אור ששבת:</b> הוא אור ששבת ממלאכת עבירה. על אור שדלק לצורך חולה או מערב שבת מברכים.</li>
+      <li><b>אור של נכרי:</b> כשאחד מהם ישראל מברכים על התוספת. נכרי שהדליק מנכרי, אין מברכים, בגלל גזרה.</li>
+      <li><b>אור בדרך:</b> הולכים אחר רוב התושבים, ובמחצה על מחצה מברך. מבוגר שמחזיק אש סמוך לשקיעה ודאי נכרי.</li>
+      <li><b>אור שעשוי להאיר:</b> בכבשן, בתנור ובבית הכנסת מברכים רק כשהאור נועד להאיר ולא לעבודה או לכבוד.</li>
+      <li><b>בבית המדרש:</b> לבית הלל אחד מברך לכולם, ולבית שמאי כל אחד לעצמו, מפני ביטול בית המדרש.</li>
+      <li><b>נר ובשמים של מתים ושל בית הכסא:</b> אין מברכים עליהם, כי אינם עשויים לאור ולריח. בחנות של בשם מברכים.</li>
+      <li><b>ריח בדרך:</b> הולכים אחר הרוב, ורבי יוחנן מוסיף חזקה לטבריה ולציפורי.</li>
+      <li><b>הבא:</b> העמוד הבא פותח בדין המשנה שאין מברכים על הנר עד שייהנו מאורו.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>אי נימא</td><td>אם נאמר. כך פותחים הצעה שהגמרא בודקת</td></tr>
+      <tr><td>תניא נמי הכי</td><td>&quot;שנוי גם כך&quot;: ברייתא שמסייעת לדברים</td></tr>
+      <tr><td>מאי שנא</td><td>מה שונה, מה ההבדל</td></tr>
+      <tr><td>אין הכי נמי</td><td>כן, באמת כך הוא</td></tr>
+      <tr><td>גזרה</td><td>איסור שחכמים קבעו כדי שלא יבואו לטעות בדבר אחר</td></tr>
+      <tr><td>הא גופא קשיא</td><td>הדבר עצמו קשה: המקור סותר את עצמו</td></tr>
+      <tr><td>בדין הוא</td><td>לפי הדין, באמת</td></tr>
+      <tr><td>איידי</td><td>מתוך ש, אגב. כך מסבירים לשון שנבחרה כדי להקביל לחברתה</td></tr>
+      <tr><td>מאי איריא</td><td>למה דווקא זה</td></tr>
+      <tr><td>אימר</td><td>אפשר לומר, שמא</td></tr>
+      <tr><td>לא קשיא · הא · הא</td><td>אין סתירה · זו במקרה אחד · וזו במקרה אחר</td></tr>
+      <tr><td>ואי בעית אימא</td><td>ואם תרצה אמור: תשובה נוספת</td></tr>
+      <tr><td>מיתיבי</td><td>מקשים ממקור אחר</td></tr>
+      <tr><td>אטו</td><td>וכי</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="berakhot-51b.html">העמוד הקודם</a><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-55a.html">העמוד הבא</a></nav>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+</footer>
+</div>
+</div>
+<script>window.GM_NEXT="berakhot-55a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "אי נימא לא שבת מחמת מלאכה אפילו ממלאכה דהתירא והתניא אור של חיה ושל חולה מברכין עליו", false, ""], ["G2", "אר\"נ בר יצחק מאי שבת ששבת מחמת מלאכת עבירה תנ\"ה עששית שהיתה דולקת והולכת כל היום כולו למ\"ש מברכין עליה:", false, ""], ["G3", "ת\"ר נכרי שהדליק מישראל וישראל שהדליק מנכרי מברכין עליו נכרי מנכרי אין מברכין עליו", false, ""], ["G4", "מ\"ש נכרי מנכרי דלא משום דלא שבת א\"ה ישראל מנכרי נמי הא לא שבת", false, ""], ["G5", "וכי תימא הך איסורא אזל ליה והא אחרינא הוא ובידא דישראל קא מתילדא אלא הא דתניא המוציא שלהבת לר\"ה חייב אמאי חייב מה שעקר לא הניח ומה שהניח לא עקר", false, ""], ["G6", "אלא לעולם דאיסורא נמי איתיה וכי קא מברך אתוספתא דהתירא קא מברך אי הכי נכרי מנכרי נמי", false, ""], ["G7", "אין ה\"נ גזרה משום נכרי ראשון ועמוד ראשון:", false, ""], ["G8", "ת\"ר היה מהלך חוץ לכרך וראה אור אם רוב נכרים אינו מברך אם רוב ישראל מברך", false, ""], ["G9", "הא גופא קשיא אמרת אם רוב נכרים אינו מברך הא מחצה על מחצה מברך והדר תני אם רוב ישראל מברך הא מחצה על מחצה אינו מברך", false, ""], ["G10", "בדין הוא דאפי' מחצה על מחצה נמי מברך ואיידי (דתנ') רישא רוב נכרים תנא סיפא רוב ישראל:", false, ""], ["G11", "ת\"ר היה מהלך חוץ לכרך וראה תינוק ואבוקה בידו בודק אחריו אם ישראל הוא מברך אם נכרי הוא אינו מברך", false, ""], ["G12", "מאי איריא תינוק אפי' גדול נמי", false, ""], ["G13", "אמר רב יהודה אמר רב הכא בסמוך לשקיעת החמה עסקי' גדול מוכחא מילתא דודאי נכרי הוא תינוק אימר ישראל הוא אקרי ונקיט:", false, ""], ["G14", "ת\"ר היה מהלך חוץ לכרך וראה אור אם עבה כפי הכבשן מברך עליו ואם לאו אינו מברך עליו", false, ""], ["G15", "תני חדא אור של כבשן מברכין עליו ותניא אידך אין מברכין עליו", false, ""], ["G16", "לא קשיא הא בתחלה הא לבסוף", false, ""], ["G17", "תני חדא אור של תנור ושל כירים מברכין עליו ותניא אידך אין מברכין עליו", false, ""], ["G18", "לא קשיא הא בתחלה הא לבסוף", false, ""], ["G19", "תני חדא אור של בית הכנסת ושל בית המדרש מברכין עליו ותניא אידך אין מברכין עליו", false, ""], ["G20", "ל\"ק הא דאיכא אדם חשוב הא דליכא אדם חשוב", false, ""], ["G21", "ואי בעית אימא הא והא דאיכא אדם חשוב ולא קשיא הא דאיכא חזנא הא דליכא חזנא", false, ""], ["G22", "ואב\"א הא והא דאיכא חזנא ולא קשיא הא דאיכא סהרא והא דליכא סהרא:", false, ""], ["G23", "ת\"ר היו יושבין בבית המדרש והביאו אור לפניהם בש\"א כל אחד ואחד מברך לעצמו ובה\"א אחד מברך לכולן משום שנאמר (משלי יד, כח) ברוב עם הדרת מלך", false, ""], ["G24", "בשלמא ב\"ה מפרשי טעמא אלא בית שמאי מאי טעמא קסברי מפני בטול בית המדרש", false, ""], ["G25", "תניא נמי הכי של בית רבן גמליאל לא היו אומרים מרפא בבית המדרש מפני בטול בית המדרש:", false, ""], ["G26", "אין מברכין לא על הנר ולא על הבשמים של מתים: מ\"ט נר לכבוד הוא דעבידא בשמים לעבורי ריחא הוא דעבידי", false, ""], ["G27", "אמר רב יהודה אמר רב כל שמוציאין לפניו ביום ובלילה אין מברכין עליו וכל שאין מוציאין לפניו אלא בלילה מברכין עליו", false, ""], ["G28", "אמר רב הונא בשמים של בית הכסא ושמן העשוי להעביר את הזוהמא אין מברכין עליו", false, ""], ["G29", "למימרא דכל היכא דלאו לריחא עבידא לא מברכין עלויה מיתיבי הנכנס לחנותו של בשם והריח ריח אפילו ישב שם כל היום כלו אינו מברך אלא פעם אחד נכנס ויצא נכנס ויצא מברך על כל פעם ופעם והא הכא דלאו לריחא הוא דעבידא וקמברך", false, ""], ["G30", "אין לריחא נמי הוא דעבידא כי היכי דנירחו אינשי וניתו ונזבון מיניה", false, ""], ["G31", "תנו רבנן היה מהלך חוץ לכרך והריח ריח אם רוב עובדי כוכבים אינו מברך אם רוב ישראל מברך רבי יוסי אומר אפי' רוב ישראל נמי אינו מברך מפני שבנות ישראל מקטרות לכשפים", false, ""], ["G32", "אטו כולהו לכשפים מקטרן ה\"ל מיעוטא לכשפים ומיעוטא נמי לגמר את הכלים אשתכח רובא דלאו לריחא עביד וכל רובא דלאו לריחא עביד לא מברך", false, ""], ["G33", "אמר ר' חייא בר אבא אמר רבי יוחנן המהלך בערבי שבתות בטבריא ובמוצאי שבתות בצפורי והריח ריח אינו מברך מפני שחזקתו אינו עשוי אלא לגמר בו את הכלים", false, ""], ["G34", "תנו רבנן היה מהלך בשוק של עכו\"ם נתרצה להריח הרי זה חוטא:", false, ""]], "R": [["R1", "אי נימא לא שבת מחמת מלאכה ואפי' היא מלאכה של היתר", "כגון של חולה ושל חיה קאמר דאין מברכין:", false], ["R2", "עששית", "לנטירנ\"א:", false], ["R3", "שהיתה דולקת והולכת", "מע\"ש ובבית ישראל:", false], ["R4", "למ\"ש מברכין", "לפי שלא נעבדה בה עבירה שלא הודלקה בשבת:", false], ["R5", "נכרי שהדליק מישראל", "משחשכה מ\"ש:", false], ["R6", "הך איסורא אזלא", "מתוך ששלהבת דולקת והולכת קמא קמא פרח ליה:", false], ["R7", "המוציא שלהבת לר\"ה", "בשבת חייב ומוקמינן לה במסכת ביצה כגון דשייפיה לחרס משחא ואתלי בה נורא דגחלת ליכא אלא שלהבת ומשום חרס לא מחייב דלית בה שיעורא:", false], ["R8", "מה שעקר לא הניח", "והוצאת שבת לא מחייבא עד דאיכא עקירה מרשות זו והנחה ברשות זו:", false], ["R9", "גזירה משום נכרי ראשון ועמוד ראשון", "אי שרית בנכרי שהדליק מנכרי משחשכה אתי לברוכי בנכרי שהדליק מבעוד יום ובאותו אור עצמו שלא נתוסף משחשכה כגון שמברך עליו סמוך לחשכה מיד:", false], ["R10", "גדול מוכחא מלתא דנכרי הוא", "ואין צריך לבדוק אחריו דאי איתא דישראל הוא לא היה ממהר סמוך לחשכה מיד לאחוז האור בידו:", false], ["R11", "כפי הכבשן", "ששורפים בו אבנים לסיד אם עבה כאור היוצא מפי הכבשן נהורא בריא היא ולהשתמש לאורה היא נעשית:", false], ["R12", "ואם לאו", "לאו לאורה נעשית אלא לבשל ואין מברכין אלא על שנעשה להאיר:", false], ["R13", "בתחלה", "בתחלת שרפת אבנים אין האור להאיר:", false], ["R14", "בסוף", "לאחר שנשרפו האבנים רובן מדליקין אור גדול מלמעלה למרק שרפת האבנים ומשתמשין נמי לאורה:", false], ["R15", "של תנור", "בסוף מברכין עליו לאחר שהוסק התנור והפת בתוכה מדליקין קסמין דקין בפיו להאיר ולקלוט חומו לתוכו וכיון דמשתמש לאורו מברכין עליו:", false], ["R16", "אור של בית הכנסת", "בדאיכא אדם חשוב לכבודו הדליקוה ולא שצריך לאור אלא לכבוד בעלמא ואין מברכין עליו:", false], ["R17", "ליכא אדם חשוב", "להאיר להם הדליקוה ומברכין:", false], ["R18", "הא והא דאיכא אדם חשוב", "ואי איכא חזנא שמש שאוכל בבית הכנסת אף לאורה עשויה שיאכל החזן לאורה ומברכין:", false], ["R19", "הא והא דאיכא חזנא", "ואיכא סהרא שהחזן יכול לאכול לאורה אין מברכין על הנר שלא להאיר הדליקוה אלא לכבוד אדם חשוב:", false], ["R20", "מפני בטול בית המדרש", "שבזמן שאחד מברך לכולם הם צריכים לשתוק מגרסתם כדי שיתכונו כולם וישמעו אליו ויענו אמן:", false], ["R21", "מרפא", "לאדם המתעטש שרגילים לומר אסותא:", false], ["R22", "נר לכבוד", "המת עבידא:", false], ["R23", "בשמים עבידי לעבורי ריחא", "דסרחונו של מת עבידי ולא להריח:", false], ["R24", "כל", "מת שהוא חשוב להוציא לפניו נר ביום אם הוציאו בלילה במוצאי שבת לקבורה אין מברכין על אותו נר דלכבוד עבידא ולא להאיר:", false], ["R25", "וכל", "מת שאינו חשוב להוציא נר לפניו ביום אלא בלילה מברכין עליו אם הוציאוהו במוצאי שבת לקבורה:", false], ["R26", "מברכין עליו", "דלהאיר עבידא:", false], ["R27", "בשמים", "שמוליך אדם אסטניס לבית הכסא להעביר ממנו ריח רע של בהכ\"ס אין מברכין עליו:", false], ["R28", "ושמן העשוי להעביר את הזוהמא", "שמביאים בסוף הסעודה לסוך ידים מזוהמות והוא מבושם בבשמים:", false], ["R29", "אין מברכין עליו", "בורא עצי בשמים אלא בורא שמן ערב מברכין אם שמן של אפרסמון הוא והא דאמר בכיצד מברכין (דף מג.) האי משחא כבישה וטחינה מברכין עליו בע\"ב לא בבא בתוך הסעודה קאמר אלא בבא להריח:", false], ["R30", "לגמר את הכלים", "לבשם בעשנו את הבגדים:", false], ["R31", "בטבריא", "היו רגילים לגמר ערבי שבתות ובצפורי במו\"ש:", false]], "T": [["T1", "וכי תימא הך איסורא אזל ליה", "ה\"מ לאקשויי אי הכי נכרי מנכרי נמי אלא עדיפא מיניה פריך דה\"מ לשנויי כדמשני בסמוך:", false], ["T2", "גזירה משום נכרי ראשון ונכרי ראשון משום עמוד ראשון וכו'", "חדא גזרה היא דגזרו חכמים כל אש נכרי שביד הנכרי דאי לא הא לא קיימא הא אבל נכרי שהדליק מישראל וישראל מנכרי מברכין עליו והכי קיימא לן:", false], ["T3", "הא דאיכא אדם חשוב", "אם כן משום כבודו של חשוב ולא לאורה כך פרש\"י ור\"ח פירש איפכא באדם חשוב לאורה ובדליכא אדם חשוב עשוי לכבוד בית הכנסת:", false], ["T4", "אין מברכין עליו", "פירש\"י מיהו מברכין עליו ברוך שברא שמן ערב והא דאמר לעיל בכיצד מברכין (ברכות ד' מג.) האי משחא כבישא מברכין עליו בורא עצי בשמים היינו בבא להריח ולא מיירי בתוך הסעודה:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "המשך: מהו אור ש\"לא שבת\"", "x": "העמוד הקודם הסתיים בברייתא: על אור ששבת מברכים במוצאי שבת, ועל אור שלא שבת אין מברכים. והגמרא שאלה למה הכוונה באור ש\"לא שבת\". כאן באה התשובה. אחר כך באים דינים על אור של נכרי, על אור שרואים בדרך, על אור שאינו עשוי להאיר, ועל בשמים שאינם עשויים לריח.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "אולי \"לא שבת\" מכל מלאכה?", "x": "\"אי נימא\", אם נאמר ש\"לא שבת\" פירושו אור שעשו בו מלאכה בשבת, אפילו מלאכה של היתר, קשה. הרי שנינו בברייתא: על אור של יולדת ושל חולה מברכים. רש\"י מסביר שלפי ההצעה הזו גם על אור כזה לא היו מברכים.", "a": "\"חיה\" בלשון חכמים היא יולדת."}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "רב נחמן בר יצחק: ששבת ממלאכת עבירה", "x": "\"מאי שבת\", מה פירוש \"שבת\"? אור ששבת ממלאכה של עבירה, כלומר שלא חיללו בו שבת. \"תניא נמי הכי\", כך שנוי גם בברייתא: עששית שהייתה דולקת והולכת כל היום, במוצאי שבת מברכים עליה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G2", "R2", "R3", "R4"], "t": "רש\"י: איזו עששית", "x": "עששית היא מין פנס. היא דלקה מערב שבת, בבית של ישראל. מברכים עליה מפני שלא נעשתה בה עבירה, שהרי לא הודלקה בשבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R5"], "t": "נכרי וישראל שהדליקו זה מזה", "x": "ברייתא: נכרי שהדליק מישראל, וישראל שהדליק מנכרי, מברכים עליו. נכרי שהדליק מנכרי, אין מברכים עליו. רש\"י מפרש שמדובר בהדלקה אחרי שהחשיך, במוצאי שבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4"], "t": "מה שונה נכרי מנכרי?", "x": "\"מאי שנא\", מה שונה נכרי שהדליק מנכרי? הלא אין זה אלא מפני שהאור \"לא שבת\", שהרי הנכרי השתמש בו בשבת. \"אי הכי\", אם כך, גם ישראל שהדליק מנכרי, האור לא שבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R6"], "t": "ואולי השלהבת כבר אחרת?", "x": "\"וכי תימא\", ואם תאמר: האור האסור כבר הלך לו, וזה אור אחר שנולד בידו של ישראל. רש\"י מסביר: שלהבת שדולקת והולכת, החלקים הראשונים שלה פורחים ונעלמים בזה אחר זה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R7", "R8"], "t": "הקושיה מהוצאת שלהבת בשבת", "x": "אם כך, קשה על ברייתא אחרת: המוציא שלהבת לרשות הרבים בשבת חייב. ולמה חייב? מה שעקר לא הניח, ומה שהניח לא עקר. רש\"י מסביר שמלאכת הוצאה מחייבת רק כשיש עקירה מרשות אחת והנחה ברשות אחרת. ובמסכת ביצה העמידו את הברייתא בחרס שמשחו בשמן והדליקו בו אש, שאין בו גחלת אלא שלהבת, ועל החרס עצמו אינו חייב כי אין בו שיעור.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5", "T1"], "t": "התוספות: למה לא הקשתה הגמרא כבר כאן", "x": "הגמרא יכלה להקשות כאן: אם השלהבת אחרת, גם בנכרי שהדליק מנכרי נברך. אבל היא הקשתה קושיה עדיפה, מהוצאת שלהבת. את הקושיה על נכרי מנכרי אפשר היה לתרץ כמו שהגמרא מתרצת מיד אחר כך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6"], "t": "מברכים על התוספת", "x": "\"אלא לעולם\", אלא באמת גם האור האסור עדיין קיים. אבל כשמברכים, מברכים על מה שנוסף באור בהיתר. \"אי הכי\", אם כך, גם בנכרי שהדליק מנכרי יש תוספת כזו, ולמה לא נברך?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R9"], "t": "גזרה משום נכרי ראשון ועמוד ראשון", "x": "\"אין הכי נמי\", כן, באמת כך. אבל חכמים גזרו שלא לברך. רש\"י מסביר: אילו התירו לברך על אור שנכרי הדליק מנכרי אחרי שהחשיך, היו באים לברך גם על אור שנכרי הדליק בעוד יום, ועל אותה שלהבת עצמה שלא נוסף בה דבר אחרי שהחשיך, כגון מי שמברך עליה מיד סמוך לחשכה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T2"], "t": "התוספות: גזרה אחת על אש שביד נכרי", "x": "התוספות כותבים שזו גזרה אחת: חכמים גזרו על כל אש של נכרי שנמצאת ביד נכרי, כי בלי האחת אין קיום לשנייה. אבל כשאחד מהם ישראל, בין המדליק ובין מי שהדליקו ממנו, מברכים, \"והכי קיימא לן\", וכך אנו נוהגים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8"], "t": "רואה אור מחוץ לעיר", "x": "ברייתא: מי שהולך מחוץ לכרך, כלומר מחוץ לעיר, וראה אור, תלוי מי גר שם. כשרוב התושבים נכרים אינו מברך, וכשרובם ישראל הוא מברך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "\"הא גופא קשיא\"", "x": "הברייתא עצמה קשה. מן הרישא משמע שרק ברוב נכרים אינו מברך, ולכן במחצה על מחצה מברך. ומן הסיפא משמע שרק ברוב ישראל מברך, ולכן במחצה על מחצה אינו מברך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10"], "t": "התשובה: לשון מקבילה", "x": "\"בדין הוא\", לפי הדין גם במחצה על מחצה מברך. ו\"איידי\", מפני שברישא נאמר \"רוב נכרים\", נאמר בסיפא \"רוב ישראל\", כדי שהלשון תהיה שווה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11"], "t": "תינוק ואבוקה בידו", "x": "ברייתא: מי שהולך מחוץ לכרך וראה תינוק ואבוקה, לפיד, בידו, בודק אחריו. אם התברר שהתינוק יהודי, מברך על האור; ואם נכרי, לא יברך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12"], "t": "למה דווקא תינוק?", "x": "\"מאי איריא\", למה נקטה הברייתא דווקא תינוק? גם במבוגר צריך לבדוק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R10"], "t": "רב יהודה בשם רב: סמוך לשקיעה", "x": "כאן מדובר סמוך לשקיעת החמה. במבוגר הדבר מוכח שהוא נכרי. ובתינוק, \"אימר\", אפשר לומר שהוא ישראל, ונזדמנה לו האבוקה והחזיק בה. רש\"י: במבוגר אין צורך לבדוק, כי ישראל לא היה ממהר לאחוז אש בידו מיד סמוך לחשכה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R11", "R12"], "t": "אור עבה כפי הכבשן", "x": "ברייתא: ראה אור מחוץ לכרך. אם הוא עבה כמו האור שיוצא מפי הכבשן, מברך עליו, ואם לא, אינו מברך. רש\"י: זה כבשן ששורפים בו אבנים לסיד. אור עבה כזה הוא אור חזק, שנעשה כדי להשתמש לאורו. אור אחר נעשה לבשל ולא להאיר, ומברכים רק על אור שנעשה להאיר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "G16", "R13", "R14"], "t": "אור של כבשן: בתחילה ובסוף", "x": "ברייתא אחת אומרת שעל אור של כבשן מברכים, וברייתא אחרת אומרת שאין מברכים. \"לא קשיא\", אין סתירה: זו בתחילה, וזו בסוף. רש\"י: בתחילת שריפת האבנים האור אינו להאיר. בסוף, כשרוב האבנים נשרפו, מדליקים אש גדולה מלמעלה כדי לגמור את השריפה, ומשתמשים גם לאורה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17", "G18", "R15"], "t": "אור של תנור ושל כיריים", "x": "אותה סתירה נמצאת באור של תנור ושל כיריים, ואותה תשובה: בתחילה או בסוף. רש\"י: בסוף, אחרי שהתנור הוסק והפת בתוכו, מדליקים קיסמים דקים בפיו כדי להאיר וכדי לשמור את חומו בפנים. כיוון שמשתמשים לאורו, מברכים עליו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19", "G20", "R16", "R17"], "t": "אור של בית הכנסת: יש אדם חשוב או אין", "x": "ברייתא אחת: על אור של בית הכנסת ושל בית המדרש מברכים. וברייתא אחרת: אין מברכים. התשובה: כאן יש אדם חשוב, וכאן אין. רש\"י: כשיש אדם חשוב, הדליקו את האור לכבודו ולא כדי להאיר, ואין מברכים. כשאין, הדליקו כדי להאיר להם, ומברכים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G20", "T3"], "t": "התוספות: רבנו חננאל מפרש להפך", "x": "התוספות מביאים את פירוש רש\"י, שכשיש אדם חשוב האור הוא לכבודו. ורבנו חננאל פירש להפך: כשיש אדם חשוב, האור הוא כדי להאיר לו. וכשאין אדם חשוב, האור עשוי לכבוד בית הכנסת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21", "R18"], "t": "\"ואי בעית אימא\": החזן", "x": "\"ואי בעית אימא\", ואם תרצה אמור: בשתי הברייתות יש אדם חשוב, וההבדל הוא אם יש \"חזנא\" או אין. רש\"י: החזן הוא השמש שאוכל בבית הכנסת. כשיש חזן, האור עשוי גם כדי שיאכל לאורו, ומברכים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22", "R19"], "t": "ועוד אפשר לומר: אור הירח", "x": "ועוד אפשר לומר: בשתיהן יש חזן, וההבדל הוא אם יש \"סהרא\", אור ירח. רש\"י: כשיש אור ירח, החזן יכול לאכול לאורו. אז הנר לא הודלק להאיר אלא לכבוד האדם החשוב, ואין מברכים עליו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G23"], "t": "בבית המדרש: כל אחד לעצמו או אחד לכולם", "x": "ברייתא: היו יושבים בבית המדרש והביאו לפניהם אור. בית שמאי אומרים: כל אחד מברך לעצמו. ובית הלל אומרים: אחד מברך לכולם, שנאמר \"ברוב עם הדרת מלך\", בהמון אנשים יש הדר למלך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G24", "R20"], "t": "טעמם של בית שמאי", "x": "\"בשלמא\", מובן שבית הלל מפרשים את טעמם. אבל בית שמאי, מה טעמם? הם סוברים כך מפני ביטול בית המדרש. רש\"י: כשאחד מברך לכולם, כולם צריכים להפסיק מלימודם כדי לכוון, לשמוע ולענות אמן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G25", "R21"], "t": "בבית רבן גמליאל לא אמרו \"מרפא\"", "x": "\"תניא נמי הכי\", כך שנוי גם בברייתא: בבית רבן גמליאל לא היו אומרים \"מרפא\" בבית המדרש, מפני ביטול בית המדרש. רש\"י: \"מרפא\" אומרים למי שמתעטש, והיו רגילים לומר לו \"אסותא\", רפואה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G26", "R22", "R23"], "t": "נר ובשמים של מתים", "x": "המשנה אמרה: אין מברכים לא על הנר ולא על הבשמים של מתים. מה הטעם? הנר עשוי לכבוד, והבשמים עשויים להעביר ריח. רש\"י: הנר לכבוד המת, והבשמים להעביר את הסרחון של המת, ולא כדי להריח.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G27", "R24", "R25", "R26"], "t": "רב יהודה בשם רב: ביום ובלילה", "x": "כל מת שמוציאים לפניו נר גם ביום וגם בלילה, אין מברכים על הנר. וכל מת שמוציאים לפניו נר רק בלילה, מברכים עליו. רש\"י: מת חשוב מוציאים לפניו נר גם ביום, ולכן אם הוציאוהו לקבורה במוצאי שבת, הנר לכבוד ולא להאיר. ולמת שאינו חשוב מוציאים נר רק בלילה, ולכן הנר עשוי להאיר, ומברכים עליו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G28", "R27", "R28"], "t": "רב הונא: בשמים של בית הכסא ושמן לזוהמא", "x": "על בשמים של בית הכסא, ועל שמן שעשוי להעביר את הזוהמא, אין מברכים. רש\"י: הבשמים הם מה שאדם אסטניס לוקח איתו לבית הכסא כדי להעביר את הריח הרע. והשמן הוא שמן מבושם שמביאים בסוף הסעודה כדי לסוך את הידיים המלוכלכות.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G28", "R29", "T4"], "t": "רש\"י ותוספות: איזו ברכה אין מברכים", "x": "רש\"י מפרש: אין מברכים על השמן \"בורא עצי בשמים\", אבל אם זה שמן אפרסמון, מברכים \"בורא שמן ערב\". ומה שנאמר בפרק \"כיצד מברכין\", שעל שמן כבוש וטחון מברכים \"בורא עצי בשמים\", מדובר שם בשמן שהביאו כדי להריח, ולא בשמן שבא בתוך הסעודה. התוספות מביאים את הפירוש הזה של רש\"י.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G29"], "t": "קושיה מחנות של בשם", "x": "\"למימרא\", האם כלומר שבכל מקום שהבושם לא נעשה לריח אין מברכים? \"מיתיבי\", מקשים מברייתא: מי שנכנס לחנות של בשם והריח ריח, אפילו ישב שם כל היום, מברך רק פעם אחת. ואם נכנס ויצא, נכנס ויצא, מברך על כל פעם. והרי שם הבשמים נועדו למכירה ולא לריח, ובכל זאת מברך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G30"], "t": "התשובה: גם זה עשוי לריח", "x": "\"אין\", כן, גם שם הבשמים עשויים לריח: כדי שאנשים יריחו, יבואו ויקנו ממנו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G31"], "t": "ריח מחוץ לכרך, ודעת רבי יוסי", "x": "ברייתא דומה עוסקת בריח שמריחים בדרך: הדין תלוי ברוב התושבים, עובדי כוכבים או ישראל, כמו באור. רבי יוסי אומר: אפילו ברוב ישראל אינו מברך, מפני שבנות ישראל מקטירות קטורת לכשפים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G32", "R30"], "t": "\"אטו כולהו\"", "x": "\"אטו\", וכי כולן מקטירות לכשפים? הגמרא מסבירה: מיעוט מקטירות לכשפים, ומיעוט מקטירות \"לגמר את הכלים\", כלומר לבשם בעשן את הבגדים, כפי שמפרש רש\"י. נמצא שרוב הקטורת אינה עשויה לריח, ובכל מקום שהרוב אינו עשוי לריח, אין מברכים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G33", "R31"], "t": "טבריה וציפורי", "x": "רבי חייא בר אבא אמר בשם רבי יוחנן: מי שהולך בערבי שבתות בטבריה, ובמוצאי שבתות בציפורי, והריח ריח, אינו מברך. כי החזקה היא שהקטורת שם עשויה רק לבשם את הבגדים. רש\"י: בטבריה היו רגילים לבשם בגדים בערבי שבתות, ובציפורי במוצאי שבתות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G34"], "t": "בשוק של עובדי כוכבים", "x": "ברייתא: מי שהולך בשוק של עובדי עבודה זרה, ונתרצה להריח את הריח, הרי זה חוטא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "אור \"ששבת\" הוא אור שלא נעשתה בו עבירה בשבת. באש שנכרי הדליק מאש של נכרי לא מברכים, בגלל גזרה. מברכים רק על אור שעשוי להאיר, ועל בשמים שעשויים לריח, ולכן לא על נר ובשמים של מתים ולא על בשמים של בית הכסא. העמוד הבא פותח בדין המשנה שאין מברכים על הנר עד שייהנו מאורו.", "a": ""}], "audio": "daf-53a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    gBody.scrollTop = 0; checkMore();
+    var last = n === STEPS.length - 1;
+    q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; if (cur < STEPS.length - 1) go(cur + 1); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ if (cur > 0) go(cur - 1); });
+  q('.nx').addEventListener('click', function(){ if (cur < STEPS.length - 1) go(cur + 1); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){ go(k); guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+</body>
+</html>
