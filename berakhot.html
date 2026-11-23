@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מורה לגמרא · מסכת ברכות</title>
+<meta name="description" content="מסכת ברכות, צעד אחר צעד: צורת הדף עם רש&quot;י ותוספות, והסבר שמתקדם מול הדף.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="מורה לגמרא · מסכת ברכות">
+<meta property="og:description" content="כל עמוד מוסבר צעד אחר צעד, מול צורת הדף, עם רש&quot;י ותוספות.">
+<meta property="og:url" content="https://oraykin7-source.github.io/gemara/">
+<meta property="og:image" content="https://oraykin7-source.github.io/gemara/cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#efe7d6;--ink:#1f2430;--muted:#5b6270;--line:#d9cdb3;--paper:#fffaf0;--gold:#d9b25a;--gold2:#f3dc9a;--cover:#3a1419;--cover2:#5a2027;--accent:#1f5a66}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:radial-gradient(ellipse at 50% 20%,#f7f1e3 0%,var(--bg) 60%,#e2d6bd 100%);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.7}
+.view{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 16px}
+body.open #cover{display:none} body:not(.open) #toc{display:none}
+
+/* ---- the closed book ---- */
+.stage{perspective:1600px}
+.book{position:relative;display:block;width:min(74vw,400px);aspect-ratio:3/4.15;border:0;padding:0;cursor:pointer;font:inherit;color:inherit;background:none;
+  transform:rotateY(14deg) rotateX(2deg);transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.7,.2,1);filter:drop-shadow(-18px 24px 26px rgba(50,30,10,.38))}
+.book:hover,.book:focus-visible{transform:rotateY(6deg) rotateX(1deg) translateY(-6px)}
+.book:focus-visible{outline:3px solid var(--accent);outline-offset:10px}
+.book.opening{transform:rotateY(-78deg) translateX(30px);opacity:0;transition:transform .55s ease-in,opacity .45s ease-in .1s;transform-origin:right center}
+.pages{position:absolute;inset:7px auto 7px -13px;width:16px;border-radius:2px 0 0 2px;
+  background:repeating-linear-gradient(90deg,#fbf5e6 0 1.5px,#d8cba9 1.5px 3px);box-shadow:inset 0 0 4px rgba(90,70,30,.5)}
+.face{position:absolute;inset:0;border-radius:4px 10px 10px 4px;overflow:hidden;
+  background:radial-gradient(ellipse at 30% 18%,rgba(255,255,255,.10),transparent 55%),linear-gradient(135deg,var(--cover2),var(--cover) 55%,#2a0d11);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),inset 0 0 60px rgba(0,0,0,.45)}
+.face::before{content:"";position:absolute;inset:0;opacity:.5;
+  background:repeating-linear-gradient(47deg,rgba(255,255,255,.035) 0 2px,transparent 2px 5px),repeating-linear-gradient(-41deg,rgba(0,0,0,.06) 0 1px,transparent 1px 4px)}
+.spine{position:absolute;top:0;bottom:0;right:0;width:8%;background:linear-gradient(270deg,rgba(0,0,0,.5),rgba(0,0,0,.05) 70%,rgba(255,255,255,.08));border-inline-start:1px solid rgba(0,0,0,.35)}
+.frame{position:absolute;inset:6% 13% 6% 6%;border:2px solid var(--gold);border-radius:3px;box-shadow:0 0 0 5px var(--cover),0 0 0 6px rgba(217,178,90,.65);
+  display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:9% 6% 7%}
+.frame::before,.frame::after{content:"";position:absolute;inset-inline:22%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.frame::before{top:27%}.frame::after{bottom:24%}
+.gold{color:var(--gold);background:linear-gradient(180deg,var(--gold2),var(--gold) 55%,#a8853a);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  font-family:"Frank Ruhl Libre","Times New Roman",serif;text-shadow:none}
+.c-top{font-size:clamp(1rem,4.6vw,1.45rem);font-weight:700;letter-spacing:.14em}
+.c-mid{display:flex;flex-direction:column;gap:.1em}
+.c-small{font-size:clamp(.9rem,4vw,1.25rem);font-weight:500;letter-spacing:.3em;margin-inline-end:-.3em}
+.c-title{font-size:clamp(2.6rem,14vw,4.6rem);font-weight:900;line-height:1.05}
+.c-sub{font-size:clamp(.78rem,3.4vw,1.02rem);font-weight:500;letter-spacing:.06em}
+.c-brand{font-size:clamp(.85rem,3.8vw,1.15rem);font-weight:700;letter-spacing:.18em}
+.hint{margin-top:34px;color:var(--muted);font-size:.98rem;text-align:center}
+.hint b{display:block;font-family:"Frank Ruhl Libre",serif;color:var(--ink);font-size:1.25rem;font-weight:700}
+
+/* ---- the open book: contents ---- */
+.leaf{width:min(100%,880px);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:clamp(20px,4vw,44px);
+  box-shadow:0 2px 4px rgba(60,40,10,.08),0 18px 44px rgba(60,40,10,.14);position:relative;animation:leaf .45s ease-out}
+.leaf::before{content:"";position:absolute;inset:9px;border:1px solid var(--line);border-radius:3px;pointer-events:none}
+@keyframes leaf{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.book,.book.opening,.leaf{transition:none;animation:none}}
+.leaf header{text-align:center;border-bottom:2px solid var(--gold);padding-bottom:16px;margin-bottom:8px}
+.leaf .k{color:var(--accent);font-weight:700;font-size:.95rem;letter-spacing:.04em}
+.leaf h1{font-family:"Frank Ruhl Libre",serif;font-size:clamp(2rem,7vw,3rem);margin:.05em 0;line-height:1.15}
+.leaf header p{margin:0;color:var(--muted)}
+/* ---- the dedication page, in the manner of a memorial page in a printed sefer ---- */
+.ded{margin:30px auto 14px;max-width:660px;text-align:center;padding:30px 20px 28px;border:4px double #7a5a1e;outline:1px solid #cdb37a;outline-offset:7px;
+  background:linear-gradient(180deg,#fffdf6,#fbf3df);font-family:"Frank Ruhl Libre","Times New Roman",serif;color:#1c170d;box-shadow:0 10px 30px rgba(60,40,10,.12)}
+.ded svg{width:44px;height:66px;display:block;margin:0 auto 6px}
+.ded .v{font-size:1.02rem;color:#7a5a1e;letter-spacing:.1em;margin:0}
+.ded .t{font-size:clamp(2.1rem,9vw,3.2rem);font-weight:900;line-height:1.15;margin:.18em 0 .1em;letter-spacing:.03em}
+.ded .rule{width:46%;height:1px;margin:14px auto;background:linear-gradient(90deg,transparent,#7a5a1e,transparent)}
+.ded .names{display:flex;flex-direction:column;gap:.15em;margin:0}
+.ded .names b{font-size:clamp(1.45rem,6vw,2.1rem);font-weight:700;line-height:1.35}
+.ded .names i{font-style:normal;color:#a8853a;font-size:.9rem;line-height:1}
+.ded .e{font-size:clamp(1.1rem,4.4vw,1.35rem);margin:0}
+.ded .a{font-size:clamp(1.25rem,5vw,1.6rem);font-weight:700;letter-spacing:.22em;margin:.35em 0 0;color:#7a5a1e}
+.leaf h2{font-family:"Frank Ruhl Libre",serif;font-size:1.45rem;margin:22px 0 2px}
+.leaf h3{font-family:"Frank Ruhl Libre",serif;font-size:1.2rem;margin:24px 0 8px;color:#7a5a1e}
+.leaf h3 em{font-style:normal;color:var(--ink);font-weight:500}
+.leaf h3 em::before{content:"· "}
+.chnote{margin:-6px 0 8px;font-size:.86rem;color:var(--muted)}
+.dafs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.daf{border:1px solid var(--line);border-radius:8px;background:#fff;padding:8px 10px 10px;display:flex;flex-direction:column;gap:6px}
+.daf b{font-family:"Frank Ruhl Libre",serif;font-size:1.15rem}
+.daf a,.daf span{display:flex;justify-content:space-between;align-items:center;text-decoration:none;font-size:.95rem;border-radius:6px;padding:4px 10px;border:1px solid var(--line)}
+.daf a{color:var(--accent);background:#eef5f5;border-color:#cfe1e3;font-weight:500}
+.daf a:hover{background:var(--accent);color:#fff}
+.daf span{color:#a9a08c;background:#f7f2e6}
+.daf i{font-style:normal;font-size:.72rem;font-weight:700;background:#fff;color:#7a5a1e;border:1px solid var(--gold);border-radius:999px;padding:0 7px}
+.daf a:hover i{color:#7a5a1e}
+.first{display:inline-block;margin:14px 0 0;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:8px 26px}
+.first:hover{background:#17454e}
+.how{color:var(--muted);font-size:.95rem;margin:8px 0 0}
+.leaf footer a{color:var(--accent)}
+.leaf footer{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+.close{font:inherit;font-size:.9rem;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:3px 14px;cursor:pointer;margin-top:10px}
+#toc.view{justify-content:flex-start}
+</style>
+</head>
+<body>
+<main>
+<section class="view" id="cover" aria-label="כריכת הספר">
+  <div class="stage">
+    <button type="button" class="book" id="book" aria-label="פתיחת הספר: מסכת ברכות">
+      <span class="pages"></span>
+      <span class="face">
+        <span class="spine"></span>
+        <span class="frame">
+          <span class="gold c-top">תלמוד בבלי</span>
+          <span class="c-mid"><span class="gold c-small">מסכת</span><span class="gold c-title">ברכות</span><span class="gold c-sub">עם פירוש רש"י ותוספות</span></span>
+          <span class="gold c-brand">מורה לגמרא</span>
+        </span>
+      </span>
+    </button>
+  </div>
+  <p class="hint"><b>לחצו על הספר כדי לפתוח</b>כל עמוד מוסבר צעד אחר צעד, מול צורת הדף</p>
+</section>
+
+<section class="view" id="toc" aria-label="תוכן העניינים">
+  <div class="leaf">
+    <header>
+      <div class="k">מורה לגמרא</div>
+      <h1>מסכת ברכות</h1>
+      <p>הדף בצורתו, עם רש"י ותוספות, והסבר שמתקדם מול הדף ומסמן את מקומו.</p>
+      <a class="first" href="berakhot-2a.html">להתחיל מהעמוד הראשון</a>
+    </header>
+    <section class="ded" aria-label="הקדשה לעילוי נשמת">
+      <svg viewBox="0 0 44 66" aria-hidden="true"><path d="M22 2c5 7 8 11 8 16a8 8 0 0 1-16 0c0-5 3-9 8-16z" fill="#e3a52a"/><path d="M22 10c2.6 3.6 4 6 4 8.6a4 4 0 0 1-8 0c0-2.600 1.400-5 4-8.600z" fill="#fbe7a6"/><rect x="21" y="25" width="2" height="6" fill="#3a2a10"/><rect x="14" y="30" width="16" height="30" rx="2" fill="#f6efdc" stroke="#7a5a1e" stroke-width="1.500"/><rect x="8" y="60" width="28" height="4" rx="2" fill="#7a5a1e"/></svg>
+      <p class="v">נר ה' נשמת אדם</p>
+      <div class="t">לעילוי נשמת</div>
+      <div class="rule"></div>
+      <p class="names"><b>מרים בת שנדל ע&quot;ה</b><i>✦</i><b>שניאור בן טובה ז&quot;ל</b><i>✦</i><b>מאיר בן ריינה ז&quot;ל</b><i>✦</i><b>ריינה בת עישה ע&quot;ה</b><i>✦</i><b>משה בן כוכבה ז&quot;ל</b><i>✦</i><b>ציונה בת כוכבה ע&quot;ה</b><i>✦</i><b>יובל בן טניה ז&quot;ל</b></p>
+      <div class="rule"></div>
+      <p class="e">תהא נשמתם צרורה בצרור החיים</p>
+      <p class="a">ת.נ.צ.ב.ה.</p>
+    </section>
+    <h2>תוכן העניינים</h2>
+    <p class="how">124 עמודים, מדף ב' עמוד א' עד דף ס"ג עמוד ב'. בוחרים דף ועמוד, ובתוך כל עמוד עוברים לעמוד הקודם ולעמוד הבא.</p>
+<h3>פרק ראשון <em>מאימתי</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף ב'</b><a href="berakhot-2a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-2b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ג'</b><a href="berakhot-3a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-3b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ד'</b><a href="berakhot-4a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-4b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ה'</b><a href="berakhot-5a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-5b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ו'</b><a href="berakhot-6a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-6b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ז'</b><a href="berakhot-7a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-7b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ח'</b><a href="berakhot-8a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-8b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ט'</b><a href="berakhot-9a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-9b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף י'</b><a href="berakhot-10a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-10b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף י"א</b><a href="berakhot-11a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-11b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף י"ב</b><a href="berakhot-12a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-12b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+</div>
+<h3>פרק שני <em>היה קורא</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף י"ג</b><a href="berakhot-13a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-13b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף י"ד</b><a href="berakhot-14a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-14b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ט"ו</b><a href="berakhot-15a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-15b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף ט"ז</b><a href="berakhot-16a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-16b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ז</b><a href="berakhot-17a.html">עמוד א'</a><a href="berakhot-17b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שלישי <em>מי שמתו</em></h3><p class="chnote">הפרק נפתח בדף י&quot;ז עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף י"ח</b><a href="berakhot-18a.html">עמוד א'</a><a href="berakhot-18b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ט</b><a href="berakhot-19a.html">עמוד א'</a><a href="berakhot-19b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ'</b><a href="berakhot-20a.html">עמוד א'</a><a href="berakhot-20b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"א</b><a href="berakhot-21a.html">עמוד א'</a><a href="berakhot-21b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ב</b><a href="berakhot-22a.html">עמוד א'</a><a href="berakhot-22b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ג</b><a href="berakhot-23a.html">עמוד א'</a><a href="berakhot-23b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ד</b><a href="berakhot-24a.html">עמוד א'</a><a href="berakhot-24b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ה</b><a href="berakhot-25a.html">עמוד א'</a><a href="berakhot-25b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק רביעי <em>תפלת השחר</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף כ"ו</b><a href="berakhot-26a.html">עמוד א'</a><a href="berakhot-26b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ז</b><a href="berakhot-27a.html">עמוד א'</a><a href="berakhot-27b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ח</b><a href="berakhot-28a.html">עמוד א'</a><a href="berakhot-28b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ט</b><a href="berakhot-29a.html">עמוד א'</a><a href="berakhot-29b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל'</b><a href="berakhot-30a.html">עמוד א'</a><a href="berakhot-30b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק חמישי <em>אין עומדין</em></h3><p class="chnote">הפרק נפתח בדף ל&#x27; עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף ל"א</b><a href="berakhot-31a.html">עמוד א'</a><a href="berakhot-31b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ב</b><a href="berakhot-32a.html">עמוד א'</a><a href="berakhot-32b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ג</b><a href="berakhot-33a.html">עמוד א'</a><a href="berakhot-33b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ד</b><a href="berakhot-34a.html">עמוד א'</a><a href="berakhot-34b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שישי <em>כיצד מברכין</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף ל"ה</b><a href="berakhot-35a.html">עמוד א'</a><a href="berakhot-35b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ו</b><a href="berakhot-36a.html">עמוד א'</a><a href="berakhot-36b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ז</b><a href="berakhot-37a.html">עמוד א'</a><a href="berakhot-37b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ח</b><a href="berakhot-38a.html">עמוד א'</a><a href="berakhot-38b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ט</b><a href="berakhot-39a.html">עמוד א'</a><a href="berakhot-39b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ'</b><a href="berakhot-40a.html">עמוד א'</a><a href="berakhot-40b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"א</b><a href="berakhot-41a.html">עמוד א'</a><a href="berakhot-41b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ב</b><a href="berakhot-42a.html">עמוד א'</a><a href="berakhot-42b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ג</b><a href="berakhot-43a.html">עמוד א'</a><a href="berakhot-43b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ד</b><a href="berakhot-44a.html">עמוד א'</a><a href="berakhot-44b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שביעי <em>שלשה שאכלו</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף מ"ה</b><a href="berakhot-45a.html">עמוד א'</a><a href="berakhot-45b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ו</b><a href="berakhot-46a.html">עמוד א'</a><a href="berakhot-46b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ז</b><a href="berakhot-47a.html">עמוד א'</a><a href="berakhot-47b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ח</b><a href="berakhot-48a.html">עמוד א'</a><a href="berakhot-48b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ט</b><a href="berakhot-49a.html">עמוד א'</a><a href="berakhot-49b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ'</b><a href="berakhot-50a.html">עמוד א'</a><a href="berakhot-50b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"א</b><a href="berakhot-51a.html">עמוד א'</a><a href="berakhot-51b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שמיני <em>אלו דברים</em></h3><p class="chnote">הפרק נפתח בדף נ&quot;א עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף נ"ב</b><a href="berakhot-52a.html">עמוד א'</a><a href="berakhot-52b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ג</b><a href="berakhot-53a.html">עמוד א'</a><a href="berakhot-53b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק תשיעי <em>הרואה</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף נ"ד</b><a href="berakhot-54a.html">עמוד א'</a><a href="berakhot-54b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ה</b><a href="berakhot-55a.html">עמוד א'</a><a href="berakhot-55b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ו</b><a href="berakhot-56a.html">עמוד א'</a><a href="berakhot-56b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ז</b><a href="berakhot-57a.html">עמוד א'</a><a href="berakhot-57b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ח</b><a href="berakhot-58a.html">עמוד א'</a><a href="berakhot-58b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ט</b><a href="berakhot-59a.html">עמוד א'</a><a href="berakhot-59b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס'</b><a href="berakhot-60a.html">עמוד א'</a><a href="berakhot-60b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"א</b><a href="berakhot-61a.html">עמוד א'</a><a href="berakhot-61b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ב</b><a href="berakhot-62a.html">עמוד א'</a><a href="berakhot-62b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ג</b><a href="berakhot-63a.html">עמוד א'</a><a href="berakhot-63b.html">עמוד ב'</a></div>
+</div>
+
+    <footer>
+      <b>טיוטה לבדיקה.</b> ההסברים עדיין לא עברו בדיקה ואישור של תלמיד חכם. הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.<br>
+      נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+      ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
+      <button type="button" class="close" id="close">לסגור את הספר</button> <a class="close" href="index.html" style="text-decoration:none;display:inline-block">לכל המסכתות</a>
+    </footer>
+  </div>
+</section>
+</main>
+<script>
+(function(){
+  var b = document.body, book = document.getElementById('book');
+  function open(now){ b.classList.add('open'); if (!now) window.scrollTo(0, 0); if (location.hash !== '#toc') history.replaceState(null, '', '#toc'); }
+  if (location.hash === '#toc') open(true);
+  book.addEventListener('click', function(){
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return open();
+    book.classList.add('opening'); setTimeout(function(){ open(); book.classList.remove('opening'); }, 520);
+  });
+  document.getElementById('close').addEventListener('click', function(){ b.classList.remove('open'); history.replaceState(null, '', location.pathname); window.scrollTo(0, 0); });
+})();
+</script>
+</body>
+</html>

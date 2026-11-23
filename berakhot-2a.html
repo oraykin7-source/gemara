@@ -224,6 +224,9 @@ html{scroll-padding-top:12px}
 .pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
 .pt-tools{display:none}
 .g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
 .pane-title b{color:var(--ink);font-size:.95rem}
 .pane-exp header.top{padding:16px 0 10px}
 .pane-exp .guide{margin:6px 0 4px}
@@ -310,7 +313,7 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
 <body>
 <div class="split">
 <aside class="pane-daf" aria-label="הדף">
-  <div class="pane-title"><b>ברכות, דף ב&#x27; עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="index.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="pane-title"><b>ברכות, דף ב&#x27; עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="berakhot.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
   <div class="daf-scroll" id="paneDaf">
   <div class="vilna" id="dafBox">
     <div class="v-head"><span>מאימתי</span><span>פרק ראשון</span><span>ברכות<b>ב.</b></span></div>
@@ -323,7 +326,7 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
   </div>
 </aside>
 <div class="pane-exp">
-<nav class="booknav" aria-label="מעבר בין עמודים"><span>העמוד הקודם</span><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-2b.html">העמוד הבא</a></nav>
+<nav class="booknav" aria-label="מעבר בין עמודים"><span>העמוד הקודם</span><a class="home" href="berakhot.html#toc">תוכן העניינים</a><a href="berakhot-2b.html">העמוד הבא</a></nav>
 <header class="top">
   <div class="brand">מורה לגמרא · שיעור 1</div>
   <h1>מסכת ברכות, דף ב&#x27; עמוד א&#x27;</h1>
@@ -792,6 +795,7 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
   </table>
 </section>
 <script>window.GM_NEXT="berakhot-2b.html";</script>
+<script>window.GM_DED="מרים בת שנדל ע\"ה · שניאור בן טובה ז\"ל · מאיר בן ריינה ז\"ל · ריינה בת עישה ע\"ה · משה בן כוכבה ז\"ל · ציונה בת כוכבה ע\"ה · יובל בן טניה ז\"ל";</script>
 <script>
 (function(){
   var film = document.getElementById('film1'); if (!film) return;
@@ -842,7 +846,7 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
   show(0);
 })();
 </script>
-<nav class="booknav end" aria-label="מעבר בין עמודים"><span>העמוד הקודם</span><a class="home" href="index.html#toc">תוכן העניינים</a><a href="berakhot-2b.html">העמוד הבא</a></nav>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><span>העמוד הקודם</span><a class="home" href="berakhot.html#toc">תוכן העניינים</a><a href="berakhot-2b.html">העמוד הבא</a></nav>
 <footer>
   <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
   ההסברים, התרגומים, השאלות והקריינות: © מורה לגמרא. כל הזכויות שמורות.<br>
@@ -990,6 +994,8 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
   function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
   gBody.addEventListener('scroll', checkMore, {passive: true});
   moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
   var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
   function show(n, quiet){
     cur = n; var s = STEPS[n];
@@ -1005,6 +1011,7 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
     q('.g-cnt').textContent = (n + 1) + ' מתוך ' + STEPS.length;
     q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
     q('.g-bar i').style.width = ((n + 1) / STEPS.length * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
     gBody.scrollTop = 0; checkMore();
     var last = n === STEPS.length - 1;
     q('.pv').disabled = n === 0; q('.nx').disabled = last && !NEXT; q('.nx').textContent = last && NEXT ? 'לעמוד הבא' : 'הבא';
