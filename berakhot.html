@@ -97,7 +97,15 @@ body.open #cover{display:none} body:not(.open) #toc{display:none}
 .leaf footer a{color:var(--accent)}
 .leaf footer{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
 .close{font:inherit;font-size:.9rem;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:3px 14px;cursor:pointer;margin-top:10px}
-#toc.view{justify-content:flex-start}
+#toc.view{display:grid;grid-template-columns:minmax(0,290px) minmax(0,880px) minmax(0,290px);gap:22px;align-items:start;justify-content:center;padding-top:54px}
+.side{position:sticky;top:52px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:18px 18px 16px;box-shadow:0 2px 4px rgba(60,40,10,.08),0 10px 26px rgba(60,40,10,.1);font-size:.95rem;line-height:1.65;max-height:calc(100vh - 68px);overflow:auto}
+.side .sk{color:var(--accent);font-weight:700;font-size:.82rem;letter-spacing:.05em}
+.side h2{font-family:"Frank Ruhl Libre",serif;font-size:1.35rem;margin:0 0 6px;color:#7a5a1e}
+.side p{margin:6px 0}
+.side ul{margin:6px 0;padding-inline-start:18px}
+.side .hd{font-family:"Frank Ruhl Libre",serif;font-size:1.14rem;line-height:1.95;text-align:center;margin:10px 0 12px;padding:10px 6px;border-block:1px solid var(--gold)}
+.side a.more{display:block;text-align:center;text-decoration:none;font-weight:700;color:#fff;background:var(--accent);border-radius:999px;padding:6px 14px}
+@media (max-width:1280px){#toc.view{display:flex;justify-content:flex-start;gap:16px} .side{position:static;width:min(100%,880px);max-height:none}}
 </style>
 </head>
 <body>
@@ -121,6 +129,19 @@ body.open #cover{display:none} body:not(.open) #toc{display:none}
 </section>
 
 <section class="view" id="toc" aria-label="תוכן העניינים">
+  <aside class="side" aria-label="פתיחה למסכת">
+    <div class="sk">לפני שמתחילים</div>
+    <h2>פתיחה למסכת ברכות</h2>
+    <p>מסכת ברכות היא המסכת הראשונה בתלמוד הבבלי, והיחידה בסדר זרעים שיש עליה גמרא בבבלי. יש בה תשעה פרקים, מדף ב' עד דף ס"ד.</p>
+    <p><b>על מה המסכת:</b></p>
+    <ul>
+      <li>פרקים א' עד ג': קריאת שמע, זמנה ודיניה.</li>
+      <li>פרקים ד' וה': התפילה.</li>
+      <li>פרקים ו' עד ח': ברכות על אוכל, זימון, ברכת המזון וסדר הסעודה.</li>
+      <li>פרק ט': ברכות על מראות, על ניסים ועל שמועות, וברכות הודאה.</li>
+    </ul>
+    <p><b>איך לומדים כאן:</b> בוחרים דף ועמוד. בכל עמוד ההסבר מתקדם צעד אחר צעד מול הדף, ואחריו יחידות לימוד, תרגום ושאלות.</p>
+  </aside>
   <div class="leaf">
     <header>
       <div class="k">מורה לגמרא</div>
@@ -160,12 +181,12 @@ body.open #cover{display:none} body:not(.open) #toc{display:none}
 <div class="daf"><b>דף י"ד</b><a href="berakhot-14a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-14b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
 <div class="daf"><b>דף ט"ו</b><a href="berakhot-15a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-15b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
 <div class="daf"><b>דף ט"ז</b><a href="berakhot-16a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-16b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
-<div class="daf"><b>דף י"ז</b><a href="berakhot-17a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-17b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ז</b><a href="berakhot-17a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-17b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
 </div>
 <h3>פרק שלישי <em>מי שמתו</em></h3><p class="chnote">הפרק נפתח בדף י&quot;ז עמוד ב&#x27;</p>
 <div class="dafs">
-<div class="daf"><b>דף י"ח</b><a href="berakhot-18a.html">עמוד א'</a><a href="berakhot-18b.html">עמוד ב'</a></div>
-<div class="daf"><b>דף י"ט</b><a href="berakhot-19a.html">עמוד א'</a><a href="berakhot-19b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ח</b><a href="berakhot-18a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-18b.html">עמוד ב'<i title="עם קריינות">קול</i></a></div>
+<div class="daf"><b>דף י"ט</b><a href="berakhot-19a.html">עמוד א'<i title="עם קריינות">קול</i></a><a href="berakhot-19b.html">עמוד ב'</a></div>
 <div class="daf"><b>דף כ'</b><a href="berakhot-20a.html">עמוד א'</a><a href="berakhot-20b.html">עמוד ב'</a></div>
 <div class="daf"><b>דף כ"א</b><a href="berakhot-21a.html">עמוד א'</a><a href="berakhot-21b.html">עמוד ב'</a></div>
 <div class="daf"><b>דף כ"ב</b><a href="berakhot-22a.html">עמוד א'</a><a href="berakhot-22b.html">עמוד ב'</a></div>
@@ -240,6 +261,13 @@ body.open #cover{display:none} body:not(.open) #toc{display:none}
       <button type="button" class="close" id="close">לסגור את הספר</button> <a class="close" href="index.html?v=2" style="text-decoration:none;display:inline-block">לכל הש"ס</a>
     </footer>
   </div>
+  <aside class="side" aria-label="סיום המסכת">
+    <div class="sk">כשמסיימים</div>
+    <h2>הדרן עלך מסכת ברכות</h2>
+    <p>בסיום המסכת אומרים את ה"הדרן": הבטחה לחזור אל המסכת, ותפילה להמשיך וללמוד.</p>
+    <p class="hd">הֲדְרָן עֲלָךְ מַסֶּכֶת בְּרָכוֹת וְהֲדְרָךְ עֲלָן. דַּעְתָּן עֲלָךְ מַסֶּכֶת בְּרָכוֹת וְדַעְתָּךְ עֲלָן. לָא נִתְנְשֵׁי מִינָךְ מַסֶּכֶת בְּרָכוֹת וְלֹא תִתְנְשֵׁי מִינָן, לָא בְּעָלְמָא הָדֵין וְלֹא בְּעָלְמָא דְאַָתֵי:</p>
+    <a class="more" href="berakhot-hadran.html">לדף ההדרן המלא</a>
+  </aside>
 </section>
 </main>
 <script>
