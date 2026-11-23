@@ -852,7 +852,7 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
 <script>
 (function(){
   if (!document.getElementById('prog')) return;
-  var root = document.documentElement;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
   var btns = document.querySelectorAll('.seg button');
   function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
   function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
@@ -880,8 +880,8 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
     prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
   }
   boxes.forEach(function(c){
-    c.checked = load('gm-b2a-' + c.dataset.unit) === '1';
-    c.addEventListener('change', function(){ store('gm-b2a-' + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
   });
   refresh();
 })();
