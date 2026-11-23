@@ -64,9 +64,18 @@ body.open #cover{display:none} body:not(.open) #toc{display:none}
 .leaf .k{color:var(--accent);font-weight:700;font-size:.95rem;letter-spacing:.04em}
 .leaf h1{font-family:"Frank Ruhl Libre",serif;font-size:clamp(2rem,7vw,3rem);margin:.05em 0;line-height:1.15}
 .leaf header p{margin:0;color:var(--muted)}
-.ded{margin:22px auto 4px;max-width:420px;text-align:center;display:flex;flex-direction:column;gap:2px;padding:14px 16px;border-block:1px solid var(--gold);font-family:"Frank Ruhl Libre","Times New Roman",serif}
-.ded span{color:#7a5a1e;font-size:1rem;letter-spacing:.06em}
-.ded b{font-size:1.35rem;font-weight:700;line-height:1.35}
+/* ---- the dedication page, in the manner of a memorial page in a printed sefer ---- */
+.ded{margin:30px auto 14px;max-width:660px;text-align:center;padding:30px 20px 28px;border:4px double #7a5a1e;outline:1px solid #cdb37a;outline-offset:7px;
+  background:linear-gradient(180deg,#fffdf6,#fbf3df);font-family:"Frank Ruhl Libre","Times New Roman",serif;color:#1c170d;box-shadow:0 10px 30px rgba(60,40,10,.12)}
+.ded svg{width:44px;height:66px;display:block;margin:0 auto 6px}
+.ded .v{font-size:1.02rem;color:#7a5a1e;letter-spacing:.1em;margin:0}
+.ded .t{font-size:clamp(2.1rem,9vw,3.2rem);font-weight:900;line-height:1.15;margin:.18em 0 .1em;letter-spacing:.03em}
+.ded .rule{width:46%;height:1px;margin:14px auto;background:linear-gradient(90deg,transparent,#7a5a1e,transparent)}
+.ded .names{display:flex;flex-direction:column;gap:.15em;margin:0}
+.ded .names b{font-size:clamp(1.55rem,6.4vw,2.3rem);font-weight:700;line-height:1.4}
+.ded .names i{font-style:normal;color:#a8853a;font-size:.9rem;line-height:1}
+.ded .e{font-size:clamp(1.1rem,4.4vw,1.35rem);margin:0}
+.ded .a{font-size:clamp(1.25rem,5vw,1.6rem);font-weight:700;letter-spacing:.22em;margin:.35em 0 0;color:#7a5a1e}
 .leaf h2{font-family:"Frank Ruhl Libre",serif;font-size:1.45rem;margin:22px 0 2px}
 .leaf h3{font-family:"Frank Ruhl Libre",serif;font-size:1.2rem;margin:24px 0 8px;color:#7a5a1e}
 .leaf h3 em{font-style:normal;color:var(--ink);font-weight:500}
@@ -116,12 +125,16 @@ body.open #cover{display:none} body:not(.open) #toc{display:none}
       <p>הדף בצורתו, עם רש"י ותוספות, והסבר שמתקדם מול הדף ומסמן את מקומו.</p>
       <a class="first" href="berakhot-2a.html">להתחיל מהעמוד הראשון</a>
     </header>
-    <div class="ded" aria-label="הקדשה">
-      <span>לעילוי נשמת</span>
-      <b>מרים בת שנדל ע"ה</b>
-      <b>ושניאור בן טובה ז"ל</b>
-      <span>ת.נ.צ.ב.ה.</span>
-    </div>
+    <section class="ded" aria-label="הקדשה לעילוי נשמת">
+      <svg viewBox="0 0 44 66" aria-hidden="true"><path d="M22 2c5 7 8 11 8 16a8 8 0 0 1-16 0c0-5 3-9 8-16z" fill="#e3a52a"/><path d="M22 10c2.6 3.6 4 6 4 8.6a4 4 0 0 1-8 0c0-2.600 1.400-5 4-8.600z" fill="#fbe7a6"/><rect x="21" y="25" width="2" height="6" fill="#3a2a10"/><rect x="14" y="30" width="16" height="30" rx="2" fill="#f6efdc" stroke="#7a5a1e" stroke-width="1.500"/><rect x="8" y="60" width="28" height="4" rx="2" fill="#7a5a1e"/></svg>
+      <p class="v">נר ה' נשמת אדם</p>
+      <div class="t">לעילוי נשמת</div>
+      <div class="rule"></div>
+      <p class="names"><b>מרים בת שנדל ע&quot;ה</b><i>✦</i><b>שניאור בן טובה ז&quot;ל</b></p>
+      <div class="rule"></div>
+      <p class="e">תהא נשמתם צרורה בצרור החיים</p>
+      <p class="a">ת.נ.צ.ב.ה.</p>
+    </section>
     <h2>תוכן העניינים</h2>
     <p class="how">40 עמודים, מדף ב' עמוד א' עד דף כ"א עמוד ב'. בוחרים דף ועמוד, ובתוך כל עמוד עוברים לעמוד הקודם ולעמוד הבא.</p>
 <h3>פרק ראשון <em>מאימתי</em></h3>
