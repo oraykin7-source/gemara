@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף ס&#x27; עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-60b.html">
+<meta name="description" content="מסכת שבת, דף ס&#x27; עמוד ב&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ס' עמוד ב'", "url": "https://gemara.co.il/shabbat-60b.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף ס&#x27; עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>שבת</span><span>פרק שישי</span><span>במה אשה</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-60a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-61a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 118</div>
+  <h1>מסכת שבת, דף ס&#x27; עמוד ב&#x27;</h1>
+  <p class="sub">פרק שישי, &quot;במה אשה&quot;. למה הסנדל המסומר אסור גם ביום טוב, כמה מסמרים מותרים, סנדל שנעשה בדרכים אחרות, ודברי רבי חייא.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ס&#x27; עמוד ב&#x27;, לומדים: הסנדל המסומר ביום טוב; מסמרים לחיזוק ומסמרים לנוי; סנדל ששונה מהסנדל של המעשה; הברייתא שמסייעת לרב ששת; ההלכה ודברי רבי חייא.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. הסנדל המסומר ביום טוב</a><a href="#u2">2. מסמרים לחיזוק ומסמרים לנוי</a><a href="#u3">3. סנדל ששונה מהסנדל של המעשה</a><a href="#u4">4. הברייתא שמסייעת לרב ששת</a><a href="#u5">5. ההלכה ודברי רבי חייא</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2a,G2b,G3">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>הסנדל המסומר ביום טוב</h2>
+  <p class="lead">אם הגזרה היא כמו המעשה שהיה בשבת, למה המשנה במסכת ביצה אוסרת לשלוח סנדל מסומר ביום טוב? הגמרא מוצאת את מה שמשותף לשבת וליום טוב.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אבל לא סנדל המסומר</td><td>אבל לא סנדל מסומר,</td></tr>
+      <tr><td>ולא מנעל שאינו תפור</td><td>ולא נעל שאינה תפורה.</td></tr>
+      <tr><td>בשבת מ"ט דאיכא כינופיא</td><td>בשבת מה הטעם? כי יש התאספות.</td></tr>
+      <tr><td>בי"ט נמי איכא כינופיא</td><td>ביום טוב גם יש התאספות.</td></tr>
+      <tr><td>תענית צבור איכא כינופיא ליתסר</td><td>בתענית ציבור יש התאספות, ייאסר!</td></tr>
+      <tr><td>מעשה כי הוה בכינופיא דאיסורא</td><td>המעשה, כשהיה, בהתאספות של איסור (מלאכה) היה,</td></tr>
+      <tr><td>הכא כינופיא דהתירא הוה</td><td>כאן זו התאספות של היתר.</td></tr>
+      <tr><td>לא אסרו אלא בירדן ובספינה</td><td>לא אסרו אלא בירדן ובספינה,</td></tr>
+      <tr><td>וכמעשה שהיה</td><td>וכמו המעשה שהיה.</td></tr>
+      <tr><td>ירדן דשאני משאר נהרות</td><td>הירדן, ששונה משאר הנהרות.</td></tr>
+      <tr><td>אבל י"ט ושבת כי הדדי נינהו</td><td>אבל יום טוב ושבת שווים זה לזה,</td></tr>
+      <tr><td>אין בין י"ט לשבת אלא אוכל נפש בלבד</td><td>אין הבדל בין יום טוב לשבת אלא הכנת אוכל בלבד.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> משלחים כלים ביום טוב, אבל לא סנדל מסומר ולא נעל שאינה תפורה. רש"י מסביר שמכאן שאין נועלים אותו ביום טוב, כי מה שנהנים ממנו ביום טוב מותר לשלוח.</p>
+  <p><b>הטעם:</b> בשבת נאסר כי יש "כינופיא", התאספות. רש"י מפרש: אין עושים מלאכה ומתאספים בבתי הכנסת ובבתי המדרש, כמו במעשה. וגם ביום טוב יש התאספות כזו. ובתענית ציבור, אף שיש התאספות, מותרת מלאכה, ולכן אין היא דומה למעשה.</p>
+  <p><b>רבי חנינא בן עקיבא:</b> גם לשיטתו, שגזרה היא רק כמו המעשה, אין מכאן היתר ליום טוב. הוא חילק רק בין הירדן לשאר הנהרות, כי הירדן שונה מהם. אבל שבת ויום טוב דומים, שהרי ההבדל היחיד ביניהם הוא הכנת אוכל.</p>
+  <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>ואפילו לרבי חנינא בן עקיבא – בפרק חומר בקדש גבי נושא מי חטאת ואפר חטאת בירדן ובספינה שנמצא כזית מן המת תחוב בקרקעית' של ספינה ונטמאו וקאמרי רבנן דגזרו שלא יעביר אדם מי חטאת בספינה ולא על הגשר ולא ישיטם על פני המים אחד ירדן ואחד שאר נהרות ופליג ר' חנינא ואמר לא אסרו אלא בירדן ובספינה ולא גשר ושאר נהרות דגזירה שגזרו מחמת מאורע אין להם לגזור אלא מעין המאורע:</blockquote><p><span class="say">מה רש"י אומר:</span> במסכת חגיגה מסופר שנמצא כזית מן המת בקרקעית ספינה שהעבירו בה מי חטאת בירדן, והם נטמאו. חכמים גזרו על כל הנהרות ועל גשר, ורבי חנינא אמר שגזרה בגלל מאורע אינה אלא כמו המאורע.</p></div>
+  <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>דשאני משאר נהרות – ברוחב או בעומק:</blockquote><p><span class="say">מה רש"י אומר:</span> הירדן שונה משאר הנהרות ברוחבו או בעומקו.</p></div>
+  <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>אין בין יו"ט לשבת כו – ואע"פ דבפ' משילין (ביצה דף לז. ושם) ולקמן בפ' כל הכלים (שבת דף קכד. ושם) מוקמינן לה כב"ש דאי כב"ה הא אמרי מתוך שהותרה הבערה לצורך הותרה נמי שלא לצורך מ"מ דמי טפי יו"ט לשבת הואיל ולא שריא שאר דברים אלא מטעם שהותרה לצורך אוכל נפש:</blockquote><p><span class="say">מה התוספות אומרים:</span> את המשנה "אין בין יום טוב לשבת" הגמרא מעמידה במקומות אחרים כבית שמאי, כי לבית הלל מה שהותר לצורך הותר גם שלא לצורך. ובכל זאת גם לבית הלל יום טוב דומה לשבת יותר, כי שאר הדברים מותרים בו רק מפני שהותרו לצורך אוכל.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה אין משלחים אותו</h3>
+    <div data-hl="T1a" class="voice t"><span class="tag">תוספות</span><blockquote>לא בסנדל המסומר ולא במנעל שאינו תפור – תימה לר"י והא קתני סיפא זה הכלל כל שניאותין בו משלחין אותו ביו"ט ומפרש בגמ' דכל שנאותין בו בחול קאמר וסנדל המסומר ניאותין בו בחול ואמאי אין משלחין אותו בי"ט וי"ל דהחמירו בו לפי שבא תקלה על ידו כי היכי דאסר ליה בשמעתין ר' אלעזר בר' שמעון לטלטלו לכסות בו את הכלי או לסמוך בו כרעי המטה אע"פ ששאר כלים שמלאכתן לאיסור שרי לטלטלן לצורך גופן …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק מקשה: הכלל במשנה שם הוא שמשלחים כל מה שנהנים ממנו ביום חול, ובסנדל המסומר נהנים ביום חול. התשובה: החמירו בו כי באה תקלה על ידו, כמו שרבי אלעזר ברבי שמעון אוסר לטלטל אותו אפילו לכסות בו כלי.</p></div>
+    <div data-hl="T1b" class="voice t"><span class="tag">תוספות</span><blockquote>ונראה לר"י דאפי' לרבנן דר' אלעזר דשרי לטלטל לצורך גופו ומקומו אסור לשלחו בי"ט אע"ג דשילוח משום שמחת י"ט חשיב כמו לצורך גופו מדשרי' לשלוח דברים שמלאכתן לאיסור כיון שבאת תקלה על ידו ליכא. שמחת י"ט:</blockquote><p><span class="say">מה התוספות אומרים:</span> ואפילו לחכמים, שמתירים לטלטל אותו לצורך גופו ומקומו, אסור לשלוח אותו. כי דבר שבאה תקלה על ידו, אין בו שמחת יום טוב.</p></div>
+    <h3>מה מגדיר "כמו המעשה"</h3>
+    <p>הגמרא אינה שואלת רק אם היום הוא שבת. היא שואלת מה היה במעשה: התאספות ביום שאסור במלאכה. לפי זה יום טוב נכלל, ותענית ציבור אינה נכללת.</p>
+  </div>
+  <p class="godeep">מה הכריע שיום טוב דומה לשבת ותענית ציבור אינה דומה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הטעם שנאסר הסנדל בשבת?</summary><p>כי יש התאספות.</p></details>
+  <details><summary>למה תענית ציבור אינה כמו שבת לעניין זה?</summary><p>כי בתענית ציבור מותר לעשות מלאכה, וזו התאספות של היתר.</p></details>
+  <details><summary>מה ההבדל היחיד בין יום טוב לשבת לפי המשנה?</summary><p>הכנת אוכל.</p></details>
+  <details class="deepq"><summary>למה לפי התוספות אין משלחים סנדל מסומר ביום טוב, אף שנהנים ממנו ביום חול?</summary><p>כי החמירו בו, שבאה תקלה על ידו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G4,G5,G6,G7,G8,G9">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>מסמרים לחיזוק ומסמרים לנוי</h2>
+  <p class="lead">שמואל מגביל את האיסור למסמרים שנועדו לחזק את הסנדל. מכאן השאלה כמה מסמרים לנוי מותרים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לא שנו אלא לחזק</td><td>לא שנו (את האיסור) אלא לחיזוק,</td></tr>
+      <tr><td>אבל לנוי מותר</td><td>אבל לנוי מותר.</td></tr>
+      <tr><td>חמש בזה וחמש בזה</td><td>חמישה בזה, וחמישה בזה.</td></tr>
+      <tr><td>שבע בזה ושבע בזה</td><td>שבעה בזה, ושבעה בזה.</td></tr>
+      <tr><td>שתים מכאן ושתים מכאן ואחת בתרסיותיו</td><td>שניים מכאן, שניים מכאן, ואחד ברצועות.</td></tr>
+      <tr><td>סנדל הנוטה עושה לו שבע</td><td>לסנדל נוטה עושים שבעה,</td></tr>
+      <tr><td>ורבי מתיר בי"ג</td><td>ורבי מתיר שלושה עשר.</td></tr>
+      <tr><td>ה' מותר ושבע אסור</td><td>חמישה מותר, ושבעה אסור.</td></tr>
+      <tr><td>אתון תלמידי רבי יוחנן עבידו כר' יוחנן</td><td>אתם, תלמידי רבי יוחנן, עשו כרבי יוחנן;</td></tr>
+      <tr><td>אנן נעביד כרבי חנינא</td><td>אנחנו נעשה כרבי חנינא.</td></tr>
+      <tr><td>אפילו ז' מותר</td><td>אפילו שבעה מותר.</td></tr>
+      <tr><td>אפילו ח' אסור</td><td>אפילו שמונה אסור.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>שמואל:</b> האיסור הוא במסמרים שמחזקים את הסנדל, ומסמרים לנוי מותרים. רש"י מסביר: הגזרה היא כמו המאורע, והמסמרים שבמעשה היו לחיזוק.</p>
+  <p><b>כמה לנוי:</b> רבי יוחנן אומר חמישה בכל סנדל, ורבי חנינא שבעה. רבי יוחנן מסביר: לשיטתו שניים בכל צד ואחד ברצועות, ולשיטת רבי חנינא שלושה בכל צד ואחד ברצועות.</p>
+  <p><b>הקושיה מסנדל נוטה:</b> ברייתא אומרת שבסנדל נוטה עושים שבעה, לרבי נתן, ורבי מתיר שלושה עשר. רבי חנינא אמר כרבי נתן. ורבי יוחנן אמר כרבי נהוראי, שאומר "חמישה מותר ושבעה אסור".</p>
+  <p><b>להלכה:</b> איפה אמר לתלמידי רבי יוחנן לנהוג כרבם, ואמר שהוא עצמו ינהג כרבי חנינא. ורב אשי השיב לרב הונא שאפילו שבעה מותר, ושמונה אסור.</p>
+  <div data-hl="R7" class="voice r"><span class="tag">רש"י</span><blockquote>שתים מכאן – לצד חיצון אחד בראשו לצד האצבעות ואחד לצד עקיבו ושתים מכאן לצד פנימי לעבר בין הרגלים:</blockquote><p><span class="say">מה רש"י אומר:</span> בצד החיצון של הסנדל מסמר אחד בקצה שליד האצבעות ואחד ליד העקב, וכך בצד הפנימי.</p></div>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>סנדל הנוטה – שתחתון שלו אינו שוה שעב מצד זה ודק מצד זה וכשדורס נוטה לצד הדק וצריך להגביהו שיהא שוה לצד שכנגדו:</blockquote><p><span class="say">מה רש"י אומר:</span> סנדל נוטה עבה מצד אחד ודק מצד שני. כשדורכים עליו הוא נוטה, וצריך להגביה את הצד הדק כדי שיהיה שווה.</p></div>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>איפה – שם חכם ובנו של ר' רחבה דפומבדיתא הוה:</blockquote><p><span class="say">מה רש"י אומר:</span> איפה הוא שם של חכם, בנו של רבי רחבה מפומבדיתא.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>הסנדל הנוטה מיישב את שתי השיטות</h3>
+    <div data-hl="R25" class="voice r"><span class="tag">רש"י</span><blockquote>נוטה שאני – שכולן צריכין לו להשוותו ואין אחד מהן לחזק:</blockquote><p><span class="say">מה רש"י אומר:</span> בסנדל נוטה כל המסמרים צריכים להשוות אותו, ואף אחד אינו לחיזוק. לכן בו מותר יותר.</p></div>
+    <div data-hl="R27" class="voice r"><span class="tag">רש"י</span><blockquote>לרבי יוחנן נמי – דקפרכת לעיל מינה ואמרי דאמר כמאן איכא נמי לתרוצי לעולם כרבי נתן ונוטה שאני דהתם מתיר עד שבע אבל אין נוטה ה' ותו לא:</blockquote><p><span class="say">מה רש"י אומר:</span> לפי זה אפשר לומר שגם רבי יוחנן אמר כרבי נתן: בסנדל נוטה עד שבעה, ובסנדל שאינו נוטה חמישה ולא יותר.</p></div>
+    <p>כך הגמרא מוצאת בסוף הסוגיה דרך אחרת לענות על השאלה "רבי יוחנן כמאן". בתחילה העמידה אותו כרבי נהוראי, ואחר כך, כשהבחינה בין סנדל נוטה לשאינו נוטה, גם כרבי נתן.</p>
+  </div>
+  <p class="godeep">איך החילוק בין סנדל נוטה לשאינו נוטה עוזר לרבי יוחנן? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>איזה מסמרים אסורים לפי שמואל?</summary><p>מסמרים שנועדו לחזק את הסנדל.</p></details>
+  <details><summary>כמה מסמרים לנוי מתיר רבי יוחנן, וכמה רבי חנינא?</summary><p>רבי יוחנן חמישה בכל סנדל, ורבי חנינא שבעה.</p></details>
+  <details><summary>כמי אמר רבי יוחנן, לפי התשובה הראשונה?</summary><p>כרבי נהוראי: חמישה מותר ושבעה אסור.</p></details>
+  <details class="deepq"><summary>למה בסנדל נוטה מותרים יותר מסמרים?</summary><p>כי כולם צריכים להשוות אותו, ואף אחד מהם אינו לחיזוק.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G10,G11,G12,G13">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>סנדל ששונה מהסנדל של המעשה</h2>
+  <p class="lead">שלוש שאלות על סנדל שעשוי אחרת: תפור בפנים, מסמר כמין כלבוס, וסנדל מכוסה כולו במסמרים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>תפרו מבפנים מהו</td><td>תפר אותו מבפנים, מה הדין?</td></tr>
+      <tr><td>א"ל מותר ולא ידענא מ"ט</td><td>אמר לו: מותר, ואינני יודע מה הטעם.</td></tr>
+      <tr><td>ולא ידע מר מ"ט</td><td>ואדוני אינו יודע מה הטעם?</td></tr>
+      <tr><td>כיון דתפרו מבפנים הוי ליה מנעל</td><td>כיון שתפר אותו מבפנים, הוא נעשה נעל.</td></tr>
+      <tr><td>בסנדל גזרו ביה רבנן</td><td>בסנדל גזרו חכמים,</td></tr>
+      <tr><td>במנעל לא גזרו ביה רבנן</td><td>בנעל לא גזרו חכמים.</td></tr>
+      <tr><td>עשאו כמין כלבוס מהו</td><td>עשה אותו כמין כלבוס, מה הדין?</td></tr>
+      <tr><td>חיפהו כולו במסמרות</td><td>כיסה את כולו במסמרים,</td></tr>
+      <tr><td>כדי שלא תהא קרקע אוכלתו מותר</td><td>כדי שהקרקע לא תשחק אותו, מותר.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>נעל בתוך הסנדל:</b> רצען שאל את רבי אמי על סנדל שתפור מבפנים, ורבי אמי התיר בלי לדעת את הטעם. רש"י מפרש שנתן בתוכו נעל של עור, וההיתר הוא לקבוע מסמרים מבחוץ.</p>
+  <p><b>רב אשי:</b> הטעם הוא שזה כבר נעל. הגזרה הייתה על סנדל, ועל נעל לא גזרו.</p>
+  <p><b>כלבוס ומכוסה כולו:</b> מסמר כמין כלבוס מותר, וכך אמר גם רבי יוסי ברבי חנינא. ורב ששת אומר שסנדל שכוסה כולו במסמרים, כדי שהקרקע לא תשחק אותו, מותר.</p>
+  <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>מותר – שמעתי מרבי יוחנן וטעמא לא ידענא:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי אמי אומר: שמעתי מרבי יוחנן שמותר, ואת הטעם אינני יודע.</p></div>
+  <div data-hl="R14,R15" class="voice r"><span class="tag">רש"י</span><blockquote>עשאו – למסמר כמין כלבוס בלע"ז טינפיילו"ן שני ראשין חדין וכפופין ונועץ שני ראשים בעץ כדאמרי' בסוטה (יט:) כלבוס של ברזל מטילין לה לתוך פיה:</blockquote><blockquote>מותר – הואיל ונשתנה משאר מסמרים דלא גזרו אלא מעין המאורע:</blockquote><p><span class="say">מה רש"י אומר:</span> כלבוס הוא מסמר בעל שני ראשים חדים וכפופים, ששניהם ננעצים בעץ. הוא מותר כי הוא שונה משאר המסמרים, ולא גזרו אלא כמו המאורע.</p></div>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>חיפהו – מלמטה:</blockquote><p><span class="say">מה רש"י אומר:</span> הכיסוי במסמרים הוא מלמטה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>כלל אחד לכל ההיתרים</h3>
+    <p>רש"י חוזר על אותו טעם: לא גזרו אלא כמו המאורע. לכן כל שינוי שמבדיל את הסנדל מהסנדל של המעשה, כמו מסמר בצורה אחרת, מוציא אותו מן הגזרה.</p>
+    <p>אצל רב אשי הטעם קצת אחר: הסנדל שתפור מבפנים כבר אינו סנדל אלא נעל, ועל נעל לא גזרו כלל.</p>
+  </div>
+  <p class="godeep">מה הטעם המשותף שרש"י נותן להיתרים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה ענה רבי אמי לרצען?</summary><p>מותר, ואינני יודע מה הטעם.</p></details>
+  <details><summary>מה הטעם לפי רב אשי?</summary><p>כיון שתפור מבפנים הוא נעל, ובנעל לא גזרו.</p></details>
+  <details><summary>מה אמר רב ששת?</summary><p>שסנדל שכוסה כולו במסמרים, כדי שהקרקע לא תשחק אותו, מותר.</p></details>
+  <details class="deepq"><summary>למה מסמר כמין כלבוס מותר לפי רש"י?</summary><p>כי הוא שונה משאר המסמרים, ולא גזרו אלא כמו המאורע.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G14a,G14b,G14c,G15,G16,G17,G18,G19">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>הברייתא שמסייעת לרב ששת</h2>
+  <p class="lead">ברייתא מסכמת את הלכות הסנדל המסומר. הגמרא מוצאת בה סתירה פנימית ומיישבת אותה, וגם מיישבת אותה עם ברייתא אחרת.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>תניא כוותיה דרב ששת</td><td>שנויה ברייתא כדברי רב ששת:</td></tr>
+      <tr><td>ולא יטייל מבית לבית אפילו ממטה למטה</td><td>ולא יטייל מבית לבית, אפילו ממיטה למיטה.</td></tr>
+      <tr><td>אבל מטלטלין אותו לכסות בו את הכלי</td><td>אבל מטלטלים אותו לכסות בו כלי,</td></tr>
+      <tr><td>ור' אלעזר בר' שמעון אוסר</td><td>ורבי אלעזר ברבי שמעון אוסר.</td></tr>
+      <tr><td>ונשתייר בו ד' או ה' מותר</td><td>ונשארו בו ארבעה או חמישה, מותר.</td></tr>
+      <tr><td>הא גופה קשיא</td><td>הדבר עצמו קשה.</td></tr>
+      <tr><td>כאן שנגממו כאן שנעקרו</td><td>כאן שנשברו, כאן שנעקרו.</td></tr>
+      <tr><td>השתא חמש שרי ארבע מיבעיא</td><td>אם חמישה מותר, צריך לומר ארבעה?</td></tr>
+      <tr><td>ארבע מסנדל קטן וחמש מסנדל גדול</td><td>ארבעה בסנדל קטן, וחמישה בסנדל גדול.</td></tr>
+      <tr><td>והתניא רבי מתיר עד שלש עשרה</td><td>והרי שנינו: רבי מתיר עד שלושה עשר!</td></tr>
+      <tr><td>נוטה שאני</td><td>סנדל נוטה שונה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הברייתא:</b> אסור לצאת בסנדל המסומר, ואפילו ללכת בו מבית לבית או ממיטה למיטה. אבל מותר לטלטל אותו כדי לכסות כלי או לסמוך רגלי מיטה. רבי אלעזר ברבי שמעון אוסר, שמא ינעל אותו. אם נשרו רוב המסמרים ונשארו ארבעה או חמישה, מותר, ורבי מתיר עד שבעה.</p>
+  <p><b>הסתירה:</b> "נשרו רוב מסמרותיו" משמע שמותר אף אם נשארו הרבה, ואחר כך נאמר ארבעה או חמישה בלבד. רב ששת מתרץ: אם המסמרים נשברו וסימנם ניכר, מותר אפילו הרבה. אם נעקרו לגמרי, רק ארבעה או חמישה.</p>
+  <p><b>ארבעה או חמישה:</b> אם חמישה מותר, למה לומר ארבעה? רב חסדא עונה: ארבעה בסנדל קטן וחמישה בסנדל גדול.</p>
+  <p><b>רבי:</b> כאן הוא מתיר עד שבעה, ובברייתא אחרת עד שלושה עשר. התשובה: שם מדובר בסנדל נוטה.</p>
+  <div data-hl="R17,R18" class="voice r"><span class="tag">רש"י</span><blockquote>אבל מטלטלין אותו – דתורת כלי עליו:</blockquote><blockquote>אוסר – דילמא אתי לנועלו:</blockquote><p><span class="say">מה רש"י אומר:</span> מותר לטלטל אותו כי יש עליו תורת כלי. ורבי אלעזר ברבי שמעון אוסר, שמא יבוא לנעול אותו.</p></div>
+  <div data-hl="R23,R24" class="voice r"><span class="tag">רש"י</span><blockquote>שנגממו – מלמעלה ורשומו ניכר בתוך העץ אפילו טובא דהא מינכר שאינו כברייתו:</blockquote><blockquote>שנעקרו – לגמרי שאין ניכר שהיה בו יותר ד' או ה' [אין] טפי לא לוי"ה ולשון חבירו איפכא:</blockquote><p><span class="say">מה רש"י אומר:</span> כשנשברו המסמרים מלמעלה, הסימן ניכר בעץ, ורואים שהסנדל אינו כמו שהיה. כשנעקרו לגמרי, אין סימן שהיו בו יותר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מתי שואלים "השתא חמש שרי"</h3>
+    <div data-hl="T3a" class="voice t"><span class="tag">תוספות</span><blockquote>השתא חמש שרינן כו' – בפרק קמא דסוכה (ד' ב: ושם) גבי רבי יהודה מכשיר עד ארבעים וחמשים אמה לא פריך השתא חמשים כו' וכן בריש אע"פ (כתובות דף נז. ושם) גבי אבל חכמים אומרים משהה אדם עם אשתו אפילו שתים ושלש שנים בלא כתובה ונראה לר"י דכל היכא דפשיטא ליה דבעי למימר אפי' טובא לא פריך אבל הכא ליכא לפרושי ד' וה' אפילו טובא דא"כ התרתה סנדל המסומר</blockquote><p><span class="say">מה התוספות אומרים:</span> במקומות אחרים, כמו "ארבעים וחמישים אמה" במסכת סוכה, הגמרא אינה שואלת כך. רבנו יצחק מסביר: כשברור שהכוונה "אפילו הרבה" אין שואלים. כאן אי אפשר לפרש כך, כי אז התרת את הסנדל המסומר.</p></div>
+    <div data-hl="T3b" class="voice t"><span class="tag">תוספות</span><blockquote>וכן בפרק בנות כותים (נדה דף לז: ושם) פריך [גבי] וכמה היא קישוייה ר' מאיר אומר אפילו מ' ונ' יום דליכא למימר אפילו טובא דאין סברא שיחשב דם קישוי מיום תחילת עיבורה ומשמע ליה בכל הני דשיעורא בתרא דוקא ולהכי פריך דלימא שיעורא בתרא ולא לימא שיעורא קמא ולקמן בפרק מפנין ד' וה' קופות (שבת דף קכו:) פריך נמי השתא חמש שרי ד' כו' משמע ליה דטפי לא שרינן משום טורח שבת ומשני רב חסדא ד' מאוצר …</blockquote><p><span class="say">מה התוספות אומרים:</span> במקומות שבהם המספר האחרון מדויק, הגמרא שואלת למה לא אמרו רק אותו. כך במסכת נידה, וכך בפרק "מפנין", שם רב חסדא עונה כמו כאן: ארבע מאוצר קטן וחמש מאוצר גדול.</p></div>
+    <div data-hl="T3c" class="voice t"><span class="tag">תוספות</span><blockquote>וא"ת דבפרק אע"פ (כתובות דף ס. ושם) אמרינן תינוק יונק והולך אפילו ד' וה' שנים ולא פריך אף על גב דהוי דוקא מדפריך התם מחבילתו על כתפו ומשני אידי ואידי חד שיעורא וי"ל הא בכחוש הא בבריא והא דאמרינן בפרק הזרוע (חולין דף קלב:) כהן טבח שתים וג' שבתות פטור מן המתנות מכאן ואילך חייב במתנות אומר ר"י דנקט שתים לרבי דאית ליה בהבא על יבמתו (יבמות דף סד:) דבתרי זימני הויא חזקה וג' לרשב"ג:</blockquote><p><span class="say">מה התוספות אומרים:</span> במסכת כתובות נאמר "תינוק יונק והולך אפילו ארבע וחמש שנים", והמספר שם מדויק, ובכל זאת אין שואלים. התוספות מיישבים: מספר אחד אמור בתינוק כחוש ואחד בתינוק בריא.</p></div>
+  </div>
+  <p class="godeep">למה כאן אי אפשר לפרש "ארבעה או חמישה" במובן "אפילו הרבה"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה מותר לעשות בסנדל המסומר לפי הברייתא?</summary><p>לטלטל אותו כדי לכסות כלי או לסמוך רגלי מיטה.</p></details>
+  <details><summary>איך רב ששת מיישב את הסתירה?</summary><p>אם המסמרים נשברו מותר אפילו הרבה, ואם נעקרו רק ארבעה או חמישה.</p></details>
+  <details><summary>מה פירוש "ארבע מסנדל קטן וחמש מסנדל גדול"?</summary><p>המספר תלוי בגודל הסנדל.</p></details>
+  <details class="deepq"><summary>לפי התוספות, מתי הגמרא אינה שואלת "השתא חמש שרי ארבע מיבעיא"?</summary><p>כשברור שהכוונה "אפילו הרבה".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G20,G21a,G21b">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>ההלכה ודברי רבי חייא</h2>
+  <p class="lead">הגמרא פוסקת שאין הלכה כרבי אלעזר ברבי שמעון, ומביאה את דברי רבי חייא, שהיה מוכן להתיר יותר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אין הלכה כר' אלעזר בר' שמעון</td><td>אין הלכה כרבי אלעזר ברבי שמעון.</td></tr>
+      <tr><td>פשיטא יחיד ורבים הלכה כרבים</td><td>זה ברור: יחיד ורבים, הלכה כרבים!</td></tr>
+      <tr><td>מהו דתימא מסתברא טעמא דרבי אלעזר ברבי שמעון בהא</td><td>שמא תאמר: מסתבר הטעם של רבי אלעזר ברבי שמעון בזה,</td></tr>
+      <tr><td>אי לאו דקרו לי בבלאי שרי איסורי</td><td>אילולי שקוראים לי "בבלי שמתיר איסורים",</td></tr>
+      <tr><td>שרינא ביה טובא</td><td>הייתי מתיר בו הרבה.</td></tr>
+      <tr><td>בפומבדיתא אמרין עשרין וארבע</td><td>בפומבדיתא אומרים: עשרים וארבעה.</td></tr>
+      <tr><td>בסורא אמרין עשרין ותרתין</td><td>בסורא אומרים: עשרים ושניים.</td></tr>
+      <tr><td>עד דאתא מפומבדיתא לסורא חסר תרתי</td><td>עד שבא מפומבדיתא לסורא, חסרו שניים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ההלכה:</b> רב מתנה אמר שאין הלכה כרבי אלעזר ברבי שמעון. אמנם יחיד ורבים הלכה כרבים, אבל היה מקום לחשוב שכאן הטעם שלו מסתבר, ולכן הוצרכו לומר זאת.</p>
+  <p><b>רבי חייא:</b> הוא היה מתיר הרבה מסמרים, אילולי שהיו קוראים לו "בבלי שמתיר איסורים". בפומבדיתא אמרו שהמספר הוא עשרים וארבעה, ובסורא עשרים ושניים.</p>
+  <p><b>הסימן:</b> רב נחמן בר יצחק נותן סימן לזכור: בדרך מפומבדיתא לסורא חסרו שניים.</p>
+  <div data-hl="R28" class="voice r"><span class="tag">רש"י</span><blockquote>מסתברא טעמא – דאסור לטלטל שמא ינעלנו:</blockquote><p><span class="say">מה רש"י אומר:</span> הטעם של רבי אלעזר ברבי שמעון הוא שאסור לטלטל את הסנדל, שמא ינעל אותו.</p></div>
+  <div data-hl="R29" class="voice r"><span class="tag">רש"י</span><blockquote>בבלאי שרי איסורי – דר' חייא מבבל הוה כדאמרינן בסוכה עלו ר' חייא ובניו ויסדוה:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי חייא היה מבבל.</p></div>
+  <div data-hl="R30,R31,R32" class="voice r"><span class="tag">רש"י</span><blockquote>עד דאתא רבי חייא – כשעלה מבבל לארץ ישראל ובא דרך סוריא מפומבדיתא:</blockquote><blockquote>חסר תרתי – נפלו שתים ממסמרותיו בדרך:</blockquote><blockquote>לסורא חסר – (תרתי) דומה אצל דומה:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי חייא עלה מבבל לארץ ישראל ועבר בסורא בדרך מפומבדיתא, ובדרך נפלו שניים ממסמרי הסנדל. "לסורא חסר": דומה אצל דומה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה צריך לפסוק</h3>
+    <p>הכלל "יחיד ורבים הלכה כרבים" היה מספיק לפסוק שלא כרבי אלעזר. הגמרא מסבירה שהפסיקה המפורשת באה כי הטעם שלו נראה מסתבר כאן, ובלעדיה היה אפשר לחשוב שהולכים אחריו.</p>
+  </div>
+  <p class="godeep">למה הוצרכו לומר שאין הלכה כרבי אלעזר ברבי שמעון? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה זה נראה "פשיטא"?</summary><p>כי יחיד ורבים הלכה כרבים.</p></details>
+  <details><summary>ממה חשש רבי חייא?</summary><p>שיקראו לו "בבלי שמתיר איסורים".</p></details>
+  <details><summary>כמה מסמרים אמרו בפומבדיתא, וכמה בסורא?</summary><p>בפומבדיתא עשרים וארבעה, ובסורא עשרים ושניים.</p></details>
+  <details class="deepq"><summary>מה בא הסימן של רב נחמן בר יצחק לזכור?</summary><p>שבסורא אומרים שני מסמרים פחות מבפומבדיתא.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>יום טוב:</b> הסנדל המסומר אסור גם ביום טוב, כי גם בו יש התאספות ביום שאסור במלאכה.</li>
+      <li><b>תענית ציבור:</b> ההתאספות בה היא של היתר, ולכן היא אינה כמו המעשה.</li>
+      <li><b>חיזוק ונוי:</b> האיסור הוא במסמרים לחיזוק. לנוי מותר, לרבי יוחנן חמישה ולרבי חנינא שבעה.</li>
+      <li><b>סנדל שונה:</b> סנדל תפור בפנים, מסמר כמין כלבוס וסנדל מכוסה כולו במסמרים מותרים.</li>
+      <li><b>הברייתא:</b> מסמרים שנשברו שונים ממסמרים שנעקרו, ובסנדל נוטה מותרים יותר מסמרים.</li>
+      <li><b>ההלכה:</b> אין הלכה כרבי אלעזר ברבי שמעון, שאוסר לטלטל את הסנדל.</li>
+      <li><b>רבי חייא:</b> היה מתיר הרבה מסמרים, אילולי החשש שיקראו לו "בבלי שמתיר איסורים".</li>
+      <li><b>הלאה:</b> מי שיש ברגלו מכה ויוצא בסנדל אחד, באיזו רגל ינעל אותו?</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>כינופיא</td><td>התאספות של אנשים</td></tr>
+      <tr><td>דאיסורא · דהתירא</td><td>של איסור · של היתר</td></tr>
+      <tr><td>הני מילי</td><td>הדברים האלה אמורים (רק במקרה מסוים)</td></tr>
+      <tr><td>כי הדדי נינהו</td><td>הם זה כמו זה, שווים</td></tr>
+      <tr><td>אסברא לך</td><td>אסביר לך</td></tr>
+      <tr><td>מיתיבי</td><td>מקשים מברייתא</td></tr>
+      <tr><td>בשלמא</td><td>מובן, בסדר (לפי שיטה אחת)</td></tr>
+      <tr><td>בעא מיניה</td><td>שאל אותו</td></tr>
+      <tr><td>תניא כוותיה</td><td>שנויה ברייתא כמותו, שמסייעת לו</td></tr>
+      <tr><td>הא גופה קשיא</td><td>הדבר עצמו קשה, יש סתירה בתוך המקור</td></tr>
+      <tr><td>השתא דאתית להכי</td><td>עכשיו שהגעת לזה</td></tr>
+      <tr><td>פשיטא</td><td>זה ברור</td></tr>
+      <tr><td>מהו דתימא</td><td>שמא תאמר</td></tr>
+      <tr><td>וסימניך</td><td>והסימן שלך, לזכור את הדבר</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-60a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-61a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ס&#x27; עמוד ב&#x27;, לומדים: הסנדל המסומר ביום טוב; מסמרים לחיזוק ומסמרים לנוי; סנדל ששונה מהסנדל של המעשה; הברייתא שמסייעת לרב ששת; ההלכה ודברי רבי חייא.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (37 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד ב&#x27;: ומה ביום טוב?</h3><p>בעמוד הקודם למדנו שהסנדל המסומר נאסר בגלל מעשה שהיה בשבת, ולכן אינו אסור ביום חול. הגמרא שאלה: אם כך, ביום טוב יהיה מותר, ולמה שנינו במשנה שאסור? כאן מובאת המשנה.</p></li><li><h3><span class="w">גמרא</span> · המשנה ממסכת ביצה</h3><p>המשנה אומרת: משלחים כלים ביום טוב, תפורים ושאינם תפורים, &quot;אבל לא סנדל המסומר&quot;, ולא נעל שאינה תפורה. רש&quot;י מסביר: מכאן שאין נועלים אותו ביום טוב, שהרי שנינו שם שכל מה שנהנים ממנו ביום טוב משלחים אותו.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הרי בחול נהנים ממנו</h3><p>רבנו יצחק מקשה: בסוף אותה משנה שנינו &quot;זה הכלל: כל שנאותין בו משלחין אותו ביום טוב&quot;, והגמרא שם מפרשת שהכוונה למה שנהנים ממנו ביום חול. והרי בסנדל המסומר נהנים ביום חול, ולמה אין משלחים אותו? התוספות עונים: החמירו בו, כי באה תקלה על ידו. כך גם רבי אלעזר ברבי שמעון בסוגיה שלנו אוסר לטלטל אותו כדי לכסות בו כלי או לסמוך בו את רגלי המיטה, אף שכלים אחרים שמלאכתם לאיסור מותר לטלטל לצורך גופם ומקומם. ו&quot;זה הכלל&quot; שבמשנה שם מוסב רק על הנעל שאינה תפורה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: גם לחכמים אסור לשלוח</h3><p>רבנו יצחק מוסיף: גם לחכמים, שחולקים על רבי אלעזר ומתירים לטלטל אותו לצורך גופו ומקומו, אסור לשלוח אותו ביום טוב. אמנם שליחה לשם שמחת יום טוב נחשבת כמו צורך גופו, שהרי מותר לשלוח דברים שמלאכתם לאיסור. אבל דבר שבאה תקלה על ידו, אין בו שמחת יום טוב.</p></li><li><h3><span class="w">גמרא</span> · הטעם: יש התאספות</h3><p>&quot;בשבת מאי טעמא?&quot;, למה נאסר בשבת? &quot;דאיכא כינופיא&quot;, כי יש התאספות. רש&quot;י מפרש: אין עושים מלאכה, ומתאספים לבתי הכנסת ולבתי המדרש, כמו באותו מעשה שהייתה בו התאספות. וגם ביום טוב יש התאספות, ולכן גם בו אסור.</p></li><li><h3><span class="w">גמרא</span> · ובתענית ציבור?</h3><p>הגמרא שואלת: בתענית ציבור יש התאספות, וייאסר גם בה! והיא עונה: המעשה, כשקרה, היה בהתאספות &quot;דאיסורא&quot;, ביום שאסור בו לעשות מלאכה, כפי שרש&quot;י מפרש. ובתענית ציבור ההתאספות היא &quot;דהתירא&quot;, ביום שמותר בו לעשות מלאכה.</p></li><li><h3><span class="w">גמרא</span> · ואפילו לרבי חנינא בן עקיבא</h3><p>הגמרא מוסיפה: גם לרבי חנינא בן עקיבא, שאמר &quot;לא אסרו אלא בירדן ובספינה, וכמעשה שהיה&quot;, אין מכאן היתר ליום טוב. רש&quot;י מביא את המחלוקת ממסכת חגיגה: מעשה במי שנשא מי חטאת ואפר חטאת בירדן בספינה, ונמצא כזית מן המת תקוע בקרקעית הספינה, והמים והאפר נטמאו.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: הגזרה והמחלוקת</h3><p>חכמים גזרו שלא יעבירו מי חטאת בספינה, ולא על גשר, ולא ישיטו אותם על פני המים, בין בירדן בין בשאר נהרות. רבי חנינא חולק: אסרו רק בירדן ובספינה, ולא גשר ולא שאר נהרות. כי גזרה שגזרו בגלל מאורע, אינה אלא כמו המאורע.</p></li><li><h3><span class="w">גמרא</span> · הירדן שונה, ושבת ויום טוב שווים</h3><p>דברי רבי חנינא אמורים רק בירדן, ששונה משאר הנהרות, ורש&quot;י מפרש: ברוחבו או בעומקו. אבל יום טוב ושבת &quot;כי הדדי נינהו&quot;, זה כמו זה. שהרי שנינו: &quot;אין בין יום טוב לשבת אלא אוכל נפש בלבד&quot;, ההבדל היחיד ביניהם הוא הכנת אוכל.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למרות שהמשנה כבית שמאי</h3><p>את המשנה &quot;אין בין יום טוב לשבת&quot; הגמרא מעמידה במקומות אחרים כשיטת בית שמאי. כי לבית הלל, &quot;מתוך שהותרה הבערה לצורך, הותרה נמי שלא לצורך&quot;. ובכל זאת, התוספות כותבים, גם לבית הלל יום טוב דומה לשבת יותר, כי שאר הדברים מותרים בו רק מפני שהותרו לצורך הכנת אוכל.</p></li><li><h3><span class="w">גמרא</span> · שמואל: רק לחיזוק</h3><p>רב יהודה אמר בשם שמואל: &quot;לא שנו אלא לחזק&quot;, האיסור הוא רק במסמרים שנועדו לחזק את הסנדל. אבל מסמרים לנוי מותרים. רש&quot;י מסביר: מסמרים לחיזוק מחברים את סוליית הסנדל אל החלק שמעליה. ולא גזרו אלא כמו המאורע, והמסמרים שבמעשה היו לחיזוק, כמו המסמרים הרגילים של סנדל.</p></li><li><h3><span class="w">גמרא</span> · כמה מסמרים לנוי</h3><p>כמה מסמרים מותר לשים לנוי? רבי יוחנן אמר: חמישה בסנדל זה וחמישה בזה. ורבי חנינא אמר: שבעה בזה ושבעה בזה.</p></li><li><h3><span class="w">גמרא</span> · רבי יוחנן מסביר את הסידור</h3><p>אמר רבי יוחנן לרב שמן בר אבא: אסביר לך. לשיטתי, שניים מצד זה ושניים מצד זה, ואחד ב&quot;תרסיותיו&quot;, ברצועות, כפי שרש&quot;י מפרש. ולשיטת רבי חנינא, שלושה מכאן ושלושה מכאן ואחד ברצועות. רש&quot;י מפרט: בצד החיצון אחד בקצה שליד האצבעות ואחד ליד העקב, וכך גם בצד הפנימי, שבין שתי הרגליים.</p></li><li><h3><span class="w">גמרא</span> · קושיה: סנדל נוטה</h3><p>&quot;מיתיבי&quot;, מקשים מברייתא: &quot;סנדל הנוטה&quot; עושים לו שבעה מסמרים, דברי רבי נתן, ורבי מתיר שלושה עשר. רש&quot;י מסביר: זה סנדל שהחלק התחתון שלו עבה מצד אחד ודק מצד שני. כשדורכים עליו הוא נוטה לצד הדק, וצריך להגביה אותו כדי שיהיה שווה לצד השני.</p></li><li><h3><span class="w">גמרא</span> · כמי אמר רבי יוחנן?</h3><p>&quot;בשלמא&quot;, מובן לפי רבי חנינא, שאמר כמו רבי נתן. אבל רבי יוחנן, כמי אמר? התשובה: כרבי נהוראי. שבברייתא נאמר: רבי נהוראי אומר, חמישה מותר ושבעה אסור.</p></li><li><h3><span class="w">גמרא</span> · איפה: כל אחד ינהג כרבו</h3><p>איפה אמר לרבה בר בר חנה: אתם, תלמידי רבי יוחנן, תעשו כרבי יוחנן. אנחנו נעשה כרבי חנינא. רש&quot;י מסביר שאיפה הוא שם של חכם, בנו של רבי רחבה מפומבדיתא.</p></li><li><h3><span class="w">גמרא</span> · רב הונא שואל את רב אשי</h3><p>רב הונא שאל את רב אשי: חמישה מסמרים, מה הדין? ענה לו: אפילו שבעה מותר. שאל: תשעה מה? ענה: אפילו שמונה אסור.</p></li><li><h3><span class="w">גמרא</span> · סנדל שתפור בפנים</h3><p>רצען אחד שאל את רבי אמי: אם תפר אותו מבפנים, מה הדין? ענה: מותר, ואינני יודע מה הטעם. רש&quot;י מפרש: נתן נעל של עור בתוך הסנדל ותפר אותה. וההיתר הוא לקבוע מסמרים מבחוץ. ורבי אמי אמר: שמעתי מרבי יוחנן שמותר, ואת הטעם אינני יודע.</p></li><li><h3><span class="w">גמרא</span> · רב אשי: זו כבר נעל</h3><p>אמר רב אשי: ואדוני אינו יודע מה הטעם? כיון שתפר אותו מבפנים, הוא נעשה נעל. בסנדל גזרו חכמים, ובנעל לא גזרו.</p></li><li><h3><span class="w">גמרא</span> · מסמר כמו &quot;כלבוס&quot;</h3><p>רבי אבא בר זבדא שאל את רבי אבא בר אבינא: אם עשה את המסמר כמין &quot;כלבוס&quot;, מה הדין? ענה: מותר. וכך נאמר גם בשם רבי יוסי ברבי חנינא. רש&quot;י מסביר: מסמר שיש לו שני ראשים חדים וכפופים, ונועצים את שני הראשים בעץ. והוא מותר, כי הוא שונה משאר המסמרים, ולא גזרו אלא כמו המאורע.</p></li><li><h3><span class="w">גמרא</span> · רב ששת: מכוסה כולו במסמרות</h3><p>אמר רב ששת: אם כיסה את כולו במסמרים, מלמטה כפי שרש&quot;י מפרש, כדי שהקרקע לא תשחק אותו, מותר.</p></li><li><h3><span class="w">גמרא</span> · ברייתא: הלכות הסנדל המסומר</h3><p>&quot;תניא כוותיה דרב ששת&quot;, ברייתא שמסייעת לרב ששת. לא יצא האיש בסנדל המסומר, ולא יטייל בו מבית לבית, ואפילו ממיטה למיטה. אבל מטלטלים אותו לכסות בו כלי או לסמוך בו את רגלי המיטה, כי יש עליו תורת כלי, כפי שרש&quot;י מסביר. ורבי אלעזר ברבי שמעון אוסר, ורש&quot;י מפרש: שמא יבוא לנעול אותו.</p></li><li><h3><span class="w">גמרא</span> · נשרו רוב המסמרים</h3><p>אם נשרו רוב המסמרים ונשארו בו ארבעה או חמישה, מותר. ורבי מתיר עד שבעה. רש&quot;י מציין שהגמרא תפרש זאת בהמשך.</p></li><li><h3><span class="w">גמרא</span> · שינויים שמתירים</h3><p>אם כיסה אותו בעור מלמטה וקבע מסמרים מלמעלה, מותר. וכן אם עשה את המסמר כמין &quot;כלבוס&quot;, כמין טס או כמין יתד, או שכיסה את כולו במסמרים כדי שהקרקע לא תשחק אותו, מותר. רש&quot;י מסביר: כטס, שראש המסמר רחב, וכיתד, שהוא חד. וזה מותר, כי הוא שונה ממה שהיה, והגזרה הייתה רק כמו המאורע.</p></li><li><h3><span class="w">גמרא</span> · &quot;הא גופה קשיא&quot;</h3><p>הברייתא עצמה קשה. אמרת &quot;נשרו רוב מסמרותיו&quot;, ומשמע שמותר אף אם נשארו בו הרבה, ובלבד שהם המיעוט, כפי שרש&quot;י מוסיף. ואחר כך שנית ארבעה או חמישה, כלומר כן, ויותר לא.</p></li><li><h3><span class="w">גמרא</span> · רב ששת: שבורים או עקורים</h3><p>אמר רב ששת: אין קושיה. כאן &quot;שנגממו&quot;, ורש&quot;י מפרש: נשברו מלמעלה, והסימן שלהם ניכר בעץ. אז מותר אפילו הרבה, כי ניכר שהסנדל אינו כמו שהיה. וכאן &quot;שנעקרו&quot; לגמרי, ואין סימן שהיו בו יותר. במקרה כזה רק ארבעה או חמישה מותרים. רש&quot;י מוסיף שיש לשון אחר שמפרש להפך.</p></li><li><h3><span class="w">גמרא</span> · ארבעה או חמישה</h3><p>&quot;השתא חמש שרי, ארבע מיבעיא?&quot;, אם חמישה מותר, צריך לומר שארבעה מותר? רב חסדא עונה: ארבעה בסנדל קטן, וחמישה בסנדל גדול.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה כאן שואלים ובמקומות אחרים לא</h3><p>במסכת סוכה רבי יהודה מכשיר &quot;עד ארבעים וחמישים אמה&quot;, ושם הגמרא אינה שואלת כך. וכן במסכת כתובות: &quot;אפילו שתים ושלש שנים&quot;. רבנו יצחק מסביר: כל מקום שברור שהכוונה &quot;אפילו הרבה&quot;, אין שואלים. אבל כאן אי אפשר לפרש ארבעה או חמישה &quot;אפילו הרבה&quot;, שהרי אז התרת את הסנדל המסומר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מקומות שבהם כן שואלים</h3><p>במסכת נידה שואלים כמה ימים לפני הלידה הדם נחשב דם &quot;קישוי&quot;, דם של צירי לידה, ורבי מאיר אומר &quot;אפילו ארבעים וחמישים יום&quot;. שם הגמרא שואלת כמו כאן, כי אין סברה לפרש &quot;אפילו הרבה&quot;: אין סברה שדם הקישוי ייחשב מתחילת ההיריון. בכל המקומות האלה הגמרא מבינה שהמספר האחרון מדויק, ולכן היא שואלת למה לא אמרו רק אותו. וכן בפרק &quot;מפנין&quot; שואלים על &quot;ארבע וחמש קופות&quot;, כי משמע לגמרא שיותר מזה אין מתירים, משום טורח שבת. שם רב חסדא עונה ארבע מאוצר קטן וחמש מאוצר גדול. ושמואל עונה שהכוונה אפילו הרבה, כדרך שאנשים מדברים, ובלבד שלא יגמור את האוצר, כלומר לא יפנה עד קרקעית האוצר, שמא ישווה בה גומות.</p></li><li><h3><span class="w">תוספות</span> · התוספות: התינוק היונק, והכהן הטבח</h3><p>התוספות מקשים ממסכת כתובות: &quot;תינוק יונק והולך אפילו ארבע וחמש שנים&quot;. שם אין שואלים &quot;השתא חמש&quot;, אף שהמספר שם מדויק. שהרי הגמרא שם מקשה מברייתא שנותנת שיעור אחר, &quot;חבילתו על כתפו&quot;, ומתרצת שזה וזה שיעור אחד. התוספות עונים: שם מספר אחד אמור בתינוק כחוש, ואחד בתינוק בריא. ובמסכת חולין נאמר שכהן טבח &quot;שתים ושלש שבתות&quot; פטור מן המתנות. על זה רבנו יצחק אומר ששתיים הן לשיטת רבי, שחזקה נעשית בשתי פעמים, ושלוש לשיטת רבן שמעון בן גמליאל.</p></li><li><h3><span class="w">גמרא</span> · רבי: עד שבעה או עד שלושה עשר?</h3><p>&quot;ורבי מתיר עד שבע&quot;, והרי בברייתא אחרת נאמר שרבי מתיר עד שלושה עשר! התשובה: &quot;נוטה שאני&quot;, סנדל נוטה שונה. רש&quot;י מסביר: כל המסמרים נצרכים לו כדי להשוות אותו, ואף אחד מהם אינו לחיזוק.</p></li><li><h3><span class="w">גמרא</span> · גם רבי יוחנן מתיישב</h3><p>&quot;השתא דאתית להכי&quot;, עכשיו שהגעת לחלק בין סנדל נוטה לסנדל שאינו נוטה, גם לרבי יוחנן אין קושיה. רש&quot;י מסביר: שאלנו קודם כמי אמר רבי יוחנן. אפשר לומר שבאמת אמר כרבי נתן. בסנדל נוטה רבי נתן מתיר עד שבעה, ובסנדל שאינו נוטה חמישה ולא יותר.</p></li><li><h3><span class="w">גמרא</span> · אין הלכה כרבי אלעזר ברבי שמעון</h3><p>רב מתנה אמר, ויש אומרים שרב אחדבוי בר מתנה אמר בשמו: אין הלכה כרבי אלעזר ברבי שמעון, שאוסר לטלטל את הסנדל. &quot;פשיטא&quot;, הרי זה ברור: יחיד ורבים, הלכה כרבים! &quot;מהו דתימא&quot;, שמא תאמר שכאן הטעם של רבי אלעזר מסתבר. רש&quot;י מפרש שהטעם הוא שאסור לטלטל, שמא ינעל אותו. לכן הוצרכו לומר שאין הלכה כמותו.</p></li><li><h3><span class="w">גמרא</span> · רבי חייא: &quot;בבלאי שרי איסורי&quot;</h3><p>אמר רבי חייא: אילולי שהיו קוראים לי &quot;בבלי שמתיר איסורים&quot;, הייתי מתיר בו הרבה מסמרים. רש&quot;י מסביר שרבי חייא היה מבבל.</p></li><li><h3><span class="w">גמרא</span> · כמה מסמרים, והסימן</h3><p>וכמה? בפומבדיתא אומרים עשרים וארבעה, ובסורא אומרים עשרים ושניים. אמר רב נחמן בר יצחק: והסימן שלך, עד שבא מפומבדיתא לסורא חסרו שניים. רש&quot;י מפרש: כשעלה רבי חייא מבבל לארץ ישראל, עבר בסורא בדרך מפומבדיתא, ונפלו שניים ממסמרי הסנדל בדרך. ועל המילים &quot;לסורא חסר&quot; רש&quot;י כותב &quot;דומה אצל דומה&quot;. נראה שכוונתו שהמילים &quot;סורא&quot; ו&quot;חסר&quot; דומות בצלילן, וכך זוכרים שבסורא אומרים את המספר החסר.</p></li><li><h3><span class="w">משנה</span> · המשך המשנה: סנדל אחד</h3><p>הגמרא עוברת לחלק הבא במשנה: &quot;ולא ביחיד בזמן שאין ברגלו מכה&quot;, לא יצא בסנדל אחד כשאין ברגלו מכה.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>הסנדל המסומר אסור גם ביום טוב, כי גם בו יש התאספות ביום שאסור במלאכה, ושבת ויום טוב דומים. האיסור הוא רק במסמרים לחיזוק, וכמה מסמרים לנוי שנויים במחלוקת. סנדל שתפור בפנים, מסמר כמין כלבוס וסנדל מכוסה כולו מותרים. העמוד הבא ממשיך בסנדל אחד: אם יש ברגלו מכה, באיזו רגל ינעל את הסנדל?</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-61a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "(משלחין כלים בי\"ט בין תפורין בין שאינן תפורין) אבל לא סנדל המסומר ולא מנעל שאינו תפור (בי\"ט)", false, ""], ["G2a", "בשבת מ\"ט דאיכא כינופיא בי\"ט נמי איכא כינופיא", false, ""], ["G2b", "תענית צבור איכא כינופיא ליתסר מעשה כי הוה בכינופיא דאיסורא הכא כינופיא דהתירא הוה", false, ""], ["G3", "ואפילו לר' חנינא בן עקיבא דאמר לא אסרו אלא בירדן ובספינה וכמעשה שהיה הני מילי ירדן דשאני משאר נהרות אבל י\"ט ושבת כי הדדי נינהו דתנן אין בין י\"ט לשבת אלא אוכל נפש בלבד", false, ""], ["G4", "א\"ר יהודה אמר שמואל לא שנו אלא לחזק אבל לנוי מותר וכמה לנוי ר' יוחנן אמר חמש בזה וחמש בזה ור' חנינא אמר שבע בזה ושבע בזה", true, ""], ["G5", "א\"ל ר' יוחנן לרב שמן בר אבא אסברא לך לדידי שתים מכאן ושתים מכאן ואחת בתרסיותיו לר' חנינא ג' מכאן וג' מכאן ואחת בתרסיותיו", false, ""], ["G6", "מיתיבי סנדל הנוטה עושה לו שבע דברי רבי נתן ורבי מתיר בי\"ג", false, ""], ["G7", "בשלמא לרבי חנינא הוא דאמר כרבי נתן אלא רבי יוחנן דאמר כמאן הוא דאמר כר' נהוראי דתניא ר' נהוראי אומר ה' מותר ושבע אסור", false, ""], ["G8", "א\"ל איפה לרבה בר בר חנה אתון תלמידי רבי יוחנן עבידו כר' יוחנן אנן נעביד כרבי חנינא", false, ""], ["G9", "בעא מיניה רב הונא מרב אשי חמש מהו א\"ל אפילו ז' מותר ט' מאי א\"ל אפילו ח' אסור", false, ""], ["G10", "בעא מיניה ההוא רצענא מרבי אמי תפרו מבפנים מהו א\"ל מותר ולא ידענא מ\"ט", true, ""], ["G11", "אמר רב אשי ולא ידע מר מ\"ט כיון דתפרו מבפנים הוי ליה מנעל בסנדל גזרו ביה רבנן במנעל לא גזרו ביה רבנן", false, ""], ["G12", "בעא מיניה ר' אבא בר זבדא מר' אבא בר אבינא עשאו כמין כלבוס מהו א\"ל מותר איתמר נמי אמר רבי יוסי בר' חנינא עשאו כמין כלבוס מותר", false, ""], ["G13", "א\"ר ששת חיפהו כולו במסמרות כדי שלא תהא קרקע אוכלתו מותר", false, ""], ["G14a", "תניא כוותיה דרב ששת לא יצא האיש בסנדל המסומר ולא יטייל מבית לבית אפילו ממטה למטה אבל מטלטלין אותו לכסות בו את הכלי ולסמוך בו כרעי המטה ור' אלעזר בר' שמעון אוסר", false, ""], ["G14b", "נשרו רוב ממסמרותיו ונשתייר בו ד' או ה' מותר ורבי מתיר עד שבע", false, ""], ["G14c", "חיפהו בעור מלמטה וקבע לו מסמרות מלמעלה מותר עשאו כמין כלבוס או כמין טס או כמין יתד או שחיפהו כולו במסמרות כדי שלא תהא קרקע אוכלתו מותר", false, ""], ["G15", "הא גופה קשיא אמרת נשרו רוב מסמרותיו אע\"ג דנשתיירו ביה טובא והדר תני ארבע או חמש אין טפי לא", false, ""], ["G16", "א\"ר ששת לא קשיא כאן שנגממו כאן שנעקרו:", false, ""], ["G17", "ארבע או חמש מותר: השתא חמש שרי ארבע מיבעיא א\"ר חסדא ארבע מסנדל קטן וחמש מסנדל גדול:", false, ""], ["G18", "ורבי מתיר עד שבע: והתניא רבי מתיר עד שלש עשרה נוטה שאני", false, ""], ["G19", "השתא דאתית להכי לרבי יוחנן נמי לא קשיא נוטה שאני", false, ""], ["G20", "אמר רב מתנה ואמרי לה אמר רב אחדבוי בר מתנה אמר רב מתנה אין הלכה כר' אלעזר בר' שמעון פשיטא יחיד ורבים הלכה כרבים מהו דתימא מסתברא טעמא דרבי אלעזר ברבי שמעון בהא קמ\"ל", true, ""], ["G21a", "אמר רבי חייא אי לאו דקרו לי בבלאי שרי איסורי שרינא ביה טובא", false, ""], ["G21b", "וכמה בפומבדיתא אמרין עשרין וארבע בסורא אמרין עשרין ותרתין אמר רב נחמן בר יצחק וסימניך עד דאתא מפומבדיתא לסורא חסר תרתי:", false, ""], ["G22", "ולא ביחיד בזמן שאין ברגלו מכה:", true, ""]], "R": [["R1", "משלחין כלים ביו\"ט בין תפורין בין שאינן תפורין אבל לא סנדל המסומר", "אלמא לאו בר מנעלי' ביו\"ט הוא דהא קתני התם כל שנאותין בו ביו\"ט משלחין אותו:", false], ["R2", "איכא כינופיא", "שאין עושין מלאכה ונקבצין לבתי כנסיות ולבתי מדרשות כי ההיא מעשה דהוה כינופיא:", false], ["R3", "דאיסורא", "בעשיית מלאכה:", false], ["R4", "ואפילו לרבי חנינא בן עקיבא", "בפרק חומר בקדש גבי נושא מי חטאת ואפר חטאת בירדן ובספינה שנמצא כזית מן המת תחוב בקרקעית' של ספינה ונטמאו וקאמרי רבנן דגזרו שלא יעביר אדם מי חטאת בספינה ולא על הגשר ולא ישיטם על פני המים אחד ירדן ואחד שאר נהרות ופליג ר' חנינא ואמר לא אסרו אלא בירדן ובספינה ולא גשר ושאר נהרות דגזירה שגזרו מחמת מאורע אין להם לגזור אלא מעין המאורע:", false], ["R5", "דשאני משאר נהרות", "ברוחב או בעומק:", false], ["R6", "אלא לחזק", "שמסמרותיו נעשו לחזק העקב שקורין שול\"א עם הפנתא שקורין אינפייל\"א אבל לנוי מותר דלא גזרו אלא מעין המאורע והנהו לחזק היו כסתם מסמרים דסנדל:", false], ["R7", "שתים מכאן", "לצד חיצון אחד בראשו לצד האצבעות ואחד לצד עקיבו ושתים מכאן לצד פנימי לעבר בין הרגלים:", false], ["R8", "תרסיותיו", "רצועותיו:", false], ["R9", "סנדל הנוטה", "שתחתון שלו אינו שוה שעב מצד זה ודק מצד זה וכשדורס נוטה לצד הדק וצריך להגביהו שיהא שוה לצד שכנגדו:", false], ["R10", "איפה", "שם חכם ובנו של ר' רחבה דפומבדיתא הוה:", false], ["R11", "תפרו מבפנים", "שנתן מנעל של עור לפנים מן הסנדל תפרו פורדרי\"ץ בלע\"ז:", false], ["R12", "מותר", "שמעתי מרבי יוחנן וטעמא לא ידענא:", false], ["R13", "מותר", "לקבוע בו מסמרים מבחוץ:", false], ["R14", "עשאו", "למסמר כמין כלבוס בלע\"ז טינפיילו\"ן שני ראשין חדין וכפופין ונועץ שני ראשים בעץ כדאמרי' בסוטה (יט:) כלבוס של ברזל מטילין לה לתוך פיה:", false], ["R15", "מותר", "הואיל ונשתנה משאר מסמרים דלא גזרו אלא מעין המאורע:", false], ["R16", "חיפהו", "מלמטה:", false], ["R17", "אבל מטלטלין אותו", "דתורת כלי עליו:", false], ["R18", "אוסר", "דילמא אתי לנועלו:", false], ["R19", "נשרו רוב מסמרותיו כו'", "לקמן מפרש לה:", false], ["R20", "מותר", "הואיל ונשתנה מכמו שהיה דמעין המאורע גזרו:", false], ["R21", "עשאו", "לראש מסמר רחב כמין טס או שעשאו חד כמין יתד:", false], ["R22", "אע\"ג דאישתאר טובא", "ובלבד שיהיו מעוט:", false], ["R23", "שנגממו", "מלמעלה ורשומו ניכר בתוך העץ אפילו טובא דהא מינכר שאינו כברייתו:", false], ["R24", "שנעקרו", "לגמרי שאין ניכר שהיה בו יותר ד' או ה' [אין] טפי לא לוי\"ה ולשון חבירו איפכא:", false], ["R25", "נוטה שאני", "שכולן צריכין לו להשוותו ואין אחד מהן לחזק:", false], ["R26", "השתא דאתית להכי", "לחלק בין נוטה לשאין נוטה:", false], ["R27", "לרבי יוחנן נמי", "דקפרכת לעיל מינה ואמרי דאמר כמאן איכא נמי לתרוצי לעולם כרבי נתן ונוטה שאני דהתם מתיר עד שבע אבל אין נוטה ה' ותו לא:", false], ["R28", "מסתברא טעמא", "דאסור לטלטל שמא ינעלנו:", false], ["R29", "בבלאי שרי איסורי", "דר' חייא מבבל הוה כדאמרינן בסוכה עלו ר' חייא ובניו ויסדוה:", false], ["R30", "עד דאתא רבי חייא", "כשעלה מבבל לארץ ישראל ובא דרך סוריא מפומבדיתא:", false], ["R31", "חסר תרתי", "נפלו שתים ממסמרותיו בדרך:", false], ["R32", "לסורא חסר", "(תרתי) דומה אצל דומה:", false]], "T": [["T1a", "לא בסנדל המסומר ולא במנעל שאינו תפור", "תימה לר\"י והא קתני סיפא זה הכלל כל שניאותין בו משלחין אותו ביו\"ט ומפרש בגמ' דכל שנאותין בו בחול קאמר וסנדל המסומר ניאותין בו בחול ואמאי אין משלחין אותו בי\"ט וי\"ל דהחמירו בו לפי שבא תקלה על ידו כי היכי דאסר ליה בשמעתין ר' אלעזר בר' שמעון לטלטלו לכסות בו את הכלי או לסמוך בו כרעי המטה אע\"פ ששאר כלים שמלאכתן לאיסור שרי לטלטלן לצורך גופן ומקומן וזה הכלל דקתני התם לא קאי אלא אמנעל שאינו תפור", false], ["T1b", "", "ונראה לר\"י דאפי' לרבנן דר' אלעזר דשרי לטלטל לצורך גופו ומקומו אסור לשלחו בי\"ט אע\"ג דשילוח משום שמחת י\"ט חשיב כמו לצורך גופו מדשרי' לשלוח דברים שמלאכתן לאיסור כיון שבאת תקלה על ידו ליכא. שמחת י\"ט:", false], ["T2", "אין בין יו\"ט לשבת כו", "ואע\"פ דבפ' משילין (ביצה דף לז. ושם) ולקמן בפ' כל הכלים (שבת דף קכד. ושם) מוקמינן לה כב\"ש דאי כב\"ה הא אמרי מתוך שהותרה הבערה לצורך הותרה נמי שלא לצורך מ\"מ דמי טפי יו\"ט לשבת הואיל ולא שריא שאר דברים אלא מטעם שהותרה לצורך אוכל נפש:", false], ["T3a", "השתא חמש שרינן כו'", "בפרק קמא דסוכה (ד' ב: ושם) גבי רבי יהודה מכשיר עד ארבעים וחמשים אמה לא פריך השתא חמשים כו' וכן בריש אע\"פ (כתובות דף נז. ושם) גבי אבל חכמים אומרים משהה אדם עם אשתו אפילו שתים ושלש שנים בלא כתובה ונראה לר\"י דכל היכא דפשיטא ליה דבעי למימר אפי' טובא לא פריך אבל הכא ליכא לפרושי ד' וה' אפילו טובא דא\"כ התרתה סנדל המסומר", false], ["T3b", "", "וכן בפרק בנות כותים (נדה דף לז: ושם) פריך [גבי] וכמה היא קישוייה ר' מאיר אומר אפילו מ' ונ' יום דליכא למימר אפילו טובא דאין סברא שיחשב דם קישוי מיום תחילת עיבורה ומשמע ליה בכל הני דשיעורא בתרא דוקא ולהכי פריך דלימא שיעורא בתרא ולא לימא שיעורא קמא ולקמן בפרק מפנין ד' וה' קופות (שבת דף קכו:) פריך נמי השתא חמש שרי ד' כו' משמע ליה דטפי לא שרינן משום טורח שבת ומשני רב חסדא ד' מאוצר קטן חמש מאוצר גדול ושמואל משני ד' וה' אפילו טובא כדאמרי אינשי דסבר אפילו טובא מצי לפנות ובלבד שלא יגמור את האוצר פי' קרקעית האוצר משום אשוויי גומות וכדאמרן התם", false], ["T3c", "", "וא\"ת דבפרק אע\"פ (כתובות דף ס. ושם) אמרינן תינוק יונק והולך אפילו ד' וה' שנים ולא פריך אף על גב דהוי דוקא מדפריך התם מחבילתו על כתפו ומשני אידי ואידי חד שיעורא וי\"ל הא בכחוש הא בבריא והא דאמרינן בפרק הזרוע (חולין דף קלב:) כהן טבח שתים וג' שבתות פטור מן המתנות מכאן ואילך חייב במתנות אומר ר\"י דנקט שתים לרבי דאית ליה בהבא על יבמתו (יבמות דף סד:) דבתרי זימני הויא חזקה וג' לרשב\"ג:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': ומה ביום טוב?", "x": "בעמוד הקודם למדנו שהסנדל המסומר נאסר בגלל מעשה שהיה בשבת, ולכן אינו אסור ביום חול. הגמרא שאלה: אם כך, ביום טוב יהיה מותר, ולמה שנינו במשנה שאסור? כאן מובאת המשנה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "המשנה ממסכת ביצה", "x": "המשנה אומרת: משלחים כלים ביום טוב, תפורים ושאינם תפורים, \"אבל לא סנדל המסומר\", ולא נעל שאינה תפורה. רש\"י מסביר: מכאן שאין נועלים אותו ביום טוב, שהרי שנינו שם שכל מה שנהנים ממנו ביום טוב משלחים אותו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1a"], "t": "התוספות: הרי בחול נהנים ממנו", "x": "רבנו יצחק מקשה: בסוף אותה משנה שנינו \"זה הכלל: כל שנאותין בו משלחין אותו ביום טוב\", והגמרא שם מפרשת שהכוונה למה שנהנים ממנו ביום חול. והרי בסנדל המסומר נהנים ביום חול, ולמה אין משלחים אותו? התוספות עונים: החמירו בו, כי באה תקלה על ידו. כך גם רבי אלעזר ברבי שמעון בסוגיה שלנו אוסר לטלטל אותו כדי לכסות בו כלי או לסמוך בו את רגלי המיטה, אף שכלים אחרים שמלאכתם לאיסור מותר לטלטל לצורך גופם ומקומם. ו\"זה הכלל\" שבמשנה שם מוסב רק על הנעל שאינה תפורה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1b"], "t": "התוספות: גם לחכמים אסור לשלוח", "x": "רבנו יצחק מוסיף: גם לחכמים, שחולקים על רבי אלעזר ומתירים לטלטל אותו לצורך גופו ומקומו, אסור לשלוח אותו ביום טוב. אמנם שליחה לשם שמחת יום טוב נחשבת כמו צורך גופו, שהרי מותר לשלוח דברים שמלאכתם לאיסור. אבל דבר שבאה תקלה על ידו, אין בו שמחת יום טוב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a", "R2"], "t": "הטעם: יש התאספות", "x": "\"בשבת מאי טעמא?\", למה נאסר בשבת? \"דאיכא כינופיא\", כי יש התאספות. רש\"י מפרש: אין עושים מלאכה, ומתאספים לבתי הכנסת ולבתי המדרש, כמו באותו מעשה שהייתה בו התאספות. וגם ביום טוב יש התאספות, ולכן גם בו אסור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2b", "R3"], "t": "ובתענית ציבור?", "x": "הגמרא שואלת: בתענית ציבור יש התאספות, וייאסר גם בה! והיא עונה: המעשה, כשקרה, היה בהתאספות \"דאיסורא\", ביום שאסור בו לעשות מלאכה, כפי שרש\"י מפרש. ובתענית ציבור ההתאספות היא \"דהתירא\", ביום שמותר בו לעשות מלאכה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R4"], "t": "ואפילו לרבי חנינא בן עקיבא", "x": "הגמרא מוסיפה: גם לרבי חנינא בן עקיבא, שאמר \"לא אסרו אלא בירדן ובספינה, וכמעשה שהיה\", אין מכאן היתר ליום טוב. רש\"י מביא את המחלוקת ממסכת חגיגה: מעשה במי שנשא מי חטאת ואפר חטאת בירדן בספינה, ונמצא כזית מן המת תקוע בקרקעית הספינה, והמים והאפר נטמאו.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G3", "R4"], "t": "רש\"י: הגזרה והמחלוקת", "x": "חכמים גזרו שלא יעבירו מי חטאת בספינה, ולא על גשר, ולא ישיטו אותם על פני המים, בין בירדן בין בשאר נהרות. רבי חנינא חולק: אסרו רק בירדן ובספינה, ולא גשר ולא שאר נהרות. כי גזרה שגזרו בגלל מאורע, אינה אלא כמו המאורע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R5"], "t": "הירדן שונה, ושבת ויום טוב שווים", "x": "דברי רבי חנינא אמורים רק בירדן, ששונה משאר הנהרות, ורש\"י מפרש: ברוחבו או בעומקו. אבל יום טוב ושבת \"כי הדדי נינהו\", זה כמו זה. שהרי שנינו: \"אין בין יום טוב לשבת אלא אוכל נפש בלבד\", ההבדל היחיד ביניהם הוא הכנת אוכל.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3", "T2"], "t": "התוספות: למרות שהמשנה כבית שמאי", "x": "את המשנה \"אין בין יום טוב לשבת\" הגמרא מעמידה במקומות אחרים כשיטת בית שמאי. כי לבית הלל, \"מתוך שהותרה הבערה לצורך, הותרה נמי שלא לצורך\". ובכל זאת, התוספות כותבים, גם לבית הלל יום טוב דומה לשבת יותר, כי שאר הדברים מותרים בו רק מפני שהותרו לצורך הכנת אוכל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R6"], "t": "שמואל: רק לחיזוק", "x": "רב יהודה אמר בשם שמואל: \"לא שנו אלא לחזק\", האיסור הוא רק במסמרים שנועדו לחזק את הסנדל. אבל מסמרים לנוי מותרים. רש\"י מסביר: מסמרים לחיזוק מחברים את סוליית הסנדל אל החלק שמעליה. ולא גזרו אלא כמו המאורע, והמסמרים שבמעשה היו לחיזוק, כמו המסמרים הרגילים של סנדל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4"], "t": "כמה מסמרים לנוי", "x": "כמה מסמרים מותר לשים לנוי? רבי יוחנן אמר: חמישה בסנדל זה וחמישה בזה. ורבי חנינא אמר: שבעה בזה ושבעה בזה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R7", "R8"], "t": "רבי יוחנן מסביר את הסידור", "x": "אמר רבי יוחנן לרב שמן בר אבא: אסביר לך. לשיטתי, שניים מצד זה ושניים מצד זה, ואחד ב\"תרסיותיו\", ברצועות, כפי שרש\"י מפרש. ולשיטת רבי חנינא, שלושה מכאן ושלושה מכאן ואחד ברצועות. רש\"י מפרט: בצד החיצון אחד בקצה שליד האצבעות ואחד ליד העקב, וכך גם בצד הפנימי, שבין שתי הרגליים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R9"], "t": "קושיה: סנדל נוטה", "x": "\"מיתיבי\", מקשים מברייתא: \"סנדל הנוטה\" עושים לו שבעה מסמרים, דברי רבי נתן, ורבי מתיר שלושה עשר. רש\"י מסביר: זה סנדל שהחלק התחתון שלו עבה מצד אחד ודק מצד שני. כשדורכים עליו הוא נוטה לצד הדק, וצריך להגביה אותו כדי שיהיה שווה לצד השני.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "כמי אמר רבי יוחנן?", "x": "\"בשלמא\", מובן לפי רבי חנינא, שאמר כמו רבי נתן. אבל רבי יוחנן, כמי אמר? התשובה: כרבי נהוראי. שבברייתא נאמר: רבי נהוראי אומר, חמישה מותר ושבעה אסור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R10"], "t": "איפה: כל אחד ינהג כרבו", "x": "איפה אמר לרבה בר בר חנה: אתם, תלמידי רבי יוחנן, תעשו כרבי יוחנן. אנחנו נעשה כרבי חנינא. רש\"י מסביר שאיפה הוא שם של חכם, בנו של רבי רחבה מפומבדיתא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "רב הונא שואל את רב אשי", "x": "רב הונא שאל את רב אשי: חמישה מסמרים, מה הדין? ענה לו: אפילו שבעה מותר. שאל: תשעה מה? ענה: אפילו שמונה אסור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R11", "R12", "R13"], "t": "סנדל שתפור בפנים", "x": "רצען אחד שאל את רבי אמי: אם תפר אותו מבפנים, מה הדין? ענה: מותר, ואינני יודע מה הטעם. רש\"י מפרש: נתן נעל של עור בתוך הסנדל ותפר אותה. וההיתר הוא לקבוע מסמרים מבחוץ. ורבי אמי אמר: שמעתי מרבי יוחנן שמותר, ואת הטעם אינני יודע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11"], "t": "רב אשי: זו כבר נעל", "x": "אמר רב אשי: ואדוני אינו יודע מה הטעם? כיון שתפר אותו מבפנים, הוא נעשה נעל. בסנדל גזרו חכמים, ובנעל לא גזרו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R14", "R15"], "t": "מסמר כמו \"כלבוס\"", "x": "רבי אבא בר זבדא שאל את רבי אבא בר אבינא: אם עשה את המסמר כמין \"כלבוס\", מה הדין? ענה: מותר. וכך נאמר גם בשם רבי יוסי ברבי חנינא. רש\"י מסביר: מסמר שיש לו שני ראשים חדים וכפופים, ונועצים את שני הראשים בעץ. והוא מותר, כי הוא שונה משאר המסמרים, ולא גזרו אלא כמו המאורע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R16"], "t": "רב ששת: מכוסה כולו במסמרות", "x": "אמר רב ששת: אם כיסה את כולו במסמרים, מלמטה כפי שרש\"י מפרש, כדי שהקרקע לא תשחק אותו, מותר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14a", "R17", "R18"], "t": "ברייתא: הלכות הסנדל המסומר", "x": "\"תניא כוותיה דרב ששת\", ברייתא שמסייעת לרב ששת. לא יצא האיש בסנדל המסומר, ולא יטייל בו מבית לבית, ואפילו ממיטה למיטה. אבל מטלטלים אותו לכסות בו כלי או לסמוך בו את רגלי המיטה, כי יש עליו תורת כלי, כפי שרש\"י מסביר. ורבי אלעזר ברבי שמעון אוסר, ורש\"י מפרש: שמא יבוא לנעול אותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14b", "R19"], "t": "נשרו רוב המסמרים", "x": "אם נשרו רוב המסמרים ונשארו בו ארבעה או חמישה, מותר. ורבי מתיר עד שבעה. רש\"י מציין שהגמרא תפרש זאת בהמשך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14c", "R20", "R21"], "t": "שינויים שמתירים", "x": "אם כיסה אותו בעור מלמטה וקבע מסמרים מלמעלה, מותר. וכן אם עשה את המסמר כמין \"כלבוס\", כמין טס או כמין יתד, או שכיסה את כולו במסמרים כדי שהקרקע לא תשחק אותו, מותר. רש\"י מסביר: כטס, שראש המסמר רחב, וכיתד, שהוא חד. וזה מותר, כי הוא שונה ממה שהיה, והגזרה הייתה רק כמו המאורע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R22"], "t": "\"הא גופה קשיא\"", "x": "הברייתא עצמה קשה. אמרת \"נשרו רוב מסמרותיו\", ומשמע שמותר אף אם נשארו בו הרבה, ובלבד שהם המיעוט, כפי שרש\"י מוסיף. ואחר כך שנית ארבעה או חמישה, כלומר כן, ויותר לא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R23", "R24"], "t": "רב ששת: שבורים או עקורים", "x": "אמר רב ששת: אין קושיה. כאן \"שנגממו\", ורש\"י מפרש: נשברו מלמעלה, והסימן שלהם ניכר בעץ. אז מותר אפילו הרבה, כי ניכר שהסנדל אינו כמו שהיה. וכאן \"שנעקרו\" לגמרי, ואין סימן שהיו בו יותר. במקרה כזה רק ארבעה או חמישה מותרים. רש\"י מוסיף שיש לשון אחר שמפרש להפך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17"], "t": "ארבעה או חמישה", "x": "\"השתא חמש שרי, ארבע מיבעיא?\", אם חמישה מותר, צריך לומר שארבעה מותר? רב חסדא עונה: ארבעה בסנדל קטן, וחמישה בסנדל גדול.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G17", "T3a"], "t": "התוספות: למה כאן שואלים ובמקומות אחרים לא", "x": "במסכת סוכה רבי יהודה מכשיר \"עד ארבעים וחמישים אמה\", ושם הגמרא אינה שואלת כך. וכן במסכת כתובות: \"אפילו שתים ושלש שנים\". רבנו יצחק מסביר: כל מקום שברור שהכוונה \"אפילו הרבה\", אין שואלים. אבל כאן אי אפשר לפרש ארבעה או חמישה \"אפילו הרבה\", שהרי אז התרת את הסנדל המסומר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G17", "T3b"], "t": "התוספות: מקומות שבהם כן שואלים", "x": "במסכת נידה שואלים כמה ימים לפני הלידה הדם נחשב דם \"קישוי\", דם של צירי לידה, ורבי מאיר אומר \"אפילו ארבעים וחמישים יום\". שם הגמרא שואלת כמו כאן, כי אין סברה לפרש \"אפילו הרבה\": אין סברה שדם הקישוי ייחשב מתחילת ההיריון. בכל המקומות האלה הגמרא מבינה שהמספר האחרון מדויק, ולכן היא שואלת למה לא אמרו רק אותו. וכן בפרק \"מפנין\" שואלים על \"ארבע וחמש קופות\", כי משמע לגמרא שיותר מזה אין מתירים, משום טורח שבת. שם רב חסדא עונה ארבע מאוצר קטן וחמש מאוצר גדול. ושמואל עונה שהכוונה אפילו הרבה, כדרך שאנשים מדברים, ובלבד שלא יגמור את האוצר, כלומר לא יפנה עד קרקעית האוצר, שמא ישווה בה גומות.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G17", "T3c"], "t": "התוספות: התינוק היונק, והכהן הטבח", "x": "התוספות מקשים ממסכת כתובות: \"תינוק יונק והולך אפילו ארבע וחמש שנים\". שם אין שואלים \"השתא חמש\", אף שהמספר שם מדויק. שהרי הגמרא שם מקשה מברייתא שנותנת שיעור אחר, \"חבילתו על כתפו\", ומתרצת שזה וזה שיעור אחד. התוספות עונים: שם מספר אחד אמור בתינוק כחוש, ואחד בתינוק בריא. ובמסכת חולין נאמר שכהן טבח \"שתים ושלש שבתות\" פטור מן המתנות. על זה רבנו יצחק אומר ששתיים הן לשיטת רבי, שחזקה נעשית בשתי פעמים, ושלוש לשיטת רבן שמעון בן גמליאל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18", "R25"], "t": "רבי: עד שבעה או עד שלושה עשר?", "x": "\"ורבי מתיר עד שבע\", והרי בברייתא אחרת נאמר שרבי מתיר עד שלושה עשר! התשובה: \"נוטה שאני\", סנדל נוטה שונה. רש\"י מסביר: כל המסמרים נצרכים לו כדי להשוות אותו, ואף אחד מהם אינו לחיזוק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19", "R26", "R27"], "t": "גם רבי יוחנן מתיישב", "x": "\"השתא דאתית להכי\", עכשיו שהגעת לחלק בין סנדל נוטה לסנדל שאינו נוטה, גם לרבי יוחנן אין קושיה. רש\"י מסביר: שאלנו קודם כמי אמר רבי יוחנן. אפשר לומר שבאמת אמר כרבי נתן. בסנדל נוטה רבי נתן מתיר עד שבעה, ובסנדל שאינו נוטה חמישה ולא יותר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20", "R28"], "t": "אין הלכה כרבי אלעזר ברבי שמעון", "x": "רב מתנה אמר, ויש אומרים שרב אחדבוי בר מתנה אמר בשמו: אין הלכה כרבי אלעזר ברבי שמעון, שאוסר לטלטל את הסנדל. \"פשיטא\", הרי זה ברור: יחיד ורבים, הלכה כרבים! \"מהו דתימא\", שמא תאמר שכאן הטעם של רבי אלעזר מסתבר. רש\"י מפרש שהטעם הוא שאסור לטלטל, שמא ינעל אותו. לכן הוצרכו לומר שאין הלכה כמותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21a", "R29"], "t": "רבי חייא: \"בבלאי שרי איסורי\"", "x": "אמר רבי חייא: אילולי שהיו קוראים לי \"בבלי שמתיר איסורים\", הייתי מתיר בו הרבה מסמרים. רש\"י מסביר שרבי חייא היה מבבל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21b", "R30", "R31", "R32"], "t": "כמה מסמרים, והסימן", "x": "וכמה? בפומבדיתא אומרים עשרים וארבעה, ובסורא אומרים עשרים ושניים. אמר רב נחמן בר יצחק: והסימן שלך, עד שבא מפומבדיתא לסורא חסרו שניים. רש\"י מפרש: כשעלה רבי חייא מבבל לארץ ישראל, עבר בסורא בדרך מפומבדיתא, ונפלו שניים ממסמרי הסנדל בדרך. ועל המילים \"לסורא חסר\" רש\"י כותב \"דומה אצל דומה\". נראה שכוונתו שהמילים \"סורא\" ו\"חסר\" דומות בצלילן, וכך זוכרים שבסורא אומרים את המספר החסר.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G22"], "t": "המשך המשנה: סנדל אחד", "x": "הגמרא עוברת לחלק הבא במשנה: \"ולא ביחיד בזמן שאין ברגלו מכה\", לא יצא בסנדל אחד כשאין ברגלו מכה.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "הסנדל המסומר אסור גם ביום טוב, כי גם בו יש התאספות ביום שאסור במלאכה, ושבת ויום טוב דומים. האיסור הוא רק במסמרים לחיזוק, וכמה מסמרים לנוי שנויים במחלוקת. סנדל שתפור בפנים, מסמר כמין כלבוס וסנדל מכוסה כולו מותרים. העמוד הבא ממשיך בסנדל אחד: אם יש ברגלו מכה, באיזו רגל ינעל את הסנדל?", "a": ""}], "audio": "shabbat/daf-60b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

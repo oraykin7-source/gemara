@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף פ&quot;ו עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-86a.html">
+<meta name="description" content="מסכת שבת, דף פ&quot;ו עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף פ\"ו עמוד א'", "url": "https://gemara.co.il/shabbat-86a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף פ&quot;ו עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>אמר רבי עקיבא</span><span>פרק תשיעי</span><span>שבת<b>פו.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-85b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-86b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 169</div>
+  <h1>מסכת שבת, דף פ&quot;ו עמוד א&#x27;</h1>
+  <p class="sub">פרק תשיעי, &quot;אמר רבי עקיבא&quot;. סוף דין ערוגה מרובעת, משנה על ארבעה לימודים מפסוקים, ופולטת שכבת זרע: ימים או עונות, והפרישה לפני מתן תורה.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף פ&quot;ו עמוד א&#x27;, לומדים: ערוגה כלוח מרובע; ארבעה לימודים מפסוקים; רישא וסיפא: תנא אחד או שניים; ימים או עונות; יום הפרישה, ההשכמה והבית האפל.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. ערוגה כלוח מרובע</a><a href="#u2">2. ארבעה לימודים מפסוקים</a><a href="#u3">3. רישא וסיפא: תנא אחד או שניים</a><a href="#u4">4. ימים או עונות</a><a href="#u5">5. יום הפרישה, ההשכמה והבית האפל</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>ערוגה כלוח מרובע</h2>
+  <p class="lead">סוף הקושיה של רבינא מן העמוד הקודם. הברייתא אומרת שרואים את הערוגות "כטבלא מרובעת", והגמרא מסבירה למה נדרש ריבוע.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>כטבלא מרובעת</td><td>כמו לוח מרובע.</td></tr>
+      <tr><td>כטבלא הוא דשרי</td><td>(רק כשהוא) כמו לוח, מותר;</td></tr>
+      <tr><td>הא לאו הכי אסור</td><td>אבל אם לא כך, אסור.</td></tr>
+      <tr><td>התם לאקולי בה</td><td>שם (נאמר הריבוע) כדי להקל בה</td></tr>
+      <tr><td>קולא אחרינא</td><td>קולא אחרת:</td></tr>
+      <tr><td>להתיר ראש תור</td><td>להתיר ראש תור</td></tr>
+      <tr><td>היוצא הימנה</td><td>שיוצא ממנה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הדיוק:</b> הברייתא אומרת שבין ירק לירק אחר מרחיקים ששה טפחים, ורואים אותם כלוח מרובע. מכאן הגמרא מדייקת: רק בצורה מרובעת מותר, ובצורה אחרת אסור.</p>
+  <p><b>הקושיה:</b> רש"י: מן הדיוק משמע שערוגה עגולה אינה נחשבת ערוגה. זו קושיה על רבי יוחנן, שאמר בעמוד הקודם שעושים בתוך ערוגה של שישה על שישה עיגול של חמישה טפחים.</p>
+  <p><b>התשובה:</b> הריבוע שבברייתא אינו תנאי להיתר עצמו. הוא נדרש כדי להוסיף קולא אחרת: להתיר "ראש תור" שיוצא מן הערוגה, כלומר קצה של שטח זרוע שהולך וצר, ונכנס לשדה אחר.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>כטבלא מרובעת – אלמא עגולה לאו ערוגה היא:</blockquote><p><span class="say">מה רש"י אומר:</span> מכאן משמע שערוגה עגולה אינה ערוגה.</p></div>
+  <div data-hl="R2" class="voice r"><span class="tag">רש"י</span><blockquote>התם – דבעי מרובעת לאחשובה שדה קאמר להתיר ראש תור כו' ולית ליה לר' יוחנן הא דאמר לעיל אין ראש תור בערוגה אי נמי אית ליה מערוגה לערוגה אבל משדה לערוגה יש ראש תור:</blockquote><p><span class="say">מה רש"י אומר:</span> הריבוע נדרש כדי להחשיב את הערוגה כשדה, ורק כך מותר בה ראש תור.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שתי אפשרויות ברש"י</h3>
+    <div data-hl="R2" class="voice r"><span class="tag">רש"י</span><blockquote>התם – דבעי מרובעת לאחשובה שדה קאמר להתיר ראש תור כו' ולית ליה לר' יוחנן הא דאמר לעיל אין ראש תור בערוגה אי נמי אית ליה מערוגה לערוגה אבל משדה לערוגה יש ראש תור:</blockquote><p><span class="say">מה רש"י אומר:</span> בעמוד הקודם נאמר "אין ראש תור בערוגה". רש"י מציע שתי דרכים: או שרבי יוחנן אינו סובר כך, או שהוא סובר כך רק מערוגה לערוגה, אבל משדה לערוגה יש ראש תור.</p></div>
+    <p>הגמרא עצמה אומרת רק שהריבוע נועד "לאקולי בה קולא אחרינא". השאלה איך זה מתיישב עם "אין ראש תור בערוגה" עולה מדברי רש"י, והוא משאיר שתי אפשרויות.</p>
+  </div>
+  <p class="godeep">איך רש"י מיישב את התשובה עם "אין ראש תור בערוגה"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הגמרא מדייקת מ"כטבלא מרובעת"?</summary><p>רק כשהוא כמו לוח מרובע מותר, ואם לא, אסור.</p></details>
+  <details><summary>לשם מה נדרש הריבוע, לפי התשובה?</summary><p>כדי להוסיף קולא אחרת: להתיר ראש תור שיוצא מן הערוגה.</p></details>
+  <details class="deepq"><summary>מהן שתי האפשרויות של רש"י?</summary><p>או שרבי יוחנן אינו סובר "אין ראש תור בערוגה", או שהוא סובר זאת רק מערוגה לערוגה, ומשדה לערוגה יש ראש תור.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G2a,G2b,G2c,G2d">
+  <div class="kicker">יחידה 2 · משנה</div>
+  <h2>ארבעה לימודים מפסוקים</h2>
+  <p class="lead">המשנה מביאה ארבעה דינים, ולכל אחד פסוק. ברביעי היא אומרת במפורש שאין זו ראיה אלא רק זכר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מנין לפולטת שכבת זרע ביום השלישי</td><td>מניין לאשה שפולטת שכבת זרע ביום השלישי</td></tr>
+      <tr><td>היו נכונים לשלשת ימים</td><td>"היו נכונים לשלושת ימים".</td></tr>
+      <tr><td>מנין שמרחיצין את המילה ביום השלישי</td><td>מניין שרוחצים את המילה ביום השלישי</td></tr>
+      <tr><td>שחל להיות בשבת</td><td>שחל בשבת?</td></tr>
+      <tr><td>ויהי ביום השלישי בהיותם כואבים</td><td>"ויהי ביום השלישי בהיותם כואבים".</td></tr>
+      <tr><td>מנין שקושרין לשון של זהורית</td><td>מניין שקושרים רצועת צמר צבועה אדום</td></tr>
+      <tr><td>בראש שעיר המשתלח</td><td>בראש השעיר המשתלח?</td></tr>
+      <tr><td>מנין לסיכה שהיא כשתייה</td><td>מניין שסיכה היא כשתייה (ביום הכיפורים)?</td></tr>
+      <tr><td>אע"פ שאין ראיה לדבר זכר לדבר</td><td>אף על פי שאין ראיה לדבר, יש זכר לדבר:</td></tr>
+      <tr><td>ותבא כמים בקרבו וכשמן בעצמותיו</td><td>"ותבוא כמים בקרבו וכשמן בעצמותיו".</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הפולטת:</b> אשה שפולטת שכבת זרע ביום השלישי טמאה. לומדים זאת מן הציווי שלפני מתן תורה, "היו נכונים לשלשת ימים".</p>
+  <p><b>המילה:</b> רוחצים את מקום המילה ביום השלישי גם בשבת, כי נאמר "ויהי ביום השלישי בהיותם כואבים". רש"י: גם ביום השלישי הנימול עדיין בסכנה.</p>
+  <p><b>השעיר והסיכה:</b> קושרים לשון של זהורית בראש השעיר המשתלח, משום "אם יהיו חטאיכם כשנים, כשלג ילבינו". וסיכה ביום הכיפורים דינה כשתייה. על הלימוד האחרון המשנה אומרת "אין ראיה לדבר", ויש רק "זכר לדבר".</p>
+  <div data-hl="R3" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' שהיא טמאה – דיום השלישי אכתי לא מסרחה שכבת זרע וראויה לקלוט ולהיות ולד נוצר הימנה וקרינן שכבת זרע הראוי להזריע:</blockquote><p><span class="say">מה רש"י אומר:</span> ביום השלישי הזרע עוד לא הסריח, והוא עדיין ראוי ליצור ולד. לכן הוא נקרא "שכבת זרע".</p></div>
+  <div data-hl="R6" class="voice r"><span class="tag">רש"י</span><blockquote>כמים בקרבו וכשמן בעצמותיו – מקיש סיכה לשתיה:</blockquote><p><span class="say">מה רש"י אומר:</span> הפסוק "ותבא כמים בקרבו וכשמן בעצמותיו" מקיש סיכה לשתייה.</p></div>
+  <div data-hl="T2a" class="voice t"><span class="tag">תוספות</span><blockquote>אע"פ שאין ראייה לדבר זכר לדבר שנאמר ותבא כמים וגו' – ומיהו ראיה גמורה לא הוי משום דקרא לא מישתעי בשתיה אלא ברחיצה משום דמשמע מים דומיא דשמן מה שמן מאבראי אף מים מאבראי</blockquote><p><span class="say">מה התוספות אומרים:</span> אין זו ראיה גמורה, כי הפסוק מדבר ברחיצה ולא בשתייה: המים דומים לשמן, ושניהם מבחוץ.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך נלמד הדין מן הפסוק</h3>
+    <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>לג' ימים – דהקפיד הכתוב על טומאת קרי במתן תורה וקס"ד עם יום הפרישה קאמר דבד' בשבת פירשו מנשותיהן וקבלו תורה בשבת שהוא רביעי לאותם ששימשו מטותיה' ברביעי לפני הפרישה וטבלו לילי שבת ולא חש הכתוב אם יפלוטו בשבת דמסרח ואינו שכבת זרע הראוי להזריע אבל אם פלטו ע"ש בשלישי טמאות לכך הפרישן שלשה ימים:</blockquote><p><span class="say">מה רש"י אומר:</span> הכתוב הקפיד על טומאת קרי במתן תורה. בשלב הזה מניחים ששלושת הימים נמנים עם יום הפרישה: פרשו ביום רביעי, טבלו בליל שבת וקיבלו תורה בשבת. פליטה בשבת כבר אינה מטמאת, אבל פליטה ביום שישי, שהוא השלישי, מטמאת.</p></div>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>מנין לפולטת כו' שנא' היו נכונים לשלשת ימים – אע"פ שבאותה שעה עדיין לא ניתנה תורה מ"מ מסתמא הקפידה תורה על דבר שעתיד להיות טומאה אחר מתן תורה ואע"ג דלא הקפידה על זבין ומצורעין ובועלי נדות היינו משום טעמא דתניא בפרק מי שמתו (ברכות כב.) כתיב והודעתם לבניך ולבני בניך וכתיב יום אשר עמדת לפני ה' אלהיך בחורב מה להלן באימה וביראה וברתת ובזיע כו' מכאן אמרו זבין ומצורעים ובועלי נדות …</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות שואלים איך הקפידו על טומאה לפני שניתנה תורה, ועונים שהקפידו על דבר שעתיד להיות טומאה. ועל קרי דווקא, ולא על זבים ומצורעים, הקפידו כי בעל קרי אינו באימה וביראה, שהרי הקרי בא מתוך קלות ראש.</p></div>
+    <h3>"זכר לדבר" בעיני התוספות</h3>
+    <div data-hl="T2b" class="voice t"><span class="tag">תוספות</span><blockquote>וקשה לר"י דבפרק בתרא דיומא (דף עו.) קאמר דרחיצה איקרי עינוי מנלן א"ר זוטרא מהכא ותבא כמים בקרבו וגו' מים דומיא דשמן מה שמן מאבראי כו' ופריך והא האי תנא איפכא נסיב לה דתנן מנין לסיכה כו' ומאי פריך הא תנא דמתני' קאמר שאין ראיה לדבר אלא זכר לדבר משום דמים דומיא דשמן כדפרישי' ואומר ר"י דפריך הכי דאי חשיבא ראיה גמורה דרחיצה כסיכה כדקאמרת לא הוה ליה להאי תנא למעבד מינה אפי' זכר בעלמא</blockquote><p><span class="say">מה התוספות אומרים:</span> במסכת יומא לומדים מאותו פסוק שרחיצה נקראת עינוי, והגמרא שם מקשה ממשנתנו. רבנו יצחק מסביר את הקושיה: אילו הפסוק היה ראיה גמורה לרחיצה, התנא לא היה עושה ממנו אפילו זכר לסיכה.</p></div>
+    <div data-hl="T2c" class="voice t"><span class="tag">תוספות</span><blockquote>קשה לרשב"א דאמאי מייתי האי קרא שאינו אלא זכר בעלמא הוה ליה לאיתויי קרא דלחם חמודות לא אכלתי ובשר ויין לא בא אל פי וסוך לא סכתי (דניאל י׳:ג׳) דהוי דרשה גמורה ומיניה נפקא לן בפרק בתרא דיומא (שם) דסיכה איקרי עינוי:</blockquote><p><span class="say">מה התוספות אומרים:</span> הרשב"א מקשה: למה לא הביאה המשנה את הפסוק בדניאל, "וסוך לא סכתי", שהוא דרשה גמורה לכך שסיכה נקראת עינוי? התוספות אינם עונים כאן.</p></div>
+  </div>
+  <p class="godeep">למה המשנה אומרת שהפסוק על הסיכה הוא רק "זכר לדבר"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מאיזה פסוק לומדים שהפולטת ביום השלישי טמאה?</summary><p>"היו נכונים לשלשת ימים".</p></details>
+  <details><summary>למה רוחצים את המילה ביום השלישי גם בשבת, לפי רש"י?</summary><p>כי גם ביום השלישי הנימול עדיין בסכנה.</p></details>
+  <details><summary>מה פירוש "אין ראיה לדבר, זכר לדבר"?</summary><p>אין כאן הוכחה גמורה, אלא רמז בלבד.</p></details>
+  <details class="deepq"><summary>לפי התוספות, למה הקפידו במתן תורה על קרי ולא על זבים ומצורעים?</summary><p>כי בעל קרי אינו באימה וביראה, שהקרי בא מתוך קלות ראש.</p></details>
+  <details class="deepq"><summary>מה הרשב"א מקשה?</summary><p>למה לא הובא הפסוק בדניאל, "וסוך לא סכתי", שהוא דרשה גמורה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G3a,G3b">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>רישא וסיפא: תנא אחד או שניים</h2>
+  <p class="lead">הגמרא מראה שתחילת המשנה וסופה אינם לפי אותו תנא, ומביאה שתי דרכים ליישב זאת.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>רישא דלא כר' אלעזר בן עזריה</td><td>תחילת (המשנה) אינה כרבי אלעזר בן עזריה,</td></tr>
+      <tr><td>סיפא כר"א בן עזריה</td><td>סופה כרבי אלעזר בן עזריה.</td></tr>
+      <tr><td>דאי כרבי אלעזר בן עזריה</td><td>שאילו כרבי אלעזר בן עזריה,</td></tr>
+      <tr><td>טהורה שמענא ליה</td><td>"טהורה" שמענו ממנו.</td></tr>
+      <tr><td>מאן דלא מוקי כתנאי</td><td>מי שאינו מעמיד (את המשנה) כתנאים,</td></tr>
+      <tr><td>תנא רישא טהורה</td><td>שונה בתחילתה "טהורה",</td></tr>
+      <tr><td>ומוקי לה לכולה כר"א בן עזריה</td><td>ומעמיד את כולה כרבי אלעזר בן עזריה.</td></tr>
+      <tr><td>ומאן דמוקים כתנאי</td><td>ומי שמעמיד כתנאים:</td></tr>
+      <tr><td>רישא רבנן וסיפא כר' אלעזר בן עזריה</td><td>תחילתה חכמים, וסופה כרבי אלעזר בן עזריה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הבעיה:</b> רבי אלעזר בן עזריה אומר שהפולטת ביום השלישי טהורה, ואילו המשנה אומרת שהיא טמאה. מצד שני, הדין שרוחצים את המילה ביום השלישי בשבת הוא דבריו שלו. כך יוצא שתחילת המשנה וסופה מתנאים שונים.</p>
+  <p><b>דרך א':</b> מי שאינו מעמיד כתנאים שונה בתחילת המשנה "טהורה", וכך כל המשנה כרבי אלעזר בן עזריה.</p>
+  <p><b>דרך ב':</b> מי שמעמיד כתנאים אומר שתחילת המשנה כחכמים, וסופה כרבי אלעזר בן עזריה.</p>
+  <div data-hl="R8,R9" class="voice r"><span class="tag">רש"י</span><blockquote>דלא כר' אלעזר בן עזריה – דאילו לדידי' שמעינן ליה פולטת ביום השלישי טהורה לקמן בברייתא:</blockquote><blockquote>וסיפא – דקתני מרחיצין את המילה כו' ר' אלעזר בן עזריה דהוא אמר לה לקמן בפרק ר' אליעזר:</blockquote><p><span class="say">מה רש"י אומר:</span> את דעת רבי אלעזר בן עזריה בפולטת נלמד בברייתא שבהמשך, ואת דעתו במילה בפרק "רבי אליעזר".</p></div>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>מאן דלא מוקי כתנאי – דדחיק ומוקי מתניתין בתרי טעמי או משבש לה ומפרש לה דלא לאוקמי כתנאי משבש לה ואמר משבשתא היא ותני בה טהורה:</blockquote><p><span class="say">מה רש"י אומר:</span> מי שאינו מעמיד משנה כתנאים מעדיף להידחק: לפרש שתחילתה וסופה עוסקים במקרים שונים, או לומר שהיא משובשת. כאן הוא אומר שהמשנה משובשת, ושונה בה "טהורה".</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>גרסה או תיקון</h3>
+    <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>ומאן דמוקי לה כתנאי – דניחא ליה לאוקומי כתנאי מלמימר משבשתא היא ומלאוקמי בתרי טעמי מוקי נמי להאי כתנאי ופלוגתא היא בהמפקיד (ב"מ מא.) גבי חבית דאמר ר' יוחנן מאן דמתרגם לי חבית אליבא דחד תנא מובילנא ליה מאני לבי מסותא ומוקי רישא ר' ישמעאל וסיפא רבי עקיבא ואי הוה בעי הוה מצי לאוקמי בתרי טעמי ובחד תנא ואיכא דמוקי לה התם בחד תנא ומוקי סיפא בשהניחה במקום שאינו מקומה:</blockquote><p><span class="say">מה רש"י אומר:</span> מי שמעמיד כתנאים מעדיף זאת על פני הטענה שהמשנה משובשת או שיש בה שני טעמים. רש"י מציין שזו מחלוקת שמופיעה גם במסכת בבא מציעא, בעניין חבית.</p></div>
+    <div data-hl="T3a" class="voice t"><span class="tag">תוספות</span><blockquote>תני רישא טהורה ומוקי לה כו' – אומר ר"י דמשום הכי אינו מגיה למיתני טהורה כדי לאוקמי כולה כרבי אלעזר אלא בלאו הכי איכא דתני טהורה ואיכא דתני טמאה הלכך מאן דלא מוקי כתנאי נוח לו לשנות כאותן ששונין טהורה ומאן דמוקי כתנאי לא קפיד לשנות טמאה</blockquote><p><span class="say">מה התוספות אומרים:</span> לפי רבנו יצחק אין כאן תיקון של המשנה, שלא כדברי רש"י. היו מלכתחילה שתי גרסאות, "טהורה" ו"טמאה", וכל אחד שונה בגרסה שמתאימה לדרכו.</p></div>
+    <h3>שאלות נוספות של התוספות</h3>
+    <div data-hl="T3b" class="voice t"><span class="tag">תוספות</span><blockquote>וא"ת אכתי הויא מתני' כתנאי דרישא דמתני' רבי עקיבא קתני לה וסיפא דקתני פולטת טהורה היינו דלא כר"ע דפליג בסמוך אר' אלעזר בן עזריה וי"ל דלא קפיד לאוקמי כתנאי אלא בתרי בבי דסמוכות זו אחר זו אבל אההיא דריש פירקין המרוחקות מההיא דפולטת לא קפיד</blockquote><p><span class="say">מה התוספות אומרים:</span> גם לגרסה "טהורה" המשנה עדיין כשני תנאים: תחילת הפרק שנויה בשם רבי עקיבא, והדין שהפולטת טהורה אינו כרבי עקיבא, שחולק על רבי אלעזר בן עזריה. התשובה: מקפידים שלא להעמיד כתנאים רק בחלקים שסמוכים זה לזה, ולא בתחילת הפרק שרחוקה מכאן.</p></div>
+    <div data-hl="T3c" class="voice t"><span class="tag">תוספות</span><blockquote>וא"ת למאן דתני טהורה טפי הוה ליה למנקט במתני' קרא דוקדשתם היום ומחר (שמות ינו) דמשמע כרבי אלעזר בן עזריה ואומר ר"י דניחא ליה לאתויי היו נכונים לשלשת ימים דמוכח דמשום פליטת זרע הקפיד דכתיב ביה אל תגשו אל אשה:</blockquote><p><span class="say">מה התוספות אומרים:</span> למי ששונה "טהורה" היה מתאים הפסוק "וקדשתם היום ומחר". אבל המשנה מעדיפה "היו נכונים לשלשת ימים", כי שם כתוב "אל תגשו אל אשה", ומוכח שההקפדה הייתה משום פליטת זרע.</p></div>
+  </div>
+  <p class="godeep">האם מי ששונה "טהורה" מתקן את המשנה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>איזה חלק במשנה אינו כרבי אלעזר בן עזריה?</summary><p>תחילתה: שהפולטת ביום השלישי טמאה.</p></details>
+  <details><summary>איך מיישב מי שאינו מעמיד כתנאים?</summary><p>שונה בתחילת המשנה "טהורה", ומעמיד את כולה כרבי אלעזר בן עזריה.</p></details>
+  <details><summary>איך מיישב מי שמעמיד כתנאים?</summary><p>תחילת המשנה כחכמים, וסופה כרבי אלעזר בן עזריה.</p></details>
+  <details class="deepq"><summary>לפי רבנו יצחק, למה אין זה תיקון של המשנה?</summary><p>כי מלכתחילה יש ששונים "טהורה" ויש ששונים "טמאה".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G4a,G4b,G4c">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>ימים או עונות</h2>
+  <p class="lead">ברייתא ובה שלוש דעות: כמה זמן אחרי התשמיש פליטת הזרע מטמאת. השאלה היא אם מונים ימים או עונות.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>פולטת שכבת זרע ביום השלישי טהורה</td><td>הפולטת שכבת זרע ביום השלישי, טהורה,</td></tr>
+      <tr><td>דברי רבי אלעזר בן עזריה</td><td>דברי רבי אלעזר בן עזריה.</td></tr>
+      <tr><td>רבי ישמעאל אומר</td><td>רבי ישמעאל אומר:</td></tr>
+      <tr><td>פעמים שהן ד' עונות</td><td>פעמים שהן ארבע עונות,</td></tr>
+      <tr><td>פעמים שהן ה' עונות</td><td>פעמים שהן חמש עונות,</td></tr>
+      <tr><td>פעמים שהן ו' עונות</td><td>פעמים שהן שש עונות.</td></tr>
+      <tr><td>ר' עקיבא אומר לעולם ה'</td><td>רבי עקיבא אומר: לעולם חמש.</td></tr>
+      <tr><td>ואם יצאתה מקצת עונה ראשונה</td><td>ואם עבר חלק מן העונה הראשונה,</td></tr>
+      <tr><td>נותנין לה מקצת עונה ששית</td><td>נותנים לה חלק מן העונה השישית.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רבי אלעזר בן עזריה:</b> ביום השלישי היא כבר טהורה. רש"י: למשל ששימשה ביום חמישי ופלטה בשבת, בין אם עברו ארבע עונות שלמות ובין אם רק שתיים.</p>
+  <p><b>רבי ישמעאל:</b> ביום השלישי טמאה, וביום הרביעי טהורה. לכן מספר העונות משתנה, ארבע, חמש או שש, לפי השעה שבה שימשה. מקצת היום נחשב ככולו, והתורה הקפידה על ימים.</p>
+  <p><b>רבי עקיבא:</b> תמיד חמש עונות שלמות. אם עבר חלק מן העונה הראשונה, משלימים אותו מן העונה השישית.</p>
+  <div class="eg"><b>להמחשה:</b> מי שסופר "שלושה ימים" יכול לספור את היום הראשון גם אם נותרה ממנו שעה אחת. מי שסופר "שבעים ושתיים שעות" חייב לספור כל שעה.</div>
+  <div data-hl="R13" class="voice r"><span class="tag">רש"י</span><blockquote>ר' ישמעאל אומר פעמים שהן כו' – בא לחלוק ולומר דפולטת בג' לשימושה טמאה אבל פולטת בד' טהורה ומודינא לך דמקצת היום ככולו דלא הקפידה תורה אלא במנין של הימים ולא במנין העונות:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי ישמעאל מונה ימים: הפולטת ביום השלישי לתשמיש טמאה, וביום הרביעי טהורה.</p></div>
+  <div data-hl="R14,R15,R16" class="voice r"><span class="tag">רש"י</span><blockquote>ופעמים שהם ד' עונות – שלמות שאם שמשה ד' בשבת עם חשיכה פליטתה טמאה עד תחלת שבת:</blockquote><blockquote>פעמים שהם ה' עונות – כגון שמשה בתחלת היום של ד':</blockquote><blockquote>פעמים שהן ו' – כגון שמשה בתחלת ליל ד' בין השמשות:</blockquote><p><span class="say">מה רש"י אומר:</span> ארבע עונות: שימשה ביום רביעי סמוך לחשכה. חמש: בתחילת יום רביעי. שש: בתחילת ליל רביעי, בין השמשות.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה רבי ישמעאל מדבר בלשון עונות</h3>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>פעמים שהן ד' כו' – במלתא דרבי אלעזר בן עזריה ה"מ נמי לשנות בענין זה פעמים שהן שתים פעמים שהן ג' כו' אלא להכי נקט ר' ישמעאל משום דסבר ברביעי עבוד פרישה כרבי עקיבא ובעונות לא בעי למתלי כמו שתולה רבי עקיבא:</blockquote><p><span class="say">מה התוספות אומרים:</span> גם לרבי אלעזר בן עזריה אפשר היה לנסח "פעמים שתיים, פעמים שלוש". רבי ישמעאל ניסח בעונות משום שהוא סובר שהפרישה הייתה ביום רביעי, כמו רבי עקיבא, ובכל זאת אינו תולה את הדין בעונות כמותו.</p></div>
+    <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>נותנין לה מקצת עונת ו' – להשלים ה' וכל הפולטת בתוך ה' עונות שלמות טמאה:</blockquote><p><span class="say">מה רש"י אומר:</span> אצל רבי עקיבא "נותנין לה מקצת עונה ששית" פירושו להשלים חמש עונות שלמות. כל שפולטת בתוכן טמאה.</p></div>
+  </div>
+  <p class="godeep">למה רבי ישמעאל מנסח את דבריו בעונות, אם הוא מונה ימים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה דעת רבי אלעזר בן עזריה?</summary><p>הפולטת ביום השלישי טהורה.</p></details>
+  <details><summary>לפי רבי ישמעאל, ממתי הפולטת טהורה?</summary><p>מן היום הרביעי לתשמיש.</p></details>
+  <details><summary>כמה עונות לפי רבי עקיבא?</summary><p>תמיד חמש עונות שלמות.</p></details>
+  <details class="deepq"><summary>מתי, לפי רש"י, יש לרבי ישמעאל שש עונות?</summary><p>כששימשה בתחילת ליל רביעי, בין השמשות.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G5a,G5b,G6,G7a,G7b">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>יום הפרישה, ההשכמה והבית האפל</h2>
+  <p class="lead">הגמרא קושרת כל דעה בברייתא לשיטה על היום שבו פרשו לפני מתן תורה. לרבי עקיבא היא מוצאת מקור בכך שמשה ירד בהשכמה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אמרוה רבנן קמיה דרב פפא</td><td>אמרו זאת החכמים לפני רב פפא,</td></tr>
+      <tr><td>ואמרי לה רב פפא לרבא</td><td>ויש אומרים: רב פפא (אמר זאת) לרבא.</td></tr>
+      <tr><td>בשלמא ר' אלעזר בן עזריה כרבנן</td><td>מובן: רבי אלעזר בן עזריה כחכמים,</td></tr>
+      <tr><td>דאמרי בה' עביד פרישה</td><td>שאומרים: ביום חמישי עשו פרישה.</td></tr>
+      <tr><td>ור' ישמעאל כר' יוסי</td><td>ורבי ישמעאל כרבי יוסי,</td></tr>
+      <tr><td>דאמר בד' עביד פרישה</td><td>שאומר: ביום רביעי עשו פרישה.</td></tr>
+      <tr><td>אלא רבי עקיבא כמאן</td><td>אלא רבי עקיבא, כמו מי?</td></tr>
+      <tr><td>לעולם כר' יוסי</td><td>באמת כרבי יוסי,</td></tr>
+      <tr><td>משה בהשכמה עלה ובהשכמה ירד</td><td>משה בהשכמה עלה ובהשכמה ירד.</td></tr>
+      <tr><td>מקיש ירידה לעלייה</td><td>מקיש ירידה לעלייה.</td></tr>
+      <tr><td>למה ליה למימרא להו</td><td>למה היה צריך לומר להם?</td></tr>
+      <tr><td>ישראל קדושים הן ואין משמשין מטותיהן ביום</td><td>ישראל קדושים הם, ואינם משמשים מיטותיהם ביום.</td></tr>
+      <tr><td>אם היה בית אפל מותר</td><td>אם היה הבית אפל, מותר.</td></tr>
+      <tr><td>תלמיד חכם מאפיל בטליתו ומותר</td><td>תלמיד חכם מחשיך בטליתו, ומותר.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רבי אלעזר בן עזריה ורבי ישמעאל:</b> הראשון סובר כחכמים, שפרשו ביום חמישי. השני סובר כרבי יוסי, שפרשו ביום רביעי. רש"י מסביר שלשניהם טבלו בליל שבת, והיו שפרשו רק עם חשכה, ובכל זאת לא חששו לפליטה אחרי הטבילה.</p>
+  <p><b>רבי עקיבא:</b> מניין לו שמונים עונות? הוא סובר כרבי יוסי, ומוסיף את דברי רב אדא בר אהבה: משה ירד בהשכמה. הכתוב מקיש ירידה לעלייה, ועל העלייה כתוב "וישכם משה בבקר". אם הפרישה הייתה בבוקר יום רביעי, הרי שהקפידו על חמש עונות שלמות.</p>
+  <p><b>שאלה ותשובה:</b> למה היה צריך לצוות עליהם לפרוש כבר בבוקר, והרי רב הונא אמר שישראל אינם משמשים ביום? התשובה: רבא אמר שבבית אפל מותר, ותלמיד חכם מחשיך בטליתו ומותר.</p>
+  <div data-hl="R21" class="voice r"><span class="tag">רש"י</span><blockquote>אלא רבי עקיבא – דאמר כל ה' עונות טמאה אם תפלוט כמאן ומהיכא למד דאעונות קפיד קרא הא ימים כתיב וקיימא לן מקצת היום ככולו:</blockquote><p><span class="say">מה רש"י אומר:</span> הקושיה על רבי עקיבא: מניין שהכתוב מקפיד על עונות? הרי כתובים ימים, ומקצת היום ככולו.</p></div>
+  <div data-hl="R22" class="voice r"><span class="tag">רש"י</span><blockquote>לעולם – ר' עקיבא כר' יוסי וכדרב אדא דאמר משה כל עליותיו בהשכמה עלה וכל ירידותיו בהשכמה הלכך ירידה דכתיב: וירד משה מן ההר אל העם ויקדש את העם דהיינו פרישה בהשכמת רביעי היתה ומדהוזקק להפרישן בהשכמה ש"מ עד ה' עונות שלמות קפיד קרא:</blockquote><p><span class="say">מה רש"י אומר:</span> הירידה שבה כתוב "וירד משה מן ההר אל העם ויקדש את העם" היא הפרישה, והיא הייתה בהשכמת יום רביעי.</p></div>
+  <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>בהשכמה עלה – אליבא דרבי עקיבא איירי:</blockquote><p><span class="say">מה התוספות אומרים:</span> דברי רב אדא בר אהבה נאמרו לשיטת רבי עקיבא.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך ההשכמה מוכיחה עונות</h3>
+    <div data-hl="R19,R20" class="voice r"><span class="tag">רש"י</span><blockquote>בשלמא כו' – פלוגתא דרבנן ור' יוסי בברייתא ומייתי לה בהאי פירקא לקמן דלרבנן בה' בשבת פרשו ולר' יוסי בד' ולכ"ע בשבת ניתנו עשרת הדברות וכיון דבשבת נתנו ע"כ בליל שבת טבלו ולא שחרית כדמתרץ לקמן שלא יהו הללו טובלין והללו מהלכין לקבל תורה הלכך בשלמא ר' אלעזר כרבנן דאמרי בחמשה בשבת עבוד פרישה ויש שלא פרשו אלא עם חשיכה ומדטבלו ליל שבת ולא חשו שמא תפלטנה עוד ש"מ דפולטת בג' טהורה ומקצת …</blockquote><blockquote>ור' ישמעאל – דאומר בג' טמאה בד' טהורה קסבר בד' עבוד פרישה כר' יוסי דהוה ליל שבת רביעי ומיהו יש שלא פירשו עד סמוך לחשיכה וליכא אלא ד' עונות ליל ה' וה' ליל ו' וו' ואפילו הכי משטבלו פליטתן טהורה דלא הקפידה תורה אלא בימים:</blockquote><p><span class="say">מה רש"י אומר:</span> לכל הדעות עשרת הדיברות ניתנו בשבת, והטבילה הייתה בליל שבת. לרבי אלעזר בן עזריה ולרבי ישמעאל, מי שפרשו סמוך לחשכה טבלו אחרי פחות עונות, ובכל זאת פליטתם טהורה. מכאן שהם מונים ימים.</p></div>
+    <p>לרבי עקיבא, אילו הקפידו רק על ימים, לא היה צורך להפריש אותם כבר בבוקר. מכך שמשה ירד והפריש אותם בהשכמה, הוא לומד שהקפידו על חמש עונות שלמות.</p>
+    <h3>הקושיה מ"ישראל קדושים הן"</h3>
+    <div data-hl="R23,R24" class="voice r"><span class="tag">רש"י</span><blockquote>ופרכינן למה ליה למימרא להו – שחרית בלאו הכי נמי לא הוו משמשי:</blockquote><blockquote>דקאמר רב הונא – דאין משמשין ביום דכתיב (משלי י״ט:ט״ז) בוזה דרכיו ימות דבעי צניעותא שלא יסתכלו:</blockquote><p><span class="say">מה רש"י אומר:</span> בבוקר גם בלי ציווי לא היו משמשים, משום צניעות, כמו שנאמר "בוזה דרכיו ימות". אם כן, למה הוצרך משה לומר להם כבר בהשכמה?</p></div>
+    <div data-hl="T6" class="voice t"><span class="tag">תוספות</span><blockquote>ישראל קדושים הן כו' – ובלאו הכי היו פורשין דאמר בוזה דרכיו ימות זה המשמש מטתו ביום ועוד דקראן קדושים ואתם תהיו לי ממלכת כהנים וגוי קדוש:</blockquote><p><span class="say">מה התוספות אומרים:</span> גם בלי ציווי היו פורשים ביום, משום "בוזה דרכיו ימות", ועוד שהכתוב קרא להם "גוי קדוש".</p></div>
+    <div data-hl="R25" class="voice r"><span class="tag">רש"י</span><blockquote>תלמיד חכם – שהוא צנוע ולא יסתכל סגי ליה במאפיל בטליתו:</blockquote><p><span class="say">מה רש"י אומר:</span> התשובה: בבית אפל מותר, ותלמיד חכם, שהוא צנוע ואינו מסתכל, די לו להחשיך בטליתו. לכן היה צורך לצוות עליהם גם ביום.</p></div>
+  </div>
+  <p class="godeep">למה ההשכמה של משה חשובה לשיטת רבי עקיבא? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>כמי סובר רבי אלעזר בן עזריה, ומתי פרשו לדעתם?</summary><p>כחכמים: ביום חמישי.</p></details>
+  <details><summary>כמי סובר רבי ישמעאל?</summary><p>כרבי יוסי: הפרישה הייתה ביום רביעי.</p></details>
+  <details><summary>מניין שמשה ירד בהשכמה?</summary><p>הכתוב מקיש ירידה לעלייה, ועל העלייה כתוב "וישכם משה בבקר".</p></details>
+  <details><summary>מה הייתה הקושיה מדברי רב הונא, ומה התשובה?</summary><p>ישראל אינם משמשים ביום, ולמה לצוות? התשובה: בבית אפל, או בטלית אצל תלמיד חכם, מותר.</p></details>
+  <details class="deepq"><summary>למה ההשכמה מוכיחה שמונים עונות?</summary><p>אילו מנו רק ימים, לא היה צורך להפריש אותם כבר בבוקר יום רביעי.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>ערוגה מרובעת:</b> הריבוע שבברייתא נדרש כדי להתיר ראש תור, ולא כתנאי להיתר עצמו.</li>
+      <li><b>ארבעה לימודים:</b> פולטת ביום השלישי, רחיצת המילה, לשון של זהורית, וסיכה ביום הכיפורים, שעליה יש רק "זכר לדבר".</li>
+      <li><b>רישא וסיפא:</b> תחילת המשנה אינה כרבי אלעזר בן עזריה וסופה כמותו. אפשר לשנות "טהורה", או להעמיד את המשנה כתנאים.</li>
+      <li><b>ימים או עונות:</b> רבי אלעזר בן עזריה מטהר ביום השלישי, רבי ישמעאל ביום הרביעי, ורבי עקיבא מצריך חמש עונות שלמות.</li>
+      <li><b>יום הפרישה:</b> רבי אלעזר בן עזריה כחכמים, ורבי ישמעאל ורבי עקיבא כרבי יוסי. לרבי עקיבא משה ירד והפריש אותם בהשכמה.</li>
+      <li><b>בית אפל:</b> הציווי בבוקר היה נחוץ, כי בבית אפל או בטלית מותר גם ביום.</li>
+      <li><b>בעמוד הבא:</b> הקושיה שמי שטבלו בליל שבת היו "טבולי יום" כשקיבלו את התורה.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>ראיה לדבר · זכר לדבר</td><td>הוכחה גמורה · רמז בלבד</td></tr>
+      <tr><td>רישא · סיפא</td><td>תחילת המשנה · סוף המשנה</td></tr>
+      <tr><td>שמענא ליה</td><td>שמענו ממנו</td></tr>
+      <tr><td>מוקי</td><td>מעמיד, מפרש שהמשנה עוסקת במקרה או בשיטה מסוימים</td></tr>
+      <tr><td>כתנאי</td><td>כשני תנאים: חלקים של אותה משנה שנויים לפי חכמים שונים</td></tr>
+      <tr><td>תנו רבנן</td><td>&quot;שנו חכמים&quot;: פתיחה של ברייתא</td></tr>
+      <tr><td>עונה</td><td>יום או לילה</td></tr>
+      <tr><td>פרישה</td><td>התרחקות של איש מאשתו</td></tr>
+      <tr><td>בשלמא</td><td>מובן, בסדר. כך פותחים לפני שמקשים &quot;אלא&quot;</td></tr>
+      <tr><td>כמאן</td><td>כמו מי, כשיטת מי</td></tr>
+      <tr><td>לעולם</td><td>באמת. כך פותחים תשובה שעומדת על ההנחה הראשונה</td></tr>
+      <tr><td>מקיש</td><td>משווה דבר לדבר ולומד מאחד על חברו</td></tr>
+      <tr><td>איתימא</td><td>ויש אומרים</td></tr>
+      <tr><td>מאפיל</td><td>מחשיך</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-85b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-86b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף פ&quot;ו עמוד א&#x27;, לומדים: ערוגה כלוח מרובע; ארבעה לימודים מפסוקים; רישא וסיפא: תנא אחד או שניים; ימים או עונות; יום הפרישה, ההשכמה והבית האפל.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (34 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד א&#x27;: סוף הקושיה על הערוגות, ומשנה חדשה</h3><p>העמוד הקודם עסק בערוגות של ירקות שונים. בסופו רבינא הקשה לרב אשי מברייתא: בין ירק לירק אחר מרחיקים ששה טפחים, &quot;ורואין אותם&quot;. כאן הברייתא נגמרת והקושיה מתורצת. אחריה באה משנה חדשה, ועמה סוגיה ארוכה על הימים שלפני מתן תורה.</p></li><li><h3><span class="w">גמרא</span> · &quot;כטבלא מרובעת&quot;</h3><p>סוף הברייתא: רואים אותם &quot;כטבלא מרובעת&quot;, כמו לוח מרובע. מכאן הקושיה של רבינא: רק כשהוא כמו לוח מרובע מותר, ואם לא, אסור. רש&quot;י: משמע שערוגה עגולה אינה נחשבת ערוגה. ואילו רבי יוחנן אמר בעמוד הקודם שעושים בתוך הערוגה עיגול של חמישה טפחים.</p></li><li><h3><span class="w">גמרא</span> · התשובה: קולא אחרת</h3><p>&quot;התם&quot;, שם, הברייתא דורשת צורה מרובעת כדי להוסיף קולא אחרת: להתיר &quot;ראש תור&quot; שיוצא מן הערוגה. רש&quot;י מפרש שהריבוע נדרש כדי להחשיב אותה כשדה לעניין הזה. ולדבריו, רבי יוחנן אינו סובר את מה שנאמר קודם, &quot;אין ראש תור בערוגה&quot;, או שהוא סובר זאת רק מערוגה לערוגה, אבל משדה לערוגה יש ראש תור.</p><p>&quot;ראש תור&quot; הוא קצה של שטח זרוע שהולך וצר באלכסון, ונכנס לתוך שדה אחר. בעמוד הקודם הובאה משנה שמתירה אותו, כי הוא נראה כסוף השדה.</p></li><li><h3><span class="w">משנה</span> · הלימוד הראשון: פולטת ביום השלישי</h3><p>משנה חדשה, ובה ארבעה לימודים מפסוקים. הראשון: מניין שאשה שפולטת שכבת זרע ביום השלישי טמאה? שנאמר לפני מתן תורה &quot;היו נכונים לשלשת ימים&quot;.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: למה ביום השלישי טמאה</h3><p>ביום השלישי שכבת הזרע עדיין לא הסריחה. היא עוד ראויה להפרות וליצור ממנה ולד, ולכן קוראים לה &quot;שכבת זרע&quot;, כלומר זרע הראוי להזריע.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: איך זה עולה מן הפסוק</h3><p>הכתוב הקפיד על טומאת קרי במתן תורה. רש&quot;י כותב שבשלב הזה מניחים ששלושת הימים נמנים יחד עם יום הפרישה. ביום רביעי בשבוע פרשו מנשותיהם, ובשבת קיבלו תורה, והיא היום הרביעי למי ששימשו ביום רביעי, לפני הפרישה. הם טבלו בליל שבת, והכתוב לא חשש אם הנשים יפלטו בשבת, כי אז הזרע כבר מסריח ואינו ראוי להזריע. אבל אם פלטו ביום שישי, שהוא היום השלישי, הן טמאות, ולכן הפרישם שלושה ימים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: טומאה לפני שניתנה תורה?</h3><p>התוספות שואלים: באותה שעה התורה עוד לא ניתנה. והם עונים: מן הסתם הכתוב הקפיד על דבר שעתיד להיות טומאה אחרי מתן תורה. ואם תשאל למה לא הקפיד על זבים, מצורעים ובועלי נידות, הטעם מובא בברייתא שבמסכת ברכות.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הברייתא על בעלי קרי</h3><p>בברייתא נאמר: &quot;והודעתם לבניך&quot; סמוך ל&quot;יום אשר עמדת לפני ה&#x27; אלהיך בחורב&quot;. מה שם באימה, ביראה, ברתת ובזיע, אף כאן. ומכאן אמרו שזבים, מצורעים ובועלי נידות מותרים ללמוד תורה, ובעלי קרי אסורים. התוספות מפרשים: בעל קרי אינו באימה וביראה, כי הקרי בא מתוך קלות ראש.</p></li><li><h3><span class="w">משנה</span> · הלימוד השני: רחיצת המילה</h3><p>מניין שרוחצים את מקום המילה ביום השלישי למילה, גם כשהוא חל בשבת? שנאמר &quot;ויהי ביום השלישי בהיותם כואבים&quot;. רש&quot;י מסביר שגם ביום השלישי הנימול עדיין בסכנה.</p></li><li><h3><span class="w">משנה</span> · הלימוד השלישי: לשון של זהורית</h3><p>מניין שקושרים רצועת צמר צבועה אדום, &quot;לשון של זהורית&quot;, בראש השעיר המשתלח? שנאמר &quot;אם יהיו חטאיכם כשנים, כשלג ילבינו&quot;.</p><p>השעיר המשתלח הוא השעיר שנשלח למדבר ביום הכיפורים.</p></li><li><h3><span class="w">משנה</span> · הלימוד הרביעי: סיכה כשתייה</h3><p>מניין שסיכה, משיחת הגוף בשמן, אסורה ביום הכיפורים כמו שתייה? &quot;אף על פי שאין ראיה לדבר, זכר לדבר&quot;: &quot;ותבא כמים בקרבו וכשמן בעצמותיו&quot;. רש&quot;י: הפסוק מקיש סיכה לשתייה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה זה רק &quot;זכר&quot;</h3><p>אין זו ראיה גמורה, כי הפסוק אינו מדבר בשתייה אלא ברחיצה. המים בפסוק דומים לשמן: כמו שהשמן מבחוץ, כך גם המים מבחוץ.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיית רבנו יצחק מיומא</h3><p>במסכת יומא רב זוטרא לומד מן הפסוק הזה שרחיצה נקראת עינוי, כי המים דומים לשמן. והגמרא שם מקשה שהתנא של משנתנו לומד מן הפסוק את ההפך. רבנו יצחק שואל: מה הקושיה, הרי התנא עצמו אומר שאין זו ראיה אלא זכר? ומתרץ: אילו הייתה כאן ראיה גמורה שרחיצה כסיכה, התנא לא היה עושה מן הפסוק אפילו זכר בעלמא.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיית הרשב&quot;א</h3><p>הרשב&quot;א מקשה: למה להביא פסוק שהוא רק זכר? אפשר היה להביא את הפסוק בדניאל, &quot;לחם חמודות לא אכלתי... וסוך לא סכתי&quot;, שהוא דרשה גמורה, וממנו לומדים במסכת יומא שסיכה נקראת עינוי. התוספות אינם מביאים כאן תשובה.</p><p>&quot;רשב&quot;א&quot; שבתוספות הוא רבנו שמשון בן אברהם, מבעלי התוספות.</p></li><li><h3><span class="w">גמרא</span> · רישא וסיפא</h3><p>&quot;רישא&quot;, תחילת המשנה, שאומרת שהפולטת ביום השלישי טמאה, אינה כרבי אלעזר בן עזריה. &quot;סיפא&quot;, סוף המשנה, על רחיצת המילה ביום השלישי, כן כמותו. שהרי ממנו שמענו שהפולטת ביום השלישי טהורה. רש&quot;י: את דעתו בפולטת נלמד בברייתא שבהמשך, ואת דעתו במילה נלמד בפרק &quot;רבי אליעזר&quot;.</p></li><li><h3><span class="w">גמרא</span> · שתי דרכים ליישב</h3><p>מי שאינו מעמיד את המשנה &quot;כתנאי&quot;, כשני תנאים, שונה בתחילתה &quot;טהורה&quot;, ומעמיד את כולה כרבי אלעזר בן עזריה. ומי שמעמיד אותה כתנאים אומר: תחילתה כחכמים, וסופה כרבי אלעזר בן עזריה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: מה מעדיף כל אחד</h3><p>יש מי שמעדיף להידחק, ובלבד שלא להעמיד משנה כשני תנאים: או שהוא מפרש אותה &quot;בתרי טעמי&quot;, בשני טעמים, כלומר שתחילתה וסופה עוסקים במקרים שונים, או שהוא אומר שהגרסה משובשת. כאן הוא אומר שהמשנה משובשת, ושונה בה &quot;טהורה&quot;. ומי שמעמיד כתנאים, נוח לו בכך יותר מאשר לומר שהמשנה משובשת או לפרש אותה בשני טעמים. רש&quot;י מציין שזו מחלוקת שמופיעה גם במסכת בבא מציעא, במשנה על חבית: רבי יוחנן העמיד שם את תחילתה כרבי ישמעאל ואת סופה כרבי עקיבא, ויש מי שהעמיד את כולה כתנא אחד.</p></li><li><h3><span class="w">תוספות</span> · התוספות: לא תיקון של המשנה</h3><p>רבנו יצחק אומר: מי ששונה &quot;טהורה&quot; אינו מתקן את המשנה רק כדי להעמיד אותה כרבי אלעזר בן עזריה. גם בלי זה, יש ששונים &quot;טהורה&quot; ויש ששונים &quot;טמאה&quot;. מי שאינו מעמיד כתנאים נוח לו לשנות כמו אלה ששונים &quot;טהורה&quot;, ומי שמעמיד כתנאים אין לו קושי לשנות &quot;טמאה&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: והרי תחילת הפרק כרבי עקיבא</h3><p>ואם תשאל: גם למי ששונה &quot;טהורה&quot;, עדיין המשנה כשני תנאים. תחילת הפרק שנויה בשם רבי עקיבא, והדין שהפולטת טהורה אינו כרבי עקיבא, שחולק בברייתא על רבי אלעזר בן עזריה. התשובה: מקפידים שלא להעמיד כתנאים רק בשני חלקים שסמוכים זה לזה. על תחילת הפרק, שרחוקה מדין הפולטת, אין מקפידים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה לא &quot;היום ומחר&quot;</h3><p>ועוד שואלים: למי ששונה &quot;טהורה&quot;, מתאים יותר להביא את הפסוק &quot;וקדשתם היום ומחר&quot;, שמשמעו כרבי אלעזר בן עזריה. רבנו יצחק עונה: נוח לו להביא &quot;היו נכונים לשלשת ימים&quot;, כי שם מוכח שההקפדה הייתה משום פליטת זרע, שהרי כתוב שם &quot;אל תגשו אל אשה&quot;.</p></li><li><h3><span class="w">גמרא</span> · ברייתא: רבי אלעזר בן עזריה</h3><p>&quot;תנו רבנן&quot;: הפולטת שכבת זרע ביום השלישי טהורה, כך אומר רבי אלעזר בן עזריה. רש&quot;י: למשל, ששימשה ביום חמישי ופלטה בשבת. אין הבדל אם זה היה בתחילת ליל חמישי, ועברו ארבע עונות שלמות, או ביום חמישי סמוך לחשכה, ועברו רק שתי עונות שלמות.</p><p>&quot;עונה&quot; היא יום או לילה.</p></li><li><h3><span class="w">גמרא</span> · רבי ישמעאל: ארבע, חמש או שש עונות</h3><p>רבי ישמעאל אומר: &quot;פעמים שהן ארבע עונות, פעמים שהן חמש, פעמים שהן שש&quot;. רש&quot;י: הוא חולק, ואומר שהפולטת ביום השלישי לתשמיש טמאה, וביום הרביעי טהורה. והוא מודה לרבי אלעזר בן עזריה שמקצת היום נחשב ככולו, כי התורה הקפידה על מניין הימים ולא על מניין העונות.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: הדוגמאות של רבי ישמעאל</h3><p>ארבע עונות שלמות: אם שימשה ביום רביעי סמוך לחשכה, פליטתה טמאה עד תחילת השבת. חמש עונות: אם שימשה בתחילת היום של רביעי. שש עונות: אם שימשה בתחילת ליל רביעי, בין השמשות.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה רבי ישמעאל מנסח בעונות</h3><p>גם לדעת רבי אלעזר בן עזריה אפשר היה לנסח כך: &quot;פעמים שהן שתיים, פעמים שהן שלוש&quot;. רבי ישמעאל ניסח כך משום שהוא סובר שהפרישה הייתה ביום רביעי, כמו רבי עקיבא, ובכל זאת אינו רוצה לתלות את הדין בעונות כמו רבי עקיבא.</p></li><li><h3><span class="w">גמרא</span> · רבי עקיבא: תמיד חמש</h3><p>רבי עקיבא אומר: לעולם חמש עונות. ואם עבר חלק מן העונה הראשונה, נותנים לה חלק מן העונה השישית. רש&quot;י: כך משלימים חמש עונות שלמות, וכל שפולטת בתוכן טמאה.</p></li><li><h3><span class="w">גמרא</span> · הקושיה: רבי אלעזר בן עזריה כחכמים</h3><p>החכמים אמרו לפני רב פפא, ויש אומרים שרב פפא אמר לרבא: מובן שרבי אלעזר בן עזריה סובר כחכמים, שהפרישה הייתה ביום חמישי. רש&quot;י מסביר: לכל הדעות עשרת הדיברות ניתנו בשבת, ולכן טבלו בליל שבת. היו שפרשו רק עם חשכה, ובכל זאת לא חששו שמא יפלטו אחרי הטבילה. מכאן שהפולטת ביום השלישי טהורה, ומקצת יום התשמיש נחשב ככולו.</p></li><li><h3><span class="w">רש&quot;י</span> · רבי ישמעאל כרבי יוסי</h3><p>ורבי ישמעאל סובר כרבי יוסי, שהפרישה הייתה ביום רביעי, וליל שבת הוא היום הרביעי. רש&quot;י: היו שפרשו רק סמוך לחשכה, ועברו רק ארבע עונות, ובכל זאת משטבלו פליטתן טהורה, כי הכתוב הקפיד רק על ימים.</p></li><li><h3><span class="w">גמרא</span> · ורבי עקיבא כמו מי?</h3><p>&quot;אלא רבי עקיבא כמאן&quot;, כמו מי סובר רבי עקיבא? רש&quot;י: הוא אומר שהפולטת בכל חמש העונות טמאה. מניין לו שהכתוב מקפיד על עונות? הרי כתובים ימים, ומקצת היום ככולו.</p></li><li><h3><span class="w">גמרא</span> · התשובה: משה ירד בהשכמה</h3><p>&quot;לעולם&quot;, באמת רבי עקיבא כרבי יוסי, וכדברי רב אדא בר אהבה: משה בהשכמה עלה ובהשכמה ירד. רש&quot;י: הירידה שבה נאמר &quot;וירד משה מן ההר אל העם ויקדש את העם&quot;, כלומר הפרישה, הייתה בהשכמת יום רביעי. מכך שהוצרך להפריש אותם כבר בבוקר, רבי עקיבא לומד שהכתוב מקפיד על חמש עונות שלמות. התוספות מעירים שדברי רב אדא נאמרו לשיטת רבי עקיבא.</p></li><li><h3><span class="w">גמרא</span> · המקור להשכמה</h3><p>בהשכמה עלה, שכתוב &quot;וישכם משה בבקר ויעל אל הר סיני&quot;. בהשכמה ירד, שכתוב &quot;לך רד ועלית אתה ואהרן עמך&quot;. הכתוב מקיש ירידה לעלייה: מה עלייה בהשכמה, אף ירידה בהשכמה.</p></li><li><h3><span class="w">גמרא</span> · למה היה צורך לומר להם?</h3><p>&quot;למה ליה למימרא להו&quot;, למה היה צריך לומר להם בבוקר? רש&quot;י: בבוקר גם בלי זה לא היו משמשים. שהרי רב הונא אמר: &quot;ישראל קדושים הן&quot;, ואינם משמשים מיטותיהם ביום. רש&quot;י מוסיף שזה משום צניעות, כמו שנאמר &quot;בוזה דרכיו ימות&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: היו פורשים ממילא</h3><p>גם בלי ציווי היו פורשים ביום, משום &quot;בוזה דרכיו ימות&quot;, שנדרש על המשמש ביום. ועוד שהכתוב קרא להם קדושים: &quot;ואתם תהיו לי ממלכת כהנים וגוי קדוש&quot;.</p></li><li><h3><span class="w">גמרא</span> · התשובה: בית אפל</h3><p>הרי רבא אמר: אם הבית אפל, מותר. ועוד אמר רבא, ויש אומרים רב פפא: תלמיד חכם מאפיל בטליתו ומותר. רש&quot;י: תלמיד חכם צנוע ואינו מסתכל, ולכן די לו להחשיך בטליתו. מכאן שגם ביום היה צורך בציווי.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>ערוגה מרובעת נדרשת כדי להתיר ראש תור. המשנה לימדה ארבעה דינים מפסוקים, ובראשם פולטת שכבת זרע ביום השלישי. בברייתא נחלקו שלושה תנאים אם מונים ימים או עונות, והגמרא קשרה כל אחד מהם לשיטה על יום הפרישה לפני מתן תורה. העמוד הבא פותח בקושיה: הרי מי שטבלו בליל שבת קיבלו את התורה לפני ששקעה עליהם השמש אחרי הטבילה, והם &quot;טבולי יום&quot;.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-86b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "כטבלא מרובעת כטבלא הוא דשרי הא לאו הכי אסור התם לאקולי בה קולא אחרינא להתיר ראש תור היוצא הימנה:", false, ""], ["G2a", "מנין לפולטת שכבת זרע ביום השלישי (שתהא) טמאה שנא' (שמות יט, טו) היו נכונים לשלשת ימים", false, "מתני׳"], ["G2b", "מנין שמרחיצין את המילה ביום השלישי שחל להיות בשבת שנאמר (בראשית לד, כה) ויהי ביום השלישי בהיותם כואבים", false, ""], ["G2c", "מנין שקושרין לשון של זהורית בראש שעיר המשתלח שנאמר (ישעיהו א, יח) אם יהיו חטאיכם כשנים כשלג ילבינו", false, ""], ["G2d", "מנין לסיכה שהיא כשתייה ביוה\"כ אע\"פ שאין ראיה לדבר זכר לדבר שנא' (תהלים קט, יח) ותבא כמים בקרבו וכשמן בעצמותיו:", false, ""], ["G3a", "רישא דלא כר' אלעזר בן עזריה סיפא כר\"א בן עזריה דאי כרבי אלעזר בן עזריה טהורה שמענא ליה", false, "גמ׳"], ["G3b", "מאן דלא מוקי כתנאי תנא רישא טהורה ומוקי לה לכולה כר\"א בן עזריה ומאן דמוקים כתנאי רישא רבנן וסיפא כר' אלעזר בן עזריה", false, ""], ["G4a", "ת\"ר פולטת שכבת זרע ביום השלישי טהורה דברי רבי אלעזר בן עזריה", false, ""], ["G4b", "רבי ישמעאל אומר פעמים שהן ד' עונות פעמים שהן ה' עונות פעמים שהן ו' עונות", false, ""], ["G4c", "ר' עקיבא אומר לעולם ה' ואם יצאתה מקצת עונה ראשונה נותנין לה מקצת עונה ששית", false, ""], ["G5a", "אמרוה רבנן קמיה דרב פפא ואמרי לה רב פפא לרבא בשלמא ר' אלעזר בן עזריה כרבנן דאמרי בה' עביד פרישה ור' ישמעאל כר' יוסי דאמר בד' עביד פרישה אלא רבי עקיבא כמאן", false, ""], ["G5b", "לעולם כר' יוסי כדאמר רב אדא בר אהבה משה בהשכמה עלה ובהשכמה ירד", false, ""], ["G6", "בהשכמה עלה דכתיב (שמות לד, ד) וישכם משה בבקר ויעל אל הר סיני בהשכמה ירד דכתיב (שמות יט, כד) לך רד ועלית אתה ואהרן עמך מקיש ירידה לעלייה מה עלייה בהשכמה אף ירידה בהשכמה", false, ""], ["G7a", "למה ליה למימרא להו והא אמר רב הונא ישראל קדושים הן ואין משמשין מטותיהן ביום", false, ""], ["G7b", "הא אמר רבא אם היה בית אפל מותר ואמר רבא ואיתימא רב פפא תלמיד חכם מאפיל בטליתו ומותר", false, ""]], "R": [["R1", "כטבלא מרובעת", "אלמא עגולה לאו ערוגה היא:", false], ["R2", "התם", "דבעי מרובעת לאחשובה שדה קאמר להתיר ראש תור כו' ולית ליה לר' יוחנן הא דאמר לעיל אין ראש תור בערוגה אי נמי אית ליה מערוגה לערוגה אבל משדה לערוגה יש ראש תור:", false], ["R3", "מתני' שהיא טמאה", "דיום השלישי אכתי לא מסרחה שכבת זרע וראויה לקלוט ולהיות ולד נוצר הימנה וקרינן שכבת זרע הראוי להזריע:", false], ["R4", "לג' ימים", "דהקפיד הכתוב על טומאת קרי במתן תורה וקס\"ד עם יום הפרישה קאמר דבד' בשבת פירשו מנשותיהן וקבלו תורה בשבת שהוא רביעי לאותם ששימשו מטותיה' ברביעי לפני הפרישה וטבלו לילי שבת ולא חש הכתוב אם יפלוטו בשבת דמסרח ואינו שכבת זרע הראוי להזריע אבל אם פלטו ע\"ש בשלישי טמאות לכך הפרישן שלשה ימים:", false], ["R5", "מנין שמרחיצין", "דאף ביום ג' מסוכן הוא:", false], ["R6", "כמים בקרבו וכשמן בעצמותיו", "מקיש סיכה לשתיה:", false], ["R7", "גמ' רישא", "דמתני':", false], ["R8", "דלא כר' אלעזר בן עזריה", "דאילו לדידי' שמעינן ליה פולטת ביום השלישי טהורה לקמן בברייתא:", false], ["R9", "וסיפא", "דקתני מרחיצין את המילה כו' ר' אלעזר בן עזריה דהוא אמר לה לקמן בפרק ר' אליעזר:", false], ["R10", "מאן דלא מוקי כתנאי", "דדחיק ומוקי מתניתין בתרי טעמי או משבש לה ומפרש לה דלא לאוקמי כתנאי משבש לה ואמר משבשתא היא ותני בה טהורה:", false], ["R11", "ומאן דמוקי לה כתנאי", "דניחא ליה לאוקומי כתנאי מלמימר משבשתא היא ומלאוקמי בתרי טעמי מוקי נמי להאי כתנאי ופלוגתא היא בהמפקיד (ב\"מ מא.) גבי חבית דאמר ר' יוחנן מאן דמתרגם לי חבית אליבא דחד תנא מובילנא ליה מאני לבי מסותא ומוקי רישא ר' ישמעאל וסיפא רבי עקיבא ואי הוה בעי הוה מצי לאוקמי בתרי טעמי ובחד תנא ואיכא דמוקי לה התם בחד תנא ומוקי סיפא בשהניחה במקום שאינו מקומה:", false], ["R12", "ביום השלישי", "כגון ששמשה בה' ופלטה שכבת זרע בשבת ל\"ש שמשה תחילת ליל חמישי דאישתהי ד' עונות שלמות ליל ה' וה' ליל ו' וו' ל\"ש שמשה יום ה' עם חשיכה דלא אישתהי אלא מקצת ה' וליל ו' וו' דליכא אלא ב' עונות שלמות. העונה או יום או לילה:", false], ["R13", "ר' ישמעאל אומר פעמים שהן כו'", "בא לחלוק ולומר דפולטת בג' לשימושה טמאה אבל פולטת בד' טהורה ומודינא לך דמקצת היום ככולו דלא הקפידה תורה אלא במנין של הימים ולא במנין העונות:", false], ["R14", "ופעמים שהם ד' עונות", "שלמות שאם שמשה ד' בשבת עם חשיכה פליטתה טמאה עד תחלת שבת:", false], ["R15", "פעמים שהם ה' עונות", "כגון שמשה בתחלת היום של ד':", false], ["R16", "פעמים שהן ו'", "כגון שמשה בתחלת ליל ד' בין השמשות:", false], ["R17", "נותנין לה מקצת עונת ו'", "להשלים ה' וכל הפולטת בתוך ה' עונות שלמות טמאה:", false], ["R18", "אמרוה", "להא אתקפתא דלקמיה:", false], ["R19", "בשלמא כו'", "פלוגתא דרבנן ור' יוסי בברייתא ומייתי לה בהאי פירקא לקמן דלרבנן בה' בשבת פרשו ולר' יוסי בד' ולכ\"ע בשבת ניתנו עשרת הדברות וכיון דבשבת נתנו ע\"כ בליל שבת טבלו ולא שחרית כדמתרץ לקמן שלא יהו הללו טובלין והללו מהלכין לקבל תורה הלכך בשלמא ר' אלעזר כרבנן דאמרי בחמשה בשבת עבוד פרישה ויש שלא פרשו אלא עם חשיכה ומדטבלו ליל שבת ולא חשו שמא תפלטנה עוד ש\"מ דפולטת בג' טהורה ומקצת היום של תשמיש ככולו:", false], ["R20", "ור' ישמעאל", "דאומר בג' טמאה בד' טהורה קסבר בד' עבוד פרישה כר' יוסי דהוה ליל שבת רביעי ומיהו יש שלא פירשו עד סמוך לחשיכה וליכא אלא ד' עונות ליל ה' וה' ליל ו' וו' ואפילו הכי משטבלו פליטתן טהורה דלא הקפידה תורה אלא בימים:", false], ["R21", "אלא רבי עקיבא", "דאמר כל ה' עונות טמאה אם תפלוט כמאן ומהיכא למד דאעונות קפיד קרא הא ימים כתיב וקיימא לן מקצת היום ככולו:", false], ["R22", "לעולם", "ר' עקיבא כר' יוסי וכדרב אדא דאמר משה כל עליותיו בהשכמה עלה וכל ירידותיו בהשכמה הלכך ירידה דכתיב: וירד משה מן ההר אל העם ויקדש את העם דהיינו פרישה בהשכמת רביעי היתה ומדהוזקק להפרישן בהשכמה ש\"מ עד ה' עונות שלמות קפיד קרא:", false], ["R23", "ופרכינן למה ליה למימרא להו", "שחרית בלאו הכי נמי לא הוו משמשי:", false], ["R24", "דקאמר רב הונא", "דאין משמשין ביום דכתיב (משלי י״ט:ט״ז) בוזה דרכיו ימות דבעי צניעותא שלא יסתכלו:", false], ["R25", "תלמיד חכם", "שהוא צנוע ולא יסתכל סגי ליה במאפיל בטליתו:", false]], "T": [["T1", "מנין לפולטת כו' שנא' היו נכונים לשלשת ימים", "אע\"פ שבאותה שעה עדיין לא ניתנה תורה מ\"מ מסתמא הקפידה תורה על דבר שעתיד להיות טומאה אחר מתן תורה ואע\"ג דלא הקפידה על זבין ומצורעין ובועלי נדות היינו משום טעמא דתניא בפרק מי שמתו (ברכות כב.) כתיב והודעתם לבניך ולבני בניך וכתיב יום אשר עמדת לפני ה' אלהיך בחורב מה להלן באימה וביראה וברתת ובזיע כו' מכאן אמרו זבין ומצורעים ובועלי נדות מותרין לקרות בתורה בנביאים ולשנות במשנה ובש\"ס בהלכות ובאגדות ובעלי קריין אסורין פירוש דבעל קרי אינו באימה וביראה דמחמת קלות ראש הוא בא:", false], ["T2a", "אע\"פ שאין ראייה לדבר זכר לדבר שנאמר ותבא כמים וגו'", "ומיהו ראיה גמורה לא הוי משום דקרא לא מישתעי בשתיה אלא ברחיצה משום דמשמע מים דומיא דשמן מה שמן מאבראי אף מים מאבראי", false], ["T2b", "", "וקשה לר\"י דבפרק בתרא דיומא (דף עו.) קאמר דרחיצה איקרי עינוי מנלן א\"ר זוטרא מהכא ותבא כמים בקרבו וגו' מים דומיא דשמן מה שמן מאבראי כו' ופריך והא האי תנא איפכא נסיב לה דתנן מנין לסיכה כו' ומאי פריך הא תנא דמתני' קאמר שאין ראיה לדבר אלא זכר לדבר משום דמים דומיא דשמן כדפרישי' ואומר ר\"י דפריך הכי דאי חשיבא ראיה גמורה דרחיצה כסיכה כדקאמרת לא הוה ליה להאי תנא למעבד מינה אפי' זכר בעלמא", false], ["T2c", "", "קשה לרשב\"א דאמאי מייתי האי קרא שאינו אלא זכר בעלמא הוה ליה לאיתויי קרא דלחם חמודות לא אכלתי ובשר ויין לא בא אל פי וסוך לא סכתי (דניאל י׳:ג׳) דהוי דרשה גמורה ומיניה נפקא לן בפרק בתרא דיומא (שם) דסיכה איקרי עינוי:", false], ["T3a", "תני רישא טהורה ומוקי לה כו'", "אומר ר\"י דמשום הכי אינו מגיה למיתני טהורה כדי לאוקמי כולה כרבי אלעזר אלא בלאו הכי איכא דתני טהורה ואיכא דתני טמאה הלכך מאן דלא מוקי כתנאי נוח לו לשנות כאותן ששונין טהורה ומאן דמוקי כתנאי לא קפיד לשנות טמאה", false], ["T3b", "", "וא\"ת אכתי הויא מתני' כתנאי דרישא דמתני' רבי עקיבא קתני לה וסיפא דקתני פולטת טהורה היינו דלא כר\"ע דפליג בסמוך אר' אלעזר בן עזריה וי\"ל דלא קפיד לאוקמי כתנאי אלא בתרי בבי דסמוכות זו אחר זו אבל אההיא דריש פירקין המרוחקות מההיא דפולטת לא קפיד", false], ["T3c", "", "וא\"ת למאן דתני טהורה טפי הוה ליה למנקט במתני' קרא דוקדשתם היום ומחר (שמות ינו) דמשמע כרבי אלעזר בן עזריה ואומר ר\"י דניחא ליה לאתויי היו נכונים לשלשת ימים דמוכח דמשום פליטת זרע הקפיד דכתיב ביה אל תגשו אל אשה:", false], ["T4", "פעמים שהן ד' כו'", "במלתא דרבי אלעזר בן עזריה ה\"מ נמי לשנות בענין זה פעמים שהן שתים פעמים שהן ג' כו' אלא להכי נקט ר' ישמעאל משום דסבר ברביעי עבוד פרישה כרבי עקיבא ובעונות לא בעי למתלי כמו שתולה רבי עקיבא:", false], ["T5", "בהשכמה עלה", "אליבא דרבי עקיבא איירי:", false], ["T6", "ישראל קדושים הן כו'", "ובלאו הכי היו פורשין דאמר בוזה דרכיו ימות זה המשמש מטתו ביום ועוד דקראן קדושים ואתם תהיו לי ממלכת כהנים וגוי קדוש:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': סוף הקושיה על הערוגות, ומשנה חדשה", "x": "העמוד הקודם עסק בערוגות של ירקות שונים. בסופו רבינא הקשה לרב אשי מברייתא: בין ירק לירק אחר מרחיקים ששה טפחים, \"ורואין אותם\". כאן הברייתא נגמרת והקושיה מתורצת. אחריה באה משנה חדשה, ועמה סוגיה ארוכה על הימים שלפני מתן תורה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "\"כטבלא מרובעת\"", "x": "סוף הברייתא: רואים אותם \"כטבלא מרובעת\", כמו לוח מרובע. מכאן הקושיה של רבינא: רק כשהוא כמו לוח מרובע מותר, ואם לא, אסור. רש\"י: משמע שערוגה עגולה אינה נחשבת ערוגה. ואילו רבי יוחנן אמר בעמוד הקודם שעושים בתוך הערוגה עיגול של חמישה טפחים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R2"], "t": "התשובה: קולא אחרת", "x": "\"התם\", שם, הברייתא דורשת צורה מרובעת כדי להוסיף קולא אחרת: להתיר \"ראש תור\" שיוצא מן הערוגה. רש\"י מפרש שהריבוע נדרש כדי להחשיב אותה כשדה לעניין הזה. ולדבריו, רבי יוחנן אינו סובר את מה שנאמר קודם, \"אין ראש תור בערוגה\", או שהוא סובר זאת רק מערוגה לערוגה, אבל משדה לערוגה יש ראש תור.", "a": "\"ראש תור\" הוא קצה של שטח זרוע שהולך וצר באלכסון, ונכנס לתוך שדה אחר. בעמוד הקודם הובאה משנה שמתירה אותו, כי הוא נראה כסוף השדה."}, {"w": "משנה", "cols": false, "hl": ["G2a"], "t": "הלימוד הראשון: פולטת ביום השלישי", "x": "משנה חדשה, ובה ארבעה לימודים מפסוקים. הראשון: מניין שאשה שפולטת שכבת זרע ביום השלישי טמאה? שנאמר לפני מתן תורה \"היו נכונים לשלשת ימים\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G2a", "R3"], "t": "רש\"י: למה ביום השלישי טמאה", "x": "ביום השלישי שכבת הזרע עדיין לא הסריחה. היא עוד ראויה להפרות וליצור ממנה ולד, ולכן קוראים לה \"שכבת זרע\", כלומר זרע הראוי להזריע.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G2a", "R4"], "t": "רש\"י: איך זה עולה מן הפסוק", "x": "הכתוב הקפיד על טומאת קרי במתן תורה. רש\"י כותב שבשלב הזה מניחים ששלושת הימים נמנים יחד עם יום הפרישה. ביום רביעי בשבוע פרשו מנשותיהם, ובשבת קיבלו תורה, והיא היום הרביעי למי ששימשו ביום רביעי, לפני הפרישה. הם טבלו בליל שבת, והכתוב לא חשש אם הנשים יפלטו בשבת, כי אז הזרע כבר מסריח ואינו ראוי להזריע. אבל אם פלטו ביום שישי, שהוא היום השלישי, הן טמאות, ולכן הפרישם שלושה ימים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T1"], "t": "התוספות: טומאה לפני שניתנה תורה?", "x": "התוספות שואלים: באותה שעה התורה עוד לא ניתנה. והם עונים: מן הסתם הכתוב הקפיד על דבר שעתיד להיות טומאה אחרי מתן תורה. ואם תשאל למה לא הקפיד על זבים, מצורעים ובועלי נידות, הטעם מובא בברייתא שבמסכת ברכות.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T1"], "t": "התוספות: הברייתא על בעלי קרי", "x": "בברייתא נאמר: \"והודעתם לבניך\" סמוך ל\"יום אשר עמדת לפני ה' אלהיך בחורב\". מה שם באימה, ביראה, ברתת ובזיע, אף כאן. ומכאן אמרו שזבים, מצורעים ובועלי נידות מותרים ללמוד תורה, ובעלי קרי אסורים. התוספות מפרשים: בעל קרי אינו באימה וביראה, כי הקרי בא מתוך קלות ראש.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G2b", "R5"], "t": "הלימוד השני: רחיצת המילה", "x": "מניין שרוחצים את מקום המילה ביום השלישי למילה, גם כשהוא חל בשבת? שנאמר \"ויהי ביום השלישי בהיותם כואבים\". רש\"י מסביר שגם ביום השלישי הנימול עדיין בסכנה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G2c"], "t": "הלימוד השלישי: לשון של זהורית", "x": "מניין שקושרים רצועת צמר צבועה אדום, \"לשון של זהורית\", בראש השעיר המשתלח? שנאמר \"אם יהיו חטאיכם כשנים, כשלג ילבינו\".", "a": "השעיר המשתלח הוא השעיר שנשלח למדבר ביום הכיפורים."}, {"w": "משנה", "cols": false, "hl": ["G2d", "R6"], "t": "הלימוד הרביעי: סיכה כשתייה", "x": "מניין שסיכה, משיחת הגוף בשמן, אסורה ביום הכיפורים כמו שתייה? \"אף על פי שאין ראיה לדבר, זכר לדבר\": \"ותבא כמים בקרבו וכשמן בעצמותיו\". רש\"י: הפסוק מקיש סיכה לשתייה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2d", "T2a"], "t": "התוספות: למה זה רק \"זכר\"", "x": "אין זו ראיה גמורה, כי הפסוק אינו מדבר בשתייה אלא ברחיצה. המים בפסוק דומים לשמן: כמו שהשמן מבחוץ, כך גם המים מבחוץ.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2d", "T2b"], "t": "התוספות: קושיית רבנו יצחק מיומא", "x": "במסכת יומא רב זוטרא לומד מן הפסוק הזה שרחיצה נקראת עינוי, כי המים דומים לשמן. והגמרא שם מקשה שהתנא של משנתנו לומד מן הפסוק את ההפך. רבנו יצחק שואל: מה הקושיה, הרי התנא עצמו אומר שאין זו ראיה אלא זכר? ומתרץ: אילו הייתה כאן ראיה גמורה שרחיצה כסיכה, התנא לא היה עושה מן הפסוק אפילו זכר בעלמא.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2d", "T2c"], "t": "התוספות: קושיית הרשב\"א", "x": "הרשב\"א מקשה: למה להביא פסוק שהוא רק זכר? אפשר היה להביא את הפסוק בדניאל, \"לחם חמודות לא אכלתי... וסוך לא סכתי\", שהוא דרשה גמורה, וממנו לומדים במסכת יומא שסיכה נקראת עינוי. התוספות אינם מביאים כאן תשובה.", "a": "\"רשב\"א\" שבתוספות הוא רבנו שמשון בן אברהם, מבעלי התוספות."}, {"w": "גמרא", "cols": false, "hl": ["G3a", "R7", "R8", "R9"], "t": "רישא וסיפא", "x": "\"רישא\", תחילת המשנה, שאומרת שהפולטת ביום השלישי טמאה, אינה כרבי אלעזר בן עזריה. \"סיפא\", סוף המשנה, על רחיצת המילה ביום השלישי, כן כמותו. שהרי ממנו שמענו שהפולטת ביום השלישי טהורה. רש\"י: את דעתו בפולטת נלמד בברייתא שבהמשך, ואת דעתו במילה נלמד בפרק \"רבי אליעזר\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3b"], "t": "שתי דרכים ליישב", "x": "מי שאינו מעמיד את המשנה \"כתנאי\", כשני תנאים, שונה בתחילתה \"טהורה\", ומעמיד את כולה כרבי אלעזר בן עזריה. ומי שמעמיד אותה כתנאים אומר: תחילתה כחכמים, וסופה כרבי אלעזר בן עזריה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G3b", "R10", "R11"], "t": "רש\"י: מה מעדיף כל אחד", "x": "יש מי שמעדיף להידחק, ובלבד שלא להעמיד משנה כשני תנאים: או שהוא מפרש אותה \"בתרי טעמי\", בשני טעמים, כלומר שתחילתה וסופה עוסקים במקרים שונים, או שהוא אומר שהגרסה משובשת. כאן הוא אומר שהמשנה משובשת, ושונה בה \"טהורה\". ומי שמעמיד כתנאים, נוח לו בכך יותר מאשר לומר שהמשנה משובשת או לפרש אותה בשני טעמים. רש\"י מציין שזו מחלוקת שמופיעה גם במסכת בבא מציעא, במשנה על חבית: רבי יוחנן העמיד שם את תחילתה כרבי ישמעאל ואת סופה כרבי עקיבא, ויש מי שהעמיד את כולה כתנא אחד.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3b", "T3a"], "t": "התוספות: לא תיקון של המשנה", "x": "רבנו יצחק אומר: מי ששונה \"טהורה\" אינו מתקן את המשנה רק כדי להעמיד אותה כרבי אלעזר בן עזריה. גם בלי זה, יש ששונים \"טהורה\" ויש ששונים \"טמאה\". מי שאינו מעמיד כתנאים נוח לו לשנות כמו אלה ששונים \"טהורה\", ומי שמעמיד כתנאים אין לו קושי לשנות \"טמאה\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3b", "T3b"], "t": "התוספות: והרי תחילת הפרק כרבי עקיבא", "x": "ואם תשאל: גם למי ששונה \"טהורה\", עדיין המשנה כשני תנאים. תחילת הפרק שנויה בשם רבי עקיבא, והדין שהפולטת טהורה אינו כרבי עקיבא, שחולק בברייתא על רבי אלעזר בן עזריה. התשובה: מקפידים שלא להעמיד כתנאים רק בשני חלקים שסמוכים זה לזה. על תחילת הפרק, שרחוקה מדין הפולטת, אין מקפידים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3b", "T3c"], "t": "התוספות: למה לא \"היום ומחר\"", "x": "ועוד שואלים: למי ששונה \"טהורה\", מתאים יותר להביא את הפסוק \"וקדשתם היום ומחר\", שמשמעו כרבי אלעזר בן עזריה. רבנו יצחק עונה: נוח לו להביא \"היו נכונים לשלשת ימים\", כי שם מוכח שההקפדה הייתה משום פליטת זרע, שהרי כתוב שם \"אל תגשו אל אשה\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4a", "R12"], "t": "ברייתא: רבי אלעזר בן עזריה", "x": "\"תנו רבנן\": הפולטת שכבת זרע ביום השלישי טהורה, כך אומר רבי אלעזר בן עזריה. רש\"י: למשל, ששימשה ביום חמישי ופלטה בשבת. אין הבדל אם זה היה בתחילת ליל חמישי, ועברו ארבע עונות שלמות, או ביום חמישי סמוך לחשכה, ועברו רק שתי עונות שלמות.", "a": "\"עונה\" היא יום או לילה."}, {"w": "גמרא", "cols": false, "hl": ["G4b", "R13"], "t": "רבי ישמעאל: ארבע, חמש או שש עונות", "x": "רבי ישמעאל אומר: \"פעמים שהן ארבע עונות, פעמים שהן חמש, פעמים שהן שש\". רש\"י: הוא חולק, ואומר שהפולטת ביום השלישי לתשמיש טמאה, וביום הרביעי טהורה. והוא מודה לרבי אלעזר בן עזריה שמקצת היום נחשב ככולו, כי התורה הקפידה על מניין הימים ולא על מניין העונות.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G4b", "R14", "R15", "R16"], "t": "רש\"י: הדוגמאות של רבי ישמעאל", "x": "ארבע עונות שלמות: אם שימשה ביום רביעי סמוך לחשכה, פליטתה טמאה עד תחילת השבת. חמש עונות: אם שימשה בתחילת היום של רביעי. שש עונות: אם שימשה בתחילת ליל רביעי, בין השמשות.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4b", "T4"], "t": "התוספות: למה רבי ישמעאל מנסח בעונות", "x": "גם לדעת רבי אלעזר בן עזריה אפשר היה לנסח כך: \"פעמים שהן שתיים, פעמים שהן שלוש\". רבי ישמעאל ניסח כך משום שהוא סובר שהפרישה הייתה ביום רביעי, כמו רבי עקיבא, ובכל זאת אינו רוצה לתלות את הדין בעונות כמו רבי עקיבא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4c", "R17"], "t": "רבי עקיבא: תמיד חמש", "x": "רבי עקיבא אומר: לעולם חמש עונות. ואם עבר חלק מן העונה הראשונה, נותנים לה חלק מן העונה השישית. רש\"י: כך משלימים חמש עונות שלמות, וכל שפולטת בתוכן טמאה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5a", "R18", "R19"], "t": "הקושיה: רבי אלעזר בן עזריה כחכמים", "x": "החכמים אמרו לפני רב פפא, ויש אומרים שרב פפא אמר לרבא: מובן שרבי אלעזר בן עזריה סובר כחכמים, שהפרישה הייתה ביום חמישי. רש\"י מסביר: לכל הדעות עשרת הדיברות ניתנו בשבת, ולכן טבלו בליל שבת. היו שפרשו רק עם חשכה, ובכל זאת לא חששו שמא יפלטו אחרי הטבילה. מכאן שהפולטת ביום השלישי טהורה, ומקצת יום התשמיש נחשב ככולו.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5a", "R20"], "t": "רבי ישמעאל כרבי יוסי", "x": "ורבי ישמעאל סובר כרבי יוסי, שהפרישה הייתה ביום רביעי, וליל שבת הוא היום הרביעי. רש\"י: היו שפרשו רק סמוך לחשכה, ועברו רק ארבע עונות, ובכל זאת משטבלו פליטתן טהורה, כי הכתוב הקפיד רק על ימים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5a", "R21"], "t": "ורבי עקיבא כמו מי?", "x": "\"אלא רבי עקיבא כמאן\", כמו מי סובר רבי עקיבא? רש\"י: הוא אומר שהפולטת בכל חמש העונות טמאה. מניין לו שהכתוב מקפיד על עונות? הרי כתובים ימים, ומקצת היום ככולו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5b", "R22", "T5"], "t": "התשובה: משה ירד בהשכמה", "x": "\"לעולם\", באמת רבי עקיבא כרבי יוסי, וכדברי רב אדא בר אהבה: משה בהשכמה עלה ובהשכמה ירד. רש\"י: הירידה שבה נאמר \"וירד משה מן ההר אל העם ויקדש את העם\", כלומר הפרישה, הייתה בהשכמת יום רביעי. מכך שהוצרך להפריש אותם כבר בבוקר, רבי עקיבא לומד שהכתוב מקפיד על חמש עונות שלמות. התוספות מעירים שדברי רב אדא נאמרו לשיטת רבי עקיבא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6"], "t": "המקור להשכמה", "x": "בהשכמה עלה, שכתוב \"וישכם משה בבקר ויעל אל הר סיני\". בהשכמה ירד, שכתוב \"לך רד ועלית אתה ואהרן עמך\". הכתוב מקיש ירידה לעלייה: מה עלייה בהשכמה, אף ירידה בהשכמה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7a", "R23", "R24"], "t": "למה היה צורך לומר להם?", "x": "\"למה ליה למימרא להו\", למה היה צריך לומר להם בבוקר? רש\"י: בבוקר גם בלי זה לא היו משמשים. שהרי רב הונא אמר: \"ישראל קדושים הן\", ואינם משמשים מיטותיהם ביום. רש\"י מוסיף שזה משום צניעות, כמו שנאמר \"בוזה דרכיו ימות\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7a", "T6"], "t": "התוספות: היו פורשים ממילא", "x": "גם בלי ציווי היו פורשים ביום, משום \"בוזה דרכיו ימות\", שנדרש על המשמש ביום. ועוד שהכתוב קרא להם קדושים: \"ואתם תהיו לי ממלכת כהנים וגוי קדוש\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7b", "R25"], "t": "התשובה: בית אפל", "x": "הרי רבא אמר: אם הבית אפל, מותר. ועוד אמר רבא, ויש אומרים רב פפא: תלמיד חכם מאפיל בטליתו ומותר. רש\"י: תלמיד חכם צנוע ואינו מסתכל, ולכן די לו להחשיך בטליתו. מכאן שגם ביום היה צורך בציווי.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "ערוגה מרובעת נדרשת כדי להתיר ראש תור. המשנה לימדה ארבעה דינים מפסוקים, ובראשם פולטת שכבת זרע ביום השלישי. בברייתא נחלקו שלושה תנאים אם מונים ימים או עונות, והגמרא קשרה כל אחד מהם לשיטה על יום הפרישה לפני מתן תורה. העמוד הבא פותח בקושיה: הרי מי שטבלו בליל שבת קיבלו את התורה לפני ששקעה עליהם השמש אחרי הטבילה, והם \"טבולי יום\".", "a": ""}], "audio": "shabbat/daf-86a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

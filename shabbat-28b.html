@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף כ&quot;ח עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-28b.html">
+<meta name="description" content="מסכת שבת, דף כ&quot;ח עמוד ב&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף כ\"ח עמוד ב'", "url": "https://gemara.co.il/shabbat-28b.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף כ&quot;ח עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>שבת</span><span>פרק שני</span><span>במה מדליקין</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-28a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-29a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 54</div>
+  <h1>מסכת שבת, דף כ&quot;ח עמוד ב&#x27;</h1>
+  <p class="sub">פרק שני, &quot;במה מדליקין&quot;.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף כ&quot;ח עמוד ב&#x27;, לומדים: קל וחומר מנוצה של עזים; הברייתא של רב יוסף והתפילין; התחש: בריה בפני עצמה; פתילה מבגד שקיפלה ולא הבהבה; ההדלקה: שלוש על שלוש ביום טוב.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. קל וחומר מנוצה של עזים</a><a href="#u2">2. הברייתא של רב יוסף והתפילין</a><a href="#u3">3. התחש: בריה בפני עצמה</a><a href="#u4">4. פתילה מבגד שקיפלה ולא הבהבה</a><a href="#u5">5. ההדלקה: שלוש על שלוש ביום טוב</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>קל וחומר מנוצה של עזים</h2>
+  <p class="lead">רבא מברניש מביא את המקור לכך שעור בהמה טמאה נטמא באוהל המת: קל וחומר מנוצה של עזים. התוספות דנים אם יש לקל וחומר הזה פירכה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אתיא בק"ו</td><td>נלמד בקל וחומר</td></tr>
+      <tr><td>מנוצה של עזים</td><td>מנוצה של עזים:</td></tr>
+      <tr><td>שאין מטמא בנגעים</td><td>שאינה נטמאת בנגעים,</td></tr>
+      <tr><td>מטמא באהל המת</td><td>נטמאת באוהל המת.</td></tr>
+      <tr><td>עור בהמה טמאה שמטמאה בנגעים</td><td>עור בהמה טמאה, שנטמא בנגעים,</td></tr>
+      <tr><td>אינו דין שמטמאה באהל המת</td><td>אינו דין שייטמא באוהל המת?</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הקל וחומר:</b> בנגעים, עור בהמה טמאה חמור מנוצת עזים, כי הוא נטמא בהם והנוצה אינה נטמאת. באוהל המת הנוצה נטמאת. לכן עור בהמה טמאה, החמור ממנה, ודאי נטמא באוהל המת.</p>
+  <p><b>למה הנוצה נטמאת באוהל המת:</b> הדין נלמד מן המשכן, ושם האוהל העיקרי הוא יריעות העזים. ולמה אינה נטמאת בנגעים: כי בנגעים כתוב "צמר ופשתים".</p>
+  <p><b>מה זה פותר:</b> הלימודים בעמוד הקודם, מנגעים, משרצים ומן הצד השווה, נפרכו. הקל וחומר הזה הוא תשובתו של רבא מברניש.</p>
+  <div data-hl="R1,R2" class="voice r"><span class="tag">רש"י</span><blockquote>שאינה מטמאה בנגעים – דהא צמר ופשתים כתיב:</blockquote><blockquote>מטמא באהל המת – אם עשאו אהל דהא ממשכן גמר ליה ועיקר אהל דכתיב במשכן ביריעות עזים כתיב הא דכתיב בספרים כל מעשה עזים ל"ג ליה דמהכא לא נפקא לן אהל דבכלים הוא דכתיב וכדאמר בעלמא להביא דבר הבא מן העזים מן הקרנים ומן הטלפים:</blockquote><p><span class="say">מה רש"י אומר:</span> הנוצה אינה נטמאת בנגעים כי כתוב שם "צמר ופשתים". והיא נטמאת באוהל המת אם עשו ממנה אוהל, כי האוהל העיקרי במשכן הוא יריעות העזים. הגרסה "כל מעשה עזים" אינה נכונה, כי הפסוק ההוא נאמר בכלים.</p></div>
+  <div data-hl="T1a,T1b" class="voice t"><span class="tag">תוספות</span><blockquote>אתיא בק"ו מנוצה של עזים – וא"ת נימא שתי וערב יוכיח שמטמא בנגעים ואינו מטמא במת אף אני אביא עור בהמה טמאה כו' ועוד קשה אמאי איצטריך קרא בשרצים לעור בהמה טמאה ליתי בק"ו מנוצה של עזים שאין מיטמא בנגעים מיטמא בשרצים</blockquote><blockquote>וי"ל דאי לא הוה כתיב קרא בשרצים ליכא למילף עור בהמה טמאה בק"ו מנגעים לא בשרצים ולא באהל המת דאיכא למימר שתי וערב יוכיח אבל השתא דכתיב טומאה בשרצים ילפינן שפיר בק"ו מנגעים שיטמא באהל המת וליכא למימר שתי וערב יוכיח דמה לשתי וערב שכן אינו מטמא בשרצי' תאמר בעור בהמה טמאה שמטמא בשרצים הכי נמי יטמא באהל המת:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות שואלים: והרי שתי וערב יוכיחו, שנטמאים בנגעים ולא במת? ועונים: עכשיו שהפסוק בשרצים מטמא עור בהמה טמאה, שתי וערב אינם מוכיחים, כי הם אינם נטמאים בשרצים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>דרכים אחרות לדחות את "שתי וערב יוכיח"</h3>
+    <div data-hl="T2a" class="voice t"><span class="tag">תוספות</span><blockquote>ור"י אומר דליכא למימר שתי וערב יוכיח דהכי עביד ק"ו ומה נוצה של עזים שאין מטמא בנגעים מטמא באהל המת ככלי העשוי מנוצה של עזים עור בהמה טמאה שטמא בנגעים אינו דין שיטמא באהל המת ככליו דהשתא לא שייך למימר שתי וערב יוכיח שמטמא בנגעים ולא באהל המת דשתי וערב אין שייך בו כלי ואין לומר דכל היוצא מן העץ ועצם יוכיח שמטמא בנגעים ואינו מטמא במת דמה שמטמא בנגעים אינו מחמת עצמו אלא מחמת הבית …</blockquote><p><span class="say">מה התוספות אומרים:</span> לפי רבנו יצחק, הקל וחומר עוסק בכלים: נוצה נטמאת באוהל המת ככלי העשוי ממנה, וכך עור בהמה טמאה ככליו. בשתי וערב אין שם כלי, ולכן אינם מוכיחים.</p></div>
+    <div data-hl="T2b,T2c" class="voice t"><span class="tag">תוספות</span><blockquote>ומהר"ם כתב דליכא למימר שתי וערב יוכיח דמה לשתי וערב שכן אין מטמאין לא במת ולא בש"ז תאמר בעור בהמה טמאה דמטמא דהא כתיב במת ובש"ז כל בגד וכל כלי עור. ולעיל כי פריך מה לשרצים ליכא למימר נגיעת מת וש"ז יוכיח דמה לכולהו שכן פחות מכזית דנגיעת מת בכשעורה וש"ז במשהו או בחתימת פי האמה (והוא תי' דאיצטריך קרא בשרצים לאפוקי מהיקש דשק)</blockquote><blockquote>וזה אין נראה דע"כ דגם לענין אהל הוי שיעורו בכזית להביא טומאה על כל הכלים ועל עצמן אפי' יוצא מן העץ דזהו תלוש קיי"ל דמביא ונ"ל דלא שייך כלל למימר אהל תלוש יוכיח כיון דלא אתינא למילף אלא לענין אהל המחובר דלא מטמא אלא מאי דילפי' ממשכן וכי האי גוונא איכא בפ"ק דמנחות גבי טריפה שהיתה לה שעת הכושר דלא ילפינן מטריפה שלא היתה לה שעת הכושר אפ' במה הצד [ת"י]:</blockquote><p><span class="say">מה התוספות אומרים:</span> מהר"ם כתב ששתי וערב אינם נטמאים במת ובשכבת זרע, ועור בהמה טמאה נטמא בהם, ולכן שתי וערב אינם מוכיחים. ועל הפירכה "מה לשרצים" אין להשיב מנגיעת מת ומשכבת זרע, כי גם הן מטמאות בפחות מכזית. על כך מקשים שגם אוהל תלוש שיעורו בכזית, ומיישבים: אין לומר "אוהל תלוש יוכיח", כי כאן לומדים רק על אוהל מחובר, שנטמא רק במה שנלמד מן המשכן.</p></div>
+    <h3>האם אפשר להוכיח מכאן שהתחש היה טהור?</h3>
+    <div data-hl="T3a,T3b" class="voice t"><span class="tag">תוספות</span><blockquote>והקשה השר מקוצי מאי בעי בסמוך מאי הוי עלה דתחש תיפוק ליה דטהור היה מדאיצטריך קרא בשרצי' לטמא עור בהמה טמאה דאי טמא היה לשתוק קרא בשרצים ותיתי בק"ו מנגעים דהשתא ליכא למימר שתי וערב יוכיח דמה לשתי וערב שכן אין מטמאין באהל המת תאמר בעור בהמה טמאה דמיטמא באהל המת כיון דתחש טמא היה</blockquote><blockquote>וי"ל דמהכא ליכא למיפשט דטהור היה דאפילו טמא היה כתיב בשרצים דמילתא דאתיא בק"ו טרח וכתב לה קרא ועוד אומר רש"י דשרצים לא אתו מק"ו מנגעים דאיכא למיפרך פשוטי כלי עור יוכיח דמטמא בנגעים ולא בשרצים:</blockquote><p><span class="say">מה התוספות אומרים:</span> השר מקוצי הקשה: מן הצורך בפסוק בשרצים אפשר להוכיח שהתחש היה טהור. התשובה: התורה טורחת לכתוב גם דבר שאפשר ללמוד בקל וחומר. ועוד, לפי רש"י אין ללמוד שרצים מנגעים בקל וחומר, כי פשוטי כלי עור נטמאים בנגעים ואינם נטמאים בשרצים.</p></div>
+  </div>
+  <p class="godeep">איך רבנו יצחק מסביר שאין פירכה משתי וערב? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הקל וחומר של רבא מברניש?</summary><p>נוצת עזים אינה נטמאת בנגעים ונטמאת באוהל המת; עור בהמה טמאה, שנטמא בנגעים, ודאי נטמא באוהל המת.</p></details>
+  <details><summary>למה נוצת עזים אינה נטמאת בנגעים?</summary><p>כי בנגעים כתוב "צמר ופשתים".</p></details>
+  <details><summary>למה היא נטמאת באוהל המת?</summary><p>כי הדין נלמד מן המשכן, ושם האוהל העיקרי הוא יריעות העזים.</p></details>
+  <details class="deepq"><summary>למה לפי רבנו יצחק שתי וערב אינם מוכיחים?</summary><p>כי הקל וחומר עוסק בכלים, ובשתי וערב אין שם כלי.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G2a,G2b,G3,G4,G5">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>הברייתא של רב יוסף והתפילין</h2>
+  <p class="lead">אם עור בהמה טמאה נלמד בקל וחומר, למה נצרכה הברייתא של רב יוסף, שרק עור בהמה טהורה הוכשר למלאכת שמים? הגמרא מחפשת לה הלכה בתפילין.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ואלא הא דתני רב יוסף</td><td>ואלא, מה ששנה רב יוסף:</td></tr>
+      <tr><td>לא הוכשרו במלאכת שמים אלא עור בהמה טהורה</td><td>לא הוכשרו למלאכת שמים אלא עור בהמה טהורה,</td></tr>
+      <tr><td>בלבד למאי הלכתא</td><td>בלבד, לאיזו הלכה?</td></tr>
+      <tr><td>לתפילין תפילין בהדיא כתיב בהו</td><td>לתפילין? בתפילין כתוב במפורש:</td></tr>
+      <tr><td>למען תהיה תורת ה' בפיך</td><td>"למען תהיה תורת ה' בפיך",</td></tr>
+      <tr><td>מן המותר בפיך</td><td>ממה שמותר בפיך.</td></tr>
+      <tr><td>אלא לעורן והאמר אביי</td><td>אלא לעור שלהן? והרי אמר אביי:</td></tr>
+      <tr><td>שי"ן של תפילין הל"מ</td><td>השי"ן של התפילין הלכה למשה מסיני.</td></tr>
+      <tr><td>אלא לכורכן בשערן ולתופרן בגידן</td><td>אלא לכרוך אותן בשערן ולתפור אותן בגידן?</td></tr>
+      <tr><td>הא נמי הל"מ הוא</td><td>גם זו הלכה למשה מסיני.</td></tr>
+      <tr><td>נכרכו' בשערן ונתפרות בגידן</td><td>נכרכות בשערן ונתפרות בגידן.</td></tr>
+      <tr><td>אלא לרצועו' והא"ר יצחק</td><td>אלא לרצועות? והרי אמר רבי יצחק:</td></tr>
+      <tr><td>רצועות שחורות הל"מ</td><td>רצועות שחורות, הלכה למשה מסיני.</td></tr>
+      <tr><td>נהי דגמירי שחורות טהורות מי גמירי</td><td>נניח שקיבלו "שחורות"; "טהורות" האם קיבלו?</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>השאלה:</b> עכשיו שעור בהמה טמאה נלמד לאוהל המת בקל וחומר, אין לומדים מן הברייתא דבר לעניין טומאה, ומה שהיה במשכן כבר היה. אז לאיזו הלכה היא נצרכת?</p>
+  <p><b>ארבע הצעות.</b> א': לתפילין, אבל בהן כתוב במפורש "למען תהיה תורת ה' בפיך", מן המותר בפיך. ב': לעור הבתים, אבל השי"ן שעליהם הלכה למשה מסיני, ולכן גם העור בכלל "מן המותר בפיך". ג': לכריכה בשער ולתפירה בגיד, אבל גם זו הלכה למשה מסיני. ד': לרצועות.</p>
+  <p><b>התשובה:</b> ההלכה מסיני אמרה שהרצועות יהיו שחורות, ולא שיהיו טהורות. לכן הברייתא של רב יוסף נצרכת לרצועות.</p>
+  <div data-hl="R5,R6" class="voice r"><span class="tag">רש"י</span><blockquote>לעורן – עור דפוס שלהן שהכתבים של פרשיות מונחים בו דהאי לא מלמען תהיה נפקא דהא לאו תורה כתיבא ביה:</blockquote><blockquote>שי"ן של תפילין – שיהא העור נקמט מבחוץ ג' קמטין ודומה לשי"ן והרצועה נקשרת כמין דלית ויש רצועה כפופה כמין י' דהיינו שדי וכיון דאות השם נכתב בקמטין שלו מותר בפיך בעינן ומקרא נפיק:</blockquote><p><span class="say">מה רש"י אומר:</span> עור הבית שבו מונחות הפרשיות אינו כתוב בו דבר תורה, ולכן אינו נלמד מן הפסוק. אבל העור מקומט בצורת שי"ן, ואות של שם הקדוש ברוך הוא כתובה בקמטיו, ולכן גם הוא צריך להיות מן המותר בפיך.</p></div>
+  <div data-hl="R7,R8" class="voice r"><span class="tag">רש"י</span><blockquote>אלא לנכרכות בשערן – תניא לההיא דרב יוסף שצריך לקשור איגרות הפרשיות בשער עור בהמה טהורה ולתופרן בגיד בהמה טהורה:</blockquote><blockquote>בשערן – בשער מן הקלף כלומר בשל טהורה:</blockquote><p><span class="say">מה רש"י אומר:</span> ההצעה השלישית היא שהברייתא מלמדת לקשור את הפרשיות בשער, ולתפור אותן בגיד, של בהמה טהורה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה בדיוק קשה בכל הצעה</h3>
+    <div data-hl="T5a,T5b" class="voice t"><span class="tag">תוספות</span><blockquote>תפילין בהדיא כתיב בהו למען תהיה וגו' – תימה לר"י וכי אין לברייתא לשנות מה שדורש מן הפסוק וכל הנך דמייתי בסמוך וכי לית ליה לרב יוסף לשנות הברייתא לפי שזה אמרו אמורא אחד או ברייתא ואומר רבינו יצחק דהכי פריך תפילין בהדיא כתיב בהו ואי הא הוה אתי לאשמעי' הוה ליה לאתויי קרא אע"כ מילתא אחריתי אתא לאשמעי' ודרשה דמן המותר בפיך היתה פשוטה ולא איצטריך לאשמעי'</blockquote><blockquote>וקאמר אלא לעורן והאמר אביי שין של תפילין כו' ובזה הלשון הוה ליה לרב יוסף למימר והוה ידעינן שפיר דבעי עור בהמה טהורה דדרשה דמן המותר בפיך היא פשוטה אלא לכורכן בשערן צריך בהמה טהורה הא נמי הל"מ דתניא כו' מדלא קתני רב יוסף בהאי לישנא ונכרכות בשערן ש"מ דמילתא אחריתא אתא לאשמעינן אלא לרצועותיהן והא"ר יצחק רצועות שחורות הל"מ וכיון דמצריך שיהו הרצועות שחורות כמו הקציצה כל שכן דבעינן …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק תמה: וכי ברייתא אינה שונה דבר שנלמד מפסוק, או דבר שנאמר במקום אחר? הוא מפרש שהקושיה היא על הלשון. אילו באה הברייתא ללמד את זה, הייתה מביאה את הפסוק, או שונה "ונכרכות בשערן", או אומרת שהרצועות שחורות, ומזה היינו לומדים גם טהורות. התשובה היא שמשחורות אין ללמוד טהורות.</p></div>
+    <div data-hl="T6" class="voice t"><span class="tag">תוספות</span><blockquote>לא צריכא אלא לכורכן בשערן – קשה לרשב"א אי הא אתא לאשמעי' אמאי נקט עור במילתיה:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו שמשון בן אברהם מקשה: אם הברייתא באה ללמד על הכריכה בשער, למה הזכירה "עור"?</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>למאי הלכתא – לא בעי למימר לאשמעינן דתחש טהור היה דמשמע דאתא לאשמעינן שום צורך הוראה:</blockquote><p><span class="say">מה התוספות אומרים:</span> הגמרא אינה מסתפקת בכך שהברייתא מלמדת מה היה התחש, כי היא מחפשת הלכה שיש בה צורך הוראה.</p></div>
+  </div>
+  <p class="godeep">לפי רבנו יצחק, מה הקושי בכל אחת מן ההצעות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מאיזה פסוק לומדים שתפילין רק מן המותר באכילה?</summary><p>"למען תהיה תורת ה' בפיך".</p></details>
+  <details><summary>מה אמר אביי על השי"ן של התפילין?</summary><p>שהיא הלכה למשה מסיני.</p></details>
+  <details><summary>לאיזו הלכה נצרכת לבסוף הברייתא של רב יוסף?</summary><p>שהרצועות יהיו מעור בהמה טהורה.</p></details>
+  <details class="deepq"><summary>למה אי אפשר ללמוד "טהורות" מ"שחורות"?</summary><p>כך עונה הגמרא: מה שקיבלו בהלכה הוא רק "שחורות".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G6,G7a,G7b">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>התחש: בריה בפני עצמה</h2>
+  <p class="lead">כיוון שהברייתא של רב יוסף הועמדה על הרצועות, השאלה על התחש חוזרת. רבי מאיר מתאר אותו, והגמרא לומדת מדבריו שהיה טהור.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מאי הוי עלה דתחש שהיה בימי משה</td><td>מה עלה בעניין התחש שהיה בימי משה?</td></tr>
+      <tr><td>בריה בפני עצמה היה</td><td>בריה בפני עצמה היה,</td></tr>
+      <tr><td>ולא הכריעו בה חכמים</td><td>ולא הכריעו בו חכמים</td></tr>
+      <tr><td>אם מין חיה הוא אם מין בהמה הוא</td><td>אם מין חיה הוא או מין בהמה.</td></tr>
+      <tr><td>וקרן אחת היתה לו במצחו</td><td>וקרן אחת הייתה לו במצחו,</td></tr>
+      <tr><td>ולפי שעה נזדמן לו למשה</td><td>ולפי שעה נזדמן למשה,</td></tr>
+      <tr><td>ועשה ממנו משכן ונגנז</td><td>ועשה ממנו משכן, ונגנז.</td></tr>
+      <tr><td>ש"מ טהור היה</td><td>שמע מינה: טהור היה.</td></tr>
+      <tr><td>שור שהקריב אדם הראשון</td><td>השור שהקריב אדם הראשון</td></tr>
+      <tr><td>מקרין תרתי משמע</td><td>"מקרין" משמע שתיים.</td></tr>
+      <tr><td>מקרן כתיב</td><td>"מקרן" כתוב.</td></tr>
+      <tr><td>וליפשוט מיניה דמין בהמה הוא</td><td>ונפשוט מכאן שמין בהמה הוא?</td></tr>
+      <tr><td>כיון דאיכא קרש דמין חיה הוא</td><td>כיוון שיש "קרש", שהוא מין חיה,</td></tr>
+      <tr><td>ולית ליה אלא חדא קרן</td><td>ואין לו אלא קרן אחת.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רבי מאיר:</b> התחש היה בריה בפני עצמה, וחכמים לא הכריעו אם הוא חיה או בהמה. הייתה לו קרן אחת במצחו. הוא נזדמן למשה רק לשעה, משה עשה ממנו את המשכן, והוא נגנז.</p>
+  <p><b>ההוכחה שהיה טהור:</b> השור שהקריב אדם הראשון היה בעל קרן אחת במצחו, שנאמר "פר מקרין מפריס". "מקרין" נשמע כמו שתי קרניים, אבל כתוב "מקרן". מכך שגם לתחש הייתה קרן אחת במצחו, הגמרא לומדת שהיה טהור, כמו השור.</p>
+  <p><b>ומה לא הוכח:</b> אי אפשר להוכיח מכאן שהתחש מין בהמה, כי יש גם "קרש", מין חיה בעל קרן אחת.</p>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>מאי הוי עלה דתחש – הואיל ולרב יוסף לאו לענין מלאכה דמשכן איתמר לא איפשיט בעיין:</blockquote><p><span class="say">מה רש"י אומר:</span> השאלה חוזרת כי לפי רב יוסף הברייתא לא נאמרה על מלאכת המשכן, ולכן לא נפשטה.</p></div>
+  <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>מקרין תרתי משמע – דסתם מקרין כל קרניו:</blockquote><p><span class="say">מה רש"י אומר:</span> סתם "מקרין" פירושו כל קרניו, ולכן משמע שתיים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה נלמד ומה לא</h3>
+    <p>מן הקרן האחת שבמצח הגמרא לומדת שהתחש היה טהור, כמו השור של אדם הראשון. היא אינה לומדת ממנה שהוא מין בהמה כמו השור, כי אותו סימן נמצא גם בחיה, בקרש. לכן השאלה אם התחש חיה או בהמה נשארת, כמו שאמר רבי מאיר שחכמים לא הכריעו בה.</p>
+  </div>
+  <p class="godeep">למה אי אפשר ללמוד שהתחש היה מין בהמה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אמר רבי מאיר על התחש?</summary><p>שהיה בריה בפני עצמה, בעל קרן אחת, ולא הכריעו אם הוא חיה או בהמה.</p></details>
+  <details><summary>מניין שהיה טהור?</summary><p>השור שהקריב אדם הראשון, שהוא טהור, היה בעל קרן אחת.</p></details>
+  <details><summary>מה עונה רב נחמן בר יצחק על "מקרין"?</summary><p>"מקרן" כתוב.</p></details>
+  <details class="deepq"><summary>למה לא נפשט שהתחש מין בהמה?</summary><p>כי הקרש הוא מין חיה ויש לו קרן אחת.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G8,G9">
+  <div class="kicker">יחידה 4 · משנה</div>
+  <h2>פתילה מבגד שקיפלה ולא הבהבה</h2>
+  <p class="lead">משנה חדשה: פתילה שעשו מבגד, ורק קיפלו אותה. רבי אליעזר ורבי עקיבא חולקים אם היא טמאה ואם מדליקים בה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>פתילת הבגד שקיפלה ולא הבהבה</td><td>פתילה מבגד, שקיפלה ולא הבהבה:</td></tr>
+      <tr><td>ר"א אומר טמאה היא ואין מדליקין בה</td><td>רבי אליעזר אומר: טמאה היא, ואין מדליקין בה.</td></tr>
+      <tr><td>רע"א טהורה היא ומדליקין בה</td><td>רבי עקיבא אומר: טהורה היא, ומדליקין בה.</td></tr>
+      <tr><td>בשלמא לענין טומאה בהא פליגי</td><td>מובן, לעניין טומאה בזה הם חולקים:</td></tr>
+      <tr><td>דר"א סבר קיפול אינו מועיל</td><td>שרבי אליעזר סובר: קיפול אינו מועיל,</td></tr>
+      <tr><td>ובמילתיה קמייתא קיימא</td><td>והיא עומדת בשמה הראשון.</td></tr>
+      <tr><td>ור"ע סבר קיפול מועיל ובטולי בטיל</td><td>ורבי עקיבא סובר: קיפול מועיל, והיא בטלה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> לוקחים חתיכת בגד ומקפלים אותה כדי שתשמש פתילה, בלי לחרוך אותה באש. לרבי אליעזר היא טמאה ואין מדליקים בה, ולרבי עקיבא היא טהורה ומדליקים בה.</p>
+  <p><b>הטומאה:</b> בגד הוא כלי, ומקבל טומאה. לרבי אליעזר הקיפול לבדו אינו מוציא אותו משם בגד, ולרבי עקיבא הקיפול מבטל אותו.</p>
+  <p><b>ההדלקה:</b> בעניין הטומאה המחלוקת מובנת. אבל למה רבי אליעזר אוסר להדליק בה? על כך הגמרא שואלת בהמשך.</p>
+  <div data-hl="R13,R14" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' שקיפלה – כמו שגודלין פתילות:</blockquote><blockquote>הבהבה – על השלהבת כדי שתהא מחורכת ותדליק יפה:</blockquote><p><span class="say">מה רש"י אומר:</span> "קיפלה" כמו שגודלים פתילות. "הבהבה" פירושו שקירבו אותה לשלהבת כדי שתהיה חרוכה ותדליק יפה.</p></div>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>טמאה היא – דבגד כלי הוא ומקבל טומאה אם היה שלש על שלש דקפול אין מבטלה מתורת בגד הואיל ולא הבהבה:</blockquote><p><span class="say">מה רש"י אומר:</span> בגד מקבל טומאה אם יש בו שלוש על שלוש, ולרבי אליעזר הקיפול אינו מבטל ממנו את שם הבגד, כי לא הבהבו אותו.</p></div>
+  <div class="eg"><b>להמחשה:</b> כמו מטפחת שמקפלים לרצועה דקה: האם היא עדיין מטפחת, או שכבר יש לה תפקיד חדש? זו השאלה שבה חולקים.</div>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "הבהבה"?</summary><p>שקירבו אותה לשלהבת כדי שתהיה חרוכה ותדליק יפה.</p></details>
+  <details><summary>במה חולקים רבי אליעזר ורבי עקיבא בעניין הטומאה?</summary><p>האם הקיפול מבטל את הבגד משם בגד.</p></details>
+  <details><summary>מה לא מובן בדעת רבי אליעזר לאחר ההסבר הזה?</summary><p>למה אין מדליקים בפתילה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G10a,G10b,G10c,G11,G12">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>ההדלקה: שלוש על שלוש ביום טוב</h2>
+  <p class="lead">הגמרא מסבירה את המחלוקת בעניין ההדלקה: מדובר בבגד מצומצם ביום טוב, והשאלה היא אם מדליקים בשבר כלי.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אלא לענין הדלק' במאי פליגי</td><td>אלא לעניין ההדלקה, במה הם חולקים?</td></tr>
+      <tr><td>הכא בג' על ג' מצומצמות עסקינן</td><td>כאן בשלוש על שלוש מצומצמות עוסקים,</td></tr>
+      <tr><td>ובי"ט שחל להיות ע"ש עסקינן</td><td>וביום טוב שחל להיות בערב שבת עוסקים.</td></tr>
+      <tr><td>מסיקין בכלים ואין מסיקין בשברי כלים</td><td>מסיקים בכלים, ואין מסיקים בשברי כלים.</td></tr>
+      <tr><td>המדליק צריך שידליק ברוב היוצא</td><td>המדליק צריך שידליק ברוב היוצא.</td></tr>
+      <tr><td>וכיון דאדליק ביה פורתא הויא ליה שבר כלי</td><td>וכיוון שהדליק בה מעט, נעשתה שבר כלי,</td></tr>
+      <tr><td>וכי קא מדליק בשבר כלי קמדליק</td><td>וכשהוא מדליק, בשבר כלי הוא מדליק.</td></tr>
+      <tr><td>ואין תורת כלי עליו</td><td>ואין עליה שם כלי,</td></tr>
+      <tr><td>וכי קמדליק בעץ בעלמא</td><td>וכשהוא מדליק, בעץ בעלמא (הוא מדליק).</td></tr>
+      <tr><td>היינו דתנינא ג' על ג' מצומצמות</td><td>זהו ששנינו: שלוש על שלוש מצומצמות,</td></tr>
+      <tr><td>ולא ידענא למאי הלכתא</td><td>ולא ידעתי לאיזו הלכה.</td></tr>
+      <tr><td>ש"מ כר"י ס"ל</td><td>שמע מינה: כרבי יהודה הוא סובר.</td></tr>
+      <tr><td>ומי א"ר אדא בר אהבה הכי</td><td>וכי אמר רב אדא בר אהבה כך?</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ההעמדה:</b> מדובר בחתיכת בגד של שלוש על שלוש בדיוק, ביום טוב שחל בערב שבת. כולם סוברים כרבי יהודה, שמסיקים בכלים ואין מסיקים בשברי כלים, וכולם סוברים כעולא, שהמדליק צריך להדליק ברוב הפתילה שיוצאת מן הנר.</p>
+  <p><b>רבי אליעזר:</b> הקיפול אינו מועיל, והפתילה עדיין בגד. ברגע שהדליק בה מעט, היא פחות משלוש על שלוש ונעשתה שבר כלי. מה שהוא ממשיך להדליק, הוא מדליק בשבר כלי, וזה אסור.</p>
+  <p><b>רבי עקיבא:</b> הקיפול מועיל, ואין עליה שם כלי כלל. לכן הוא מדליק בעץ בעלמא, ואין כאן שבר כלי.</p>
+  <p><b>רב יוסף ורב אדא:</b> רב יוסף אמר שההסבר הזה מבאר את מה ששנה, "שלוש על שלוש מצומצמות", שלא ידע לאיזו הלכה נאמר. ובסוף העמוד הגמרא מקשה: אם רב אדא בר אהבה מיישב לפי רבי יהודה, הרי במקום אחר אמר דבר אחר.</p>
+  <div data-hl="R18,R19" class="voice r"><span class="tag">רש"י</span><blockquote>מצומצמות – דאי הוה טפי פורתא לכולי עלמא מדליקין:</blockquote><blockquote>ובי"ט שחל להיות בע"ש – דשייך ביה איסור מוקצה עסקינן:</blockquote><p><span class="say">מה רש"י אומר:</span> "מצומצמות": אילו היה מעט יותר, לכל הדעות מדליקים. ויום טוב, כי בו שייך איסור מוקצה.</p></div>
+  <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>ואין מסיקין בשברי כלים – שנשברו בו ביום דהוו להו נולד אבל בכלים מסיקין דהא חזו לטלטלן:</blockquote><p><span class="say">מה רש"י אומר:</span> שברים שנשברו ביום טוב הם "נולד", ואילו כלים ראויים לטלטל.</p></div>
+  <div data-hl="R23" class="voice r"><span class="tag">רש"י</span><blockquote>היינו דתנינא – שהייתי שונה מרבותי משנה ג' על ג' מצומצמות ולא הוה ידענא למאי הלכתא איתמר דאי לענין טמויי כל שכן דאי איכא טפי דמטמא:</blockquote><p><span class="say">מה רש"י אומר:</span> לעניין טומאה אין צורך לומר "מצומצמות", שהרי אם יש יותר, כל שכן שנטמא. לכן רב יוסף לא ידע לאיזו הלכה נאמר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה צריך לגעת בפתילה אחרי שנפחתה</h3>
+    <div data-hl="R21" class="voice r"><span class="tag">רש"י</span><blockquote>ודכולי עלמא אית להו – צריך המדליק להדליק בידים קודם סילוק ידיו רוב היוצא מן הפתילה חוץ לנר הלכך על כרחך צריך לעסוק בו לאחר שנפחת משלש הלכך טעמא דר"א דאסר קסבר קיפול אינו מועיל והוה ליה כלי שנשבר ביו"ט וכי קמדליק ביה פורתא כיון דמצומצמות היו הוו שברי כלי דפחות משלש לאו כלי הוא והוה ליה כלי שנשבר בי"ט וכי קמדליק בידים להשלים רוב היוצא בשבר כלי קמדליק והא דאמרינן מסיקין בכלים …</blockquote><p><span class="say">מה רש"י אומר:</span> לפי עולא המדליק צריך להדליק בידיו את רוב היוצא לפני שהוא מסלק את ידיו. לכן הוא מטפל בפתילה גם אחרי שנפחתה משלוש, ופחות משלוש אינו כלי. ומה שמסיקים בכלים, זה רק כשאינו נוגע בהם אחרי שנפחתו, אלא אם כן הוסיף עצים מוכנים.</p></div>
+    <div data-hl="R22" class="voice r"><span class="tag">רש"י</span><blockquote>קיפול מועיל – ועל כרחך מעי"ט קיפלה דאין גודלין פתילה בי"ט כדתניא בהמביא (ביצה לב:) וכבר נתבטל הכלי מבע"י ואין כאן שבר כלי:</blockquote><p><span class="say">מה רש"י אומר:</span> לרבי עקיבא הקיפול נעשה לפני יום טוב, כי אין גודלים פתילה ביום טוב. לכן הבגד בטל כבר מבעוד יום, ואין כאן שבר כלי.</p></div>
+    <h3>קושיה מרב אדא על רב אדא</h3>
+    <div data-hl="R24" class="voice r"><span class="tag">רש"י</span><blockquote>ומדקא מתרץ כו' – מילתא באפי נפשיה היא בתמיה למירמי דרב אדא אדרב אדא מדקא מתרץ למתניתין ואוקי דכולי עלמא אית להו אין מסיקין בשברים דהיינו אליבא דר"י דאית ליה נולד ש"מ כו':</blockquote><p><span class="say">מה רש"י אומר:</span> זו שאלה בפני עצמה, בתמיהה: רב אדא העמיד את המשנה כך שכולם סוברים שאין מסיקים בשברי כלים, כרבי יהודה שאוסר נולד, ומכאן שגם הוא סובר כך. והגמרא מביאה דבר אחר שאמר, שנראה סותר.</p></div>
+  </div>
+  <p class="godeep">למה לפי רש"י המדליק נוגע בפתילה אחרי שנפחתה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>באיזה מקרה מעמידים את המשנה?</summary><p>בבגד של שלוש על שלוש מצומצמות, ביום טוב שחל בערב שבת.</p></details>
+  <details><summary>מה אמר עולא?</summary><p>המדליק צריך שידליק ברוב היוצא.</p></details>
+  <details><summary>למה לרבי אליעזר אסור להדליק?</summary><p>כי אחרי שהדליק מעט, הפתילה נעשתה שבר כלי, והוא מדליק בשבר כלי.</p></details>
+  <details class="deepq"><summary>למה לרבי עקיבא אין כאן שבר כלי?</summary><p>כי קיפל לפני יום טוב, והקיפול ביטל את הבגד משם כלי כבר מבעוד יום.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>נוצה של עזים:</b> עור בהמה טמאה נטמא באוהל המת בקל וחומר מנוצת עזים.</li>
+      <li><b>הברייתא של רב יוסף:</b> רק עור בהמה טהורה הוכשר למלאכת שמים, והיא נצרכת לרצועות התפילין.</li>
+      <li><b>התחש:</b> בריה בפני עצמה, בעל קרן אחת, ומכאן שהיה טהור. אם היה חיה או בהמה, לא הוכרע.</li>
+      <li><b>פתילת הבגד:</b> רבי אליעזר ורבי עקיבא חולקים אם הקיפול מבטל את הבגד משם בגד.</li>
+      <li><b>ההדלקה:</b> בשלוש על שלוש מצומצמות ביום טוב, לרבי אליעזר הוא מדליק בשבר כלי, ולרבי עקיבא בעץ בעלמא.</li>
+      <li><b>נשאר פתוח:</b> הגמרא מקשה מדבר אחר שאמר רב אדא בר אהבה, והוא מובא בעמוד הבא.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>אתיא בקל וחומר</td><td>נלמד בקל וחומר</td></tr>
+      <tr><td>אינו דין</td><td>האין זה דין, כלומר ודאי כך</td></tr>
+      <tr><td>למאי הלכתא</td><td>לאיזו הלכה, למה נצרך הדבר</td></tr>
+      <tr><td>בהדיא</td><td>במפורש</td></tr>
+      <tr><td>הלכה למשה מסיני</td><td>הלכה שנמסרה בעל פה למשה בסיני</td></tr>
+      <tr><td>נהי</td><td>נניח, אמנם</td></tr>
+      <tr><td>מי גמירי</td><td>האם קיבלו כך במסורת</td></tr>
+      <tr><td>מאי הוי עלה</td><td>מה עלה בעניין</td></tr>
+      <tr><td>שמע מינה</td><td>למד מכאן</td></tr>
+      <tr><td>וליפשוט מיניה</td><td>ונפתור מכאן את השאלה</td></tr>
+      <tr><td>בשלמא</td><td>מובן הדבר</td></tr>
+      <tr><td>מצומצמות</td><td>בדיוק, לא יותר</td></tr>
+      <tr><td>בעלמא</td><td>סתם, בלבד</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-28a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-29a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף כ&quot;ח עמוד ב&#x27;, לומדים: קל וחומר מנוצה של עזים; הברייתא של רב יוסף והתפילין; התחש: בריה בפני עצמה; פתילה מבגד שקיפלה ולא הבהבה; ההדלקה: שלוש על שלוש ביום טוב.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (34 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · המשך: תשובתו של רבא מברניש</h3><p>העמוד הקודם נגמר בפירכה של רבא מברניש על הצד השווה של נגעים ושרצים, ובמילים &quot;אלא אמר רבא מברניש&quot;. כאן באה תשובתו. אחר כך הגמרא חוזרת לברייתא של רב יוסף ולשאלה מה היה התחש, ובהמשך באה משנה חדשה, על פתילה שעשו מבגד.</p></li><li><h3><span class="w">גמרא</span> · קל וחומר מנוצה של עזים</h3><p>&quot;אתיא בקל וחומר&quot;: נוצה של עזים, שאינה נטמאת בנגעים, נטמאת באוהל המת. עור בהמה טמאה, שנטמא בנגעים, אינו דין שייטמא באוהל המת? רש&quot;י מסביר שהנוצה אינה נטמאת בנגעים, כי שם כתוב &quot;צמר ופשתים&quot;. והיא נטמאת באוהל המת אם עשו ממנה אוהל, כי הדין נלמד מן המשכן, ושם האוהל העיקרי הוא יריעות העזים.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: גרסה שאינו גורס</h3><p>רש&quot;י כותב שבספרים כתוב כאן &quot;כל מעשה עזים&quot;, והוא אינו גורס כך. מן הפסוק הזה אין לומדים אוהל, כי הוא נאמר בכלים, ומרבים בו דברים הבאים מן העזים, מן הקרניים ומן הטלפיים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: והרי שתי וערב יוכיחו?</h3><p>התוספות שואלים שתי שאלות. א&#x27;: נאמר &quot;שתי וערב יוכיח&quot;: הם נטמאים בנגעים ואינם נטמאים במת, ואז הקל וחומר נופל. ב&#x27;: למה צריך פסוק בשרצים לעור בהמה טמאה? אפשר היה ללמוד באותו קל וחומר מן הנוצה: בנגעים אינה נטמאת, ובשרצים היא נטמאת, ועור בהמה טמאה, שנטמא בנגעים, ודאי נטמא בשרצים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הפסוק בשרצים מבטל את הפירכה</h3><p>התשובה: אילו לא היה כתוב פסוק בשרצים, לא היינו לומדים עור בהמה טמאה בקל וחומר מנגעים, לא לשרצים ולא לאוהל המת, כי שתי וערב יוכיחו. אבל עכשיו שהטומאה בשרצים כתובה, הקל וחומר לאוהל המת עומד. שתי וערב אינם נטמאים בשרצים, ועור בהמה טמאה נטמא בשרצים, ולכן ייטמא גם באוהל המת.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רבנו יצחק, קל וחומר בכלים</h3><p>רבנו יצחק אומר שאין לומר שתי וערב יוכיח, כי הקל וחומר בנוי על כלים: נוצה של עזים נטמאת באוהל המת ככלי העשוי ממנה, וכך עור בהמה טמאה ככליו. ובשתי וערב אין שם כלי. וגם אין לומר שכל היוצא מן העץ ועצם יוכיחו, שנטמאים בנגעים ואינם נטמאים במת. כי בנגעים הם אינם נטמאים מחמת עצמם אלא מחמת הבית, כמו שנאמר בפרק &quot;העור והרוטב&quot; על בית שסיככו אותו בזרעים, שנטמא בנגעים. ואילו הנוצה והעור נטמאים מחמת עצמם.</p></li><li><h3><span class="w">תוספות</span> · התוספות: דרכו של המהר&quot;ם</h3><p>מהר&quot;ם, מורנו הרב רבי מאיר, כתב דרך אחרת: שתי וערב אינם נטמאים לא במת ולא בשכבת זרע, ואילו עור בהמה טמאה נטמא בשניהם, שכתוב בהם &quot;כל בגד וכל כלי עור&quot;. ועל הפירכה שבעמוד הקודם, &quot;מה לשרצים&quot;, אין להשיב שנגיעת מת ושכבת זרע יוכיחו, כי כולם מטמאים בפחות מכזית: נגיעת מת בכשעורה, ושכבת זרע במשהו או בחתימת פי האמה. ועל השאלה השנייה, למה צריך פסוק בשרצים, הוא מתרץ: כדי להוציא מן ההיקש לשק, שממנו היינו ממעטים עור בהמה טמאה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הדרך הזו נדחית</h3><p>&quot;וזה אין נראה&quot;: על דברי מהר&quot;ם, ש&quot;כולם מטמאים בפחות מכזית&quot;, מקשים שגם בטומאת אוהל השיעור הוא כזית: אוהל תלוש מביא טומאה על כל הכלים, והכלים המאהילים נטמאים בעצמם, אפילו כשהם מן היוצא מן העץ. והכותב מיישב: אין מקום לומר &quot;אוהל תלוש יוכיח&quot;, כי כאן באים ללמוד רק על אוהל מחובר, שנטמא רק במה שלומדים מן המשכן. וכעין זה במסכת מנחות: אין לומדים טריפה שהייתה לה שעת הכושר מטריפה שלא הייתה לה שעת הכושר, אפילו ב&quot;מה הצד&quot;. בסוף הקטע רשום &quot;ת&quot;י&quot;, תוספות ישנים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שאלת השר מקוצי</h3><p>השר מקוצי הקשה: למה הגמרא שואלת בהמשך מה היה התחש? מן הצורך בפסוק מיוחד בשרצים אפשר להוכיח שהתחש היה טהור. אילו התחש היה טמא, עור בהמה טמאה היה נטמא באוהל המת, ואז אפשר היה ללמוד לשרצים בקל וחומר מנגעים, ושתי וערב לא היו מוכיחים, כי אינם נטמאים באוהל המת.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שתי תשובות</h3><p>א&#x27;: אין לפשוט מכאן, כי גם אילו היה התחש טמא, יש דברים שאפשר ללמוד בקל וחומר והתורה טורחת וכותבת אותם. ב&#x27;: רש&quot;י אומר ששרצים אינם נלמדים בקל וחומר מנגעים, כי &quot;פשוטי כלי עור&quot; יוכיחו: הם נטמאים בנגעים ואינם נטמאים בשרצים.</p></li><li><h3><span class="w">גמרא</span> · ולמה הברייתא של רב יוסף?</h3><p>&quot;ואלא&quot;, אם כך, הברייתא שהביא רב יוסף, שלא הוכשרו למלאכת שמים אלא עור בהמה טהורה, &quot;למאי הלכתא&quot;, לאיזו הלכה היא נצרכת? רש&quot;י מסביר: מאחר שריבינו עור בהמה טמאה לאוהל המת, אין לומדים מן הברייתא דבר לעניין טומאה, ומה שהיה במשכן כבר היה. והתוספות מוסיפים שהגמרא אינה רוצה לומר שהברייתא באה ללמד שהתחש היה טהור, כי &quot;למאי הלכתא&quot; מחפש הלכה שיש בה צורך הוראה.</p></li><li><h3><span class="w">גמרא</span> · לתפילין? הרי זה כתוב</h3><p>אולי לתפילין, שגם הן מלאכת שמים, כך מפרש רש&quot;י. אבל בתפילין כתוב במפורש &quot;למען תהיה תורת ה&#x27; בפיך&quot;, ומכאן &quot;מן המותר בפיך&quot;: רק ממה שמותר לאכול.</p></li><li><h3><span class="w">תוספות</span> · התוספות: וכי ברייתא אינה שונה דבר שנלמד מפסוק?</h3><p>רבנו יצחק תמה: וכי ברייתא אינה שונה מה שדורשים מפסוק? וכי רב יוסף לא ישנה ברייתא רק משום שאמורא אחר או ברייתא אחרת אמרו את הדבר? הוא מפרש את הקושיה כך: אילו זה בא ללמד, הברייתא הייתה מביאה את הפסוק. על כורחנו היא באה ללמד דבר אחר, כי הדרשה &quot;מן המותר בפיך&quot; פשוטה ואין צורך ללמד אותה.</p></li><li><h3><span class="w">גמרא</span> · לעור של הבתים?</h3><p>&quot;אלא לעורן&quot;, אולי הברייתא באה ללמד על העור של התפילין. רש&quot;י מפרש: עור הבית שבו מונחות הפרשיות. עליו אין כתוב דבר תורה, ולכן הוא אינו נלמד מן הפסוק.</p></li><li><h3><span class="w">גמרא</span> · והרי השי&quot;ן הלכה למשה מסיני</h3><p>הגמרא דוחה: הרי אביי אמר שהשי&quot;ן של התפילין הלכה למשה מסיני. רש&quot;י מסביר: העור מקומט מבחוץ בשלושה קמטים כצורת שי&quot;ן, ואות של שם הקדוש ברוך הוא כתובה בקמטים. לכן גם העור צריך להיות &quot;מן המותר בפיך&quot;, והוא נלמד מן הפסוק.</p><p>רש&quot;י מוסיף שהרצועה נקשרת כצורת דל&quot;ת, ויש רצועה כפופה כצורת יו&quot;ד, ויחד עם השי&quot;ן הן השם שדי.</p></li><li><h3><span class="w">גמרא</span> · לכריכה בשער ולתפירה בגיד?</h3><p>&quot;אלא לכורכן בשערן ולתופרן בגידן&quot;: אולי הברייתא באה ללמד שכורכים את הפרשיות בשער, ותופרים אותן בגיד, של בהמה טהורה. רש&quot;י מפרש &quot;בשערן&quot;: בשער מן הקלף, כלומר של בהמה טהורה. הגמרא דוחה: גם זו הלכה למשה מסיני, כמו ששנינו: תפילין מרובעות, הלכה למשה מסיני, נכרכות בשערן ונתפרות בגידן.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ולמה הזכיר עור?</h3><p>רבנו שמשון בן אברהם מקשה: אם הברייתא באה ללמד רק על הכריכה בשער, למה רב יוסף הזכיר בה &quot;עור&quot;? התוספות אינם מביאים כאן תשובה.</p></li><li><h3><span class="w">גמרא</span> · לרצועות</h3><p>&quot;אלא לרצועות&quot;: אולי הברייתא מלמדת שהרצועות יהיו מעור בהמה טהורה. והרי רבי יצחק אמר: רצועות שחורות, הלכה למשה מסיני. הגמרא עונה: &quot;נהי דגמירי שחורות, טהורות מי גמירי&quot;, נניח שקיבלו בהלכה שיהיו שחורות, וכי קיבלו שיהיו טהורות? לזה נצרכת הברייתא של רב יוסף.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: הצד של הקושיה</h3><p>רש&quot;י מסביר את הקושיה: מאחר שדין הרצועות הלכה מסיני, גם זה שיהיו מעור טהור הוא הלכה למשה מסיני, ואילו הברייתא של רב יוסף אינה שונה הלכה למשה מסיני. אם כן לא לזה היא באה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: כך בכל הקושיות</h3><p>לפי רבנו יצחק כל הקושיות בנויות כך. אילו באה הברייתא ללמד על העור, הייתה אומרת זאת בלשון של השי&quot;ן. אילו באה ללמד על השער, הייתה שונה &quot;ונכרכות בשערן&quot;. ואילו באה ללמד על הרצועות, הייתה אומרת שיהיו שחורות, ומזה היינו לומדים גם טהורות, כי מסתבר להקפיד על הטהרה יותר מעל השחרות. והתשובה היא שמשחורות אין ללמוד טהורות.</p></li><li><h3><span class="w">גמרא</span> · מה היה התחש</h3><p>&quot;מאי הוי עלה&quot;, מה עלה בעניין התחש? רש&quot;י מסביר: לפי התשובה האחרונה, הברייתא של רב יוסף לא נאמרה על מלאכת המשכן, ולכן השאלה לא נפשטה. רבי אלעא אמר בשם ריש לקיש: רבי מאיר היה אומר, התחש בריה בפני עצמה היה, וחכמים לא הכריעו אם הוא מין חיה או מין בהמה. קרן אחת הייתה לו במצחו, ולפי שעה נזדמן למשה, ועשה ממנו את המשכן, ונגנז.</p></li><li><h3><span class="w">גמרא</span> · קרן אחת: מכאן שהיה טהור</h3><p>מכך שאמר &quot;קרן אחת הייתה לו במצחו&quot;, שמע מינה שהיה טהור. כי רבי יהודה אמר: השור שהקריב אדם הראשון קרן אחת הייתה לו במצחו, שנאמר &quot;ותיטב לה&#x27; משור פר מקרין מפריס&quot;. הגמרא מקשה: &quot;מקרין&quot; משמע שתיים, ורש&quot;י מסביר שסתם &quot;מקרין&quot; פירושו כל קרניו. רב נחמן בר יצחק עונה: &quot;מקרן&quot; כתוב, בלי יו&quot;ד.</p></li><li><h3><span class="w">גמרא</span> · ואולי מין בהמה?</h3><p>&quot;וליפשוט מיניה&quot;, ונפשוט מכאן שהתחש מין בהמה, כמו השור? הגמרא עונה: יש &quot;קרש&quot;, שהוא מין חיה ויש לו רק קרן אחת. לכן אפשר לומר שהתחש מין חיה.</p></li><li><h3><span class="w">משנה</span> · משנה: פתילה מבגד שקיפלה</h3><p>משנה חדשה בפרק. פתילה שעשו מבגד, שקיפלו אותה ולא הבהבו אותה: רבי אליעזר אומר טמאה היא ואין מדליקין בה, ורבי עקיבא אומר טהורה היא ומדליקין בה. רש&quot;י מפרש: &quot;קיפלה&quot; כמו שגודלים פתילות, ו&quot;הבהבה&quot; פירושו שקירבו אותה לשלהבת כדי שתהיה חרוכה ותדליק יפה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: למה טמאה</h3><p>בגד הוא כלי, ומקבל טומאה אם יש בו שלוש על שלוש. לדעת רבי אליעזר הקיפול אינו מבטל ממנו את שם הבגד, כי לא הבהבו אותו. ולמה אין מדליקים בה, הגמרא מפרשת בהמשך.</p></li><li><h3><span class="w">גמרא</span> · בטומאה: האם הקיפול מועיל</h3><p>&quot;בשלמא&quot;, מובן הדבר בעניין הטומאה. לרבי אליעזר &quot;קיפול אינו מועיל&quot;, והבגד עומד בשמו הראשון. לרבי עקיבא &quot;קיפול מועיל&quot;, ורש&quot;י מפרש: מועיל לבטל אותו משם בגד.</p></li><li><h3><span class="w">גמרא</span> · ובהדלקה, במה הם חולקים?</h3><p>אבל בעניין ההדלקה, במה הם חולקים? רבי אלעזר אמר בשם רבי אושעיא, וכן אמר רב אדא בר אהבה: מדובר בבגד של שלוש על שלוש מצומצמות, ביום טוב שחל להיות בערב שבת. רש&quot;י מפרש: &quot;מצומצמות&quot; בדיוק, כי אילו היה מעט יותר, לכל הדעות מדליקים. ויום טוב, כי בו שייך איסור מוקצה.</p></li><li><h3><span class="w">גמרא</span> · שני דברים שהכול מודים בהם</h3><p>לכל הדעות סוברים כרבי יהודה, שאמר: מסיקים בכלים, ואין מסיקים בשברי כלים. רש&quot;י מסביר: שברים שנשברו ביום טוב עצמו הם &quot;נולד&quot;, ואילו כלים ראויים לטלטל, ולכן מסיקים בהם. וכולם סוברים כעולא: המדליק צריך שידליק ברוב הפתילה שיוצאת מן הנר.</p><p>&quot;נולד&quot; הוא דבר שנעשה חדש בשבת או ביום טוב. לדעת רבי יהודה אסור לטלטל אותו באותו יום.</p></li><li><h3><span class="w">גמרא</span> · שורש המחלוקת</h3><p>לרבי אליעזר הקיפול אינו מועיל. לכן מיד כשהדליק בפתילה מעט, נעשתה שבר כלי, ומה שהוא ממשיך להדליק, בשבר כלי הוא מדליק. לרבי עקיבא הקיפול מועיל, ואין עליה שם כלי, והוא מדליק בעץ בעלמא.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: למה צריך לגעת בה אחרי שנפחתה</h3><p>המדליק צריך להדליק בידיו את רוב היוצא מן הפתילה לפני שהוא מסלק את ידיו. לכן הוא מטפל בה גם אחרי שנפחתה משלוש על שלוש, ופחות משלוש אינו כלי. לרבי אליעזר זה כלי שנשבר ביום טוב, והוא מדליק בשבר כלי. ומה שאמרו &quot;מסיקים בכלים&quot;, זה רק כשאינו נוגע בו אחרי שנפחת, אלא אם כן הוסיף עליו עצים מוכנים.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: הקיפול נעשה מבעוד יום</h3><p>לרבי עקיבא, על כורחנו קיפל את הפתילה לפני יום טוב, כי אין גודלים פתילה ביום טוב. ממילא הבגד כבר בטל מלהיות כלי מבעוד יום, ואין כאן שבר כלי.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף: זו המשנה ששנינו</h3><p>רב יוסף אמר: זה מה ששנינו &quot;שלוש על שלוש מצומצמות&quot;, ולא ידעתי לאיזו הלכה. רש&quot;י מסביר: הוא שנה מרבותיו את הלשון הזו ולא ידע למה נאמרה, כי לעניין טומאה אין בה צורך, שהרי אם יש יותר, כל שכן שהבגד נטמא.</p></li><li><h3><span class="w">גמרא</span> · קושיה מרב אדא על רב אדא</h3><p>&quot;ומדקא מתרץ&quot;, ומכיוון שרב אדא בר אהבה מיישב את המשנה לפי רבי יהודה, שאוסר נולד, שמע מינה שהוא סובר כרבי יהודה. וכי כך אמר רב אדא בר אהבה? והרי רב אדא בר אהבה אמר דבר אחר. רש&quot;י מסביר שזו שאלה בפני עצמה, בתמיהה: הגמרא מעמידה את רב אדא מול רב אדא.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>רבא מברניש למד שעור בהמה טמאה נטמא באוהל המת בקל וחומר מנוצה של עזים. הברייתא של רב יוסף הועמדה על רצועות התפילין, ולכן שאלת התחש לא נפשטה, ורבי מאיר אמר שהוא בריה בפני עצמה, בעלת קרן אחת. במשנה על פתילת הבגד הגמרא העמידה את המחלוקת בבגד של שלוש על שלוש מצומצמות ביום טוב שחל בערב שבת. העמוד הבא פותח בדבריו האחרים של רב אדא בר אהבה, על נכרי שחקק קב בבקעת עץ.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-29a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "אתיא בק\"ו מנוצה של עזים שאין מטמא בנגעים מטמא באהל המת עור בהמה טמאה שמטמאה בנגעים אינו דין שמטמאה באהל המת", false, ""], ["G2a", "ואלא הא דתני רב יוסף לא הוכשרו במלאכת שמים אלא עור בהמה טהורה בלבד למאי הלכתא", false, ""], ["G2b", "לתפילין תפילין בהדיא כתיב בהו (שמות יג, ט) למען תהיה תורת ה' בפיך מן המותר בפיך", false, ""], ["G3", "אלא לעורן והאמר אביי שי\"ן של תפילין הל\"מ", false, ""], ["G4", "אלא לכורכן בשערן ולתופרן בגידן הא נמי הל\"מ הוא דתניא תפילין מרובעות הל\"מ נכרכו' בשערן ונתפרות בגידן", false, ""], ["G5", "אלא לרצועו' והא\"ר יצחק רצועות שחורות הל\"מ נהי דגמירי שחורות טהורות מי גמירי", false, ""], ["G6", "מאי הוי עלה דתחש שהיה בימי משה א\"ר אלעא אמר רשב\"ל אומר היה ר\"מ תחש שהיה בימי משה בריה בפני עצמה היה ולא הכריעו בה חכמים אם מין חיה הוא אם מין בהמה הוא וקרן אחת היתה לו במצחו ולפי שעה נזדמן לו למשה ועשה ממנו משכן ונגנז", true, ""], ["G7a", "מדקאמר קרן אחת היתה לו במצחו ש\"מ טהור היה דא\"ר יהודה שור שהקריב אדם הראשון קרן אחת היתה לו במצחו שנאמר (תהלים סט, לב) ותיטב לה' משור פר מקרין מפריס מקרין תרתי משמע אמר ר\"נ בר יצחק מקרן כתיב", false, ""], ["G7b", "וליפשוט מיניה דמין בהמה הוא כיון דאיכא קרש דמין חיה הוא ולית ליה אלא חדא קרן איכא למימר מין חיה הוא:", false, ""], ["G8", "פתילת הבגד שקיפלה ולא הבהבה ר\"א אומר טמאה היא ואין מדליקין בה רע\"א טהורה היא ומדליקין בה:", false, "מתני׳"], ["G9", "בשלמא לענין טומאה בהא פליגי דר\"א סבר קיפול אינו מועיל ובמילתיה קמייתא קיימא ור\"ע סבר קיפול מועיל ובטולי בטיל", false, "גמ׳"], ["G10a", "אלא לענין הדלק' במאי פליגי א\"ר אלעזר א\"ר אושעיא וכן א\"ר אדא בר אהבה הכא בג' על ג' מצומצמות עסקינן ובי\"ט שחל להיות ע\"ש עסקינן", false, ""], ["G10b", "דכ\"ע אית להו דר' יהודה דאמר מסיקין בכלים ואין מסיקין בשברי כלים ודכ\"ע אית להו דעולא דאמר עולא המדליק צריך שידליק ברוב היוצא", false, ""], ["G10c", "ר\"א סבר קיפול אינו מועיל וכיון דאדליק ביה פורתא הויא ליה שבר כלי וכי קא מדליק בשבר כלי קמדליק ור\"ע סבר קיפול מועיל ואין תורת כלי עליו וכי קמדליק בעץ בעלמא קמדליק.", false, ""], ["G11", "אמר רב יוסף היינו דתנינא ג' על ג' מצומצמות ולא ידענא למאי הלכתא", false, ""], ["G12", "ומדקא מתרץ רב אדא בר אהבה אליבא דר' יהודה ש\"מ כר\"י ס\"ל ומי א\"ר אדא בר אהבה הכי והא\"ר אדא בר אהבה", false, ""]], "R": [["R1", "שאינה מטמאה בנגעים", "דהא צמר ופשתים כתיב:", false], ["R2", "מטמא באהל המת", "אם עשאו אהל דהא ממשכן גמר ליה ועיקר אהל דכתיב במשכן ביריעות עזים כתיב הא דכתיב בספרים כל מעשה עזים ל\"ג ליה דמהכא לא נפקא לן אהל דבכלים הוא דכתיב וכדאמר בעלמא להביא דבר הבא מן העזים מן הקרנים ומן הטלפים:", false], ["R3", "אלא הא דתני רב יוסף כו'", "כיון דרבינן עור בהמה טמאה לאהל המת הא דתני רב יוסף למאי הלכתא מאי דהוה הוה אי לאו למילף מיניה לטומאה:", false], ["R4", "לתפילין", "איתמר דהיא נמי מלאכת שמים:", false], ["R5", "לעורן", "עור דפוס שלהן שהכתבים של פרשיות מונחים בו דהאי לא מלמען תהיה נפקא דהא לאו תורה כתיבא ביה:", false], ["R6", "שי\"ן של תפילין", "שיהא העור נקמט מבחוץ ג' קמטין ודומה לשי\"ן והרצועה נקשרת כמין דלית ויש רצועה כפופה כמין י' דהיינו שדי וכיון דאות השם נכתב בקמטין שלו מותר בפיך בעינן ומקרא נפיק:", false], ["R7", "אלא לנכרכות בשערן", "תניא לההיא דרב יוסף שצריך לקשור איגרות הפרשיות בשער עור בהמה טהורה ולתופרן בגיד בהמה טהורה:", false], ["R8", "בשערן", "בשער מן הקלף כלומר בשל טהורה:", false], ["R9", "לרצועותיהן", "שיהיו מעור בהמה טהורה:", false], ["R10", "הל\"מ", "וכיון דהלכתא רצועות מסיני טהורות נמי הל\"מ ומתניתא דרב יוסף לאו הל\"מ קאמר:", false], ["R11", "מאי הוי עלה דתחש", "הואיל ולרב יוסף לאו לענין מלאכה דמשכן איתמר לא איפשיט בעיין:", false], ["R12", "מקרין תרתי משמע", "דסתם מקרין כל קרניו:", false], ["R13", "מתני' שקיפלה", "כמו שגודלין פתילות:", false], ["R14", "הבהבה", "על השלהבת כדי שתהא מחורכת ותדליק יפה:", false], ["R15", "טמאה היא", "דבגד כלי הוא ומקבל טומאה אם היה שלש על שלש דקפול אין מבטלה מתורת בגד הואיל ולא הבהבה:", false], ["R16", "ואין מדליקין בה", "כדמפרש טעמא בגמ':", false], ["R17", "גמ' קפול מועיל", "לבטולה מתורת בגד:", false], ["R18", "מצומצמות", "דאי הוה טפי פורתא לכולי עלמא מדליקין:", false], ["R19", "ובי\"ט שחל להיות בע\"ש", "דשייך ביה איסור מוקצה עסקינן:", false], ["R20", "ואין מסיקין בשברי כלים", "שנשברו בו ביום דהוו להו נולד אבל בכלים מסיקין דהא חזו לטלטלן:", false], ["R21", "ודכולי עלמא אית להו", "צריך המדליק להדליק בידים קודם סילוק ידיו רוב היוצא מן הפתילה חוץ לנר הלכך על כרחך צריך לעסוק בו לאחר שנפחת משלש הלכך טעמא דר\"א דאסר קסבר קיפול אינו מועיל והוה ליה כלי שנשבר ביו\"ט וכי קמדליק ביה פורתא כיון דמצומצמות היו הוו שברי כלי דפחות משלש לאו כלי הוא והוה ליה כלי שנשבר בי\"ט וכי קמדליק בידים להשלים רוב היוצא בשבר כלי קמדליק והא דאמרינן מסיקין בכלים דוקא שלא יגע בו אחר שנפחת אלא אם כן ריבה עליו עצים מוכנים כדלקמן (שבת דף כט.):", false], ["R22", "קיפול מועיל", "ועל כרחך מעי\"ט קיפלה דאין גודלין פתילה בי\"ט כדתניא בהמביא (ביצה לב:) וכבר נתבטל הכלי מבע\"י ואין כאן שבר כלי:", false], ["R23", "היינו דתנינא", "שהייתי שונה מרבותי משנה ג' על ג' מצומצמות ולא הוה ידענא למאי הלכתא איתמר דאי לענין טמויי כל שכן דאי איכא טפי דמטמא:", false], ["R24", "ומדקא מתרץ כו'", "מילתא באפי נפשיה היא בתמיה למירמי דרב אדא אדרב אדא מדקא מתרץ למתניתין ואוקי דכולי עלמא אית להו אין מסיקין בשברים דהיינו אליבא דר\"י דאית ליה נולד ש\"מ כו':", false]], "T": [["T1a", "אתיא בק\"ו מנוצה של עזים", "וא\"ת נימא שתי וערב יוכיח שמטמא בנגעים ואינו מטמא במת אף אני אביא עור בהמה טמאה כו' ועוד קשה אמאי איצטריך קרא בשרצים לעור בהמה טמאה ליתי בק\"ו מנוצה של עזים שאין מיטמא בנגעים מיטמא בשרצים", false], ["T1b", "", "וי\"ל דאי לא הוה כתיב קרא בשרצים ליכא למילף עור בהמה טמאה בק\"ו מנגעים לא בשרצים ולא באהל המת דאיכא למימר שתי וערב יוכיח אבל השתא דכתיב טומאה בשרצים ילפינן שפיר בק\"ו מנגעים שיטמא באהל המת וליכא למימר שתי וערב יוכיח דמה לשתי וערב שכן אינו מטמא בשרצי' תאמר בעור בהמה טמאה שמטמא בשרצים הכי נמי יטמא באהל המת:", false], ["T2a", "", "ור\"י אומר דליכא למימר שתי וערב יוכיח דהכי עביד ק\"ו ומה נוצה של עזים שאין מטמא בנגעים מטמא באהל המת ככלי העשוי מנוצה של עזים עור בהמה טמאה שטמא בנגעים אינו דין שיטמא באהל המת ככליו דהשתא לא שייך למימר שתי וערב יוכיח שמטמא בנגעים ולא באהל המת דשתי וערב אין שייך בו כלי ואין לומר דכל היוצא מן העץ ועצם יוכיח שמטמא בנגעים ואינו מטמא במת דמה שמטמא בנגעים אינו מחמת עצמו אלא מחמת הבית דהא בית שסיככו בזרעים אמר בהעור והרוטב דמטמא בנגעים אבל נוצה והעור מטמא מחמת עצמו.", false], ["T2b", "", "ומהר\"ם כתב דליכא למימר שתי וערב יוכיח דמה לשתי וערב שכן אין מטמאין לא במת ולא בש\"ז תאמר בעור בהמה טמאה דמטמא דהא כתיב במת ובש\"ז כל בגד וכל כלי עור. ולעיל כי פריך מה לשרצים ליכא למימר נגיעת מת וש\"ז יוכיח דמה לכולהו שכן פחות מכזית דנגיעת מת בכשעורה וש\"ז במשהו או בחתימת פי האמה (והוא תי' דאיצטריך קרא בשרצים לאפוקי מהיקש דשק)", false], ["T2c", "", "וזה אין נראה דע\"כ דגם לענין אהל הוי שיעורו בכזית להביא טומאה על כל הכלים ועל עצמן אפי' יוצא מן העץ דזהו תלוש קיי\"ל דמביא ונ\"ל דלא שייך כלל למימר אהל תלוש יוכיח כיון דלא אתינא למילף אלא לענין אהל המחובר דלא מטמא אלא מאי דילפי' ממשכן וכי האי גוונא איכא בפ\"ק דמנחות גבי טריפה שהיתה לה שעת הכושר דלא ילפינן מטריפה שלא היתה לה שעת הכושר אפ' במה הצד [ת\"י]:", false], ["T3a", "", "והקשה השר מקוצי מאי בעי בסמוך מאי הוי עלה דתחש תיפוק ליה דטהור היה מדאיצטריך קרא בשרצי' לטמא עור בהמה טמאה דאי טמא היה לשתוק קרא בשרצים ותיתי בק\"ו מנגעים דהשתא ליכא למימר שתי וערב יוכיח דמה לשתי וערב שכן אין מטמאין באהל המת תאמר בעור בהמה טמאה דמיטמא באהל המת כיון דתחש טמא היה", false], ["T3b", "", "וי\"ל דמהכא ליכא למיפשט דטהור היה דאפילו טמא היה כתיב בשרצים דמילתא דאתיא בק\"ו טרח וכתב לה קרא ועוד אומר רש\"י דשרצים לא אתו מק\"ו מנגעים דאיכא למיפרך פשוטי כלי עור יוכיח דמטמא בנגעים ולא בשרצים:", false], ["T4", "למאי הלכתא", "לא בעי למימר לאשמעינן דתחש טהור היה דמשמע דאתא לאשמעינן שום צורך הוראה:", false], ["T5a", "תפילין בהדיא כתיב בהו למען תהיה וגו'", "תימה לר\"י וכי אין לברייתא לשנות מה שדורש מן הפסוק וכל הנך דמייתי בסמוך וכי לית ליה לרב יוסף לשנות הברייתא לפי שזה אמרו אמורא אחד או ברייתא ואומר רבינו יצחק דהכי פריך תפילין בהדיא כתיב בהו ואי הא הוה אתי לאשמעי' הוה ליה לאתויי קרא אע\"כ מילתא אחריתי אתא לאשמעי' ודרשה דמן המותר בפיך היתה פשוטה ולא איצטריך לאשמעי'", false], ["T5b", "", "וקאמר אלא לעורן והאמר אביי שין של תפילין כו' ובזה הלשון הוה ליה לרב יוסף למימר והוה ידעינן שפיר דבעי עור בהמה טהורה דדרשה דמן המותר בפיך היא פשוטה אלא לכורכן בשערן צריך בהמה טהורה הא נמי הל\"מ דתניא כו' מדלא קתני רב יוסף בהאי לישנא ונכרכות בשערן ש\"מ דמילתא אחריתא אתא לאשמעינן אלא לרצועותיהן והא\"ר יצחק רצועות שחורות הל\"מ וכיון דמצריך שיהו הרצועות שחורות כמו הקציצה כל שכן דבעינן שיהו טהורות כמו הקציצה דסברא הוא להקפיד על הטהרה מעל השחרות ואי הא אתא רב יוסף לאשמעי' לישמעינן שיהיו שחורות דהוה שמעינן מינה תרתי שחורות וטהורות ומשני נהי דגמירי שחורות טהורות מי גמירי דמשחורות ליכא למיגמר טהורות:", false], ["T6", "לא צריכא אלא לכורכן בשערן", "קשה לרשב\"א אי הא אתא לאשמעי' אמאי נקט עור במילתיה:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "המשך: תשובתו של רבא מברניש", "x": "העמוד הקודם נגמר בפירכה של רבא מברניש על הצד השווה של נגעים ושרצים, ובמילים \"אלא אמר רבא מברניש\". כאן באה תשובתו. אחר כך הגמרא חוזרת לברייתא של רב יוסף ולשאלה מה היה התחש, ובהמשך באה משנה חדשה, על פתילה שעשו מבגד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1", "R2"], "t": "קל וחומר מנוצה של עזים", "x": "\"אתיא בקל וחומר\": נוצה של עזים, שאינה נטמאת בנגעים, נטמאת באוהל המת. עור בהמה טמאה, שנטמא בנגעים, אינו דין שייטמא באוהל המת? רש\"י מסביר שהנוצה אינה נטמאת בנגעים, כי שם כתוב \"צמר ופשתים\". והיא נטמאת באוהל המת אם עשו ממנה אוהל, כי הדין נלמד מן המשכן, ושם האוהל העיקרי הוא יריעות העזים.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G1", "R2"], "t": "רש\"י: גרסה שאינו גורס", "x": "רש\"י כותב שבספרים כתוב כאן \"כל מעשה עזים\", והוא אינו גורס כך. מן הפסוק הזה אין לומדים אוהל, כי הוא נאמר בכלים, ומרבים בו דברים הבאים מן העזים, מן הקרניים ומן הטלפיים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1a"], "t": "התוספות: והרי שתי וערב יוכיחו?", "x": "התוספות שואלים שתי שאלות. א': נאמר \"שתי וערב יוכיח\": הם נטמאים בנגעים ואינם נטמאים במת, ואז הקל וחומר נופל. ב': למה צריך פסוק בשרצים לעור בהמה טמאה? אפשר היה ללמוד באותו קל וחומר מן הנוצה: בנגעים אינה נטמאת, ובשרצים היא נטמאת, ועור בהמה טמאה, שנטמא בנגעים, ודאי נטמא בשרצים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1b"], "t": "התוספות: הפסוק בשרצים מבטל את הפירכה", "x": "התשובה: אילו לא היה כתוב פסוק בשרצים, לא היינו לומדים עור בהמה טמאה בקל וחומר מנגעים, לא לשרצים ולא לאוהל המת, כי שתי וערב יוכיחו. אבל עכשיו שהטומאה בשרצים כתובה, הקל וחומר לאוהל המת עומד. שתי וערב אינם נטמאים בשרצים, ועור בהמה טמאה נטמא בשרצים, ולכן ייטמא גם באוהל המת.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T2a"], "t": "התוספות: רבנו יצחק, קל וחומר בכלים", "x": "רבנו יצחק אומר שאין לומר שתי וערב יוכיח, כי הקל וחומר בנוי על כלים: נוצה של עזים נטמאת באוהל המת ככלי העשוי ממנה, וכך עור בהמה טמאה ככליו. ובשתי וערב אין שם כלי. וגם אין לומר שכל היוצא מן העץ ועצם יוכיחו, שנטמאים בנגעים ואינם נטמאים במת. כי בנגעים הם אינם נטמאים מחמת עצמם אלא מחמת הבית, כמו שנאמר בפרק \"העור והרוטב\" על בית שסיככו אותו בזרעים, שנטמא בנגעים. ואילו הנוצה והעור נטמאים מחמת עצמם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T2b"], "t": "התוספות: דרכו של המהר\"ם", "x": "מהר\"ם, מורנו הרב רבי מאיר, כתב דרך אחרת: שתי וערב אינם נטמאים לא במת ולא בשכבת זרע, ואילו עור בהמה טמאה נטמא בשניהם, שכתוב בהם \"כל בגד וכל כלי עור\". ועל הפירכה שבעמוד הקודם, \"מה לשרצים\", אין להשיב שנגיעת מת ושכבת זרע יוכיחו, כי כולם מטמאים בפחות מכזית: נגיעת מת בכשעורה, ושכבת זרע במשהו או בחתימת פי האמה. ועל השאלה השנייה, למה צריך פסוק בשרצים, הוא מתרץ: כדי להוציא מן ההיקש לשק, שממנו היינו ממעטים עור בהמה טמאה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T2c"], "t": "התוספות: הדרך הזו נדחית", "x": "\"וזה אין נראה\": על דברי מהר\"ם, ש\"כולם מטמאים בפחות מכזית\", מקשים שגם בטומאת אוהל השיעור הוא כזית: אוהל תלוש מביא טומאה על כל הכלים, והכלים המאהילים נטמאים בעצמם, אפילו כשהם מן היוצא מן העץ. והכותב מיישב: אין מקום לומר \"אוהל תלוש יוכיח\", כי כאן באים ללמוד רק על אוהל מחובר, שנטמא רק במה שלומדים מן המשכן. וכעין זה במסכת מנחות: אין לומדים טריפה שהייתה לה שעת הכושר מטריפה שלא הייתה לה שעת הכושר, אפילו ב\"מה הצד\". בסוף הקטע רשום \"ת\"י\", תוספות ישנים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T3a"], "t": "התוספות: שאלת השר מקוצי", "x": "השר מקוצי הקשה: למה הגמרא שואלת בהמשך מה היה התחש? מן הצורך בפסוק מיוחד בשרצים אפשר להוכיח שהתחש היה טהור. אילו התחש היה טמא, עור בהמה טמאה היה נטמא באוהל המת, ואז אפשר היה ללמוד לשרצים בקל וחומר מנגעים, ושתי וערב לא היו מוכיחים, כי אינם נטמאים באוהל המת.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T3b"], "t": "התוספות: שתי תשובות", "x": "א': אין לפשוט מכאן, כי גם אילו היה התחש טמא, יש דברים שאפשר ללמוד בקל וחומר והתורה טורחת וכותבת אותם. ב': רש\"י אומר ששרצים אינם נלמדים בקל וחומר מנגעים, כי \"פשוטי כלי עור\" יוכיחו: הם נטמאים בנגעים ואינם נטמאים בשרצים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a", "R3", "T4"], "t": "ולמה הברייתא של רב יוסף?", "x": "\"ואלא\", אם כך, הברייתא שהביא רב יוסף, שלא הוכשרו למלאכת שמים אלא עור בהמה טהורה, \"למאי הלכתא\", לאיזו הלכה היא נצרכת? רש\"י מסביר: מאחר שריבינו עור בהמה טמאה לאוהל המת, אין לומדים מן הברייתא דבר לעניין טומאה, ומה שהיה במשכן כבר היה. והתוספות מוסיפים שהגמרא אינה רוצה לומר שהברייתא באה ללמד שהתחש היה טהור, כי \"למאי הלכתא\" מחפש הלכה שיש בה צורך הוראה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2b", "R4"], "t": "לתפילין? הרי זה כתוב", "x": "אולי לתפילין, שגם הן מלאכת שמים, כך מפרש רש\"י. אבל בתפילין כתוב במפורש \"למען תהיה תורת ה' בפיך\", ומכאן \"מן המותר בפיך\": רק ממה שמותר לאכול.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2b", "T5a"], "t": "התוספות: וכי ברייתא אינה שונה דבר שנלמד מפסוק?", "x": "רבנו יצחק תמה: וכי ברייתא אינה שונה מה שדורשים מפסוק? וכי רב יוסף לא ישנה ברייתא רק משום שאמורא אחר או ברייתא אחרת אמרו את הדבר? הוא מפרש את הקושיה כך: אילו זה בא ללמד, הברייתא הייתה מביאה את הפסוק. על כורחנו היא באה ללמד דבר אחר, כי הדרשה \"מן המותר בפיך\" פשוטה ואין צורך ללמד אותה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R5"], "t": "לעור של הבתים?", "x": "\"אלא לעורן\", אולי הברייתא באה ללמד על העור של התפילין. רש\"י מפרש: עור הבית שבו מונחות הפרשיות. עליו אין כתוב דבר תורה, ולכן הוא אינו נלמד מן הפסוק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R6"], "t": "והרי השי\"ן הלכה למשה מסיני", "x": "הגמרא דוחה: הרי אביי אמר שהשי\"ן של התפילין הלכה למשה מסיני. רש\"י מסביר: העור מקומט מבחוץ בשלושה קמטים כצורת שי\"ן, ואות של שם הקדוש ברוך הוא כתובה בקמטים. לכן גם העור צריך להיות \"מן המותר בפיך\", והוא נלמד מן הפסוק.", "a": "רש\"י מוסיף שהרצועה נקשרת כצורת דל\"ת, ויש רצועה כפופה כצורת יו\"ד, ויחד עם השי\"ן הן השם שדי."}, {"w": "גמרא", "cols": false, "hl": ["G4", "R7", "R8"], "t": "לכריכה בשער ולתפירה בגיד?", "x": "\"אלא לכורכן בשערן ולתופרן בגידן\": אולי הברייתא באה ללמד שכורכים את הפרשיות בשער, ותופרים אותן בגיד, של בהמה טהורה. רש\"י מפרש \"בשערן\": בשער מן הקלף, כלומר של בהמה טהורה. הגמרא דוחה: גם זו הלכה למשה מסיני, כמו ששנינו: תפילין מרובעות, הלכה למשה מסיני, נכרכות בשערן ונתפרות בגידן.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4", "T6"], "t": "התוספות: ולמה הזכיר עור?", "x": "רבנו שמשון בן אברהם מקשה: אם הברייתא באה ללמד רק על הכריכה בשער, למה רב יוסף הזכיר בה \"עור\"? התוספות אינם מביאים כאן תשובה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R9", "R10"], "t": "לרצועות", "x": "\"אלא לרצועות\": אולי הברייתא מלמדת שהרצועות יהיו מעור בהמה טהורה. והרי רבי יצחק אמר: רצועות שחורות, הלכה למשה מסיני. הגמרא עונה: \"נהי דגמירי שחורות, טהורות מי גמירי\", נניח שקיבלו בהלכה שיהיו שחורות, וכי קיבלו שיהיו טהורות? לזה נצרכת הברייתא של רב יוסף.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5", "R10"], "t": "רש\"י: הצד של הקושיה", "x": "רש\"י מסביר את הקושיה: מאחר שדין הרצועות הלכה מסיני, גם זה שיהיו מעור טהור הוא הלכה למשה מסיני, ואילו הברייתא של רב יוסף אינה שונה הלכה למשה מסיני. אם כן לא לזה היא באה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3", "G4", "G5", "T5b"], "t": "התוספות: כך בכל הקושיות", "x": "לפי רבנו יצחק כל הקושיות בנויות כך. אילו באה הברייתא ללמד על העור, הייתה אומרת זאת בלשון של השי\"ן. אילו באה ללמד על השער, הייתה שונה \"ונכרכות בשערן\". ואילו באה ללמד על הרצועות, הייתה אומרת שיהיו שחורות, ומזה היינו לומדים גם טהורות, כי מסתבר להקפיד על הטהרה יותר מעל השחרות. והתשובה היא שמשחורות אין ללמוד טהורות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R11"], "t": "מה היה התחש", "x": "\"מאי הוי עלה\", מה עלה בעניין התחש? רש\"י מסביר: לפי התשובה האחרונה, הברייתא של רב יוסף לא נאמרה על מלאכת המשכן, ולכן השאלה לא נפשטה. רבי אלעא אמר בשם ריש לקיש: רבי מאיר היה אומר, התחש בריה בפני עצמה היה, וחכמים לא הכריעו אם הוא מין חיה או מין בהמה. קרן אחת הייתה לו במצחו, ולפי שעה נזדמן למשה, ועשה ממנו את המשכן, ונגנז.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7a", "R12"], "t": "קרן אחת: מכאן שהיה טהור", "x": "מכך שאמר \"קרן אחת הייתה לו במצחו\", שמע מינה שהיה טהור. כי רבי יהודה אמר: השור שהקריב אדם הראשון קרן אחת הייתה לו במצחו, שנאמר \"ותיטב לה' משור פר מקרין מפריס\". הגמרא מקשה: \"מקרין\" משמע שתיים, ורש\"י מסביר שסתם \"מקרין\" פירושו כל קרניו. רב נחמן בר יצחק עונה: \"מקרן\" כתוב, בלי יו\"ד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7b"], "t": "ואולי מין בהמה?", "x": "\"וליפשוט מיניה\", ונפשוט מכאן שהתחש מין בהמה, כמו השור? הגמרא עונה: יש \"קרש\", שהוא מין חיה ויש לו רק קרן אחת. לכן אפשר לומר שהתחש מין חיה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G8", "R13", "R14"], "t": "משנה: פתילה מבגד שקיפלה", "x": "משנה חדשה בפרק. פתילה שעשו מבגד, שקיפלו אותה ולא הבהבו אותה: רבי אליעזר אומר טמאה היא ואין מדליקין בה, ורבי עקיבא אומר טהורה היא ומדליקין בה. רש\"י מפרש: \"קיפלה\" כמו שגודלים פתילות, ו\"הבהבה\" פירושו שקירבו אותה לשלהבת כדי שתהיה חרוכה ותדליק יפה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G8", "R15", "R16"], "t": "רש\"י: למה טמאה", "x": "בגד הוא כלי, ומקבל טומאה אם יש בו שלוש על שלוש. לדעת רבי אליעזר הקיפול אינו מבטל ממנו את שם הבגד, כי לא הבהבו אותו. ולמה אין מדליקים בה, הגמרא מפרשת בהמשך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R17"], "t": "בטומאה: האם הקיפול מועיל", "x": "\"בשלמא\", מובן הדבר בעניין הטומאה. לרבי אליעזר \"קיפול אינו מועיל\", והבגד עומד בשמו הראשון. לרבי עקיבא \"קיפול מועיל\", ורש\"י מפרש: מועיל לבטל אותו משם בגד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10a", "R18", "R19"], "t": "ובהדלקה, במה הם חולקים?", "x": "אבל בעניין ההדלקה, במה הם חולקים? רבי אלעזר אמר בשם רבי אושעיא, וכן אמר רב אדא בר אהבה: מדובר בבגד של שלוש על שלוש מצומצמות, ביום טוב שחל להיות בערב שבת. רש\"י מפרש: \"מצומצמות\" בדיוק, כי אילו היה מעט יותר, לכל הדעות מדליקים. ויום טוב, כי בו שייך איסור מוקצה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10b", "R20"], "t": "שני דברים שהכול מודים בהם", "x": "לכל הדעות סוברים כרבי יהודה, שאמר: מסיקים בכלים, ואין מסיקים בשברי כלים. רש\"י מסביר: שברים שנשברו ביום טוב עצמו הם \"נולד\", ואילו כלים ראויים לטלטל, ולכן מסיקים בהם. וכולם סוברים כעולא: המדליק צריך שידליק ברוב הפתילה שיוצאת מן הנר.", "a": "\"נולד\" הוא דבר שנעשה חדש בשבת או ביום טוב. לדעת רבי יהודה אסור לטלטל אותו באותו יום."}, {"w": "גמרא", "cols": false, "hl": ["G10c"], "t": "שורש המחלוקת", "x": "לרבי אליעזר הקיפול אינו מועיל. לכן מיד כשהדליק בפתילה מעט, נעשתה שבר כלי, ומה שהוא ממשיך להדליק, בשבר כלי הוא מדליק. לרבי עקיבא הקיפול מועיל, ואין עליה שם כלי, והוא מדליק בעץ בעלמא.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G10c", "R21"], "t": "רש\"י: למה צריך לגעת בה אחרי שנפחתה", "x": "המדליק צריך להדליק בידיו את רוב היוצא מן הפתילה לפני שהוא מסלק את ידיו. לכן הוא מטפל בה גם אחרי שנפחתה משלוש על שלוש, ופחות משלוש אינו כלי. לרבי אליעזר זה כלי שנשבר ביום טוב, והוא מדליק בשבר כלי. ומה שאמרו \"מסיקים בכלים\", זה רק כשאינו נוגע בו אחרי שנפחת, אלא אם כן הוסיף עליו עצים מוכנים.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G10c", "R22"], "t": "רש\"י: הקיפול נעשה מבעוד יום", "x": "לרבי עקיבא, על כורחנו קיפל את הפתילה לפני יום טוב, כי אין גודלים פתילה ביום טוב. ממילא הבגד כבר בטל מלהיות כלי מבעוד יום, ואין כאן שבר כלי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R23"], "t": "רב יוסף: זו המשנה ששנינו", "x": "רב יוסף אמר: זה מה ששנינו \"שלוש על שלוש מצומצמות\", ולא ידעתי לאיזו הלכה. רש\"י מסביר: הוא שנה מרבותיו את הלשון הזו ולא ידע למה נאמרה, כי לעניין טומאה אין בה צורך, שהרי אם יש יותר, כל שכן שהבגד נטמא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R24"], "t": "קושיה מרב אדא על רב אדא", "x": "\"ומדקא מתרץ\", ומכיוון שרב אדא בר אהבה מיישב את המשנה לפי רבי יהודה, שאוסר נולד, שמע מינה שהוא סובר כרבי יהודה. וכי כך אמר רב אדא בר אהבה? והרי רב אדא בר אהבה אמר דבר אחר. רש\"י מסביר שזו שאלה בפני עצמה, בתמיהה: הגמרא מעמידה את רב אדא מול רב אדא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "רבא מברניש למד שעור בהמה טמאה נטמא באוהל המת בקל וחומר מנוצה של עזים. הברייתא של רב יוסף הועמדה על רצועות התפילין, ולכן שאלת התחש לא נפשטה, ורבי מאיר אמר שהוא בריה בפני עצמה, בעלת קרן אחת. במשנה על פתילת הבגד הגמרא העמידה את המחלוקת בבגד של שלוש על שלוש מצומצמות ביום טוב שחל בערב שבת. העמוד הבא פותח בדבריו האחרים של רב אדא בר אהבה, על נכרי שחקק קב בבקעת עץ.", "a": ""}], "audio": "shabbat/daf-28b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

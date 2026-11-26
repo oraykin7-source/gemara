@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף ס&quot;ח עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-68a.html">
+<meta name="description" content="מסכת שבת, דף ס&quot;ח עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ס\"ח עמוד א'", "url": "https://gemara.co.il/shabbat-68a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף ס&quot;ח עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>כלל גדול</span><span>פרק שביעי</span><span>שבת<b>סח.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-67b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-68b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 133</div>
+  <h1>מסכת שבת, דף ס&quot;ח עמוד א&#x27;</h1>
+  <p class="sub">פרק שביעי, &quot;כלל גדול&quot;.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ס&quot;ח עמוד א&#x27;, לומדים: למה המשנה אומרת "כלל גדול"; עונש חמור יותר: שבת, שביעית ומעשר; לבר קפרא: מעשר חמור מפאה; רב ושמואל: על מי מדברת המשנה.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 4 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. למה המשנה אומרת "כלל גדול"</a><a href="#u2">2. עונש חמור יותר: שבת, שביעית ומעשר</a><a href="#u3">3. לבר קפרא: מעשר חמור מפאה</a><a href="#u4">4. רב ושמואל: על מי מדברת המשנה</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>למה המשנה אומרת "כלל גדול"</h2>
+  <p class="lead">המשנה נגמרת בדין מי שעשה כמה מלאכות מאותו סוג. הגמרא שואלת למה המשנה פותחת במילים "כלל גדול", ובודקת הסבר ראשון: אבות ותולדות.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אב מלאכה ומלאכה</td><td>(חייב) על כל אב מלאכה ומלאכה.</td></tr>
+      <tr><td>העושה מלאכות הרבה מעין מלאכה אחת</td><td>העושה מלאכות הרבה מסוג של מלאכה אחת</td></tr>
+      <tr><td>אינו חייב אלא חטאת אחת</td><td>אינו חייב אלא חטאת אחת.</td></tr>
+      <tr><td>מ"ט תנא כלל גדול</td><td>מה הטעם ששנה "כלל גדול"?</td></tr>
+      <tr><td>אילימא משום דקבעי למיתני עוד כלל אחר</td><td>אם תאמר: מפני שהוא רוצה לשנות עוד כלל אחר,</td></tr>
+      <tr><td>והא גבי מעשר דקתני כלל אחר</td><td>והרי במעשר, ששנה כלל אחר,</td></tr>
+      <tr><td>ולא תני כלל גדול</td><td>ולא שנה "כלל גדול".</td></tr>
+      <tr><td>שבת ושביעית דאית בהו אבות ותולדות</td><td>שבת ושביעית, שיש בהן אבות ותולדות,</td></tr>
+      <tr><td>מעשר דלית בה אבות ותולדות</td><td>מעשר, שאין בו אבות ותולדות,</td></tr>
+      <tr><td>לא תנא כלל גדול</td><td>לא שנה "כלל גדול".</td></tr>
+      <tr><td>מאי אבות ומאי תולדות איכא</td><td>אילו אבות ואילו תולדות יש (במעשר)?</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>סוף המשנה:</b> מי שיודע שהיום שבת חייב חטאת על כל אב מלאכה. אבל מי שעשה כמה מלאכות "מעין מלאכה אחת" חייב רק אחת.</p>
+  <p><b>השאלה:</b> למה נאמר "כלל גדול"? אי אפשר לומר שזה מפני שיש בהמשך עוד כלל, כמו בשביעית, כי במעשר יש עוד כלל ובכל זאת לא נאמר "גדול".</p>
+  <p><b>הסבר ראשון:</b> רבי יוסי בר אבין אומר ש"גדול" נאמר במקום שיש בו אבות ותולדות, כמו שבת ושביעית, ולא במעשר. אבל בר קפרא שונה "כלל גדול" גם במעשר, ושם אין אבות ותולדות. לכן הגמרא מחפשת טעם אחר.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>אב מלאכה דנקט לאו למעוטי תולדות דה"ה לתולדות ובלבד שיהו תולדות דשני אבות אלא למעוטי היכא דהוו ב' תולדות דאב אחד או אב ותולדה שלו דאינו חייב אלא אחת כדקתני סיפא העושה מלאכות הרבה מעין מלאכה אחת שתי תולדות של אב אחד אינו חייב אלא חטאת אחת דהרי הוא כעושה וחוזר ועושה בהעלם אחד ואין חילוק חטאות בהעלם אחד אלא בגופי עבירה שאינן דומין או בחילוק שבתות לענין שגגת שבת:</blockquote><p><span class="say">מה רש"י אומר:</span> המילה "אב" באה להוציא שתי תולדות של אב אחד, או אב ותולדה שלו. אבל תולדות של שני אבות מחייבות שתיים. בהעלם אחד החטאות מתחלקות רק לפי עבירות שונות, או לפי שבתות.</p></div>
+  <div data-hl="R2" class="voice r"><span class="tag">רש"י</span><blockquote>גמ' עוד כלל אחר – לקמן בפירקין (שבת דף עה:) ולא כלל בו אלא ב' דברים כל הכשר להצניע וכל שאינו כשר להצניע וכאן כלל יותר ומשום הכי קרי להו גדול:</blockquote><p><span class="say">מה רש"י אומר:</span> הכלל האחר בפרק כולל רק שני דברים, ולכן הכלל שבראש הפרק, שכולל יותר, נקרא גדול.</p></div>
+  <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>אית ביה אבות – ארבעים חסר אחת שהוצרכו למשכן ותולדות הדומות לכל אחת הויא תולדות דידיה אבות דשביעית זריעה וקצירה וזמירה ובצירה דכתיבן תולדות שאר עבודות שבשדה וכרם כדאמרינן במועד קטן בפ"ק (דף ג.):</blockquote><p><span class="say">מה רש"י אומר:</span> אבות השבת הן המלאכות שהיו נחוצות למשכן. אבות השביעית הם זריעה, קצירה, זמירה ובצירה, ותולדותיהם שאר עבודות השדה והכרם.</p></div>
+  <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>וגבי שביעית נמי כו' – הכי תנן בשביעית (כ"ז מ"א) כלל גדול אמרו כל שהוא מאכל אדם ומאכל בהמה וממין הצובעין ואינו מתקיים בארץ פירוש שכלה לחיה יש לו שביעית ולדמיו שביעית יש לו ביעור ולדמיו ביעור ועוד כלל אחר אמרו דקתני כל שאינו מאכל אדם ומאכל בהמה וכו' ומתקיים בארץ יש לו שביעית ולדמיו שביעית ואין לו ולדמיו ביעור דכלל הראשון גדול דיש לו ביעור ואחרון אין לו ביעור ואע"ג דקתני התם בבבא …</blockquote><p><span class="say">מה התוספות אומרים:</span> במשנה בשביעית יש שני כללים. הראשון נקרא גדול כי יש בו ביעור, ובשני אין ביעור.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מתי שייך לומר "אבות ותולדות"</h3>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>דאית ביה אבות ותולדות – ואפילו לרבא דאמר במועד קטן (דף ב:) גבי שביעית אבות אסר רחמנא תולדות לא אסר רחמנא מ"מ מדרבנן מיהא אית ביה אבות ותולדות וא"ת במעשר איכא נמי אבות ותולדות דמדאורייתא דגן ותירוש ויצהר ומדרבנן כל מילי וי"ל דלא שייך להזכיר אבות ותולדות במילי דלית ביה איסור מלאכות וא"ת ובכלל אחר דשבת ושביעית ליתני נמי כלל גדול מהאי טעמא ויש לומר דלא צריך למיתני דאכלל גדול קמא …</blockquote><p><span class="say">מה התוספות אומרים:</span> גם לרבא, שהתורה אסרה בשביעית רק אבות, מדרבנן יש בה אבות ותולדות. ובמעשר, אף שיש בו דברים מן התורה ודברים מדרבנן, אין אומרים "אבות ותולדות", כי הלשון הזו שייכת רק בדבר שיש בו איסור מלאכות.</p></div>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>והא גבי מעשר דקתני עוד כלל אחר אמרו כו' – תימה למה ישנה בראשון כלל גדול כיון דאינו גדול מן השני וצ"ע:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות תמהים: למה היה צריך לקרוא לכלל הראשון במעשר "גדול", אם אינו גדול מן השני? ונשארים בצריך עיון.</p></div>
+  </div>
+  <p class="godeep">למה הגמרא אינה מקבלת את ההסבר של אבות ותולדות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה דינו של מי שעשה כמה מלאכות מאותו סוג?</summary><p>אינו חייב אלא חטאת אחת.</p></details>
+  <details><summary>מה הקושיה על ההסבר "מפני שיש עוד כלל"?</summary><p>במעשר יש עוד כלל, ובכל זאת לא נאמר "כלל גדול".</p></details>
+  <details><summary>מה הקושיה על רבי יוסי בר אבין?</summary><p>בר קפרא שונה "כלל גדול" במעשר, ושם אין אבות ותולדות.</p></details>
+  <details class="deepq"><summary>לפי התוספות, למה אין אומרים "אבות ותולדות" במעשר?</summary><p>כי הלשון הזו שייכת רק בדבר שיש בו איסור מלאכות.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G4a,G4b">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>עונש חמור יותר: שבת, שביעית ומעשר</h2>
+  <p class="lead">הגמרא נותנת טעם אחר ל"כלל גדול": המשנה קוראת "גדול" לכלל של דבר שעונשו חמור יותר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אלא לאו היינו טעמא</td><td>אלא לא זה הטעם (אבות ותולדות), אלא כך:</td></tr>
+      <tr><td>גדול עונשו של שבת יותר משל שביעית</td><td>עונשה של שבת גדול משל שביעית,</td></tr>
+      <tr><td>דאילו שבת איתא בין בתלוש בין במחובר</td><td>שהשבת נוהגת גם בתלוש וגם במחובר,</td></tr>
+      <tr><td>ואילו שביעית בתלוש ליתא במחובר איתא</td><td>והשביעית בתלוש אינה, במחובר ישנה.</td></tr>
+      <tr><td>וגדול עונשה של שביעית יותר מן המעשר</td><td>ועונשה של שביעית גדול מן המעשר,</td></tr>
+      <tr><td>בין במאכל אדם בין במאכל בהמה</td><td>גם במאכל אדם וגם במאכל בהמה,</td></tr>
+      <tr><td>ואילו מעשר במאכל אדם איתא</td><td>והמעשר נוהג במאכל אדם,</td></tr>
+      <tr><td>במאכל בהמה ליתא</td><td>ובמאכל בהמה אינו נוהג.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הטעם החדש:</b> "כלל גדול" נאמר בדבר שעונשו חמור מדבר אחר שגם בו נאמר כלל.</p>
+  <p><b>שבת חמורה משביעית:</b> השבת נוהגת גם במה שתלוש וגם במה שמחובר לקרקע, והשביעית רק במחובר.</p>
+  <p><b>שביעית חמורה ממעשר:</b> השביעית נוהגת גם במאכל בהמה, והמעשר רק במאכל אדם. לכן לשבת ולשביעית נאמר "כלל גדול", ולמעשר לא.</p>
+  <div data-hl="R8,R9" class="voice r"><span class="tag">רש"י</span><blockquote>שבת איתא – לאיסור דידה בין בדבר שהיה תלוש מבעוד יום כגון טוחן ולש בין בדבר שמחובר משקדש היום:</blockquote><blockquote>ואילו שביעית – בדבר שהיה מחובר משקדש שביעית איתא אבל בדבר שהיה תלוש לפני שביעית ליתא:</blockquote><p><span class="say">מה רש"י אומר:</span> בשבת אסור גם לעבוד במה שנתלש לפני שבת, כמו לטחון וללוש, וגם במחובר. בשביעית האיסור הוא במה שהיה מחובר כשנכנסה השביעית, ולא במה שנתלש לפניה.</p></div>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>שביעית – נמי איתיה במאכל בהמה דכתיב ולבהמתך ולחיה וגו' (ויקרא כ״ה:ז׳) מעשר ליתיה במאכל בהמה דמדאורייתא דגן תירוש ויצהר כתיב ורבנן תקון פירות האילן וירק דמאכל אדם כדקתני כל שהוא אוכל כו':</blockquote><p><span class="say">מה רש"י אומר:</span> בשביעית כתוב "ולבהמתך ולחיה". מעשר מן התורה הוא בדגן, תירוש ויצהר, ומה שחכמים הוסיפו הוא פירות וירק שהם מאכל אדם.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה פירוש "תלוש ומחובר" בשביעית</h3>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>גדול עונשו של שבת משל שביעית – לפירוש הקונטרס דמפרש בתלוש שנתלש קודם שבת וקודם שביעית משמע שרוצה לפרש שביעית במחובר איתא היינו במחובר ערב שביעית ונתלש בשביעית ומיירי באיסור פירות שביעית לאכילה וקשה לר"י דלפי' לא הוה ליה למימר אלא גדול עונשו של שבת ושביעית משל מעשר דאיתנהו במאכל בהמה מה שאין כן במעשר ולמה ליה למימר כלל גדול עונשה של שבת משל שביעית אלא נראה לר"י דבמידי דאכילה …</blockquote><p><span class="say">מה התוספות אומרים:</span> מפירוש רש"י משמע שהשוואה היא באכילת פירות שביעית. רבנו יצחק מקשה: אם כך, היה צריך לומר רק ששבת ושביעית חמורות ממעשר, כי שתיהן נוהגות גם במאכל בהמה.</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>גדול עונשו של שבת משל שביעית – לפירוש הקונטרס דמפרש בתלוש שנתלש קודם שבת וקודם שביעית משמע שרוצה לפרש שביעית במחובר איתא היינו במחובר ערב שביעית ונתלש בשביעית ומיירי באיסור פירות שביעית לאכילה וקשה לר"י דלפי' לא הוה ליה למימר אלא גדול עונשו של שבת ושביעית משל מעשר דאיתנהו במאכל בהמה מה שאין כן במעשר ולמה ליה למימר כלל גדול עונשה של שבת משל שביעית אלא נראה לר"י דבמידי דאכילה …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק מפרש שההשוואה בין שבת לשביעית היא באיסור המלאכות. בשבת הוא חל בתלוש ובמחובר, ובשביעית רק במחובר. וכך משמע בירושלמי: השבת חלה על הכול, והשביעית רק על עבודת הארץ.</p></div>
+    <p>כך יש בסוגיה שתי השוואות שונות: בין שבת לשביעית לפי איסור המלאכה, ובין שביעית למעשר לפי סוג המאכל.</p>
+  </div>
+  <p class="godeep">לפי התוספות, במה משווים את השבת לשביעית? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה שבת חמורה משביעית?</summary><p>שבת נוהגת בתלוש ובמחובר, ושביעית רק במחובר.</p></details>
+  <details><summary>למה שביעית חמורה ממעשר?</summary><p>שביעית נוהגת גם במאכל בהמה, ומעשר רק במאכל אדם.</p></details>
+  <details><summary>מאיזה פסוק לומד רש"י שהשביעית נוהגת במאכל בהמה?</summary><p>"ולבהמתך ולחיה".</p></details>
+  <details class="deepq"><summary>מה מקשה רבנו יצחק על פירוש רש"י?</summary><p>שלפיו היה צריך לומר רק ששבת ושביעית חמורות ממעשר, כי הן נוהגות גם במאכל בהמה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G5a,G5b,G6,G7">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>לבר קפרא: מעשר חמור מפאה</h2>
+  <p class="lead">בר קפרא שונה "כלל גדול" גם במעשר. הגמרא מסבירה שהמעשר חמור מפאה, ומביאה את הכללים של פאה ושל מעשר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>גדול עונשו של מעשר יותר משל פיאה</td><td>עונשו של מעשר גדול משל פאה,</td></tr>
+      <tr><td>דאילו מעשר איתא בתאנה וירק</td><td>שהמעשר נוהג בתאנה ובירק,</td></tr>
+      <tr><td>ואילו פיאה ליתא בתאנה וירק</td><td>והפאה אינה נוהגת בתאנה ובירק.</td></tr>
+      <tr><td>כלל אמרו בפיאה</td><td>כלל אמרו בפאה:</td></tr>
+      <tr><td>כל שהוא אוכל ונשמר</td><td>כל שהוא אוכל, ושומרים אותו,</td></tr>
+      <tr><td>וגידולו מן הארץ</td><td>וגידולו מן הארץ,</td></tr>
+      <tr><td>ולקיטתו כאחת ומכניסו לקיום</td><td>ולוקטים אותו בבת אחת, ומכניסים אותו לאחסון,</td></tr>
+      <tr><td>חייב בפיאה</td><td>חייב בפאה.</td></tr>
+      <tr><td>ונשמר למעוטי הפקר</td><td>"ונשמר", להוציא הפקר.</td></tr>
+      <tr><td>למעוטי כמיהין ופטריות</td><td>להוציא כמהין ופטריות.</td></tr>
+      <tr><td>ולקיטתו כאחת למעוטי תאנה</td><td>"ולקיטתו כאחת", להוציא תאנה.</td></tr>
+      <tr><td>ומכניסו לקיום למעוטי ירק</td><td>"ומכניסו לקיום", להוציא ירק.</td></tr>
+      <tr><td>ואילו לקיטתו כאחת ומכניסו לקיום לא תנן</td><td>ואילו "לקיטתו כאחת" ו"מכניסו לקיום" לא שנינו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הטעם לבר קפרא:</b> המעשר חמור מן הפאה, כי הוא נוהג בתאנה ובירק, והפאה אינה נוהגת בהם.</p>
+  <p><b>הכלל של פאה:</b> חמישה תנאים: אוכל, נשמר, גידולו מן הארץ, לקיטתו כאחת, ומכניסו לקיום. "אוכל" מוציא צמחי צבע, "נשמר" מוציא הפקר, "גידולו מן הארץ" מוציא כמהין ופטריות, "לקיטתו כאחת" מוציא תאנה, ו"מכניסו לקיום" מוציא ירק.</p>
+  <p><b>הכלל של מעשר:</b> רק שלושת התנאים הראשונים. לכן המעשר נוהג גם בתאנה ובירק, ובזה הוא רחב יותר מן הפאה.</p>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>איתיה בתאנה וירק – מדרבנן:</blockquote><p><span class="say">מה רש"י אומר:</span> בתאנה ובירק המעשר הוא מדרבנן.</p></div>
+  <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>כל שהוא אוכל כו' – דגבי פיאה קציר כתיב מה קציר מיוחד שיש בו כל אלו:</blockquote><p><span class="say">מה רש"י אומר:</span> בפאה כתוב "קציר", ולכן היא נוהגת רק בדבר שיש בו כל התנאים של קציר.</p></div>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>ואילו מכניסו לקיום ולקיטתו כאחד לא תנן – דכי תקון רבנן אדידהו לא פלוג בפירות האילן ובירק בין מין למין:</blockquote><p><span class="say">מה רש"י אומר:</span> כשחכמים תיקנו מעשר בפירות האילן ובירק, לא חילקו בין מין למין.</p></div>
+  <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>ולבר קפרא דתני כלל גדול במעשר כו' – נראה לרשב"א דאחרים לא שנו כלל גדול במעשר לפי שאינו גדול מפאה אלא מדרבנן אבל כלל גדול דשבת גדול משביעית מדאורייתא וכן של שביעית משל מעשר:</blockquote><p><span class="say">מה התוספות אומרים:</span> לדעת רבנו שמשון בן אברהם (רשב"א), השונים האחרים לא שנו "כלל גדול" במעשר, כי המעשר גדול מן הפאה רק מדרבנן, ואילו שבת גדולה משביעית, ושביעית ממעשר, מן התורה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה דווקא ספיחים, ולמה דווקא תאנה</h3>
+    <div data-hl="R13" class="voice r"><span class="tag">רש"י</span><blockquote>למעוטי ספיחי סטיס וקוצה – שעומדים לצבע להכי נקט ספיחים דאין דרך ללוקטן בשנה שנזרעים אלא לסוף ד' וה' שנים שהשרשין מתפשטין בארץ ומשביחין ושורש שלהן עיקר והא דנקט הני ולא נקט שאר מינים שאינן ראוין לאכילה משום דאיידי דגבי שביעית תני להו דיש להן שביעית נקט הכא דבפיאה ומעשר ליתנהו לשון רבינו הלוי: סטיס ווישד"א:</blockquote><p><span class="say">מה רש"י אומר:</span> את צמחי הצבע האלה לוקטים רק אחרי ארבע או חמש שנים, כשהשורש התפתח, והשורש הוא העיקר. הם נזכרו כאן, כי בשביעית נשנה שיש בהם דין שביעית, ולכן מלמדים שבפאה ובמעשר אין בהם.</p></div>
+    <div data-hl="T7" class="voice t"><span class="tag">תוספות</span><blockquote>ספיחי סטיס וקוצה – הא דלא קאמר סתם למעוטי מידי דלאו אוכל אלא נקט הני אומר ר"י משום דקצת הם ראויים לאכילה וקמ"ל דאפילו הכי אין פאה נוהגת בהן וכן מצא רשב"ם בתשובת רש"י והא דנקט ספיחים משום דשמא סטיס וקוצה עצמם אינם ראוים כלל לאכילת אדם ולא הוה חידוש או שמא הן אוכל גמור ולא ממעטינן:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק: הספיחים האלה ראויים קצת לאכילה, ובכל זאת אין בהם פאה. ונזכרו הספיחים דווקא, כי ייתכן שסטיס וקוצה עצמם אינם אוכל כלל, ואז אין בהם חידוש, או שהם אוכל גמור, ואז אינם יוצאים מן הכלל.</p></div>
+    <div data-hl="T6" class="voice t"><span class="tag">תוספות</span><blockquote>ואילו פאה ליתא בתאנה וירק – לאו דוקא תאנה דהא רוב אילנות אין לקיטתן כאחד ואינן רק ח' אילנות דחשיב בפ"ק דפאה (מ"ה) דחייב בפאה אלא נקט תאנה משום דנלקטת כמה פעמים (ב"ב דף כח:) אכל ג' פירי בחד יומא כגון תאנה כו' ואומר ר"ת דמדאורייתא לא מיחייב בפאה אלא בדגן ותירוש ויצהר דסתם קציר דכתיב גבי פאה הוא דגן וכתיב כי תחבוט זיתך כי תבצור כרמך והא דדריש בת"כ יכול שאני מרבה קישואין ודלועין …</blockquote><p><span class="say">מה התוספות אומרים:</span> לא דווקא תאנה: רוב האילנות אין לקיטתם כאחת. התאנה נזכרה כי היא נלקטת כמה פעמים.</p></div>
+    <h3>פאה מן התורה ומדרבנן</h3>
+    <div data-hl="T6" class="voice t"><span class="tag">תוספות</span><blockquote>ואילו פאה ליתא בתאנה וירק – לאו דוקא תאנה דהא רוב אילנות אין לקיטתן כאחד ואינן רק ח' אילנות דחשיב בפ"ק דפאה (מ"ה) דחייב בפאה אלא נקט תאנה משום דנלקטת כמה פעמים (ב"ב דף כח:) אכל ג' פירי בחד יומא כגון תאנה כו' ואומר ר"ת דמדאורייתא לא מיחייב בפאה אלא בדגן ותירוש ויצהר דסתם קציר דכתיב גבי פאה הוא דגן וכתיב כי תחבוט זיתך כי תבצור כרמך והא דדריש בת"כ יכול שאני מרבה קישואין ודלועין …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם: מן התורה פאה היא רק בדגן, תירוש ויצהר, והדרשה שלומדת מ"קציר" את חמשת התנאים היא אסמכתא. בירק ובתאנה לא תיקנו פאה, כי שם הפאה מועטת, והעניים מתבטלים, שאינם יודעים מתי זמן הלקיטה, ומפסידים יותר ממה שהם מרוויחים.</p></div>
+  </div>
+  <p class="godeep">למה חכמים תיקנו מעשר בירק, ולא תיקנו בו פאה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>במה המעשר רחב מן הפאה?</summary><p>הוא נוהג בתאנה ובירק, והפאה אינה נוהגת בהם.</p></details>
+  <details><summary>מה מוציא התנאי "ונשמר"?</summary><p>הפקר.</p></details>
+  <details><summary>אילו תנאים יש בפאה ואינם במעשר?</summary><p>"לקיטתו כאחת" ו"מכניסו לקיום".</p></details>
+  <details class="deepq"><summary>לפי רבנו שמשון בן אברהם, למה השונים האחרים לא שנו "כלל גדול" במעשר?</summary><p>כי המעשר גדול מן הפאה רק מדרבנן.</p></details>
+  <details class="deepq"><summary>מה אומר רבנו תם על פאה מן התורה?</summary><p>שהיא רק בדגן, תירוש ויצהר, והדרשה מ"קציר" היא אסמכתא.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G8a,G8b,G9">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>רב ושמואל: על מי מדברת המשנה</h2>
+  <p class="lead">רב ושמואל מעמידים את המקרה הראשון של המשנה, מי ששכח את עיקר השבת, בתינוק שנשבה. הגמרא בודקת את ההעמדה מול לשון המשנה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>רב ושמואל דאמרי תרוייהו</td><td>רב ושמואל, שאמרו שניהם:</td></tr>
+      <tr><td>מתניתין בתינוק שנשבה לבין הנכרים</td><td>המשנה שלנו מדברת בתינוק שנשבה בין הגויים,</td></tr>
+      <tr><td>וגר שנתגייר לבין הנכרים</td><td>ובגר שהתגייר בין הגויים.</td></tr>
+      <tr><td>אבל הכיר ולבסוף שכח</td><td>אבל מי שידע ולבסוף שכח,</td></tr>
+      <tr><td>חייב על כל שבת ושבת</td><td>חייב על כל שבת ושבת.</td></tr>
+      <tr><td>לאו מכלל דהויא ליה ידיעה מעיקרא</td><td>האם אין משמע שהייתה לו ידיעה מתחילה?</td></tr>
+      <tr><td>דהיתה שכוח ממנו עיקרה של שבת</td><td>שהיה שכוח ממנו עיקרה של שבת.</td></tr>
+      <tr><td>ליתני הכיר ולבסוף שכח</td><td>שישנה "הכיר ולבסוף שכח",</td></tr>
+      <tr><td>מי שהיה יודע עיקרה של שבת ושכחה</td><td>מי שהיה יודע את עיקרה של שבת, ושכח אותה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רב ושמואל:</b> המשנה, שאומרת שמי ששכח את עיקר השבת חייב רק חטאת אחת, מדברת בתינוק שנשבה ובגר שהתגייר בין הגויים, שלא ידעו שבת מעולם. מי שידע ושכח חייב על כל שבת.</p>
+  <p><b>הקושיה מן הלשון:</b> המשנה אומרת "השוכח", ומשמע שידע פעם. התשובה: "השוכח" הוא מי שהשבת הייתה שכוחה ממנו מעולם.</p>
+  <p><b>הקושיה מן המקרה השני:</b> אם מי שידע ושכח חייב על כל שבת, היה צריך לשנות אותו, וכל שכן "היודע עיקר שבת". לכן הגמרא מפרשת ש"היודע עיקר שבת" הוא מי שידע ושכח. הבירור נמשך בעמוד הבא.</p>
+  <div data-hl="R17,R19" class="voice r"><span class="tag">רש"י</span><blockquote>בתינוק שנשבה – ולא ידע שבת מעולם:</blockquote><blockquote>שהיתה שכוחה ממנו – מעולם:</blockquote><p><span class="say">מה רש"י אומר:</span> התינוק שנשבה לא ידע שבת מעולם, והשבת הייתה שכוחה ממנו מתמיד.</p></div>
+  <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>אבל הכיר ולבסוף שכח – הוה ליה כשוכח שהיום שבת ויודע עיקר שבת וחייב על כל שבת ושבת:</blockquote><p><span class="say">מה רש"י אומר:</span> מי שהכיר ולבסוף שכח דומה למי ששכח שהיום שבת אבל יודע את עיקר השבת, ולכן הוא חייב על כל שבת ושבת.</p></div>
+  <div data-hl="T8" class="voice t"><span class="tag">תוספות</span><blockquote>גר שנתגייר בין הנכרים – בפני ג' ולא הודיעוהו מצות שבת דאי נתגייר בינו לבין עצמו לא הוי גר כדאמרינן בהחולץ (יבמות דף מז:):</blockquote><p><span class="say">מה התוספות אומרים:</span> מדובר בגר שהתגייר בפני שלושה, ולא הודיעו לו את מצוות השבת. מי שהתגייר לבדו אינו גר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה "הכיר ולבסוף שכח" הוא החידוש הגדול</h3>
+    <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>לתני הכיר ולבסוף שכח – דחייב ואע"ג דליכא למימר ימים שבינתים הוויין ידיעה לחלק וכ"ש הא דאיכא למימר שימים שבינתים הוויין ליה ידיעה לחלק:</blockquote><p><span class="say">מה רש"י אומר:</span> אצל מי ששכח לגמרי אי אפשר לומר שהימים שבין השבתות הם ידיעה שמחלקת ביניהן, ובכל זאת לרב ושמואל הוא חייב על כל שבת. מי שיודע את עיקר השבת, שאצלו אפשר לומר כך, חייב כל שכן.</p></div>
+    <p>לכן הגמרא טוענת שהמשנה הייתה צריכה לשנות את המקרה שהחידוש בו גדול יותר, "הכיר ולבסוף שכח", וממנו היינו לומדים בכל שכן את מי שיודע. מכאן הגמרא מסיקה ש"היודע עיקר שבת" במשנה אינו מי שיודע עכשיו, אלא מי שידע ושכח.</p>
+  </div>
+  <p class="godeep">למה "הכיר ולבסוף שכח" הוא חידוש גדול יותר מ"היודע עיקר שבת"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>על מי מדברת המשנה לפי רב ושמואל?</summary><p>על תינוק שנשבה בין הגויים ועל גר שהתגייר בין הגויים.</p></details>
+  <details><summary>מה דינו של מי שהכיר ולבסוף שכח, לפי רב ושמואל?</summary><p>חייב על כל שבת ושבת.</p></details>
+  <details><summary>איך מפרשת הגמרא את המילה "השוכח"?</summary><p>שעיקר השבת היה שכוח ממנו מעולם.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מה מחלק בין שבת לשבת אצל מי שיודע את עיקר השבת?</summary><p>הימים שבינתיים, שהם ידיעה שמחלקת.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>סוף המשנה:</b> מי שיודע שהיום שבת חייב על כל אב מלאכה, ומי שעשה כמה מלאכות מאותו סוג חייב רק אחת.</li>
+      <li><b>למה "כלל גדול":</b> לא מפני שיש עוד כלל, ולא מפני אבות ותולדות, אלא מפני שעונשה של שבת גדול משל שביעית.</li>
+      <li><b>שבת, שביעית ומעשר:</b> שבת נוהגת בתלוש ובמחובר, ושביעית רק במחובר. שביעית נוהגת גם במאכל בהמה, ומעשר רק במאכל אדם.</li>
+      <li><b>מעשר ופאה:</b> לבר קפרא המעשר חמור מפאה, כי הוא נוהג בתאנה ובירק.</li>
+      <li><b>הכלל של פאה:</b> אוכל, נשמר, גידולו מן הארץ, לקיטתו כאחת ומכניסו לקיום. במעשר לא נשנו שני התנאים האחרונים.</li>
+      <li><b>רב ושמואל:</b> המשנה מדברת בתינוק שנשבה, ומי שידע ושכח חייב על כל שבת.</li>
+      <li><b>נשאר פתוח:</b> "היודע עיקר שבת" הוא מי שידע ושכח. העמוד הבא שואל מה דינו של מי שלא שכח.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>מאי טעמא</td><td>מה הטעם</td></tr>
+      <tr><td>אילימא</td><td>אם תאמר</td></tr>
+      <tr><td>תנא</td><td>שנה. כך אומרים על מה שנאמר במשנה או בברייתא</td></tr>
+      <tr><td>אבות ותולדות</td><td>המלאכות העיקריות, והמלאכות שנגזרות מהן</td></tr>
+      <tr><td>אלא לאו היינו טעמא</td><td>אלא לא זה הטעם. רש&quot;י: הטעם אינו אבות ותולדות, אלא טעם אחר</td></tr>
+      <tr><td>איתא · ליתא</td><td>ישנו, נוהג · אינו, אינו נוהג</td></tr>
+      <tr><td>תלוש · מחובר</td><td>מה שנקטף מן הקרקע · מה שעדיין מחובר לקרקע</td></tr>
+      <tr><td>דתנן</td><td>שכך שנינו במשנה</td></tr>
+      <tr><td>למעוטי</td><td>להוציא</td></tr>
+      <tr><td>תרוייהו</td><td>שניהם</td></tr>
+      <tr><td>תינוק שנשבה</td><td>מי שנשבה בילדותו בין הגויים ולא למד את דיני התורה</td></tr>
+      <tr><td>הכיר ולבסוף שכח</td><td>ידע, ואחר כך שכח</td></tr>
+      <tr><td>לאו מכלל</td><td>האם אין משמע מכך</td></tr>
+      <tr><td>וכל שכן</td><td>ומכל שכן, קל וחומר</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-67b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-68b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ס&quot;ח עמוד א&#x27;, לומדים: למה המשנה אומרת "כלל גדול"; עונש חמור יותר: שבת, שביעית ומעשר; לבר קפרא: מעשר חמור מפאה; רב ושמואל: על מי מדברת המשנה.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (31 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · פרק &quot;כלל גדול&quot;: סוף המשנה</h3><p>בסוף העמוד הקודם נגמר הפרק &quot;במה אשה&quot;, ונפתח הפרק השביעי, &quot;כלל גדול&quot;, במשנה על מי שעשה מלאכות רבות בשבת בשגגה. המשנה מבחינה בין מי ששכח את עיקר השבת, שחייב רק חטאת אחת, לבין מי שיודע את עיקר השבת, שחייב על כל שבת ושבת, ולבין מי שיודע שהיום שבת. כאן נגמרת המשנה, ואחריה הגמרא שואלת למה נאמר &quot;כלל גדול&quot;, ומבררת על מי מדבר המקרה הראשון.</p></li><li><h3><span class="w">משנה</span> · חייב על כל אב מלאכה</h3><p>מי שיודע שהיום שבת ועשה מלאכות הרבה, חייב קרבן חטאת על כל אב מלאכה. ומי שעושה מלאכות הרבה &quot;מעין מלאכה אחת&quot;, מאותו סוג, אינו חייב אלא חטאת אחת.</p><p>אבות מלאכה הם שלושים ותשע המלאכות העיקריות של שבת, ותולדות הן מלאכות שדומות להן.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: אב ותולדה</h3><p>המילה &quot;אב&quot; אינה באה להוציא תולדות: גם שתי תולדות של שני אבות שונים מחייבות שתי חטאות. היא באה להוציא שתי תולדות של אב אחד, או אב ותולדה שלו, שעליהן חייב רק אחת. זה כמו מי שעושה וחוזר ועושה בהעלם אחד, ובהעלם אחד מתחלקות החטאות רק לפי עבירות שאינן דומות, או לפי שבתות למי ששגג בשבת.</p></li><li><h3><span class="w">גמרא</span> · למה &quot;כלל גדול&quot;?</h3><p>&quot;מאי טעמא&quot;, מה הטעם שנאמר &quot;כלל גדול&quot;? אם תאמר שזה מפני שבהמשך הפרק המשנה שונה עוד כלל, וכך גם בשביעית, שם יש עוד כלל ולכן נאמר &quot;כלל גדול&quot;, הרי במעשר המשנה שונה עוד כלל ואינה אומרת &quot;כלל גדול&quot;. רש&quot;י מציין את המקומות: הכלל של שביעית שנוי בפרק &quot;בנות שוח&quot;, והכלל של מעשר בפרק הראשון של מסכת מעשרות.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: מה הכלל האחר</h3><p>הכלל האחר נשנה בהמשך הפרק שלנו, והוא כולל רק שני דברים: כל הכשר להצניע, וכל שאינו כשר להצניע. כאן הכלל כולל יותר, ולכן הוא נקרא גדול.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שני הכללים בשביעית</h3><p>המשנה במסכת שביעית אומרת: מה שהוא מאכל אדם, מאכל בהמה או ממין הצובעים, ואינו מתקיים בארץ, שהתוספות מפרשים &quot;שכלה לחיה&quot;, כלומר שהוא כלה מן השדה ואינו נשאר שם לחיה, יש לו ולדמיו דין שביעית, ויש לו ולדמיו ביעור. ועוד כלל: מה שאינו מאכל אדם ומאכל בהמה, ומתקיים בארץ, יש לו ולדמיו דין שביעית, ואין לו ולדמיו ביעור. לכן הראשון נקרא גדול, כי יש בו ביעור, ובאחרון אין ביעור.</p><p>ובמקום אחר באותה מסכת נאמר &quot;כלל גדול&quot; בלי כלל אחר אחריו. התוספות מסבירים שלפניו נשנה כלל קטן, ולכן מתאים לקרוא לזה שאחריו גדול.</p></li><li><h3><span class="w">תוספות</span> · התוספות: תמיהה על השאלה ממעשר</h3><p>התוספות תמהים על קושיית הגמרא: למה הייתה המשנה במעשר צריכה לקרוא לכלל הראשון &quot;גדול&quot;, אם אינו גדול מן השני? והם נשארים בזה ב&quot;צריך עיון&quot;.</p></li><li><h3><span class="w">גמרא</span> · רבי יוסי בר אבין: אבות ותולדות</h3><p>בשבת ובשביעית, שיש בהן אבות ותולדות, נאמר &quot;גדול&quot;. במעשר, שאין בו אבות ותולדות, לא נאמר. רש&quot;י: אבות השבת הם ארבעים חסר אחת המלאכות שהוצרכו למשכן, ותולדותיהם הן המלאכות שדומות לכל אחת מהן. אבות השביעית הם זריעה, קצירה, זמירה ובצירה, שכתובים בתורה, ותולדותיהם שאר עבודות השדה והכרם.</p></li><li><h3><span class="w">גמרא</span> · ובר קפרא?</h3><p>אבל בר קפרא שונה &quot;כלל גדול&quot; גם במעשר, בברייתא שלו. אצלו, אילו אבות ותולדות יש במעשר? הרי שאין זה הטעם.</p></li><li><h3><span class="w">תוספות</span> · התוספות: אבות ותולדות בלי איסור מלאכה</h3><p>גם לדעת רבא, שהתורה אסרה בשביעית רק אבות ולא תולדות, מדרבנן יש בה אבות ותולדות. ואם תאמר שגם במעשר יש כעין זה, דגן תירוש ויצהר מן התורה ושאר הדברים מדרבנן? התשובה: הלשון &quot;אבות ותולדות&quot; שייכת רק בדבר שיש בו איסור מלאכות.</p></li><li><h3><span class="w">תוספות</span> · התוספות: והכלל השני של שבת?</h3><p>התוספות שואלים: אם כך, גם בכלל השני של שבת ושביעית היה צריך לשנות &quot;גדול&quot; מאותו טעם. ועונים: לא היה צורך, כי הכלל השני נסמך על הראשון, וכאילו נאמר &quot;עוד כלל גדול אחר&quot;.</p></li><li><h3><span class="w">גמרא</span> · הטעם האחר: עונש חמור יותר</h3><p>&quot;אלא לאו היינו טעמא&quot;, אלא לא זה הטעם, כלומר לא אבות ותולדות. הטעם הוא: עונשה של שבת גדול משל שביעית. השבת נוהגת גם בתלוש וגם במחובר, והשביעית נוהגת במחובר ולא בתלוש.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: תלוש ומחובר</h3><p>לא מפני אבות ותולדות, אלא דבר שנאמר בו כלל ועונשו גדול מדבר אחר שנאמר בו כלל, כללו נקרא גדול. בשבת האיסור חל גם על מה שנתלש לפני שבת, כמו טחינה ולישה, וגם על המחובר. בשביעית הוא חל על מה שהיה מחובר כשנכנסה השביעית, ולא על מה שנתלש לפניה.</p></li><li><h3><span class="w">גמרא</span> · שביעית חמורה ממעשר</h3><p>ועונשה של שביעית גדול משל מעשר: השביעית נוהגת גם במאכל אדם וגם במאכל בהמה, והמעשר רק במאכל אדם. רש&quot;י: בשביעית כתוב &quot;ולבהמתך ולחיה&quot;. ומעשר מן התורה הוא בדגן, תירוש ויצהר, וחכמים תיקנו אותו בפירות האילן ובירק שהם מאכל אדם.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיה על פירוש רש&quot;י</h3><p>מדברי רש&quot;י משמע שבשביעית &quot;מחובר&quot; הוא מה שהיה מחובר בערב שביעית ונתלש בשביעית, והאיסור הוא אכילת פירות שביעית. רבנו יצחק מקשה: לפי זה הייתה הגמרא צריכה לומר רק ששבת ושביעית חמורות ממעשר, מפני שהן נוהגות גם במאכל בהמה. למה לומר ששבת חמורה משביעית?</p></li><li><h3><span class="w">תוספות</span> · התוספות: ההשוואה היא באיסור המלאכות</h3><p>רבנו יצחק מפרש: בדברי אכילה, שאינם שייכים לשבת, אי אפשר לומר שהשבת חמורה מן השביעית או מן המעשר. ההשוואה היא באיסור המלאכות: בשבת הוא חל בתלוש ובמחובר, ובשביעית רק במחובר. וכך משמע בירושלמי: השבת חלה על הכול, והשביעית רק על עבודת הארץ.</p></li><li><h3><span class="w">גמרא</span> · לבר קפרא: מעשר חמור מפאה</h3><p>ולבר קפרא, ששונה &quot;כלל גדול&quot; במעשר: עונשו של מעשר גדול משל פאה. מעשר נוהג בתאנה ובירק, ופאה אינה נוהגת בהם. רש&quot;י מוסיף שבתאנה ובירק המעשר הוא מדרבנן.</p><p>פאה היא קצה השדה שמשאירים לעניים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה אחרים לא שנו &quot;גדול&quot; במעשר</h3><p>לדעת רבנו שמשון בן אברהם (רשב&quot;א), השונים האחרים, חוץ מבר קפרא, לא שנו &quot;כלל גדול&quot; במעשר, כי הוא גדול מפאה רק מדרבנן. אבל שבת גדולה משביעית, ושביעית ממעשר, מן התורה.</p></li><li><h3><span class="w">גמרא</span> · הכלל של פאה</h3><p>&quot;דתנן&quot;, שכך שנינו במשנה: כל שהוא אוכל, ונשמר, וגידולו מן הארץ, ולקיטתו כאחת, ומכניסו לקיום, חייב בפאה. רש&quot;י: לגבי פאה כתוב &quot;קציר&quot;, ומה קציר מיוחד בכך שיש בו כל אלה, אף פאה רק בדבר כזה.</p></li><li><h3><span class="w">גמרא</span> · מה כל תנאי מוציא</h3><p>&quot;אוכל&quot; מוציא ספיחים של סטיס וקוצה, צמחים שמשמשים לצבע. &quot;ונשמר&quot; מוציא הפקר. &quot;גידולו מן הארץ&quot; מוציא כמהין ופטריות. &quot;לקיטתו כאחת&quot; מוציא תאנה. &quot;מכניסו לקיום&quot; מוציא ירק, כמו לפת וכרישה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: למה דווקא ספיחים</h3><p>את הצמחים האלה אין לוקטים בשנה שזורעים אותם, אלא אחרי ארבע או חמש שנים, כשהשורשים מתפשטים ומשביחים, והשורש הוא העיקר. ונזכרו דווקא הם, ולא שאר צמחים שאינם ראויים לאכילה, כי במשנה בשביעית נשנה שיש בהם דין שביעית, ולכן כאן מלמדים שבפאה ובמעשר אין בהם. רש&quot;י מביא את הדברים בלשון רבו, רבנו הלוי.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה לא נאמר סתם &quot;מה שאינו אוכל&quot;</h3><p>רבנו יצחק אומר: הספיחים האלה ראויים קצת לאכילה, והגמרא מלמדת שאף על פי כן אין פאה נוהגת בהם. וכך מצא רבנו שמואל בתשובה של רש&quot;י. ונזכרו דווקא הספיחים, כי ייתכן שסטיס וקוצה עצמם אינם ראויים כלל לאכילת אדם, ואז אין חידוש בכך שהם פטורים, או שהם אוכל גמור, ואז אינם יוצאים מן הכלל.</p></li><li><h3><span class="w">תוספות</span> · התוספות: לא דווקא תאנה</h3><p>רוב האילנות אין לקיטתם כאחת, ורק שמונה אילנות, שהמשנה מונה בפרק הראשון של מסכת פאה, חייבים בפאה. נזכרה התאנה כי היא נלקטת כמה פעמים. ורבנו תם אומר שמן התורה פאה היא רק בדגן, תירוש ויצהר: סתם &quot;קציר&quot; שכתוב בפאה הוא דגן, וכתוב גם &quot;כי תחבוט זיתך&quot; ו&quot;כי תבצור כרמך&quot;. והדרשה בתורת כהנים, שלומדת מ&quot;קציר&quot; את התנאים &quot;אוכל ונשמר&quot; וכולי, היא אסמכתא בלבד, שהרי שם דורשים מן הפסוק גם מעשר ירק, אף שהוא מדרבנן.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה לא תיקנו פאה בירק ובתאנה</h3><p>חכמים תיקנו מעשר בירק ובתאנה, ולא תיקנו בהם פאה. רבנו תם מסביר: במה שאין לקיטתו כאחת, הפאה היא דבר מועט, והעניים מפסידים בה יותר ממה שהם מרוויחים, כי הם מתבטלים, שאינם יודעים מתי זמן הלקיטה. וגם מה שאין מכניסים אותו לקיום אינו חשוב, והעניים יפסידו בו יותר ממה שירוויחו במקום אחר.</p></li><li><h3><span class="w">גמרא</span> · ובמעשר אין שני התנאים האחרונים</h3><p>ואילו במעשר שנינו: כל שהוא אוכל, ונשמר, וגידולו מן הארץ, חייב במעשר. &quot;לקיטתו כאחת&quot; ו&quot;מכניסו לקיום&quot; לא נשנו. רש&quot;י: כשחכמים תיקנו מעשר בפירות האילן ובירק, לא חילקו בין מין למין.</p></li><li><h3><span class="w">גמרא</span> · רב ושמואל: תינוק שנשבה</h3><p>רב ושמואל אמרו שניהם: המשנה, שפוטרת בחטאת אחת, מדברת בתינוק שנשבה בין הגויים ולא ידע שבת מעולם, ובגר שהתגייר בין הגויים. אבל מי ש&quot;הכיר ולבסוף שכח&quot;, ידע את השבת ואחר כך שכח, חייב על כל שבת ושבת. רש&quot;י: הוא כמו מי ששכח שהיום שבת אבל יודע את עיקר השבת.</p></li><li><h3><span class="w">תוספות</span> · התוספות: איזה גר</h3><p>מדובר בגר שהתגייר בפני שלושה, ולא הודיעו לו את מצוות השבת. אילו התגייר לבדו, לא היה גר כלל.</p></li><li><h3><span class="w">גמרא</span> · &quot;השוכח&quot;: משמע שידע פעם?</h3><p>&quot;תנן&quot;, שנינו: &quot;השוכח עיקר שבת&quot;. האם אין משמע מכך שהייתה לו ידיעה מתחילה? הגמרא עונה: לא. &quot;השוכח עיקר שבת&quot; פירושו שעיקר השבת היה שכוח ממנו מעולם.</p></li><li><h3><span class="w">גמרא</span> · קושיה מן המקרה השני</h3><p>ואם מי שהכיר ולבסוף שכח חייב על כל שבת, במקום לשנות &quot;היודע עיקר שבת&quot;, הייתה המשנה צריכה לשנות &quot;הכיר ולבסוף שכח&quot;, וכל שכן היודע. רש&quot;י: אצל מי ששכח לגמרי אי אפשר לומר שהימים שבינתיים הם ידיעה שמחלקת בין השבתות, ובכל זאת הוא חייב, וכל שכן מי שיודע את עיקר השבת.</p></li><li><h3><span class="w">גמרא</span> · התשובה: &quot;היודע&quot; שידע ושכח</h3><p>לכן הגמרא מפרשת: &quot;היודע עיקר שבת&quot; במשנה הוא מי שהיה יודע את עיקר השבת ושכח אותו. ההמשך נמצא בעמוד הבא.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>המשנה נגמרה בחיוב על כל אב מלאכה. &quot;כלל גדול&quot; נאמר כי עונשה של שבת חמור משל שביעית, ושל שביעית משל מעשר, ולבר קפרא גם מעשר חמור מפאה. רב ושמואל העמידו את המשנה בתינוק שנשבה, ופירשו ש&quot;היודע עיקר שבת&quot; הוא מי שידע ושכח. העמוד הבא שואל מה דינו של מי שלא שכח, וחוזר להעמיד את המשנה במי שהכיר ולבסוף שכח.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-68b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "אב מלאכה ומלאכה העושה מלאכות הרבה מעין מלאכה אחת אינו חייב אלא חטאת אחת:", false, ""], ["G2", "מ\"ט תנא כלל גדול אילימא משום דקבעי למיתני עוד כלל אחר תנא כלל גדול וגבי שביעית נמי משום דקבעי למיתני עוד כלל אחר תנא כלל גדול והא גבי מעשר דקתני כלל אחר ולא תני כלל גדול", false, "גמ׳"], ["G3", "א\"ר יוסי בר אבין שבת ושביעית דאית בהו אבות ותולדות תנא גדול מעשר דלית בה אבות ותולדות לא תנא כלל גדול ולבר קפרא דתני כלל גדול במעשר מאי אבות ומאי תולדות איכא", false, ""], ["G4a", "אלא לאו היינו טעמא גדול עונשו של שבת יותר משל שביעית דאילו שבת איתא בין בתלוש בין במחובר ואילו שביעית בתלוש ליתא במחובר איתא", false, ""], ["G4b", "וגדול עונשה של שביעית יותר מן המעשר דאילו שביעית איתא בין במאכל אדם בין במאכל בהמה ואילו מעשר במאכל אדם איתא במאכל בהמה ליתא", false, ""], ["G5a", "ולבר קפרא דתני כלל גדול במעשר גדול עונשו של מעשר יותר משל פיאה דאילו מעשר איתא בתאנה וירק ואילו פיאה ליתא בתאנה וירק", false, ""], ["G5b", "דתנן כלל אמרו בפיאה כל שהוא אוכל ונשמר וגידולו מן הארץ ולקיטתו כאחת ומכניסו לקיום חייב בפיאה", false, ""], ["G6", "אוכל למעוטי ספיחי סטיס וקוצה ונשמר למעוטי הפקר וגידולו מן הארץ למעוטי כמיהין ופטריות ולקיטתו כאחת למעוטי תאנה ומכניסו לקיום למעוטי ירק", false, ""], ["G7", "ואילו גבי מעשר תנן כלל אמרו במעשר כל שהוא אוכל ונשמר וגידולו מן הארץ חייב במעשר ואילו לקיטתו כאחת ומכניסו לקיום לא תנן:", false, ""], ["G8a", "רב ושמואל דאמרי תרוייהו מתניתין בתינוק שנשבה לבין הנכרים וגר שנתגייר לבין הנכרים אבל הכיר ולבסוף שכח חייב על כל שבת ושבת", false, ""], ["G8b", "תנן השוכח עיקר שבת לאו מכלל דהויא ליה ידיעה מעיקרא לא מאי כל השוכח עיקר שבת דהיתה שכוח ממנו עיקרה של שבת", false, ""], ["G9", "אבל הכיר ולבסוף שכח מאי חייב על כל שבת ושבת אדתני היודע עיקר שבת ועשה מלאכות הרבה בשבתות הרבה חייב על כל שבת ושבת ליתני הכיר ולבסוף שכח וכ\"ש הא מאי היודע עיקר שבת מי שהיה יודע עיקרה של שבת ושכחה", false, ""]], "R": [["R1", "", "אב מלאכה דנקט לאו למעוטי תולדות דה\"ה לתולדות ובלבד שיהו תולדות דשני אבות אלא למעוטי היכא דהוו ב' תולדות דאב אחד או אב ותולדה שלו דאינו חייב אלא אחת כדקתני סיפא העושה מלאכות הרבה מעין מלאכה אחת שתי תולדות של אב אחד אינו חייב אלא חטאת אחת דהרי הוא כעושה וחוזר ועושה בהעלם אחד ואין חילוק חטאות בהעלם אחד אלא בגופי עבירה שאינן דומין או בחילוק שבתות לענין שגגת שבת:", false], ["R2", "גמ' עוד כלל אחר", "לקמן בפירקין (שבת דף עה:) ולא כלל בו אלא ב' דברים כל הכשר להצניע וכל שאינו כשר להצניע וכאן כלל יותר ומשום הכי קרי להו גדול:", false], ["R3", "וגבי שביעית", "בפרק (בנות שוח):", false], ["R4", "גבי מעשר", "בפ\"ק דמסכת מעשרות:", false], ["R5", "אית ביה אבות", "ארבעים חסר אחת שהוצרכו למשכן ותולדות הדומות לכל אחת הויא תולדות דידיה אבות דשביעית זריעה וקצירה וזמירה ובצירה דכתיבן תולדות שאר עבודות שבשדה וכרם כדאמרינן במועד קטן בפ\"ק (דף ג.):", false], ["R6", "ולבר קפרא דתנא", "בתוספתא דידיה במעשר מאי אבות כו':", false], ["R7", "אלא לאו היינו טעמא", "משום אבות ותולדות אלא דבר שנאמר בו כלל ועונשו גדול מדבר אחר שנאמר בו כלל תני ביה כלל גדול:", false], ["R8", "שבת איתא", "לאיסור דידה בין בדבר שהיה תלוש מבעוד יום כגון טוחן ולש בין בדבר שמחובר משקדש היום:", false], ["R9", "ואילו שביעית", "בדבר שהיה מחובר משקדש שביעית איתא אבל בדבר שהיה תלוש לפני שביעית ליתא:", false], ["R10", "שביעית", "נמי איתיה במאכל בהמה דכתיב ולבהמתך ולחיה וגו' (ויקרא כ״ה:ז׳) מעשר ליתיה במאכל בהמה דמדאורייתא דגן תירוש ויצהר כתיב ורבנן תקון פירות האילן וירק דמאכל אדם כדקתני כל שהוא אוכל כו':", false], ["R11", "איתיה בתאנה וירק", "מדרבנן:", false], ["R12", "כל שהוא אוכל כו'", "דגבי פיאה קציר כתיב מה קציר מיוחד שיש בו כל אלו:", false], ["R13", "למעוטי ספיחי סטיס וקוצה", "שעומדים לצבע להכי נקט ספיחים דאין דרך ללוקטן בשנה שנזרעים אלא לסוף ד' וה' שנים שהשרשין מתפשטין בארץ ומשביחין ושורש שלהן עיקר והא דנקט הני ולא נקט שאר מינים שאינן ראוין לאכילה משום דאיידי דגבי שביעית תני להו דיש להן שביעית נקט הכא דבפיאה ומעשר ליתנהו לשון רבינו הלוי: סטיס ווישד\"א:", false], ["R14", "ומכניסו לקיום למעוטי ירק", "כגון לפת וקפלוטות:", false], ["R15", "ואילו מכניסו לקיום ולקיטתו כאחד לא תנן", "דכי תקון רבנן אדידהו לא פלוג בפירות האילן ובירק בין מין למין:", false], ["R16", "מתניתין", "דפטר בחד חטאת:", false], ["R17", "בתינוק שנשבה", "ולא ידע שבת מעולם:", false], ["R18", "אבל הכיר ולבסוף שכח", "הוה ליה כשוכח שהיום שבת ויודע עיקר שבת וחייב על כל שבת ושבת:", false], ["R19", "שהיתה שכוחה ממנו", "מעולם:", false], ["R20", "לתני הכיר ולבסוף שכח", "דחייב ואע\"ג דליכא למימר ימים שבינתים הוויין ידיעה לחלק וכ\"ש הא דאיכא למימר שימים שבינתים הוויין ליה ידיעה לחלק:", false]], "T": [["T1", "וגבי שביעית נמי כו'", "הכי תנן בשביעית (כ\"ז מ\"א) כלל גדול אמרו כל שהוא מאכל אדם ומאכל בהמה וממין הצובעין ואינו מתקיים בארץ פירוש שכלה לחיה יש לו שביעית ולדמיו שביעית יש לו ביעור ולדמיו ביעור ועוד כלל אחר אמרו דקתני כל שאינו מאכל אדם ומאכל בהמה וכו' ומתקיים בארץ יש לו שביעית ולדמיו שביעית ואין לו ולדמיו ביעור דכלל הראשון גדול דיש לו ביעור ואחרון אין לו ביעור ואע\"ג דקתני התם בבבא אחריתא כלל גדול אמרו בשביעית ולא קתני בתריה כלל אחר כיון דקתני כלל קטן קמיה שייך למתני בתריה כלל גדול:", false], ["T2", "והא גבי מעשר דקתני עוד כלל אחר אמרו כו'", "תימה למה ישנה בראשון כלל גדול כיון דאינו גדול מן השני וצ\"ע:", false], ["T3", "דאית ביה אבות ותולדות", "ואפילו לרבא דאמר במועד קטן (דף ב:) גבי שביעית אבות אסר רחמנא תולדות לא אסר רחמנא מ\"מ מדרבנן מיהא אית ביה אבות ותולדות וא\"ת במעשר איכא נמי אבות ותולדות דמדאורייתא דגן ותירוש ויצהר ומדרבנן כל מילי וי\"ל דלא שייך להזכיר אבות ותולדות במילי דלית ביה איסור מלאכות וא\"ת ובכלל אחר דשבת ושביעית ליתני נמי כלל גדול מהאי טעמא ויש לומר דלא צריך למיתני דאכלל גדול קמא קאי וה\"ק עוד כלל גדול אחר אמרו:", false], ["T4", "גדול עונשו של שבת משל שביעית", "לפירוש הקונטרס דמפרש בתלוש שנתלש קודם שבת וקודם שביעית משמע שרוצה לפרש שביעית במחובר איתא היינו במחובר ערב שביעית ונתלש בשביעית ומיירי באיסור פירות שביעית לאכילה וקשה לר\"י דלפי' לא הוה ליה למימר אלא גדול עונשו של שבת ושביעית משל מעשר דאיתנהו במאכל בהמה מה שאין כן במעשר ולמה ליה למימר כלל גדול עונשה של שבת משל שביעית אלא נראה לר\"י דבמידי דאכילה דלא שייכא לענין שבת לא שייך למימר גדול שבת לא משביעית ולא ממעשר ולהכי לא קאמר גדול שבת ושביעית ממעשר אלא קאמר גדול שבת משביעית דאיסור מלאכות איתנהו בין בתלוש בין במחובר ואילו איסור מלאכות דשביעית במחובר איתא בתלוש ליתא וכן משמע בירושלמי דקתני שהשבת חלה על הכל ושביעית לא חלה אלא על עבודת הארץ בלבד:", false], ["T5", "ולבר קפרא דתני כלל גדול במעשר כו'", "נראה לרשב\"א דאחרים לא שנו כלל גדול במעשר לפי שאינו גדול מפאה אלא מדרבנן אבל כלל גדול דשבת גדול משביעית מדאורייתא וכן של שביעית משל מעשר:", false], ["T6", "ואילו פאה ליתא בתאנה וירק", "לאו דוקא תאנה דהא רוב אילנות אין לקיטתן כאחד ואינן רק ח' אילנות דחשיב בפ\"ק דפאה (מ\"ה) דחייב בפאה אלא נקט תאנה משום דנלקטת כמה פעמים (ב\"ב דף כח:) אכל ג' פירי בחד יומא כגון תאנה כו' ואומר ר\"ת דמדאורייתא לא מיחייב בפאה אלא בדגן ותירוש ויצהר דסתם קציר דכתיב גבי פאה הוא דגן וכתיב כי תחבוט זיתך כי תבצור כרמך והא דדריש בת\"כ יכול שאני מרבה קישואין ודלועין שיהיו חייבים בפאה ת\"ל ובקוצרכם את קציר ארצכם מה קציר שהוא אוכל ונשמר כו' אסמכתא היא דהתם נמי דריש מעשר ירק מקרא אע\"ג דהוי מדרבנן ומה שלא תקנו פאה בירק ובתאנה ודדמי לה כמו שתקנו מעשר מהן אומר ר\"ת משום דאין לקיטתן כאחד דבר מועט הוא פאה דידיה ויש הפסד לעניים בה יותר מן הריוח שמתבטלין לפי שאין יודעים זמן לקיטתן ודבר שאין מכניסו לקיום נמי לא חשיב ויפסידו יותר ממה שירויחו במקום אחר:", false], ["T7", "ספיחי סטיס וקוצה", "הא דלא קאמר סתם למעוטי מידי דלאו אוכל אלא נקט הני אומר ר\"י משום דקצת הם ראויים לאכילה וקמ\"ל דאפילו הכי אין פאה נוהגת בהן וכן מצא רשב\"ם בתשובת רש\"י והא דנקט ספיחים משום דשמא סטיס וקוצה עצמם אינם ראוים כלל לאכילת אדם ולא הוה חידוש או שמא הן אוכל גמור ולא ממעטינן:", false], ["T8", "גר שנתגייר בין הנכרים", "בפני ג' ולא הודיעוהו מצות שבת דאי נתגייר בינו לבין עצמו לא הוי גר כדאמרינן בהחולץ (יבמות דף מז:):", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "פרק \"כלל גדול\": סוף המשנה", "x": "בסוף העמוד הקודם נגמר הפרק \"במה אשה\", ונפתח הפרק השביעי, \"כלל גדול\", במשנה על מי שעשה מלאכות רבות בשבת בשגגה. המשנה מבחינה בין מי ששכח את עיקר השבת, שחייב רק חטאת אחת, לבין מי שיודע את עיקר השבת, שחייב על כל שבת ושבת, ולבין מי שיודע שהיום שבת. כאן נגמרת המשנה, ואחריה הגמרא שואלת למה נאמר \"כלל גדול\", ומבררת על מי מדבר המקרה הראשון.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G1"], "t": "חייב על כל אב מלאכה", "x": "מי שיודע שהיום שבת ועשה מלאכות הרבה, חייב קרבן חטאת על כל אב מלאכה. ומי שעושה מלאכות הרבה \"מעין מלאכה אחת\", מאותו סוג, אינו חייב אלא חטאת אחת.", "a": "אבות מלאכה הם שלושים ותשע המלאכות העיקריות של שבת, ותולדות הן מלאכות שדומות להן."}, {"w": "רש\"י", "cols": false, "hl": ["G1", "R1"], "t": "רש\"י: אב ותולדה", "x": "המילה \"אב\" אינה באה להוציא תולדות: גם שתי תולדות של שני אבות שונים מחייבות שתי חטאות. היא באה להוציא שתי תולדות של אב אחד, או אב ותולדה שלו, שעליהן חייב רק אחת. זה כמו מי שעושה וחוזר ועושה בהעלם אחד, ובהעלם אחד מתחלקות החטאות רק לפי עבירות שאינן דומות, או לפי שבתות למי ששגג בשבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R2", "R3", "R4"], "t": "למה \"כלל גדול\"?", "x": "\"מאי טעמא\", מה הטעם שנאמר \"כלל גדול\"? אם תאמר שזה מפני שבהמשך הפרק המשנה שונה עוד כלל, וכך גם בשביעית, שם יש עוד כלל ולכן נאמר \"כלל גדול\", הרי במעשר המשנה שונה עוד כלל ואינה אומרת \"כלל גדול\". רש\"י מציין את המקומות: הכלל של שביעית שנוי בפרק \"בנות שוח\", והכלל של מעשר בפרק הראשון של מסכת מעשרות.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G2", "R2"], "t": "רש\"י: מה הכלל האחר", "x": "הכלל האחר נשנה בהמשך הפרק שלנו, והוא כולל רק שני דברים: כל הכשר להצניע, וכל שאינו כשר להצניע. כאן הכלל כולל יותר, ולכן הוא נקרא גדול.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1"], "t": "התוספות: שני הכללים בשביעית", "x": "המשנה במסכת שביעית אומרת: מה שהוא מאכל אדם, מאכל בהמה או ממין הצובעים, ואינו מתקיים בארץ, שהתוספות מפרשים \"שכלה לחיה\", כלומר שהוא כלה מן השדה ואינו נשאר שם לחיה, יש לו ולדמיו דין שביעית, ויש לו ולדמיו ביעור. ועוד כלל: מה שאינו מאכל אדם ומאכל בהמה, ומתקיים בארץ, יש לו ולדמיו דין שביעית, ואין לו ולדמיו ביעור. לכן הראשון נקרא גדול, כי יש בו ביעור, ובאחרון אין ביעור.", "a": "ובמקום אחר באותה מסכת נאמר \"כלל גדול\" בלי כלל אחר אחריו. התוספות מסבירים שלפניו נשנה כלל קטן, ולכן מתאים לקרוא לזה שאחריו גדול."}, {"w": "תוספות", "cols": false, "hl": ["G2", "T2"], "t": "התוספות: תמיהה על השאלה ממעשר", "x": "התוספות תמהים על קושיית הגמרא: למה הייתה המשנה במעשר צריכה לקרוא לכלל הראשון \"גדול\", אם אינו גדול מן השני? והם נשארים בזה ב\"צריך עיון\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R5"], "t": "רבי יוסי בר אבין: אבות ותולדות", "x": "בשבת ובשביעית, שיש בהן אבות ותולדות, נאמר \"גדול\". במעשר, שאין בו אבות ותולדות, לא נאמר. רש\"י: אבות השבת הם ארבעים חסר אחת המלאכות שהוצרכו למשכן, ותולדותיהם הן המלאכות שדומות לכל אחת מהן. אבות השביעית הם זריעה, קצירה, זמירה ובצירה, שכתובים בתורה, ותולדותיהם שאר עבודות השדה והכרם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R6"], "t": "ובר קפרא?", "x": "אבל בר קפרא שונה \"כלל גדול\" גם במעשר, בברייתא שלו. אצלו, אילו אבות ותולדות יש במעשר? הרי שאין זה הטעם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3", "T3"], "t": "התוספות: אבות ותולדות בלי איסור מלאכה", "x": "גם לדעת רבא, שהתורה אסרה בשביעית רק אבות ולא תולדות, מדרבנן יש בה אבות ותולדות. ואם תאמר שגם במעשר יש כעין זה, דגן תירוש ויצהר מן התורה ושאר הדברים מדרבנן? התשובה: הלשון \"אבות ותולדות\" שייכת רק בדבר שיש בו איסור מלאכות.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3", "T3"], "t": "התוספות: והכלל השני של שבת?", "x": "התוספות שואלים: אם כך, גם בכלל השני של שבת ושביעית היה צריך לשנות \"גדול\" מאותו טעם. ועונים: לא היה צורך, כי הכלל השני נסמך על הראשון, וכאילו נאמר \"עוד כלל גדול אחר\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4a"], "t": "הטעם האחר: עונש חמור יותר", "x": "\"אלא לאו היינו טעמא\", אלא לא זה הטעם, כלומר לא אבות ותולדות. הטעם הוא: עונשה של שבת גדול משל שביעית. השבת נוהגת גם בתלוש וגם במחובר, והשביעית נוהגת במחובר ולא בתלוש.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G4a", "R7", "R8", "R9"], "t": "רש\"י: תלוש ומחובר", "x": "לא מפני אבות ותולדות, אלא דבר שנאמר בו כלל ועונשו גדול מדבר אחר שנאמר בו כלל, כללו נקרא גדול. בשבת האיסור חל גם על מה שנתלש לפני שבת, כמו טחינה ולישה, וגם על המחובר. בשביעית הוא חל על מה שהיה מחובר כשנכנסה השביעית, ולא על מה שנתלש לפניה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4b", "R10"], "t": "שביעית חמורה ממעשר", "x": "ועונשה של שביעית גדול משל מעשר: השביעית נוהגת גם במאכל אדם וגם במאכל בהמה, והמעשר רק במאכל אדם. רש\"י: בשביעית כתוב \"ולבהמתך ולחיה\". ומעשר מן התורה הוא בדגן, תירוש ויצהר, וחכמים תיקנו אותו בפירות האילן ובירק שהם מאכל אדם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4a", "T4"], "t": "התוספות: קושיה על פירוש רש\"י", "x": "מדברי רש\"י משמע שבשביעית \"מחובר\" הוא מה שהיה מחובר בערב שביעית ונתלש בשביעית, והאיסור הוא אכילת פירות שביעית. רבנו יצחק מקשה: לפי זה הייתה הגמרא צריכה לומר רק ששבת ושביעית חמורות ממעשר, מפני שהן נוהגות גם במאכל בהמה. למה לומר ששבת חמורה משביעית?", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4a", "T4"], "t": "התוספות: ההשוואה היא באיסור המלאכות", "x": "רבנו יצחק מפרש: בדברי אכילה, שאינם שייכים לשבת, אי אפשר לומר שהשבת חמורה מן השביעית או מן המעשר. ההשוואה היא באיסור המלאכות: בשבת הוא חל בתלוש ובמחובר, ובשביעית רק במחובר. וכך משמע בירושלמי: השבת חלה על הכול, והשביעית רק על עבודת הארץ.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5a", "R11"], "t": "לבר קפרא: מעשר חמור מפאה", "x": "ולבר קפרא, ששונה \"כלל גדול\" במעשר: עונשו של מעשר גדול משל פאה. מעשר נוהג בתאנה ובירק, ופאה אינה נוהגת בהם. רש\"י מוסיף שבתאנה ובירק המעשר הוא מדרבנן.", "a": "פאה היא קצה השדה שמשאירים לעניים."}, {"w": "תוספות", "cols": false, "hl": ["G5a", "T5"], "t": "התוספות: למה אחרים לא שנו \"גדול\" במעשר", "x": "לדעת רבנו שמשון בן אברהם (רשב\"א), השונים האחרים, חוץ מבר קפרא, לא שנו \"כלל גדול\" במעשר, כי הוא גדול מפאה רק מדרבנן. אבל שבת גדולה משביעית, ושביעית ממעשר, מן התורה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5b", "R12"], "t": "הכלל של פאה", "x": "\"דתנן\", שכך שנינו במשנה: כל שהוא אוכל, ונשמר, וגידולו מן הארץ, ולקיטתו כאחת, ומכניסו לקיום, חייב בפאה. רש\"י: לגבי פאה כתוב \"קציר\", ומה קציר מיוחד בכך שיש בו כל אלה, אף פאה רק בדבר כזה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R13", "R14"], "t": "מה כל תנאי מוציא", "x": "\"אוכל\" מוציא ספיחים של סטיס וקוצה, צמחים שמשמשים לצבע. \"ונשמר\" מוציא הפקר. \"גידולו מן הארץ\" מוציא כמהין ופטריות. \"לקיטתו כאחת\" מוציא תאנה. \"מכניסו לקיום\" מוציא ירק, כמו לפת וכרישה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6", "R13"], "t": "רש\"י: למה דווקא ספיחים", "x": "את הצמחים האלה אין לוקטים בשנה שזורעים אותם, אלא אחרי ארבע או חמש שנים, כשהשורשים מתפשטים ומשביחים, והשורש הוא העיקר. ונזכרו דווקא הם, ולא שאר צמחים שאינם ראויים לאכילה, כי במשנה בשביעית נשנה שיש בהם דין שביעית, ולכן כאן מלמדים שבפאה ובמעשר אין בהם. רש\"י מביא את הדברים בלשון רבו, רבנו הלוי.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T7"], "t": "התוספות: למה לא נאמר סתם \"מה שאינו אוכל\"", "x": "רבנו יצחק אומר: הספיחים האלה ראויים קצת לאכילה, והגמרא מלמדת שאף על פי כן אין פאה נוהגת בהם. וכך מצא רבנו שמואל בתשובה של רש\"י. ונזכרו דווקא הספיחים, כי ייתכן שסטיס וקוצה עצמם אינם ראויים כלל לאכילת אדם, ואז אין חידוש בכך שהם פטורים, או שהם אוכל גמור, ואז אינם יוצאים מן הכלל.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5a", "T6"], "t": "התוספות: לא דווקא תאנה", "x": "רוב האילנות אין לקיטתם כאחת, ורק שמונה אילנות, שהמשנה מונה בפרק הראשון של מסכת פאה, חייבים בפאה. נזכרה התאנה כי היא נלקטת כמה פעמים. ורבנו תם אומר שמן התורה פאה היא רק בדגן, תירוש ויצהר: סתם \"קציר\" שכתוב בפאה הוא דגן, וכתוב גם \"כי תחבוט זיתך\" ו\"כי תבצור כרמך\". והדרשה בתורת כהנים, שלומדת מ\"קציר\" את התנאים \"אוכל ונשמר\" וכולי, היא אסמכתא בלבד, שהרי שם דורשים מן הפסוק גם מעשר ירק, אף שהוא מדרבנן.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5a", "T6"], "t": "התוספות: למה לא תיקנו פאה בירק ובתאנה", "x": "חכמים תיקנו מעשר בירק ובתאנה, ולא תיקנו בהם פאה. רבנו תם מסביר: במה שאין לקיטתו כאחת, הפאה היא דבר מועט, והעניים מפסידים בה יותר ממה שהם מרוויחים, כי הם מתבטלים, שאינם יודעים מתי זמן הלקיטה. וגם מה שאין מכניסים אותו לקיום אינו חשוב, והעניים יפסידו בו יותר ממה שירוויחו במקום אחר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R15"], "t": "ובמעשר אין שני התנאים האחרונים", "x": "ואילו במעשר שנינו: כל שהוא אוכל, ונשמר, וגידולו מן הארץ, חייב במעשר. \"לקיטתו כאחת\" ו\"מכניסו לקיום\" לא נשנו. רש\"י: כשחכמים תיקנו מעשר בפירות האילן ובירק, לא חילקו בין מין למין.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8a", "R16", "R17", "R18"], "t": "רב ושמואל: תינוק שנשבה", "x": "רב ושמואל אמרו שניהם: המשנה, שפוטרת בחטאת אחת, מדברת בתינוק שנשבה בין הגויים ולא ידע שבת מעולם, ובגר שהתגייר בין הגויים. אבל מי ש\"הכיר ולבסוף שכח\", ידע את השבת ואחר כך שכח, חייב על כל שבת ושבת. רש\"י: הוא כמו מי ששכח שהיום שבת אבל יודע את עיקר השבת.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8a", "T8"], "t": "התוספות: איזה גר", "x": "מדובר בגר שהתגייר בפני שלושה, ולא הודיעו לו את מצוות השבת. אילו התגייר לבדו, לא היה גר כלל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8b", "R19"], "t": "\"השוכח\": משמע שידע פעם?", "x": "\"תנן\", שנינו: \"השוכח עיקר שבת\". האם אין משמע מכך שהייתה לו ידיעה מתחילה? הגמרא עונה: לא. \"השוכח עיקר שבת\" פירושו שעיקר השבת היה שכוח ממנו מעולם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R20"], "t": "קושיה מן המקרה השני", "x": "ואם מי שהכיר ולבסוף שכח חייב על כל שבת, במקום לשנות \"היודע עיקר שבת\", הייתה המשנה צריכה לשנות \"הכיר ולבסוף שכח\", וכל שכן היודע. רש\"י: אצל מי ששכח לגמרי אי אפשר לומר שהימים שבינתיים הם ידיעה שמחלקת בין השבתות, ובכל זאת הוא חייב, וכל שכן מי שיודע את עיקר השבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "התשובה: \"היודע\" שידע ושכח", "x": "לכן הגמרא מפרשת: \"היודע עיקר שבת\" במשנה הוא מי שהיה יודע את עיקר השבת ושכח אותו. ההמשך נמצא בעמוד הבא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "המשנה נגמרה בחיוב על כל אב מלאכה. \"כלל גדול\" נאמר כי עונשה של שבת חמור משל שביעית, ושל שביעית משל מעשר, ולבר קפרא גם מעשר חמור מפאה. רב ושמואל העמידו את המשנה בתינוק שנשבה, ופירשו ש\"היודע עיקר שבת\" הוא מי שידע ושכח. העמוד הבא שואל מה דינו של מי שלא שכח, וחוזר להעמיד את המשנה במי שהכיר ולבסוף שכח.", "a": ""}], "audio": "shabbat/daf-68a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

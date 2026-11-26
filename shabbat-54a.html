@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף נ&quot;ד עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-54a.html">
+<meta name="description" content="מסכת שבת, דף נ&quot;ד עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף נ\"ד עמוד א'", "url": "https://gemara.co.il/shabbat-54a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף נ&quot;ד עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>במה בהמה</span><span>פרק חמישי</span><span>שבת<b>נד.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-53b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-54b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 105</div>
+  <h1>מסכת שבת, דף נ&quot;ד עמוד א&#x27;</h1>
+  <p class="sub">פרק חמישי, &quot;במה בהמה&quot;. רחלים שחוזות, כבולות וכבונות, עזים צרורות, ומשנה על גמל שאינו יוצא במטולטלת ועל גמלים קשורים זה לזה.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף נ&quot;ד עמוד א&#x27;, לומדים: רחלים שחוזות, כבולות וכבונות; עזים צרורות: שלוש גרסאות של הפסק; משנה: הגמל והמטולטלת; עקוד ורגול; קשירת גמלים וכריכת החבלים.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. רחלים שחוזות, כבולות וכבונות</a><a href="#u2">2. עזים צרורות: שלוש גרסאות של הפסק</a><a href="#u3">3. משנה: הגמל והמטולטלת</a><a href="#u4">4. עקוד ורגול</a><a href="#u5">5. קשירת גמלים וכריכת החבלים</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2a,G2b,G3a,G3b,G4,G5">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>רחלים שחוזות, כבולות וכבונות</h2>
+  <p class="lead">הגמרא ממשיכה לפרש מילים שבמשנה על רחלים: "שחוזות", "כבולות" ו"כבונות". על כל מילה היא שואלת מה פירושה, ולפעמים גם מניין שזו משמעותה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הרחלים יוצאות כבולות</td><td>הרחלים יוצאות כבולות.</td></tr>
+      <tr><td>מאי כבולות</td><td>מה הן "כבולות"?</td></tr>
+      <tr><td>שמכבלין אליה שלהן למטה</td><td>שקושרים את האליה שלהן למטה,</td></tr>
+      <tr><td>כדי שלא יעלו עליהן הזכרים</td><td>כדי שהזכרים לא יעלו עליהן.</td></tr>
+      <tr><td>מאי משמע דהאי כבול לישנא דלא עביד פירי הוא</td><td>מניין ש"כבול" הוא לשון של דבר שאינו עושה פירות?</td></tr>
+      <tr><td>שהיו בה בני אדם שמכובלין בכסף ובזהב</td><td>שהיו בה בני אדם עטופים בכסף ובזהב.</td></tr>
+      <tr><td>אי הכי היינו דכתיב</td><td>אם כך, זהו שכתוב:</td></tr>
+      <tr><td>אמר ליה אין</td><td>אמר לו: כן.</td></tr>
+      <tr><td>כיון דעתירי ומפנקי לא עבדי עבידתא</td><td>כיון שהיו עשירים ומפונקים, לא עשו עבודה.</td></tr>
+      <tr><td>ארץ חומטון היתה</td><td>ארץ מלוחה הייתה.</td></tr>
+      <tr><td>ואמאי קרי לה כבול</td><td>ולמה קורא לה "כבול"?</td></tr>
+      <tr><td>דמשתרגא בה כרעא עד כבלא</td><td>כי הרגל שוקעת בה עד ה"כבלא".</td></tr>
+      <tr><td>מאי כבונות שמכבנין אותו למילת</td><td>מה הן "כבונות"? שעוטפים אותו ל"מילת".</td></tr>
+      <tr><td>כצמר נקי בן יומו</td><td>כצמר נקי, בן יומו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>שחוזות:</b> הפסוק "והנה אשה לקראתו, שית זונה" מראה ש"שחוזות" הוא לשון של גילוי. לפי רש"י "שחוזות" נדרש כנוטריקון, כלומר כקיצור, של המילים "שית זונה".</p>
+  <p><b>כבולות:</b> קושרים את האליה למטה, כדי שהזכרים לא יעלו עליהן. "כבול" הוא לשון של דבר שאינו עושה פירות, כמו "ארץ כבול" שבספר מלכים.</p>
+  <p><b>מהי ארץ כבול:</b> רב הונא אומר: היו בה אנשים עטופים בכסף ובזהב, עשירים ומפונקים שלא עשו עבודה, ולכן "לא ישרו בעיניו". רב נחמן בר יצחק אומר: ארץ מלוחה, שהרגל שוקעת בה עד ה"כבלא", ובני אדם קוראים לארץ שאינה עושה פירות "ארעא מכבלא".</p>
+  <p><b>כבונות:</b> עוטפים את הכבש מיום היוולדו, כדי שצמרו יהיה נקי ל"מילת". כך רב ביבי בר אביי מפרש את "צמר לבן" שבמשנה על מראות הנגע.</p>
+  <div data-hl="R1,R2" class="voice r"><span class="tag">רש"י</span><blockquote>שית זונה – נוטריקון דשחוזות:</blockquote><blockquote>שית – בית הבשת:</blockquote><p><span class="say">מה רש"י אומר:</span> "שית" הוא בית הבושת, מקום הערווה, ו"שחוזות" הוא נוטריקון של "שית זונה".</p></div>
+  <div data-hl="R10,R12" class="voice r"><span class="tag">רש"י</span><blockquote>שמכבנין – קושרין בגד סביבו ביום שנולד שצמרו נקי ומשמר צמרו שלא יטנף:</blockquote><blockquote>למילת – לעשות מצמרו כלי מילת:</blockquote><p><span class="say">מה רש"י אומר:</span> ביום שהכבש נולד קושרים סביבו בגד, כדי שהצמר יישאר נקי, ומצמרו עושים בגדי "מילת".</p></div>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>מכבנין – על שעושין כמין קרסי מתכת לחבר הבגד כמו תנתן כבינתי לבתי (גיטין דף טו.) נושק"א בלע"ז:</blockquote><p><span class="say">מה רש"י אומר:</span> הלשון "מכבנין" היא על שם הקרסים של מתכת שמחברים בהם את הבגד, כמו בלשון "תינתן כבינתי לבתי".</p></div>
+  <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>עד כבלא – מפרש ר"י עד השוק כדאמר בפ' במה אשה (לקמן שבת דף כג:) בירית באחת כבלים בשתים שמניחין הכבלים בשוק:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק מפרש "עד כבלא": עד השוק, כמו שמשמע מן הלשון "כבלים בשתים" בפרק "במה אשה". רש"י פירש: עד הפרק התחתון של הרגל.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שני פירושים לאותה ארץ</h3>
+    <p>רב הונא ורב נחמן בר יצחק מסבירים בשתי דרכים את השם "כבול". לרב הונא הוא בא מן העטיפה והקשירה בכסף ובזהב. לרב נחמן בר יצחק הוא בא מן ה"כבלא", המקום ברגל שעד אליו היא שוקעת.</p>
+    <p>רבא שואל את רב הונא אם פירושו מסביר את "לא ישרו בעיניו", ורב הונא עונה שכן: אנשים עשירים ומפונקים אינם עושים עבודה. לפי רב נחמן בר יצחק הארץ עצמה אינה עושה פירות, והוא מביא לכך את הלשון שבפי בני אדם.</p>
+    <div data-hl="R6" class="voice r"><span class="tag">רש"י</span><blockquote>עבידתא – אנגריא של מלך:</blockquote><p><span class="say">מה רש"י אומר:</span> ה"עבידתא" שלא עשו היא עבודת המלך.</p></div>
+  </div>
+  <p class="godeep">איך כל אחד מן האמוראים מסביר את השם "ארץ כבול"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הן רחלים "כבולות"?</summary><p>רחלים שקושרים את האליה שלהן למטה, כדי שהזכרים לא יעלו עליהן.</p></details>
+  <details><summary>מה פירוש "ארץ חומטון", לפי רש"י?</summary><p>ארץ מלוחה ומתבקעת.</p></details>
+  <details><summary>למה עוטפים את הכבש ביום שנולד?</summary><p>כדי שצמרו יישאר נקי ויהיה ל"מילת".</p></details>
+  <details class="deepq"><summary>מה ענה רב הונא לשאלה של רבא?</summary><p>כן: כיון שהיו עשירים ומפונקים לא עשו עבודה, ולכן לא ישרו בעיניו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G6,G7,G8a,G8b">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>עזים צרורות: שלוש גרסאות של הפסק</h2>
+  <p class="lead">על "העזים יוצאות צרורות" נאמרו פסקים של רב ושמואל בשלוש גרסאות שונות, ולבסוף פסק בשם רבי יוחנן.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>רב אמר הלכה כר' יהודה</td><td>רב אמר: הלכה כרבי יהודה,</td></tr>
+      <tr><td>ושמואל אמר הלכה כר' יוסי</td><td>ושמואל אמר: הלכה כרבי יוסי.</td></tr>
+      <tr><td>ואיכא דמתני להא שמעתא באפי נפשיה</td><td>ויש ששונים את השמועה הזו בפני עצמה:</td></tr>
+      <tr><td>רב אמר ליבש מותר ולא לחלב</td><td>רב אמר: ליבש מותר, ולא לחלב.</td></tr>
+      <tr><td>ושמואל אמר אחד זה ואחד זה אסור</td><td>ושמואל אמר: גם זה וגם זה אסור.</td></tr>
+      <tr><td>ואיכא דמתני לה אהא</td><td>ויש ששונים אותה על זו:</td></tr>
+      <tr><td>עזים יוצאות צרורות ליבש אבל לא לחלב</td><td>עזים יוצאות צרורות ליבש, אבל לא לחלב.</td></tr>
+      <tr><td>משום ר' יהודה בן בתירא אמרו כך הלכה</td><td>בשם רבי יהודה בן בתירא אמרו: כך הלכה,</td></tr>
+      <tr><td>אבל מי מפיס איזו ליבש ואיזו לחלב</td><td>אבל מי יבחין איזו ליבש ואיזו לחלב?</td></tr>
+      <tr><td>ומתוך שאין מכירים</td><td>וכיון שאין מכירים ביניהן,</td></tr>
+      <tr><td>הלכה כר' יהודה בן בתירא</td><td>הלכה כרבי יהודה בן בתירא.</td></tr>
+      <tr><td>כי אתא רבין אמר ר"י</td><td>כשבא רבין, אמר רבי יוחנן:</td></tr>
+      <tr><td>הלכה כת"ק</td><td>הלכה כתנא קמא.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הגרסה הראשונה:</b> רב פוסק כרבי יהודה, שבמשנה מתיר עזים צרורות "ליבש" ואוסר "לחלב". שמואל פוסק כרבי יוסי, שאוסר בשתיהן.</p>
+  <p><b>הגרסה השנייה:</b> המחלוקת נשנתה בפני עצמה. רב אומר: ליבש מותר, ולחלב לא. שמואל אומר: שניהם אסורים.</p>
+  <p><b>הגרסה השלישית:</b> דברי שמואל נאמרו על ברייתא. בה רבי יהודה בן בתירא מסכים שכך הדין, שליבש מותר ולחלב אסור, אבל מי יבחין בין העזים? ולכן שתיהן אסורות, ושמואל פוסק כמותו. ורבין אמר בשם רבי יוחנן שהלכה כתנא קמא, ולפי רש"י זה תנא קמא של המשנה, שמתיר בשתיהן.</p>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>אבל מי מפיס – מי מטיל גורל ומבחין איזו ליבש ואיזו לחלב והרואה אותם צרורות ליבש אומר דלחלב הוא ואתי למישרי תרווייהו:</blockquote><p><span class="say">מה רש"י אומר:</span> מי שרואה עז שצרורה ליבש יחשוב שהיא צרורה לחלב, ויבוא להתיר את שתיהן.</p></div>
+  <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>הלכה כר' יהודה בן בתירא – הא דנקט ר' יהודה בן בתירה ולא נקט ר' יוסי משום דבמקום שאין עושין כלל אלא כדי ליבש שרי ר' יהודה בן בתירא דלא שייך התם מי מפיס ור' יוסי אוסר משום דילמא נפיל:</blockquote><p><span class="say">מה התוספות אומרים:</span> למה שמואל פסק דווקא כרבי יהודה בן בתירא ולא כרבי יוסי? כי במקום שקושרים רק ליבש, רבי יהודה בן בתירא מתיר, שאין שם חשש של "מי מפיס". ורבי יוסי אוסר גם שם, שמא ייפול מה שקשור בה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה הגרסאות משנות</h3>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>רב אמר ליבש מותר כו' – וא"ת לימא מר הלכה כמר וי"ל משום דאיכא דמפכי להו לתנאי:</blockquote><p><span class="say">מה התוספות אומרים:</span> בגרסה השנייה רב ושמואל אומרים את הדין עצמו, ולא "הלכה כפלוני". התוספות מסבירים שזה משום שיש מי שהופכים את דברי התנאים ומחליפים ביניהם.</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>ר"ת גריס אמר רב הלכה כת"ק ושמואל אמר כו' וכן כי אתא רבין א"ר יוחנן הלכה כתנא קמא ואתי שפיר איכא דמתני לה לדרב ושמואל דלעיל אהא:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם גורס בגרסה השלישית: "אמר רב: הלכה כתנא קמא, ושמואל אמר" וכולי. לפי זה גם רב נזכר שם, ורבין אמר בשם רבי יוחנן אותו פסק שפסק רב. כך מתיישבת הלשון "ואיכא דמתני לה אהא": המחלוקת של רב ושמואל כולה נשנתה על הברייתא, ולא רק דברי שמואל.</p></div>
+    <p>בגרסה השלישית יש לאיסור שני רבדים. בעיקר הדין יש הבדל בין "ליבש" ל"לחלב". אבל רבי יהודה בן בתירא אוסר את שניהם, משום שהרואה אינו יכול להבחין ביניהם.</p>
+  </div>
+  <p class="godeep">למה רבי יהודה בן בתירא אוסר גם ליבש? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>כמי פסק רב בגרסה הראשונה, וכמי שמואל?</summary><p>רב כרבי יהודה, ושמואל כרבי יוסי.</p></details>
+  <details><summary>מה פירוש "מי מפיס"?</summary><p>מי מטיל גורל, כלומר מי יבחין איזו עז צרורה ליבש ואיזו לחלב.</p></details>
+  <details><summary>מה פסק רבי יוחנן, לפי מה שהביא רבין?</summary><p>הלכה כתנא קמא.</p></details>
+  <details class="deepq"><summary>לפי התוספות, במה רבי יהודה בן בתירא שונה מרבי יוסי?</summary><p>במקום שקושרים רק ליבש, רבי יהודה בן בתירא מתיר, ורבי יוסי אוסר שמא ייפול מה שקשור בה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G9,G10,G11a,G11b">
+  <div class="kicker">יחידה 3 · משנה</div>
+  <h2>משנה: הגמל והמטולטלת</h2>
+  <p class="lead">משנה חדשה מונה דברים שהבהמה אינה יוצאת בהם בשבת, ופותחת בגמל. הגמרא מביאה ברייתא שמבחינה בין מטולטלת שקשורה היטב לבין מטולטלת שעלולה ליפול.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ובמה אינה יוצאה</td><td>ובמה אינה יוצאת?</td></tr>
+      <tr><td>לא יצא גמל במטולטלת</td><td>לא יצא גמל במטולטלת,</td></tr>
+      <tr><td>לא עקוד ולא רגול</td><td>לא עקוד ולא רגול,</td></tr>
+      <tr><td>וכן שאר כל הבהמות</td><td>וכן שאר כל הבהמות.</td></tr>
+      <tr><td>לא יקשור גמלים זה בזה וימשוך</td><td>לא יקשור גמלים זה לזה וימשוך,</td></tr>
+      <tr><td>אבל מכניס חבלים לתוך ידו וימשוך</td><td>אבל מכניס חבלים לתוך ידו ומושך,</td></tr>
+      <tr><td>ובלבד שלא יכרוך</td><td>ובלבד שלא יכרוך.</td></tr>
+      <tr><td>לא יצא הגמל במטולטלת הקשורה לו בזנבו</td><td>הגמל לא יצא במטולטלת שקשורה לו בזנבו,</td></tr>
+      <tr><td>אבל יוצא הוא במטולטלת הקשורה בזנבו ובחוטרתו</td><td>אבל יוצא במטולטלת שקשורה בזנבו ובדבשת שלו.</td></tr>
+      <tr><td>יוצא הגמל במטולטלת הקשורה לה בשילייתה</td><td>הגמל יוצא במטולטלת שקשורה לה בשליה שלה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> גמל לא יצא במטולטלת, ולא עקוד ולא רגול, וכן כל הבהמות. לא יקשור גמלים זה לזה וימשוך, אבל מכניס את החבלים לתוך ידו ומושך, ובלבד שלא יכרוך.</p>
+  <p><b>מהי מטולטלת:</b> רש"י מביא פירוש שזו רצועה תחת הזנב, ופירוש שזו מרדעת על גב הבהמה, ומעדיף את השני. בגמרא הוא כותב פירוש אחר: כר קטן מלא מוכין תחת הזנב. ולפי רש"י החשש במשנה הוא שמא תיפול והוא יביא אותה.</p>
+  <p><b>הברייתא:</b> מטולטלת שקשורה רק בזנב אסורה. מטולטלת שקשורה בזנב ובחוטרת, הדבשת, מותרת, כי אינה נופלת. ורבה בר רב הונא מתיר גם כשהיא קשורה ב"שילייתה", השליה של הנאקה.</p>
+  <div class="eg"><b>להמחשה:</b> לשם המחשה: תיק שתלוי על כתף אחת עלול להחליק, ותיק גב ששתי רצועותיו מחזיקות אותו נשאר במקומו.</div>
+  <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' מטולטלת – י"מ פושל"א (רתמת זנב) שתחת זנבו וי"מ מרדעת והאחרון נראה בעיני דאי רצועה שתחת הזנב קשורה ומחוברת לסרגא ואיך תפול וטעמא דמתני' משום שמא תפול ומייתי לה הוא:</blockquote><p><span class="say">מה רש"י אומר:</span> אם המטולטלת היא רצועה שקשורה לאוכף, איך תיפול? והרי הטעם של המשנה הוא שמא תיפול. לכן רש"י מעדיף את הפירוש שזו מרדעת.</p></div>
+  <div data-hl="R22,R23" class="voice r"><span class="tag">רש"י</span><blockquote>גמ' בזנבו ובחוטרתו – דכיון דקשורה בשניהם לא נפלה:</blockquote><blockquote>חוטרתו – חלדרוב"א שיש לכל גמלים על גביהם:</blockquote><p><span class="say">מה רש"י אומר:</span> ה"חוטרת" היא הדבשת שעל גב הגמל. כשהמטולטלת קשורה בזנב ובדבשת, היא אינה נופלת.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה רש"י מוסיף בגמרא</h3>
+    <div data-hl="R24" class="voice r"><span class="tag">רש"י</span><blockquote>בשלייתה – דכיון דכאיב לא מנתחא לי' ול"נ מטולטלת כר קטן מלא מוכין נותנין לו תחת הזנב כדי שלא תשחית הרצועה הבשר לפי שהמשוי שעל גבה כשהגמל יורד מכביד ויורד כלפי צוארה אלא שהרצועה מעכבתו:</blockquote><p><span class="say">מה רש"י אומר:</span> על "שילייתה" רש"י כותב שכיון שכואב לה שם, היא אינה מושכת את המטולטלת ואינה מנתקת אותה. ושם הוא מפרש ש"מטולטלת" היא כר קטן תחת הזנב, כדי שהרצועה לא תשחית את הבשר כשהמשא נדחף לכיוון הצוואר בירידה.</p></div>
+    <p>כך יש לרש"י שני פירושים בשני מקומות: במשנה הוא מעדיף מרדעת, ובגמרא הוא כותב "ולי נראה" כר קטן תחת הזנב. בשני המקומות ההבחנה של הברייתא היא בין דבר שעלול ליפול לבין דבר שקשור היטב.</p>
+  </div>
+  <p class="godeep">מה ההבדל בין מטולטלת שקשורה בזנב לבין מטולטלת שקשורה בזנב ובחוטרת? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה המשנה אוסרת בגמל?</summary><p>לצאת במטולטלת, עקוד או רגול, ולקשור גמלים זה לזה ולמשוך.</p></details>
+  <details><summary>מה מותר לעשות בחבלים?</summary><p>להכניס אותם לתוך ידו ולמשוך, ובלבד שלא יכרוך.</p></details>
+  <details><summary>מהי "חוטרת" לפי רש"י?</summary><p>הדבשת שעל גב הגמל.</p></details>
+  <details class="deepq"><summary>למה רש"י מעדיף במשנה שהמטולטלת היא מרדעת?</summary><p>כי רצועה שקשורה לאוכף אינה נופלת, והטעם של המשנה הוא שמא תיפול.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G12,G13,G14,G15">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>עקוד ורגול</h2>
+  <p class="lead">מה הם "עקוד" ו"רגול" שבמשנה? רב יהודה מפרש, והגמרא מחפשת תנא ששונה בדיוק כמותו.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>עקוד עקידת יד ורגל כיצחק בן אברהם</td><td>עקוד: עקידת יד ורגל, כמו יצחק בן אברהם.</td></tr>
+      <tr><td>רגול שלא יכוף ידו על גבי זרועו ויקשור</td><td>רגול: שלא יכופף את ידו על זרועו ויקשור.</td></tr>
+      <tr><td>מיתיבי עקוד שתי ידים ושתי רגלים</td><td>מקשים: עקוד הוא שתי ידיים ושתי רגליים.</td></tr>
+      <tr><td>הוא דאמר כי האי תנא</td><td>הוא סובר כמו התנא הזה,</td></tr>
+      <tr><td>או שתי ידים ושתי רגלים</td><td>או שתי ידיים ושתי רגליים.</td></tr>
+      <tr><td>ואכתי לא דמי</td><td>ועדיין אינו דומה.</td></tr>
+      <tr><td>בשלמא רישא וסיפא ניחא</td><td>מובן: ההתחלה והסוף מתיישבים,</td></tr>
+      <tr><td>מציעתא קשיא</td><td>האמצע קשה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רב יהודה:</b> "עקוד" הוא קשירת יד ורגל, כמו בעקידת יצחק. "רגול" הוא שמכופפים את היד על הזרוע וקושרים.</p>
+  <p><b>הקושיה:</b> ברייתא אומרת ש"עקוד" הוא שתי ידיים ושתי רגליים. התשובה הראשונה: רב יהודה סובר כתנא ששונה "יד ורגל, או שתי ידיים ושתי רגליים". אבל גם זה אינו דומה: ההתחלה והסוף מתאימים לרב יהודה, והאמצע לא.</p>
+  <p><b>המסקנה:</b> רב יהודה סובר כתנא אחר, ששונה בדיוק כדבריו: עקוד הוא יד ורגל כיצחק, ורגול כמו שפירש.</p>
+  <div data-hl="R25,R26" class="voice r"><span class="tag">רש"י</span><blockquote>יד ורגל – אחד מן הידים ואחד מן הרגלים כובל ביחד:</blockquote><blockquote>יד על גב זרועו – אחד מידיו כופף כלפי מעלה וקושר כדי שלא יהו לו אלא ג' רגלים לברוח:</blockquote><p><span class="say">מה רש"י אומר:</span> בעקוד כובלים יחד רגל קדמית אחת ורגל אחורית אחת. ברגול מכופפים רגל קדמית אחת כלפי מעלה וקושרים, וכך נשארות לבהמה רק שלוש רגליים לברוח.</p></div>
+  <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>לא עקוד ולא רגול – מפרשינן בגמ' שעוקדים ידיהם עם רגליהם בכבלים שלא יברחו:</blockquote><p><span class="say">מה רש"י אומר:</span> הקשירות האלה נועדו לכך שהבהמות לא יברחו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה למדו מיצחק</h3>
+    <div data-hl="R29" class="voice r"><span class="tag">רש"י</span><blockquote>רישא וסיפא ניחא – כדרב יהודה אבל מציעתא דקתני או שתי ידים או שתי רגלים קשיא לדרב יהודה דלא קרי עקוד אלא יד ורגל כיצחק בן אברהם דכתיב (בראשית כב) ויעקד כפף ידיו ורגליו לאחוריו וקשר יד ורגל יחד ונפשט צוארו לאחוריו:</blockquote><p><span class="say">מה רש"י אומר:</span> רב יהודה קורא "עקוד" רק ליד ורגל, כמו שכתוב ביצחק "ויעקד": כפף את ידיו ורגליו לאחוריו וקשר יד ורגל יחד. לכן החלק "או שתי ידיים ושתי רגליים" קשה לו.</p></div>
+    <p>הגמרא אינה מסתפקת בתנא שמסכים עם רב יהודה בחלק מן הדברים. כל עוד חלק אחד בברייתא סותר את דבריו, היא ממשיכה לחפש, עד שהיא מוצאת תנא ששונה בדיוק כמותו.</p>
+  </div>
+  <p class="godeep">למה הברייתא השנייה עדיין אינה מתאימה לרב יהודה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מהו "עקוד" לפי רב יהודה?</summary><p>עקידת יד ורגל, כמו יצחק בן אברהם.</p></details>
+  <details><summary>מהו "רגול"?</summary><p>שמכופפים את היד על הזרוע וקושרים.</p></details>
+  <details><summary>מה קשה בברייתא השנייה?</summary><p>האמצע: "או שתי ידיים ושתי רגליים".</p></details>
+  <details class="deepq"><summary>מה הגמרא עונה בסוף?</summary><p>רב יהודה סובר כתנא אחר, ששונה בדיוק כדבריו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G16,G17,G18,G19,G20,G21">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>קשירת גמלים וכריכת החבלים</h2>
+  <p class="lead">למה אין קושרים גמלים זה לזה, ולמה אסור לכרוך את החבלים? רב אשי מסביר שהאיסור לכרוך הוא משום כלאים, והגמרא בודקת באיזה כלאים מדובר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מאי טעמא</td><td>מה הטעם?</td></tr>
+      <tr><td>משום דמיחזי כמאן דאזיל לחינגא</td><td>משום שנראה כמי שהולך לשוק.</td></tr>
+      <tr><td>לא שנו אלא לענין כלאים</td><td>לא שנו זאת אלא בעניין כלאים.</td></tr>
+      <tr><td>כלאים דמאי</td><td>כלאים של מה?</td></tr>
+      <tr><td>אילימא כלאים דאדם</td><td>אם תאמר כלאים של אדם,</td></tr>
+      <tr><td>והתנן אדם מותר עם כולם לחרוש ולמשוך</td><td>והרי שנינו: אדם מותר עם כולם לחרוש ולמשוך.</td></tr>
+      <tr><td>אלא כלאים דחבלים</td><td>אלא כלאים של חבלים.</td></tr>
+      <tr><td>והתניא התוכף תכיפה אחת אינה חיבור</td><td>והרי שנינו: המחבר חיבור אחד, אין זה חיבור.</td></tr>
+      <tr><td>לעולם כלאים דחבלים והכי קאמר</td><td>באמת כלאים של חבלים, וכך הוא אומר:</td></tr>
+      <tr><td>ובלבד שלא יכרוך ויקשור</td><td>ובלבד שלא יכרוך ויקשור.</td></tr>
+      <tr><td>והא תנא דבי שמואל טפחיים</td><td>והרי שנו בבית מדרשו של שמואל: טפחיים.</td></tr>
+      <tr><td>שמואל הלכה למעשה אתא לאשמעינן</td><td>שמואל בא להשמיע לנו הלכה למעשה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>קשירת גמלים:</b> רב אשי אומר שזה נראה כמי שהולך לשוק למכור אותם.</p>
+  <p><b>הכריכה:</b> רב אשי אומר שהאיסור הוא בעניין כלאים, ולפי רש"י אין בו איסור שבת. כלאים של אדם עם בהמה אינם, כי שנינו שאדם מותר לחרוש ולמשוך עם כל הבהמות. גם על כלאים של חבלים, חבלי צמר וחבלי פשתן, קשה, כי חיבור אחד אינו נחשב חיבור. התשובה: המשנה אוסרת לכרוך ולקשור, ויש כאן שני חיבורים.</p>
+  <p><b>אורך החבל:</b> שמואל אומר שהחבל לא ייצא מתחת ידו טפח, ובבית מדרשו שנו טפחיים. אביי מסביר ששמואל אמר את מה שמורים למעשה.</p>
+  <div data-hl="R33" class="voice r"><span class="tag">רש"י</span><blockquote>כלאים דחבלים – שיש בהן חבלי צמר וחבלי פשתן וכי כריך להו הוו כלאים וידו מתחממת באחיזתן וקסבר דבר שאין מתכוין אסור:</blockquote><p><span class="say">מה רש"י אומר:</span> בכלאים של חבלים יש חבלי צמר וחבלי פשתן. כשכורך אותם יחד, ידו מתחממת באחיזתם, והתנא סובר שגם דבר שאינו מתכוון אסור.</p></div>
+  <div data-hl="R39" class="voice r"><span class="tag">רש"י</span><blockquote>שלא יצא חבל – ראש החבל לא יצא מתחת ידו טפח למטה דדמי כמי שנושאה בידו ולא מתחזיא שהיא מאפסר הגמלים:</blockquote><p><span class="say">מה רש"י אומר:</span> אם קצה החבל יורד טפח מתחת לידו, נראה כמי שנושא אותו, ולא כאפסר של הגמלים.</p></div>
+  <div data-hl="R40" class="voice r"><span class="tag">רש"י</span><blockquote>שמואל – דאמר טפח לאורויי הלכה למעשה אתא לאשמעינן דהבא לימלך לפנינו אמרינן ליה טפח שלא להקל באיסורין ומיהו עד טפחיים ליכא איסור:</blockquote><p><span class="say">מה רש"י אומר:</span> למי שבא לשאול אומרים טפח, כדי שלא להקל באיסורים. אבל עד טפחיים אין איסור.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה עניין כלאים בשבת</h3>
+    <div data-hl="T5a" class="voice t"><span class="tag">תוספות</span><blockquote>והתנן אדם מותר עם כולם לחרוש ולמשוך – וא"ת אפי' יהא אדם נמי אסור תקשה דמאי כלאים שייך הכא כיון שאינו מושך בעגלה ובקרון דהא בשבת איירי ואין לומר דאסור להנהיג בכלאים אפי' לא ימשוך שום דבר דאם כן יהא אסור להוליך ולהזיז ממקומו שור פסולי המוקדשין דחשיב כשני מינים כדאמרי' בפרק בתרא דמכות (דף כב.) המנהיג בשור פסולי המוקדשין לוקה גוף אחד הוא ועשאו הכתוב שני גופים</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות שואלים: גם אם אדם היה אסור עם בהמה, איך שייכים כאן כלאים, כשבשבת אינו מושך עגלה? ואי אפשר לומר שעצם ההנהגה אסורה, כי אז היה אסור להזיז שור של פסולי המוקדשין, שנחשב כשני מינים.</p></div>
+    <div data-hl="T5b" class="voice t"><span class="tag">תוספות</span><blockquote>וי"ל דה"ק אילימא כלאים דאדם והא דקתני ובלבד שלא יכרוך בחול קאמר כדאוקימנא לעיל (פ"ב דף כג:) ולא בשמן שריפה דאיירי ביו"ט ומיירי שמושכין שום דבר אי נמי י"ל דחשיב משיכה מה שנושאים שניהם את החבלים:</blockquote><p><span class="say">מה התוספות אומרים:</span> הם עונים בשתי דרכים. א': לפי ההצעה הזו "ובלבד שלא יכרוך" נאמר על יום חול, כשהגמלים מושכים דבר, כמו שהגמרא העמידה למעלה את "ולא בשמן שריפה" ביום טוב ולא בשבת. ב': גם נשיאת החבלים יחד נחשבת משיכה.</p></div>
+    <h3>חיבור אחד ושני חיבורים</h3>
+    <div data-hl="R36,R37,R38" class="voice r"><span class="tag">רש"י</span><blockquote>בתכיפה אחת – כגון ע"י מחט פעם אחת או שקשר קשר אחד:</blockquote><blockquote>אינו חיבור – דכתיב (דברים כ״ב:י״א) צמר ופשתים יחדו לא אסרה התורה אלא חבור יפה המתקיים:</blockquote><blockquote>כריכה וקשירה – בשתי תכיפות:</blockquote><p><span class="say">מה רש"י אומר:</span> חיבור אחד, בתפירה אחת או בקשר אחד, אינו חיבור לעניין כלאים, כי התורה אסרה רק חיבור שמתקיים. כריכה וקשירה הן שתי תכיפות.</p></div>
+  </div>
+  <p class="godeep">למה הגמרא דוחה את ההצעה של כלאים של אדם? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה אין קושרים גמלים זה לזה?</summary><p>כי זה נראה כמי שהולך לשוק למכור אותם.</p></details>
+  <details><summary>מה הקושיה על כלאים של חבלים?</summary><p>ששנינו: התוכף תכיפה אחת אינה חיבור.</p></details>
+  <details><summary>מה אמר שמואל, ומה שנו בבית מדרשו?</summary><p>שמואל אמר טפח, ובבית מדרשו שנו טפחיים.</p></details>
+  <details class="deepq"><summary>איך אביי מיישב את שני השיעורים?</summary><p>שמואל אמר את מה שמורים למעשה, כדי שלא להקל, אבל עד טפחיים אין איסור.</p></details>
+  <details class="deepq"><summary>אילו שתי תשובות נותנים התוספות?</summary><p>א': מדובר ביום חול כשמושכים דבר. ב': נשיאת החבלים יחד נחשבת משיכה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>שחוזות וכבולות:</b> "שית זונה" מראה ש"שחוזות" הוא לשון גילוי, ו"כבולות" הן רחלים שהאליה שלהן קשורה למטה.</li>
+      <li><b>ארץ כבול:</b> לרב הונא אנשים עטופים בכסף ובזהב, ולרב נחמן בר יצחק ארץ מלוחה שהרגל שוקעת בה.</li>
+      <li><b>כבונות:</b> עוטפים את הכבש מיום היוולדו, כדי שצמרו יהיה נקי.</li>
+      <li><b>עזים צרורות:</b> רב ושמואל חולקים בשלוש גרסאות, ורבין הביא בשם רבי יוחנן שהלכה כתנא קמא.</li>
+      <li><b>גמל במטולטלת:</b> אסור כשהיא עלולה ליפול, ומותר כשהיא קשורה בזנב ובחוטרת.</li>
+      <li><b>עקוד ורגול:</b> רב יהודה סובר כתנא ששונה שעקוד הוא יד ורגל כיצחק.</li>
+      <li><b>גמלים וחבלים:</b> קשירת גמלים נראית כהליכה לשוק, והאיסור לכרוך ולקשור הוא משום כלאים של חבלים.</li>
+      <li><b>נשאר פתוח:</b> העמוד הבא פותח בברייתא שמחייבת להגביה את החבל טפח מן הקרקע.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>מאי משמע</td><td>&quot;מה משמע&quot;: מניין שהמילה מובנת כך</td></tr>
+      <tr><td>לישנא</td><td>לשון: משמעות של מילה</td></tr>
+      <tr><td>אמרי אינשי</td><td>אומרים בני אדם: ביטוי מן הדיבור הרגיל</td></tr>
+      <tr><td>איתמר</td><td>&quot;נאמר&quot;: כך פותחים מחלוקת של אמוראים</td></tr>
+      <tr><td>ואיכא דמתני</td><td>ויש ששונים: גרסה אחרת של אותה מימרא</td></tr>
+      <tr><td>באפי נפשיה</td><td>בפני עצמו</td></tr>
+      <tr><td>מי מפיס</td><td>&quot;מי מטיל גורל&quot;: מי יבחין</td></tr>
+      <tr><td>מיתיבי</td><td>מקשים: מביאים ברייתא שסותרת את דברי האמורא</td></tr>
+      <tr><td>הוא דאמר כי האי תנא</td><td>הוא סובר כמו התנא הזה</td></tr>
+      <tr><td>בשלמא</td><td>מובן, מתיישב</td></tr>
+      <tr><td>רישא · מציעתא · סיפא</td><td>ראש המשנה או הברייתא · אמצעה · סופה</td></tr>
+      <tr><td>אילימא</td><td>אם תאמר</td></tr>
+      <tr><td>לעולם</td><td>באמת: התשובה חוזרת להצעה שנדחתה</td></tr>
+      <tr><td>הלכה למעשה</td><td>מה שמורים למי שבא לשאול</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-53b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-54b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף נ&quot;ד עמוד א&#x27;, לומדים: רחלים שחוזות, כבולות וכבונות; עזים צרורות: שלוש גרסאות של הפסק; משנה: הגמל והמטולטלת; עקוד ורגול; קשירת גמלים וכריכת החבלים.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (34 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · חוזרים ל&quot;שחוזות&quot;</h3><p>העמוד הקודם עסק במשנה על מה שבהמה יוצאת בו בשבת. רב נחמן בר יצחק פירש שרחלים &quot;שחוזות&quot; הן רחלים שמחזיקים את האליה שלהן למעלה, והגמרא שאלה מניין ש&quot;שחוזות&quot; הוא לשון של גילוי, והתחילה להביא את הפסוק &quot;והנה אשה לקראתו&quot;. כאן הפסוק נמשך.</p></li><li><h3><span class="w">גמרא</span> · &quot;שית זונה&quot;</h3><p>המשך הפסוק הוא &quot;שית זונה ונצורת לב&quot;. רש&quot;י מפרש ש&quot;שית&quot; הוא בית הבושת, כלומר מקום הערווה, וש&quot;שחוזות&quot; נדרש כנוטריקון, כלומר כקיצור, של המילים &quot;שית זונה&quot;. כך הגמרא מראה ש&quot;שחוזות&quot; הוא לשון של גילוי.</p></li><li><h3><span class="w">גמרא</span> · &quot;כבולות&quot;: האליה קשורה למטה</h3><p>המשנה אמרה: &quot;הרחלים יוצאות כבולות&quot;. מה הן &quot;כבולות&quot;? שקושרים את האליה שלהן למטה, כדי שהזכרים לא יעלו עליהן. רש&quot;י: הלשון היא כמו כבלי ברזל, דבר קשור.</p><p>אליה היא הזנב השמן של הכבש.</p></li><li><h3><span class="w">גמרא</span> · &quot;ארץ כבול&quot;</h3><p>ומניין ש&quot;כבול&quot; הוא לשון של דבר שאינו עושה פירות? מן הפסוק &quot;מה הערים האלה אשר נתת לי אחי, ויקרא להם ארץ כבול עד היום הזה&quot;. רש&quot;י: הפסוק מדבר בערים ששלמה נתן לחירם.</p></li><li><h3><span class="w">גמרא</span> · רב הונא: אנשים כבולים בכסף ובזהב</h3><p>מה פירוש &quot;ארץ כבול&quot;? רב הונא אמר: היו בה בני אדם &quot;שמכובלין בכסף ובזהב&quot;. רש&quot;י מפרש: עטופים וקשורים בכסף ובזהב.</p></li><li><h3><span class="w">גמרא</span> · רבא: ולכן לא ישרו בעיניו?</h3><p>רבא שאל את רב הונא: אם כך, האם זה מה שכתוב &quot;לא ישרו בעיניו&quot;, מפני שהיו עטופים בכסף ובזהב לא מצאו חן בעיניו? ענה לו: כן. כיון שהיו עשירים ומפונקים, לא עשו עבודה. רש&quot;י: עבודת המלך שמטילים על העם.</p></li><li><h3><span class="w">גמרא</span> · רב נחמן בר יצחק: ארץ מלוחה</h3><p>רב נחמן בר יצחק אמר: זו הייתה &quot;ארץ חומטון&quot;, ורש&quot;י מפרש: ארץ מלוחה ומתבקעת. ולמה קראו לה &quot;כבול&quot;? כי הרגל שוקעת בה עד ה&quot;כבלא&quot;, ולפי רש&quot;י זה הפרק התחתון של הרגל. ובני אדם קוראים לארץ שאינה עושה פירות &quot;ארעא מכבלא&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: עד השוק</h3><p>רבנו יצחק מפרש &quot;עד כבלא&quot; אחרת: עד השוק. כך משמע בפרק &quot;במה אשה&quot;, שם נאמר &quot;בירית באחת, כבלים בשתים&quot;, והכבלים מונחים על השוק.</p></li><li><h3><span class="w">גמרא</span> · &quot;כבונות&quot;</h3><p>המשנה אמרה &quot;כבונות&quot;. מה הן? שעוטפים את הכבש כדי שצמרו יהיה ל&quot;מילת&quot;. רש&quot;י: ביום שהוא נולד קושרים סביבו בגד, כדי שהצמר יישאר נקי ולא יתלכלך. הלשון &quot;מכבנין&quot; היא על שם הקרסים, מעין סיכות של מתכת, שמחברים בהם את הבגד, כמו בלשון &quot;תינתן כבינתי לבתי&quot;. ומן הצמר הזה עושים בגדי &quot;מילת&quot;.</p><p>&quot;מילת&quot; הוא צמר נקי ועדין.</p></li><li><h3><span class="w">גמרא</span> · ראיה: &quot;שאת כצמר לבן&quot;</h3><p>הגמרא מביאה ראיה ממשנה: &quot;שאת כצמר לבן&quot;. מהו &quot;צמר לבן&quot;? רב ביבי בר אביי אמר: כצמר נקי של כבש בן יומו, שעוטפים אותו ל&quot;מילת&quot;.</p><p>&quot;שאת&quot; הוא אחד ממראות הנגע, ובמשנה הזו הלובן שלו נמדד בלובן של צמר.</p></li><li><h3><span class="w">גמרא</span> · עזים צרורות: רב ושמואל</h3><p>על &quot;והעזים יוצאות צרורות&quot; שבמשנה, &quot;איתמר&quot;, נאמר בבית המדרש: רב אמר הלכה כרבי יהודה, ושמואל אמר הלכה כרבי יוסי.</p><p>&quot;צרורות&quot; הן עזים שהדדים שלהן קשורים. במשנה תנא קמא מתיר, ורבי יוסי אוסר. רבי יהודה מתיר כשהן צרורות &quot;ליבש&quot;, כדי שהחלב יתייבש, ואוסר כשהן צרורות &quot;לחלב&quot;, כדי לשמור על החלב.</p></li><li><h3><span class="w">גמרא</span> · גרסה אחרת: המחלוקת לעצמה</h3><p>&quot;ואיכא דמתני&quot;, ויש ששונים את המחלוקת &quot;באפי נפשיה&quot;, לעצמה. רש&quot;י: ולא על המחלוקת של התנאים שבמשנה. רב אמר: צרורות &quot;ליבש&quot; מותר, ולא &quot;לחלב&quot;. ושמואל אמר: גם זה וגם זה אסור.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה לא אמרו &quot;הלכה כפלוני&quot;</h3><p>התוספות שואלים: לפי הגרסה הזו, למה רב ושמואל אמרו את הדין עצמו, ולא אמרו &quot;הלכה כפלוני&quot;? ועונים: כי יש מי שהופכים את דברי התנאים ומחליפים ביניהם, ולכן אמרו את הדין עצמו ולא שם של תנא.</p></li><li><h3><span class="w">גמרא</span> · גרסה שלישית: על הברייתא</h3><p>ויש ששונים את דברי שמואל על ברייתא. בברייתא נאמר: עזים יוצאות צרורות &quot;ליבש&quot;, אבל לא &quot;לחלב&quot;. ובשם רבי יהודה בן בתירא אמרו: כך הלכה, ורש&quot;י מפרש: שליבש מותר ולחלב אסור. אבל &quot;מי מפיס&quot;, מי יטיל גורל ויבחין איזו צרורה ליבש ואיזו לחלב? וכיון שאין מכירים ביניהן, גם זה וגם זה אסור. רש&quot;י: מי שיראה עז שצרורה ליבש יחשוב שהיא לחלב, ויבוא להתיר את שתיהן.</p></li><li><h3><span class="w">גמרא</span> · הפסקים</h3><p>אמר שמואל, ויש אומרים שרב יהודה אמר בשם שמואל: הלכה כרבי יהודה בן בתירא. וכשבא רבין אמר בשם רבי יוחנן: הלכה כתנא קמא. רש&quot;י: התנא הראשון של המשנה, שמתיר בשתיהן.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה דווקא רבי יהודה בן בתירא</h3><p>למה שמואל פסק כרבי יהודה בן בתירא ולא כרבי יוסי, שגם הוא אוסר? כי יש ביניהם הבדל. במקום שקושרים רק ליבש, רבי יהודה בן בתירא מתיר, כי שם אין חשש של &quot;מי מפיס&quot;. ורבי יוסי אוסר גם שם, שמא ייפול מה שקשור בה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הגרסה של רבנו תם</h3><p>רבנו תם גורס כאן: &quot;אמר רב: הלכה כתנא קמא, ושמואל אמר&quot; וכולי. כלומר גם רב נזכר כאן, ושמואל חולק עליו. ולפי זה הפסק שהביא רבין הוא אותו פסק שפסק רב. לפי הגרסה הזו מתיישבת הלשון &quot;ואיכא דמתני לה אהא&quot;: המחלוקת של רב ושמואל שלמעלה היא שנשנתה על הברייתא הזו, ולא רק דברי שמואל.</p></li><li><h3><span class="w">משנה</span> · משנה: במה הגמל אינו יוצא</h3><p>משנה חדשה: במה הבהמה אינה יוצאת. גמל לא יצא ב&quot;מטולטלת&quot;, ולא &quot;עקוד&quot; ולא &quot;רגול&quot;, וכן שאר כל הבהמות. רש&quot;י מביא שני פירושים ל&quot;מטולטלת&quot;: רצועה שתחת הזנב, או מרדעת, מעין שמיכה על גב הבהמה. הוא מעדיף את השני, כי רצועה שקשורה לאוכף אינה נופלת, והטעם של המשנה הוא שמא תיפול והוא יביא אותה. על &quot;עקוד&quot; ו&quot;רגול&quot; רש&quot;י כותב שהגמרא תפרש אותם: קושרים את הרגליים הקדמיות עם האחוריות בכבלים, כדי שהבהמות לא יברחו.</p></li><li><h3><span class="w">משנה</span> · לא יקשור גמלים זה לזה</h3><p>לא יקשור גמלים זה לזה וימשוך את האחד. אבל מכניס את החבלים לתוך ידו ומושך, ובלבד שלא יכרוך. רש&quot;י: שלא יכרוך את החבלים יחד, והגמרא תפרש את הטעם.</p></li><li><h3><span class="w">גמרא</span> · ברייתא: קשורה בזנב ובחוטרת</h3><p>&quot;תנא&quot;, שנו בברייתא: הגמל לא יצא במטולטלת שקשורה לו בזנבו, אבל יוצא במטולטלת שקשורה בזנבו ובחוטרתו. רש&quot;י: &quot;חוטרת&quot; היא הדבשת שיש לכל הגמלים על גבם. וכיון שהיא קשורה בשני המקומות, אינה נופלת.</p></li><li><h3><span class="w">גמרא</span> · רבה בר רב הונא: קשורה בשילייתה</h3><p>רבה בר רב הונא אמר: הגמל יוצא במטולטלת שקשורה לו &quot;בשילייתה&quot;. &quot;שילייתה&quot; היא השליה שלה, שיוצאת אחרי ההמלטה. רש&quot;י מפרש: כיון שכואב לה שם, היא אינה מושכת את המטולטלת ואינה מנתקת אותה. כאן רש&quot;י מוסיף פירוש משלו, &quot;ולי נראה&quot;: &quot;מטולטלת&quot; היא כר קטן מלא מוכין שנותנים תחת הזנב, כדי שהרצועה לא תשחית את הבשר. כשהגמל יורד, המשא שעל גבו נדחף לכיוון הצוואר, והרצועה עוצרת אותו.</p></li><li><h3><span class="w">גמרא</span> · רב יהודה: &quot;עקוד&quot; ו&quot;רגול&quot;</h3><p>רב יהודה אמר: &quot;עקוד&quot; הוא עקידת יד ורגל, כמו יצחק בן אברהם. &quot;רגול&quot; הוא שלא יכופף את ידו על זרועו ויקשור. רש&quot;י: בעקוד כובלים יחד רגל קדמית אחת ורגל אחורית אחת. ברגול מכופפים רגל קדמית אחת כלפי מעלה וקושרים, כדי שיהיו לבהמה רק שלוש רגליים לברוח.</p></li><li><h3><span class="w">גמרא</span> · קושיה מברייתא, ותשובה</h3><p>&quot;מיתיבי&quot;, מקשים מברייתא: &quot;עקוד&quot; הוא שתי ידיים ושתי רגליים. רש&quot;י: שתי הרגליים הקדמיות יחד, או שתי האחוריות יחד. התשובה: רב יהודה סובר כתנא אחר, ששנה: &quot;עקוד&quot; הוא עקידת יד ורגל, או שתי ידיים ושתי רגליים.</p></li><li><h3><span class="w">גמרא</span> · ועדיין אינו דומה</h3><p>&quot;ואכתי לא דמי&quot;, ועדיין התנא הזה אינו דומה לרב יהודה. הרישא, &quot;עקידת יד ורגל&quot;, והסיפא, הפירוש של &quot;רגול&quot;, מתאימות לרב יהודה. אבל האמצע, &quot;או שתי ידיים ושתי רגליים&quot;, קשה. רש&quot;י: רב יהודה קורא &quot;עקוד&quot; רק ליד ורגל, כמו ביצחק, שכתוב בו &quot;ויעקד&quot;: כפף את ידיו ורגליו לאחוריו וקשר יד ורגל יחד, וצווארו נפשט לאחוריו.</p></li><li><h3><span class="w">גמרא</span> · אלא כתנא אחר</h3><p>אלא רב יהודה סובר כתנא אחר, ששונה בדיוק כדבריו: &quot;עקוד&quot; הוא עקידת יד ורגל כיצחק בן אברהם, ו&quot;רגול&quot; הוא שלא יכופף את ידו על זרועו ויקשור.</p></li><li><h3><span class="w">גמרא</span> · למה לא יקשור גמלים</h3><p>מה הטעם שלא יקשור גמלים זה לזה? רב אשי אמר: כי זה נראה כמי שהולך ל&quot;חינגא&quot;. רש&quot;י: לשוק, כדי למכור אותם. השוק נקרא &quot;חינגא&quot; על שם המחולות, כלומר המעגלים של בני אדם שמקיפים אותו.</p></li><li><h3><span class="w">גמרא</span> · &quot;ובלבד שלא יכרוך&quot;: בגלל כלאים</h3><p>על &quot;אבל מכניס&quot; אמר רב אשי: האיסור לכרוך נשנה רק בעניין כלאים, ורש&quot;י מוסיף שאין בו איסור שבת. איזה כלאים? אם כלאים של אדם, שהכורך נעשה קשור לגמלים ומושך איתם, הרי שנינו: אדם מותר עם כל הבהמות לחרוש ולמשוך. רש&quot;י: התורה אסרה רק שני מיני בהמה יחד, כמו שור וחמור.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מה עניין כלאים בשבת?</h3><p>התוספות שואלים: גם אילו אדם היה אסור עם בהמה, מה עניין כלאים כאן? בשבת אין מושכים עגלה או קרון. ואין לומר שאסור להנהיג בכלאים גם בלי למשוך דבר, כי אז היה אסור להזיז ממקומו שור של פסולי המוקדשין, שנחשב כשני מינים. במסכת מכות נאמר שהמנהיג בשור כזה לוקה, כי גוף אחד הוא, והכתוב עשה אותו שני גופים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שתי תשובות</h3><p>א&#x27;: כך הגמרא אומרת: אם תאמר כלאים של אדם, ו&quot;ובלבד שלא יכרוך&quot; נאמר על יום חול, כשהגמלים מושכים דבר. וכך מצאנו למעלה, שהגמרא העמידה את &quot;ולא בשמן שריפה&quot; שבמשנה ביום טוב ולא בשבת. ב&#x27;: גם זה שהאדם והגמלים נושאים יחד את החבלים נחשב משיכה.</p></li><li><h3><span class="w">גמרא</span> · אולי כלאים של חבלים?</h3><p>אלא כלאים של חבלים. רש&quot;י: יש חבלי צמר וחבלי פשתן, וכשכורך אותם יחד הם כלאים, וידו מתחממת כשהוא אוחז בהם. והתנא סובר שגם דבר שאינו מתכוון אסור. אבל הרי שנינו: &quot;התוכף תכיפה אחת אינה חיבור&quot;. רש&quot;י: מי שמחבר בגד צמר ובגד פשתן בתפירה אחת או בקשר אחד, אין זה חיבור, כי התורה אסרה רק חיבור טוב שמתקיים.</p></li><li><h3><span class="w">גמרא</span> · התשובה: כורך וקושר</h3><p>&quot;לעולם&quot;, באמת מדובר בכלאים של חבלים, וכך המשנה אומרת: ובלבד שלא יכרוך ויקשור. רש&quot;י: כריכה וקשירה הן שתי תכיפות.</p></li><li><h3><span class="w">גמרא</span> · שמואל: טפח</h3><p>שמואל אמר: ובלבד שלא יצא החבל מתחת ידו טפח. רש&quot;י: קצה החבל לא יתלה טפח למטה מידו, כי אז נראה כמי שנושא אותו בידו, ולא כאפסר של הגמלים. וקשה: הרי בבית מדרשו של שמואל שנו &quot;טפחיים&quot;.</p><p>טפח הוא רוחב כף היד.</p></li><li><h3><span class="w">גמרא</span> · אביי: הלכה למעשה</h3><p>אביי אמר: שמואל בא ללמד אותנו &quot;הלכה למעשה&quot;. רש&quot;י: למי שבא לשאול אומרים &quot;טפח&quot;, כדי שלא להקל באיסורים. אבל עד טפחיים אין איסור.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>נגמר הפירוש של מילות המשנה על הרחלים, &quot;שחוזות&quot;, &quot;כבולות&quot; ו&quot;כבונות&quot;, ונאמרו כמה גרסאות של הפסק בעזים צרורות. במשנה החדשה למדנו במה הגמל אינו יוצא, מהם &quot;עקוד&quot; ו&quot;רגול&quot;, ולמה אין קושרים גמלים זה לזה ואין כורכים את החבלים. העמוד הבא פותח בקושיה מברייתא שבה נאמר שצריך להגביה את החבל טפח מן הקרקע.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-54b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "שית זונה ונצורת לב:", false, ""], ["G2a", "הרחלים יוצאות כבולות: מאי כבולות שמכבלין אליה שלהן למטה כדי שלא יעלו עליהן הזכרים", true, ""], ["G2b", "מאי משמע דהאי כבול לישנא דלא עביד פירי הוא דכתיב (מלכים א ט, יג) מה הערים [האלה] אשר נתת לי אחי ויקרא (להן) ארץ כבול עד היום הזה", false, ""], ["G3a", "מאי ארץ כבול א\"ר הונא שהיו בה בני אדם שמכובלין בכסף ובזהב", false, ""], ["G3b", "אמר ליה רבא אי הכי היינו דכתיב ((מלכים א ט, יב) כי לא) ישרו בעיניו מפני שמכובלין בכסף ובזהב לא ישרו בעיניו אמר ליה אין כיון דעתירי ומפנקי לא עבדי עבידתא", false, ""], ["G4", "רב נחמן בר יצחק אמר ארץ חומטון היתה ואמאי קרי לה כבול דמשתרגא בה כרעא עד כבלא ואמרי אינשי ארעא מכבלא דלא עבד פירי:", false, ""], ["G5", "כבונות: מאי כבונות שמכבנין אותו למילת כדתנן שאת כצמר לבן מאי צמר לבן אמר רב ביבי בר אביי כצמר נקי בן יומו שמכבנין אותו למילת:", true, ""], ["G6", "והעזים יוצאות צרורות: איתמר רב אמר הלכה כר' יהודה ושמואל אמר הלכה כר' יוסי", true, ""], ["G7", "ואיכא דמתני להא שמעתא באפי נפשיה רב אמר ליבש מותר ולא לחלב ושמואל אמר אחד זה ואחד זה אסור", false, ""], ["G8a", "ואיכא דמתני לה אהא עזים יוצאות צרורות ליבש אבל לא לחלב משום ר' יהודה בן בתירא אמרו כך הלכה אבל מי מפיס איזו ליבש ואיזו לחלב ומתוך שאין מכירים אחד זה ואחד זה אסור", false, ""], ["G8b", "אמר שמואל ואמרי לה אמר רב יהודה אמר שמואל הלכה כר' יהודה בן בתירא כי אתא רבין אמר ר\"י הלכה כת\"ק:", false, ""], ["G9", "ובמה אינה יוצאה לא יצא גמל במטולטלת לא עקוד ולא רגול וכן שאר כל הבהמות", false, "מתני׳"], ["G10", "לא יקשור גמלים זה בזה וימשוך אבל מכניס חבלים לתוך ידו וימשוך ובלבד שלא יכרוך:", false, ""], ["G11a", "תנא לא יצא הגמל במטולטלת הקשורה לו בזנבו אבל יוצא הוא במטולטלת הקשורה בזנבו ובחוטרתו", false, "גמ׳"], ["G11b", "אמר רבה בר רב הונא יוצא הגמל במטולטלת הקשורה לה בשילייתה:", false, ""], ["G12", "לא עקוד ולא רגול: א\"ר יהודה עקוד עקידת יד ורגל כיצחק בן אברהם רגול שלא יכוף ידו על גבי זרועו ויקשור", true, ""], ["G13", "מיתיבי עקוד שתי ידים ושתי רגלים רגול שלא יכוף ידו על גבי זרועו ויקשור הוא דאמר כי האי תנא דתניא עקוד עקידת יד ורגל או שתי ידים ושתי רגלים רגול שלא יכוף ידו ע\"ג זרועו ויקשור", false, ""], ["G14", "ואכתי לא דמי בשלמא רישא וסיפא ניחא מציעתא קשיא", false, ""], ["G15", "אלא הוא דאמר כי האי תנא עקוד עקידת יד ורגל כיצחק בן אברהם רגול שלא יכוף ידו על גבי זרועו ויקשור:", false, ""], ["G16", "ולא יקשור גמלים: מאי טעמא אמר רב אשי משום דמיחזי כמאן דאזיל לחינגא:", true, ""], ["G17", "אבל מכניס: אמר רב אשי לא שנו אלא לענין כלאים כלאים דמאי אילימא כלאים דאדם והתנן אדם מותר עם כולם לחרוש ולמשוך", true, ""], ["G18", "אלא כלאים דחבלים והתניא התוכף תכיפה אחת אינה חיבור", false, ""], ["G19", "לעולם כלאים דחבלים והכי קאמר ובלבד שלא יכרוך ויקשור", false, ""], ["G20", "אמר שמואל ובלבד שלא יצא [חבל] מתחת ידו טפח והא תנא דבי שמואל טפחיים", false, ""], ["G21", "אמר אביי השתא דאמר שמואל טפח ותנא דבי שמואל טפחיים שמואל הלכה למעשה אתא לאשמעינן", false, ""]], "R": [["R1", "שית זונה", "נוטריקון דשחוזות:", false], ["R2", "שית", "בית הבשת:", false], ["R3", "שכבולין", "לשון כבלי ברזל קשורה:", false], ["R4", "ויקרא להם", "בעשרים ושתים עיר שנתן שלמה לחירם משתעי קרא:", false], ["R5", "מכובלין", "מעוטפין ומקושרין:", false], ["R6", "עבידתא", "אנגריא של מלך:", false], ["R7", "חומטון", "מלחה ומתבקעת:", false], ["R8", "דמשתרגא בה כרעא", "טובעת בה הרגל:", false], ["R9", "עד כבלא", "פרק התחתון שקורין קויל\"ה:", false], ["R10", "שמכבנין", "קושרין בגד סביבו ביום שנולד שצמרו נקי ומשמר צמרו שלא יטנף:", false], ["R11", "מכבנין", "על שעושין כמין קרסי מתכת לחבר הבגד כמו תנתן כבינתי לבתי (גיטין דף טו.) נושק\"א בלע\"ז:", false], ["R12", "למילת", "לעשות מצמרו כלי מילת:", false], ["R13", "באנפי נפשה", "ולא אפלוגתא דמתני':", false], ["R14", "ואיכא דמתני", "להא דשמואל אהא:", false], ["R15", "כך הלכה", "דליבש מותר ולחלב אסור:", false], ["R16", "אבל מי מפיס", "מי מטיל גורל ומבחין איזו ליבש ואיזו לחלב והרואה אותם צרורות ליבש אומר דלחלב הוא ואתי למישרי תרווייהו:", false], ["R17", "כת\"ק", "דמתני' דשרי בתרוייהו:", false], ["R18", "מתני' מטולטלת", "י\"מ פושל\"א (רתמת זנב) שתחת זנבו וי\"מ מרדעת והאחרון נראה בעיני דאי רצועה שתחת הזנב קשורה ומחוברת לסרגא ואיך תפול וטעמא דמתני' משום שמא תפול ומייתי לה הוא:", false], ["R19", "לא עקוד ולא רגול", "מפרשינן בגמ' שעוקדים ידיהם עם רגליהם בכבלים שלא יברחו:", false], ["R20", "ולא יקשור גמלים זו לזו וימשוך", "האחד כדמפרש בגמרא:", false], ["R21", "ובלבד שלא יכרוך", "החבלים בכרך אחד ובגמרא מפרש טעמא:", false], ["R22", "גמ' בזנבו ובחוטרתו", "דכיון דקשורה בשניהם לא נפלה:", false], ["R23", "חוטרתו", "חלדרוב\"א שיש לכל גמלים על גביהם:", false], ["R24", "בשלייתה", "דכיון דכאיב לא מנתחא לי' ול\"נ מטולטלת כר קטן מלא מוכין נותנין לו תחת הזנב כדי שלא תשחית הרצועה הבשר לפי שהמשוי שעל גבה כשהגמל יורד מכביד ויורד כלפי צוארה אלא שהרצועה מעכבתו:", false], ["R25", "יד ורגל", "אחד מן הידים ואחד מן הרגלים כובל ביחד:", false], ["R26", "יד על גב זרועו", "אחד מידיו כופף כלפי מעלה וקושר כדי שלא יהו לו אלא ג' רגלים לברוח:", false], ["R27", "שתי ידים", "כאחד או שתי רגלים כאחד:", false], ["R28", "ואכתי לא דמי", "האי תנא לדרב יהודה:", false], ["R29", "רישא וסיפא ניחא", "כדרב יהודה אבל מציעתא דקתני או שתי ידים או שתי רגלים קשיא לדרב יהודה דלא קרי עקוד אלא יד ורגל כיצחק בן אברהם דכתיב (בראשית כב) ויעקד כפף ידיו ורגליו לאחוריו וקשר יד ורגל יחד ונפשט צוארו לאחוריו:", false], ["R30", "לחינגא", "לשוק למוכרם חינגא ע\"ש שסובבין את השוק מחולות מחולות עגולות של בני אדם:", false], ["R31", "לענין כלאים שנוי", "האי שלא יכרוך דמתני' לא שייך ביה איסור שבת אלא משום כלאים אסר ליה כדמפרש ואזיל:", false], ["R32", "אי נימא כלאים דאדם", "דכי כריך להן סביבות ידו נמצא קשור עם הגמלים ופעמים שהן מושכין שום דבר ונמצא אדם וגמל מנהיגין יחד:", false], ["R33", "כלאים דחבלים", "שיש בהן חבלי צמר וחבלי פשתן וכי כריך להו הוו כלאים וידו מתחממת באחיזתן וקסבר דבר שאין מתכוין אסור:", false], ["R34", "והתנן אדם מותר עם כולם", "עם כל הבהמות לחרוש ולמשוך שלא אסרה תורה אלא שני מיני בהמה יחד כעין שור וחמור ומשנה זו במסכת כלאים:", false], ["R35", "התוכף", "בגדי צמר ופשתים:", false], ["R36", "בתכיפה אחת", "כגון ע\"י מחט פעם אחת או שקשר קשר אחד:", false], ["R37", "אינו חיבור", "דכתיב (דברים כ״ב:י״א) צמר ופשתים יחדו לא אסרה התורה אלא חבור יפה המתקיים:", false], ["R38", "כריכה וקשירה", "בשתי תכיפות:", false], ["R39", "שלא יצא חבל", "ראש החבל לא יצא מתחת ידו טפח למטה דדמי כמי שנושאה בידו ולא מתחזיא שהיא מאפסר הגמלים:", false], ["R40", "שמואל", "דאמר טפח לאורויי הלכה למעשה אתא לאשמעינן דהבא לימלך לפנינו אמרינן ליה טפח שלא להקל באיסורין ומיהו עד טפחיים ליכא איסור:", false]], "T": [["T1", "עד כבלא", "מפרש ר\"י עד השוק כדאמר בפ' במה אשה (לקמן שבת דף כג:) בירית באחת כבלים בשתים שמניחין הכבלים בשוק:", false], ["T2", "רב אמר ליבש מותר כו'", "וא\"ת לימא מר הלכה כמר וי\"ל משום דאיכא דמפכי להו לתנאי:", false], ["T3", "הלכה כר' יהודה בן בתירא", "הא דנקט ר' יהודה בן בתירה ולא נקט ר' יוסי משום דבמקום שאין עושין כלל אלא כדי ליבש שרי ר' יהודה בן בתירא דלא שייך התם מי מפיס ור' יוסי אוסר משום דילמא נפיל:", false], ["T4", "", "ר\"ת גריס אמר רב הלכה כת\"ק ושמואל אמר כו' וכן כי אתא רבין א\"ר יוחנן הלכה כתנא קמא ואתי שפיר איכא דמתני לה לדרב ושמואל דלעיל אהא:", false], ["T5a", "והתנן אדם מותר עם כולם לחרוש ולמשוך", "וא\"ת אפי' יהא אדם נמי אסור תקשה דמאי כלאים שייך הכא כיון שאינו מושך בעגלה ובקרון דהא בשבת איירי ואין לומר דאסור להנהיג בכלאים אפי' לא ימשוך שום דבר דאם כן יהא אסור להוליך ולהזיז ממקומו שור פסולי המוקדשין דחשיב כשני מינים כדאמרי' בפרק בתרא דמכות (דף כב.) המנהיג בשור פסולי המוקדשין לוקה גוף אחד הוא ועשאו הכתוב שני גופים", false], ["T5b", "", "וי\"ל דה\"ק אילימא כלאים דאדם והא דקתני ובלבד שלא יכרוך בחול קאמר כדאוקימנא לעיל (פ\"ב דף כג:) ולא בשמן שריפה דאיירי ביו\"ט ומיירי שמושכין שום דבר אי נמי י\"ל דחשיב משיכה מה שנושאים שניהם את החבלים:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "חוזרים ל\"שחוזות\"", "x": "העמוד הקודם עסק במשנה על מה שבהמה יוצאת בו בשבת. רב נחמן בר יצחק פירש שרחלים \"שחוזות\" הן רחלים שמחזיקים את האליה שלהן למעלה, והגמרא שאלה מניין ש\"שחוזות\" הוא לשון של גילוי, והתחילה להביא את הפסוק \"והנה אשה לקראתו\". כאן הפסוק נמשך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1", "R2"], "t": "\"שית זונה\"", "x": "המשך הפסוק הוא \"שית זונה ונצורת לב\". רש\"י מפרש ש\"שית\" הוא בית הבושת, כלומר מקום הערווה, וש\"שחוזות\" נדרש כנוטריקון, כלומר כקיצור, של המילים \"שית זונה\". כך הגמרא מראה ש\"שחוזות\" הוא לשון של גילוי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a", "R3"], "t": "\"כבולות\": האליה קשורה למטה", "x": "המשנה אמרה: \"הרחלים יוצאות כבולות\". מה הן \"כבולות\"? שקושרים את האליה שלהן למטה, כדי שהזכרים לא יעלו עליהן. רש\"י: הלשון היא כמו כבלי ברזל, דבר קשור.", "a": "אליה היא הזנב השמן של הכבש."}, {"w": "גמרא", "cols": false, "hl": ["G2b", "R4"], "t": "\"ארץ כבול\"", "x": "ומניין ש\"כבול\" הוא לשון של דבר שאינו עושה פירות? מן הפסוק \"מה הערים האלה אשר נתת לי אחי, ויקרא להם ארץ כבול עד היום הזה\". רש\"י: הפסוק מדבר בערים ששלמה נתן לחירם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3a", "R5"], "t": "רב הונא: אנשים כבולים בכסף ובזהב", "x": "מה פירוש \"ארץ כבול\"? רב הונא אמר: היו בה בני אדם \"שמכובלין בכסף ובזהב\". רש\"י מפרש: עטופים וקשורים בכסף ובזהב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3b", "R6"], "t": "רבא: ולכן לא ישרו בעיניו?", "x": "רבא שאל את רב הונא: אם כך, האם זה מה שכתוב \"לא ישרו בעיניו\", מפני שהיו עטופים בכסף ובזהב לא מצאו חן בעיניו? ענה לו: כן. כיון שהיו עשירים ומפונקים, לא עשו עבודה. רש\"י: עבודת המלך שמטילים על העם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R7", "R8", "R9"], "t": "רב נחמן בר יצחק: ארץ מלוחה", "x": "רב נחמן בר יצחק אמר: זו הייתה \"ארץ חומטון\", ורש\"י מפרש: ארץ מלוחה ומתבקעת. ולמה קראו לה \"כבול\"? כי הרגל שוקעת בה עד ה\"כבלא\", ולפי רש\"י זה הפרק התחתון של הרגל. ובני אדם קוראים לארץ שאינה עושה פירות \"ארעא מכבלא\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4", "T1"], "t": "התוספות: עד השוק", "x": "רבנו יצחק מפרש \"עד כבלא\" אחרת: עד השוק. כך משמע בפרק \"במה אשה\", שם נאמר \"בירית באחת, כבלים בשתים\", והכבלים מונחים על השוק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R10", "R11", "R12"], "t": "\"כבונות\"", "x": "המשנה אמרה \"כבונות\". מה הן? שעוטפים את הכבש כדי שצמרו יהיה ל\"מילת\". רש\"י: ביום שהוא נולד קושרים סביבו בגד, כדי שהצמר יישאר נקי ולא יתלכלך. הלשון \"מכבנין\" היא על שם הקרסים, מעין סיכות של מתכת, שמחברים בהם את הבגד, כמו בלשון \"תינתן כבינתי לבתי\". ומן הצמר הזה עושים בגדי \"מילת\".", "a": "\"מילת\" הוא צמר נקי ועדין."}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "ראיה: \"שאת כצמר לבן\"", "x": "הגמרא מביאה ראיה ממשנה: \"שאת כצמר לבן\". מהו \"צמר לבן\"? רב ביבי בר אביי אמר: כצמר נקי של כבש בן יומו, שעוטפים אותו ל\"מילת\".", "a": "\"שאת\" הוא אחד ממראות הנגע, ובמשנה הזו הלובן שלו נמדד בלובן של צמר."}, {"w": "גמרא", "cols": false, "hl": ["G6"], "t": "עזים צרורות: רב ושמואל", "x": "על \"והעזים יוצאות צרורות\" שבמשנה, \"איתמר\", נאמר בבית המדרש: רב אמר הלכה כרבי יהודה, ושמואל אמר הלכה כרבי יוסי.", "a": "\"צרורות\" הן עזים שהדדים שלהן קשורים. במשנה תנא קמא מתיר, ורבי יוסי אוסר. רבי יהודה מתיר כשהן צרורות \"ליבש\", כדי שהחלב יתייבש, ואוסר כשהן צרורות \"לחלב\", כדי לשמור על החלב."}, {"w": "גמרא", "cols": false, "hl": ["G7", "R13"], "t": "גרסה אחרת: המחלוקת לעצמה", "x": "\"ואיכא דמתני\", ויש ששונים את המחלוקת \"באפי נפשיה\", לעצמה. רש\"י: ולא על המחלוקת של התנאים שבמשנה. רב אמר: צרורות \"ליבש\" מותר, ולא \"לחלב\". ושמואל אמר: גם זה וגם זה אסור.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T2"], "t": "התוספות: למה לא אמרו \"הלכה כפלוני\"", "x": "התוספות שואלים: לפי הגרסה הזו, למה רב ושמואל אמרו את הדין עצמו, ולא אמרו \"הלכה כפלוני\"? ועונים: כי יש מי שהופכים את דברי התנאים ומחליפים ביניהם, ולכן אמרו את הדין עצמו ולא שם של תנא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8a", "R14", "R15", "R16"], "t": "גרסה שלישית: על הברייתא", "x": "ויש ששונים את דברי שמואל על ברייתא. בברייתא נאמר: עזים יוצאות צרורות \"ליבש\", אבל לא \"לחלב\". ובשם רבי יהודה בן בתירא אמרו: כך הלכה, ורש\"י מפרש: שליבש מותר ולחלב אסור. אבל \"מי מפיס\", מי יטיל גורל ויבחין איזו צרורה ליבש ואיזו לחלב? וכיון שאין מכירים ביניהן, גם זה וגם זה אסור. רש\"י: מי שיראה עז שצרורה ליבש יחשוב שהיא לחלב, ויבוא להתיר את שתיהן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8b", "R17"], "t": "הפסקים", "x": "אמר שמואל, ויש אומרים שרב יהודה אמר בשם שמואל: הלכה כרבי יהודה בן בתירא. וכשבא רבין אמר בשם רבי יוחנן: הלכה כתנא קמא. רש\"י: התנא הראשון של המשנה, שמתיר בשתיהן.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8b", "T3"], "t": "התוספות: למה דווקא רבי יהודה בן בתירא", "x": "למה שמואל פסק כרבי יהודה בן בתירא ולא כרבי יוסי, שגם הוא אוסר? כי יש ביניהם הבדל. במקום שקושרים רק ליבש, רבי יהודה בן בתירא מתיר, כי שם אין חשש של \"מי מפיס\". ורבי יוסי אוסר גם שם, שמא ייפול מה שקשור בה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8b", "T4"], "t": "התוספות: הגרסה של רבנו תם", "x": "רבנו תם גורס כאן: \"אמר רב: הלכה כתנא קמא, ושמואל אמר\" וכולי. כלומר גם רב נזכר כאן, ושמואל חולק עליו. ולפי זה הפסק שהביא רבין הוא אותו פסק שפסק רב. לפי הגרסה הזו מתיישבת הלשון \"ואיכא דמתני לה אהא\": המחלוקת של רב ושמואל שלמעלה היא שנשנתה על הברייתא הזו, ולא רק דברי שמואל.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G9", "R18", "R19"], "t": "משנה: במה הגמל אינו יוצא", "x": "משנה חדשה: במה הבהמה אינה יוצאת. גמל לא יצא ב\"מטולטלת\", ולא \"עקוד\" ולא \"רגול\", וכן שאר כל הבהמות. רש\"י מביא שני פירושים ל\"מטולטלת\": רצועה שתחת הזנב, או מרדעת, מעין שמיכה על גב הבהמה. הוא מעדיף את השני, כי רצועה שקשורה לאוכף אינה נופלת, והטעם של המשנה הוא שמא תיפול והוא יביא אותה. על \"עקוד\" ו\"רגול\" רש\"י כותב שהגמרא תפרש אותם: קושרים את הרגליים הקדמיות עם האחוריות בכבלים, כדי שהבהמות לא יברחו.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G10", "R20", "R21"], "t": "לא יקשור גמלים זה לזה", "x": "לא יקשור גמלים זה לזה וימשוך את האחד. אבל מכניס את החבלים לתוך ידו ומושך, ובלבד שלא יכרוך. רש\"י: שלא יכרוך את החבלים יחד, והגמרא תפרש את הטעם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11a", "R22", "R23"], "t": "ברייתא: קשורה בזנב ובחוטרת", "x": "\"תנא\", שנו בברייתא: הגמל לא יצא במטולטלת שקשורה לו בזנבו, אבל יוצא במטולטלת שקשורה בזנבו ובחוטרתו. רש\"י: \"חוטרת\" היא הדבשת שיש לכל הגמלים על גבם. וכיון שהיא קשורה בשני המקומות, אינה נופלת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11b", "R24"], "t": "רבה בר רב הונא: קשורה בשילייתה", "x": "רבה בר רב הונא אמר: הגמל יוצא במטולטלת שקשורה לו \"בשילייתה\". \"שילייתה\" היא השליה שלה, שיוצאת אחרי ההמלטה. רש\"י מפרש: כיון שכואב לה שם, היא אינה מושכת את המטולטלת ואינה מנתקת אותה. כאן רש\"י מוסיף פירוש משלו, \"ולי נראה\": \"מטולטלת\" היא כר קטן מלא מוכין שנותנים תחת הזנב, כדי שהרצועה לא תשחית את הבשר. כשהגמל יורד, המשא שעל גבו נדחף לכיוון הצוואר, והרצועה עוצרת אותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R25", "R26"], "t": "רב יהודה: \"עקוד\" ו\"רגול\"", "x": "רב יהודה אמר: \"עקוד\" הוא עקידת יד ורגל, כמו יצחק בן אברהם. \"רגול\" הוא שלא יכופף את ידו על זרועו ויקשור. רש\"י: בעקוד כובלים יחד רגל קדמית אחת ורגל אחורית אחת. ברגול מכופפים רגל קדמית אחת כלפי מעלה וקושרים, כדי שיהיו לבהמה רק שלוש רגליים לברוח.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R27"], "t": "קושיה מברייתא, ותשובה", "x": "\"מיתיבי\", מקשים מברייתא: \"עקוד\" הוא שתי ידיים ושתי רגליים. רש\"י: שתי הרגליים הקדמיות יחד, או שתי האחוריות יחד. התשובה: רב יהודה סובר כתנא אחר, ששנה: \"עקוד\" הוא עקידת יד ורגל, או שתי ידיים ושתי רגליים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R28", "R29"], "t": "ועדיין אינו דומה", "x": "\"ואכתי לא דמי\", ועדיין התנא הזה אינו דומה לרב יהודה. הרישא, \"עקידת יד ורגל\", והסיפא, הפירוש של \"רגול\", מתאימות לרב יהודה. אבל האמצע, \"או שתי ידיים ושתי רגליים\", קשה. רש\"י: רב יהודה קורא \"עקוד\" רק ליד ורגל, כמו ביצחק, שכתוב בו \"ויעקד\": כפף את ידיו ורגליו לאחוריו וקשר יד ורגל יחד, וצווארו נפשט לאחוריו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15"], "t": "אלא כתנא אחר", "x": "אלא רב יהודה סובר כתנא אחר, ששונה בדיוק כדבריו: \"עקוד\" הוא עקידת יד ורגל כיצחק בן אברהם, ו\"רגול\" הוא שלא יכופף את ידו על זרועו ויקשור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R30"], "t": "למה לא יקשור גמלים", "x": "מה הטעם שלא יקשור גמלים זה לזה? רב אשי אמר: כי זה נראה כמי שהולך ל\"חינגא\". רש\"י: לשוק, כדי למכור אותם. השוק נקרא \"חינגא\" על שם המחולות, כלומר המעגלים של בני אדם שמקיפים אותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17", "R31", "R32", "R34"], "t": "\"ובלבד שלא יכרוך\": בגלל כלאים", "x": "על \"אבל מכניס\" אמר רב אשי: האיסור לכרוך נשנה רק בעניין כלאים, ורש\"י מוסיף שאין בו איסור שבת. איזה כלאים? אם כלאים של אדם, שהכורך נעשה קשור לגמלים ומושך איתם, הרי שנינו: אדם מותר עם כל הבהמות לחרוש ולמשוך. רש\"י: התורה אסרה רק שני מיני בהמה יחד, כמו שור וחמור.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G17", "T5a"], "t": "התוספות: מה עניין כלאים בשבת?", "x": "התוספות שואלים: גם אילו אדם היה אסור עם בהמה, מה עניין כלאים כאן? בשבת אין מושכים עגלה או קרון. ואין לומר שאסור להנהיג בכלאים גם בלי למשוך דבר, כי אז היה אסור להזיז ממקומו שור של פסולי המוקדשין, שנחשב כשני מינים. במסכת מכות נאמר שהמנהיג בשור כזה לוקה, כי גוף אחד הוא, והכתוב עשה אותו שני גופים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G17", "T5b"], "t": "התוספות: שתי תשובות", "x": "א': כך הגמרא אומרת: אם תאמר כלאים של אדם, ו\"ובלבד שלא יכרוך\" נאמר על יום חול, כשהגמלים מושכים דבר. וכך מצאנו למעלה, שהגמרא העמידה את \"ולא בשמן שריפה\" שבמשנה ביום טוב ולא בשבת. ב': גם זה שהאדם והגמלים נושאים יחד את החבלים נחשב משיכה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18", "R33", "R35", "R36", "R37"], "t": "אולי כלאים של חבלים?", "x": "אלא כלאים של חבלים. רש\"י: יש חבלי צמר וחבלי פשתן, וכשכורך אותם יחד הם כלאים, וידו מתחממת כשהוא אוחז בהם. והתנא סובר שגם דבר שאינו מתכוון אסור. אבל הרי שנינו: \"התוכף תכיפה אחת אינה חיבור\". רש\"י: מי שמחבר בגד צמר ובגד פשתן בתפירה אחת או בקשר אחד, אין זה חיבור, כי התורה אסרה רק חיבור טוב שמתקיים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19", "R38"], "t": "התשובה: כורך וקושר", "x": "\"לעולם\", באמת מדובר בכלאים של חבלים, וכך המשנה אומרת: ובלבד שלא יכרוך ויקשור. רש\"י: כריכה וקשירה הן שתי תכיפות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20", "R39"], "t": "שמואל: טפח", "x": "שמואל אמר: ובלבד שלא יצא החבל מתחת ידו טפח. רש\"י: קצה החבל לא יתלה טפח למטה מידו, כי אז נראה כמי שנושא אותו בידו, ולא כאפסר של הגמלים. וקשה: הרי בבית מדרשו של שמואל שנו \"טפחיים\".", "a": "טפח הוא רוחב כף היד."}, {"w": "גמרא", "cols": false, "hl": ["G21", "R40"], "t": "אביי: הלכה למעשה", "x": "אביי אמר: שמואל בא ללמד אותנו \"הלכה למעשה\". רש\"י: למי שבא לשאול אומרים \"טפח\", כדי שלא להקל באיסורים. אבל עד טפחיים אין איסור.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "נגמר הפירוש של מילות המשנה על הרחלים, \"שחוזות\", \"כבולות\" ו\"כבונות\", ונאמרו כמה גרסאות של הפסק בעזים צרורות. במשנה החדשה למדנו במה הגמל אינו יוצא, מהם \"עקוד\" ו\"רגול\", ולמה אין קושרים גמלים זה לזה ואין כורכים את החבלים. העמוד הבא פותח בקושיה מברייתא שבה נאמר שצריך להגביה את החבל טפח מן הקרקע.", "a": ""}], "audio": "shabbat/daf-54a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף כ&quot;ה עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-25a.html">
+<meta name="description" content="מסכת שבת, דף כ&quot;ה עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף כ\"ה עמוד א'", "url": "https://gemara.co.il/shabbat-25a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף כ&quot;ה עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>במה מדליקין</span><span>פרק שני</span><span>שבת<b>כה.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-24b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-25b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 47</div>
+  <h1>מסכת שבת, דף כ&quot;ה עמוד א&#x27;</h1>
+  <p class="sub">פרק שני, &quot;במה מדליקין&quot;. שריפת תרומה טמאה, ההנאה ממנה בשעת ביעורה, וחומרות הקדש מול חומרות התרומה.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף כ&quot;ה עמוד א&#x27;, לומדים: "שבתון", ומצוות שריפת תרומה טמאה; "לך": שלך תהיה להסיקה; "ולא בערתי ממנו בטמא"; חומרות הקדש וחומרות התרומה.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 4 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. "שבתון", ומצוות שריפת תרומה טמאה</a><a href="#u2">2. "לך": שלך תהיה להסיקה</a><a href="#u3">3. "ולא בערתי ממנו בטמא"</a><a href="#u4">4. חומרות הקדש וחומרות התרומה</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2a">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>"שבתון", ומצוות שריפת תרומה טמאה</h2>
+  <p class="lead">רב אשי מסביר למה שריפת קדשים אינה דוחה יום טוב. אחר כך הגמרא מדייקת מן המשנה שבחול מותר להדליק בשמן שריפה, ורב מסביר מדוע.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>עשה והוה ליה</td><td>עשה הוא, ונעשה</td></tr>
+      <tr><td>יום טוב עשה ולא תעשה</td><td>יום טוב עשה ולא תעשה,</td></tr>
+      <tr><td>ואין עשה דוחה את לא תעשה ועשה</td><td>ואין עשה דוחה לא תעשה ועשה.</td></tr>
+      <tr><td>ביום טוב הוא דאסיר</td><td>ביום טוב הוא שאסור,</td></tr>
+      <tr><td>הא בחול שפיר דמי</td><td>הא בחול מותר.</td></tr>
+      <tr><td>כשם שמצוה לשרוף הקדשים שנטמאו</td><td>כשם שמצווה לשרוף את הקדשים שנטמאו,</td></tr>
+      <tr><td>כך מצוה לשרוף את התרומה שנטמאת</td><td>כך מצווה לשרוף את התרומה שנטמאה.</td></tr>
+      <tr><td>ואמרה תורה בשעת ביעורה</td><td>ואמרה התורה: בשעת ביעורה</td></tr>
+      <tr><td>תיהני ממנה</td><td>תיהנה ממנה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רב אשי:</b> "שבתון" הוא מצוות עשה. לכן ביום טוב יש גם עשה וגם לא תעשה, ומצוות העשה "באש תשרופו" אינה יכולה לדחות את שניהם.</p>
+  <p><b>הדיוק:</b> המשנה אסרה להדליק בשמן שריפה רק ביום טוב. משמע שבחול מותר להדליק בו וליהנות מאורו.</p>
+  <p><b>רב:</b> תרומה טמאה, כמו קדשים טמאים, יש מצווה לשרוף אותה. והתורה התירה ליהנות ממנה בשעה שהיא נשרפת.</p>
+  <div data-hl="R1,R2" class="voice r"><span class="tag">רש"י</span><blockquote>עשה הוא – דמשמע שבות בו:</blockquote><blockquote>ואין עשה – דבאש תשרופו דוחה יו"ט דהוא לא תעשה ועשה ואע"ג דהדלקת נר ביו"ט מלאכה המותרת היא הואיל והבערת שאר קדשים שאין נהנין מהן נאסרין גם זו לא יצא מן הכלל:</blockquote><p><span class="say">מה רש"י אומר:</span> "שבתון" משמעו "שבות בו", ציווי לשבות. ואף שהדלקת נר ביום טוב היא מלאכה מותרת, כיוון שהבערת שאר קדשים אסורה, גם זו לא יצאה מן הכלל.</p></div>
+  <div data-hl="R3,R4" class="voice r"><span class="tag">רש"י</span><blockquote>הא בחול שפיר דמי – לאיתהנויי מינה:</blockquote><blockquote>מצוה לשרוף את התרומה שנטמאת – דדמיא לקדש ועוד משום תקלה:</blockquote><p><span class="say">מה רש"י אומר:</span> בחול מותר ליהנות ממנה. ויש מצווה לשרוף אותה מפני שהיא דומה לקדש, וכדי שלא תבוא ממנה תקלה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שריפה או כל ביעור</h3>
+    <div data-hl="T3a" class="voice t"><span class="tag">תוספות</span><blockquote>כך אתה מצווה לשרוף את התרומה – פי' בקונטרס משום דלא ליתי בה לידי תקלה לפי טעם זה נראה דלאו דוקא שריפה אלא ה"ה שאר ביעור וכ"פ בהדיא באלו עוברין ול"נ דבסוף תמורה (דף לג:) קתני תרומה טמאה בהדי הנשרפין וקתני התם הנשרפין לא יקברו ע"כ נראה דשריפה דוקא משום דדמיא לקדש ומדרבנן א"נ מדאורייתא מדאיקרי קדש</blockquote><p><span class="say">מה התוספות אומרים:</span> לפי טעם התקלה, כל ביעור היה מספיק. אבל במשנה בסוף מסכת תמורה תרומה טמאה נמנית עם הנשרפים, והנשרפים אינם נקברים. לכן שריפה דווקא, מפני שהיא דומה לקדש, מדברי חכמים, או מן התורה, מפני שהיא נקראת "קדש".</p></div>
+    <div data-hl="T3b" class="voice t"><span class="tag">תוספות</span><blockquote>ואם תאמר דאמר בספ"ק דפסחים (דף כ:) גבי תרומה טמאה שתעשה זילוף הא תנן בתמורה הראוי לקבורה קבורה פירוש כגון משקין ויש לומר דלא קאי אלא אערלה וכלאי הכרם ולא אתרומה דשריא בהנאה.:</blockquote><p><span class="say">מה התוספות אומרים:</span> ממסכת פסחים משמע שמשקים של תרומה טמאה משמשים ל"זילוף". התוספות עונים שהדין במסכת תמורה, שמשקים נקברים, נאמר על ערלה וכלאי הכרם, ולא על תרומה, שמותרת בהנאה.</p></div>
+    <h3>עשה מול עשה ולא תעשה</h3>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>ה"ל יו"ט עשה כו' – ואת הנך אמוראי דלעיל דסברי דיו"ט לא תעשה גרידא נילף מהכא דלא דחי עשה את ל"ת וכי האי גוונא פריך בפ"ק דיבמות (דף ו.) ושמא מיכן לא נילף לפי שיכול לעשות אחר יו"ט [ת"י]:</blockquote><p><span class="say">מה התוספות אומרים:</span> לשיטת האמוראים שלעיל, שיום טוב הוא לא תעשה בלבד, היה אפשר ללמוד מכאן שעשה אינו דוחה לא תעשה. אבל אולי אין ללמוד מכאן, כי אפשר לשרוף אחרי יום טוב.</p></div>
+  </div>
+  <p class="godeep">למה לדעת התוספות צריך לשרוף תרומה טמאה דווקא, ולא לבער אותה בדרך אחרת? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה לומד רב אשי מ"שבתון"?</summary><p>שיום טוב הוא עשה ולא תעשה, ועשה אינו דוחה לא תעשה ועשה.</p></details>
+  <details><summary>מה מדייקים מן המשנה על ימות החול?</summary><p>שבחול מותר להדליק בשמן שריפה.</p></details>
+  <details><summary>מה אמר רב על תרומה שנטמאה?</summary><p>יש מצווה לשרוף אותה, והתורה התירה ליהנות ממנה בשעת ביעורה.</p></details>
+  <details class="deepq"><summary>לפי התוספות, למה תרומה טמאה נשרפת ולא נקברת?</summary><p>כי היא דומה לקדש, או מפני שנקראת "קדש", ובתמורה היא נמנית עם הנשרפים.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G2b">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>"לך": שלך תהיה להסיקה</h2>
+  <p class="lead">מניין שמותר ליהנות מתרומה טמאה בשעת שריפתה? רב נחמן מביא פסוק.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>היכן אמרה תורה</td><td>היכן אמרה התורה?</td></tr>
+      <tr><td>ואני הנה נתתי לך</td><td>"ואני הנה נתתי לך</td></tr>
+      <tr><td>את משמרת תרומותי</td><td>את משמרת תרומותי":</td></tr>
+      <tr><td>בשתי תרומות הכתוב מדבר</td><td>בשתי תרומות הכתוב מדבר,</td></tr>
+      <tr><td>אחת תרומה טהורה</td><td>אחת תרומה טהורה</td></tr>
+      <tr><td>ואחת תרומה טמאה</td><td>ואחת תרומה טמאה.</td></tr>
+      <tr><td>ואמר רחמנא לך</td><td>ואמרה התורה "לך":</td></tr>
+      <tr><td>שלך תהא להסיקה תחת תבשילך</td><td>שלך תהיה, להסיק אותה תחת תבשילך.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הפסוק:</b> "ואני הנה נתתי לך את משמרת תרומותי". רבה בר אבוה אומר שהכתוב מדבר כאן בשתי תרומות: טהורה וטמאה.</p>
+  <p><b>הדרשה:</b> "לך" פירושו שהתרומה שייכת לכוהן. גם הטמאה, שאינה נאכלת, היא שלו, והוא רשאי להסיק אותה תחת תבשילו.</p>
+  <p><b>מה זה מוסיף:</b> כך מתברר מניין ההיתר שרב אמר, "בשעת ביעורה תיהני ממנה".</p>
+  <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>אחת תרומה טמאה ואחת תרומה טהורה – ואף על גב דדריש רבי אליעזר (בפורות דף לד. וסם) אחת תרומה טהורה ואחת תלויה יניחנה במקום המוצנע ולא במקום התורפה דאסור לגרום לה טומאה התם דריש משמרת תרומותי משמע שתי תרומות צריכות שימור דהיינו טהורה ותלויה והכא דריש מלך:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבי אליעזר דורש מאותו פסוק תרומה טהורה ותרומה שטומאתה בספק, שאותה צריך לשמור במקום מוצנע. אין סתירה: הוא דורש "משמרת תרומותי", ואילו כאן דורשים את המילה "לך".</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מניין האיסור</h3>
+    <div data-hl="T2a" class="voice t"><span class="tag">תוספות</span><blockquote>הא בחול שפיר דמי מ"ט כו' – תימה מהיכא תיתי דתרומה טמאה אסורה בהנאה דבעי מ"ט אי ממעשר הקל כדמשמע בסמוך איכא למיפרך מה למעשר שכן הד"ס ט"ב כדפריך בהערל (יבמות דף עד:) וליכא למימר דהוה אסרינן ליה משום דאיקרי קדש דכתיב (ויקרא כ״ב:י״ד) ונתן לכהן את הקדש או משום דהוקשה לקדשים כדאמר במעילה בפרק הנהנה (דף יט.) דקדש אקשי רחמנא לתרומה וקדש גופיה אסור בהנאה כשניטמא אפילו אותו קדש שהיה …</blockquote><p><span class="say">מה התוספות אומרים:</span> הגמרא שואלת למה מותר ליהנות, ומשמע שבלי הפסוק היה אסור. אם האיסור נלמד ממעשר שני, אפשר לפרוך שבמעשר יש חומרות מיוחדות. ואם הוא נלמד מכך שהתרומה נקראת "קדש", קשה שאלת הגמרא בהמשך: אם נמעט את הקדש, מניין יבוא איסור התרומה?</p></div>
+    <div data-hl="T2b" class="voice t"><span class="tag">תוספות</span><blockquote>וי"ל דהוה גמרינן תרומה מדאיתקש לבכורים ובכורים למעשר כדאמרינן בהערל (יבמות דף מג:) ולקמן לא סמיך אק"ו אלא אהיקשא סמיך ומיהו קדש אתי שפיר בק"ו ממעשר כדאמרי' בפ' כל שעה (פסחים דף כד.) וליכא למיפרך שכן הד"ס ט"ב דכולהו איתנהו בקדש בר מוידוי ואר"ת דמוידוי לא שייך למיפרך דלא שייך וידוי גבי קדש אבל בתרומה שייך דהא אגב מעשר מתודה נמי אתרומה כדאמר וגם נתתיו ללוי זו תרומה ואין לה וידוי …</blockquote><p><span class="say">מה התוספות אומרים:</span> התשובה: את איסור התרומה לומדים בהיקש: התרומה הוקשה לביכורים, והביכורים הוקשו למעשר. את הקדש לומדים בקל וחומר ממעשר, כי כל חומרות המעשר יש גם בקדש, חוץ מן הווידוי, שאינו שייך בקדש.</p></div>
+    <div data-hl="T2c,T2d" class="voice t"><span class="tag">תוספות</span><blockquote>וא"ת אכתי היכי יליף בק"ו קדש ממעשר הא איכא למיפרך מה למעשר שכן טעון כסף צורה כדפריך בפרק בתרא דמכות (דף יז:) ואור"י דלא שייך האי פירכא אלא דוקא גבי חוץ לחומה כדהתם דבעי למילף דאוכל תודה או שלמים חוץ לחומה דלוקה ממעשר</blockquote><blockquote>ואם תאמר הכא אסרינן הסקה והדלקה באיסורי הנאה וערלה דאסורה בהנאה ושרי ליהנות בשעת ביעור כדאמר בפרק כל שעה (פסחים כז:) ולא משכח התם עצים לרבנן דאסורים אלא בשרשיפא וצריך לדחות ולומר דשמן ובשר ותבואה חשיבי בעין טפי בשעת היסק מעצים:</blockquote><p><span class="say">מה התוספות אומרים:</span> עוד שואלים התוספות מפירכת "כסף צורה", ורבנו יצחק עונה שהיא שייכת רק לעניין אכילה מחוץ לחומה. ועוד הם מקשים: כאן אוסרים להסיק באיסורי הנאה, ואילו בעצי ערלה, שאסורה בהנאה, מותר ליהנות בשעת הביעור. הם כותבים שצריך לדחות ולומר ששמן, בשר ותבואה נחשבים בשעת ההסקה כדבר שהוא בעין, יותר מעצים.</p></div>
+  </div>
+  <p class="godeep">לפי התוספות, מניין שבלי הפסוק תרומה טמאה הייתה אסורה בהנאה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>על אילו תרומות מדבר הפסוק לפי רבה בר אבוה?</summary><p>על שתי תרומות: טהורה וטמאה.</p></details>
+  <details><summary>מה לומדים מן המילה "לך"?</summary><p>שהתרומה הטמאה שייכת לכוהן, והוא יכול להסיק אותה תחת תבשילו.</p></details>
+  <details class="deepq"><summary>מה דורש רבי אליעזר מן הפסוק?</summary><p>תרומה טהורה ותרומה תלויה, שצריך לשמור במקום מוצנע.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G3a,G3b,G4,G5">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>"ולא בערתי ממנו בטמא"</h2>
+  <p class="lead">מקור נוסף להיתר: פסוק בווידוי מעשר שני. אבל למה הפסוק ממעט דווקא תרומה, ולא קדש?</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ולא בערתי ממנו בטמא</td><td>"ולא בערתי ממנו בטמא":</td></tr>
+      <tr><td>ממנו אי אתה מבעיר</td><td>"ממנו" אינך מבעיר,</td></tr>
+      <tr><td>אבל אתה מבעיר שמן של תרומה שנטמאת</td><td>אבל אתה מבעיר שמן של תרומה שנטמאה.</td></tr>
+      <tr><td>ואימא ממנו אי אתה מבעיר</td><td>ואולי נאמר: "ממנו" אינך מבעיר,</td></tr>
+      <tr><td>אבל אתה מבעיר שמן של קדש שנטמא</td><td>אבל אתה מבעיר שמן של קדש שנטמא?</td></tr>
+      <tr><td>לאו קל וחומר הוא</td><td>האם אין זה קל וחומר?</td></tr>
+      <tr><td>מה מעשר הקל</td><td>מה מעשר, הקל,</td></tr>
+      <tr><td>אמרה תורה לא בערתי ממנו בטמא</td><td>אמרה התורה "לא בערתי ממנו בטמא",</td></tr>
+      <tr><td>קדש חמור לא כ"ש</td><td>קדש, החמור, לא כל שכן?</td></tr>
+      <tr><td>תרומה נמי לימא ק"ו הוא</td><td>גם תרומה, נאמר שהוא קל וחומר!</td></tr>
+      <tr><td>הא כתיב ממנו</td><td>הרי כתוב "ממנו".</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רבי אבהו:</b> בפסוק על מעשר שני נאמר "ולא בערתי ממנו בטמא". המילה "ממנו" ממעטת: ממעשר אסור להבעיר בטומאה, אבל שמן של תרומה שנטמאה מותר להבעיר.</p>
+  <p><b>ולמה לא קדש?</b> קדש חמור ממעשר, ולכן בקל וחומר אסור להבעיר אותו. <b>ותרומה?</b> גם בה היה אפשר לומר קל וחומר, אבל "ממנו" ממעט דבר אחד, ואי אפשר לאסור את שניהם.</p>
+  <p><b>מה נשאר לברר:</b> אם רק אחד ממועט, למה דווקא התרומה ולא הקדש? על כך עונה היחידה הבאה.</p>
+  <div data-hl="R5,R6" class="voice r"><span class="tag">רש"י</span><blockquote>לא בערתי ממנו – במעשר שני כתיב:</blockquote><blockquote>בטמא – בין שאני טמא בין שהוא טמא:</blockquote><p><span class="say">מה רש"י אומר:</span> הפסוק נאמר על מעשר שני. ו"בטמא" פירושו בין שהאדם טמא ובין שהמעשר טמא.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>קל וחומר ומיעוט</h3>
+    <p>הקל וחומר לבדו היה אוסר גם קדש וגם תרומה, כי שניהם חמורים ממעשר. המיעוט "ממנו" מחייב להוציא אחד מהם מן הקל וחומר. לכן השאלה עוברת מ"האם" ל"איזה מהם".</p>
+  </div>
+  <p class="godeep">למה המילה "ממנו" אינה יכולה למעט גם את התרומה וגם את הקדש? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>על איזה דבר נאמר "ולא בערתי ממנו בטמא"?</summary><p>על מעשר שני.</p></details>
+  <details><summary>מה לומד רבי אבהו מ"ממנו"?</summary><p>שממעשר אינו מבעיר בטומאה, אבל שמן של תרומה שנטמאה מבעיר.</p></details>
+  <details><summary>למה אסור להבעיר קדש טמא?</summary><p>בקל וחומר ממעשר, הקל.</p></details>
+  <details class="deepq"><summary>למה התרומה אינה נאסרת בקל וחומר כמו הקדש?</summary><p>כי כתוב "ממנו", מיעוט שמוציא אחד מן הדין.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G6,G7">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>חומרות הקדש וחומרות התרומה</h2>
+  <p class="lead">הגמרא מכריעה מה ממועט: הקדש חמור יותר, ולכן התרומה היא היוצאת. מיד היא שוקלת את הצד השני, שבתרומה יש חומרות שאין בקדש.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ומה ראית</td><td>ומה ראית?</td></tr>
+      <tr><td>מסתברא קדש לא ממעיטנא</td><td>מסתבר: את הקדש איני ממעט,</td></tr>
+      <tr><td>שכן סימן פנ"ק עכ"ס</td><td>שהרי, והסימן פנ"ק עכ"ס:</td></tr>
+      <tr><td>פיגול נותר קרבן מעילה וכרת</td><td>פיגול, נותר, קרבן, מעילה וכרת,</td></tr>
+      <tr><td>אסור לאונן</td><td>ואסור לאונן.</td></tr>
+      <tr><td>אדרבה תרומה לא ממעיטנא</td><td>להפך: את התרומה איני ממעט,</td></tr>
+      <tr><td>שכן מחפ"ז סימן</td><td>שהרי, והסימן מחפ"ז:</td></tr>
+      <tr><td>מיתה חומש</td><td>מיתה, חומש...</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>חומרות הקדש:</b> פיגול, נותר, שם "קרבן", מעילה, כרת למי שאוכל בטומאה, ואיסור אכילה לאונן. אין אף אחת מהן בתרומה.</p>
+  <p><b>ולכן:</b> מסתבר שהקדש, החמור, נשאר באיסור הקל וחומר, והתרומה היא שממועטת ומותרת בהבערה.</p>
+  <p><b>אדרבה:</b> אבל גם בתרומה יש חומרות שאין בקדש. מיתה בידי שמים לזר שאוכל אותה, וחומש לזר שאכל אותה בשוגג. הרשימה ממשיכה בעמוד הבא.</p>
+  <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>שכן – יש בו חומרי פנקעכ"ס וראוי גם לזו חייבין עליו משום פיגול שחט על מנת לאכול חוץ לזמנו ואכל אפילו בזמנו ומשום נותר חוץ לזמנו ממש ולא חשב מתחלה וקרוי קרבן ויש בו מעילה ואף על גב שקדש (הנותר) לאכילת כהנים אין בהן מעילה מ"מ תורת מעילה שייכא ביה אם קדשי קדשים הן יש בהן מעילה לפני זריקה לכל הנהנה מהן ואם קדשים קלים הן יש מעילה באימוריהן לאחר זריקת דמים לאפוקי תרומה דלית בה כלל:</blockquote><p><span class="say">מה רש"י אומר:</span> פיגול: מי ששחט במחשבה לאכול אחרי הזמן. נותר: מה שנשאר באמת אחרי הזמן. מעילה שייכת בקדשים, ובתרומה אין מעילה כלל.</p></div>
+  <div data-hl="R9,R10" class="voice r"><span class="tag">רש"י</span><blockquote>וכרת – לאוכלה בטומאת הגוף ותרומה במיתה בידי שמים ימיו נקצרים אבל אינו הולך ערירי:</blockquote><blockquote>אסור לאונן – ק"ו ממעשר אבל תרומה מותרת לאונן ביבמות בפרק הערל (יבמות דף ע:) זר זר ב' פעמים זרות אמרתי לך ולא אנינות. אונן כל זמן שלא נקבר מתו:</blockquote><p><span class="say">מה רש"י אומר:</span> בקדש האוכל בטומאה חייב כרת, ובתרומה מיתה בידי שמים. האונן אסור בקדש ומותר בתרומה. ואונן הוא מי שמתו עדיין לא נקבר.</p></div>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>מחפ"ז – מיתה בידי שמים לזר האוכלה או כהן טמא וחומש לזר האוכלה בשוגג דכתיב (ויקרא כ״ב:י״ד) כי יאכל קדש בשגגה ויסף חמישיתו עליו אבל קדש משעה שיש היתר לכהנים כתרומה ויצא מידי מעילה שוב אין חומש בשגגת אכילתו ויש דמוקמי לה בחומשין דחומשא ולא נהירא דהא רבינן ביה חומש דחומש בהקדש בפרק הזהב (בבא מציעא דף נד:):</blockquote><p><span class="say">מה רש"י אומר:</span> זר שאוכל תרומה חייב מיתה בידי שמים, וכך כוהן טמא. וזר שאכל בשוגג משלם חומש, ואילו בקדש שהותר לכוהנים אין חומש.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>פיגול ונותר: רש"י והתוספות</h3>
+    <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>שכן – יש בו חומרי פנקעכ"ס וראוי גם לזו חייבין עליו משום פיגול שחט על מנת לאכול חוץ לזמנו ואכל אפילו בזמנו ומשום נותר חוץ לזמנו ממש ולא חשב מתחלה וקרוי קרבן ויש בו מעילה ואף על גב שקדש (הנותר) לאכילת כהנים אין בהן מעילה מ"מ תורת מעילה שייכא ביה אם קדשי קדשים הן יש בהן מעילה לפני זריקה לכל הנהנה מהן ואם קדשים קלים הן יש מעילה באימוריהן לאחר זריקת דמים לאפוקי תרומה דלית בה כלל:</blockquote><p><span class="say">מה רש"י אומר:</span> פיגול הוא מי ששחט במחשבה לאכול אחרי זמנו, וחייב אפילו כשאכל בזמנו. נותר הוא מה שנשאר אחרי הזמן בלי מחשבה כזו.</p></div>
+    <div data-hl="T6" class="voice t"><span class="tag">תוספות</span><blockquote>פגול – היינו חישב לאוכלו חוץ למקומו ובכלל זה הוי אוכל חוץ לחומה דלוקה בקדשים ונותר היינו חישב לאוכלו חוץ לזמנו והוי נותר בכלל זה והוי האי פיגול ונותר כי ההוא דאם עון פיגול הוא הרי כבר נאמר לא יחשב ואם עון נותר כו' (פסחים דף טז:) ולא כמו פיגול שבכל הש"ס דקרי פיגול דחישב לאוכלו חוץ לזמנו דהיינו נותר דהכא:</blockquote><p><span class="say">מה התוספות אומרים:</span> פיגול כאן הוא מחשבה לאכול מחוץ למקום, ובכלל זה האוכל מחוץ לחומה. נותר כאן הוא מחשבה לאכול אחרי הזמן, ובכלל זה נותר ממש. זה שלא כבשאר התלמוד.</p></div>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>שכן פנק עכ"ס – תימה דמצי לאחשובי נמי דחמירי קדשים מתרומה בהא העריב שמשו אוכל בתרומה הביא כפרתו אוכל בקדשים:</blockquote><p><span class="say">מה התוספות אומרים:</span> היה אפשר למנות עוד חומרה: טמא שטבל אוכל בתרומה כשהעריב שמשו, ובקדשים רק אחרי שהביא את כפרתו.</p></div>
+    <h3>מהו כרת</h3>
+    <div data-hl="T7a,T7b" class="voice t"><span class="tag">תוספות</span><blockquote>כרת – שאינו מגיע לששים שנה שהוא מיתת כל אדם כדמשמע בשילהי מ"ק (דף כח. ושם) דאמר התם רב יוסף כי הוה בר שיתין שנין עבד יומא טבא לרבנן אמר השתא נפקי לי מכרת א"ל אביי נהי דנפק מר מכרת דשני מכרת דיומי מי נפק מר פירוש כדאמר התם מת ביום א' מיתה של זעם שנים מיתה של בהלה שלשה מיתה של כרת ומיתה בידי שמים אין לה זמן קבוע אלא שמת בשביל עון זה אפי' אין בידו עון אחר ואפי' למ"ד (לקמן שבת דף …</blockquote><blockquote>ומיהו בירושל' קאמר דכרת אינו מגיע לחמשים ומפיק לה מאל תכריתו את שבט הקהתי וגו' וזאת עשו להם וחיו פי' אמרה תורה עשו להם תקנה שלא ימותו בעבודתן קודם חמשים וכתיב אל תכריתו משמע כרת היינו שמת קודם חמישים ומיתה האמורה בתורה דקאמר התם היינו שמת עד ששים דכתיב במדבר הזה יתמו ושם ימותו ולא נגזרה גזירה אלא על בני עשרים שימותו קודם ארבעים וקרי לה מיתה</blockquote><p><span class="say">מה התוספות אומרים:</span> כרת היא שאינו מגיע לשישים, כפי שמשמע במסכת מועד קטן ממעשה רב יוסף. בירושלמי נאמר שאינו מגיע לחמישים, ולומדים זאת מן הקהתים.</p></div>
+    <div data-hl="T7c,T7d" class="voice t"><span class="tag">תוספות</span><blockquote>אבל זרעו אומר ריב"א דאין בכרת אלא בהנהו דכתיב בהו ערירי ואין נראה לר"ת דהא בפרק הבא על יבמתו (יבמות דף נה.) קאמר ערירי דכתב רחמנא גבי דודתו למה לי לכדרבא כו' ואי אין זרעו נכרת אלא דוקא בהנהו דכתיב ערירי מאי קבעי והא דלא קאמר במועד קטן (דף כח. ושם) נהי דנפק מר מכרת דשני מכרת דבני מי נפק מר התם מיירי כשאין לו בנים קטנים ודוקא קטנים נענשים בעון אביהם ולא גדולים כדמשמע בפירקין (דף …</blockquote><blockquote>ומיהו קשה דבתורת כהנים ממעט אשת אח מן האם מכרת מדכתיב אשת אחיו נדה היא מה נדה יש לה היתר אף אשת אח דיש לה היתר דהיינו מן האב דשריא כשאין לה בנים ובכולי הש"ס משמע דיש בה כרת כמו בשאר עריות דהא מני לה גבי חמש עשרה נשים פוטרות צרותיהן ולפירוש ריב"א אתי שפיר דמצינן למימר דממעט לה מערירי ואין להאריך:</blockquote><p><span class="say">מה התוספות אומרים:</span> הריב"א אומר שהכרת פוגעת בזרע רק בעבירות שנאמר בהן "ערירי". רבנו תם חולק. ויש קושיה מאשת אח מן האם, שלפי הריב"א מתיישבת.</p></div>
+  </div>
+  <p class="godeep">איך התוספות מפרשים את "פיגול" ו"נותר" ברשימה הזו? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הסימן של חומרות הקדש?</summary><p>פנ"ק עכ"ס: פיגול, נותר, קרבן, מעילה, כרת, אסור לאונן.</p></details>
+  <details><summary>איזו חומרה של תרומה מסביר רש"י בעניין זר שאכל בשוגג?</summary><p>משלם חומש.</p></details>
+  <details><summary>מה ההבדל בין קדש לתרומה לעניין אונן?</summary><p>האונן אסור בקדש ומותר בתרומה.</p></details>
+  <details class="deepq"><summary>מה ההבדל בין פירוש רש"י לפירוש התוספות במילה "פיגול" כאן?</summary><p>לרש"י מחשבה לאכול אחרי הזמן; לתוספות מחשבה לאכול מחוץ למקום.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מה ההבדל בעונש בין קדש לתרומה למי שאוכל בטומאה?</summary><p>בקדש כרת; בתרומה מיתה בידי שמים, ימיו מתקצרים אבל אינו הולך ערירי.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>"שבתון":</b> יום טוב הוא עשה ולא תעשה, ולכן העשה של שריפת קדשים אינו דוחה אותו.</li>
+      <li><b>בחול מותר:</b> מצווה לשרוף תרומה טמאה, ומותר ליהנות ממנה בשעת שריפתה.</li>
+      <li><b>המקור הראשון:</b> "משמרת תרומותי" מדבר בשתי תרומות, ו"לך" מתיר להסיק את הטמאה.</li>
+      <li><b>המקור השני:</b> "ולא בערתי ממנו בטמא": ממעשר אין מבעירים, אבל שמן של תרומה שנטמאה מבעירים.</li>
+      <li><b>קדש חמור:</b> לא ממעטים את הקדש, כי יש בו פיגול, נותר, קרבן, מעילה, כרת ואיסור לאונן.</li>
+      <li><b>נשאר לעמוד הבא:</b> גם בתרומה יש חומרות, מיתה וחומש, והרשימה ממשיכה שם.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>עשה ולא תעשה</td><td>מצווה שיש בה גם ציווי לעשות וגם איסור</td></tr>
+      <tr><td>שפיר דמי</td><td>מותר, טוב הדבר</td></tr>
+      <tr><td>בשעת ביעורה</td><td>בשעה שמבערים ושורפים אותה</td></tr>
+      <tr><td>רחמנא</td><td>&quot;הרחמן&quot;: הקדוש ברוך הוא, בתורתו</td></tr>
+      <tr><td>ואיבעית אימא</td><td>ואם תרצה, אמור: תשובה נוספת</td></tr>
+      <tr><td>ואימא</td><td>ואולי נאמר</td></tr>
+      <tr><td>אי הכי</td><td>אם כך</td></tr>
+      <tr><td>ומה ראית</td><td>מה ראית? מה הסיבה לבחור כך ולא להפך</td></tr>
+      <tr><td>מסתברא</td><td>מסתבר</td></tr>
+      <tr><td>ממעיטנא</td><td>אני ממעט, מוציא מן הדין</td></tr>
+      <tr><td>אדרבה</td><td>להפך</td></tr>
+      <tr><td>סימן</td><td>צירוף אותיות שעוזר לזכור רשימה</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-24b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-25b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף כ&quot;ה עמוד א&#x27;, לומדים: "שבתון", ומצוות שריפת תרומה טמאה; "לך": שלך תהיה להסיקה; "ולא בערתי ממנו בטמא"; חומרות הקדש וחומרות התרומה.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (30 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד א&#x27;: סוף דברי רב אשי, ותרומה טמאה</h3><p>העמוד הקודם הסתיים במקורות לכך שאין שורפים קדשים ביום טוב, ורב אשי אמר רק מילה אחת: &quot;שבתון&quot;. כאן הגמרא מסבירה את דבריו. אחר כך היא לומדת שבימות החול מותר ליהנות משריפת תרומה טמאה, ושואלת למה המיעוט בפסוק חל על התרומה ולא על הקדש.</p></li><li><h3><span class="w">גמרא</span> · רב אשי: יום טוב הוא עשה ולא תעשה</h3><p>&quot;שבתון&quot; הוא מצוות עשה, ולכן יום טוב הוא עשה ולא תעשה. ומצוות עשה אינה דוחה לא תעשה ועשה. רש&quot;י מפרש ש&quot;שבתון&quot; משמעו &quot;שבות בו&quot;, ציווי לשבות, ולכן העשה &quot;באש תשרופו&quot; אינו דוחה את יום טוב, שהוא לא תעשה ועשה. ואף שהדלקת נר ביום טוב היא מלאכה מותרת, כיוון שהבערת שאר קדשים, שאין נהנים מהם, אסורה, גם זו לא יצאה מן הכלל.</p></li><li><h3><span class="w">תוספות</span> · התוספות: נלמד מכאן גם לשיטות אחרות?</h3><p>לאמוראים שלעיל, שלפי שיטתם יום טוב הוא לא תעשה בלבד, התוספות שואלים: שילמדו מכאן, משריפת קדשים שאינה דוחה יום טוב, שבשום מקום עשה אינו דוחה לא תעשה. קושיה מעין זו מקשה הגמרא במסכת יבמות. ותשובתם: אולי מכאן אין ללמוד, כי את השריפה אפשר לעשות אחרי יום טוב.</p></li><li><h3><span class="w">גמרא</span> · בחול מותר ליהנות</h3><p>המשנה אומרת שאין מדליקים בשמן שריפה ביום טוב. משמע שבחול מותר, כלומר מותר ליהנות ממנו. מה הטעם? אמר רב: כשם שמצווה לשרוף קדשים שנטמאו, כך מצווה לשרוף תרומה שנטמאה. והתורה אמרה: בשעת ביעורה, תיהנה ממנה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: למה מצווה לשרוף תרומה טמאה</h3><p>התרומה דומה לקדש. ועוד, השריפה באה כדי שלא תבוא ממנה תקלה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שריפה דווקא</h3><p>לפי הטעם של רש&quot;י, שלא תבוא תקלה, היה נראה שאין צורך דווקא בשריפה, וכל דרך ביעור מספיקה. וכך פירש רש&quot;י במפורש בפרק &quot;אלו עוברין&quot; במסכת פסחים. אבל התוספות מביאים משנה בסוף מסכת תמורה, שבה תרומה טמאה נמנית עם הדברים שנשרפים, והדברים שנשרפים אינם נקברים. לכן נראה להם ששריפה דווקא, מפני שהתרומה דומה לקדש, מדברי חכמים. או מן התורה, מפני שהיא נקראת &quot;קדש&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ומה עם משקים</h3><p>התוספות מקשים: במסכת פסחים נאמר על תרומה טמאה שתיעשה &quot;זילוף&quot;, כלומר יזלפו אותה ולא יקברו אותה, והרי במסכת תמורה שנינו שמה שראוי לקבורה, כגון משקים, נקבר. והם עונים שהדין בתמורה נאמר על ערלה ועל כלאי הכרם, ולא על תרומה, שמותרת בהנאה.</p></li><li><h3><span class="w">גמרא</span> · מניין: &quot;משמרת תרומותי&quot;</h3><p>היכן אמרה התורה שמותר ליהנות? מדברי רב נחמן בשם רבה בר אבוה: נאמר &quot;ואני הנה נתתי לך את משמרת תרומותי&quot;. הכתוב מדבר בשתי תרומות, אחת טהורה ואחת טמאה. ואמרה התורה &quot;לך&quot;: שלך תהיה, להסיק אותה תחת תבשילך.</p></li><li><h3><span class="w">תוספות</span> · התוספות: דרשה אחרת של רבי אליעזר</h3><p>רבי אליעזר דורש מן הפסוק הזה תרומה טהורה ותרומה &quot;תלויה&quot;, שטומאתה בספק. אותה מניחים במקום מוצנע ולא במקום פרוץ, כי אסור לגרום לה טומאה. אין סתירה: שם הוא דורש את המילים &quot;משמרת תרומותי&quot;, שתי תרומות שצריכות שמירה, וכאן דורשים את המילה &quot;לך&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מניין שתרומה טמאה אסורה בהנאה</h3><p>הגמרא שואלת &quot;מאי טעמא&quot; מותר ליהנות, ומשמע שבלי הפסוק תרומה טמאה הייתה אסורה בהנאה. התוספות שואלים: מניין? אם ממעשר שני, אפשר לפרוך שבמעשר יש חומרות שאין בתרומה. ואין לומר שהאיסור בא מפני שהתרומה נקראת &quot;קדש&quot; או הוקשה לקדשים. כי אז קשה שאלת הגמרא בהמשך: אם נמעט את הקדש, מניין יבוא איסור התרומה?</p></li><li><h3><span class="w">תוספות</span> · התוספות: התשובה: היקש</h3><p>התשובה: את איסור התרומה היו לומדים בהיקש. התרומה הוקשה לביכורים, והביכורים הוקשו למעשר. ובהמשך הגמרא אינה סומכת על קל וחומר, אלא על ההיקש. את הקדש לומדים בקל וחומר ממעשר, ואין לפרוך מחומרות המעשר, כי כולן קיימות בקדש חוץ מן הווידוי. ורבנו תם אמר שבקדש אין לפרוך מן הווידוי, כי וידוי אינו שייך בקדש. אבל בתרומה הוא שייך, כי מתוודים עליה יחד עם המעשר, ואין לה וידוי לעצמה. לכן בתרומה הפירכה קיימת, והיא נלמדת מן ההיקש.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ומה עם כסף צורה</h3><p>התוספות שואלים עוד: הרי אפשר לפרוך שמעשר צריך כסף שיש בו צורה, כמו שפורכים במסכת מכות. רבנו יצחק עונה שהפירכה הזו שייכת רק לעניין שנידון שם, אכילה מחוץ לחומה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ומה עם ערלה ועצים</h3><p>עוד הם מקשים: כאן אוסרים להסיק ולהדליק באיסורי הנאה. והרי בערלה, שאסורה בהנאה, מותר ליהנות בשעת הביעור, כמו שנאמר במסכת פסחים. לדעת חכמים לא נמצאו שם עצים אסורים אלא ב&quot;שרשיפא&quot;, שרפרף של עץ. והתוספות כותבים שצריך לדחות ולומר ששמן, בשר ותבואה נחשבים בשעת ההסקה כדבר שהוא בעין, יותר מעצים.</p></li><li><h3><span class="w">גמרא</span> · רבי אבהו: &quot;ולא בערתי ממנו בטמא&quot;</h3><p>&quot;ואיבעית אימא&quot;, ואם תרצה אמור, מדברי רבי אבהו בשם רבי יוחנן: נאמר &quot;ולא בערתי ממנו בטמא&quot;. &quot;ממנו&quot; אינך מבעיר, אבל אתה מבעיר שמן של תרומה שנטמאה. רש&quot;י מפרש שהפסוק נאמר על מעשר שני, ו&quot;בטמא&quot; פירושו בין שאני טמא ובין שהוא טמא.</p></li><li><h3><span class="w">גמרא</span> · ולמה לא קדש?</h3><p>&quot;ואימא&quot;, ואולי נאמר להפך: המיעוט מתיר דווקא שמן של קדש שנטמא? התשובה: &quot;לאו קל וחומר הוא&quot;, הרי זה קל וחומר. מה מעשר, הקל, אמרה התורה שלא יבעיר ממנו בטומאה, קדש, החמור, לא כל שכן.</p></li><li><h3><span class="w">גמרא</span> · ואם כך, גם התרומה</h3><p>&quot;אי הכי&quot;, אם כך, גם בתרומה נאמר קל וחומר! התשובה: הרי כתוב &quot;ממנו&quot;, מיעוט. המילה באה למעט דבר, ואי אפשר לאסור גם את הקדש וגם את התרומה.</p></li><li><h3><span class="w">גמרא</span> · למה דווקא תרומה יוצאת</h3><p>&quot;ומה ראית&quot;, מה ראית למעט את התרומה ולא את הקדש? &quot;מסתברא&quot;, מסתבר: את הקדש איני ממעט מן החומרה הזו, כי יש בו חומרות רבות. והסימן שלהן &quot;פנ&quot;ק עכ&quot;ס&quot;: פיגול, נותר, קרבן, מעילה, כרת, ואסור לאונן.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: פיגול, נותר וקרבן</h3><p>בקדש יש כל החומרות שבסימן, וראוי שתהיה בו גם החומרה הזו. פיגול: מי ששחט במחשבה לאכול את הקרבן אחרי זמנו, ואכל אותו, חייב אפילו כשאכל בזמנו. נותר: מה שנשאר באמת אחרי זמנו, בלי שחשב כך מתחילה. והקדש נקרא &quot;קרבן&quot;.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: מעילה</h3><p>אף שבקדשים שנאכלים לכוהנים אין מעילה, דין מעילה שייך בהם. בקדשי קדשים יש מעילה לפני זריקת הדם לכל מי שנהנה מהם. ובקדשים קלים יש מעילה באימורים אחרי זריקת הדם. ובתרומה אין מעילה כלל.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: כרת ואונן</h3><p>האוכל קדש בטומאת הגוף חייב כרת. ובתרומה העונש הוא מיתה בידי שמים: ימיו מתקצרים, אבל אינו הולך ערירי. האונן אסור בקדש בקל וחומר ממעשר, ותרומה מותרת לאונן, כמו שדורשים במסכת יבמות: &quot;זרות אמרתי לך, ולא אנינות&quot;. ואונן הוא מי שמתו עדיין לא נקבר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: חומרה נוספת</h3><p>התוספות תמהים: היה אפשר למנות עוד חומרה של קדשים על תרומה. טמא שטבל, כשהעריב שמשו, אוכל בתרומה. אבל בקדשים הוא אוכל רק אחרי שהביא את קרבן כפרתו.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פיגול ונותר כאן</h3><p>התוספות מפרשים אחרת: &quot;פיגול&quot; כאן הוא מי שחשב לאכול את הקרבן מחוץ למקומו, ובכלל זה האוכל מחוץ לחומה, שלוקה בקדשים. ו&quot;נותר&quot; כאן הוא מי שחשב לאכול אחרי זמנו, ובכלל זה נותר ממש. זה לא כמו בשאר התלמוד, שם &quot;פיגול&quot; הוא מחשבה לאכול אחרי הזמן, מה שכאן נקרא נותר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מהו כרת</h3><p>כרת פירושו שאינו מגיע לשישים שנה, שהוא זמן מיתת כל אדם. כך משמע במסכת מועד קטן: כשרב יוסף הגיע לשישים, עשה יום טוב לחכמים ואמר שיצא מכרת. אביי אמר לו: מכרת של שנים יצאת, אבל מכרת של ימים לא יצאת. כי נאמר שם שמי שמת לשלושה ימים, מיתתו מיתה של כרת. ומיתה בידי שמים אין לה זמן קבוע, אלא שמת בגלל העוון הזה, אפילו אין בידו עוון אחר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הירושלמי: חמישים</h3><p>בתלמוד הירושלמי נאמר שכרת היא שאינו מגיע לחמישים. לומדים זאת מן הפסוק &quot;אל תכריתו את שבט משפחות הקהתי&quot;, והתורה ציוותה לעשות להם תקנה כדי שלא ימותו בעבודתם לפני חמישים. ו&quot;מיתה&quot; האמורה בתורה היא שמת עד שישים. כך בדור המדבר, שנאמר בו &quot;ושם ימותו&quot;: הגזירה נגזרה על בני עשרים שימותו בתוך ארבעים שנה, והכתוב קורא לזה מיתה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: האם הכרת פוגעת בזרעו</h3><p>הריב&quot;א אומר שהכרת פוגעת בזרעו רק בעבירות שנאמר בהן &quot;ערירי&quot;. רבנו תם אינו מסכים: במסכת יבמות הגמרא שואלת למה נכתב &quot;ערירי&quot; בדודתו, ואילו רק במקום שכתוב &quot;ערירי&quot; זרעו נכרת, אין מקום לשאלה. ולמה במועד קטן לא נזכרה כרת של בנים? כי מדובר במי שאין לו בנים קטנים, ורק קטנים נענשים בעוון אביהם.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיה על רבנו תם</h3><p>ומכל מקום קשה: בתורת כוהנים ממעטים מכרת את אשת האח מן האם, ובכל התלמוד משמע שיש בה כרת כמו בשאר העריות. לפי פירוש הריב&quot;א זה מתיישב, כי אפשר לומר שהמיעוט הוא רק מעונש &quot;ערירי&quot;.</p></li><li><h3><span class="w">גמרא</span> · אדרבה: תרומה חמורה</h3><p>&quot;אדרבה&quot;, להפך: את התרומה איני ממעט, כי יש בה חומרות שאין בקדש. הסימן &quot;מחפ&quot;ז&quot;, ומתחילים למנות: מיתה, חומש. רש&quot;י מפרש: מיתה בידי שמים לזר שאוכל תרומה, או לכוהן טמא שאוכל אותה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: החומש</h3><p>זר שאכל תרומה בשוגג משלם חומש, שנאמר &quot;כי יאכל קדש בשגגה ויסף חמישיתו עליו&quot;. אבל קדש, משעה שהותר לכוהנים כמו תרומה ויצא מדין מעילה, אין משלמים חומש על אכילתו בשוגג.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: פירוש שנדחה</h3><p>יש מי שמפרשים את החומש כאן כ&quot;חומש של חומש&quot;. רש&quot;י דוחה זאת, כי גם בהקדש מוסיפים חומש של חומש, כמבואר במסכת בבא מציעא.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>רב אשי לומד מ&quot;שבתון&quot; שיום טוב הוא עשה ולא תעשה, ולכן העשה של שריפת קדשים אינו דוחה אותו. בחול מותר ליהנות משריפת תרומה טמאה, כפי שלומדים מ&quot;לך&quot;, או מ&quot;ולא בערתי ממנו בטמא&quot;. הגמרא שאלה למה &quot;ממנו&quot; ממעט את התרומה ולא את הקדש, ומנתה את חומרות הקדש ואת חומרות התרומה. העמוד הבא משלים את רשימת חומרות התרומה, ומשיב שחומרות הקדש מרובות יותר.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-25b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "עשה והוה ליה יום טוב עשה ולא תעשה ואין עשה דוחה את לא תעשה ועשה", false, ""], ["G2a", "ביום טוב הוא דאסיר הא בחול שפיר דמי מ\"ט אמר רב כשם שמצוה לשרוף הקדשים שנטמאו כך מצוה לשרוף את התרומה שנטמאת ואמרה תורה בשעת ביעורה תיהני ממנה", true, ""], ["G2b", "היכן אמרה תורה מדרב נחמן דאמר רב נחמן אמר רבה בר אבוה אמר קרא (במדבר יח, ח) ואני הנה נתתי לך את משמרת תרומותי בשתי תרומות הכתוב מדבר אחת תרומה טהורה ואחת תרומה טמאה ואמר רחמנא לך שלך תהא להסיקה תחת תבשילך", false, ""], ["G3a", "ואיבעית אימא מדרבי אבהו דאמר רבי אבהו א\"ר יוחנן (דברים כו, יד) ולא בערתי ממנו בטמא ממנו אי אתה מבעיר אבל אתה מבעיר שמן של תרומה שנטמאת", false, ""], ["G3b", "ואימא ממנו אי אתה מבעיר אבל אתה מבעיר שמן של קדש שנטמא", false, ""], ["G4", "לאו קל וחומר הוא מה מעשר הקל אמרה תורה לא בערתי ממנו בטמא קדש חמור לא כ\"ש", false, ""], ["G5", "א\"ה תרומה נמי לימא ק\"ו הוא הא כתיב ממנו", false, ""], ["G6", "ומה ראית מסתברא קדש לא ממעיטנא שכן סימן פנ\"ק עכ\"ס פיגול נותר קרבן מעילה וכרת אסור לאונן", false, ""], ["G7", "אדרבה תרומה לא ממעיטנא שכן מחפ\"ז סימן מיתה חומש", false, ""]], "R": [["R1", "עשה הוא", "דמשמע שבות בו:", false], ["R2", "ואין עשה", "דבאש תשרופו דוחה יו\"ט דהוא לא תעשה ועשה ואע\"ג דהדלקת נר ביו\"ט מלאכה המותרת היא הואיל והבערת שאר קדשים שאין נהנין מהן נאסרין גם זו לא יצא מן הכלל:", false], ["R3", "הא בחול שפיר דמי", "לאיתהנויי מינה:", false], ["R4", "מצוה לשרוף את התרומה שנטמאת", "דדמיא לקדש ועוד משום תקלה:", false], ["R5", "לא בערתי ממנו", "במעשר שני כתיב:", false], ["R6", "בטמא", "בין שאני טמא בין שהוא טמא:", false], ["R7", "קדש לא ממעיטנא", "מהך חומרא:", false], ["R8", "שכן", "יש בו חומרי פנקעכ\"ס וראוי גם לזו חייבין עליו משום פיגול שחט על מנת לאכול חוץ לזמנו ואכל אפילו בזמנו ומשום נותר חוץ לזמנו ממש ולא חשב מתחלה וקרוי קרבן ויש בו מעילה ואף על גב שקדש (הנותר) לאכילת כהנים אין בהן מעילה מ\"מ תורת מעילה שייכא ביה אם קדשי קדשים הן יש בהן מעילה לפני זריקה לכל הנהנה מהן ואם קדשים קלים הן יש מעילה באימוריהן לאחר זריקת דמים לאפוקי תרומה דלית בה כלל:", false], ["R9", "וכרת", "לאוכלה בטומאת הגוף ותרומה במיתה בידי שמים ימיו נקצרים אבל אינו הולך ערירי:", false], ["R10", "אסור לאונן", "ק\"ו ממעשר אבל תרומה מותרת לאונן ביבמות בפרק הערל (יבמות דף ע:) זר זר ב' פעמים זרות אמרתי לך ולא אנינות. אונן כל זמן שלא נקבר מתו:", false], ["R11", "מחפ\"ז", "מיתה בידי שמים לזר האוכלה או כהן טמא וחומש לזר האוכלה בשוגג דכתיב (ויקרא כ״ב:י״ד) כי יאכל קדש בשגגה ויסף חמישיתו עליו אבל קדש משעה שיש היתר לכהנים כתרומה ויצא מידי מעילה שוב אין חומש בשגגת אכילתו ויש דמוקמי לה בחומשין דחומשא ולא נהירא דהא רבינן ביה חומש דחומש בהקדש בפרק הזהב (בבא מציעא דף נד:):", false]], "T": [["T1", "ה\"ל יו\"ט עשה כו'", "ואת הנך אמוראי דלעיל דסברי דיו\"ט לא תעשה גרידא נילף מהכא דלא דחי עשה את ל\"ת וכי האי גוונא פריך בפ\"ק דיבמות (דף ו.) ושמא מיכן לא נילף לפי שיכול לעשות אחר יו\"ט [ת\"י]:", false], ["T2a", "הא בחול שפיר דמי מ\"ט כו'", "תימה מהיכא תיתי דתרומה טמאה אסורה בהנאה דבעי מ\"ט אי ממעשר הקל כדמשמע בסמוך איכא למיפרך מה למעשר שכן הד\"ס ט\"ב כדפריך בהערל (יבמות דף עד:) וליכא למימר דהוה אסרינן ליה משום דאיקרי קדש דכתיב (ויקרא כ״ב:י״ד) ונתן לכהן את הקדש או משום דהוקשה לקדשים כדאמר במעילה בפרק הנהנה (דף יט.) דקדש אקשי רחמנא לתרומה וקדש גופיה אסור בהנאה כשניטמא אפילו אותו קדש שהיה מותר בהנאה קודם כמו שלמים נפקא לן שפיר מק\"ו דמעשר או מהיקשא דמעשר כדאמר בפרק כל שעה (פסחים דף כד.) דא\"כ מאי פריך ומה ראית ואימא ממנו אתא למעוטי קדש ולא תרומה ואם נמעט קדש מהיכא תיתי איסור תרומה", false], ["T2b", "", "וי\"ל דהוה גמרינן תרומה מדאיתקש לבכורים ובכורים למעשר כדאמרינן בהערל (יבמות דף מג:) ולקמן לא סמיך אק\"ו אלא אהיקשא סמיך ומיהו קדש אתי שפיר בק\"ו ממעשר כדאמרי' בפ' כל שעה (פסחים דף כד.) וליכא למיפרך שכן הד\"ס ט\"ב דכולהו איתנהו בקדש בר מוידוי ואר\"ת דמוידוי לא שייך למיפרך דלא שייך וידוי גבי קדש אבל בתרומה שייך דהא אגב מעשר מתודה נמי אתרומה כדאמר וגם נתתיו ללוי זו תרומה ואין לה וידוי בפני עצמה", false], ["T2c", "", "וא\"ת אכתי היכי יליף בק\"ו קדש ממעשר הא איכא למיפרך מה למעשר שכן טעון כסף צורה כדפריך בפרק בתרא דמכות (דף יז:) ואור\"י דלא שייך האי פירכא אלא דוקא גבי חוץ לחומה כדהתם דבעי למילף דאוכל תודה או שלמים חוץ לחומה דלוקה ממעשר", false], ["T2d", "", "ואם תאמר הכא אסרינן הסקה והדלקה באיסורי הנאה וערלה דאסורה בהנאה ושרי ליהנות בשעת ביעור כדאמר בפרק כל שעה (פסחים כז:) ולא משכח התם עצים לרבנן דאסורים אלא בשרשיפא וצריך לדחות ולומר דשמן ובשר ותבואה חשיבי בעין טפי בשעת היסק מעצים:", false], ["T3a", "כך אתה מצווה לשרוף את התרומה", "פי' בקונטרס משום דלא ליתי בה לידי תקלה לפי טעם זה נראה דלאו דוקא שריפה אלא ה\"ה שאר ביעור וכ\"פ בהדיא באלו עוברין ול\"נ דבסוף תמורה (דף לג:) קתני תרומה טמאה בהדי הנשרפין וקתני התם הנשרפין לא יקברו ע\"כ נראה דשריפה דוקא משום דדמיא לקדש ומדרבנן א\"נ מדאורייתא מדאיקרי קדש", false], ["T3b", "", "ואם תאמר דאמר בספ\"ק דפסחים (דף כ:) גבי תרומה טמאה שתעשה זילוף הא תנן בתמורה הראוי לקבורה קבורה פירוש כגון משקין ויש לומר דלא קאי אלא אערלה וכלאי הכרם ולא אתרומה דשריא בהנאה.:", false], ["T4", "אחת תרומה טמאה ואחת תרומה טהורה", "ואף על גב דדריש רבי אליעזר (בפורות דף לד. וסם) אחת תרומה טהורה ואחת תלויה יניחנה במקום המוצנע ולא במקום התורפה דאסור לגרום לה טומאה התם דריש משמרת תרומותי משמע שתי תרומות צריכות שימור דהיינו טהורה ותלויה והכא דריש מלך:", false], ["T5", "שכן פנק עכ\"ס", "תימה דמצי לאחשובי נמי דחמירי קדשים מתרומה בהא העריב שמשו אוכל בתרומה הביא כפרתו אוכל בקדשים:", false], ["T6", "פגול", "היינו חישב לאוכלו חוץ למקומו ובכלל זה הוי אוכל חוץ לחומה דלוקה בקדשים ונותר היינו חישב לאוכלו חוץ לזמנו והוי נותר בכלל זה והוי האי פיגול ונותר כי ההוא דאם עון פיגול הוא הרי כבר נאמר לא יחשב ואם עון נותר כו' (פסחים דף טז:) ולא כמו פיגול שבכל הש\"ס דקרי פיגול דחישב לאוכלו חוץ לזמנו דהיינו נותר דהכא:", false], ["T7a", "כרת", "שאינו מגיע לששים שנה שהוא מיתת כל אדם כדמשמע בשילהי מ\"ק (דף כח. ושם) דאמר התם רב יוסף כי הוה בר שיתין שנין עבד יומא טבא לרבנן אמר השתא נפקי לי מכרת א\"ל אביי נהי דנפק מר מכרת דשני מכרת דיומי מי נפק מר פירוש כדאמר התם מת ביום א' מיתה של זעם שנים מיתה של בהלה שלשה מיתה של כרת ומיתה בידי שמים אין לה זמן קבוע אלא שמת בשביל עון זה אפי' אין בידו עון אחר ואפי' למ\"ד (לקמן שבת דף כה.) יש מיתה בלא חטא בשביל עון זה יקצרו ימיו", false], ["T7b", "", "ומיהו בירושל' קאמר דכרת אינו מגיע לחמשים ומפיק לה מאל תכריתו את שבט הקהתי וגו' וזאת עשו להם וחיו פי' אמרה תורה עשו להם תקנה שלא ימותו בעבודתן קודם חמשים וכתיב אל תכריתו משמע כרת היינו שמת קודם חמישים ומיתה האמורה בתורה דקאמר התם היינו שמת עד ששים דכתיב במדבר הזה יתמו ושם ימותו ולא נגזרה גזירה אלא על בני עשרים שימותו קודם ארבעים וקרי לה מיתה", false], ["T7c", "", "אבל זרעו אומר ריב\"א דאין בכרת אלא בהנהו דכתיב בהו ערירי ואין נראה לר\"ת דהא בפרק הבא על יבמתו (יבמות דף נה.) קאמר ערירי דכתב רחמנא גבי דודתו למה לי לכדרבא כו' ואי אין זרעו נכרת אלא דוקא בהנהו דכתיב ערירי מאי קבעי והא דלא קאמר במועד קטן (דף כח. ושם) נהי דנפק מר מכרת דשני מכרת דבני מי נפק מר התם מיירי כשאין לו בנים קטנים ודוקא קטנים נענשים בעון אביהם ולא גדולים כדמשמע בפירקין (דף לב:)", false], ["T7d", "", "ומיהו קשה דבתורת כהנים ממעט אשת אח מן האם מכרת מדכתיב אשת אחיו נדה היא מה נדה יש לה היתר אף אשת אח דיש לה היתר דהיינו מן האב דשריא כשאין לה בנים ובכולי הש\"ס משמע דיש בה כרת כמו בשאר עריות דהא מני לה גבי חמש עשרה נשים פוטרות צרותיהן ולפירוש ריב\"א אתי שפיר דמצינן למימר דממעט לה מערירי ואין להאריך:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': סוף דברי רב אשי, ותרומה טמאה", "x": "העמוד הקודם הסתיים במקורות לכך שאין שורפים קדשים ביום טוב, ורב אשי אמר רק מילה אחת: \"שבתון\". כאן הגמרא מסבירה את דבריו. אחר כך היא לומדת שבימות החול מותר ליהנות משריפת תרומה טמאה, ושואלת למה המיעוט בפסוק חל על התרומה ולא על הקדש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1", "R2"], "t": "רב אשי: יום טוב הוא עשה ולא תעשה", "x": "\"שבתון\" הוא מצוות עשה, ולכן יום טוב הוא עשה ולא תעשה. ומצוות עשה אינה דוחה לא תעשה ועשה. רש\"י מפרש ש\"שבתון\" משמעו \"שבות בו\", ציווי לשבות, ולכן העשה \"באש תשרופו\" אינו דוחה את יום טוב, שהוא לא תעשה ועשה. ואף שהדלקת נר ביום טוב היא מלאכה מותרת, כיוון שהבערת שאר קדשים, שאין נהנים מהם, אסורה, גם זו לא יצאה מן הכלל.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1"], "t": "התוספות: נלמד מכאן גם לשיטות אחרות?", "x": "לאמוראים שלעיל, שלפי שיטתם יום טוב הוא לא תעשה בלבד, התוספות שואלים: שילמדו מכאן, משריפת קדשים שאינה דוחה יום טוב, שבשום מקום עשה אינו דוחה לא תעשה. קושיה מעין זו מקשה הגמרא במסכת יבמות. ותשובתם: אולי מכאן אין ללמוד, כי את השריפה אפשר לעשות אחרי יום טוב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a", "R3"], "t": "בחול מותר ליהנות", "x": "המשנה אומרת שאין מדליקים בשמן שריפה ביום טוב. משמע שבחול מותר, כלומר מותר ליהנות ממנו. מה הטעם? אמר רב: כשם שמצווה לשרוף קדשים שנטמאו, כך מצווה לשרוף תרומה שנטמאה. והתורה אמרה: בשעת ביעורה, תיהנה ממנה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G2a", "R4"], "t": "רש\"י: למה מצווה לשרוף תרומה טמאה", "x": "התרומה דומה לקדש. ועוד, השריפה באה כדי שלא תבוא ממנה תקלה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T3a"], "t": "התוספות: שריפה דווקא", "x": "לפי הטעם של רש\"י, שלא תבוא תקלה, היה נראה שאין צורך דווקא בשריפה, וכל דרך ביעור מספיקה. וכך פירש רש\"י במפורש בפרק \"אלו עוברין\" במסכת פסחים. אבל התוספות מביאים משנה בסוף מסכת תמורה, שבה תרומה טמאה נמנית עם הדברים שנשרפים, והדברים שנשרפים אינם נקברים. לכן נראה להם ששריפה דווקא, מפני שהתרומה דומה לקדש, מדברי חכמים. או מן התורה, מפני שהיא נקראת \"קדש\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T3b"], "t": "התוספות: ומה עם משקים", "x": "התוספות מקשים: במסכת פסחים נאמר על תרומה טמאה שתיעשה \"זילוף\", כלומר יזלפו אותה ולא יקברו אותה, והרי במסכת תמורה שנינו שמה שראוי לקבורה, כגון משקים, נקבר. והם עונים שהדין בתמורה נאמר על ערלה ועל כלאי הכרם, ולא על תרומה, שמותרת בהנאה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2b"], "t": "מניין: \"משמרת תרומותי\"", "x": "היכן אמרה התורה שמותר ליהנות? מדברי רב נחמן בשם רבה בר אבוה: נאמר \"ואני הנה נתתי לך את משמרת תרומותי\". הכתוב מדבר בשתי תרומות, אחת טהורה ואחת טמאה. ואמרה התורה \"לך\": שלך תהיה, להסיק אותה תחת תבשילך.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2b", "T4"], "t": "התוספות: דרשה אחרת של רבי אליעזר", "x": "רבי אליעזר דורש מן הפסוק הזה תרומה טהורה ותרומה \"תלויה\", שטומאתה בספק. אותה מניחים במקום מוצנע ולא במקום פרוץ, כי אסור לגרום לה טומאה. אין סתירה: שם הוא דורש את המילים \"משמרת תרומותי\", שתי תרומות שצריכות שמירה, וכאן דורשים את המילה \"לך\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T2a"], "t": "התוספות: מניין שתרומה טמאה אסורה בהנאה", "x": "הגמרא שואלת \"מאי טעמא\" מותר ליהנות, ומשמע שבלי הפסוק תרומה טמאה הייתה אסורה בהנאה. התוספות שואלים: מניין? אם ממעשר שני, אפשר לפרוך שבמעשר יש חומרות שאין בתרומה. ואין לומר שהאיסור בא מפני שהתרומה נקראת \"קדש\" או הוקשה לקדשים. כי אז קשה שאלת הגמרא בהמשך: אם נמעט את הקדש, מניין יבוא איסור התרומה?", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T2b"], "t": "התוספות: התשובה: היקש", "x": "התשובה: את איסור התרומה היו לומדים בהיקש. התרומה הוקשה לביכורים, והביכורים הוקשו למעשר. ובהמשך הגמרא אינה סומכת על קל וחומר, אלא על ההיקש. את הקדש לומדים בקל וחומר ממעשר, ואין לפרוך מחומרות המעשר, כי כולן קיימות בקדש חוץ מן הווידוי. ורבנו תם אמר שבקדש אין לפרוך מן הווידוי, כי וידוי אינו שייך בקדש. אבל בתרומה הוא שייך, כי מתוודים עליה יחד עם המעשר, ואין לה וידוי לעצמה. לכן בתרומה הפירכה קיימת, והיא נלמדת מן ההיקש.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T2c"], "t": "התוספות: ומה עם כסף צורה", "x": "התוספות שואלים עוד: הרי אפשר לפרוך שמעשר צריך כסף שיש בו צורה, כמו שפורכים במסכת מכות. רבנו יצחק עונה שהפירכה הזו שייכת רק לעניין שנידון שם, אכילה מחוץ לחומה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T2d"], "t": "התוספות: ומה עם ערלה ועצים", "x": "עוד הם מקשים: כאן אוסרים להסיק ולהדליק באיסורי הנאה. והרי בערלה, שאסורה בהנאה, מותר ליהנות בשעת הביעור, כמו שנאמר במסכת פסחים. לדעת חכמים לא נמצאו שם עצים אסורים אלא ב\"שרשיפא\", שרפרף של עץ. והתוספות כותבים שצריך לדחות ולומר ששמן, בשר ותבואה נחשבים בשעת ההסקה כדבר שהוא בעין, יותר מעצים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3a", "R5", "R6"], "t": "רבי אבהו: \"ולא בערתי ממנו בטמא\"", "x": "\"ואיבעית אימא\", ואם תרצה אמור, מדברי רבי אבהו בשם רבי יוחנן: נאמר \"ולא בערתי ממנו בטמא\". \"ממנו\" אינך מבעיר, אבל אתה מבעיר שמן של תרומה שנטמאה. רש\"י מפרש שהפסוק נאמר על מעשר שני, ו\"בטמא\" פירושו בין שאני טמא ובין שהוא טמא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3b", "G4"], "t": "ולמה לא קדש?", "x": "\"ואימא\", ואולי נאמר להפך: המיעוט מתיר דווקא שמן של קדש שנטמא? התשובה: \"לאו קל וחומר הוא\", הרי זה קל וחומר. מה מעשר, הקל, אמרה התורה שלא יבעיר ממנו בטומאה, קדש, החמור, לא כל שכן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "ואם כך, גם התרומה", "x": "\"אי הכי\", אם כך, גם בתרומה נאמר קל וחומר! התשובה: הרי כתוב \"ממנו\", מיעוט. המילה באה למעט דבר, ואי אפשר לאסור גם את הקדש וגם את התרומה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R7"], "t": "למה דווקא תרומה יוצאת", "x": "\"ומה ראית\", מה ראית למעט את התרומה ולא את הקדש? \"מסתברא\", מסתבר: את הקדש איני ממעט מן החומרה הזו, כי יש בו חומרות רבות. והסימן שלהן \"פנ\"ק עכ\"ס\": פיגול, נותר, קרבן, מעילה, כרת, ואסור לאונן.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6", "R8"], "t": "רש\"י: פיגול, נותר וקרבן", "x": "בקדש יש כל החומרות שבסימן, וראוי שתהיה בו גם החומרה הזו. פיגול: מי ששחט במחשבה לאכול את הקרבן אחרי זמנו, ואכל אותו, חייב אפילו כשאכל בזמנו. נותר: מה שנשאר באמת אחרי זמנו, בלי שחשב כך מתחילה. והקדש נקרא \"קרבן\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6", "R8"], "t": "רש\"י: מעילה", "x": "אף שבקדשים שנאכלים לכוהנים אין מעילה, דין מעילה שייך בהם. בקדשי קדשים יש מעילה לפני זריקת הדם לכל מי שנהנה מהם. ובקדשים קלים יש מעילה באימורים אחרי זריקת הדם. ובתרומה אין מעילה כלל.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6", "R9", "R10"], "t": "רש\"י: כרת ואונן", "x": "האוכל קדש בטומאת הגוף חייב כרת. ובתרומה העונש הוא מיתה בידי שמים: ימיו מתקצרים, אבל אינו הולך ערירי. האונן אסור בקדש בקל וחומר ממעשר, ותרומה מותרת לאונן, כמו שדורשים במסכת יבמות: \"זרות אמרתי לך, ולא אנינות\". ואונן הוא מי שמתו עדיין לא נקבר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T5"], "t": "התוספות: חומרה נוספת", "x": "התוספות תמהים: היה אפשר למנות עוד חומרה של קדשים על תרומה. טמא שטבל, כשהעריב שמשו, אוכל בתרומה. אבל בקדשים הוא אוכל רק אחרי שהביא את קרבן כפרתו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T6"], "t": "התוספות: פיגול ונותר כאן", "x": "התוספות מפרשים אחרת: \"פיגול\" כאן הוא מי שחשב לאכול את הקרבן מחוץ למקומו, ובכלל זה האוכל מחוץ לחומה, שלוקה בקדשים. ו\"נותר\" כאן הוא מי שחשב לאכול אחרי זמנו, ובכלל זה נותר ממש. זה לא כמו בשאר התלמוד, שם \"פיגול\" הוא מחשבה לאכול אחרי הזמן, מה שכאן נקרא נותר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T7a"], "t": "התוספות: מהו כרת", "x": "כרת פירושו שאינו מגיע לשישים שנה, שהוא זמן מיתת כל אדם. כך משמע במסכת מועד קטן: כשרב יוסף הגיע לשישים, עשה יום טוב לחכמים ואמר שיצא מכרת. אביי אמר לו: מכרת של שנים יצאת, אבל מכרת של ימים לא יצאת. כי נאמר שם שמי שמת לשלושה ימים, מיתתו מיתה של כרת. ומיתה בידי שמים אין לה זמן קבוע, אלא שמת בגלל העוון הזה, אפילו אין בידו עוון אחר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T7b"], "t": "התוספות: הירושלמי: חמישים", "x": "בתלמוד הירושלמי נאמר שכרת היא שאינו מגיע לחמישים. לומדים זאת מן הפסוק \"אל תכריתו את שבט משפחות הקהתי\", והתורה ציוותה לעשות להם תקנה כדי שלא ימותו בעבודתם לפני חמישים. ו\"מיתה\" האמורה בתורה היא שמת עד שישים. כך בדור המדבר, שנאמר בו \"ושם ימותו\": הגזירה נגזרה על בני עשרים שימותו בתוך ארבעים שנה, והכתוב קורא לזה מיתה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T7c"], "t": "התוספות: האם הכרת פוגעת בזרעו", "x": "הריב\"א אומר שהכרת פוגעת בזרעו רק בעבירות שנאמר בהן \"ערירי\". רבנו תם אינו מסכים: במסכת יבמות הגמרא שואלת למה נכתב \"ערירי\" בדודתו, ואילו רק במקום שכתוב \"ערירי\" זרעו נכרת, אין מקום לשאלה. ולמה במועד קטן לא נזכרה כרת של בנים? כי מדובר במי שאין לו בנים קטנים, ורק קטנים נענשים בעוון אביהם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T7d"], "t": "התוספות: קושיה על רבנו תם", "x": "ומכל מקום קשה: בתורת כוהנים ממעטים מכרת את אשת האח מן האם, ובכל התלמוד משמע שיש בה כרת כמו בשאר העריות. לפי פירוש הריב\"א זה מתיישב, כי אפשר לומר שהמיעוט הוא רק מעונש \"ערירי\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R11"], "t": "אדרבה: תרומה חמורה", "x": "\"אדרבה\", להפך: את התרומה איני ממעט, כי יש בה חומרות שאין בקדש. הסימן \"מחפ\"ז\", ומתחילים למנות: מיתה, חומש. רש\"י מפרש: מיתה בידי שמים לזר שאוכל תרומה, או לכוהן טמא שאוכל אותה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G7", "R11"], "t": "רש\"י: החומש", "x": "זר שאכל תרומה בשוגג משלם חומש, שנאמר \"כי יאכל קדש בשגגה ויסף חמישיתו עליו\". אבל קדש, משעה שהותר לכוהנים כמו תרומה ויצא מדין מעילה, אין משלמים חומש על אכילתו בשוגג.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G7", "R11"], "t": "רש\"י: פירוש שנדחה", "x": "יש מי שמפרשים את החומש כאן כ\"חומש של חומש\". רש\"י דוחה זאת, כי גם בהקדש מוסיפים חומש של חומש, כמבואר במסכת בבא מציעא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "רב אשי לומד מ\"שבתון\" שיום טוב הוא עשה ולא תעשה, ולכן העשה של שריפת קדשים אינו דוחה אותו. בחול מותר ליהנות משריפת תרומה טמאה, כפי שלומדים מ\"לך\", או מ\"ולא בערתי ממנו בטמא\". הגמרא שאלה למה \"ממנו\" ממעט את התרומה ולא את הקדש, ומנתה את חומרות הקדש ואת חומרות התרומה. העמוד הבא משלים את רשימת חומרות התרומה, ומשיב שחומרות הקדש מרובות יותר.", "a": ""}], "audio": "shabbat/daf-25a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

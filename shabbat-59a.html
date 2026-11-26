@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף נ&quot;ט עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-59a.html">
+<meta name="description" content="מסכת שבת, דף נ&quot;ט עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף נ\"ט עמוד א'", "url": "https://gemara.co.il/shabbat-59a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף נ&quot;ט עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>במה אשה</span><span>פרק שישי</span><span>שבת<b>נט.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-58b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-59b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 115</div>
+  <h1>מסכת שבת, דף נ&quot;ט עמוד א&#x27;</h1>
+  <p class="sub">פרק שישי, &quot;במה אשה&quot;. רבא: זוג שראוי להקיש בו. &quot;עמוד ונעשה מלאכתנו&quot;, סנדל של בהמה של מתכת, ועיר של זהב.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף נ&quot;ט עמוד א&#x27;, לומדים: זוג שניטל העינבל שלו: להקיש בו או לגמוע בו; "עמוד ונעשה מלאכתנו": מעין מלאכה ראשונה; "איפוך", וסנדל של בהמה; עיר של זהב.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 4 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. זוג שניטל העינבל שלו: להקיש בו או לגמוע בו</a><a href="#u2">2. "עמוד ונעשה מלאכתנו": מעין מלאכה ראשונה</a><a href="#u3">3. "איפוך", וסנדל של בהמה</a><a href="#u4">4. עיר של זהב</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>זוג שניטל העינבל שלו: להקיש בו או לגמוע בו</h2>
+  <p class="lead">למה זוג שניטל העינבל שלו נשאר טמא? אחרי שאביי נדחה, רבא נותן טעם אחר, ורבי יוסי ברבי חנינא ורבי יוחנן נחלקו בדבר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הואיל וראוי להקישו</td><td>מפני שראוי להקיש בו</td></tr>
+      <tr><td>על גבי חרס</td><td>על גבי חרס.</td></tr>
+      <tr><td>איתמר נמי</td><td>נאמר גם כן:</td></tr>
+      <tr><td>אמר ר' יוסי בר' חנינא</td><td>אמר רבי יוסי ברבי חנינא:</td></tr>
+      <tr><td>ר' יוחנן אמר</td><td>רבי יוחנן אמר:</td></tr>
+      <tr><td>הואיל וראוי לגמע בו</td><td>מפני שראוי לגמוע בו</td></tr>
+      <tr><td>מים לתינוק</td><td>מים לתינוק.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רבא:</b> הזוג נשאר טמא כי אפשר להקיש בו על חרס, וכך הוא משמיע קול כבתחילה. הוא לא בטל ממלאכתו הראשונה.</p>
+  <p><b>רבי יוסי ברבי חנינא:</b> אומר כמו רבא, מפני שראוי להקיש בו על גבי חרס. (בהמשך העמוד הגמרא תהפוך את השמות במחלוקת הזו.)</p>
+  <p><b>רבי יוחנן:</b> נותן טעם אחר: אפשר להשקות בזוג תינוק. כלומר הזוג ראוי לשימוש אחר, שאינו השמעת קול.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>הואיל וראוי להקישו ע"ג חרס – ומשמיע קול כבתחלה ולא בטל ליה ממלאכה ראשונה והוה ליה ככלי שניקב בפחות ממוציא רימון דקיי"ל דלא טיהר מטומאתו משום דראוי למלאכתו והשתא איתרצו כולהו דבהמה טהורה בלא עינבל כדקתני במתני' קמייתא דלאו מנא הוא ובעינבל טמא כדאוקמינן בבתרייתא דעינבל משוי לה מנא ודאדם גדול אף בלא עינבל טמא דלתכשיט הוא ולא בעי עינבל והיינו דקתני בקמייתא דמקבלין טומאה ודקטנים …</blockquote><p><span class="say">מה רש"י אומר:</span> הזוג דומה לכלי שניקב נקב קטן, שרימון אינו יוצא בו: הוא אינו נטהר מטומאתו, כי עדיין ראוי למלאכתו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>כך מתיישבות כל הברייתות</h3>
+    <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>הואיל וראוי להקישו ע"ג חרס – ומשמיע קול כבתחלה ולא בטל ליה ממלאכה ראשונה והוה ליה ככלי שניקב בפחות ממוציא רימון דקיי"ל דלא טיהר מטומאתו משום דראוי למלאכתו והשתא איתרצו כולהו דבהמה טהורה בלא עינבל כדקתני במתני' קמייתא דלאו מנא הוא ובעינבל טמא כדאוקמינן בבתרייתא דעינבל משוי לה מנא ודאדם גדול אף בלא עינבל טמא דלתכשיט הוא ולא בעי עינבל והיינו דקתני בקמייתא דמקבלין טומאה ודקטנים …</blockquote><p><span class="say">מה רש"י אומר:</span> זוג של בהמה בלי עינבל טהור, ועם עינבל טמא. זוג של אדם גדול טמא גם בלי עינבל, כי הוא תכשיט. זוג של תינוקות טהור כשמעולם לא היה לו עינבל, כי מלאכתו לא נגמרה. ואם ניטל העינבל, לפני הטומאה או אחריה, הוא טמא, כי לא נשבר כשיעור שמטהר כלי.</p></div>
+    <h3>האם צריך ייחוד</h3>
+    <div data-hl="T1a" class="voice t"><span class="tag">תוספות</span><blockquote>ורבי יוחנן אמר הואיל וראוי לגמע בו מים לתינוק – קשה לרשב"א דע"כ בלא ייחדו מיירי מדקאמר הואיל וראוי משמע בראוי בעלמא אפי' בלא ייחוד ועוד דביחדו לכך לא הוה פליג ר' יוסי בר' חנינא ועוד דביחדו אפי' לא היה לו עינבל מעולם נמי מקבל טומאה ועוד אי ביחדו מיירי מאי פריך דר' יוחנן אדר' יוחנן הא התם ע"כ איירי בלא ייחדו דביחדו אפי' במדרסות נמי אין אומרים עמוד ונעשה מלאכתנו ולקמן בס"פ המצניע …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו שמשון בן אברהם מוכיח שרבי יוחנן מדבר בזוג שלא ייחדו אותו לגימוע, כי "הואיל וראוי" משמע ראוי בלבד. וקשה, כי בסוף פרק "המצניע" רש"י פירש שכלי שניקב נשאר כלי לרימונים רק אם ייחד אותו לכך.</p></div>
+    <div data-hl="T1b" class="voice t"><span class="tag">תוספות</span><blockquote>וי"ל דאפי' לפירוש הקונטרס הכא חזי טפי ע"י גימוע משום דהואיל דמעיקרא הוה כלי גמור וגם עתה הדיוט יכול להחזירו אית לן למימר דע"י דבר מועט שעדיין ראוי לגמוע בו מים חשיב כלי אפי' בלא ייחוד ולמ"ד נמי הואיל וראוי להקישו דבעי מעין מלאכה ראשונה אתי שפיר בכל ענין דאפי' לא בעינן בעלמא ייחוד הכא אתי שפיר דלא מהני גמוע מים משום שעומד עדיין למלאכתו ראשונה להחזיר בו העינבל ואומר לו עמוד …</blockquote><p><span class="say">מה התוספות אומרים:</span> התשובה: הזוג היה כלי גמור, והדיוט יכול להחזיר את העינבל, ולכן די בדבר מועט, כמו גימוע מים, גם בלי ייחוד. ולמי שאומר "ראוי להקישו", הגימוע אינו מועיל בכל מקרה, כי הזוג עדיין עומד למלאכתו הראשונה.</p></div>
+  </div>
+  <p class="godeep">מה ההבדל בין הטעם "להקישו" לבין הטעם "לגמע"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הטעם של רבא?</summary><p>הזוג ראוי להקיש בו על גבי חרס.</p></details>
+  <details><summary>מה הטעם של רבי יוחנן?</summary><p>הזוג ראוי לגמוע בו מים לתינוק.</p></details>
+  <details><summary>למה רש"י מדמה את הזוג?</summary><p>לכלי שניקב נקב קטן, שרימון אינו יוצא בו, שאינו נטהר מטומאתו.</p></details>
+  <details class="deepq"><summary>לפי התוספות, למה הגימוע מועיל כאן בלי ייחוד?</summary><p>כי הזוג היה כלי גמור, והדיוט יכול להחזיר את העינבל.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G3,G4">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>"עמוד ונעשה מלאכתנו": מעין מלאכה ראשונה</h2>
+  <p class="lead">הגמרא מקשה על רבי יוחנן: במקום אחר הוא דורש שהכלי יהיה ראוי למלאכה שדומה למלאכתו הראשונה, ואילו כאן הוא מסתפק בגימוע מים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ור' יוחנן לא בעי מעין מלאכה ראשונה</td><td>ורבי יוחנן אינו צריך מעין מלאכה ראשונה?</td></tr>
+      <tr><td>וכל כלי אשר ישב עליו</td><td>"וכל הכלי אשר ישב עליו".</td></tr>
+      <tr><td>יכול כפה סאה וישב עליה</td><td>יכול, הפך סאה וישב עליה,</td></tr>
+      <tr><td>כפה תרקב וישב עליה יהא טמא</td><td>הפך תרקב וישב עליו, יהיה טמא?</td></tr>
+      <tr><td>תלמוד לומר אשר ישב עליו הזב</td><td>הפסוק אומר: "אשר ישב עליו הזב",</td></tr>
+      <tr><td>מי שמיוחד לישיבה</td><td>מה שמיוחד לישיבה.</td></tr>
+      <tr><td>יצא זה שאומרים לו</td><td>יצא זה שאומרים לו:</td></tr>
+      <tr><td>עמוד ונעשה מלאכתנו</td><td>קום, ונעשה את מלאכתנו.</td></tr>
+      <tr><td>ר' אלעזר אומר במדרסות אומרים</td><td>רבי אלעזר אומר: במדרסות אומרים,</td></tr>
+      <tr><td>ואין אומרים בטמא מת</td><td>ואין אומרים בטמא מת.</td></tr>
+      <tr><td>ור' יוחנן אמר אף אומר בטמא מת</td><td>ורבי יוחנן אמר: גם בטמא מת אומרים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הברייתא:</b> הפסוק אומר "אשר ישב עליו הזב", ומכאן שרק כלי שמיוחד לישיבה נטמא במדרס. סאה או תרקב שהפך וישב עליהם, אינם נטמאים, כי אומרים ליושב "עמוד ונעשה מלאכתנו".</p>
+  <p><b>המחלוקת:</b> רבי אלעזר אומר שבמדרסות אומרים "עמוד ונעשה מלאכתנו", ובטמא מת אין אומרים. רבי יוחנן אומר שגם בטמא מת אומרים כך.</p>
+  <p><b>הקושיה:</b> לדעת רבי יוחנן, גם בטומאת מת הכלי צריך להיות ראוי למלאכה שדומה לראשונה. אם כך, איך גימוע מים מספיק לו בזוג?</p>
+  <div data-hl="R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>ה"ג לה בת"כ וכל הכלי אשר ישב עליו – רישא דקרא וכל המשכב וגו' יכול כל כלי במשמע ואפי' אין עשוי לישיבה:</blockquote><blockquote>תרקב – חצי סאה פי' תרי וקב:</blockquote><p><span class="say">מה רש"י אומר:</span> "יכול" פירושו שהיינו חושבים שכל כלי במשמע, אפילו אינו עשוי לישיבה. ותרקב הוא חצי סאה.</p></div>
+  <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>ת"ל אשר ישב – מדלא כתיב גבי משכב אשר שכב וגבי מושב אשר ישב וכתיב ישכב ישב משמע שישכב עליו תמיד וישב עליו תמיד במיוחד לשכיבה ולישיבה וגבי משכב נמי דריש ליה התם הכי ובכל הספרים כתיב והיושב על הכלי אשר ישב עליו וקרא אחר הוא ומפרשים אותו התלמידים מדכתיב היושב על הכלי אשר ישב עליו שתי ישיבות ריבה הכתוב ללמדך דבמיוחד לישיבה קאמר ולא היא דשתי ישיבות דקאמר טובא צריכי כדמפרש התם יושב …</blockquote><p><span class="say">מה רש"י אומר:</span> נכתב "יֵשֵׁב", בלשון עתיד, ולא "יָשַׁב", בלשון עבר. משמע שיושב עליו תמיד, כלומר כלי שמיוחד לישיבה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה פירוש "עמוד ונעשה מלאכתנו" לפי רש"י</h3>
+    <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>ר' אלעזר אומר במדרסות כו' – בין בתחלת טומאה לענין שאמרנו דאינו מטמא מדרס למיהוי אב הטומאה בין בסוף טומאה כגון ג' על ג' שנטמאו מדרס למיהוי אב הטומאה ונחלקו טהור מן המדרס דאמרינן בו עמוד ונעשה מלאכתנו הראשונה שהיה ראוי לישיבה והרי עתה אינו ראוי לכך הלכך טהור מן המדרס ואע"ג דאית בכל חד שלש על שלש והוי כלי לקבל טומאה מיהו מתורת אב הטומאה טיהר לו:</blockquote><p><span class="say">מה רש"י אומר:</span> במדרסות: כלי שאינו עשוי לישיבה אינו נעשה אב הטומאה במדרס. ובגד של שלושה על שלושה שנטמא במדרס ונחלק, טהור מן המדרס, כי מלאכתו הראשונה הייתה לישיבה ועכשיו אינו ראוי לה.</p></div>
+    <div data-hl="R6,R7" class="voice r"><span class="tag">רש"י</span><blockquote>ואין אומרים – לענין אב הטומאה של טומאת מת עמוד ונעשה מלאכתנו כלומר אם נטמא ונשבר ועודהו ראוי למלאכה בעלמא שאין מעין מלאכה ראשונה טמא ולא אמרי' עמוד ונעשה מלאכתנו ראשונה וכיון דלא חזי להכי יהא טהור וכ"ש דבתחלת טומאה אין אומרים עמוד ונעשה מלאכתנו ראשונה דנימא אם אינו מיוחד למת לא יקבל טומאת מת דהא כלי מעשה כתיב:</blockquote><blockquote>אומר כו' – דאי לא עביד מעין מלאכה ראשונה טהור ועל כרחיך לא איתמר דר' יוחנן אלא לענין שנשבר ולטהרו כדפרישית דליכא לפרושא כי ההיא דמדרסות ולמימרא דכלי שאינו עשוי למת לא יטמא במת דהא כתיב (במדבר יט) והזה על האהל ועל כל הכלים:</blockquote><p><span class="say">מה רש"י אומר:</span> בטמא מת, לדעת רבי אלעזר, כלי שנשבר ועדיין ראוי למלאכה כלשהי נשאר טמא. לרבי יוחנן הוא טהור אם אינו ראוי למעין מלאכתו הראשונה. ודבריו נאמרו רק על כלי שנשבר.</p></div>
+    <h3>הפירוש של רבנו יצחק בן אשר (ריב"א)</h3>
+    <div data-hl="T2a" class="voice t"><span class="tag">תוספות</span><blockquote>ואין אומרים בטמא מת עמוד ונעשה מלאכתנו – לפירוש הקונט' קשה לר"י למה ליה לאתויי ברייתא דתרקב כיון דלא שייכא למילתיה דר' אלעזר ור' יוחנן</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק מקשה על רש"י: למה הגמרא הביאה את הברייתא על התרקב, אם אינה קשורה לדברי רבי אלעזר ורבי יוחנן?</p></div>
+    <div data-hl="T2b" class="voice t"><span class="tag">תוספות</span><blockquote>אלא נראה לר' יצחק כפירוש ריב"א אומרים במדרסות עמוד מעל תרקב זה ונעשה מלאכתנו שאינו יכול להיות טמא מדרס ע"י שאתה יושב עליו הואיל ואינו מיוחד לכך כדקתני בברייתא ואין אומרים בטמא מת עמוד מגמוע מים בזה הזוג או בזה הסנדל של בהמה ונעשה מלאכתנו ליתן בו העינבל כדי להשמיע הקול וליתן סנדל ברגלי הבהמה אלא טמא טומאת מת על ידי הגימוע אע"פ שאינו מיוחד לכך והוי בר קבולי טומאה דחשיב כלי ע"י …</blockquote><p><span class="say">מה התוספות אומרים:</span> לפי ריב"א, המחלוקת היא על כלי שמשתמשים בו שלא למה שנועד לו. לרבי אלעזר, זוג או סנדל של בהמה נטמאים בטומאת מת בזכות הגימוע. לרבי יוחנן צריך מעין מלאכה ראשונה, כמו להקיש בזוג על חרס, או לנעול את הסנדל כשבורח מן הקרב.</p></div>
+  </div>
+  <p class="godeep">איך מחלוקת רבי אלעזר ורבי יוחנן קשורה לזוג ולסנדל? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה לומדים מן הפסוק "אשר ישב עליו הזב"?</summary><p>שרק כלי שמיוחד לישיבה נטמא במדרס.</p></details>
+  <details><summary>מה פירוש "עמוד ונעשה מלאכתנו"?</summary><p>שאומרים ליושב לקום כדי להשתמש בכלי למלאכתו, כלומר הכלי אינו מיוחד לישיבה.</p></details>
+  <details><summary>במה חולקים רבי אלעזר ורבי יוחנן?</summary><p>האם אומרים "עמוד ונעשה מלאכתנו" גם בטמא מת.</p></details>
+  <details class="deepq"><summary>לפי ריב"א, למה הגמרא הביאה את הברייתא על התרקב?</summary><p>כי לפיו "עמוד ונעשה מלאכתנו" שבמחלוקת הוא אותו עניין שבברייתא: כלי שמשתמשים בו שלא למה שנועד לו, כמו התרקב שיושבים עליו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G5,G6a,G6b,G7,G8">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>"איפוך", וסנדל של בהמה</h2>
+  <p class="lead">הגמרא מיישבת את הסתירה בדברי רבי יוחנן בהיפוך השמות. הראיה לכך באה מן המחלוקת על סנדל של בהמה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>איפוך קמייתא</td><td>הפוך את הראשונה.</td></tr>
+      <tr><td>ומאי חזית דאפכת קמייתא</td><td>ומה ראית שהפכת את הראשונה?</td></tr>
+      <tr><td>איפוך בתרייתא</td><td>הפוך את האחרונה!</td></tr>
+      <tr><td>הא שמעינן ליה לרבי יוחנן</td><td>הרי שמענו מרבי יוחנן</td></tr>
+      <tr><td>דבעי מעין מלאכה ראשונה</td><td>שהוא צריך מעין מלאכה ראשונה.</td></tr>
+      <tr><td>סנדל של בהמה של מתכת טמא</td><td>סנדל של בהמה, של מתכת, טמא.</td></tr>
+      <tr><td>ראוי לשתות בו מים במלחמה</td><td>ראוי לשתות בו מים במלחמה.</td></tr>
+      <tr><td>ראוי לסוך בו שמן במלחמה</td><td>ראוי לסוך בו שמן במלחמה.</td></tr>
+      <tr><td>בשעה שבורח מן הקרב מניחו ברגליו</td><td>כשבורח מן הקרב, מניח אותו ברגליו</td></tr>
+      <tr><td>ורץ על קוצין ועל הברקנים</td><td>ורץ על קוצים ועל ברקנים.</td></tr>
+      <tr><td>איכא בינייהו דמאיס</td><td>יש ביניהם הבדל בסנדל מאוס.</td></tr>
+      <tr><td>איכא בינייהו דיקיר</td><td>יש ביניהם הבדל בסנדל כבד.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>איפוך:</b> הגמרא מציעה להפוך את השמות במחלוקת הראשונה: רבי יוחנן אמר "ראוי להקישו", ורבי יוסי ברבי חנינא אמר "לגמע". ולמה לא להפוך את המחלוקת השנייה? כי במקום אחר שמענו שרבי יוחנן דורש מעין מלאכה ראשונה.</p>
+  <p><b>סנדל של בהמה:</b> סנדל של מתכת שעושים לבהמה טמא. ולמה הוא ראוי? רב אומר: לשתות בו מים במלחמה. רבי חנינא: לסוך בו שמן במלחמה. רבי יוחנן: לנעול אותו כשבורח מן הקרב ורץ על קוצים.</p>
+  <p><b>ההבדלים:</b> בין רב לרבי חנינא, סנדל מאוס, שאי אפשר לשתות בו. בין רבי יוחנן לרבי חנינא, סנדל כבד, שאי אפשר לברוח בו.</p>
+  <div class="eg"><b>להמחשה:</b> לדוגמה, קערה שנעשתה כדי לאכול בה, ומשתמשים בה לפעמים כמכסה. זה שימוש אחר, ולא מעין מלאכתה הראשונה.</div>
+  <div data-hl="R9,R10" class="voice r"><span class="tag">רש"י</span><blockquote>סנדל של בהמה – שלא ליזוק בפרסותיה באבנים:</blockquote><blockquote>למאי חזי – אי משום בהמה אין תכשיט לבהמה:</blockquote><p><span class="say">מה רש"י אומר:</span> הסנדל נועד שהבהמה לא תיפגע בפרסותיה מן האבנים. והשאלה "למאי חזי" היא כי אין תכשיט לבהמה.</p></div>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>מניחו ברגליו – הוא בעצמו אלמא הואיל ולשם סנדל עשאו אי לאו דראוי לנעילה לא הוה מטמא ליה ר' יוחנן:</blockquote><p><span class="say">מה רש"י אומר:</span> לרבי יוחנן האדם עצמו נועל את הסנדל. כיון שנעשה לשם סנדל, אילו לא היה ראוי לנעילה לא היה טמא. זו הראיה שהוא דורש מעין מלאכה ראשונה.</p></div>
+  <div data-hl="R12,R13" class="voice r"><span class="tag">רש"י</span><blockquote>איכא בינייהו דמאיס – לרב לא מטמא דאין ראוי לשתות ורב סיכה לית ליה קסבר אין מוליכין שמן למלחמה לסוך וה"ה בין רב (בין) לר' יוחנן נמי איכא בינייהו דמאיס:</blockquote><blockquote>בין ר' חנינא וכו' איכא בינייהו דיקיר – כבד ואין ראוי בו לברוח:</blockquote><p><span class="say">מה רש"י אומר:</span> רב אינו מקבל את טעם הסיכה, כי לדעתו אין מביאים שמן למלחמה כדי לסוך. וסנדל כבד אינו ראוי לברוח בו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>קושיות התוספות על הסנדל</h3>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>סנדל של בהמה של מתכת – ושל עץ אינו ראוי לכל הני דברים דמפרש בסמוך דדרך הבהמה לקלקלו ורבינו שמואל גריס סנדל של בהמה ושל מתכת ומיירי בסנדל של סיידין דלקמן (סי):</blockquote><p><span class="say">מה התוספות אומרים:</span> סנדל של עץ אינו ראוי לשימושים האלה, כי הבהמה מקלקלת אותו. ורבנו שמואל גורס "סנדל של בהמה ושל מתכת", והסנדל של מתכת הוא סנדל של סיידים.</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>הואיל וראוי לשתות בו מים במלחמה – וא"ת והא בזוג שלא היה בו עינבל מעולם לא מטמינן משום דחזי לגמוע והכא חשוב כמו זוג שלא היה בו עינבל מעולם דכיון דנעשה לצורך בהמה אינו מקבל טומאה וי"ל דתחלתו נמי עשוי לשתות בו מים במלחמה או לסוך אלא שעיקרו עומד לבהמה ואומר לו עמוד ונעשה מלאכתנו למאן דבעי מעין במלאכה ראשונה:</blockquote><p><span class="say">מה התוספות אומרים:</span> זוג שמעולם לא היה בו עינבל אינו טמא, אף שראוי לגמוע בו. הסנדל שונה, כי נעשה מתחילתו גם לשתות בו או לסוך בו במלחמה, אלא שעיקרו לבהמה.</p></div>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>בשעה שבורח מן הקרב מניחו ברגליו – תימה א"כ יטמא מדרס ותניא בתוספתא דכלים פרק כיפה ג' סנדלים הם של אדם טמא מדרס של מתכת ושל בהמה טמא טומאת מת משמע אבל מן המדרס טהור:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות תמהים: אם אדם נועל את הסנדל, היה צריך להיטמא במדרס. והרי בתוספתא משמע שהוא טמא רק טומאת מת.</p></div>
+  </div>
+  <p class="godeep">למה דברי רבי יוחנן על הסנדל מוכיחים שיש להפוך את המחלוקת הראשונה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הגמרא מציעה כדי ליישב את הסתירה בדברי רבי יוחנן?</summary><p>להפוך את השמות במחלוקת הראשונה.</p></details>
+  <details><summary>לְמה ראוי סנדל של בהמה, לפי כל אחד מן החכמים?</summary><p>רב: לשתות בו מים. רבי חנינא: לסוך בו שמן. רבי יוחנן: לנעול אותו כשבורח מן הקרב.</p></details>
+  <details><summary>במה ההבדל בין רב לרבי חנינא?</summary><p>בסנדל מאוס.</p></details>
+  <details class="deepq"><summary>לפי רש"י, איך הסנדל מוכיח שרבי יוחנן דורש מעין מלאכה ראשונה?</summary><p>הסנדל נעשה לנעילה, ורבי יוחנן מטמא אותו רק מפני שראוי לנעילה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G9">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>עיר של זהב</h2>
+  <p class="lead">הגמרא חוזרת למשנה, שאסרה לאשה לצאת "בעיר של זהב", ומפרשת מה התכשיט הזה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ולא בעיר של זהב</td><td>ולא בעיר של זהב.</td></tr>
+      <tr><td>מאי בעיר של זהב</td><td>מהי עיר של זהב?</td></tr>
+      <tr><td>רבה בר בר חנה</td><td>רבה בר בר חנה</td></tr>
+      <tr><td>א"ר יוחנן</td><td>אמר בשם רבי יוחנן:</td></tr>
+      <tr><td>ירושלים דדהבא</td><td>ירושלים של זהב.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> אשה לא תצא בשבת "בעיר של זהב".</p>
+  <p><b>הפירוש:</b> רבה בר בר חנה אמר בשם רבי יוחנן שזו "ירושלים דדהבא", ירושלים של זהב.</p>
+  <p><b>ההמשך:</b> בעמוד הבא הגמרא מוסיפה "כמו שעשה רבי עקיבא לאשתו", ומביאה ברייתא במחלוקת על היציאה בה.</p>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>עיר של זהב ועטרות כלות</h3>
+    <div data-hl="T6" class="voice t"><span class="tag">תוספות</span><blockquote>ולא בעיר של זהב – אור"ת דלאו היינו נושקא כדפי' בקונט' דהא אמרי' בפרק בתרא דסוטה (דך מס:) מאי עטרות כלות עיר של זהב משמע דעשוי הוא כעין עטרה ואע"ג דאמרי' התם בפולמוס של טיטוס גזרו על עטרות חתנים וכלות והכא לא אסרו אלא בשבת אור"ת דדוקא לחתנים וכלות גזרו ולא לשאר בני אדם):</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם לומד ממסכת סוטה, שבה נאמר "מאי עטרות כלות, עיר של זהב", שהתכשיט עשוי כעין עטרה. ושם נאמר שבזמן פולמוס של טיטוס גזרו על עטרות חתנים וכלות, ואילו כאן נאסר רק בשבת. רבנו תם מיישב: הגזירה ההיא הייתה רק לחתנים ולכלות.</p></div>
+  </div>
+  <p class="godeep">למה התוספות קושרים את עיר של זהב לעטרות כלות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מהי עיר של זהב, לפי רבי יוחנן?</summary><p>ירושלים של זהב.</p></details>
+  <details><summary>מי מסר את הפירוש בשם רבי יוחנן?</summary><p>רבה בר בר חנה.</p></details>
+  <details class="deepq"><summary>איך רבנו תם מיישב בין הגזירה על עטרות כלות לבין האיסור בשבת?</summary><p>הגזירה הייתה רק לחתנים ולכלות, ולא לשאר בני אדם.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>רבא:</b> זוג שניטל העינבל שלו נשאר טמא, כי ראוי להקיש בו על גבי חרס.</li>
+      <li><b>רבי יוחנן:</b> אמר בתחילה שהזוג ראוי לגמוע בו מים לתינוק.</li>
+      <li><b>עמוד ונעשה מלאכתנו:</b> רק כלי שמיוחד לישיבה נטמא במדרס, ורבי יוחנן אומר כך גם בטמא מת.</li>
+      <li><b>איפוך:</b> הגמרא הופכת את השמות, כי רבי יוחנן דורש מעין מלאכה ראשונה.</li>
+      <li><b>סנדל של בהמה:</b> טמא. רב, רבי חנינא ורבי יוחנן נחלקו לְמה הוא ראוי לאדם.</li>
+      <li><b>עיר של זהב:</b> "ירושלים של זהב". בעמוד הבא באה המחלוקת אם מותר לצאת בה.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>הואיל</td><td>מפני ש</td></tr>
+      <tr><td>איתמר נמי</td><td>נאמר גם כן: אותו דבר נאמר גם בשם אמוראים</td></tr>
+      <tr><td>לגמע</td><td>ללגום, לשתות</td></tr>
+      <tr><td>מעין מלאכה ראשונה</td><td>שימוש שדומה למה שהכלי נעשה בשבילו</td></tr>
+      <tr><td>תלמוד לומר</td><td>הפסוק אומר, כדי ללמד</td></tr>
+      <tr><td>עמוד ונעשה מלאכתנו</td><td>&quot;קום ונעשה את מלאכתנו&quot;: הכלי אינו מיוחד לישיבה</td></tr>
+      <tr><td>איפוך</td><td>הפוך את שמות החכמים</td></tr>
+      <tr><td>ומאי חזית</td><td>ומה ראית</td></tr>
+      <tr><td>הא שמעינן ליה</td><td>הרי שמענו ממנו</td></tr>
+      <tr><td>איכא בינייהו</td><td>יש ביניהם הבדל</td></tr>
+      <tr><td>מאיס</td><td>מאוס</td></tr>
+      <tr><td>יקיר</td><td>כבד</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-58b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-59b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף נ&quot;ט עמוד א&#x27;, לומדים: זוג שניטל העינבל שלו: להקיש בו או לגמוע בו; "עמוד ונעשה מלאכתנו": מעין מלאכה ראשונה; "איפוך", וסנדל של בהמה; עיר של זהב.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (29 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · הטעם של רבא</h3><p>העמוד הקודם עסק בזוג שניטל העינבל שלו, שנשאר טמא. אביי אמר שהטעם הוא שהדיוט יכול להחזיר את העינבל, ורבא דחה אותו. העמוד הקודם נגמר במילים &quot;אלא אמר רבא&quot;, וכאן באים דבריו.</p></li><li><h3><span class="w">גמרא</span> · רבא: ראוי להקיש בו על גבי חרס</h3><p>&quot;הואיל וראוי להקישו על גבי חרס&quot;, מפני שאפשר להקיש בזוג על חרס. רש&quot;י מסביר: כך הוא משמיע קול כבתחילה, ולא בטל ממלאכתו הראשונה. הוא דומה לכלי שניקב נקב קטן, שרימון אינו יוצא בו: כלי כזה אינו נטהר מטומאתו, כי עדיין ראוי למלאכתו.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: כך מתיישבות כל הברייתות</h3><p>זוג של בהמה בלי עינבל טהור, כי אינו כלי, ועם עינבל טמא, כי העינבל עושה אותו כלי. זוג של אדם גדול טמא גם בלי עינבל, כי הוא תכשיט. זוג של תינוקות, שנעשה בשביל הקול, טהור כשמעולם לא היה לו עינבל, כי מלאכתו לא נגמרה. ואם ניטל העינבל, לפני הטומאה או אחריה, הוא טמא, כי לא נשבר כשיעור שמטהר כלי.</p></li><li><h3><span class="w">גמרא</span> · רבי יוסי ברבי חנינא ורבי יוחנן</h3><p>&quot;איתמר נמי&quot;, כך נאמר גם בשם אמוראים אחרים: רבי יוסי ברבי חנינא אמר כמו רבא, מפני שראוי להקיש בו על גבי חרס. ורבי יוחנן אמר: מפני שראוי לגמוע בו מים לתינוק, כלומר להשקות בו תינוק.</p></li><li><h3><span class="w">תוספות</span> · התוספות: בלי ייחוד</h3><p>רבנו שמשון בן אברהם (רשב&quot;א) מקשה. רבי יוחנן ודאי מדבר בזוג שלא ייחדו אותו לגימוע, ולכך ארבע ראיות. א&#x27; &quot;הואיל וראוי&quot; משמע שהוא ראוי בלבד, גם בלי ייחוד. ב&#x27; אילו ייחדו אותו לכך, רבי יוסי ברבי חנינא לא היה חולק. ג&#x27; אילו ייחדו אותו, גם זוג שמעולם לא היה לו עינבל היה מקבל טומאה. ד&#x27; אילו ייחדו אותו, לא הייתה קושיה מדברי רבי יוחנן על &quot;עמוד ונעשה מלאכתנו&quot;, שהרי בכלי שייחדו אותו גם במדרסות אין אומרים &quot;עמוד ונעשה מלאכתנו&quot;. והנה בסוף פרק &quot;המצניע&quot; נאמר על כלי שניקב נקב שזית יוצא בו, שהוא טהור מלקבל בו זיתים ועדיין הוא כלי לקבל בו רימונים, ורש&quot;י פירש שם: אם ייחד אותו לרימונים. הרי שלפי רש&quot;י צריך ייחוד, וכאן אין ייחוד. ואלמלא פירוש רש&quot;י שם, לא הייתה קושיה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: התשובה</h3><p>גם לפי פירוש רש&quot;י שם, כאן הגימוע מועיל יותר. הזוג היה מתחילה כלי גמור, וגם עכשיו הדיוט יכול להחזיר את העינבל, ולכן די בדבר מועט, שעדיין ראוי לגמוע בו מים, כדי שייחשב כלי גם בלי ייחוד. ולמי שאומר &quot;ראוי להקישו&quot; ודורש מעין מלאכה ראשונה, הדבר מתיישב בכל דרך. אפילו אם בכלים אחרים אין צריך ייחוד, כאן הגימוע אינו מועיל, כי הזוג עדיין עומד למלאכתו הראשונה, שיחזירו בו את העינבל, ואומרים לו &quot;עמוד ונעשה מלאכתנו&quot;. וכל שכן אם בכלים אחרים צריך ייחוד.</p></li><li><h3><span class="w">גמרא</span> · וכי רבי יוחנן אינו צריך מעין מלאכה ראשונה?</h3><p>הגמרא שואלת: וכי רבי יוחנן אינו דורש שהכלי יהיה ראוי למלאכה שדומה למלאכתו הראשונה? והרי שנינו על הפסוק &quot;וכל הכלי אשר ישב עליו&quot;: יכול, מי שהפך סאה וישב עליה, או תרקב וישב עליו, יהיה טמא? רש&quot;י מסביר: יכול כל כלי במשמע, אפילו אינו עשוי לישיבה. ותרקב הוא חצי סאה.</p><p>סאה ותרקב הם כלים למדידת תבואה.</p></li><li><h3><span class="w">גמרא</span> · &quot;אשר ישב עליו הזב&quot;</h3><p>&quot;תלמוד לומר&quot;, הפסוק אומר &quot;אשר ישב עליו הזב&quot;: מה שמיוחד לישיבה. יצא כלי כזה, שאומרים ליושב עליו &quot;עמוד ונעשה מלאכתנו&quot;, קום, ונשתמש בכלי למלאכתו. רש&quot;י מסביר: לא נכתב &quot;אשר שכב&quot; ו&quot;אשר יָשַׁב&quot;, בלשון עבר, אלא &quot;יִשְׁכַּב&quot; ו&quot;יֵשֵׁב&quot;, בלשון עתיד. משמע שישכב עליו תמיד ויישב עליו תמיד, כלומר כלי שמיוחד לשכיבה ולישיבה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: פירוש התלמידים נדחה</h3><p>רש&quot;י גורס כאן כמו בתורת כהנים. הוא מעיר שבכל הספרים כתוב כאן פסוק אחר, &quot;והיושב על הכלי אשר ישב עליו&quot;, והתלמידים מפרשים: בפסוק הזה שתי ישיבות, והכפל מלמד שמדובר בכלי שמיוחד לישיבה. רש&quot;י דוחה זאת: שתי הישיבות נחוצות שתיהן. האחת מלמדת שהזב מטמא כלי בישיבתו אף שלא נגע בו, והשנייה שהטהור שיושב על הכלי הזה נטמא אף שלא נגע בו. ועוד, בתורת כהנים הדרשה אינה שנויה על הפסוק ההוא.</p></li><li><h3><span class="w">גמרא</span> · רבי אלעזר ורבי יוחנן</h3><p>רבי אלעזר אומר: במדרסות אומרים &quot;עמוד ונעשה מלאכתנו&quot;, ובטמא מת אין אומרים כך. ורבי יוחנן אומר: גם בטמא מת אומרים &quot;עמוד ונעשה מלאכתנו&quot;. מכאן שרבי יוחנן דורש מעין מלאכה ראשונה, והרי זה סותר את דבריו על גימוע מים.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: במדרסות</h3><p>כך בתחילת הטומאה: כלי שאינו עשוי לישיבה אינו נעשה אב הטומאה במדרס. וכך גם בסוף הטומאה: בגד של שלושה על שלושה שנטמא במדרס ונחלק, טהור מן המדרס, אף שבכל חלק יש שלוש על שלוש. אומרים &quot;עמוד ונעשה מלאכתנו&quot;, כי מלאכתו הראשונה הייתה לישיבה, ועכשיו אינו ראוי לה. כל חלק עדיין מקבל טומאה, אבל מתורת אב הטומאה נטהר.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: רבי אלעזר בטמא מת</h3><p>לדעת רבי אלעזר, כלי שנטמא במת ונשבר, ועדיין ראוי למלאכה כלשהי שאינה דומה לראשונה, נשאר טמא. ובתחילת הטומאה ודאי אין אומרים שכלי שלא נעשה למת לא יקבל טומאת מת, שהרי נאמר &quot;כלי מעשה&quot;.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: רבי יוחנן בטמא מת</h3><p>לרבי יוחנן, אם הכלי אינו ראוי למעין מלאכתו הראשונה, טהור. רש&quot;י מבאר שדבריו נאמרו רק על כלי שנטמא ונשבר, לטהר אותו. אי אפשר לפרש אותם כמו במדרסות, שכלי שלא נעשה למת לא ייטמא במת, שהרי בתורה נאמר &quot;והזה על האהל ועל כל הכלים&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שאלת רבנו יצחק</h3><p>רבנו יצחק מקשה על פירוש רש&quot;י: למה הגמרא הביאה את הברייתא על התרקב? הרי לפי רש&quot;י היא אינה קשורה לדברי רבי אלעזר ורבי יוחנן.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש ריב&quot;א, דברי רבי אלעזר</h3><p>רבנו יצחק מפרש כפירושו של רבנו יצחק בן אשר (ריב&quot;א). במדרסות אומרים &quot;עמוד מעל התרקב הזה ונעשה מלאכתנו&quot;, כי אינו נטמא במדרס כשיושבים עליו, שהרי אינו מיוחד לכך. ובטמא מת אין אומרים &quot;עמוד מגימוע מים בזוג או בסנדל של בהמה, ונחזיר את העינבל או נשים את הסנדל ברגלי הבהמה&quot;. אלא הכלי מקבל טומאת מת על ידי הגימוע, אף שאינו מיוחד לכך, כי בגלל הגימוע הוא נחשב כלי.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש ריב&quot;א, דברי רבי יוחנן</h3><p>לרבי יוחנן גם בטמא מת אומרים כך: צריך שהכלי יהיה ראוי למלאכתו הראשונה, ושימוש אחר אינו מועיל. אבל להקיש בזוג על חרס, או לשים סנדל של בהמה ברגליו כשבורח מן הקרב, הם מעין מלאכה ראשונה. לכן הכלי מקבל טומאה, ואין לומר עליו &quot;עמוד ונעשה מלאכתנו&quot;, כי זו מלאכתו.</p></li><li><h3><span class="w">גמרא</span> · &quot;איפוך&quot;</h3><p>&quot;איפוך קמייתא&quot;, הפוך את המחלוקת הראשונה: רבי יוחנן הוא שאמר &quot;ראוי להקישו&quot;, ורבי יוסי ברבי חנינא אמר &quot;לגמע&quot;. והגמרא שואלת: &quot;ומאי חזית&quot;, מה ראית להפוך דווקא את הראשונה? הפוך את האחרונה!</p></li><li><h3><span class="w">גמרא</span> · &quot;הא שמעינן ליה&quot;</h3><p>התשובה: הרי שמענו מרבי יוחנן במקום אחר שהוא דורש מעין מלאכה ראשונה. לכן יש להפוך את המחלוקת הראשונה.</p></li><li><h3><span class="w">גמרא</span> · סנדל של בהמה</h3><p>ששנינו: סנדל של בהמה, של מתכת, טמא. רש&quot;י מסביר שהסנדל נועד שהבהמה לא תיפגע בפרסותיה מן האבנים. &quot;למאי חזי&quot;, לְמה הוא ראוי? רש&quot;י מסביר את השאלה: לבהמה אין תכשיט.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה של מתכת</h3><p>הברייתא אמרה &quot;של מתכת&quot;, כי סנדל של עץ אינו ראוי לכל השימושים שיתפרשו מיד, שהרי דרך הבהמה לקלקל אותו. ורבנו שמואל גורס &quot;סנדל של בהמה ושל מתכת&quot;, כלומר שני סנדלים, והסנדל של מתכת הוא סנדל של סיידים, שנזכר בהמשך הפרק.</p></li><li><h3><span class="w">גמרא</span> · שלוש תשובות</h3><p>רב אמר: ראוי לשתות בו מים במלחמה. רבי חנינא אמר: ראוי לסוך בו שמן במלחמה. רבי יוחנן אמר: כשבורח מן הקרב, מניח אותו ברגליו ורץ על קוצים ועל ברקנים. רש&quot;י מסביר: האדם עצמו נועל אותו.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: הסנדל נעשה לשם סנדל</h3><p>מכאן שלרבי יוחנן, כיון שנעשה לשם סנדל, אילו לא היה ראוי לנעילה לא היה טמא. הוא דורש שהכלי יהיה ראוי למלאכה שדומה למה שנעשה בשבילו.</p></li><li><h3><span class="w">תוספות</span> · התוספות: והרי זוג בלי עינבל</h3><p>ואם תאמר: זוג שמעולם לא היה בו עינבל אינו טמא, אף שראוי לגמוע בו. והסנדל דומה לו, שהרי נעשה לצורך בהמה, ודבר כזה אינו מקבל טומאה. והתוספות עונים: הסנדל נעשה מתחילתו גם כדי לשתות בו מים במלחמה או לסוך בו, אלא שעיקרו עומד לבהמה. ומי שדורש מעין מלאכה ראשונה אינו מטמא מן הטעמים האלה, כי אומרים לו &quot;עמוד ונעשה מלאכתנו&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ולמה אינו טמא מדרס?</h3><p>התוספות תמהים: אם אדם נועל אותו, היה צריך להיטמא במדרס. והרי בתוספתא של מסכת כלים שנינו: שלושה סנדלים הם. של אדם טמא מדרס; של מתכת ושל בהמה טמא טומאת מת. משמע שמן המדרס הוא טהור. התוספות אינם מיישבים את התמיהה.</p></li><li><h3><span class="w">גמרא</span> · רב ורבי חנינא: סנדל מאוס</h3><p>במה חולקים רב ורבי חנינא? בסנדל מאוס. רש&quot;י מפרש: לרב סנדל כזה אינו טמא, כי אינו ראוי לשתות בו. ואת טעם הסיכה רב אינו מקבל, כי לדעתו אין מוליכים שמן למלחמה כדי לסוך. וכך גם בין רב לרבי יוחנן ההבדל הוא בסנדל מאוס.</p></li><li><h3><span class="w">גמרא</span> · רבי יוחנן ורבי חנינא: סנדל כבד</h3><p>בין רבי יוחנן לרבי חנינא ההבדל הוא בסנדל כבד. רש&quot;י מסביר: הוא כבד, ואי אפשר לברוח בו.</p></li><li><h3><span class="w">גמרא</span> · &quot;ולא בעיר של זהב&quot;</h3><p>חוזרים למשנה: &quot;ולא בעיר של זהב&quot;. מהי עיר של זהב? רבה בר בר חנה אמר בשם רבי יוחנן: &quot;ירושלים דדהבא&quot;, ירושלים של זהב.</p></li><li><h3><span class="w">תוספות</span> · התוספות: תכשיט כעין עטרה</h3><p>רבנו תם אומר שעיר של זהב אינה &quot;נושקא&quot; שמצוירת עליה עיר, כמו שפירש רש&quot;י על המשנה. שהרי במסכת סוטה נאמר &quot;מאי עטרות כלות, עיר של זהב&quot;, ומשמע שהוא עשוי כעין עטרה. ושם נאמר שבפולמוס של טיטוס גזרו על עטרות חתנים וכלות, ואילו כאן נאסר רק בשבת. רבנו תם עונה: הגזירה הייתה רק לחתנים ולכלות, ולא לשאר בני אדם.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>זוג שניטל העינבל שלו טמא, ולדעת רבא הטעם הוא שראוי להקיש בו על חרס. על הטעם נחלקו רבי יוסי ברבי חנינא ורבי יוחנן, והגמרא הפכה את השמות: רבי יוחנן הוא שאמר &quot;ראוי להקישו&quot;, כי הוא דורש מעין מלאכה ראשונה, כמו שעולה מדבריו על סנדל של בהמה, ורבי יוסי ברבי חנינא אמר &quot;ראוי לגמע&quot;. בסוף העמוד הגמרא חזרה למשנה ופירשה שעיר של זהב היא &quot;ירושלים של זהב&quot;. העמוד הבא פותח &quot;כדעבד ליה רבי עקיבא לדביתהו&quot;, כמו שעשה רבי עקיבא לאשתו, ומביא ברייתא במחלוקת על היציאה בה.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-59b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "הואיל וראוי להקישו על גבי חרס", false, ""], ["G2", "איתמר נמי אמר ר' יוסי בר' חנינא הואיל וראוי להקישו על גבי חרס ר' יוחנן אמר הואיל וראוי לגמע בו מים לתינוק", false, ""], ["G3", "ור' יוחנן לא בעי מעין מלאכה ראשונה והתניא (ויקרא טו, כב) וכל כלי אשר ישב עליו וגו' יכול כפה סאה וישב עליה כפה תרקב וישב עליה יהא טמא תלמוד לומר אשר ישב עליו הזב מי שמיוחד לישיבה יצא זה שאומרים לו עמוד ונעשה מלאכתנו", true, ""], ["G4", "ר' אלעזר אומר במדרסות אומרים עמוד ונעשה מלאכתנו ואין אומרים בטמא מת עמוד ונעשה מלאכתנו ור' יוחנן אמר אף אומר בטמא מת עמוד ונעשה מלאכתנו", false, ""], ["G5", "איפוך קמייתא ומאי חזית דאפכת קמייתא איפוך בתרייתא", false, ""], ["G6a", "הא שמעינן ליה לרבי יוחנן דבעי מעין מלאכה ראשונה (. דתניא).", false, ""], ["G6b", "סנדל של בהמה של מתכת טמא למאי חזי אמר רב ראוי לשתות בו מים במלחמה ור' חנינא אמר ראוי לסוך בו שמן במלחמה ור' יוחנן אמר בשעה שבורח מן הקרב מניחו ברגליו ורץ על קוצין ועל הברקנים", false, ""], ["G7", "מאי בין רב לר' חנינא איכא בינייהו דמאיס", false, ""], ["G8", "בין ר' יוחנן לר' חנינא איכא בינייהו דיקיר:", false, ""], ["G9", "ולא בעיר של זהב: מאי בעיר של זהב רבה בר בר חנה א\"ר יוחנן ירושלים דדהבא", true, ""]], "R": [["R1", "הואיל וראוי להקישו ע\"ג חרס", "ומשמיע קול כבתחלה ולא בטל ליה ממלאכה ראשונה והוה ליה ככלי שניקב בפחות ממוציא רימון דקיי\"ל דלא טיהר מטומאתו משום דראוי למלאכתו והשתא איתרצו כולהו דבהמה טהורה בלא עינבל כדקתני במתני' קמייתא דלאו מנא הוא ובעינבל טמא כדאוקמינן בבתרייתא דעינבל משוי לה מנא ודאדם גדול אף בלא עינבל טמא דלתכשיט הוא ולא בעי עינבל והיינו דקתני בקמייתא דמקבלין טומאה ודקטנים דלקלא עביד קבולי הוא דלא קביל בלא עינבל כדקתני אין להם עינבל טהורים בשלא היה לו עינבל מעולם לא נגמרה מלאכתן נטלו עינבלין בין לפני טומאה בין לאחר טומאה טמאים דלא נשתברו כשיעור:", false], ["R2", "ה\"ג לה בת\"כ וכל הכלי אשר ישב עליו", "רישא דקרא וכל המשכב וגו' יכול כל כלי במשמע ואפי' אין עשוי לישיבה:", false], ["R3", "תרקב", "חצי סאה פי' תרי וקב:", false], ["R4", "ת\"ל אשר ישב", "מדלא כתיב גבי משכב אשר שכב וגבי מושב אשר ישב וכתיב ישכב ישב משמע שישכב עליו תמיד וישב עליו תמיד במיוחד לשכיבה ולישיבה וגבי משכב נמי דריש ליה התם הכי ובכל הספרים כתיב והיושב על הכלי אשר ישב עליו וקרא אחר הוא ומפרשים אותו התלמידים מדכתיב היושב על הכלי אשר ישב עליו שתי ישיבות ריבה הכתוב ללמדך דבמיוחד לישיבה קאמר ולא היא דשתי ישיבות דקאמר טובא צריכי כדמפרש התם יושב אע\"פ שלא נגע אלא ישב או נתלה ולא נגע טמא דאיצטריך למיכתב גבי זב שטימא כלי בישיבתו ואע\"פ שלא נגע ואיצטריך גבי טהור נמי שנטמא גם הוא ביושבו עליו אע\"פ שלא נגע ועוד בת\"כ לאו אההוא קרא קתני לה:", false], ["R5", "ר' אלעזר אומר במדרסות כו'", "בין בתחלת טומאה לענין שאמרנו דאינו מטמא מדרס למיהוי אב הטומאה בין בסוף טומאה כגון ג' על ג' שנטמאו מדרס למיהוי אב הטומאה ונחלקו טהור מן המדרס דאמרינן בו עמוד ונעשה מלאכתנו הראשונה שהיה ראוי לישיבה והרי עתה אינו ראוי לכך הלכך טהור מן המדרס ואע\"ג דאית בכל חד שלש על שלש והוי כלי לקבל טומאה מיהו מתורת אב הטומאה טיהר לו:", false], ["R6", "ואין אומרים", "לענין אב הטומאה של טומאת מת עמוד ונעשה מלאכתנו כלומר אם נטמא ונשבר ועודהו ראוי למלאכה בעלמא שאין מעין מלאכה ראשונה טמא ולא אמרי' עמוד ונעשה מלאכתנו ראשונה וכיון דלא חזי להכי יהא טהור וכ\"ש דבתחלת טומאה אין אומרים עמוד ונעשה מלאכתנו ראשונה דנימא אם אינו מיוחד למת לא יקבל טומאת מת דהא כלי מעשה כתיב:", false], ["R7", "אומר כו'", "דאי לא עביד מעין מלאכה ראשונה טהור ועל כרחיך לא איתמר דר' יוחנן אלא לענין שנשבר ולטהרו כדפרישית דליכא לפרושא כי ההיא דמדרסות ולמימרא דכלי שאינו עשוי למת לא יטמא במת דהא כתיב (במדבר יט) והזה על האהל ועל כל הכלים:", false], ["R8", "איפוך קמייתא", "דר' יוסי בר' חנינא לר' יוחנן:", false], ["R9", "סנדל של בהמה", "שלא ליזוק בפרסותיה באבנים:", false], ["R10", "למאי חזי", "אי משום בהמה אין תכשיט לבהמה:", false], ["R11", "מניחו ברגליו", "הוא בעצמו אלמא הואיל ולשם סנדל עשאו אי לאו דראוי לנעילה לא הוה מטמא ליה ר' יוחנן:", false], ["R12", "איכא בינייהו דמאיס", "לרב לא מטמא דאין ראוי לשתות ורב סיכה לית ליה קסבר אין מוליכין שמן למלחמה לסוך וה\"ה בין רב (בין) לר' יוחנן נמי איכא בינייהו דמאיס:", false], ["R13", "בין ר' חנינא וכו' איכא בינייהו דיקיר", "כבד ואין ראוי בו לברוח:", false]], "T": [["T1a", "ורבי יוחנן אמר הואיל וראוי לגמע בו מים לתינוק", "קשה לרשב\"א דע\"כ בלא ייחדו מיירי מדקאמר הואיל וראוי משמע בראוי בעלמא אפי' בלא ייחוד ועוד דביחדו לכך לא הוה פליג ר' יוסי בר' חנינא ועוד דביחדו אפי' לא היה לו עינבל מעולם נמי מקבל טומאה ועוד אי ביחדו מיירי מאי פריך דר' יוחנן אדר' יוחנן הא התם ע\"כ איירי בלא ייחדו דביחדו אפי' במדרסות נמי אין אומרים עמוד ונעשה מלאכתנו ולקמן בס\"פ המצניע (שבת דף צה: ושם) גבי ניקב כמוציא זית טהור מלקבל בו זיתים ועדיין כלי הוא לקבל בו רימונים ופי' בקונטרס אם ייחדו לרימונים ואי לאו פי' הקונט' דהתם הוה ניחא", false], ["T1b", "", "וי\"ל דאפי' לפירוש הקונטרס הכא חזי טפי ע\"י גימוע משום דהואיל דמעיקרא הוה כלי גמור וגם עתה הדיוט יכול להחזירו אית לן למימר דע\"י דבר מועט שעדיין ראוי לגמוע בו מים חשיב כלי אפי' בלא ייחוד ולמ\"ד נמי הואיל וראוי להקישו דבעי מעין מלאכה ראשונה אתי שפיר בכל ענין דאפי' לא בעינן בעלמא ייחוד הכא אתי שפיר דלא מהני גמוע מים משום שעומד עדיין למלאכתו ראשונה להחזיר בו העינבל ואומר לו עמוד ונעשה מלאכתנו וכ\"ש דאי בעינן בעלמא ייחוד דאתי טפי שפיר:", false], ["T2a", "ואין אומרים בטמא מת עמוד ונעשה מלאכתנו", "לפירוש הקונט' קשה לר\"י למה ליה לאתויי ברייתא דתרקב כיון דלא שייכא למילתיה דר' אלעזר ור' יוחנן", false], ["T2b", "", "אלא נראה לר' יצחק כפירוש ריב\"א אומרים במדרסות עמוד מעל תרקב זה ונעשה מלאכתנו שאינו יכול להיות טמא מדרס ע\"י שאתה יושב עליו הואיל ואינו מיוחד לכך כדקתני בברייתא ואין אומרים בטמא מת עמוד מגמוע מים בזה הזוג או בזה הסנדל של בהמה ונעשה מלאכתנו ליתן בו העינבל כדי להשמיע הקול וליתן סנדל ברגלי הבהמה אלא טמא טומאת מת על ידי הגימוע אע\"פ שאינו מיוחד לכך והוי בר קבולי טומאה דחשיב כלי ע\"י גימוע מים ור' יוחנן אמר אף אומר כו' דבעינן שיהא ראוי למלאכתו ראשונה ולא מהני ליה מידי לקבולי טומאה מה שראוי למלאכה אחרת אבל הקשת זוג ע\"ג החרס והנחת סנדל של בהמה ברגלו כשבורח מן הקרב הוי מעין מלאכה ראשונה ולהכי הוי בר קבולי טומאה ולא שייך למימר ביה עמוד ונעשה מלאכתנו דהיינו נמי מלאכתו:", false], ["T3", "סנדל של בהמה של מתכת", "ושל עץ אינו ראוי לכל הני דברים דמפרש בסמוך דדרך הבהמה לקלקלו ורבינו שמואל גריס סנדל של בהמה ושל מתכת ומיירי בסנדל של סיידין דלקמן (סי):", false], ["T4", "הואיל וראוי לשתות בו מים במלחמה", "וא\"ת והא בזוג שלא היה בו עינבל מעולם לא מטמינן משום דחזי לגמוע והכא חשוב כמו זוג שלא היה בו עינבל מעולם דכיון דנעשה לצורך בהמה אינו מקבל טומאה וי\"ל דתחלתו נמי עשוי לשתות בו מים במלחמה או לסוך אלא שעיקרו עומד לבהמה ואומר לו עמוד ונעשה מלאכתנו למאן דבעי מעין במלאכה ראשונה:", false], ["T5", "בשעה שבורח מן הקרב מניחו ברגליו", "תימה א\"כ יטמא מדרס ותניא בתוספתא דכלים פרק כיפה ג' סנדלים הם של אדם טמא מדרס של מתכת ושל בהמה טמא טומאת מת משמע אבל מן המדרס טהור:", false], ["T6", "ולא בעיר של זהב", "אור\"ת דלאו היינו נושקא כדפי' בקונט' דהא אמרי' בפרק בתרא דסוטה (דך מס:) מאי עטרות כלות עיר של זהב משמע דעשוי הוא כעין עטרה ואע\"ג דאמרי' התם בפולמוס של טיטוס גזרו על עטרות חתנים וכלות והכא לא אסרו אלא בשבת אור\"ת דדוקא לחתנים וכלות גזרו ולא לשאר בני אדם):", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "הטעם של רבא", "x": "העמוד הקודם עסק בזוג שניטל העינבל שלו, שנשאר טמא. אביי אמר שהטעם הוא שהדיוט יכול להחזיר את העינבל, ורבא דחה אותו. העמוד הקודם נגמר במילים \"אלא אמר רבא\", וכאן באים דבריו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "רבא: ראוי להקיש בו על גבי חרס", "x": "\"הואיל וראוי להקישו על גבי חרס\", מפני שאפשר להקיש בזוג על חרס. רש\"י מסביר: כך הוא משמיע קול כבתחילה, ולא בטל ממלאכתו הראשונה. הוא דומה לכלי שניקב נקב קטן, שרימון אינו יוצא בו: כלי כזה אינו נטהר מטומאתו, כי עדיין ראוי למלאכתו.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G1", "R1"], "t": "רש\"י: כך מתיישבות כל הברייתות", "x": "זוג של בהמה בלי עינבל טהור, כי אינו כלי, ועם עינבל טמא, כי העינבל עושה אותו כלי. זוג של אדם גדול טמא גם בלי עינבל, כי הוא תכשיט. זוג של תינוקות, שנעשה בשביל הקול, טהור כשמעולם לא היה לו עינבל, כי מלאכתו לא נגמרה. ואם ניטל העינבל, לפני הטומאה או אחריה, הוא טמא, כי לא נשבר כשיעור שמטהר כלי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "רבי יוסי ברבי חנינא ורבי יוחנן", "x": "\"איתמר נמי\", כך נאמר גם בשם אמוראים אחרים: רבי יוסי ברבי חנינא אמר כמו רבא, מפני שראוי להקיש בו על גבי חרס. ורבי יוחנן אמר: מפני שראוי לגמוע בו מים לתינוק, כלומר להשקות בו תינוק.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1a"], "t": "התוספות: בלי ייחוד", "x": "רבנו שמשון בן אברהם (רשב\"א) מקשה. רבי יוחנן ודאי מדבר בזוג שלא ייחדו אותו לגימוע, ולכך ארבע ראיות. א' \"הואיל וראוי\" משמע שהוא ראוי בלבד, גם בלי ייחוד. ב' אילו ייחדו אותו לכך, רבי יוסי ברבי חנינא לא היה חולק. ג' אילו ייחדו אותו, גם זוג שמעולם לא היה לו עינבל היה מקבל טומאה. ד' אילו ייחדו אותו, לא הייתה קושיה מדברי רבי יוחנן על \"עמוד ונעשה מלאכתנו\", שהרי בכלי שייחדו אותו גם במדרסות אין אומרים \"עמוד ונעשה מלאכתנו\". והנה בסוף פרק \"המצניע\" נאמר על כלי שניקב נקב שזית יוצא בו, שהוא טהור מלקבל בו זיתים ועדיין הוא כלי לקבל בו רימונים, ורש\"י פירש שם: אם ייחד אותו לרימונים. הרי שלפי רש\"י צריך ייחוד, וכאן אין ייחוד. ואלמלא פירוש רש\"י שם, לא הייתה קושיה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1b"], "t": "התוספות: התשובה", "x": "גם לפי פירוש רש\"י שם, כאן הגימוע מועיל יותר. הזוג היה מתחילה כלי גמור, וגם עכשיו הדיוט יכול להחזיר את העינבל, ולכן די בדבר מועט, שעדיין ראוי לגמוע בו מים, כדי שייחשב כלי גם בלי ייחוד. ולמי שאומר \"ראוי להקישו\" ודורש מעין מלאכה ראשונה, הדבר מתיישב בכל דרך. אפילו אם בכלים אחרים אין צריך ייחוד, כאן הגימוע אינו מועיל, כי הזוג עדיין עומד למלאכתו הראשונה, שיחזירו בו את העינבל, ואומרים לו \"עמוד ונעשה מלאכתנו\". וכל שכן אם בכלים אחרים צריך ייחוד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R2", "R3"], "t": "וכי רבי יוחנן אינו צריך מעין מלאכה ראשונה?", "x": "הגמרא שואלת: וכי רבי יוחנן אינו דורש שהכלי יהיה ראוי למלאכה שדומה למלאכתו הראשונה? והרי שנינו על הפסוק \"וכל הכלי אשר ישב עליו\": יכול, מי שהפך סאה וישב עליה, או תרקב וישב עליו, יהיה טמא? רש\"י מסביר: יכול כל כלי במשמע, אפילו אינו עשוי לישיבה. ותרקב הוא חצי סאה.", "a": "סאה ותרקב הם כלים למדידת תבואה."}, {"w": "גמרא", "cols": false, "hl": ["G3", "R4"], "t": "\"אשר ישב עליו הזב\"", "x": "\"תלמוד לומר\", הפסוק אומר \"אשר ישב עליו הזב\": מה שמיוחד לישיבה. יצא כלי כזה, שאומרים ליושב עליו \"עמוד ונעשה מלאכתנו\", קום, ונשתמש בכלי למלאכתו. רש\"י מסביר: לא נכתב \"אשר שכב\" ו\"אשר יָשַׁב\", בלשון עבר, אלא \"יִשְׁכַּב\" ו\"יֵשֵׁב\", בלשון עתיד. משמע שישכב עליו תמיד ויישב עליו תמיד, כלומר כלי שמיוחד לשכיבה ולישיבה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G3", "R4"], "t": "רש\"י: פירוש התלמידים נדחה", "x": "רש\"י גורס כאן כמו בתורת כהנים. הוא מעיר שבכל הספרים כתוב כאן פסוק אחר, \"והיושב על הכלי אשר ישב עליו\", והתלמידים מפרשים: בפסוק הזה שתי ישיבות, והכפל מלמד שמדובר בכלי שמיוחד לישיבה. רש\"י דוחה זאת: שתי הישיבות נחוצות שתיהן. האחת מלמדת שהזב מטמא כלי בישיבתו אף שלא נגע בו, והשנייה שהטהור שיושב על הכלי הזה נטמא אף שלא נגע בו. ועוד, בתורת כהנים הדרשה אינה שנויה על הפסוק ההוא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4"], "t": "רבי אלעזר ורבי יוחנן", "x": "רבי אלעזר אומר: במדרסות אומרים \"עמוד ונעשה מלאכתנו\", ובטמא מת אין אומרים כך. ורבי יוחנן אומר: גם בטמא מת אומרים \"עמוד ונעשה מלאכתנו\". מכאן שרבי יוחנן דורש מעין מלאכה ראשונה, והרי זה סותר את דבריו על גימוע מים.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G4", "R5"], "t": "רש\"י: במדרסות", "x": "כך בתחילת הטומאה: כלי שאינו עשוי לישיבה אינו נעשה אב הטומאה במדרס. וכך גם בסוף הטומאה: בגד של שלושה על שלושה שנטמא במדרס ונחלק, טהור מן המדרס, אף שבכל חלק יש שלוש על שלוש. אומרים \"עמוד ונעשה מלאכתנו\", כי מלאכתו הראשונה הייתה לישיבה, ועכשיו אינו ראוי לה. כל חלק עדיין מקבל טומאה, אבל מתורת אב הטומאה נטהר.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G4", "R6"], "t": "רש\"י: רבי אלעזר בטמא מת", "x": "לדעת רבי אלעזר, כלי שנטמא במת ונשבר, ועדיין ראוי למלאכה כלשהי שאינה דומה לראשונה, נשאר טמא. ובתחילת הטומאה ודאי אין אומרים שכלי שלא נעשה למת לא יקבל טומאת מת, שהרי נאמר \"כלי מעשה\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G4", "R7"], "t": "רש\"י: רבי יוחנן בטמא מת", "x": "לרבי יוחנן, אם הכלי אינו ראוי למעין מלאכתו הראשונה, טהור. רש\"י מבאר שדבריו נאמרו רק על כלי שנטמא ונשבר, לטהר אותו. אי אפשר לפרש אותם כמו במדרסות, שכלי שלא נעשה למת לא ייטמא במת, שהרי בתורה נאמר \"והזה על האהל ועל כל הכלים\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4", "T2a"], "t": "התוספות: שאלת רבנו יצחק", "x": "רבנו יצחק מקשה על פירוש רש\"י: למה הגמרא הביאה את הברייתא על התרקב? הרי לפי רש\"י היא אינה קשורה לדברי רבי אלעזר ורבי יוחנן.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4", "T2b"], "t": "התוספות: פירוש ריב\"א, דברי רבי אלעזר", "x": "רבנו יצחק מפרש כפירושו של רבנו יצחק בן אשר (ריב\"א). במדרסות אומרים \"עמוד מעל התרקב הזה ונעשה מלאכתנו\", כי אינו נטמא במדרס כשיושבים עליו, שהרי אינו מיוחד לכך. ובטמא מת אין אומרים \"עמוד מגימוע מים בזוג או בסנדל של בהמה, ונחזיר את העינבל או נשים את הסנדל ברגלי הבהמה\". אלא הכלי מקבל טומאת מת על ידי הגימוע, אף שאינו מיוחד לכך, כי בגלל הגימוע הוא נחשב כלי.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4", "T2b"], "t": "התוספות: פירוש ריב\"א, דברי רבי יוחנן", "x": "לרבי יוחנן גם בטמא מת אומרים כך: צריך שהכלי יהיה ראוי למלאכתו הראשונה, ושימוש אחר אינו מועיל. אבל להקיש בזוג על חרס, או לשים סנדל של בהמה ברגליו כשבורח מן הקרב, הם מעין מלאכה ראשונה. לכן הכלי מקבל טומאה, ואין לומר עליו \"עמוד ונעשה מלאכתנו\", כי זו מלאכתו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R8"], "t": "\"איפוך\"", "x": "\"איפוך קמייתא\", הפוך את המחלוקת הראשונה: רבי יוחנן הוא שאמר \"ראוי להקישו\", ורבי יוסי ברבי חנינא אמר \"לגמע\". והגמרא שואלת: \"ומאי חזית\", מה ראית להפוך דווקא את הראשונה? הפוך את האחרונה!", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6a"], "t": "\"הא שמעינן ליה\"", "x": "התשובה: הרי שמענו מרבי יוחנן במקום אחר שהוא דורש מעין מלאכה ראשונה. לכן יש להפוך את המחלוקת הראשונה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6b", "R9", "R10"], "t": "סנדל של בהמה", "x": "ששנינו: סנדל של בהמה, של מתכת, טמא. רש\"י מסביר שהסנדל נועד שהבהמה לא תיפגע בפרסותיה מן האבנים. \"למאי חזי\", לְמה הוא ראוי? רש\"י מסביר את השאלה: לבהמה אין תכשיט.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6b", "T3"], "t": "התוספות: למה של מתכת", "x": "הברייתא אמרה \"של מתכת\", כי סנדל של עץ אינו ראוי לכל השימושים שיתפרשו מיד, שהרי דרך הבהמה לקלקל אותו. ורבנו שמואל גורס \"סנדל של בהמה ושל מתכת\", כלומר שני סנדלים, והסנדל של מתכת הוא סנדל של סיידים, שנזכר בהמשך הפרק.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6b", "R11"], "t": "שלוש תשובות", "x": "רב אמר: ראוי לשתות בו מים במלחמה. רבי חנינא אמר: ראוי לסוך בו שמן במלחמה. רבי יוחנן אמר: כשבורח מן הקרב, מניח אותו ברגליו ורץ על קוצים ועל ברקנים. רש\"י מסביר: האדם עצמו נועל אותו.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6b", "R11"], "t": "רש\"י: הסנדל נעשה לשם סנדל", "x": "מכאן שלרבי יוחנן, כיון שנעשה לשם סנדל, אילו לא היה ראוי לנעילה לא היה טמא. הוא דורש שהכלי יהיה ראוי למלאכה שדומה למה שנעשה בשבילו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6b", "T4"], "t": "התוספות: והרי זוג בלי עינבל", "x": "ואם תאמר: זוג שמעולם לא היה בו עינבל אינו טמא, אף שראוי לגמוע בו. והסנדל דומה לו, שהרי נעשה לצורך בהמה, ודבר כזה אינו מקבל טומאה. והתוספות עונים: הסנדל נעשה מתחילתו גם כדי לשתות בו מים במלחמה או לסוך בו, אלא שעיקרו עומד לבהמה. ומי שדורש מעין מלאכה ראשונה אינו מטמא מן הטעמים האלה, כי אומרים לו \"עמוד ונעשה מלאכתנו\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6b", "T5"], "t": "התוספות: ולמה אינו טמא מדרס?", "x": "התוספות תמהים: אם אדם נועל אותו, היה צריך להיטמא במדרס. והרי בתוספתא של מסכת כלים שנינו: שלושה סנדלים הם. של אדם טמא מדרס; של מתכת ושל בהמה טמא טומאת מת. משמע שמן המדרס הוא טהור. התוספות אינם מיישבים את התמיהה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R12"], "t": "רב ורבי חנינא: סנדל מאוס", "x": "במה חולקים רב ורבי חנינא? בסנדל מאוס. רש\"י מפרש: לרב סנדל כזה אינו טמא, כי אינו ראוי לשתות בו. ואת טעם הסיכה רב אינו מקבל, כי לדעתו אין מוליכים שמן למלחמה כדי לסוך. וכך גם בין רב לרבי יוחנן ההבדל הוא בסנדל מאוס.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R13"], "t": "רבי יוחנן ורבי חנינא: סנדל כבד", "x": "בין רבי יוחנן לרבי חנינא ההבדל הוא בסנדל כבד. רש\"י מסביר: הוא כבד, ואי אפשר לברוח בו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "\"ולא בעיר של זהב\"", "x": "חוזרים למשנה: \"ולא בעיר של זהב\". מהי עיר של זהב? רבה בר בר חנה אמר בשם רבי יוחנן: \"ירושלים דדהבא\", ירושלים של זהב.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G9", "T6"], "t": "התוספות: תכשיט כעין עטרה", "x": "רבנו תם אומר שעיר של זהב אינה \"נושקא\" שמצוירת עליה עיר, כמו שפירש רש\"י על המשנה. שהרי במסכת סוטה נאמר \"מאי עטרות כלות, עיר של זהב\", ומשמע שהוא עשוי כעין עטרה. ושם נאמר שבפולמוס של טיטוס גזרו על עטרות חתנים וכלות, ואילו כאן נאסר רק בשבת. רבנו תם עונה: הגזירה הייתה רק לחתנים ולכלות, ולא לשאר בני אדם.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "זוג שניטל העינבל שלו טמא, ולדעת רבא הטעם הוא שראוי להקיש בו על חרס. על הטעם נחלקו רבי יוסי ברבי חנינא ורבי יוחנן, והגמרא הפכה את השמות: רבי יוחנן הוא שאמר \"ראוי להקישו\", כי הוא דורש מעין מלאכה ראשונה, כמו שעולה מדבריו על סנדל של בהמה, ורבי יוסי ברבי חנינא אמר \"ראוי לגמע\". בסוף העמוד הגמרא חזרה למשנה ופירשה שעיר של זהב היא \"ירושלים של זהב\". העמוד הבא פותח \"כדעבד ליה רבי עקיבא לדביתהו\", כמו שעשה רבי עקיבא לאשתו, ומביא ברייתא במחלוקת על היציאה בה.", "a": ""}], "audio": "shabbat/daf-59a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

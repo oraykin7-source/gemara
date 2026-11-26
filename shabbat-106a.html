@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף ק&quot;ו עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-106a.html">
+<meta name="description" content="מסכת שבת, דף ק&quot;ו עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ק\"ו עמוד א'", "url": "https://gemara.co.il/shabbat-106a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף ק&quot;ו עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>האורג</span><span>פרק שלושה עשר</span><span>שבת<b>קו.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-105b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-106b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 209</div>
+  <h1>מסכת שבת, דף ק&quot;ו עמוד א&#x27;</h1>
+  <p class="sub">פרק שלושה עשר, &quot;האורג&quot;. סוף האגדה על מות אחד האחים, חובל ומבעיר בדעת רבי יהודה ורבי שמעון, שיעור הסיט, ומשנת הצד צפור וצבי.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ק&quot;ו עמוד א&#x27;, לומדים: כשאחד מן האחים מת; רבי אבהו ורבי יוחנן: חובל ומבעיר; המשנה כרבי יהודה, הברייתא כרבי שמעון; רבי יהודה: מילה ושריפה הן תיקון; שיעור הסיט, ומשנת הצד צפור.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. כשאחד מן האחים מת</a><a href="#u2">2. רבי אבהו ורבי יוחנן: חובל ומבעיר</a><a href="#u3">3. המשנה כרבי יהודה, הברייתא כרבי שמעון</a><a href="#u4">4. רבי יהודה: מילה ושריפה הן תיקון</a><a href="#u5">5. שיעור הסיט, ומשנת הצד צפור</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1">
+  <div class="kicker">יחידה 1 · אגדה</div>
+  <h2>כשאחד מן האחים מת</h2>
+  <p class="lead">סוף דברי האגדה מן העמוד הקודם. רבי חייא בר אבא אמר בשם רבי יוחנן מה ראוי לעשות כשאחד מן האחים או מבני החבורה מת.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ידאגו כל האחין כולן</td><td>ידאגו כל האחים כולם.</td></tr>
+      <tr><td>אחד מבני חבורה שמת</td><td>אחד מבני החבורה שמת,</td></tr>
+      <tr><td>תדאג כל החבורה כולה</td><td>תדאג כל החבורה כולה.</td></tr>
+      <tr><td>אמרי לה</td><td>יש אומרים</td></tr>
+      <tr><td>דמת גדול</td><td>שמדובר כשמת הגדול,</td></tr>
+      <tr><td>ואמרי לה</td><td>ויש אומרים</td></tr>
+      <tr><td>דמת קטן</td><td>שמדובר כשמת הקטן.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הדברים:</b> כשאחד מן האחים מת, כל האחים צריכים לדאוג. וכך בחבורה: כשאחד מבני החבורה מת, כל החבורה צריכה לדאוג. רש"י מפרש "ידאגו": יפחדו מן המיתה.</p>
+  <p><b>שתי לשונות:</b> יש אומרים שהדברים נאמרו כשמת הגדול שבהם, ויש אומרים כשמת הקטן.</p>
+  <p><b>הטעם של כל לשון, לפי רש"י:</b> כשמת הגדול, מידת הדין שלטה בראש הבית. וכשמת הקטן, יש לדאוג כי בפורענות מתחילים מן הקטן.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>ידאגו – ייראו מן המיתה:</blockquote><p><span class="say">מה רש"י אומר:</span> "ידאגו" פירושו: יפחדו מן המיתה.</p></div>
+  <div data-hl="R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>ואמרי לה דמת קטן – שבקלקלה מתחילין מן הקטן:</blockquote><blockquote>דמת גדול – יש לדאוג הואיל ושלטה מדת הדין בראש הבית:</blockquote><p><span class="say">מה רש"י אומר:</span> כשמת הגדול יש לדאוג, כי מידת הדין שלטה בראש הבית. וכשמת הקטן, כי בפורענות מתחילים מן הקטן.</p></div>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "ידאגו", לפי רש"י?</summary><p>יפחדו מן המיתה.</p></details>
+  <details><summary>מה פירוש "אמרי לה"?</summary><p>יש אומרים.</p></details>
+  <details><summary>לפי רש"י, למה יש לדאוג כשמת הקטן?</summary><p>כי בפורענות מתחילים מן הקטן.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G2a,G2b">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>רבי אבהו ורבי יוחנן: חובל ומבעיר</h2>
+  <p class="lead">המשנה אמרה שכל המקלקלים פטורים. רבי אבהו שנה ברייתא שמוציאה מן הכלל חובל ומבעיר, ורבי יוחנן דחה אותה, או העמיד אותה במקרה מיוחד.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>תני ר' אבהו קמיה דר' יוחנן</td><td>שנה רבי אבהו לפני רבי יוחנן:</td></tr>
+      <tr><td>כל המקלקלין פטורין</td><td>כל המקלקלים פטורים,</td></tr>
+      <tr><td>חוץ מחובל ומבעיר</td><td>חוץ מחובל ומבעיר.</td></tr>
+      <tr><td>א"ל פוק תני לברא</td><td>אמר לו: צא ושנה בחוץ.</td></tr>
+      <tr><td>חובל ומבעיר אינה משנה</td><td>חובל ומבעיר אינה משנה.</td></tr>
+      <tr><td>ואם ת"ל משנה</td><td>ואם תאמר שהיא משנה,</td></tr>
+      <tr><td>חובל בצריך לכלבו</td><td>חובל, כשהוא צריך (את הדם) לכלבו;</td></tr>
+      <tr><td>מבעיר בצריך לאפרו</td><td>מבעיר, כשהוא צריך את האפר.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הכלל במשנה:</b> מי שעושה מלאכה בשבת בדרך של קלקול, פטור. רבי אבהו שנה ברייתא שאומרת שיש שני יוצאים מן הכלל: החובל באדם, והמבעיר.</p>
+  <p><b>רבי יוחנן דוחה:</b> "פוק תני לברא", צא ושנה זאת בחוץ. חובל ומבעיר "אינה משנה", אין זו ברייתא שסומכים עליה. רש"י מסביר: אם הם מקלקלים, הם פטורים.</p>
+  <p><b>ואם בכל זאת זו משנה:</b> מדובר בחובל שצריך את הדם לכלבו, ובמבעיר שצריך את האפר. אז החבלה מקלקלת אצל הנחבל, אבל מתקנת אצל הכלב.</p>
+  <div class="eg"><b>להמחשה:</b> מי ששורף גדיש, ערמה של תבואה. התבואה נהרסת, אבל אם הוא צריך את האפר, יש במעשה גם תועלת.</div>
+  <div data-hl="R4,R5" class="voice r"><span class="tag">רש"י</span><blockquote>חוץ מחובל – באדם דמקלקל הוא וחייב דתנן (ב"ק פז.) החובל בחברו בשבת פטור מלשלם מפני שנדון בנפשו:</blockquote><blockquote>ומבעיר – את הגדיש מקלקל הוא וחייב כדתנן (שם דף לד:) והוא שהדליק את הגדיש פטור מן תשלומין מפני שנדון בנפשו:</blockquote><p><span class="say">מה רש"י אומר:</span> החובל באדם והמבעיר גדיש מקלקלים, ובכל זאת חייבים. רש"י מביא לכך משניות: החובל בחברו בשבת, והמדליק גדיש בשבת, פטורים מתשלומים מפני שהם נידונים בנפשם.</p></div>
+  <div data-hl="R7" class="voice r"><span class="tag">רש"י</span><blockquote>בצריך – לדם היוצא מן החבלה לכלבו ואם מקלקל הוא אצל נחבל מתקן הוא אצל הכלב:</blockquote><p><span class="say">מה רש"י אומר:</span> הדם שיוצא מן החבלה נצרך לכלב. החבלה מקלקלת אצל הנחבל, ומתקנת אצל הכלב.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>במה נחלקו רבי אבהו ורבי יוחנן</h3>
+    <div data-hl="T1a" class="voice t"><span class="tag">תוספות</span><blockquote>חוץ מחובל ומבעיר א"ל פוק תני לברא כו' – פי' רבינו שמואל דר' אבהו סבר כר"ש דאמר מקלקל בחבורה חייב ור' יוחנן סבר לה כר' יהודה דאמר מקלקל בחבורה ובהבערה פטור וצריך לכלבו ולאפרו לא חשיב מקלקל וחייב אפי' לר' יהודה וכן משמע בסמוך מתוך פי' רש"י וקשה דא"כ אמאי א"ל פוק תני לברא דאטו משום דס"ל כר' יהודה מאן דתנא כר"ש משתקינן ליה דכה"ג פריך בפ"ק דחולין (טו.)</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו שמואל פירש שרבי אבהו סובר כרבי שמעון, ורבי יוחנן כרבי יהודה. התוספות מקשים: וכי מפני שרבי יוחנן סובר כרבי יהודה, משתיקים את מי ששנה כרבי שמעון?</p></div>
+    <div data-hl="T1b" class="voice t"><span class="tag">תוספות</span><blockquote>ע"כ נראה דר' אבהו ור' יוחנן אליבא דר"ש פליגי דר' אבהו סבר דחובל ומבעיר אע"פ שאינו צריך לכלבו ולאפרו חייב לר' שמעון דגמר ממילה והבערת בת כהן ור' יוחנן סבר דר"ש נמי לא מחייב אא"כ איכא קצת תיקון כגון דצריך לכלבו ולאפרו דמילה והבערה איכא קצת תיקון שהוא צורך מצוה אבל לר' יהודה אפי' צריך לאפרו ולכלבו פטור דאין זה תיקון חשוב דאין דרך לחבול בחבירו כדי ליתן לכלבו או לשרוף גדיש בשביל …</blockquote><p><span class="say">מה התוספות אומרים:</span> לכן התוספות מפרשים ששניהם מדברים בדעת רבי שמעון. לרבי אבהו הוא מחייב חובל ומבעיר גם בלי צורך, ולרבי יוחנן רק כשיש קצת תיקון, כמו במילה ובשריפה, שיש בהן צורך מצווה. ולרבי יהודה גם צריך לכלבו פטור, כי אין דרך לחבול כדי לתת לכלב.</p></div>
+    <div data-hl="T1d,T1e" class="voice t"><span class="tag">תוספות</span><blockquote>ור"ת מפרש דהא דחשיב לר' יהודה מקלקל שצריך לכלבו ואפרו לפי שאין התיקון בא באותה שעה אלא לאחר מכאן דלאחר שנעשית חבורה בא הדם ולאחר שכלתה ההבערה בא האפר אבל בשוחט בשעת הקלקול בא לו התיקון שמוציאה מידי אבר מן החי וקורע למירמא אימתא אאינשי דביתיה חשוב ליה לר"י נמי תיקון לפי שבשעת הקלקול בא לו התיקון וכן בהריגת המזיקין (לקטן קכא:) חייב לר' יהודה דבא התיקון בשעת הקלקול ולר"ש פטור …</blockquote><blockquote>וקורע ע"מ לתפור ומוחק ע"מ לכתוב דמיחייב לכ"ע אע"ג שבשעת הקלקול אינו בא התיקון היינו משום שהקלקול גורם תיקון יותר טוב לבסוף ותיקון גמור הוא שהרי אינו יכול לעשות התיקון אלא ע"י הקלקול:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם מפרש שלרבי יהודה צריך לכלבו ולאפרו נחשב קלקול, כי התיקון בא רק אחר כך. בשחיטה, לעומת זאת, התיקון בא מיד. וקורע על מנת לתפור חייב, כי אי אפשר לתקן בלי הקלקול.</p></div>
+    <h3>צריכה לגופה</h3>
+    <div data-hl="T2a,T2b" class="voice t"><span class="tag">תוספות</span><blockquote>בחובל וצריך לכלבו כו' – וא"ת ור' אבהו דמחייב אפי' באין צריך לכלבו כיון דאין צריך כלל הויא מלאכה שאינה צריכה לגופה דאע"ג דמחייב ר"ש מקלקל בחבורה מ"מ בעי צריכה לגופה כדאמרי' בריש הנחנקין (סנהדרין פד:) מאן שמעת ליה דאמר מקלקל בחבורה חייב ר"ש האמר מלאכה שאינה צריכה לגופה פטור (לקמן שבת דף קכא:) ובס"פ ספק אכל (כריתוח דף כ:)</blockquote><blockquote>וי"ל דאפי' במקלקל גמור משכחת לה דהויא צריכה לגופה כגון חובל ומבעיר באיסורי הנאה שסבר שיכול ליתן לכלבו ולבשל בו קדרה ור' אבהו אע"ג דלא חשיב צורך מצוה תיקון מ"מ צריכה לגופה חשיב</blockquote><p><span class="say">מה התוספות אומרים:</span> שאלו: לפי רבי אבהו, בלי שום צורך זו מלאכה שאינה צריכה לגופה, ורבי שמעון פוטר עליה. ענו: גם מקלקל גמור יכול להיות צריך לגופה, למשל חובל או מבעיר בדבר שאסור בהנאה, שחשב שיוכל לתת לכלבו או לבשל בו. ולרבי אבהו צורך מצווה אינו נחשב תיקון, אבל הוא עושה את המלאכה לצריכה לגופה.</p></div>
+    <div data-hl="T2c" class="voice t"><span class="tag">תוספות</span><blockquote>וא"ת צריך לכלבו ולאפרו היכי חשיב צריכה לגופה מ"ש מחופר גומא ואינו צריך אלא לעפרה וי"ל דלא דמי דהכא הוא צריך לנטילת נשמה כדי לתת לכלבו דהיינו הדם כי הדם הוא הנפש ומבעיר נמי צריך להבערה כדי לעשות אפר כמו מבעיר כדי לבשל קדרה אבל חופר הגומא נעשית מאליה ואינו נהנה ממנה כלום:</blockquote><p><span class="say">מה התוספות אומרים:</span> חופר גומא שצריך רק את העפר פטור. אבל החובל צריך את הדם עצמו, שהוא נטילת הנשמה, והמבעיר צריך את ההבערה כדי לעשות אפר.</p></div>
+  </div>
+  <p class="godeep">האם רבי אבהו ורבי יוחנן חולקים בדעת רבי יהודה או בדעת רבי שמעון? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה שנה רבי אבהו?</summary><p>כל המקלקלים פטורים, חוץ מחובל ומבעיר.</p></details>
+  <details><summary>מה אמר לו רבי יוחנן?</summary><p>צא ושנה בחוץ: חובל ומבעיר אינה משנה.</p></details>
+  <details><summary>איך רבי יוחנן מעמיד את הברייתא, אם היא משנה?</summary><p>בחובל שצריך לכלבו, ובמבעיר שצריך לאפרו.</p></details>
+  <details class="deepq"><summary>איך פירש רבנו שמואל את המחלוקת, ומה הקשו עליו התוספות?</summary><p>רבי אבהו כרבי שמעון ורבי יוחנן כרבי יהודה. הקשו: וכי משתיקים את מי ששנה כרבי שמעון?</p></details>
+  <details class="deepq"><summary>לפי רבנו תם, למה צריך לכלבו נחשב קלקול לרבי יהודה?</summary><p>כי התיקון אינו בא בשעת הקלקול, אלא אחר כך.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G3a,G3b,G4">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>המשנה כרבי יהודה, הברייתא כרבי שמעון</h2>
+  <p class="lead">הגמרא מיישבת את הסתירה בין המשנה לברייתא: כל אחת כשיטת תנא אחר. ומניין לרבי שמעון שמקלקל בחבלה ובהבערה חייב?</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>והאנן תנן כל המקלקלין פטורין</td><td>והרי שנינו: כל המקלקלים פטורים!</td></tr>
+      <tr><td>מתניתין רבי יהודה</td><td>המשנה היא דעת רבי יהודה,</td></tr>
+      <tr><td>ברייתא רבי שמעון</td><td>הברייתא היא דעת רבי שמעון.</td></tr>
+      <tr><td>מ"ט דר' שמעון</td><td>מה הטעם של רבי שמעון?</td></tr>
+      <tr><td>מדאיצטריך קרא למישרא מילה</td><td>מכיוון שהיה צריך פסוק להתיר מילה,</td></tr>
+      <tr><td>הא חובל בעלמא חייב</td><td>משמע שחובל בדרך כלל חייב.</td></tr>
+      <tr><td>ומדאסר רחמנא הבערה גבי בת כהן</td><td>ומכיוון שהתורה אסרה הבערה אצל בת כהן,</td></tr>
+      <tr><td>שמע מינה מבעיר בעלמא חייב</td><td>למד מכאן שמבעיר בדרך כלל חייב.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הקושיה:</b> במשנה נאמר שכל המקלקלים פטורים, ומשמע שגם חובל ומבעיר. ואילו בברייתא של רבי אבהו הם חייבים.</p>
+  <p><b>התשובה:</b> המשנה כרבי יהודה, והברייתא כרבי שמעון.</p>
+  <p><b>המקורות של רבי שמעון:</b> התורה הייתה צריכה להתיר במפורש מילה בשבת, ומכאן שחבלה רגילה אסורה וחייבים עליה, אף שהיא קלקול. וכך התורה הייתה צריכה לאסור את שריפת בת כהן בשבת, ומכאן שהבערה רגילה חייבת, אף שהיא קלקול.</p>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' ר' יהודה – דאית ליה מקלקל בחבורה פטור ולא איתפרש היכא ול"נ מתני' ר' יהודה היא דאמר מלאכה שאינה צריכה לגופה חייב עליה הלכך חיובא דחובל בצריך לכלבו ומבעיר בצריך לאפרו משכחת לה דאע"פ דמקלקל הוא אצל מלאכה עצמה מתקן הוא אצל אחרים ולר' יהודה כי האי גוונא מלאכה הוא משום תקון אחרים אבל מקלקל ואינו מתקן פטור ואע"ג דרישא דמתני' אוקימנא כר"ש דקתני קורע על מתו פטור סיפא ר"י:</blockquote><p><span class="say">מה רש"י אומר:</span> לרבי יהודה מלאכה שאינה צריכה לגופה חייב עליה. לכן חובל שצריך לכלבו ומבעיר שצריך לאפרו חייבים, כי הם מתקנים אצל אחרים. אבל מקלקל שאינו מתקן כלום פטור.</p></div>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>וברייתא ר"ש היא – דאמר מלאכה שאינה צריכה לגופה פטור עליה הלכך אין לך חובל ומבעיר שאין מקלקל ואפי' מבעיר עצים לקדרתו מקלקל הוא אצל עצים ומה שהוא מתקן אצל אחרים לר"ש לא חשיב דהא מלאכה שאינה צריכה לגופה היא אלא משום דמקלקל בחבלה ובהבערה חייב כדיליף לקמיה:</blockquote><p><span class="say">מה רש"י אומר:</span> לרבי שמעון מלאכה שאינה צריכה לגופה פטור עליה, ולכן כל חובל ומבעיר הוא מקלקל, ואפילו המבעיר עצים לקדירתו. ובכל זאת הוא חייב, כי מקלקל בחבלה ובהבערה חייב.</p></div>
+  <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>מדאיצטריך קרא – וביום השמיני ביום יתירא ואפי' בשבת ומילה חובל הוא מכלל דשאר מקלקלין בחבורה חייב:</blockquote><p><span class="say">מה רש"י אומר:</span> המילה "ביום" שבפסוק "וביום השמיני" מיותרת, ומלמדת שמלים אפילו בשבת. ומילה היא חבלה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שתי השיטות לפי רש"י</h3>
+    <p>לפי רש"י, רבי יהודה ורבי שמעון מחייבים שניהם את החובל שצריך לכלבו, אבל מטעמים שונים. רבי יהודה מחייב כי יש כאן תיקון אצל אחרים, ואצלו גם מלאכה שאינה צריכה לגופה חייבת. רבי שמעון אינו מתחשב בתיקון שאצל אחרים, ומחייב מפני שבחבלה ובהבערה גם מקלקל חייב. ההבדל ביניהם הוא במקלקל שאינו מתקן כלום: לרבי יהודה הוא פטור.</p>
+    <div data-hl="T3a,T3b" class="voice t"><span class="tag">תוספות</span><blockquote>מדאצטריך קרא למישרי מילה כו' – וא"ת למה לי למילף ממילה נילף כולה מילתא מהבערת בת כהן דלא דחי שבת דבהבערה איכא נטילת נשמה וחובל נמי לא מחייב אלא משום נטילת נשמה</blockquote><blockquote>וי"ל דלענין מקלקל בחבורה ליכא למילף מהבערה דהתם התיקון בא בשעת הקלקול אבל לענין מקלקל בהבערה יליף שפיר דאחר הבערה בא התיקון כדפי' אי נמי אי לאו דילפינן ממילה דמקלקל בחבורה חייב ה"א דרציחה דוחה את השבת דלאו מלאכה היא והבערה לחודה היא דאימעטה משום דמקלקל בהבערה חייב:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות שואלים למה צריך ללמוד ממילה, אם אפשר ללמוד הכול משריפת בת כהן, שגם בה יש נטילת נשמה. תשובה א': בנטילת הנשמה שבשריפה התיקון בא בשעת הקלקול, ולכן אין ללמוד ממנה על מקלקל בחבורה, אלא רק על מקלקל בהבערה. תשובה ב': בלי המילה היינו אומרים שהריגה בבית דין דוחה שבת, כי אינה מלאכה, ורק ההבערה נתמעטה.</p></div>
+  </div>
+  <p class="godeep">למה רבי שמעון צריך פסוקים כדי לחייב חובל ומבעיר? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>איך הגמרא מיישבת את הסתירה בין המשנה לברייתא?</summary><p>המשנה כרבי יהודה, והברייתא כרבי שמעון.</p></details>
+  <details><summary>מניין לרבי שמעון שחובל חייב?</summary><p>מכיוון שהיה צריך פסוק להתיר מילה בשבת.</p></details>
+  <details><summary>מניין לרבי שמעון שמבעיר חייב?</summary><p>מכיוון שהתורה אסרה הבערה בשבת לעניין שריפת בת כהן.</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה לרבי שמעון גם המבעיר עצים לקדירתו נחשב מקלקל?</summary><p>כי הוא מקלקל את העצים, ומה שהוא מתקן אצל אחרים אינו נחשב, שזו מלאכה שאינה צריכה לגופה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G5">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>רבי יהודה: מילה ושריפה הן תיקון</h2>
+  <p class="lead">ואיך רבי יהודה מסביר את הפסוקים של מילה ושל שריפת בת כהן? לדעתו אין מהם ראיה למקלקל, כי שם יש תיקון.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ורבי יהודה התם מתקן הוא</td><td>ורבי יהודה? שם הוא מתקן,</td></tr>
+      <tr><td>כדרב אשי דאמר רב אשי</td><td>כדברי רב אשי, שאמר רב אשי:</td></tr>
+      <tr><td>מה לי לתקן מילה</td><td>מה לי לתקן מילה,</td></tr>
+      <tr><td>מה לי לתקן כלי</td><td>מה לי לתקן כלי;</td></tr>
+      <tr><td>מה לי לבשל פתילה</td><td>מה לי לבשל פתילה,</td></tr>
+      <tr><td>מה לי לבשל סמנין</td><td>מה לי לבשל סממנים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הטענה:</b> לפי רבי יהודה, המל והשורף אינם מקלקלים אלא מתקנים. לכן הפסוקים לא באו ללמד על מקלקל.</p>
+  <p><b>מילה:</b> המל מתקן את האדם, כמו שמתקנים כלי. רש"י מוסיף שיש מלאכה בתיקון כזה.</p>
+  <p><b>שריפה:</b> בשריפת בת כהן מבשלים פתילה של עופרת, כמו שבישלו סממנים במשכן. זו מלאכת בישול שיש בה תיקון.</p>
+  <div data-hl="R13" class="voice r"><span class="tag">רש"י</span><blockquote>מה לי מתקן כלי – הא נמי מתקן גברא הוא ויש מלאכה בתיקון זה:</blockquote><p><span class="say">מה רש"י אומר:</span> גם המל מתקן, את האדם, ויש מלאכה בתיקון כזה.</p></div>
+  <div data-hl="R14,R15" class="voice r"><span class="tag">רש"י</span><blockquote>בישול פתילה – שהוא מדליק פתילה של אבר ונותנה לתוך פיה ודרך בישול הוא זה וחייב על הבישול שאינו מקלקל האבר בבישולו אלא מתקן וצורף:</blockquote><blockquote>סמנין – של מלאכת המשכן:</blockquote><p><span class="say">מה רש"י אומר:</span> בשריפת בת כהן מדליקים פתילה של עופרת ונותנים אותה לתוך פיה. זו דרך של בישול: הוא אינו מקלקל את העופרת אלא מתקן ומצרף אותה. והסממנים הם של מלאכת המשכן.</p></div>
+  <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>דאמר רב אשי מה לי לתקן מילה מה לי לתקן כלי – לאו משום דסבר כר' יהודה אלא מפרש הוא אליבא דר' יהודה:</blockquote><p><span class="say">מה התוספות אומרים:</span> רב אשי אינו סובר בעצמו כרבי יהודה. הוא רק מפרש את שיטתו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה התיקון בשריפה</h3>
+    <div data-hl="T5a" class="voice t"><span class="tag">תוספות</span><blockquote>מה לי לבשל פתילה מה לי לבשל סמנין – אין לפרש כמו שבישול סממנין מתקנן להיות יותר חשובים כך פתילה חשובה יותר ע"י בישול דאי היינו טעמא דר' יהודה שאר מיתות ב"ד דלא דחו שבת מנלן כיון דלא שייך בהו תיקון דהבערה לא אסרה תורה אלא משום תיקון פתילה ועוד שריפת בת כהן גופה מנלן דלא דחינן היכא דתיקן הפתילה מאתמול</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות דוחים את הפירוש שהבישול משביח את הפתילה, כמו שהוא משביח את הסממנים. אם זה הטעם, מניין ששאר מיתות בית דין, שאין בהן פתילה, אינן דוחות שבת? ומניין שגם שריפה בפתילה שתוקנה מאתמול אינה דוחה?</p></div>
+    <div data-hl="T5b" class="voice t"><span class="tag">תוספות</span><blockquote>ואומר ר"י דה"פ מה לי בישול פתילה לצורך שריפת בת כהן מה לי בישול סממנין לצורך צביעת בגד דכי היכי דבישול סממנין לצורך צביעה חשוב תיקון ה"נ בישול פתילה לצורך שריפה ומהכא נפקא לן שפיר דכל שאר מיתות ב"ד חשוב תיקון משום מצוה דאי לאו שריפה עצמה חשיבא תיקון משום בישול פתילה לא הוה אסורה אע"פ שמתקנת בכך דכיון שאינה אלא משום שריפה לא הוה חשיב תיקון ולא מיחייב וכן מוציא מרא לחפור לקבור …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק מפרש: כמו שבישול סממנים לצורך צביעה נחשב תיקון, כך בישול הפתילה לצורך שריפה. ומכאן שכל מיתות בית דין נחשבות תיקון, משום המצווה: אילו השריפה עצמה לא נחשבה תיקון, גם בישול הפתילה, שנעשה רק בשבילה, לא היה נאסר.</p></div>
+    <div data-hl="T5c,T5d" class="voice t"><span class="tag">תוספות</span><blockquote>וא"ת בשלמא לר' יהודה שפיר שמעינן דהבערה ללאו יצאת או לחלק מדלא כתב לא תעשה מלאכה בכל מושבותיכם וכתב הבערה ש"מ ללאו יצאת או לחלק כדפרישית בפרק כלל גדול (לעיל שבת דף ע.) [ד"ה הבערה] אלא לר"ש דאיצטריך למיכתב הבערה לחייב מקלקל בהבערה מנא ליה דיצאת ללאו או לחלק וליכא למימר דנפקא ליה לחלק מאחת מהנה כדמפיק ליה ר' יוסי דהא בפרק הבונה (לקמן שבת דף קיג:) פליג ר"ש בהדיא אר' יוסי ודריש …</blockquote><blockquote>וי"ל דנפקא ליה לחלק מהיכא דנפקא ליה לשמואל בפרק כלל גדול (לעיל שבת דף ע.) והשתא אתי שפיר הא דהוה קשה שמואל דאמר כמאן לא כר' נתן ולא כר' יוסי דהשתא כר"ש ס"ל ובפ"ק דיבמות (דף ו:) קאמר דאיצטריך קרא למיסר הבערת בת כהן משום דהוה סלקא דעתך למישרי מקל וחומר מעבודה דדחיא שבת היינו כר' יהודה דחשיב ליה תיקון אבל לר' שמעון איצטריך קרא בהבערה לחייב כל מקלקל בהבערה</blockquote><p><span class="say">מה התוספות אומרים:</span> ועוד שאלו: לרבי שמעון, שצריך את פסוק ההבערה לחייב מקלקל, מניין שהבערה יצאה ללאו או לחלק? ענו: "לחלק" הוא לומד מן המקום שממנו לומד זאת שמואל בפרק "כלל גדול".</p></div>
+  </div>
+  <p class="godeep">לפי רבנו יצחק, מה דומה בין בישול הפתילה לבישול הסממנים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה עונה רבי יהודה על הראיה ממילה ומשריפה?</summary><p>שם הוא מתקן, ולא מקלקל.</p></details>
+  <details><summary>למה דומה המילה, לפי רב אשי?</summary><p>לתיקון כלי.</p></details>
+  <details><summary>לפי רש"י, איך מבשלים את הפתילה בשריפת בת כהן?</summary><p>מדליקים פתילה של עופרת ונותנים אותה לתוך פיה.</p></details>
+  <details class="deepq"><summary>האם רב אשי סובר כרבי יהודה, לפי התוספות?</summary><p>לא. הוא רק מפרש את שיטת רבי יהודה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G6,G7">
+  <div class="kicker">יחידה 5 · משנה</div>
+  <h2>שיעור הסיט, ומשנת הצד צפור</h2>
+  <p class="lead">הגמרא מבררת את השיעור שבמשנה, "הסיט כפול". אחר כך מתחילה משנה חדשה על מלאכת צידה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>שיעור המלבן כו'</td><td>"שיעור המלבן" וכולי:</td></tr>
+      <tr><td>רב יוסף מחוי כפול</td><td>רב יוסף מראה כפול,</td></tr>
+      <tr><td>רב חייא בר אמי מחוי פשוט</td><td>רב חייא בר אמי מראה פשוט.</td></tr>
+      <tr><td>ר' יהודה אומר הצד צפור למגדל</td><td>רבי יהודה אומר: הצד צפור לתוך מגדל,</td></tr>
+      <tr><td>וצבי לבית חייב</td><td>וצבי לתוך בית, חייב.</td></tr>
+      <tr><td>וחכ"א צפור למגדל</td><td>וחכמים אומרים: צפור למגדל...</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>השיעור:</b> המשנה קבעה למלבן, למנפץ, לצובע ולטווה שיעור אחד: "כמלא רחב הסיט כפול". רב יוסף הראה בידו שיעור כפול, ורב חייא בר אמי הראה שיעור פשוט.</p>
+  <p><b>ההסבר של רש"י:</b> רב יוסף מודד פעמיים את הרווח הקצר שבין האצבע לאמה, כלומר בין האצבע המורה לאצבע האמצעית. רב חייא בר אמי מודד פעם אחת את הרווח שבין הגודל לאצבע. הרווח הזה כפול מן הרווח שבין האמה לאצבע, ולכן הוא ה"כפול" של המשנה.</p>
+  <p><b>המשנה החדשה:</b> רבי יהודה אומר שהצד צפור והכניס אותה למגדל, או צבי והכניס אותו לבית, חייב. דברי חכמים מתחילים כאן, וממשיכים בעמוד הבא.</p>
+  <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' הצד צפור – עד שהכניסו למגדל משטיי"ר בלע"ז חייב דזו היא צידתו אבל אם הכניסו לבית אינו ניצוד בכך שיוצא לו דרך חלונות:</blockquote><p><span class="say">מה רש"י אומר:</span> הצפור ניצודה כשהכניס אותה למגדל, שהוא כאן כלי סגור כעין ארון. אם הכניס אותה לבית, אינה ניצודה, כי היא יוצאת דרך החלונות.</p></div>
+  <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>וצבי – ניצוד משהכניסו לביתו ונעל בפניו אבל אם הכניסו לגינה או לחצר אין זו צידה:</blockquote><p><span class="say">מה רש"י אומר:</span> הצבי ניצוד כשהכניס אותו לביתו ונעל בפניו. אבל בגינה או בחצר אין זו צידה.</p></div>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הראה רב יוסף, ומה הראה רב חייא בר אמי?</summary><p>רב יוסף הראה שיעור כפול, ורב חייא בר אמי שיעור פשוט.</p></details>
+  <details><summary>לפי רש"י, למה הכנסת צפור לבית אינה צידה?</summary><p>כי היא יוצאת דרך החלונות.</p></details>
+  <details><summary>מתי הצבי ניצוד, לפי רש"י?</summary><p>כשהכניס אותו לביתו ונעל בפניו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>מות אחד האחים:</b> כשאחד מן האחים או מבני החבורה מת, כולם ידאגו. יש אומרים כשמת הגדול, ויש אומרים כשמת הקטן.</li>
+      <li><b>חובל ומבעיר:</b> רבי אבהו שנה שהם חייבים אף שהם מקלקלים. רבי יוחנן דחה, או העמיד בצריך לכלבו ולאפרו.</li>
+      <li><b>שתי שיטות:</b> המשנה, שכל המקלקלים פטורים, כרבי יהודה. הברייתא, שחובל ומבעיר חייבים, כרבי שמעון.</li>
+      <li><b>המקורות של רבי שמעון:</b> הפסוק שמתיר מילה בשבת, והפסוק שאוסר את שריפת בת כהן בשבת.</li>
+      <li><b>רבי יהודה:</b> במילה ובשריפה יש תיקון, כמו בתיקון כלי ובבישול סממנים.</li>
+      <li><b>שיעור הסיט:</b> רב יוסף הראה כפול, ורב חייא בר אמי פשוט.</li>
+      <li><b>משנת הצד צפור:</b> לרבי יהודה הצד צפור למגדל וצבי לבית חייב. דברי חכמים נמשכים בעמוד הבא.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>אמרי לה</td><td>יש אומרים</td></tr>
+      <tr><td>המקלקלין</td><td>העושים מלאכה בדרך של הרס ולא של תיקון</td></tr>
+      <tr><td>פוק תני לברא</td><td>&quot;צא ושנה בחוץ&quot;: דחייה של ברייתא</td></tr>
+      <tr><td>אינה משנה</td><td>אין זו ברייתא שסומכים עליה</td></tr>
+      <tr><td>צריך לכלבו</td><td>צריך את הדם בשביל הכלב שלו</td></tr>
+      <tr><td>מאי טעמא</td><td>מה הטעם</td></tr>
+      <tr><td>למישרא</td><td>להתיר</td></tr>
+      <tr><td>בעלמא</td><td>בדרך כלל, בכל מקום אחר</td></tr>
+      <tr><td>שמע מינה</td><td>למד מכאן</td></tr>
+      <tr><td>מה לי... מה לי</td><td>מה ההבדל בין זה לזה</td></tr>
+      <tr><td>מחוי</td><td>מראה בידו</td></tr>
+      <tr><td>כפול · פשוט</td><td>פעמיים · פעם אחת</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-105b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-106b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ק&quot;ו עמוד א&#x27;, לומדים: כשאחד מן האחים מת; רבי אבהו ורבי יוחנן: חובל ומבעיר; המשנה כרבי יהודה, הברייתא כרבי שמעון; רבי יהודה: מילה ושריפה הן תיקון; שיעור הסיט, ומשנת הצד צפור.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (35 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד א&#x27;: סוף האגדה, וחזרה למשנה</h3><p>העמוד הקודם עסק בדברי אגדה על מות אדם כשר ועל ההספד, ונקטע באמצע מימרה של רבי חייא בר אבא בשם רבי יוחנן: &quot;אחד מן האחין שמת&quot;. כאן המימרה נגמרת. אחריה הגמרא חוזרת לדיני המשנה: המקלקל בשבת, שיעור המלבן, ובסוף העמוד מתחילה משנה חדשה על צידה.</p></li><li><h3><span class="w">גמרא</span> · כשאחד מן האחים מת</h3><p>כשאחד מן האחים מת, &quot;ידאגו כל האחין כולן&quot;. וכשאחד מבני חבורה מת, תדאג כל החבורה כולה. רש&quot;י מפרש &quot;ידאגו&quot;: יפחדו מן המיתה.</p></li><li><h3><span class="w">רש&quot;י</span> · הגדול או הקטן</h3><p>יש אומרים שמדובר כשמת הגדול, ויש אומרים כשמת הקטן. רש&quot;י מסביר את שתי הלשונות. אם מת הגדול, יש לדאוג, כי מידת הדין שלטה בראש הבית. ואם מת הקטן, יש לדאוג, כי בפורענות מתחילים מן הקטן.</p></li><li><h3><span class="w">גמרא</span> · רבי אבהו: חוץ מחובל ומבעיר</h3><p>המשנה אמרה: &quot;וכל המקלקלין פטורין&quot;. רבי אבהו שנה לפני רבי יוחנן ברייתא: כל המקלקלים פטורים, חוץ מחובל ומבעיר. אמר לו רבי יוחנן: &quot;פוק תני לברא&quot;, צא ושנה זאת בחוץ. כלומר, הוא דוחה את הברייתא הזו.</p><p>מקלקל הוא מי שעושה מלאכה בשבת בדרך של הרס ולא של תיקון.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: למה חובל ומבעיר מקלקלים</h3><p>החובל באדם מקלקל, ובכל זאת חייב, כמו ששנינו: החובל בחברו בשבת פטור מלשלם, מפני שהוא נידון בנפשו. וכך המבעיר את הגדיש מקלקל, ובכל זאת חייב, כמו ששנינו: מי שהדליק את הגדיש בשבת פטור מתשלומים, מפני שנידון בנפשו. &quot;נידון בנפשו&quot; פירושו שהוא חייב מיתה על חילול השבת, ומכאן שהוא חייב על המלאכה אף שהיא קלקול.</p></li><li><h3><span class="w">גמרא</span> · ואם זו משנה, בצריך לכלבו</h3><p>רבי יוחנן ממשיך: &quot;חובל ומבעיר אינה משנה&quot;, אין זו ברייתא שיש לסמוך עליה, כי אם הם מקלקלים, הם פטורים. ואם תאמר שהיא משנה, מדובר בחובל שצריך את הדם לכלבו, ובמבעיר שצריך את האפר. רש&quot;י מסביר: אף שהחבלה מקלקלת אצל הנחבל, היא מתקנת אצל הכלב.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש רבנו שמואל, וקושיה</h3><p>רבנו שמואל פירש: רבי אבהו סובר כרבי שמעון, שמקלקל בחבורה חייב. ורבי יוחנן סובר כרבי יהודה, שמקלקל בחבורה ובהבערה פטור, ומי שצריך לכלבו ולאפרו אינו נחשב מקלקל, ולכן חייב גם לרבי יהודה. וכך משמע גם מפירוש רש&quot;י בהמשך. התוספות מקשים: אם כך, למה אמר לו &quot;צא ושנה בחוץ&quot;? וכי מפני שרבי יוחנן סובר כרבי יהודה, משתיקים את מי ששנה כרבי שמעון?</p></li><li><h3><span class="w">תוספות</span> · התוספות: המחלוקת היא בדעת רבי שמעון</h3><p>לכן נראה לתוספות שרבי אבהו ורבי יוחנן חולקים בדעת רבי שמעון. לרבי אבהו, רבי שמעון מחייב חובל ומבעיר גם כשאינם צריכים לכלבו ולאפרו, כי הוא לומד ממילה ומשריפת בת כהן. לרבי יוחנן, גם רבי שמעון מחייב רק כשיש קצת תיקון, כמו בצריך לכלבו ולאפרו, שהרי גם במילה ובשריפה יש קצת תיקון, צורך מצווה.</p><p>ולרבי יהודה, לפי התוספות, גם צריך לכלבו ולאפרו פטור. אין זה תיקון חשוב, כי אין דרך לחבול בחברו כדי לתת לכלב, או לשרוף גדיש בשביל האפר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ומה עם השוחט?</h3><p>כל שוחט מקלקל, כמו שאמרו במסכת חולין: בסכין של עבודה זרה מותר לשחוט. ובכל זאת רבי יהודה מודה שהשוחט בשבת חייב. התוספות מסבירים שרק לעניין עבודה זרה השחיטה נחשבת קלקול. שם נאמר &quot;ולא ידבק בידך מאומה מן החרם&quot;, והשוחט בסכין אינו נחשב נהנה ממנה, כי הקלקול שבשחיטה גדול מן התיקון שבה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש רבנו תם</h3><p>רבנו תם מפרש למה לרבי יהודה צריך לכלבו ולאפרו נחשב מקלקל: התיקון אינו בא באותה שעה אלא אחר כך. אחרי החבלה בא הדם, ואחרי ההבערה בא האפר. אבל בשחיטה התיקון בא בשעת הקלקול, שהרי היא מוציאה את הבהמה מאיסור אבר מן החי. וכך גם הקורע כדי להטיל אימה על בני ביתו, וההורג מזיקים, חייבים לרבי יהודה, כי התיקון בא בשעת הקלקול. ולרבי שמעון ההורג מזיקים פטור, כי זו מלאכה שאינה צריכה לגופה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קורע על מנת לתפור</h3><p>ומה עם הקורע על מנת לתפור והמוחק על מנת לכתוב, שחייבים לדעת הכול, אף שהתיקון אינו בא בשעת הקלקול? שם הקלקול גורם לתיקון טוב יותר בסוף, וזה תיקון גמור, כי אי אפשר לעשות את התיקון אלא על ידי הקלקול.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיה על רבי אבהו</h3><p>לפי רבי אבהו, רבי שמעון מחייב גם כשאינו צריך לכלבו כלל. אבל אז זו מלאכה שאינה צריכה לגופה, ורבי שמעון פוטר עליה. הגמרא במסכת סנהדרין מקשה בדיוק כך: מי שאמר שמקלקל בחבורה חייב הוא רבי שמעון, והרי הוא אמר שמלאכה שאינה צריכה לגופה פטור.</p></li><li><h3><span class="w">תוספות</span> · התוספות: התשובה, איסורי הנאה</h3><p>גם מקלקל גמור יכול להיות צריך לגופה. למשל, מי שחבל או הבעיר בדבר שאסור בהנאה, וחשב שיוכל לתת לכלבו או לבשל בו קדירה. ובמילה ובשריפת בת כהן, לרבי אבהו צורך המצווה אינו נחשב תיקון, ובכל זאת הוא עושה את המלאכה לצריכה לגופה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: במה זה שונה מחופר גומא</h3><p>ועוד שואלים: איך צריך לכלבו ולאפרו נחשב צריך לגופה? הרי חופר גומא שצריך רק את העפר פטור. והתשובה: החובל צריך את נטילת הנשמה, הוא הדם שנותן לכלבו, כי &quot;הדם הוא הנפש&quot;. והמבעיר צריך את ההבערה כדי לעשות אפר, כמו מבעיר כדי לבשל קדירה. אבל הגומא נעשית מאליה, ואין לו ממנה שום הנאה.</p></li><li><h3><span class="w">גמרא</span> · והרי שנינו: כל המקלקלין פטורין</h3><p>הגמרא מקשה על רבי אבהו: הרי שנינו במשנה &quot;כל המקלקלין פטורין&quot;, ומשמע אפילו חובל ומבעיר. התשובה: המשנה היא דעת רבי יהודה, והברייתא היא דעת רבי שמעון.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: המשנה כרבי יהודה</h3><p>לרבי יהודה מקלקל בחבורה פטור, ורש&quot;י כותב שלא התפרש היכן נאמר זה. והוא מוסיף את דעתו: רבי יהודה אומר שמלאכה שאינה צריכה לגופה חייב עליה. לכן לדעתו חובל שצריך לכלבו ומבעיר שצריך לאפרו חייבים, כי אף שהם מקלקלים במלאכה עצמה, הם מתקנים אצל אחרים. אבל מקלקל שאינו מתקן כלום פטור.</p><p>ואף שאת הרישא של המשנה, &quot;קורע על מתו פטור&quot; בלשון רש&quot;י, העמידה הגמרא כרבי שמעון, הסיפא, &quot;כל המקלקלין פטורין&quot;, היא כרבי יהודה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: הברייתא כרבי שמעון</h3><p>רבי שמעון אומר שמלאכה שאינה צריכה לגופה פטור עליה. לכן לדעתו כל חובל ומבעיר הוא מקלקל, ואפילו המבעיר עצים לקדירתו מקלקל את העצים. מה שהוא מתקן אצל אחרים אינו נחשב, כי זו מלאכה שאינה צריכה לגופה. ובכל זאת הוא חייב, כי מקלקל בחבלה ובהבערה חייב, כמו שהגמרא לומדת מיד.</p></li><li><h3><span class="w">גמרא</span> · רבי שמעון לומד ממילה</h3><p>מה טעמו של רבי שמעון? מכיוון שהיה צריך פסוק כדי להתיר מילה בשבת, משמע שחובל בעלמא חייב. רש&quot;י מסביר: הפסוק הוא &quot;וביום השמיני&quot;, המילה &quot;ביום&quot; מיותרת ומלמדת שמלים אפילו בשבת. ומילה היא חבלה, ומכאן ששאר המקלקלים בחבורה חייבים.</p></li><li><h3><span class="w">גמרא</span> · ומשריפת בת כהן</h3><p>ומכיוון שהתורה אסרה הבערה בשבת לעניין שריפת בת כהן, &quot;שמע מינה&quot;, למד מכאן, שמבעיר בעלמא חייב. רש&quot;י מציין שהאיסור לשרוף אותה בשבת נלמד בהמשך המסכת, בפרק &quot;רבי אליעזר&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה צריך את המילה?</h3><p>התוספות שואלים: למה ללמוד ממילה? אפשר ללמוד הכול משריפת בת כהן, שאינה דוחה את השבת. הרי בהבערה שלה יש נטילת נשמה, וגם החובל חייב רק משום נטילת נשמה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שתי תשובות</h3><p>א&#x27;: על מקלקל בחבורה אי אפשר ללמוד משריפת בת כהן, &quot;דהתם התיקון בא בשעת הקלקול&quot;, כלומר בנטילת הנשמה שבה התיקון בא באותה שעה, ואין זה קלקול. אבל על מקלקל בהבערה אפשר ללמוד ממנה, כי התיקון בא רק אחרי ההבערה, וכמו שפירשו למעלה, תיקון שבא אחר כך אינו מוציא את המעשה מכלל קלקול. ב&#x27;: אילו לא למדנו ממילה שמקלקל בחבורה חייב, היינו אומרים שהריגה בבית דין דוחה את השבת, כי אינה מלאכה, ורק ההבערה נתמעטה, מפני שמקלקל בהבערה חייב.</p></li><li><h3><span class="w">גמרא</span> · ורבי יהודה: שם הוא מתקן</h3><p>ורבי יהודה, איך הוא מסביר את הפסוקים? במילה ובשריפה הוא מתקן, ולא מקלקל. כמו שאמר רב אשי: מה לי לתקן מילה, מה לי לתקן כלי. ומה לי לבשל פתילה, מה לי לבשל סממנים.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: תיקון באדם</h3><p>גם המל מתקן, את האדם, ויש מלאכה בתיקון כזה, כמו בתיקון כלי.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: בישול הפתילה</h3><p>בשריפת בת כהן מדליקים פתילה של עופרת ונותנים אותה לתוך פיה. זו דרך של בישול, והוא חייב על הבישול, כי הוא אינו מקלקל את העופרת בבישולה אלא מתקן ומצרף אותה. והסממנים הם אלה שבישלו במלאכת המשכן.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רב אשי מסביר את רבי יהודה</h3><p>רב אשי אינו אומר את דבריו מפני שהוא עצמו סובר כרבי יהודה. הוא רק מפרש את שיטת רבי יהודה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש שנדחה</h3><p>אין לפרש שכמו שבישול הסממנים משביח אותם, כך הבישול משביח את הפתילה. אם זה הטעם של רבי יהודה, מניין ששאר מיתות בית דין אינן דוחות שבת? בהן אין פתילה לתקן. ועוד: מניין ששריפת בת כהן עצמה אינה דוחה שבת, כשתיקנו את הפתילה מאתמול?</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש רבנו יצחק</h3><p>רבנו יצחק מפרש: כמו שבישול סממנים לצורך צביעת בגד נחשב תיקון, כך בישול הפתילה לצורך השריפה. ומכאן לומדים שכל מיתות בית דין נחשבות תיקון, משום המצווה. שהרי אילו השריפה עצמה לא נחשבה תיקון, גם בישול הפתילה לא היה נאסר, כי הוא נעשה רק בשבילה.</p><p>ובאותה דרך, מוסיפים התוספות, המוציא מעדר כדי לחפור בו קבר למת דינו לרבי שמעון כדין המוציא כיס לקבל בו זיבה, שנזכר בפרק הראשון של המסכת. גם שם הכלי מוצא רק לצורך דבר אחר, והולכים אחרי אותו דבר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הבערה ללאו או לחלק</h3><p>עוד שואלים התוספות: לרבי יהודה מובן מניין ש&quot;הבערה ללאו יצאת או לחלק&quot;, כלומר שהיא יצאה מכלל המלאכות ללמד שהיא לאו בלבד, או ללמד שחייבים על כל מלאכה בפני עצמה: התורה לא כתבה &quot;לא תעשה מלאכה בכל מושבותיכם&quot; אלא פירטה הבערה. אבל לרבי שמעון הפסוק נחוץ לחייב מקלקל בהבערה. מניין לו אם כן שיצאה ללאו או לחלק? ואין לומר שהוא לומד מ&quot;אחת מהנה&quot; כרבי יוסי, כי בפרק &quot;הבונה&quot; רבי שמעון חולק במפורש על רבי יוסי ודורש את הפסוק לדרשה אחרת.</p></li><li><h3><span class="w">תוספות</span> · התוספות: התשובה, כשמואל</h3><p>רבי שמעון לומד &quot;לחלק&quot; מן המקום שממנו לומד זאת שמואל בפרק &quot;כלל גדול&quot;. וכך מתיישבת שם הקושיה &quot;שמואל כמאן&quot;, לא כרבי נתן ולא כרבי יוסי: הוא סובר כרבי שמעון. ומה שאמרו במסכת יבמות שהיה צריך פסוק לאסור את שריפת בת כהן, כי היינו מתירים בקל וחומר מעבודת המקדש שדוחה שבת, זה לפי רבי יהודה, שרואה בזה תיקון. ואילו אצל רבי שמעון, פסוק ההבערה בא ללמד שכל מקלקל בהבערה חייב.</p></li><li><h3><span class="w">תוספות</span> · התוספות: על פירוש רש&quot;י</h3><p>רש&quot;י מפרש שהמחלוקת במקלקל בחבורה נובעת מן המחלוקת במלאכה שאינה צריכה לגופה. מכאן משמע שלרבי שמעון אין צורך בצריך לכלבו ולאפרו, ולפי זה רבי אבהו כרבי שמעון ורבי יוחנן כרבי יהודה. התוספות כותבים שזה אינו נראה, כמו שפירשו למעלה. ולדעתם צריך לומר שהמחלוקת במקלקל בחבורה אינה נובעת מן המחלוקת ההיא, אלא הייתה קבלה בידם.</p></li><li><h3><span class="w">גמרא</span> · שיעור המלבן: כפול או פשוט</h3><p>המשנה נתנה למלבן, למנפץ, לצובע ולטווה שיעור אחד: &quot;כמלא רחב הסיט כפול&quot;. רב יוסף &quot;מחוי&quot;, הראה בידו, את השיעור כפול. ורב חייא בר אמי הראה אותו פשוט.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: איך כל אחד מראה</h3><p>&quot;אצבע&quot; היא האצבע המורה, ו&quot;אמה&quot; היא האצבע האמצעית. לפי רש&quot;י, רב יוסף מבין ש&quot;הסיט כפול&quot; שבמשנה הוא כפול ממש: הרווח הקצר שבין האצבע לאמה, פעמיים. רב חייא בר אמי מראה את הרווח שבין הגודל לאצבע, פעם אחת. זהו ה&quot;כפול&quot; של המשנה, כי יש בו כפליים מן הרווח שבין האמה לאצבע.</p></li><li><h3><span class="w">משנה</span> · משנה: הצד צפור למגדל</h3><p>משנה חדשה, על מלאכת צידה. רבי יהודה אומר: הצד צפור למגדל וצבי לבית, חייב. וחכמים אומרים: צפור למגדל, והמשך דבריהם בעמוד הבא.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: מתי הצפור והצבי ניצודים</h3><p>הצפור ניצודה כשהכניס אותה למגדל, וזו צידתה. רש&quot;י מביא ל&quot;מגדל&quot; מילה בלעז; הכוונה כאן לכלי סגור כעין ארון, ולא לבניין. אבל אם הכניס אותה לבית, אין היא ניצודה בכך, כי היא יוצאת דרך החלונות. והצבי ניצוד כשהכניס אותו לביתו ונעל בפניו. אבל אם הכניס אותו לגינה או לחצר, אין זו צידה.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>האגדה על מות אחד האחים הסתיימה. רבי אבהו שנה שחובל ומבעיר חייבים אף שהם מקלקלים, ורבי יוחנן העמיד זאת בצריך לכלבו ולאפרו. הגמרא תלתה זאת במחלוקת רבי יהודה ורבי שמעון, והביאה את לימוד רבי שמעון ממילה ומשריפת בת כהן. העמוד הבא ממשיך את דברי חכמים במשנה: צבי לגינה, לחצר ולביברים חייב, ורבן שמעון בן גמליאל אומר שלא כל הביברים שווים.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-106b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "ידאגו כל האחין כולן אחד מבני חבורה שמת תדאג כל החבורה כולה אמרי לה דמת גדול ואמרי לה דמת קטן:", false, ""], ["G2a", "וכל המקלקלין פטורין: תני ר' אבהו קמיה דר' יוחנן כל המקלקלין פטורין חוץ מחובל ומבעיר א\"ל פוק תני לברא", false, ""], ["G2b", "חובל ומבעיר אינה משנה ואם ת\"ל משנה חובל בצריך לכלבו מבעיר בצריך לאפרו", false, ""], ["G3a", "והאנן תנן כל המקלקלין פטורין מתניתין רבי יהודה ברייתא רבי שמעון", false, ""], ["G3b", "מ\"ט דר' שמעון מדאיצטריך קרא למישרא מילה הא חובל בעלמא חייב", false, ""], ["G4", "ומדאסר רחמנא הבערה גבי בת כהן שמע מינה מבעיר בעלמא חייב", false, ""], ["G5", "ורבי יהודה התם מתקן הוא כדרב אשי דאמר רב אשי מה לי לתקן מילה מה לי לתקן כלי מה לי לבשל פתילה מה לי לבשל סמנין:", false, ""], ["G6", "שיעור המלבן כו': רב יוסף מחוי כפול רב חייא בר אמי מחוי פשוט:", false, ""], ["G7", "ר' יהודה אומר הצד צפור למגדל וצבי לבית חייב וחכ\"א צפור למגדל", false, "מתני׳"]], "R": [["R1", "ידאגו", "ייראו מן המיתה:", false], ["R2", "ואמרי לה דמת קטן", "שבקלקלה מתחילין מן הקטן:", false], ["R3", "דמת גדול", "יש לדאוג הואיל ושלטה מדת הדין בראש הבית:", false], ["R4", "חוץ מחובל", "באדם דמקלקל הוא וחייב דתנן (ב\"ק פז.) החובל בחברו בשבת פטור מלשלם מפני שנדון בנפשו:", false], ["R5", "ומבעיר", "את הגדיש מקלקל הוא וחייב כדתנן (שם דף לד:) והוא שהדליק את הגדיש פטור מן תשלומין מפני שנדון בנפשו:", false], ["R6", "אינה משנה", "דאם מקלקל הוא פטור:", false], ["R7", "בצריך", "לדם היוצא מן החבלה לכלבו ואם מקלקל הוא אצל נחבל מתקן הוא אצל הכלב:", false], ["R8", "והא תנן כל המקלקלין פטורין", "ואפי' חובל ומבעיר וקשיין אהדדי ולר' אבהו פריך:", false], ["R9", "מתני' ר' יהודה", "דאית ליה מקלקל בחבורה פטור ולא איתפרש היכא ול\"נ מתני' ר' יהודה היא דאמר מלאכה שאינה צריכה לגופה חייב עליה הלכך חיובא דחובל בצריך לכלבו ומבעיר בצריך לאפרו משכחת לה דאע\"פ דמקלקל הוא אצל מלאכה עצמה מתקן הוא אצל אחרים ולר' יהודה כי האי גוונא מלאכה הוא משום תקון אחרים אבל מקלקל ואינו מתקן פטור ואע\"ג דרישא דמתני' אוקימנא כר\"ש דקתני קורע על מתו פטור סיפא ר\"י:", false], ["R10", "וברייתא ר\"ש היא", "דאמר מלאכה שאינה צריכה לגופה פטור עליה הלכך אין לך חובל ומבעיר שאין מקלקל ואפי' מבעיר עצים לקדרתו מקלקל הוא אצל עצים ומה שהוא מתקן אצל אחרים לר\"ש לא חשיב דהא מלאכה שאינה צריכה לגופה היא אלא משום דמקלקל בחבלה ובהבערה חייב כדיליף לקמיה:", false], ["R11", "מדאיצטריך קרא", "וביום השמיני ביום יתירא ואפי' בשבת ומילה חובל הוא מכלל דשאר מקלקלין בחבורה חייב:", false], ["R12", "ומדאסר רחמנא הבערה דבת כהן", "בשבת (לקמן בפרק ר' אליעזר):", false], ["R13", "מה לי מתקן כלי", "הא נמי מתקן גברא הוא ויש מלאכה בתיקון זה:", false], ["R14", "בישול פתילה", "שהוא מדליק פתילה של אבר ונותנה לתוך פיה ודרך בישול הוא זה וחייב על הבישול שאינו מקלקל האבר בבישולו אלא מתקן וצורף:", false], ["R15", "סמנין", "של מלאכת המשכן:", false], ["R16", "רב יוסף מחוי", "האי הסיט כפול דמתני' כפול ממש בריוח קצר שבין אצבע לאמה משער שני פעמים:", false], ["R17", "מחוי פשוט", "בריוח שבין גודל לאצבע פעם אחד הוא כפול דמתניתא שיש בו כפלים כאותו שבין אמה לאצבע:", false], ["R18", "מתני' הצד צפור", "עד שהכניסו למגדל משטיי\"ר בלע\"ז חייב דזו היא צידתו אבל אם הכניסו לבית אינו ניצוד בכך שיוצא לו דרך חלונות:", false], ["R19", "וצבי", "ניצוד משהכניסו לביתו ונעל בפניו אבל אם הכניסו לגינה או לחצר אין זו צידה:", false]], "T": [["T1a", "חוץ מחובל ומבעיר א\"ל פוק תני לברא כו'", "פי' רבינו שמואל דר' אבהו סבר כר\"ש דאמר מקלקל בחבורה חייב ור' יוחנן סבר לה כר' יהודה דאמר מקלקל בחבורה ובהבערה פטור וצריך לכלבו ולאפרו לא חשיב מקלקל וחייב אפי' לר' יהודה וכן משמע בסמוך מתוך פי' רש\"י וקשה דא\"כ אמאי א\"ל פוק תני לברא דאטו משום דס\"ל כר' יהודה מאן דתנא כר\"ש משתקינן ליה דכה\"ג פריך בפ\"ק דחולין (טו.)", false], ["T1b", "", "ע\"כ נראה דר' אבהו ור' יוחנן אליבא דר\"ש פליגי דר' אבהו סבר דחובל ומבעיר אע\"פ שאינו צריך לכלבו ולאפרו חייב לר' שמעון דגמר ממילה והבערת בת כהן ור' יוחנן סבר דר\"ש נמי לא מחייב אא\"כ איכא קצת תיקון כגון דצריך לכלבו ולאפרו דמילה והבערה איכא קצת תיקון שהוא צורך מצוה אבל לר' יהודה אפי' צריך לאפרו ולכלבו פטור דאין זה תיקון חשוב דאין דרך לחבול בחבירו כדי ליתן לכלבו או לשרוף גדיש בשביל האפר", false], ["T1c", "", "אע\"ג דכל שוחט מקלקל הוא כדאמרי' בפ\"ק דחולין (דף ח.) סכין של ע\"ז מותר לשחוט בה מודה ר' יהודה לענין שבת דחייב דדוקא לענין ע\"ז חשוב מקלקל דכתיב ולא ידבק בידך מאומה מן החרם ולא חשיב ליה נהנה כיון דקלקולו יתר על תקונו", false], ["T1d", "", "ור\"ת מפרש דהא דחשיב לר' יהודה מקלקל שצריך לכלבו ואפרו לפי שאין התיקון בא באותה שעה אלא לאחר מכאן דלאחר שנעשית חבורה בא הדם ולאחר שכלתה ההבערה בא האפר אבל בשוחט בשעת הקלקול בא לו התיקון שמוציאה מידי אבר מן החי וקורע למירמא אימתא אאינשי דביתיה חשוב ליה לר\"י נמי תיקון לפי שבשעת הקלקול בא לו התיקון וכן בהריגת המזיקין (לקטן קכא:) חייב לר' יהודה דבא התיקון בשעת הקלקול ולר\"ש פטור משום דהויא מלאכה שאינה צריכה לגופה", false], ["T1e", "", "וקורע ע\"מ לתפור ומוחק ע\"מ לכתוב דמיחייב לכ\"ע אע\"ג שבשעת הקלקול אינו בא התיקון היינו משום שהקלקול גורם תיקון יותר טוב לבסוף ותיקון גמור הוא שהרי אינו יכול לעשות התיקון אלא ע\"י הקלקול:", false], ["T2a", "בחובל וצריך לכלבו כו'", "וא\"ת ור' אבהו דמחייב אפי' באין צריך לכלבו כיון דאין צריך כלל הויא מלאכה שאינה צריכה לגופה דאע\"ג דמחייב ר\"ש מקלקל בחבורה מ\"מ בעי צריכה לגופה כדאמרי' בריש הנחנקין (סנהדרין פד:) מאן שמעת ליה דאמר מקלקל בחבורה חייב ר\"ש האמר מלאכה שאינה צריכה לגופה פטור (לקמן שבת דף קכא:) ובס\"פ ספק אכל (כריתוח דף כ:)", false], ["T2b", "", "וי\"ל דאפי' במקלקל גמור משכחת לה דהויא צריכה לגופה כגון חובל ומבעיר באיסורי הנאה שסבר שיכול ליתן לכלבו ולבשל בו קדרה ור' אבהו אע\"ג דלא חשיב צורך מצוה תיקון מ\"מ צריכה לגופה חשיב", false], ["T2c", "", "וא\"ת צריך לכלבו ולאפרו היכי חשיב צריכה לגופה מ\"ש מחופר גומא ואינו צריך אלא לעפרה וי\"ל דלא דמי דהכא הוא צריך לנטילת נשמה כדי לתת לכלבו דהיינו הדם כי הדם הוא הנפש ומבעיר נמי צריך להבערה כדי לעשות אפר כמו מבעיר כדי לבשל קדרה אבל חופר הגומא נעשית מאליה ואינו נהנה ממנה כלום:", false], ["T3a", "מדאצטריך קרא למישרי מילה כו'", "וא\"ת למה לי למילף ממילה נילף כולה מילתא מהבערת בת כהן דלא דחי שבת דבהבערה איכא נטילת נשמה וחובל נמי לא מחייב אלא משום נטילת נשמה", false], ["T3b", "", "וי\"ל דלענין מקלקל בחבורה ליכא למילף מהבערה דהתם התיקון בא בשעת הקלקול אבל לענין מקלקל בהבערה יליף שפיר דאחר הבערה בא התיקון כדפי' אי נמי אי לאו דילפינן ממילה דמקלקל בחבורה חייב ה\"א דרציחה דוחה את השבת דלאו מלאכה היא והבערה לחודה היא דאימעטה משום דמקלקל בהבערה חייב:", false], ["T4", "דאמר רב אשי מה לי לתקן מילה מה לי לתקן כלי", "לאו משום דסבר כר' יהודה אלא מפרש הוא אליבא דר' יהודה:", false], ["T5a", "מה לי לבשל פתילה מה לי לבשל סמנין", "אין לפרש כמו שבישול סממנין מתקנן להיות יותר חשובים כך פתילה חשובה יותר ע\"י בישול דאי היינו טעמא דר' יהודה שאר מיתות ב\"ד דלא דחו שבת מנלן כיון דלא שייך בהו תיקון דהבערה לא אסרה תורה אלא משום תיקון פתילה ועוד שריפת בת כהן גופה מנלן דלא דחינן היכא דתיקן הפתילה מאתמול", false], ["T5b", "", "ואומר ר\"י דה\"פ מה לי בישול פתילה לצורך שריפת בת כהן מה לי בישול סממנין לצורך צביעת בגד דכי היכי דבישול סממנין לצורך צביעה חשוב תיקון ה\"נ בישול פתילה לצורך שריפה ומהכא נפקא לן שפיר דכל שאר מיתות ב\"ד חשוב תיקון משום מצוה דאי לאו שריפה עצמה חשיבא תיקון משום בישול פתילה לא הוה אסורה אע\"פ שמתקנת בכך דכיון שאינה אלא משום שריפה לא הוה חשיב תיקון ולא מיחייב וכן מוציא מרא לחפור לקבור בו מת לר\"ש כמו מוציא כיס לקבל בו זיבה בפ\"ק (דף יא.)", false], ["T5c", "", "וא\"ת בשלמא לר' יהודה שפיר שמעינן דהבערה ללאו יצאת או לחלק מדלא כתב לא תעשה מלאכה בכל מושבותיכם וכתב הבערה ש\"מ ללאו יצאת או לחלק כדפרישית בפרק כלל גדול (לעיל שבת דף ע.) [ד\"ה הבערה] אלא לר\"ש דאיצטריך למיכתב הבערה לחייב מקלקל בהבערה מנא ליה דיצאת ללאו או לחלק וליכא למימר דנפקא ליה לחלק מאחת מהנה כדמפיק ליה ר' יוסי דהא בפרק הבונה (לקמן שבת דף קיג:) פליג ר\"ש בהדיא אר' יוסי ודריש ליה לדרשה אחריתי", false], ["T5d", "", "וי\"ל דנפקא ליה לחלק מהיכא דנפקא ליה לשמואל בפרק כלל גדול (לעיל שבת דף ע.) והשתא אתי שפיר הא דהוה קשה שמואל דאמר כמאן לא כר' נתן ולא כר' יוסי דהשתא כר\"ש ס\"ל ובפ\"ק דיבמות (דף ו:) קאמר דאיצטריך קרא למיסר הבערת בת כהן משום דהוה סלקא דעתך למישרי מקל וחומר מעבודה דדחיא שבת היינו כר' יהודה דחשיב ליה תיקון אבל לר' שמעון איצטריך קרא בהבערה לחייב כל מקלקל בהבערה", false], ["T5e", "", "הך פלוגתא דמקלקל בחבורה מפרש רש\"י דנפקא לן מפלוגתא שאינה צריכה לגופה משמע דלא בעי לר' שמעון צריך לכלבו ולאפרו ולפי זה צריך לומר דר' אבהו כר\"ש ור' יוחנן כר' יהודה ואין נראה כדפי' לעיל וצ\"ל דהך פלוגתא דמקלקל בחבורה קבלה היתה בידם:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': סוף האגדה, וחזרה למשנה", "x": "העמוד הקודם עסק בדברי אגדה על מות אדם כשר ועל ההספד, ונקטע באמצע מימרה של רבי חייא בר אבא בשם רבי יוחנן: \"אחד מן האחין שמת\". כאן המימרה נגמרת. אחריה הגמרא חוזרת לדיני המשנה: המקלקל בשבת, שיעור המלבן, ובסוף העמוד מתחילה משנה חדשה על צידה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "כשאחד מן האחים מת", "x": "כשאחד מן האחים מת, \"ידאגו כל האחין כולן\". וכשאחד מבני חבורה מת, תדאג כל החבורה כולה. רש\"י מפרש \"ידאגו\": יפחדו מן המיתה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G1", "R2", "R3"], "t": "הגדול או הקטן", "x": "יש אומרים שמדובר כשמת הגדול, ויש אומרים כשמת הקטן. רש\"י מסביר את שתי הלשונות. אם מת הגדול, יש לדאוג, כי מידת הדין שלטה בראש הבית. ואם מת הקטן, יש לדאוג, כי בפורענות מתחילים מן הקטן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a"], "t": "רבי אבהו: חוץ מחובל ומבעיר", "x": "המשנה אמרה: \"וכל המקלקלין פטורין\". רבי אבהו שנה לפני רבי יוחנן ברייתא: כל המקלקלים פטורים, חוץ מחובל ומבעיר. אמר לו רבי יוחנן: \"פוק תני לברא\", צא ושנה זאת בחוץ. כלומר, הוא דוחה את הברייתא הזו.", "a": "מקלקל הוא מי שעושה מלאכה בשבת בדרך של הרס ולא של תיקון."}, {"w": "רש\"י", "cols": false, "hl": ["G2a", "R4", "R5"], "t": "רש\"י: למה חובל ומבעיר מקלקלים", "x": "החובל באדם מקלקל, ובכל זאת חייב, כמו ששנינו: החובל בחברו בשבת פטור מלשלם, מפני שהוא נידון בנפשו. וכך המבעיר את הגדיש מקלקל, ובכל זאת חייב, כמו ששנינו: מי שהדליק את הגדיש בשבת פטור מתשלומים, מפני שנידון בנפשו. \"נידון בנפשו\" פירושו שהוא חייב מיתה על חילול השבת, ומכאן שהוא חייב על המלאכה אף שהיא קלקול.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2b", "R6", "R7"], "t": "ואם זו משנה, בצריך לכלבו", "x": "רבי יוחנן ממשיך: \"חובל ומבעיר אינה משנה\", אין זו ברייתא שיש לסמוך עליה, כי אם הם מקלקלים, הם פטורים. ואם תאמר שהיא משנה, מדובר בחובל שצריך את הדם לכלבו, ובמבעיר שצריך את האפר. רש\"י מסביר: אף שהחבלה מקלקלת אצל הנחבל, היא מתקנת אצל הכלב.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T1a"], "t": "התוספות: פירוש רבנו שמואל, וקושיה", "x": "רבנו שמואל פירש: רבי אבהו סובר כרבי שמעון, שמקלקל בחבורה חייב. ורבי יוחנן סובר כרבי יהודה, שמקלקל בחבורה ובהבערה פטור, ומי שצריך לכלבו ולאפרו אינו נחשב מקלקל, ולכן חייב גם לרבי יהודה. וכך משמע גם מפירוש רש\"י בהמשך. התוספות מקשים: אם כך, למה אמר לו \"צא ושנה בחוץ\"? וכי מפני שרבי יוחנן סובר כרבי יהודה, משתיקים את מי ששנה כרבי שמעון?", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "G2b", "T1b"], "t": "התוספות: המחלוקת היא בדעת רבי שמעון", "x": "לכן נראה לתוספות שרבי אבהו ורבי יוחנן חולקים בדעת רבי שמעון. לרבי אבהו, רבי שמעון מחייב חובל ומבעיר גם כשאינם צריכים לכלבו ולאפרו, כי הוא לומד ממילה ומשריפת בת כהן. לרבי יוחנן, גם רבי שמעון מחייב רק כשיש קצת תיקון, כמו בצריך לכלבו ולאפרו, שהרי גם במילה ובשריפה יש קצת תיקון, צורך מצווה.", "a": "ולרבי יהודה, לפי התוספות, גם צריך לכלבו ולאפרו פטור. אין זה תיקון חשוב, כי אין דרך לחבול בחברו כדי לתת לכלב, או לשרוף גדיש בשביל האפר."}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T1c"], "t": "התוספות: ומה עם השוחט?", "x": "כל שוחט מקלקל, כמו שאמרו במסכת חולין: בסכין של עבודה זרה מותר לשחוט. ובכל זאת רבי יהודה מודה שהשוחט בשבת חייב. התוספות מסבירים שרק לעניין עבודה זרה השחיטה נחשבת קלקול. שם נאמר \"ולא ידבק בידך מאומה מן החרם\", והשוחט בסכין אינו נחשב נהנה ממנה, כי הקלקול שבשחיטה גדול מן התיקון שבה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2b", "T1d"], "t": "התוספות: פירוש רבנו תם", "x": "רבנו תם מפרש למה לרבי יהודה צריך לכלבו ולאפרו נחשב מקלקל: התיקון אינו בא באותה שעה אלא אחר כך. אחרי החבלה בא הדם, ואחרי ההבערה בא האפר. אבל בשחיטה התיקון בא בשעת הקלקול, שהרי היא מוציאה את הבהמה מאיסור אבר מן החי. וכך גם הקורע כדי להטיל אימה על בני ביתו, וההורג מזיקים, חייבים לרבי יהודה, כי התיקון בא בשעת הקלקול. ולרבי שמעון ההורג מזיקים פטור, כי זו מלאכה שאינה צריכה לגופה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2b", "T1e"], "t": "התוספות: קורע על מנת לתפור", "x": "ומה עם הקורע על מנת לתפור והמוחק על מנת לכתוב, שחייבים לדעת הכול, אף שהתיקון אינו בא בשעת הקלקול? שם הקלקול גורם לתיקון טוב יותר בסוף, וזה תיקון גמור, כי אי אפשר לעשות את התיקון אלא על ידי הקלקול.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T2a"], "t": "התוספות: קושיה על רבי אבהו", "x": "לפי רבי אבהו, רבי שמעון מחייב גם כשאינו צריך לכלבו כלל. אבל אז זו מלאכה שאינה צריכה לגופה, ורבי שמעון פוטר עליה. הגמרא במסכת סנהדרין מקשה בדיוק כך: מי שאמר שמקלקל בחבורה חייב הוא רבי שמעון, והרי הוא אמר שמלאכה שאינה צריכה לגופה פטור.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T2b"], "t": "התוספות: התשובה, איסורי הנאה", "x": "גם מקלקל גמור יכול להיות צריך לגופה. למשל, מי שחבל או הבעיר בדבר שאסור בהנאה, וחשב שיוכל לתת לכלבו או לבשל בו קדירה. ובמילה ובשריפת בת כהן, לרבי אבהו צורך המצווה אינו נחשב תיקון, ובכל זאת הוא עושה את המלאכה לצריכה לגופה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2b", "T2c"], "t": "התוספות: במה זה שונה מחופר גומא", "x": "ועוד שואלים: איך צריך לכלבו ולאפרו נחשב צריך לגופה? הרי חופר גומא שצריך רק את העפר פטור. והתשובה: החובל צריך את נטילת הנשמה, הוא הדם שנותן לכלבו, כי \"הדם הוא הנפש\". והמבעיר צריך את ההבערה כדי לעשות אפר, כמו מבעיר כדי לבשל קדירה. אבל הגומא נעשית מאליה, ואין לו ממנה שום הנאה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3a", "R8"], "t": "והרי שנינו: כל המקלקלין פטורין", "x": "הגמרא מקשה על רבי אבהו: הרי שנינו במשנה \"כל המקלקלין פטורין\", ומשמע אפילו חובל ומבעיר. התשובה: המשנה היא דעת רבי יהודה, והברייתא היא דעת רבי שמעון.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G3a", "R9"], "t": "רש\"י: המשנה כרבי יהודה", "x": "לרבי יהודה מקלקל בחבורה פטור, ורש\"י כותב שלא התפרש היכן נאמר זה. והוא מוסיף את דעתו: רבי יהודה אומר שמלאכה שאינה צריכה לגופה חייב עליה. לכן לדעתו חובל שצריך לכלבו ומבעיר שצריך לאפרו חייבים, כי אף שהם מקלקלים במלאכה עצמה, הם מתקנים אצל אחרים. אבל מקלקל שאינו מתקן כלום פטור.", "a": "ואף שאת הרישא של המשנה, \"קורע על מתו פטור\" בלשון רש\"י, העמידה הגמרא כרבי שמעון, הסיפא, \"כל המקלקלין פטורין\", היא כרבי יהודה."}, {"w": "רש\"י", "cols": false, "hl": ["G3a", "R10"], "t": "רש\"י: הברייתא כרבי שמעון", "x": "רבי שמעון אומר שמלאכה שאינה צריכה לגופה פטור עליה. לכן לדעתו כל חובל ומבעיר הוא מקלקל, ואפילו המבעיר עצים לקדירתו מקלקל את העצים. מה שהוא מתקן אצל אחרים אינו נחשב, כי זו מלאכה שאינה צריכה לגופה. ובכל זאת הוא חייב, כי מקלקל בחבלה ובהבערה חייב, כמו שהגמרא לומדת מיד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3b", "R11"], "t": "רבי שמעון לומד ממילה", "x": "מה טעמו של רבי שמעון? מכיוון שהיה צריך פסוק כדי להתיר מילה בשבת, משמע שחובל בעלמא חייב. רש\"י מסביר: הפסוק הוא \"וביום השמיני\", המילה \"ביום\" מיותרת ומלמדת שמלים אפילו בשבת. ומילה היא חבלה, ומכאן ששאר המקלקלים בחבורה חייבים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R12"], "t": "ומשריפת בת כהן", "x": "ומכיוון שהתורה אסרה הבערה בשבת לעניין שריפת בת כהן, \"שמע מינה\", למד מכאן, שמבעיר בעלמא חייב. רש\"י מציין שהאיסור לשרוף אותה בשבת נלמד בהמשך המסכת, בפרק \"רבי אליעזר\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3b", "G4", "T3a"], "t": "התוספות: למה צריך את המילה?", "x": "התוספות שואלים: למה ללמוד ממילה? אפשר ללמוד הכול משריפת בת כהן, שאינה דוחה את השבת. הרי בהבערה שלה יש נטילת נשמה, וגם החובל חייב רק משום נטילת נשמה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G3b", "G4", "T3b"], "t": "התוספות: שתי תשובות", "x": "א': על מקלקל בחבורה אי אפשר ללמוד משריפת בת כהן, \"דהתם התיקון בא בשעת הקלקול\", כלומר בנטילת הנשמה שבה התיקון בא באותה שעה, ואין זה קלקול. אבל על מקלקל בהבערה אפשר ללמוד ממנה, כי התיקון בא רק אחרי ההבערה, וכמו שפירשו למעלה, תיקון שבא אחר כך אינו מוציא את המעשה מכלל קלקול. ב': אילו לא למדנו ממילה שמקלקל בחבורה חייב, היינו אומרים שהריגה בבית דין דוחה את השבת, כי אינה מלאכה, ורק ההבערה נתמעטה, מפני שמקלקל בהבערה חייב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "ורבי יהודה: שם הוא מתקן", "x": "ורבי יהודה, איך הוא מסביר את הפסוקים? במילה ובשריפה הוא מתקן, ולא מקלקל. כמו שאמר רב אשי: מה לי לתקן מילה, מה לי לתקן כלי. ומה לי לבשל פתילה, מה לי לבשל סממנים.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5", "R13"], "t": "רש\"י: תיקון באדם", "x": "גם המל מתקן, את האדם, ויש מלאכה בתיקון כזה, כמו בתיקון כלי.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5", "R14", "R15"], "t": "רש\"י: בישול הפתילה", "x": "בשריפת בת כהן מדליקים פתילה של עופרת ונותנים אותה לתוך פיה. זו דרך של בישול, והוא חייב על הבישול, כי הוא אינו מקלקל את העופרת בבישולה אלא מתקן ומצרף אותה. והסממנים הם אלה שבישלו במלאכת המשכן.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5", "T4"], "t": "התוספות: רב אשי מסביר את רבי יהודה", "x": "רב אשי אינו אומר את דבריו מפני שהוא עצמו סובר כרבי יהודה. הוא רק מפרש את שיטת רבי יהודה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5", "T5a"], "t": "התוספות: פירוש שנדחה", "x": "אין לפרש שכמו שבישול הסממנים משביח אותם, כך הבישול משביח את הפתילה. אם זה הטעם של רבי יהודה, מניין ששאר מיתות בית דין אינן דוחות שבת? בהן אין פתילה לתקן. ועוד: מניין ששריפת בת כהן עצמה אינה דוחה שבת, כשתיקנו את הפתילה מאתמול?", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5", "T5b"], "t": "התוספות: פירוש רבנו יצחק", "x": "רבנו יצחק מפרש: כמו שבישול סממנים לצורך צביעת בגד נחשב תיקון, כך בישול הפתילה לצורך השריפה. ומכאן לומדים שכל מיתות בית דין נחשבות תיקון, משום המצווה. שהרי אילו השריפה עצמה לא נחשבה תיקון, גם בישול הפתילה לא היה נאסר, כי הוא נעשה רק בשבילה.", "a": "ובאותה דרך, מוסיפים התוספות, המוציא מעדר כדי לחפור בו קבר למת דינו לרבי שמעון כדין המוציא כיס לקבל בו זיבה, שנזכר בפרק הראשון של המסכת. גם שם הכלי מוצא רק לצורך דבר אחר, והולכים אחרי אותו דבר."}, {"w": "תוספות", "cols": false, "hl": ["G4", "T5c"], "t": "התוספות: הבערה ללאו או לחלק", "x": "עוד שואלים התוספות: לרבי יהודה מובן מניין ש\"הבערה ללאו יצאת או לחלק\", כלומר שהיא יצאה מכלל המלאכות ללמד שהיא לאו בלבד, או ללמד שחייבים על כל מלאכה בפני עצמה: התורה לא כתבה \"לא תעשה מלאכה בכל מושבותיכם\" אלא פירטה הבערה. אבל לרבי שמעון הפסוק נחוץ לחייב מקלקל בהבערה. מניין לו אם כן שיצאה ללאו או לחלק? ואין לומר שהוא לומד מ\"אחת מהנה\" כרבי יוסי, כי בפרק \"הבונה\" רבי שמעון חולק במפורש על רבי יוסי ודורש את הפסוק לדרשה אחרת.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4", "T5d"], "t": "התוספות: התשובה, כשמואל", "x": "רבי שמעון לומד \"לחלק\" מן המקום שממנו לומד זאת שמואל בפרק \"כלל גדול\". וכך מתיישבת שם הקושיה \"שמואל כמאן\", לא כרבי נתן ולא כרבי יוסי: הוא סובר כרבי שמעון. ומה שאמרו במסכת יבמות שהיה צריך פסוק לאסור את שריפת בת כהן, כי היינו מתירים בקל וחומר מעבודת המקדש שדוחה שבת, זה לפי רבי יהודה, שרואה בזה תיקון. ואילו אצל רבי שמעון, פסוק ההבערה בא ללמד שכל מקלקל בהבערה חייב.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2b", "G3a", "T5e"], "t": "התוספות: על פירוש רש\"י", "x": "רש\"י מפרש שהמחלוקת במקלקל בחבורה נובעת מן המחלוקת במלאכה שאינה צריכה לגופה. מכאן משמע שלרבי שמעון אין צורך בצריך לכלבו ולאפרו, ולפי זה רבי אבהו כרבי שמעון ורבי יוחנן כרבי יהודה. התוספות כותבים שזה אינו נראה, כמו שפירשו למעלה. ולדעתם צריך לומר שהמחלוקת במקלקל בחבורה אינה נובעת מן המחלוקת ההיא, אלא הייתה קבלה בידם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6"], "t": "שיעור המלבן: כפול או פשוט", "x": "המשנה נתנה למלבן, למנפץ, לצובע ולטווה שיעור אחד: \"כמלא רחב הסיט כפול\". רב יוסף \"מחוי\", הראה בידו, את השיעור כפול. ורב חייא בר אמי הראה אותו פשוט.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6", "R16", "R17"], "t": "רש\"י: איך כל אחד מראה", "x": "\"אצבע\" היא האצבע המורה, ו\"אמה\" היא האצבע האמצעית. לפי רש\"י, רב יוסף מבין ש\"הסיט כפול\" שבמשנה הוא כפול ממש: הרווח הקצר שבין האצבע לאמה, פעמיים. רב חייא בר אמי מראה את הרווח שבין הגודל לאצבע, פעם אחת. זהו ה\"כפול\" של המשנה, כי יש בו כפליים מן הרווח שבין האמה לאצבע.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G7"], "t": "משנה: הצד צפור למגדל", "x": "משנה חדשה, על מלאכת צידה. רבי יהודה אומר: הצד צפור למגדל וצבי לבית, חייב. וחכמים אומרים: צפור למגדל, והמשך דבריהם בעמוד הבא.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G7", "R18", "R19"], "t": "רש\"י: מתי הצפור והצבי ניצודים", "x": "הצפור ניצודה כשהכניס אותה למגדל, וזו צידתה. רש\"י מביא ל\"מגדל\" מילה בלעז; הכוונה כאן לכלי סגור כעין ארון, ולא לבניין. אבל אם הכניס אותה לבית, אין היא ניצודה בכך, כי היא יוצאת דרך החלונות. והצבי ניצוד כשהכניס אותו לביתו ונעל בפניו. אבל אם הכניס אותו לגינה או לחצר, אין זו צידה.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "האגדה על מות אחד האחים הסתיימה. רבי אבהו שנה שחובל ומבעיר חייבים אף שהם מקלקלים, ורבי יוחנן העמיד זאת בצריך לכלבו ולאפרו. הגמרא תלתה זאת במחלוקת רבי יהודה ורבי שמעון, והביאה את לימוד רבי שמעון ממילה ומשריפת בת כהן. העמוד הבא ממשיך את דברי חכמים במשנה: צבי לגינה, לחצר ולביברים חייב, ורבן שמעון בן גמליאל אומר שלא כל הביברים שווים.", "a": ""}], "audio": "shabbat/daf-106a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

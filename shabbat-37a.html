@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף ל&quot;ז עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-37a.html">
+<meta name="description" content="מסכת שבת, דף ל&quot;ז עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ל\"ז עמוד א'", "url": "https://gemara.co.il/shabbat-37a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף ל&quot;ז עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>כירה</span><span>פרק שלישי</span><span>שבת<b>לז.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-36b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-37b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 71</div>
+  <h1>מסכת שבת, דף ל&quot;ז עמוד א&#x27;</h1>
+  <p class="sub">פרק שלישי, &quot;כירה&quot;. האפשרות שהמשנה עוסקת בהחזרה וחסר בה משפט, ראיות מדברי רב ומברייתא של שתי כירות, ודין סמיכת קדירה לכירה.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ל&quot;ז עמוד א&#x27;, לומדים: "חסורי מיחסרא": אפשר שהמשנה עוסקת בהחזרה; רבי חלבו: "על גבה" ו"תוכה"; שתי כירות: רבי מאיר ורבי יהודה; לסמוך קדירה אל הכירה.</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 4 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. "חסורי מיחסרא": אפשר שהמשנה עוסקת בהחזרה</a><a href="#u2">2. רבי חלבו: "על גבה" ו"תוכה"</a><a href="#u3">3. שתי כירות: רבי מאיר ורבי יהודה</a><a href="#u4">4. לסמוך קדירה אל הכירה</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1a,G1b,G1c">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>"חסורי מיחסרא": אפשר שהמשנה עוסקת בהחזרה</h2>
+  <p class="lead">הגמרא עונה על הקושיה מסוף העמוד הקודם. אפשר שהמשנה עוסקת בהחזרה, אלא שחסר בה משפט. כשמשלימים אותו, כל חלק במשנה אומר דבר חדש.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לעולם אימא לך להחזיר תנן</td><td>עדיין אומר לך: על החזרה שנינו,</td></tr>
+      <tr><td>וחסורי מיחסרא והכי קתני</td><td>וחסר משפט, וכך הוא שונה:</td></tr>
+      <tr><td>מחזירין עליה תבשיל</td><td>מחזירים עליה תבשיל.</td></tr>
+      <tr><td>בגפת ובעצים לא יחזיר</td><td>(אם הסיקוה) בגפת ובעצים, לא יחזיר</td></tr>
+      <tr><td>אבל לשהות משהין</td><td>אבל להשהות, משהים</td></tr>
+      <tr><td>אע"פ שאינו גרוף ואינו קטום</td><td>אף על פי שאינו גרוף ואינו קטום.</td></tr>
+      <tr><td>ומה הן משהין</td><td>ומה הם משהים?</td></tr>
+      <tr><td>והך חזרה דאמרי לך</td><td>וההחזרה הזו שאמרתי לך,</td></tr>
+      <tr><td>לאו דברי הכל היא</td><td>אינה דברי הכול,</td></tr>
+      <tr><td>אלא מחלוקת בית שמאי ובית הלל</td><td>אלא מחלוקת בית שמאי ובית הלל.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה המושלמת:</b> על כירה של קש וגבבא מחזירים. על כירה של גפת ועצים לא יחזיר עד שיגרוף או ייתן אפר. אבל להשהות מותר גם על כירה שאינה גרופה.</p>
+  <p><b>המחלוקת הראשונה בהשהיה:</b> מה משהים על כירה שאינה גרופה? בית שמאי מתירים חמין ולא תבשיל, ובית הלל חמין ותבשיל.</p>
+  <p><b>המחלוקת השנייה בהחזרה:</b> ההחזרה על כירה גרופה אינה דברי הכול. בית שמאי אוסרים להחזיר, ובית הלל מתירים. כך אין במשנה כפילות.</p>
+  <div data-hl="R1,R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>לעולם אימא לך להחזיר תנן – ואילו לשהות אע"פ שאינו גרוף שרי:</blockquote><blockquote>והך חזרה דאמרי לך – לא יחזיר עד שיגרוף דכי גרוף מיהא שרי:</blockquote><blockquote>לאו דברי הכל היא – ולבית שמאי לא סבירא להו:</blockquote><p><span class="say">מה רש"י אומר:</span> לפי התשובה, להשהות מותר גם על כירה שאינה גרופה. ההחזרה מותרת כשגרף, אבל רק לבית הלל. בית שמאי אינם סוברים כך.</p></div>
+  <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>לעולם אימא לך להחזיר תנן וחסורי מיחסרא כו' – משום דקיי"ל כחנניה כמו שאפרש בע"ה דחיק לאוקמא מתני' כוותיה:</blockquote><p><span class="say">מה התוספות אומרים:</span> מקובל בידינו שההלכה כחנניה, שמתיר להשהות גם על כירה שאינה גרופה. לכן הגמרא דוחקת להעמיד את המשנה כשיטתו, אף שצריך לומר שחסר בה משפט.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה פירוש "חסורי מיחסרא"</h3>
+    <p>הגמרא אינה משנה את מילות המשנה. היא אומרת שחסר בה משפט, ומשלימה אותו: "אבל לשהות משהין אף על פי שאינו גרוף ואינו קטום". אחרי ההשלמה, המחלוקת הראשונה עוסקת בהשהיה, והשנייה בהחזרה.</p>
+    <p>כך נפתרת הקושיה מן העמוד הקודם. היא נשענה על כך שאם המשנה כולה בהחזרה, המחלוקת השנייה חוזרת על הראשונה. עכשיו לכל מחלוקת יש נושא משלה.</p>
+  </div>
+  <p class="godeep">איך ההשלמה במשנה מיישבת את הכפילות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "חסורי מיחסרא"?</summary><p>חסר משפט במשנה.</p></details>
+  <details><summary>מה המשפט שהגמרא משלימה?</summary><p>אבל להשהות משהים, אף על פי שאינו גרוף ואינו קטום.</p></details>
+  <details><summary>במה נחלקו בית שמאי ובית הלל בהחזרה?</summary><p>בית שמאי אומרים נוטלים ואין מחזירים, ובית הלל אומרים אף מחזירים.</p></details>
+  <details class="deepq"><summary>לפי התוספות, למה הגמרא דוחקת לומר שחסר משפט?</summary><p>כי ההלכה כחנניה, והיא רוצה להעמיד את המשנה כשיטתו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G2a,G2b">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>רבי חלבו: "על גבה" ו"תוכה"</h2>
+  <p class="lead">דברי רב שהביא רבי חלבו מבחינים בין תבשיל שעל גבי הכירה לתבשיל שבתוכה. הגמרא מנסה להוכיח מכאן שהמשנה עוסקת בהחזרה, ודוחה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לא שנו אלא על גבה</td><td>לא שנו (את ההיתר) אלא על גבה,</td></tr>
+      <tr><td>אבל לתוכה אסור</td><td>אבל לתוכה, אסור.</td></tr>
+      <tr><td>אי אמרת בשלמא להחזיר תנן</td><td>אם תאמר שעל החזרה שנינו, מובן:</td></tr>
+      <tr><td>היינו דשני בין תוכה לעל גבה</td><td>לכן יש הבדל בין תוכה לעל גבה.</td></tr>
+      <tr><td>אלא אי אמרת לשהות תנן</td><td>אבל אם תאמר שעל השהיה שנינו,</td></tr>
+      <tr><td>מה לי תוכה מה לי על גבה</td><td>מה ההבדל בין תוכה לעל גבה?</td></tr>
+      <tr><td>מי סברת ר' חלבו ארישא קאי</td><td>וכי אתה סבור שרבי חלבו מדבר על תחילת המשנה?</td></tr>
+      <tr><td>אסיפא קאי</td><td>על סופה הוא מדבר.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>דברי רב:</b> ההיתר שבמשנה נאמר רק על גבי הכירה, ולא בתוכה. רש"י מסביר שעל גבה החום אינו גדול כל כך.</p>
+  <p><b>הראיה:</b> רש"י מבאר: אם המשנה בהחזרה, מותר להשהות גם על כירה שאינה גרופה. בזה יש הבדל, כי בתוכה הוא מטמין ממש בגחלים. אבל אם המשנה בהשהיה, הכירה גרופה, ואין הבדל בין תוכה לעל גבה.</p>
+  <p><b>הדחייה:</b> רבי חלבו מדבר על סוף המשנה, על דברי בית הלל שמחזירים. ההבחנה בין תוכה לעל גבה היא בהחזרה, ולכן אין מכאן ראיה.</p>
+  <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>לא שנו – שריותא דמתני' אלא על גבה דלא נפיש הבלא כולי האי אבל תוכה אסור:</blockquote><p><span class="say">מה רש"י אומר:</span> ההיתר שבמשנה נאמר רק על גבה, שבו החום אינו גדול כל כך. בתוכה אסור.</p></div>
+  <div data-hl="R8,R9" class="voice r"><span class="tag">רש"י</span><blockquote>ארישא – עד שיגרוף:</blockquote><blockquote>אסיפא קאי – דאיירי בחזרה אבל רישא לשהות הוא ובין תוכה ובין גבה שרי:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי חלבו מדבר על הסוף, שעוסק בהחזרה. ההשהיה שבתחילה מותרת גם בתוכה וגם על גבה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מחלוקת רש"י ורבנו יצחק</h3>
+    <div data-hl="T2a" class="voice t"><span class="tag">תוספות</span><blockquote>אא"ב להחזיר תנן היינו דשני בין תוכה לעל גבה – פי' בקונטרס משום דאי להחזיר תנן א"כ לשהות משהין אפילו באינה גרופה להכי שני בין תוכה דהוי מטמין ממש ברמץ לעל גבה וקשה להר"ח דלחנניה אפילו תוכה משהין אפי' באינה גרופה דהא תנן (. לעיל שבת דף יט:) ולא חררה על גבי גחלים אלא עד שיקרמו פניה הא קרמו פניה שרי אע"ג דחררה בתוכה היא</blockquote><p><span class="say">מה התוספות אומרים:</span> רש"י פירש שההבחנה נאמרה בהשהיה על כירה שאינה גרופה, שבה "תוכה" הוא הטמנה ממש. רבנו חננאל מקשה: לחנניה מותר להשהות אפילו בתוכה, כמו חררה על גבי גחלים שמותרת כשקרמו פניה.</p></div>
+    <div data-hl="T2b" class="voice t"><span class="tag">תוספות</span><blockquote>ובלאו הכי אור"י דבחנם דחק רש"י לפרש כן דאיכא למימר שפיר היינו דשני לן בין תוכה לעל גבה מהא דשרי להחזיר בגרופה ובהשהאה דוקא לא ניחא ליה לחלק אבל בהחזרה ניחא ליה שפיר לחלק כדמוכח במאי דמשני מי סברת ארישא קאי אסיפא קאי כו'</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק אומר שאין צורך בפירוש של רש"י. ההבדל בין תוכה לעל גבה נאמר בהחזרה על כירה גרופה, וכך מוכח מן התשובה "אסיפא קאי".</p></div>
+    <h3>האם רב סובר כחנניה</h3>
+    <div data-hl="T2c" class="voice t"><span class="tag">תוספות</span><blockquote>קשה לר"י היכי בעי למימר אליבא דרב דמתניתין להחזיר תנן אם כן אתיא מתניתין כחנניה ורב דלא כחנניה דהא חנניה שרי במצטמק ויפה לו דהא דתנן (שם) אין צולין בשר וביצה אלא כדי שיצולו מבעוד יום אתיא כחנניה וביצה אמרינן לקמן דמצטמק ויפה לו הוא ורב אסר לקמן דמצטמק ויפה לו</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק מקשה: אם לפי רב המשנה בהחזרה, היא כחנניה. והרי חנניה מתיר תבשיל שמצטמק ויפה לו, ורב אוסר אותו בהמשך.</p></div>
+    <div data-hl="T2d" class="voice t"><span class="tag">תוספות</span><blockquote>וי"ל דבלאו הכי לא סבר לה רב כשום תנא דהא ר"מ ור' יהודה אסרי באינה גרופה אפילו במצטמק ורע לו ורב שרי במצטמק ורע לו אפילו באינה גרופה דבגרופה לא אשכחן שום אמורא דאסר אפילו יפה לו ועוד דרב קאי אמילתיה דרבי יוחנן דאיירי באינה גרופה וכן רבי יוחנן דשרי לקמן חמין ותבשיל שבישל כל צרכו באינה גרופה אבל לא בישל כל צרכו אסור לא אשכחן תנא דסבר הכי:</blockquote><p><span class="say">מה התוספות אומרים:</span> התירוץ: רב ממילא אינו סובר כשום תנא. רבי מאיר ורבי יהודה אוסרים בשאינה גרופה גם מה שמצטמק ורע לו, ורב מתיר אותו אפילו בשאינה גרופה. וכך גם רבי יוחנן, שמתיר בשאינה גרופה רק מה שהתבשל כל צרכו: לא מצאנו תנא שסובר כך.</p></div>
+  </div>
+  <p class="godeep">האם ההבחנה בין תוכה לעל גבה נאמרה בהשהיה או בהחזרה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אמר רבי חלבו בשם רב?</summary><p>ההיתר שבמשנה הוא רק על גבי הכירה, ובתוכה אסור.</p></details>
+  <details><summary>לפי רש"י, למה בתוכה אסור?</summary><p>כי שם החום גדול, ובכירה שאינה גרופה הוא מטמין ממש בגחלים.</p></details>
+  <details><summary>על איזה חלק במשנה מדבר רבי חלבו, לפי המסקנה?</summary><p>על הסוף, על ההחזרה.</p></details>
+  <details class="deepq"><summary>מה הקושיה של רבנו חננאל על רש"י?</summary><p>לחנניה מותר להשהות אפילו בתוכה של כירה שאינה גרופה, כמו חררה על גבי גחלים שקרמו פניה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G3a,G3b,G3c,G4a,G4b,G5">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>שתי כירות: רבי מאיר ורבי יהודה</h2>
+  <p class="lead">ברייתא מביאה את מחלוקת בית שמאי ובית הלל בשתי גרסאות, של רבי מאיר ושל רבי יהודה. הגמרא בודקת אם המשנה מתאימה לאחת מהן.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ב' כירות המתאימות</td><td>שתי כירות צמודות,</td></tr>
+      <tr><td>משהין על גבי גרופה וקטומה</td><td>משהים על גבי (זו) שגרופה וקטומה.</td></tr>
+      <tr><td>בית שמאי אומרים ולא כלום</td><td>בית שמאי אומרים: לא כלום.</td></tr>
+      <tr><td>עקר דברי הכל לא יחזיר</td><td>(אם) עקר, לדברי הכול לא יחזיר.</td></tr>
+      <tr><td>מתני' מני רבי יהודה היא</td><td>המשנה של מי? של רבי יהודה היא.</td></tr>
+      <tr><td>לא רבי יהודה ולא ר' מאיר</td><td>לא כרבי יהודה ולא כרבי מאיר.</td></tr>
+      <tr><td>קשיא לב"ש בחדא ולבית הלל בתרתי</td><td>קשה לבית שמאי בדבר אחד, ולבית הלל בשניים.</td></tr>
+      <tr><td>אי רבי יהודה קשיא גרופה וקטומה</td><td>אם (כ)רבי יהודה, קשה (דין) גרופה וקטומה.</td></tr>
+      <tr><td>ותנא דידן סבר לה כרבי יהודה בחדא</td><td>והתנא שלנו סובר כרבי יהודה בדבר אחד,</td></tr>
+      <tr><td>ופליג עליה בחדא</td><td>וחולק עליו בדבר אחד.</td></tr>
+      <tr><td>ורבי יהודה סבר בלשהות נמי גרוף וקטום</td><td>ורבי יהודה סובר: גם בהשהיה (צריך) גרוף וקטום.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הברייתא:</b> בשתי כירות צמודות, משהים רק על זו שגרופה וקטומה. לרבי מאיר, בית שמאי אוסרים להשהות כל דבר, ובית הלל מתירים חמין ולא תבשיל, ואם עקר, לדברי הכול לא יחזיר. לרבי יהודה המחלוקת היא כמו במשנה.</p>
+  <p><b>הקושיה:</b> אם המשנה בהשהיה, היא כרבי יהודה. אבל אם היא בהחזרה, היא אינה מתאימה לשום גרסה. לרבי מאיר קשה לבית שמאי בדבר אחד ולבית הלל בשניים. ולרבי יהודה קשה עניין הגריפה, כי לפי הברייתא על כירה שאינה גרופה אין משהים כלל.</p>
+  <p><b>התשובה:</b> אפשר שהמשנה עוסקת בהחזרה, והתנא שלה מסכים עם רבי יהודה במחלוקת על חמין ותבשיל ועל נטילה והחזרה. הוא חולק עליו רק בשאלה אם להשהות צריך כירה גרופה.</p>
+  <div data-hl="R10,R11" class="voice r"><span class="tag">רש"י</span><blockquote>שתי כירות המתאימות – מחוברות יחד וקיר של חרס מפסקת ביניהם:</blockquote><blockquote>משהין על גבי גרופה וקטומה – דלא חיישינן משום דסליק לה הבלא מאידך:</blockquote><p><span class="say">מה רש"י אומר:</span> "מתאימות" פירושו מחוברות, וקיר של חרס מפסיק ביניהן. ואין חוששים לחום שעולה מן הכירה שאינה גרופה.</p></div>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>קשיא לב"ש בחדא – דקאמרי ב"ש במתני' משהין חמין אף בשאינו גרוף והכא קאמר רבי מאיר לב"ש דאפילו גרוף ולא כלום וכ"ש כשאינו גרוף והא כולה חדא פירכא היא דבית שמאי לא שני להו בין גרוף לשאינו גרוף:</blockquote><p><span class="say">מה רש"י אומר:</span> לבית שמאי זו קושיה אחת: במשנה הם מתירים חמין אפילו בשאינה גרופה, ולרבי מאיר הם אוסרים הכול אפילו בגרופה.</p></div>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>ולב"ה בתרתי – דבמתניתין שרי בית הלל להשהות חמין ותבשיל אף בשאינו גרוף והכא קתני דבגרוף חמין אין תבשיל לא ובשאינה גרוף אין משהין כלל ולענין חזרה בגרוף תנן במתניתין לב"ה מחזירין והכא קתני עקר דברי הכל לא יחזיר:</blockquote><p><span class="say">מה רש"י אומר:</span> לבית הלל שתי קושיות: במשנה הם מתירים חמין ותבשיל אפילו בשאינה גרופה, ולרבי מאיר רק חמין בגרופה, ובשאינה גרופה אין משהים כלל. ובמשנה הם מתירים להחזיר, ולרבי מאיר לדברי הכול לא יחזיר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך נמדדת ההתאמה בין משנה לברייתא</h3>
+    <div data-hl="R14" class="voice r"><span class="tag">רש"י</span><blockquote>אא"ב – רישא דמתניתין לשהות קאמר דבעי גרופה ובלשהות פליגי בחמין ובתבשיל ובגרוף וסיפא פליגי בחזרה מתני' ר' יהודה היא אלא אי אמרת להחזיר תנן דבעי גרופה אבל לשהות לא בעי גרופה ופלוגתא דחמין ותבשיל כשאינו גרוף כדקמחסרת ומתרצת לה:</blockquote><p><span class="say">מה רש"י אומר:</span> אם המשנה בהשהיה, תחילתה אומרת שלהשהות צריך כירה גרופה, ונחלקו בחמין ותבשיל, וסופה עוסק בהחזרה. בדיוק כך שונה רבי יהודה.</p></div>
+    <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>ואי ר' יהודה – דאמר נמי כי מתניתין מ"מ גרופה וקטומה קשיא דמתניתין תרצת דפלוגתא קמייתא בשאינו גרוף ושרו ב"ש חמין ובית הלל חמין ותבשיל והכא קתני אין משהין על גבי שאינה גרופה ואינה קטומה כלל ופלוגתא דלשהות בגרופה וקטומה:</blockquote><p><span class="say">מה רש"י אומר:</span> לרבי יהודה הקושיה היא רק בגריפה. לפי ההחזרה, המחלוקת הראשונה במשנה היא בכירה שאינה גרופה, ואצל רבי יהודה היא בגרופה וקטומה.</p></div>
+    <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>בחמין ותבשיל ונוטלים ומחזירין – דמוקי פלוגתא דב"ש וב"ה בשהיית חמין ותבשיל דבית שמאי שרו חמין ותבשיל לא וב"ה חמין ותבשיל ולא כר' מאיר דאמר לב"ש לא כלום:</blockquote><p><span class="say">מה רש"י אומר:</span> התנא שלנו מעמיד את המחלוקת בהשהיית חמין ותבשיל, כרבי יהודה, ולא כרבי מאיר, שלפיו בית שמאי אוסרים הכול.</p></div>
+    <p>התשובה אינה מתאימה את המשנה לברייתא לגמרי. היא אומרת שהתנא של המשנה הולך בעניין אחד בדרכו של רבי יהודה, ובעניין אחר חולק עליו.</p>
+  </div>
+  <p class="godeep">באיזה דבר התנא של המשנה חולק על רבי יהודה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>לפי רבי מאיר, מה משהים בית הלל על כירה גרופה?</summary><p>חמין, אבל לא תבשיל.</p></details>
+  <details><summary>מה הדין אם עקר את הקדירה, לפי רבי מאיר?</summary><p>לדברי הכול לא יחזיר.</p></details>
+  <details><summary>במה התנא שלנו חולק על רבי יהודה?</summary><p>לדעתו מותר להשהות גם על כירה שאינה גרופה, ולרבי יהודה צריך גרופה.</p></details>
+  <details class="deepq"><summary>למה לבית שמאי יש רק קושיה אחת?</summary><p>כי לשיטתם אין הבדל בין גרופה לשאינה גרופה, וכל הסתירה היא דבר אחד.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G6,G7,G8a,G8b,G9,G10,G11">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>לסמוך קדירה אל הכירה</h2>
+  <p class="lead">שאלה חדשה: בתוך הכירה ועל גבה אסור כשאינה גרופה, אבל האם מותר להעמיד קדירה צמוד לדופן שלה? הגמרא מביאה ראיות, דוחה אותן, ומגיעה למסקנה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מהו לסמוך בה</td><td>מה הדין לסמוך אליה?</td></tr>
+      <tr><td>תוכה וגבה אסור</td><td>תוכה וגבה, אסור,</td></tr>
+      <tr><td>אבל לסמוך בה שפיר דמי</td><td>אבל לסמוך אליה, מותר?</td></tr>
+      <tr><td>או דילמא לא שנא</td><td>או שמא אין הבדל?</td></tr>
+      <tr><td>דכיון דמידליא שליט בה אוירא</td><td>שכיון שהיא מוגבהת, שולט בה האוויר.</td></tr>
+      <tr><td>קטמה ונתלבתה סומכין לה ומקיימין עליה</td><td>קטם אותה, וחזרה ובערה: סומכים לה ומקיימים עליה.</td></tr>
+      <tr><td>אלא תנא נוטלין משום מחזירין</td><td>אלא שנה "נוטלים" בגלל "מחזירים".</td></tr>
+      <tr><td>הכי השתא</td><td>האם זה דומה?</td></tr>
+      <tr><td>מאי הוי עלה</td><td>מה העלינו בדבר?</td></tr>
+      <tr><td>סומכין לה ואין מקיימין</td><td>סומכים לה, ואין מקיימים (עליה),</td></tr>
+      <tr><td>גחלים שעממו</td><td>גחלים שכבו מעט,</td></tr>
+      <tr><td>הרי היא כקטומה</td><td>הרי היא כקטומה.</td></tr>
+      <tr><td>קטמה והובערה</td><td>קטם אותה, והובערה (שוב).</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>השאלה:</b> רש"י מפרש שמדובר בסמיכת קדירה אל דופן כירה שאינה גרופה. הכירה מיטלטלת ומעמידים אותה על הקרקע.</p>
+  <p><b>ראיה ראשונה ודחייתה:</b> בברייתא של שתי כירות משהים על הגרופה, אף שחום עולה אליה מן השנייה. אבל שם הקדירה מוגבהת, והאוויר שולט בה.</p>
+  <p><b>ראיה שנייה ודחייתה:</b> רב ספרא אמר בשם רב חייא שכירה שקטם אותה וחזרה ובערה, סומכים לה ומקיימים עליה, כלומר משאירים עליה קדירה. משמע שרק כשקטם מותר לסמוך. דוחים: אולי "סומכין" נשנה רק אגב "מקיימין", כמו "נוטלין" שנשנה אגב "מחזירין". ועל כך משיבים: נוטלים ומחזירים הם באותו מקום, אבל סומכים ומקיימים הם בשני מקומות.</p>
+  <p><b>המסקנה:</b> ברייתא אומרת במפורש שבכירה של גפת ועצים סומכים, ואין מקיימים עליה אלא אם גרופה וקטומה. וגחלים שכבו מעט, או שכוסו בנעורת פשתן דקה, דינן כקטומה. ובסוף רבי אושעיא מתיר להשהות על כירה שקטם אותה והובערה, חמין ותבשיל שהתבשלו כל צרכם.</p>
+  <div data-hl="R19,R20" class="voice r"><span class="tag">רש"י</span><blockquote>מהו לסמוך – קדרה אצל דופן הכירה בלא גרופה שהכירה מטלטלת היא ומושיבים אותה על גבי קרקע:</blockquote><blockquote>גבה – עובי שפתה או כסוי שעל חללה:</blockquote><p><span class="say">מה רש"י אומר:</span> "לסמוך" הוא להעמיד קדירה אל דופן הכירה כשאינה גרופה. "גבה" הוא עובי שפתה, או מכסה שעל חללה.</p></div>
+  <div data-hl="R22,R23" class="voice r"><span class="tag">רש"י</span><blockquote>ונתלבתה – חזרה והובערה:</blockquote><blockquote>התם נוטלין ומחזירין בחד מקום – ולא שייך למתני מחזירין עד דתני נוטלין:</blockquote><p><span class="say">מה רש"י אומר:</span> "ונתלבתה" פירושו חזרה ובערה. ונוטלים ומחזירים נשנו יחד, כי אי אפשר לשנות "מחזירים" בלי "נוטלים".</p></div>
+  <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>תא שמע כירה שהסיקוה כו' – ומסיק דשרי לסמוך ומכל מקום אין ללמוד מכאן לסמוך אצל האש דשאני הכא דדופני כירה מפסיקין בינו ולאש:</blockquote><p><span class="say">מה התוספות אומרים:</span> המסקנה היא שמותר לסמוך. אבל אין ללמוד מכאן שמותר לסמוך קדירה אצל האש עצמה, כי כאן דופני הכירה מפסיקים בינה לבין האש.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>על מה בדיוק השאלה</h3>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>מהו לסמוך – באינה גרופה קבעי ואי מתניתין להשהות תנן קא בעי להשהות ולהחזיר ואי להחזיר תנן ושרי להשהות אפי' תוכה וגבה בעי להחזיר ולהשהות היכא שאינו מבושל כמאכל בן דרוסאי:</blockquote><p><span class="say">מה התוספות אומרים:</span> השאלה היא על כירה שאינה גרופה. אם המשנה בהשהיה, השאלה היא על השהיה ועל החזרה. ואם המשנה בהחזרה, ולהשהות מותר גם בתוכה ועל גבה, השאלה היא על החזרה, ועל השהיה של תבשיל שעוד לא התבשל כמאכל בן דרוסאי.</p></div>
+    <div data-hl="R25" class="voice r"><span class="tag">רש"י</span><blockquote>שהוחמו כל צרכן – דליכא למיחש לחיתויי:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי אושעיא מתיר רק חמין ותבשיל שהתבשלו כל צרכם, כי בהם אין לחשוש שיחתה.</p></div>
+  </div>
+  <p class="godeep">למה ההשוואה בין "סומכין" ל"נוטלין" נדחית? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "לסמוך" בסוגיה?</summary><p>להעמיד קדירה צמוד לדופן הכירה.</p></details>
+  <details><summary>למה אין ראיה מן הברייתא של שתי כירות?</summary><p>כי שם הקדירה מוגבהת, והאוויר שולט בה.</p></details>
+  <details><summary>מה המסקנה בכירה של גפת ועצים?</summary><p>סומכים לה, ואין מקיימים עליה אלא אם גרופה וקטומה.</p></details>
+  <details><summary>מה דין גחלים שעממו?</summary><p>הכירה נחשבת כקטומה.</p></details>
+  <details class="deepq"><summary>לפי התוספות, האם מותר לסמוך קדירה אצל האש עצמה?</summary><p>לא. כאן מותר רק כי דופני הכירה מפסיקים בין הקדירה לאש.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>חסורי מיחסרא:</b> אפשר לפרש שהמשנה עוסקת בהחזרה, וחסר בה המשפט שמותר להשהות גם על כירה שאינה גרופה.</li>
+      <li><b>על גבה ותוכה:</b> דברי רב שבתוכה אסור מוסבים על סוף המשנה, על ההחזרה, ולכן אין מהם ראיה.</li>
+      <li><b>שתי כירות:</b> רבי מאיר ורבי יהודה שונים את מחלוקת בית שמאי ובית הלל אחרת. לפי האפשרות שהמשנה בהחזרה, התנא שלנו מסכים עם רבי יהודה בלשון המחלוקת, וחולק עליו בהשהיה.</li>
+      <li><b>לסמוך:</b> בכירה של גפת ועצים סומכים לה, ואין מקיימים עליה אלא אם גרופה וקטומה.</li>
+      <li><b>כקטומה:</b> גחלים שכבו מעט או שכוסו בנעורת פשתן נחשבות כקטומות.</li>
+      <li><b>נשאר לעמוד הבא:</b> רבי אושעיא התיר להשהות על כירה שקטם אותה והובערה, ובעמוד הבא הגמרא בודקת מה נלמד מכך על תבשיל שמצטמק ויפה לו.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>חסורי מיחסרא והכי קתני</td><td>חסר משפט במשנה, וכך היא שונה</td></tr>
+      <tr><td>לא שנו</td><td>לא שנו את הדין הזה אלא במקרה מסוים</td></tr>
+      <tr><td>מי סברת</td><td>וכי אתה סבור</td></tr>
+      <tr><td>ארישא קאי</td><td>מדבר על תחילת המשנה</td></tr>
+      <tr><td>אסיפא קאי</td><td>מדבר על סוף המשנה</td></tr>
+      <tr><td>המתאימות</td><td>הצמודות זו לזו</td></tr>
+      <tr><td>עקר</td><td>הוריד את הקדירה מן הכירה</td></tr>
+      <tr><td>בחדא · בתרתי</td><td>בדבר אחד · בשני דברים</td></tr>
+      <tr><td>לסמוך</td><td>להעמיד קדירה צמוד לדופן הכירה</td></tr>
+      <tr><td>מקיימין עליה</td><td>משאירים עליה את הקדירה</td></tr>
+      <tr><td>שפיר דמי</td><td>מותר, הדבר טוב</td></tr>
+      <tr><td>לא שנא</td><td>אין הבדל</td></tr>
+      <tr><td>ולטעמיך</td><td>ולפי דרכך</td></tr>
+      <tr><td>הכי השתא</td><td>האם זה דומה? כך דוחים השוואה</td></tr>
+      <tr><td>מאי הוי עלה</td><td>מה העלינו בדבר? מה המסקנה</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-36b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-37b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ל&quot;ז עמוד א&#x27;, לומדים: "חסורי מיחסרא": אפשר שהמשנה עוסקת בהחזרה; רבי חלבו: "על גבה" ו"תוכה"; שתי כירות: רבי מאיר ורבי יהודה; לסמוך קדירה אל הכירה.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (32 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד א&#x27;: תשובה לקושיה</h3><p>בעמוד הקודם הגמרא שאלה אם המשנה של פרק &quot;כירה&quot; עוסקת בהשהיה או בהחזרה. היא הקשתה: אם המשנה עוסקת בהחזרה, המחלוקת השנייה שבה, &quot;נוטלין אבל לא מחזירין&quot;, חוזרת על הראשונה. כאן באה התשובה.</p></li><li><h3><span class="w">גמרא</span> · &quot;חסורי מיחסרא&quot;: חסר משפט במשנה</h3><p>&quot;לעולם אימא לך&quot;, עדיין אפשר לומר לך שהמשנה עוסקת בהחזרה, ו&quot;חסורי מיחסרא&quot;, חסר בה משפט. כך היא שונה: על כירה של קש וגבבא מחזירים תבשיל, ועל כירה של גפת ועצים לא יחזיר עד שיגרוף או עד שייתן אפר. אבל להשהות משהים, אף על פי שאינה גרופה ואינה קטומה. רש&quot;י: לפי זה, להשהות מותר גם כשאינה גרופה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה הגמרא דוחקת כך</h3><p>התוספות מסבירים: מפני שההלכה כחנניה, כמו שיבארו בהמשך, הגמרא דוחקת להעמיד את המשנה כשיטתו.</p></li><li><h3><span class="w">גמרא</span> · ומה משהים</h3><p>&quot;ומה הן משהין&quot;, ומה משהים על כירה שאינה גרופה? בית שמאי מתירים רק מים חמים, ובית הלל מתירים גם תבשיל. כלומר המחלוקת הראשונה עוסקת בהשהיה.</p></li><li><h3><span class="w">גמרא</span> · וההחזרה היא מחלוקת</h3><p>&quot;והך חזרה דאמרי לך&quot;, וההחזרה שאמרתי לך, כלומר שאחרי שגרף מותר להחזיר, אינה דברי הכול. רש&quot;י: בית שמאי אינם סוברים כך. זו מחלוקת בית שמאי ובית הלל: בית שמאי אומרים נוטלים ואין מחזירים, ובית הלל אומרים אף מחזירים. כך המחלוקת השנייה אינה מיותרת.</p></li><li><h3><span class="w">גמרא</span> · תא שמע: &quot;על גבה&quot; ו&quot;תוכה&quot;</h3><p>רבי חלבו אמר בשם רבי חמא בר גוריא בשם רב: &quot;לא שנו&quot;, ההיתר שבמשנה נאמר רק על גבי הכירה, אבל בתוך הכירה אסור. רש&quot;י: כי על גבה החום אינו גדול כל כך.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: לפי ההחזרה, ההבחנה מובנת</h3><p>אם המשנה עוסקת בהחזרה, מותר להשהות גם על כירה שאינה גרופה, כמו שהשלמנו במשנה. ורבי חלבו מדבר על ההיתר הזה. לכן יש הבדל בין תוכה לעל גבה: מי שמשהה בתוך כירה שאינה גרופה, מטמין ממש בגחלים.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: לפי ההשהיה, אין הבדל</h3><p>אבל אם המשנה עוסקת בהשהיה, גם להשהות צריך כירה גרופה. וכיון שהיא גרופה, והוא נותן את הקדירה מבעוד יום, &quot;מה לי תוכה מה לי על גבה&quot;, מה ההבדל בין תוכה לעל גבה?</p></li><li><h3><span class="w">גמרא</span> · התשובה: רבי חלבו מדבר על הסוף</h3><p>&quot;מי סברת&quot;, וכי אתה סבור שרבי חלבו מדבר על תחילת המשנה, &quot;עד שיגרוף&quot;? הוא מדבר על סופה, על דברי בית הלל &quot;אף מחזירין&quot;. רש&quot;י: הסוף עוסק בהחזרה, ובזה רק על גבה מותר ותוכה אסור. אבל ההשהיה שבתחילה מותרת גם בתוכה וגם על גבה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיה על רש&quot;י</h3><p>רש&quot;י פירש שלפי ההחזרה מותר להשהות גם בשאינה גרופה, ולכן יש הבדל בין תוכה, שבה מטמין ממש, לעל גבה. רבנו חננאל מקשה: לחנניה מותר להשהות אפילו בתוכה של כירה שאינה גרופה. הרי שנינו בפרק הראשון שחררה על גבי גחלים מותרת כשקרמו פניה, אף על פי שחררה שעל הגחלים היא כמו &quot;תוכה&quot;.</p><p>חררה היא עוגה שאופים אותה על גחלים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: אין צורך בפירוש של רש&quot;י</h3><p>רבנו יצחק אומר שרש&quot;י דחק את עצמו לחינם. אפשר לומר שההבדל בין תוכה לעל גבה נאמר בהחזרה על כירה גרופה. בהשהיה הגמרא אינה רוצה להבחין ביניהן, ובהחזרה היא מבחינה. כך מוכח מן התשובה &quot;מי סברת ארישא קאי, אסיפא קאי&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיה על דברי רב</h3><p>רבנו יצחק מקשה: איך הגמרא רצתה לומר לשיטת רב שהמשנה עוסקת בהחזרה? אם כן המשנה כחנניה, ורב אינו סובר כחנניה. חנניה מתיר תבשיל שמצטמק ויפה לו. שהרי המשנה בפרק הראשון, שאין צולים בשר וביצה אלא כדי שייצלו מבעוד יום, היא כחנניה, ועל ביצה נאמר בהמשך שהיא מצטמקת ויפה לה. ורב אוסר בהמשך מה שמצטמק ויפה לו.</p></li><li><h3><span class="w">תוספות</span> · התוספות: התירוץ</h3><p>גם בלי זה, רב אינו סובר כשום תנא. רבי מאיר ורבי יהודה אוסרים בכירה שאינה גרופה אפילו מה שמצטמק ורע לו, ורב מתיר מה שמצטמק ורע לו אפילו בשאינה גרופה. ומניין שרב מדבר בשאינה גרופה? א&#x27;, בגרופה לא מצאנו שום אמורא שאוסר, אפילו מה שיפה לו. ב&#x27;, דברי רב נאמרו על דברי רבי יוחנן, שעוסקים בשאינה גרופה. וכך גם רבי יוחנן עצמו, שמתיר בהמשך בשאינה גרופה חמין ותבשיל שהתבשלו כל צרכם, ואוסר מה שלא התבשל כל צרכו: לא מצאנו תנא שסובר כך.</p></li><li><h3><span class="w">גמרא</span> · תא שמע: שתי כירות מתאימות</h3><p>ברייתא: שתי כירות מתאימות, אחת גרופה וקטומה ואחת לא. משהים על הגרופה, ואין משהים על השנייה. רש&quot;י: הן מחוברות, וקיר של חרס מפסיק ביניהן, ואין חוששים לחום שעולה מן השנייה. ומה משהים על הגרופה? לשיטת בית שמאי לא כלום, ולשיטת בית הלל רק המים החמים.</p></li><li><h3><span class="w">גמרא</span> · &quot;עקר&quot;: לדברי הכול לא יחזיר</h3><p>אם עקר את הקדירה מן הכירה, לדברי הכול לא יחזיר אותה. רש&quot;י: בשבת. כל זה הוא שיטת רבי מאיר.</p></li><li><h3><span class="w">גמרא</span> · שיטת רבי יהודה</h3><p>רבי יהודה שונה את המחלוקת אחרת, בלשון המשנה שלנו: לבית שמאי חמין ולא תבשיל, ולבית הלל חמין ותבשיל; ובהחזרה, בית שמאי אוסרים ובית הלל מתירים.</p></li><li><h3><span class="w">גמרא</span> · לפי ההשהיה, המשנה כרבי יהודה</h3><p>&quot;אי אמרת בשלמא&quot;, אם המשנה עוסקת בהשהיה, היא כרבי יהודה. רש&quot;י מסביר: תחילת המשנה אומרת שלהשהות צריך כירה גרופה, ונחלקו בחמין ותבשיל בכירה גרופה, וסופה עוסק בהחזרה. כך אמר רבי יהודה. אבל אם המשנה בהחזרה, ולהשהות אין צורך בגרופה, והמחלוקת בחמין ותבשיל היא בשאינה גרופה, המשנה אינה כרבי יהודה ואינה כרבי מאיר.</p></li><li><h3><span class="w">גמרא</span> · לרבי מאיר: קושיה לבית שמאי באחת</h3><p>אם המשנה כרבי מאיר, קשה לבית שמאי בדבר אחד. רש&quot;י: במשנה בית שמאי מתירים להשהות חמין אפילו בכירה שאינה גרופה. ולרבי מאיר בית שמאי אוסרים לגמרי אפילו בגרופה, וכל שכן בשאינה גרופה. כל זה קושיה אחת, כי בית שמאי אינם מבחינים בין גרופה לשאינה גרופה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: ולבית הלל בשתיים</h3><p>ולבית הלל קשה בשני דברים. א&#x27;, במשנה הם מתירים להשהות חמין ותבשיל אפילו בשאינה גרופה, ולרבי מאיר בגרופה רק חמין, ובשאינה גרופה אין משהים כלל. ב&#x27;, במשנה בית הלל מתירים להחזיר בגרופה, ולרבי מאיר אם עקר, לדברי הכול לא יחזיר.</p></li><li><h3><span class="w">רש&quot;י</span> · ולרבי יהודה: &quot;גרופה וקטומה&quot; קשה</h3><p>ואם המשנה כרבי יהודה, שאומר את המחלוקת כמו במשנה, עדיין קשה עניין הגריפה. במשנה, לפי ההחזרה, המחלוקת הראשונה היא בכירה שאינה גרופה. ואילו בברייתא נאמר שעל כירה שאינה גרופה אין משהים כלל, והמחלוקת היא בגרופה וקטומה.</p></li><li><h3><span class="w">גמרא</span> · התשובה: התנא שלנו מסכים עם רבי יהודה באחת</h3><p>&quot;לעולם אימא לך&quot;: גם אחרי הקושיה הזו הגמרא מקיימת את האפשרות של החזרה. התנא של המשנה מסכים עם רבי יהודה בדבר אחד: במחלוקת על חמין ותבשיל, ועל נוטלים ומחזירים. רש&quot;י: הוא מעמיד את המחלוקת בהשהיית חמין ותבשיל, שבית שמאי מתירים חמין ולא תבשיל ובית הלל חמין ותבשיל, ולא כרבי מאיר, שלפיו בית שמאי אוסרים הכול.</p></li><li><h3><span class="w">גמרא</span> · וחולק עליו באחת</h3><p>ובדבר אחד הוא חולק עליו. התנא שלנו סובר שמותר להשהות אף על פי שהכירה אינה גרופה וקטומה. ורבי יהודה סובר שגם להשהות צריך כירה גרופה וקטומה. אם כן, כן. ואם לא, לא.</p></li><li><h3><span class="w">גמרא</span> · שאלה חדשה: לסמוך</h3><p>&quot;איבעיא להו&quot;, נשאלה שאלה: מה הדין לסמוך קדירה אל הכירה? בתוכה ועל גבה אסור, אבל לסמוך מותר? או שאין הבדל? רש&quot;י: לסמוך קדירה אל דופן הכירה כשאינה גרופה. הכירה מיטלטלת, ומעמידים אותה על הקרקע. &quot;גבה&quot; הוא עובי שפתה, או מכסה שעל חללה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: על מה בדיוק השאלה</h3><p>השאלה היא על כירה שאינה גרופה. אם המשנה עוסקת בהשהיה, השאלה היא גם על השהיה וגם על החזרה. ואם המשנה בהחזרה, וההשהיה מותרת גם בתוכה ועל גבה, השאלה היא על החזרה, ועל השהיה של תבשיל שעוד לא התבשל כמאכל בן דרוסאי, שאותו גם חנניה אינו מתיר להשהות.</p></li><li><h3><span class="w">גמרא</span> · ראיה מן הברייתא של שתי הכירות</h3><p>&quot;תא שמע&quot;: בברייתא של שתי כירות מתאימות נאמר שמשהים על הגרופה, אף על פי שעולה אליה חום מן השנייה, שאינה גרופה. משמע שמותר לסמוך לכירה שאינה גרופה. הגמרא דוחה: אולי שם שונה. הקדירה מוגבהת על גבי הכירה, ולכן האוויר שולט בה.</p></li><li><h3><span class="w">גמרא</span> · ראיה מדברי רב ספרא</h3><p>רב ספרא אמר בשם רב חייא: כירה שקטם אותה &quot;ונתלבתה&quot;, ורש&quot;י מפרש: חזרה והובערה, סומכים לה, &quot;מקיימין עליה&quot;, כלומר משאירים עליה את הקדירה, נוטלים ממנה ומחזירים לה. משמע שגם לסמוך, רק אם קטם מותר, ואם לא קטם אסור.</p></li><li><h3><span class="w">גמרא</span> · דחייה: &quot;ולטעמיך&quot;</h3><p>&quot;ולטעמיך&quot;, ולפי דרכך: האם גם &quot;נוטלים ממנה&quot; רק אם קטם? והרי ליטול מותר תמיד. אלא &quot;נוטלין&quot; נשנה רק בגלל &quot;מחזירין&quot;. וכך גם כאן, &quot;סומכין&quot; נשנה רק בגלל &quot;מקיימין&quot;.</p></li><li><h3><span class="w">גמרא</span> · &quot;הכי השתא&quot;: אין הדבר דומה</h3><p>&quot;הכי השתא&quot;, האם זה דומה? שם נוטלים ומחזירים באותו מקום, ולכן שנה &quot;נוטלין&quot; בגלל &quot;מחזירין&quot;. רש&quot;י: אי אפשר לשנות מחזירים בלי לשנות קודם נוטלים. אבל כאן סומכים במקום אחד, ומקיימים במקום אחר.</p></li><li><h3><span class="w">גמרא</span> · מה המסקנה</h3><p>&quot;מאי הוי עלה&quot;, מה העלינו בדבר? תא שמע: כירה שהסיקו אותה בגפת ובעצים, סומכים לה, ואין מקיימים עליה אלא אם כן גרופה וקטומה. וגחלים שעממו, או שנתן עליהן נעורת של פשתן דקה, הרי היא כקטומה.</p><p>&quot;שעממו&quot; פירושו שכבו מעט ואורן נחלש. &quot;נעורת&quot; היא פסולת דקה של פשתן.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רק אצל דופן הכירה</h3><p>המסקנה היא שמותר לסמוך. ובכל זאת אין ללמוד מכאן שמותר לסמוך קדירה אצל האש עצמה. כאן שונה, כי דופני הכירה מפסיקים בין הקדירה לאש.</p></li><li><h3><span class="w">גמרא</span> · רבי אושעיא: קטמה והובערה</h3><p>אמר רבי יצחק בר נחמני בשם רבי אושעיא: כירה שקטם אותה והובערה שוב, משהים עליה חמין שהוחמו כל צרכם ותבשיל שהתבשל כל צרכו. רש&quot;י: כי אין לחשוש שיחתה בגחלים.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>הגמרא דחתה את הקושיה מן העמוד הקודם: אפשר שהמשנה עוסקת בהחזרה, וחסר בה משפט, שלהשהות מותר גם על כירה שאינה גרופה. גם שתי ראיות נוספות נדחו. דברי רב על &quot;תוכה&quot; מתפרשים על סוף המשנה, על ההחזרה. והברייתא של שתי כירות אינה מכריחה שהמשנה בהשהיה, כי אפשר שהתנא של המשנה מסכים עם רבי יהודה בלשון המחלוקת, וחולק עליו בהשהיה. ועוד עלה שהסמיכה אל דופן הכירה מותרת גם בלי גריפה. העמוד הבא דן בדברי רבי אושעיא: האם מהם משמע שתבשיל שמצטמק ויפה לו מותר.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-37b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1a", "לעולם אימא לך להחזיר תנן וחסורי מיחסרא והכי קתני כירה שהסיקוה בקש ובגבבא מחזירין עליה תבשיל בגפת ובעצים לא יחזיר עד שיגרוף או עד שיתן את האפר אבל לשהות משהין אע\"פ שאינו גרוף ואינו קטום", false, ""], ["G1b", "ומה הן משהין בית שמאי אומרים חמין אבל לא תבשיל ובית הלל אומרים חמין ותבשיל", false, ""], ["G1c", "והך חזרה דאמרי לך לאו דברי הכל היא אלא מחלוקת בית שמאי ובית הלל שבית שמאי אומרים נוטלין ולא מחזירין ובית הלל אומרים אף מחזירין", false, ""], ["G2a", "ת\"ש דאמר ר' חלבו א\"ר חמא בר גוריא אמר רב לא שנו אלא על גבה אבל לתוכה אסור אי אמרת בשלמא להחזיר תנן היינו דשני בין תוכה לעל גבה אלא אי אמרת לשהות תנן מה לי תוכה מה לי על גבה", true, ""], ["G2b", "מי סברת ר' חלבו ארישא קאי אסיפא קאי ובית הלל אומרים אף מחזירין ואמר ר' חלבו אמר רב חמא בר גוריא אמר רב לא שנו אלא על גבה אבל תוכה אסור", false, ""], ["G3a", "תא שמע ב' כירות המתאימות אחת גרופה וקטומה ואחת שאינה גרופה ואינה קטומה משהין על גבי גרופה וקטומה ואין משהין על שאינה גרופה ואינה קטומה ומה הן משהין בית שמאי אומרים ולא כלום ובית הלל אומרים חמין אבל לא תבשיל", true, ""], ["G3b", "עקר דברי הכל לא יחזיר דברי רבי מאיר", false, ""], ["G3c", "רבי יהודה אומר בית שמאי אומרים חמין אבל לא תבשיל ובית הלל אומרים חמין ותבשיל בית שמאי אומרים נוטלין אבל לא מחזירין ובית הלל אומרים אף מחזירין", false, ""], ["G4a", "אי אמרת בשלמא לשהות תנן מתני' מני רבי יהודה היא אלא אי אמרת להחזיר תנן מתניתין מני לא רבי יהודה ולא ר' מאיר", false, ""], ["G4b", "אי רבי מאיר קשיא לב\"ש בחדא ולבית הלל בתרתי אי רבי יהודה קשיא גרופה וקטומה", false, ""], ["G5", "לעולם אימא לך להחזיר תנן ותנא דידן סבר לה כרבי יהודה בחדא ופליג עליה בחדא סבר לה כרבי יהודה בחדא בחמין ותבשיל ונוטלין ומחזירין ופליג עליה בחדא דאילו תנא דידן סבר לשהות ואף על פי שאינו גרוף וקטום ורבי יהודה סבר בלשהות נמי גרוף וקטום אין אי לא לא", false, ""], ["G6", "איבעיא להו מהו לסמוך בה תוכה וגבה אסור אבל לסמוך בה שפיר דמי או דילמא לא שנא", true, ""], ["G7", "תא שמע שתי כירות המתאימות אחת גרופה וקטומה ואחת שאינה גרופה וקטומה משהין על גבי גרופה וקטומה ואף על גב דקא סליק ליה הבלא מאידך דילמא שאני התם דכיון דמידליא שליט בה אוירא", false, ""], ["G8a", "תא שמע דאמר רב ספרא אמר רב חייא קטמה ונתלבתה סומכין לה ומקיימין עליה ונוטלין ממנה ומחזירין לה שמע מינה לסמוך נמי קטמה אין לא קטמה לא", false, ""], ["G8b", "ולטעמיך נוטלין ממנה דקתני קטמה אין לא קטמה לא אלא תנא נוטלין משום מחזירין הכא נמי תנא סומכין משום מקיימין", false, ""], ["G9", "הכי השתא התם נוטלין ומחזירין בחד מקום הוא תנא נוטלין משום מחזירין אלא הכא סומכין בחד מקום הוא ומקיימין בחד מקום הוא", false, ""], ["G10", "מאי הוי עלה ת\"ש כירה שהסיקוה בגפת ובעצים סומכין לה ואין מקיימין אא\"כ גרופה וקטומה גחלים שעממו או שנתן עליה נעורת של פשתן דקה הרי היא כקטומה", false, ""], ["G11", "אמר ר' יצחק בר נחמני א\"ר אושעיא קטמה והובערה משהין עליה חמין שהוחמו כל צורכן ותבשיל שבישל כל צורכו", false, ""]], "R": [["R1", "לעולם אימא לך להחזיר תנן", "ואילו לשהות אע\"פ שאינו גרוף שרי:", false], ["R2", "והך חזרה דאמרי לך", "לא יחזיר עד שיגרוף דכי גרוף מיהא שרי:", false], ["R3", "לאו דברי הכל היא", "ולבית שמאי לא סבירא להו:", false], ["R4", "לא שנו", "שריותא דמתני' אלא על גבה דלא נפיש הבלא כולי האי אבל תוכה אסור:", false], ["R5", "אי אמרת בשלמא להחזיר תנן", "אבל לשהות משהין אפילו בשאין גרופה כדמחסרינן ליה חסורי ורבי חלבו אשריותא דלשהות על שאינה גרופה קאי:", false], ["R6", "היינו דשני בין תוכה לעל גבה", "דכי משהי לתוכה דשאינה גרופה מטמין ממש ברמץ:", false], ["R7", "אלא אי אמרת לשהות תנן", "דאפילו לשהות בעי גרופה כיון דגרופה ומבעוד יום הוא נותנו לתוכה מה לי תוכה מה לי על גבה:", false], ["R8", "ארישא", "עד שיגרוף:", false], ["R9", "אסיפא קאי", "דאיירי בחזרה אבל רישא לשהות הוא ובין תוכה ובין גבה שרי:", false], ["R10", "שתי כירות המתאימות", "מחוברות יחד וקיר של חרס מפסקת ביניהם:", false], ["R11", "משהין על גבי גרופה וקטומה", "דלא חיישינן משום דסליק לה הבלא מאידך:", false], ["R12", "ומה הן משהין", "על הגרופה:", false], ["R13", "לא יחזיר", "בשבת:", false], ["R14", "אא\"ב", "רישא דמתניתין לשהות קאמר דבעי גרופה ובלשהות פליגי בחמין ובתבשיל ובגרוף וסיפא פליגי בחזרה מתני' ר' יהודה היא אלא אי אמרת להחזיר תנן דבעי גרופה אבל לשהות לא בעי גרופה ופלוגתא דחמין ותבשיל כשאינו גרוף כדקמחסרת ומתרצת לה:", false], ["R15", "קשיא לב\"ש בחדא", "דקאמרי ב\"ש במתני' משהין חמין אף בשאינו גרוף והכא קאמר רבי מאיר לב\"ש דאפילו גרוף ולא כלום וכ\"ש כשאינו גרוף והא כולה חדא פירכא היא דבית שמאי לא שני להו בין גרוף לשאינו גרוף:", false], ["R16", "ולב\"ה בתרתי", "דבמתניתין שרי בית הלל להשהות חמין ותבשיל אף בשאינו גרוף והכא קתני דבגרוף חמין אין תבשיל לא ובשאינה גרוף אין משהין כלל ולענין חזרה בגרוף תנן במתניתין לב\"ה מחזירין והכא קתני עקר דברי הכל לא יחזיר:", false], ["R17", "ואי ר' יהודה", "דאמר נמי כי מתניתין מ\"מ גרופה וקטומה קשיא דמתניתין תרצת דפלוגתא קמייתא בשאינו גרוף ושרו ב\"ש חמין ובית הלל חמין ותבשיל והכא קתני אין משהין על גבי שאינה גרופה ואינה קטומה כלל ופלוגתא דלשהות בגרופה וקטומה:", false], ["R18", "בחמין ותבשיל ונוטלים ומחזירין", "דמוקי פלוגתא דב\"ש וב\"ה בשהיית חמין ותבשיל דבית שמאי שרו חמין ותבשיל לא וב\"ה חמין ותבשיל ולא כר' מאיר דאמר לב\"ש לא כלום:", false], ["R19", "מהו לסמוך", "קדרה אצל דופן הכירה בלא גרופה שהכירה מטלטלת היא ומושיבים אותה על גבי קרקע:", false], ["R20", "גבה", "עובי שפתה או כסוי שעל חללה:", false], ["R21", "דמדלי", "הקדרה על גבי הכירה:", false], ["R22", "ונתלבתה", "חזרה והובערה:", false], ["R23", "התם נוטלין ומחזירין בחד מקום", "ולא שייך למתני מחזירין עד דתני נוטלין:", false], ["R24", "נעורת", "ארישט\"ש:", false], ["R25", "שהוחמו כל צרכן", "דליכא למיחש לחיתויי:", false]], "T": [["T1", "לעולם אימא לך להחזיר תנן וחסורי מיחסרא כו'", "משום דקיי\"ל כחנניה כמו שאפרש בע\"ה דחיק לאוקמא מתני' כוותיה:", false], ["T2a", "אא\"ב להחזיר תנן היינו דשני בין תוכה לעל גבה", "פי' בקונטרס משום דאי להחזיר תנן א\"כ לשהות משהין אפילו באינה גרופה להכי שני בין תוכה דהוי מטמין ממש ברמץ לעל גבה וקשה להר\"ח דלחנניה אפילו תוכה משהין אפי' באינה גרופה דהא תנן (. לעיל שבת דף יט:) ולא חררה על גבי גחלים אלא עד שיקרמו פניה הא קרמו פניה שרי אע\"ג דחררה בתוכה היא", false], ["T2b", "", "ובלאו הכי אור\"י דבחנם דחק רש\"י לפרש כן דאיכא למימר שפיר היינו דשני לן בין תוכה לעל גבה מהא דשרי להחזיר בגרופה ובהשהאה דוקא לא ניחא ליה לחלק אבל בהחזרה ניחא ליה שפיר לחלק כדמוכח במאי דמשני מי סברת ארישא קאי אסיפא קאי כו'", false], ["T2c", "", "קשה לר\"י היכי בעי למימר אליבא דרב דמתניתין להחזיר תנן אם כן אתיא מתניתין כחנניה ורב דלא כחנניה דהא חנניה שרי במצטמק ויפה לו דהא דתנן (שם) אין צולין בשר וביצה אלא כדי שיצולו מבעוד יום אתיא כחנניה וביצה אמרינן לקמן דמצטמק ויפה לו הוא ורב אסר לקמן דמצטמק ויפה לו", false], ["T2d", "", "וי\"ל דבלאו הכי לא סבר לה רב כשום תנא דהא ר\"מ ור' יהודה אסרי באינה גרופה אפילו במצטמק ורע לו ורב שרי במצטמק ורע לו אפילו באינה גרופה דבגרופה לא אשכחן שום אמורא דאסר אפילו יפה לו ועוד דרב קאי אמילתיה דרבי יוחנן דאיירי באינה גרופה וכן רבי יוחנן דשרי לקמן חמין ותבשיל שבישל כל צרכו באינה גרופה אבל לא בישל כל צרכו אסור לא אשכחן תנא דסבר הכי:", false], ["T3", "מהו לסמוך", "באינה גרופה קבעי ואי מתניתין להשהות תנן קא בעי להשהות ולהחזיר ואי להחזיר תנן ושרי להשהות אפי' תוכה וגבה בעי להחזיר ולהשהות היכא שאינו מבושל כמאכל בן דרוסאי:", false], ["T4", "תא שמע כירה שהסיקוה כו'", "ומסיק דשרי לסמוך ומכל מקום אין ללמוד מכאן לסמוך אצל האש דשאני הכא דדופני כירה מפסיקין בינו ולאש:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': תשובה לקושיה", "x": "בעמוד הקודם הגמרא שאלה אם המשנה של פרק \"כירה\" עוסקת בהשהיה או בהחזרה. היא הקשתה: אם המשנה עוסקת בהחזרה, המחלוקת השנייה שבה, \"נוטלין אבל לא מחזירין\", חוזרת על הראשונה. כאן באה התשובה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1a", "R1"], "t": "\"חסורי מיחסרא\": חסר משפט במשנה", "x": "\"לעולם אימא לך\", עדיין אפשר לומר לך שהמשנה עוסקת בהחזרה, ו\"חסורי מיחסרא\", חסר בה משפט. כך היא שונה: על כירה של קש וגבבא מחזירים תבשיל, ועל כירה של גפת ועצים לא יחזיר עד שיגרוף או עד שייתן אפר. אבל להשהות משהים, אף על פי שאינה גרופה ואינה קטומה. רש\"י: לפי זה, להשהות מותר גם כשאינה גרופה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1a", "T1"], "t": "התוספות: למה הגמרא דוחקת כך", "x": "התוספות מסבירים: מפני שההלכה כחנניה, כמו שיבארו בהמשך, הגמרא דוחקת להעמיד את המשנה כשיטתו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1b"], "t": "ומה משהים", "x": "\"ומה הן משהין\", ומה משהים על כירה שאינה גרופה? בית שמאי מתירים רק מים חמים, ובית הלל מתירים גם תבשיל. כלומר המחלוקת הראשונה עוסקת בהשהיה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1c", "R2", "R3"], "t": "וההחזרה היא מחלוקת", "x": "\"והך חזרה דאמרי לך\", וההחזרה שאמרתי לך, כלומר שאחרי שגרף מותר להחזיר, אינה דברי הכול. רש\"י: בית שמאי אינם סוברים כך. זו מחלוקת בית שמאי ובית הלל: בית שמאי אומרים נוטלים ואין מחזירים, ובית הלל אומרים אף מחזירים. כך המחלוקת השנייה אינה מיותרת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a", "R4"], "t": "תא שמע: \"על גבה\" ו\"תוכה\"", "x": "רבי חלבו אמר בשם רבי חמא בר גוריא בשם רב: \"לא שנו\", ההיתר שבמשנה נאמר רק על גבי הכירה, אבל בתוך הכירה אסור. רש\"י: כי על גבה החום אינו גדול כל כך.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G2a", "R5", "R6"], "t": "רש\"י: לפי ההחזרה, ההבחנה מובנת", "x": "אם המשנה עוסקת בהחזרה, מותר להשהות גם על כירה שאינה גרופה, כמו שהשלמנו במשנה. ורבי חלבו מדבר על ההיתר הזה. לכן יש הבדל בין תוכה לעל גבה: מי שמשהה בתוך כירה שאינה גרופה, מטמין ממש בגחלים.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G2a", "R7"], "t": "רש\"י: לפי ההשהיה, אין הבדל", "x": "אבל אם המשנה עוסקת בהשהיה, גם להשהות צריך כירה גרופה. וכיון שהיא גרופה, והוא נותן את הקדירה מבעוד יום, \"מה לי תוכה מה לי על גבה\", מה ההבדל בין תוכה לעל גבה?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2b", "R8", "R9"], "t": "התשובה: רבי חלבו מדבר על הסוף", "x": "\"מי סברת\", וכי אתה סבור שרבי חלבו מדבר על תחילת המשנה, \"עד שיגרוף\"? הוא מדבר על סופה, על דברי בית הלל \"אף מחזירין\". רש\"י: הסוף עוסק בהחזרה, ובזה רק על גבה מותר ותוכה אסור. אבל ההשהיה שבתחילה מותרת גם בתוכה וגם על גבה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2a", "T2a"], "t": "התוספות: קושיה על רש\"י", "x": "רש\"י פירש שלפי ההחזרה מותר להשהות גם בשאינה גרופה, ולכן יש הבדל בין תוכה, שבה מטמין ממש, לעל גבה. רבנו חננאל מקשה: לחנניה מותר להשהות אפילו בתוכה של כירה שאינה גרופה. הרי שנינו בפרק הראשון שחררה על גבי גחלים מותרת כשקרמו פניה, אף על פי שחררה שעל הגחלים היא כמו \"תוכה\".", "a": "חררה היא עוגה שאופים אותה על גחלים."}, {"w": "תוספות", "cols": false, "hl": ["G2b", "T2b"], "t": "התוספות: אין צורך בפירוש של רש\"י", "x": "רבנו יצחק אומר שרש\"י דחק את עצמו לחינם. אפשר לומר שההבדל בין תוכה לעל גבה נאמר בהחזרה על כירה גרופה. בהשהיה הגמרא אינה רוצה להבחין ביניהן, ובהחזרה היא מבחינה. כך מוכח מן התשובה \"מי סברת ארישא קאי, אסיפא קאי\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2b", "T2c"], "t": "התוספות: קושיה על דברי רב", "x": "רבנו יצחק מקשה: איך הגמרא רצתה לומר לשיטת רב שהמשנה עוסקת בהחזרה? אם כן המשנה כחנניה, ורב אינו סובר כחנניה. חנניה מתיר תבשיל שמצטמק ויפה לו. שהרי המשנה בפרק הראשון, שאין צולים בשר וביצה אלא כדי שייצלו מבעוד יום, היא כחנניה, ועל ביצה נאמר בהמשך שהיא מצטמקת ויפה לה. ורב אוסר בהמשך מה שמצטמק ויפה לו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2b", "T2d"], "t": "התוספות: התירוץ", "x": "גם בלי זה, רב אינו סובר כשום תנא. רבי מאיר ורבי יהודה אוסרים בכירה שאינה גרופה אפילו מה שמצטמק ורע לו, ורב מתיר מה שמצטמק ורע לו אפילו בשאינה גרופה. ומניין שרב מדבר בשאינה גרופה? א', בגרופה לא מצאנו שום אמורא שאוסר, אפילו מה שיפה לו. ב', דברי רב נאמרו על דברי רבי יוחנן, שעוסקים בשאינה גרופה. וכך גם רבי יוחנן עצמו, שמתיר בהמשך בשאינה גרופה חמין ותבשיל שהתבשלו כל צרכם, ואוסר מה שלא התבשל כל צרכו: לא מצאנו תנא שסובר כך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3a", "R10", "R11", "R12"], "t": "תא שמע: שתי כירות מתאימות", "x": "ברייתא: שתי כירות מתאימות, אחת גרופה וקטומה ואחת לא. משהים על הגרופה, ואין משהים על השנייה. רש\"י: הן מחוברות, וקיר של חרס מפסיק ביניהן, ואין חוששים לחום שעולה מן השנייה. ומה משהים על הגרופה? לשיטת בית שמאי לא כלום, ולשיטת בית הלל רק המים החמים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3b", "R13"], "t": "\"עקר\": לדברי הכול לא יחזיר", "x": "אם עקר את הקדירה מן הכירה, לדברי הכול לא יחזיר אותה. רש\"י: בשבת. כל זה הוא שיטת רבי מאיר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3c"], "t": "שיטת רבי יהודה", "x": "רבי יהודה שונה את המחלוקת אחרת, בלשון המשנה שלנו: לבית שמאי חמין ולא תבשיל, ולבית הלל חמין ותבשיל; ובהחזרה, בית שמאי אוסרים ובית הלל מתירים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4a", "R14"], "t": "לפי ההשהיה, המשנה כרבי יהודה", "x": "\"אי אמרת בשלמא\", אם המשנה עוסקת בהשהיה, היא כרבי יהודה. רש\"י מסביר: תחילת המשנה אומרת שלהשהות צריך כירה גרופה, ונחלקו בחמין ותבשיל בכירה גרופה, וסופה עוסק בהחזרה. כך אמר רבי יהודה. אבל אם המשנה בהחזרה, ולהשהות אין צורך בגרופה, והמחלוקת בחמין ותבשיל היא בשאינה גרופה, המשנה אינה כרבי יהודה ואינה כרבי מאיר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4b", "R15"], "t": "לרבי מאיר: קושיה לבית שמאי באחת", "x": "אם המשנה כרבי מאיר, קשה לבית שמאי בדבר אחד. רש\"י: במשנה בית שמאי מתירים להשהות חמין אפילו בכירה שאינה גרופה. ולרבי מאיר בית שמאי אוסרים לגמרי אפילו בגרופה, וכל שכן בשאינה גרופה. כל זה קושיה אחת, כי בית שמאי אינם מבחינים בין גרופה לשאינה גרופה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G4b", "R16"], "t": "רש\"י: ולבית הלל בשתיים", "x": "ולבית הלל קשה בשני דברים. א', במשנה הם מתירים להשהות חמין ותבשיל אפילו בשאינה גרופה, ולרבי מאיר בגרופה רק חמין, ובשאינה גרופה אין משהים כלל. ב', במשנה בית הלל מתירים להחזיר בגרופה, ולרבי מאיר אם עקר, לדברי הכול לא יחזיר.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G4b", "R17"], "t": "ולרבי יהודה: \"גרופה וקטומה\" קשה", "x": "ואם המשנה כרבי יהודה, שאומר את המחלוקת כמו במשנה, עדיין קשה עניין הגריפה. במשנה, לפי ההחזרה, המחלוקת הראשונה היא בכירה שאינה גרופה. ואילו בברייתא נאמר שעל כירה שאינה גרופה אין משהים כלל, והמחלוקת היא בגרופה וקטומה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R18"], "t": "התשובה: התנא שלנו מסכים עם רבי יהודה באחת", "x": "\"לעולם אימא לך\": גם אחרי הקושיה הזו הגמרא מקיימת את האפשרות של החזרה. התנא של המשנה מסכים עם רבי יהודה בדבר אחד: במחלוקת על חמין ותבשיל, ועל נוטלים ומחזירים. רש\"י: הוא מעמיד את המחלוקת בהשהיית חמין ותבשיל, שבית שמאי מתירים חמין ולא תבשיל ובית הלל חמין ותבשיל, ולא כרבי מאיר, שלפיו בית שמאי אוסרים הכול.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "וחולק עליו באחת", "x": "ובדבר אחד הוא חולק עליו. התנא שלנו סובר שמותר להשהות אף על פי שהכירה אינה גרופה וקטומה. ורבי יהודה סובר שגם להשהות צריך כירה גרופה וקטומה. אם כן, כן. ואם לא, לא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R19", "R20"], "t": "שאלה חדשה: לסמוך", "x": "\"איבעיא להו\", נשאלה שאלה: מה הדין לסמוך קדירה אל הכירה? בתוכה ועל גבה אסור, אבל לסמוך מותר? או שאין הבדל? רש\"י: לסמוך קדירה אל דופן הכירה כשאינה גרופה. הכירה מיטלטלת, ומעמידים אותה על הקרקע. \"גבה\" הוא עובי שפתה, או מכסה שעל חללה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T3"], "t": "התוספות: על מה בדיוק השאלה", "x": "השאלה היא על כירה שאינה גרופה. אם המשנה עוסקת בהשהיה, השאלה היא גם על השהיה וגם על החזרה. ואם המשנה בהחזרה, וההשהיה מותרת גם בתוכה ועל גבה, השאלה היא על החזרה, ועל השהיה של תבשיל שעוד לא התבשל כמאכל בן דרוסאי, שאותו גם חנניה אינו מתיר להשהות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R21"], "t": "ראיה מן הברייתא של שתי הכירות", "x": "\"תא שמע\": בברייתא של שתי כירות מתאימות נאמר שמשהים על הגרופה, אף על פי שעולה אליה חום מן השנייה, שאינה גרופה. משמע שמותר לסמוך לכירה שאינה גרופה. הגמרא דוחה: אולי שם שונה. הקדירה מוגבהת על גבי הכירה, ולכן האוויר שולט בה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8a", "R22"], "t": "ראיה מדברי רב ספרא", "x": "רב ספרא אמר בשם רב חייא: כירה שקטם אותה \"ונתלבתה\", ורש\"י מפרש: חזרה והובערה, סומכים לה, \"מקיימין עליה\", כלומר משאירים עליה את הקדירה, נוטלים ממנה ומחזירים לה. משמע שגם לסמוך, רק אם קטם מותר, ואם לא קטם אסור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8b"], "t": "דחייה: \"ולטעמיך\"", "x": "\"ולטעמיך\", ולפי דרכך: האם גם \"נוטלים ממנה\" רק אם קטם? והרי ליטול מותר תמיד. אלא \"נוטלין\" נשנה רק בגלל \"מחזירין\". וכך גם כאן, \"סומכין\" נשנה רק בגלל \"מקיימין\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R23"], "t": "\"הכי השתא\": אין הדבר דומה", "x": "\"הכי השתא\", האם זה דומה? שם נוטלים ומחזירים באותו מקום, ולכן שנה \"נוטלין\" בגלל \"מחזירין\". רש\"י: אי אפשר לשנות מחזירים בלי לשנות קודם נוטלים. אבל כאן סומכים במקום אחד, ומקיימים במקום אחר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R24"], "t": "מה המסקנה", "x": "\"מאי הוי עלה\", מה העלינו בדבר? תא שמע: כירה שהסיקו אותה בגפת ובעצים, סומכים לה, ואין מקיימים עליה אלא אם כן גרופה וקטומה. וגחלים שעממו, או שנתן עליהן נעורת של פשתן דקה, הרי היא כקטומה.", "a": "\"שעממו\" פירושו שכבו מעט ואורן נחלש. \"נעורת\" היא פסולת דקה של פשתן."}, {"w": "תוספות", "cols": false, "hl": ["G10", "T4"], "t": "התוספות: רק אצל דופן הכירה", "x": "המסקנה היא שמותר לסמוך. ובכל זאת אין ללמוד מכאן שמותר לסמוך קדירה אצל האש עצמה. כאן שונה, כי דופני הכירה מפסיקים בין הקדירה לאש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R25"], "t": "רבי אושעיא: קטמה והובערה", "x": "אמר רבי יצחק בר נחמני בשם רבי אושעיא: כירה שקטם אותה והובערה שוב, משהים עליה חמין שהוחמו כל צרכם ותבשיל שהתבשל כל צרכו. רש\"י: כי אין לחשוש שיחתה בגחלים.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "הגמרא דחתה את הקושיה מן העמוד הקודם: אפשר שהמשנה עוסקת בהחזרה, וחסר בה משפט, שלהשהות מותר גם על כירה שאינה גרופה. גם שתי ראיות נוספות נדחו. דברי רב על \"תוכה\" מתפרשים על סוף המשנה, על ההחזרה. והברייתא של שתי כירות אינה מכריחה שהמשנה בהשהיה, כי אפשר שהתנא של המשנה מסכים עם רבי יהודה בלשון המחלוקת, וחולק עליו בהשהיה. ועוד עלה שהסמיכה אל דופן הכירה מותרת גם בלי גריפה. העמוד הבא דן בדברי רבי אושעיא: האם מהם משמע שתבשיל שמצטמק ויפה לו מותר.", "a": ""}], "audio": "shabbat/daf-37a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

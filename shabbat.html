@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת: כל עמוד מוסבר צעד אחר צעד</title>
+<meta name="description" content="מסכת שבת בתלמוד הבבלי, בחינם: כל עמוד מוסבר צעד אחר צעד מול צורת הדף, עם רש&quot;י ותוספות, יחידות לימוד, שאלות לחזרה וקריינות.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="גמרא · מסכת שבת">
+<meta property="og:description" content="לימוד התלמוד הבבלי עמוד אחר עמוד, בחינם: צורת הדף, רש&quot;י ותוספות, הסבר, שאלות וקריינות.">
+<meta property="og:url" content="https://gemara.co.il/">
+<meta property="og:image" content="https://gemara.co.il/cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#efe7d6;--ink:#1f2430;--muted:#5b6270;--line:#d9cdb3;--paper:#fffaf0;--gold:#d9b25a;--gold2:#f3dc9a;--cover:#3a1419;--cover2:#5a2027;--accent:#1f5a66}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:radial-gradient(ellipse at 50% 20%,#f7f1e3 0%,var(--bg) 60%,#e2d6bd 100%);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.7}
+.tohome{position:fixed;top:10px;inset-inline-start:12px;z-index:5;font-size:.9rem;font-weight:500;text-decoration:none;color:var(--accent);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:3px 14px;box-shadow:0 1px 3px rgba(60,40,10,.12)}
+.view{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 16px}
+body.open #cover{display:none} body:not(.open) #toc{display:none}
+
+/* ---- the closed book ---- */
+.stage{perspective:1600px}
+.book{position:relative;display:block;width:min(74vw,400px);aspect-ratio:3/4.15;border:0;padding:0;cursor:pointer;font:inherit;color:inherit;background:none;
+  transform:rotateY(14deg) rotateX(2deg);transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.7,.2,1);filter:drop-shadow(-18px 24px 26px rgba(50,30,10,.38))}
+.book:hover,.book:focus-visible{transform:rotateY(6deg) rotateX(1deg) translateY(-6px)}
+.book:focus-visible{outline:3px solid var(--accent);outline-offset:10px}
+.book.opening{transform:rotateY(-78deg) translateX(30px);opacity:0;transition:transform .55s ease-in,opacity .45s ease-in .1s;transform-origin:right center}
+.pages{position:absolute;inset:7px auto 7px -13px;width:16px;border-radius:2px 0 0 2px;
+  background:repeating-linear-gradient(90deg,#fbf5e6 0 1.5px,#d8cba9 1.5px 3px);box-shadow:inset 0 0 4px rgba(90,70,30,.5)}
+.face{position:absolute;inset:0;border-radius:4px 10px 10px 4px;overflow:hidden;
+  background:radial-gradient(ellipse at 30% 18%,rgba(255,255,255,.10),transparent 55%),linear-gradient(135deg,var(--cover2),var(--cover) 55%,#2a0d11);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),inset 0 0 60px rgba(0,0,0,.45)}
+.face::before{content:"";position:absolute;inset:0;opacity:.5;
+  background:repeating-linear-gradient(47deg,rgba(255,255,255,.035) 0 2px,transparent 2px 5px),repeating-linear-gradient(-41deg,rgba(0,0,0,.06) 0 1px,transparent 1px 4px)}
+.spine{position:absolute;top:0;bottom:0;right:0;width:8%;background:linear-gradient(270deg,rgba(0,0,0,.5),rgba(0,0,0,.05) 70%,rgba(255,255,255,.08));border-inline-start:1px solid rgba(0,0,0,.35)}
+.frame{position:absolute;inset:6% 13% 6% 6%;border:2px solid var(--gold);border-radius:3px;box-shadow:0 0 0 5px var(--cover),0 0 0 6px rgba(217,178,90,.65);
+  display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:9% 6% 7%}
+.frame::before,.frame::after{content:"";position:absolute;inset-inline:22%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.frame::before{top:27%}.frame::after{bottom:24%}
+.gold{color:var(--gold);background:linear-gradient(180deg,var(--gold2),var(--gold) 55%,#a8853a);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  font-family:"Frank Ruhl Libre","Times New Roman",serif;text-shadow:none}
+.c-top{font-size:clamp(1rem,4.6vw,1.45rem);font-weight:700;letter-spacing:.14em}
+.c-mid{display:flex;flex-direction:column;gap:.1em}
+.c-small{font-size:clamp(.9rem,4vw,1.25rem);font-weight:500;letter-spacing:.3em;margin-inline-end:-.3em}
+.c-title{font-size:clamp(2.6rem,14vw,4.6rem);font-weight:900;line-height:1.05}
+.c-sub{font-size:clamp(.78rem,3.4vw,1.02rem);font-weight:500;letter-spacing:.06em}
+.c-brand{font-size:clamp(.85rem,3.8vw,1.15rem);font-weight:700;letter-spacing:.18em}
+.hint{margin-top:34px;color:var(--muted);font-size:.98rem;text-align:center}
+.hint b{display:block;font-family:"Frank Ruhl Libre",serif;color:var(--ink);font-size:1.25rem;font-weight:700}
+
+/* ---- the open book: contents ---- */
+.leaf{width:min(100%,880px);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:clamp(20px,4vw,44px);
+  box-shadow:0 2px 4px rgba(60,40,10,.08),0 18px 44px rgba(60,40,10,.14);position:relative;animation:leaf .45s ease-out}
+.leaf::before{content:"";position:absolute;inset:9px;border:1px solid var(--line);border-radius:3px;pointer-events:none}
+@keyframes leaf{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.book,.book.opening,.leaf{transition:none;animation:none}}
+.leaf header{text-align:center;border-bottom:2px solid var(--gold);padding-bottom:16px;margin-bottom:8px}
+.leaf .k{color:var(--accent);font-weight:700;font-size:.95rem;letter-spacing:.04em}
+.leaf h1{font-family:"Frank Ruhl Libre",serif;font-size:clamp(2rem,7vw,3rem);margin:.05em 0;line-height:1.15}
+.leaf header p{margin:0;color:var(--muted)}
+/* ---- the dedication page, in the manner of a memorial page in a printed sefer ---- */
+.ded{margin:30px auto 14px;max-width:660px;text-align:center;padding:30px 20px 28px;border:4px double #7a5a1e;outline:1px solid #cdb37a;outline-offset:7px;
+  background:linear-gradient(180deg,#fffdf6,#fbf3df);font-family:"Frank Ruhl Libre","Times New Roman",serif;color:#1c170d;box-shadow:0 10px 30px rgba(60,40,10,.12)}
+.ded svg{width:44px;height:66px;display:block;margin:0 auto 6px}
+.ded .v{font-size:1.02rem;color:#7a5a1e;letter-spacing:.1em;margin:0}
+.ded .t{font-size:clamp(2.1rem,9vw,3.2rem);font-weight:900;line-height:1.15;margin:.18em 0 .1em;letter-spacing:.03em}
+.ded .rule{width:46%;height:1px;margin:14px auto;background:linear-gradient(90deg,transparent,#7a5a1e,transparent)}
+.ded .names{display:flex;flex-direction:column;gap:.15em;margin:0}
+.ded .names b{font-size:clamp(1.45rem,6vw,2.1rem);font-weight:700;line-height:1.35}
+.ded .names small{font-size:.66em;font-weight:500;color:#5a4416;white-space:nowrap}
+.ded .names i{font-style:normal;color:#a8853a;font-size:.9rem;line-height:1}
+.ded .e{font-size:clamp(1.1rem,4.4vw,1.35rem);margin:0}
+.ded .a{font-size:clamp(1.25rem,5vw,1.6rem);font-weight:700;letter-spacing:.22em;margin:.35em 0 0;color:#7a5a1e}
+.leaf h2{font-family:"Frank Ruhl Libre",serif;font-size:1.45rem;margin:22px 0 2px}
+.leaf h3{font-family:"Frank Ruhl Libre",serif;font-size:1.2rem;margin:24px 0 8px;color:#7a5a1e}
+.leaf h3 em{font-style:normal;color:var(--ink);font-weight:500}
+.leaf h3 em::before{content:"· "}
+.chnote{margin:-6px 0 8px;font-size:.86rem;color:var(--muted)}
+.dafs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.daf{border:1px solid var(--line);border-radius:8px;background:#fff;padding:8px 10px 10px;display:flex;flex-direction:column;gap:6px}
+.daf b{font-family:"Frank Ruhl Libre",serif;font-size:1.15rem}
+.daf a,.daf span{display:flex;justify-content:space-between;align-items:center;text-decoration:none;font-size:.95rem;border-radius:6px;padding:4px 10px;border:1px solid var(--line)}
+.daf a{color:var(--accent);background:#eef5f5;border-color:#cfe1e3;font-weight:500}
+.daf a:hover{background:var(--accent);color:#fff}
+.daf span{color:#a9a08c;background:#f7f2e6}
+.daf i{font-style:normal;font-size:.72rem;font-weight:700;background:#fff;color:#7a5a1e;border:1px solid var(--gold);border-radius:999px;padding:0 7px}
+.daf a:hover i{color:#7a5a1e}
+.first{display:inline-block;margin:14px 0 0;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:8px 26px}
+.first:hover{background:#17454e}
+.how{color:var(--muted);font-size:.95rem;margin:8px 0 0}
+.leaf footer a{color:var(--accent)}
+.leaf footer{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+.close{font:inherit;font-size:.9rem;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:3px 14px;cursor:pointer;margin-top:10px}
+#toc.view{display:grid;grid-template-columns:minmax(0,290px) minmax(0,880px) minmax(0,290px);gap:22px;align-items:start;justify-content:center;padding-top:54px}
+.side{position:sticky;top:52px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:18px 18px 16px;box-shadow:0 2px 4px rgba(60,40,10,.08),0 10px 26px rgba(60,40,10,.1);font-size:.95rem;line-height:1.65;max-height:calc(100vh - 68px);overflow:auto}
+.side .sk{color:var(--accent);font-weight:700;font-size:.82rem;letter-spacing:.05em}
+.side h2{font-family:"Frank Ruhl Libre",serif;font-size:1.35rem;margin:0 0 6px;color:#7a5a1e}
+.side p{margin:6px 0}
+.side ul{margin:6px 0;padding-inline-start:18px}
+.side .hd{font-family:"Frank Ruhl Libre",serif;font-size:1.14rem;line-height:1.95;text-align:center;margin:10px 0 12px;padding:10px 6px;border-block:1px solid var(--gold)}
+.side a.more{display:block;text-align:center;text-decoration:none;font-weight:700;color:#fff;background:var(--accent);border-radius:999px;padding:6px 14px}
+@media (max-width:1280px){#toc.view{display:flex;justify-content:flex-start;gap:16px} .side{position:static;width:min(100%,880px);max-height:none}}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "מסכת שבת: כל עמוד מוסבר צעד אחר צעד", "url": "https://gemara.co.il/shabbat.html", "inLanguage": "he"}</script>
+</head>
+<body>
+<a class="tohome" href="./">כל הש"ס</a>
+<main>
+<section class="view" id="cover" aria-label="כריכת הספר">
+  <div class="stage">
+    <button type="button" class="book" id="book" aria-label="פתיחת הספר: מסכת שבת">
+      <span class="pages"></span>
+      <span class="face">
+        <span class="spine"></span>
+        <span class="frame">
+          <span class="gold c-top">תלמוד בבלי</span>
+          <span class="c-mid"><span class="gold c-small">מסכת</span><span class="gold c-title">שבת</span><span class="gold c-sub">עם פירוש רש"י ותוספות</span></span>
+          <span class="gold c-brand">גמרא</span>
+        </span>
+      </span>
+    </button>
+  </div>
+  <p class="hint"><b>לחצו על הספר כדי לפתוח</b>כל עמוד מוסבר צעד אחר צעד, מול צורת הדף</p>
+</section>
+
+<section class="view" id="toc" aria-label="תוכן העניינים">
+  <aside class="side" aria-label="פתיחה למסכת">
+    <div class="sk">לפני שמתחילים</div>
+    <h2>פתיחה למסכת שבת</h2>
+    <p>מסכת שבת היא המסכת הראשונה בסדר מועד. יש בה עשרים וארבעה פרקים, מדף ב' עד דף קנ"ז.</p>
+    <p><b>על מה המסכת:</b></p>
+    <ul>
+      <li>פרק א': הוצאה מרשות לרשות, ומה מותר להתחיל בערב שבת.</li>
+      <li>פרקים ב' עד ד': נר שבת, ובתוכו ענייני חנוכה, והשארת תבשיל חם והטמנתו.</li>
+      <li>פרקים ה' וו': במה יוצאים בשבת, בהמה ואדם.</li>
+      <li>פרקים ז' עד ט"ו: שלושים ותשע אבות מלאכה ושיעוריהן, ובהן הוצאה, זריקה, בנייה, כתיבה, אריגה, צידה וקשירה.</li>
+      <li>פרקים ט"ז עד כ"ד: הצלה מן הדלקה, טלטול כלים ומוקצה, מילה בשבת, ועוד דיני שבת.</li>
+    </ul>
+    <p><b>איך לומדים כאן:</b> בוחרים דף ועמוד. בכל עמוד ההסבר מתקדם צעד אחר צעד מול הדף, ואחריו יחידות לימוד, תרגום ושאלות.</p>
+  </aside>
+  <div class="leaf">
+    <header>
+      <div class="k">גמרא</div>
+      <h1>מסכת שבת</h1>
+      <p>הדף בצורתו, עם רש"י ותוספות, והסבר שמתקדם מול הדף ומסמן את מקומו.</p>
+      <a class="first" href="shabbat-2a.html">להתחיל מהעמוד הראשון</a>
+    </header>
+    <section class="ded" data-nosnippet aria-label="הקדשה לעילוי נשמת">
+      <svg viewBox="0 0 44 66" aria-hidden="true"><path d="M22 2c5 7 8 11 8 16a8 8 0 0 1-16 0c0-5 3-9 8-16z" fill="#e3a52a"/><path d="M22 10c2.6 3.6 4 6 4 8.6a4 4 0 0 1-8 0c0-2.600 1.400-5 4-8.600z" fill="#fbe7a6"/><rect x="21" y="25" width="2" height="6" fill="#3a2a10"/><rect x="14" y="30" width="16" height="30" rx="2" fill="#f6efdc" stroke="#7a5a1e" stroke-width="1.500"/><rect x="8" y="60" width="28" height="4" rx="2" fill="#7a5a1e"/></svg>
+      <p class="v">נר ה' נשמת אדם</p>
+      <div class="t">לעילוי נשמת</div>
+      <div class="rule"></div>
+      <p class="names"><b>מרים בת שנדל ע&quot;ה</b><i>✦</i><b>שניאור בן טובה ז&quot;ל</b><i>✦</i><b>מאיר בן ריינה ז&quot;ל</b><i>✦</i><b>ריינה בת עישה ע&quot;ה</b><i>✦</i><b>משה בן כוכבה ז&quot;ל</b><i>✦</i><b>ציונה בת כוכבה ע&quot;ה</b></p>
+      <div class="rule"></div>
+      <p class="e">תהא נשמתם צרורה בצרור החיים</p>
+      <p class="a">ת.נ.צ.ב.ה.</p>
+    </section>
+    <h2>תוכן העניינים</h2>
+    <p class="how">224 עמודים, מדף ב' עמוד א' עד דף קי"ג עמוד ב'. בוחרים דף ועמוד, ובתוך כל עמוד עוברים לעמוד הקודם ולעמוד הבא.</p>
+<h3>פרק ראשון <em>יציאות השבת</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף ב'</b><a href="shabbat-2a.html">עמוד א'</a><a href="shabbat-2b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ג'</b><a href="shabbat-3a.html">עמוד א'</a><a href="shabbat-3b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ד'</b><a href="shabbat-4a.html">עמוד א'</a><a href="shabbat-4b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ה'</b><a href="shabbat-5a.html">עמוד א'</a><a href="shabbat-5b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ו'</b><a href="shabbat-6a.html">עמוד א'</a><a href="shabbat-6b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ז'</b><a href="shabbat-7a.html">עמוד א'</a><a href="shabbat-7b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ח'</b><a href="shabbat-8a.html">עמוד א'</a><a href="shabbat-8b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ט'</b><a href="shabbat-9a.html">עמוד א'</a><a href="shabbat-9b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י'</b><a href="shabbat-10a.html">עמוד א'</a><a href="shabbat-10b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"א</b><a href="shabbat-11a.html">עמוד א'</a><a href="shabbat-11b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ב</b><a href="shabbat-12a.html">עמוד א'</a><a href="shabbat-12b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ג</b><a href="shabbat-13a.html">עמוד א'</a><a href="shabbat-13b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ד</b><a href="shabbat-14a.html">עמוד א'</a><a href="shabbat-14b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ט"ו</b><a href="shabbat-15a.html">עמוד א'</a><a href="shabbat-15b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ט"ז</b><a href="shabbat-16a.html">עמוד א'</a><a href="shabbat-16b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ז</b><a href="shabbat-17a.html">עמוד א'</a><a href="shabbat-17b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ח</b><a href="shabbat-18a.html">עמוד א'</a><a href="shabbat-18b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף י"ט</b><a href="shabbat-19a.html">עמוד א'</a><a href="shabbat-19b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ'</b><a href="shabbat-20a.html">עמוד א'</a><a href="shabbat-20b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שני <em>במה מדליקין</em></h3><p class="chnote">הפרק נפתח בדף כ&#x27; עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף כ"א</b><a href="shabbat-21a.html">עמוד א'</a><a href="shabbat-21b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ב</b><a href="shabbat-22a.html">עמוד א'</a><a href="shabbat-22b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ג</b><a href="shabbat-23a.html">עמוד א'</a><a href="shabbat-23b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ד</b><a href="shabbat-24a.html">עמוד א'</a><a href="shabbat-24b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ה</b><a href="shabbat-25a.html">עמוד א'</a><a href="shabbat-25b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ו</b><a href="shabbat-26a.html">עמוד א'</a><a href="shabbat-26b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ז</b><a href="shabbat-27a.html">עמוד א'</a><a href="shabbat-27b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ח</b><a href="shabbat-28a.html">עמוד א'</a><a href="shabbat-28b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף כ"ט</b><a href="shabbat-29a.html">עמוד א'</a><a href="shabbat-29b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל'</b><a href="shabbat-30a.html">עמוד א'</a><a href="shabbat-30b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"א</b><a href="shabbat-31a.html">עמוד א'</a><a href="shabbat-31b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ב</b><a href="shabbat-32a.html">עמוד א'</a><a href="shabbat-32b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ג</b><a href="shabbat-33a.html">עמוד א'</a><a href="shabbat-33b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ד</b><a href="shabbat-34a.html">עמוד א'</a><a href="shabbat-34b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ה</b><a href="shabbat-35a.html">עמוד א'</a><a href="shabbat-35b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ו</b><a href="shabbat-36a.html">עמוד א'</a><a href="shabbat-36b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שלישי <em>כירה</em></h3><p class="chnote">הפרק נפתח בדף ל&quot;ו עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף ל"ז</b><a href="shabbat-37a.html">עמוד א'</a><a href="shabbat-37b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ח</b><a href="shabbat-38a.html">עמוד א'</a><a href="shabbat-38b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ל"ט</b><a href="shabbat-39a.html">עמוד א'</a><a href="shabbat-39b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ'</b><a href="shabbat-40a.html">עמוד א'</a><a href="shabbat-40b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"א</b><a href="shabbat-41a.html">עמוד א'</a><a href="shabbat-41b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ב</b><a href="shabbat-42a.html">עמוד א'</a><a href="shabbat-42b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ג</b><a href="shabbat-43a.html">עמוד א'</a><a href="shabbat-43b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ד</b><a href="shabbat-44a.html">עמוד א'</a><a href="shabbat-44b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ה</b><a href="shabbat-45a.html">עמוד א'</a><a href="shabbat-45b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ו</b><a href="shabbat-46a.html">עמוד א'</a><a href="shabbat-46b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ז</b><a href="shabbat-47a.html">עמוד א'</a><a href="shabbat-47b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק רביעי <em>במה טומנין</em></h3><p class="chnote">הפרק נפתח בדף מ&quot;ז עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף מ"ח</b><a href="shabbat-48a.html">עמוד א'</a><a href="shabbat-48b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף מ"ט</b><a href="shabbat-49a.html">עמוד א'</a><a href="shabbat-49b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ'</b><a href="shabbat-50a.html">עמוד א'</a><a href="shabbat-50b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"א</b><a href="shabbat-51a.html">עמוד א'</a><a href="shabbat-51b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק חמישי <em>במה בהמה</em></h3><p class="chnote">הפרק נפתח בדף נ&quot;א עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף נ"ב</b><a href="shabbat-52a.html">עמוד א'</a><a href="shabbat-52b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ג</b><a href="shabbat-53a.html">עמוד א'</a><a href="shabbat-53b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ד</b><a href="shabbat-54a.html">עמוד א'</a><a href="shabbat-54b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ה</b><a href="shabbat-55a.html">עמוד א'</a><a href="shabbat-55b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ו</b><a href="shabbat-56a.html">עמוד א'</a><a href="shabbat-56b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שישי <em>במה אשה</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף נ"ז</b><a href="shabbat-57a.html">עמוד א'</a><a href="shabbat-57b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ח</b><a href="shabbat-58a.html">עמוד א'</a><a href="shabbat-58b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף נ"ט</b><a href="shabbat-59a.html">עמוד א'</a><a href="shabbat-59b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס'</b><a href="shabbat-60a.html">עמוד א'</a><a href="shabbat-60b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"א</b><a href="shabbat-61a.html">עמוד א'</a><a href="shabbat-61b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ב</b><a href="shabbat-62a.html">עמוד א'</a><a href="shabbat-62b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ג</b><a href="shabbat-63a.html">עמוד א'</a><a href="shabbat-63b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ד</b><a href="shabbat-64a.html">עמוד א'</a><a href="shabbat-64b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ה</b><a href="shabbat-65a.html">עמוד א'</a><a href="shabbat-65b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ו</b><a href="shabbat-66a.html">עמוד א'</a><a href="shabbat-66b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ז</b><a href="shabbat-67a.html">עמוד א'</a><a href="shabbat-67b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שביעי <em>כלל גדול</em></h3><p class="chnote">הפרק נפתח בדף ס&quot;ז עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף ס"ח</b><a href="shabbat-68a.html">עמוד א'</a><a href="shabbat-68b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ס"ט</b><a href="shabbat-69a.html">עמוד א'</a><a href="shabbat-69b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע'</b><a href="shabbat-70a.html">עמוד א'</a><a href="shabbat-70b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע"א</b><a href="shabbat-71a.html">עמוד א'</a><a href="shabbat-71b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע"ב</b><a href="shabbat-72a.html">עמוד א'</a><a href="shabbat-72b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע"ג</b><a href="shabbat-73a.html">עמוד א'</a><a href="shabbat-73b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע"ד</b><a href="shabbat-74a.html">עמוד א'</a><a href="shabbat-74b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע"ה</b><a href="shabbat-75a.html">עמוד א'</a><a href="shabbat-75b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע"ו</b><a href="shabbat-76a.html">עמוד א'</a><a href="shabbat-76b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שמיני <em>המוציא יין</em></h3><p class="chnote">הפרק נפתח בדף ע&quot;ו עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף ע"ז</b><a href="shabbat-77a.html">עמוד א'</a><a href="shabbat-77b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע"ח</b><a href="shabbat-78a.html">עמוד א'</a><a href="shabbat-78b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ע"ט</b><a href="shabbat-79a.html">עמוד א'</a><a href="shabbat-79b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ'</b><a href="shabbat-80a.html">עמוד א'</a><a href="shabbat-80b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ"א</b><a href="shabbat-81a.html">עמוד א'</a><a href="shabbat-81b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק תשיעי <em>אמר רבי עקיבא</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף פ"ב</b><a href="shabbat-82a.html">עמוד א'</a><a href="shabbat-82b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ"ג</b><a href="shabbat-83a.html">עמוד א'</a><a href="shabbat-83b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ"ד</b><a href="shabbat-84a.html">עמוד א'</a><a href="shabbat-84b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ"ה</b><a href="shabbat-85a.html">עמוד א'</a><a href="shabbat-85b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ"ו</b><a href="shabbat-86a.html">עמוד א'</a><a href="shabbat-86b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ"ז</b><a href="shabbat-87a.html">עמוד א'</a><a href="shabbat-87b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ"ח</b><a href="shabbat-88a.html">עמוד א'</a><a href="shabbat-88b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף פ"ט</b><a href="shabbat-89a.html">עמוד א'</a><a href="shabbat-89b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף צ'</b><a href="shabbat-90a.html">עמוד א'</a><a href="shabbat-90b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק עשירי <em>המצניע</em></h3><p class="chnote">הפרק נפתח בדף צ&#x27; עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף צ"א</b><a href="shabbat-91a.html">עמוד א'</a><a href="shabbat-91b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף צ"ב</b><a href="shabbat-92a.html">עמוד א'</a><a href="shabbat-92b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף צ"ג</b><a href="shabbat-93a.html">עמוד א'</a><a href="shabbat-93b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף צ"ד</b><a href="shabbat-94a.html">עמוד א'</a><a href="shabbat-94b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף צ"ה</b><a href="shabbat-95a.html">עמוד א'</a><a href="shabbat-95b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק אחד עשר <em>הזורק</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף צ"ו</b><a href="shabbat-96a.html">עמוד א'</a><a href="shabbat-96b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף צ"ז</b><a href="shabbat-97a.html">עמוד א'</a><a href="shabbat-97b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף צ"ח</b><a href="shabbat-98a.html">עמוד א'</a><a href="shabbat-98b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף צ"ט</b><a href="shabbat-99a.html">עמוד א'</a><a href="shabbat-99b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ק'</b><a href="shabbat-100a.html">עמוד א'</a><a href="shabbat-100b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ק"א</b><a href="shabbat-101a.html">עמוד א'</a><a href="shabbat-101b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ק"ב</b><a href="shabbat-102a.html">עמוד א'</a><a href="shabbat-102b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שנים עשר <em>הבונה</em></h3><p class="chnote">הפרק נפתח בדף ק&quot;ב עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף ק"ג</b><a href="shabbat-103a.html">עמוד א'</a><a href="shabbat-103b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ק"ד</b><a href="shabbat-104a.html">עמוד א'</a><a href="shabbat-104b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק שלושה עשר <em>האורג</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף ק"ה</b><a href="shabbat-105a.html">עמוד א'</a><a href="shabbat-105b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ק"ו</b><a href="shabbat-106a.html">עמוד א'</a><a href="shabbat-106b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק ארבעה עשר <em>שמנה שרצים</em></h3>
+<div class="dafs">
+<div class="daf"><b>דף ק"ז</b><a href="shabbat-107a.html">עמוד א'</a><a href="shabbat-107b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ק"ח</b><a href="shabbat-108a.html">עמוד א'</a><a href="shabbat-108b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ק"ט</b><a href="shabbat-109a.html">עמוד א'</a><a href="shabbat-109b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף ק"י</b><a href="shabbat-110a.html">עמוד א'</a><a href="shabbat-110b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף קי"א</b><a href="shabbat-111a.html">עמוד א'</a><a href="shabbat-111b.html">עמוד ב'</a></div>
+</div>
+<h3>פרק חמישה עשר <em>ואלו קשרים</em></h3><p class="chnote">הפרק נפתח בדף קי&quot;א עמוד ב&#x27;</p>
+<div class="dafs">
+<div class="daf"><b>דף קי"ב</b><a href="shabbat-112a.html">עמוד א'</a><a href="shabbat-112b.html">עמוד ב'</a></div>
+<div class="daf"><b>דף קי"ג</b><a href="shabbat-113a.html">עמוד א'</a><a href="shabbat-113b.html">עמוד ב'</a></div>
+</div>
+
+    <footer>
+      <b>טיוטה לבדיקה.</b> ההסברים עדיין לא עברו בדיקה ואישור של תלמיד חכם. הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.<br>
+      נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+      ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+      <button type="button" class="close" id="close">לסגור את הספר</button> <a class="close" href="./" style="text-decoration:none;display:inline-block">לכל הש"ס</a>
+    <div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+  </div>
+</section>
+</main>
+<script>
+(function(){
+  var b = document.body, book = document.getElementById('book');
+  function open(now){ b.classList.add('open'); if (!now) window.scrollTo(0, 0); if (location.hash !== '#toc') history.replaceState(null, '', '#toc'); }
+  if (location.hash === '#toc') open(true);
+  book.addEventListener('click', function(){
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return open();
+    book.classList.add('opening'); setTimeout(function(){ open(); book.classList.remove('opening'); }, 520);
+  });
+  document.getElementById('close').addEventListener('click', function(){ b.classList.remove('open'); history.replaceState(null, '', location.pathname); window.scrollTo(0, 0); });
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

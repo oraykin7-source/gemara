@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף ק&quot;ג עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-103a.html">
+<meta name="description" content="מסכת שבת, דף ק&quot;ג עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ק\"ג עמוד א'", "url": "https://gemara.co.il/shabbat-103a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף ק&quot;ג עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>הבונה</span><span>פרק שנים עשר</span><span>שבת<b>קג.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-102b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-103b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 203</div>
+  <h1>מסכת שבת, דף ק&quot;ג עמוד א&#x27;</h1>
+  <p class="sub">פרק שנים עשר, &quot;הבונה&quot;. הקודח והמכה על הסדן, משנת החורש והמלקט, ותחילת משנת הכותב שתי אותיות.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ק&quot;ג עמוד א&#x27;, לומדים: הקודח לשמואל, ו"זה הכלל"; המכה בקורנס על הסדן; החורש והמלקט, ותיקון הקרקע; הכותב שתי אותיות; רבי יהודה ו"ועשה אחת".</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. הקודח לשמואל, ו"זה הכלל"</a><a href="#u2">2. המכה בקורנס על הסדן</a><a href="#u3">3. החורש והמלקט, ותיקון הקרקע</a><a href="#u4">4. הכותב שתי אותיות</a><a href="#u5">5. רבי יהודה ו"ועשה אחת"</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>הקודח לשמואל, ו"זה הכלל"</h2>
+  <p class="lead">המשנה מחייבת את הקודח כל שהוא. לרב זה בניין, אבל לשמואל, שאינו רואה בנקב בניין, צריך למצוא כאן גמר מלאכה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הקודח כל שהוא חייב</td><td>הקודח כל שהוא חייב.</td></tr>
+      <tr><td>בשלמא לרב מיחזי כמאן דחר חורתא לבניינא</td><td>לרב זה מובן: נראה כמי שקודח חור לבניין.</td></tr>
+      <tr><td>אלא לשמואל לאו גמר מלאכה הוא</td><td>אבל לשמואל, אין זה גמר מלאכה!</td></tr>
+      <tr><td>הכא במאי עסקינן</td><td>במה מדובר כאן?</td></tr>
+      <tr><td>דבזעיה ברמצא דפרזלא</td><td>שקדח אותו במסמר של ברזל</td></tr>
+      <tr><td>ושבקיה בגוויה דהיינו גמר מלאכה</td><td>והשאיר אותו בתוכו, וזה גמר מלאכה.</td></tr>
+      <tr><td>זה הכלל לאתויי מאי</td><td>"זה הכלל", להוסיף מה?</td></tr>
+      <tr><td>לאתויי דחק קפיזא בקבא</td><td>להוסיף מי שחקק קפיזא בגוש של קב.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הקושיה:</b> רב רואה בנקב בניין, ולכן הקודח חייב לדעתו. שמואל מחייב רק משום מכה בפטיש, כלומר גמר מלאכה. אבל חור שקודחים כדי למלא אותו אינו דבר גמור.</p>
+  <p><b>התשובה:</b> מדובר במי שקדח במסמר ברזל והשאיר את המסמר בחור. כך החור והמסמר שבו הם דבר גמור.</p>
+  <p><b>"זה הכלל":</b> הכלל בא להוסיף מי שחקק "קפיזא", מידה קטנה, בגוש שראוי לחקוק בו מידה גדולה. אף שעתיד להוסיף, יש מי שמשאיר כך, וזו מלאכה מתקיימת.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>הקודח – וכל הקודח ע"מ למלאות הוא לתקוע בו יתד ושלא למלאות קרי נוקב:</blockquote><p><span class="say">מה רש"י אומר:</span> כל קידוח נעשה כדי למלא את החור ביתד. חור שאינו עשוי למילוי נקרא "נוקב".</p></div>
+  <div data-hl="R2,R4" class="voice r"><span class="tag">רש"י</span><blockquote>בשלמא לרב – דאמר נקב הוי בנין האי נמי בנין הוה כל שהוא ואע"פ שימלאנו הרי הועיל לבנין שקודח החור:</blockquote><blockquote>אלא לשמואל – דאמר נוקב לאו בונה הוא בשלמא נקב דלול איכא למימר מכה בפטיש אבל זה שעומד לסתום לאו גמר מלאכה הוא:</blockquote><p><span class="say">מה רש"י אומר:</span> לרב הקידוח הועיל לבניין אף שימלא את החור. לשמואל, נקב בלול אפשר לחייב משום מכה בפטיש, אבל חור שעומד להיסתם אינו גמר מלאכה.</p></div>
+  <div data-hl="R7" class="voice r"><span class="tag">רש"י</span><blockquote>דחק קפיזא בקבא – בגולם גדול הראוי לחוק בו קב חקק שלש לוגין ואע"פ שעתיד להוסיף יש שמקיימין כן:</blockquote><p><span class="say">מה רש"י אומר:</span> בגוש גדול שראוי לחקוק בו קב, חקק שלושה לוגים. יש מי שמשאיר כך.</p></div>
+  <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>בשלמא לרב מיחזי כמאן דחר חורתא לבניינא – אע"ג דלא דמי לעושה נקב בלול של תרנגולין דהתם עשוי להכניס ולהוציא מ"מ מטעם בנין כל דהו מיחייב כמו מעייל שופתא בקופינא דמרא ומסתת אלא לשמואל דמשום בנין כל דהו לא מיחייב אמאי חייב הא אין כאן גמר מלאכה:</blockquote><p><span class="say">מה התוספות אומרים:</span> החור הזה אינו כמו הנקב בלול, שעשוי להכניס ולהוציא. בכל זאת רב מחייב משום בניין כל שהוא, כמו ביתד במעדר ובמסתת. אבל שמואל אינו מחייב משום בניין כל שהוא, ולכן קשה לו.</p></div>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה הקודח חייב לרב?</summary><p>כי זה נראה כמי שקודח חור לבניין, ולרב נקב הוא בניין.</p></details>
+  <details><summary>איך מעמידים את המשנה לשמואל?</summary><p>כשקדח במסמר ברזל והשאיר אותו בחור, וזה גמר מלאכה.</p></details>
+  <details><summary>מה בא "זה הכלל" להוסיף?</summary><p>מי שחקק קפיזא בגוש של קב.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מה ההבדל בין "קודח" ל"נוקב"?</summary><p>קודח עושה חור כדי למלא אותו ביתד; חור שאינו עשוי למילוי נקרא נוקב.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G3">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>המכה בקורנס על הסדן</h2>
+  <p class="lead">רבן שמעון בן גמליאל מחייב את המכה בפטיש על הסדן. הגמרא שואלת מה הוא עושה, ודוחה תשובה אחת לטובת תשובה מן המשכן.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מאי קעביד</td><td>מה הוא עושה?</td></tr>
+      <tr><td>מפני שמאמן את ידו</td><td>מפני שהוא מאמן את ידו.</td></tr>
+      <tr><td>קשו בה בני רחבה</td><td>הקשו על כך בני רחבה:</td></tr>
+      <tr><td>אלא מעתה חזא אומנתא בשבתא וגמר</td><td>אם כך, מי שראה אומנות בשבת ולמד אותה,</td></tr>
+      <tr><td>הכי נמי דמיחייב</td><td>האם גם הוא חייב?</td></tr>
+      <tr><td>שכן מרדדי טסי משכן עושין כן</td><td>שכן מרדדי טסי המשכן עשו כך.</td></tr>
+      <tr><td>תניא נמי הכי</td><td>כך גם שנינו בברייתא.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>השאלה:</b> המכה על הסדן אינו מכה על החפץ שהוא עושה. מה הוא מתקן?</p>
+  <p><b>רבה ורב יוסף:</b> הוא מאמן את ידו למכה הנכונה. <b>בני רחבה</b> מקשים: אם כך, גם מי שלמד אומנות בשבת יתחייב, ואין זה מסתבר.</p>
+  <p><b>אביי ורבא:</b> כך עשו מרדדי הטסים במשכן. וכך גם מפורש בברייתא, שבה רבן שמעון בן גמליאל עצמו נותן את הטעם הזה.</p>
+  <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>מאמן ידיו – מרגילם ומכוונם להכאה הראוייה למלאכה מכה גדולה או מכה קטנה:</blockquote><p><span class="say">מה רש"י אומר:</span> הוא מרגיל את ידו ומכוון אותה למכה שהמלאכה צריכה, גדולה או קטנה.</p></div>
+  <div data-hl="R9,R10" class="voice r"><span class="tag">רש"י</span><blockquote>מרדדי טסי משכן – לציפוי קרשים:</blockquote><blockquote>עושין כן – מכין ג' על הטס ואחת על הסדן להחליק הקורנס שלא יבקע הטס שהוא דק ובעלי מטבע במקומנו ראיתי עושין כן:</blockquote><p><span class="say">מה רש"י אומר:</span> הטסים שימשו לציפוי הקרשים. מכים שלוש מכות על הטס ואחת על הסדן, כדי להחליק את הפטיש שלא יבקע את הטס הדק. רש"י ראה עושי מטבעות במקומו עושים כך.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה התשובה הראשונה נדחתה</h3>
+    <p>בני רחבה מראים שהטעם "מאמן את ידו" רחב מדי. אם לימוד הוא מלאכה, כל מי שלמד אומנות בשבת יתחייב. התשובה של אביי ורבא מצמצמת: ההכאה על הסדן היא חלק ממלאכה שנעשתה במשכן.</p>
+  </div>
+  <p class="godeep">מה הבעיה בטעם "מאמן את ידו"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה טעמם של רבה ורב יוסף?</summary><p>שהמכה על הסדן מאמן את ידו.</p></details>
+  <details><summary>מה הקשו בני רחבה?</summary><p>אם כך, גם מי שראה אומנות בשבת ולמד אותה יתחייב.</p></details>
+  <details><summary>מה טעמם של אביי ורבא?</summary><p>כך עשו מרדדי טסי המשכן.</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה מכים על הסדן בשעת ריקוע הטס?</summary><p>כדי להחליק את הפטיש שלא יבקע את הטס הדק.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G4,G5,G6,G7">
+  <div class="kicker">יחידה 3 · משנה</div>
+  <h2>החורש והמלקט, ותיקון הקרקע</h2>
+  <p class="lead">משנה חדשה עוסקת במלאכות השדה: חרישה, ניכוש וקציצת ענפים. השיעור תלוי במטרה, והגמרא דנה מה קורה כשהקרקע מתייפה ממילא.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>החורש כל שהוא</td><td>החורש כל שהוא,</td></tr>
+      <tr><td>המנכש והמקרסם והמזרד כל שהוא חייב</td><td>המנכש, המקרסם והמזרד, כל שהוא: חייב.</td></tr>
+      <tr><td>המלקט עצים אם לתקן כל שהן</td><td>המלקט עצים: אם לתקן, כל שהוא.</td></tr>
+      <tr><td>אם להיסק כדי לבשל ביצה קלה</td><td>אם להסקה, כדי לבשל ביצה קלה.</td></tr>
+      <tr><td>אם לבהמה כמלא פי הגדי</td><td>אם לבהמה, כמלוא פי הגדי.</td></tr>
+      <tr><td>חזי לביזרא דקרא</td><td>ראוי לגרעין של דלעת.</td></tr>
+      <tr><td>שכן ראוי לקלח אחד של סמנין</td><td>שכן ראוי לקלח אחד של צמחי צבע.</td></tr>
+      <tr><td>אם לאכילה כגרוגרת</td><td>אם לאכילה, כגרוגרת.</td></tr>
+      <tr><td>אם לייפות את הקרקע כל שהן</td><td>אם ליפות את הקרקע, כל שהוא.</td></tr>
+      <tr><td>אטו כולהו לא ליפות את הקרקע נינהו</td><td>וכי כל אלה אינם מייפים את הקרקע?</td></tr>
+      <tr><td>באגם שנו</td><td>באגם שנו.</td></tr>
+      <tr><td>אפילו תימא בשדה דלאו אגם</td><td>אפילו תאמר בשדה שאינו אגם,</td></tr>
+      <tr><td>וכגון דלא קמיכוין</td><td>כגון שאינו מתכוון.</td></tr>
+      <tr><td>לא צריכא דקעביד בארעא דחבריה</td><td>לא נצרכה אלא כשהוא עושה בשדה של חברו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> החורש, המנכש, המקרסם והמזרד חייבים בכל שהוא. במלקט עצים ועשבים השיעור תלוי במטרה: לתיקון, כל שהוא. להסקה, כדי לבשל ביצה קלה. לבהמה, כמלוא פי הגדי.</p>
+  <p><b>חרישה כל שהוא:</b> היא ראויה לזרוע בה גרעין של דלעת, ובמשכן לקלח אחד של צמחי צבע.</p>
+  <p><b>הקושיה:</b> ברייתא נותנת שיעורים גדולים לאכילה ולהסקה. אבל הרי כל תלישה מייפה את הקרקע, וליפוי די בכל שהוא.</p>
+  <p><b>התשובות:</b> רבה ורב יוסף: מדובר באגם, שאין צורך ליפות. אביי: גם בשדה, כשאינו מתכוון. וכשמקשים שבמעשה שתוצאתו ודאית גם רבי שמעון מודה, הגמרא מעמידה בשדה של חברו.</p>
+  <div data-hl="R11,R12" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' מקרסם – קוצץ ענפים יבשים מן אילן לתקנו:</blockquote><blockquote>מזרד – זרדין לחין חדשים של שנה זו ופעמים שהן מרובין ומכחישים האילן ומתייבשין וקוצצין אותם ממנו:</blockquote><p><span class="say">מה רש"י אומר:</span> המקרסם קוצץ ענפים יבשים כדי לתקן את העץ. המזרד קוצץ ענפים לחים וחדשים, שלפעמים הם רבים ומחלישים את העץ.</p></div>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>גמ' לביזרא דקרא – לזרוע בתוכה נימא של דלעת ואע"ג דשנינו (לעיל שבת דף צ:) לענין הוצאת זרע דלועין שנים שאין אדם טורח בנימא אחת ה"מ הוצאה דכי מפיק תרתי מפיק כי הדדי שאינו זורע אחת לבדה אבל לענין חרישה כל גומא וגומא באפי נפשה עביד לה:</blockquote><p><span class="say">מה רש"י אומר:</span> במוציא זרעי דלעת השיעור שניים, כי אין אדם זורע גרעין אחד לבדו. אבל בחרישה כל גומה נעשית לעצמה.</p></div>
+  <div data-hl="R18,R19,R20" class="voice r"><span class="tag">רש"י</span><blockquote>אטו כולהו לא ליפות את הקרקע נינהו – הרי הקרקע מתייפה מאליו:</blockquote><blockquote>באגם – שאין צריך ליפות:</blockquote><blockquote>בארעא דחבריה – לא איכפת ליה ליפות:</blockquote><p><span class="say">מה רש"י אומר:</span> הקרקע מתייפה מאליה כשתולשים. באגם אין צורך ליפות. ובשדה של חברו לא אכפת לו ליפות.</p></div>
+  <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>אם לבהמה כמלא פי הגדי ואם להיסק – פירוש שאינם ראויין לאכילה דאי לאו הכי מיחייב אשיעורא זוטא כדאמר לעיל (שבת דף עו.) המוציא תבן כמלא פי פרה לגמל חייב:</blockquote><p><span class="say">מה התוספות אומרים:</span> השיעורים לבהמה ולהסקה נאמרו בזרדים שאינם ראויים לאדם. אילו היו ראויים, היה חייב בשיעור הקטן יותר.</p></div>
+  <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>באגם שנו – ומתני' דלא שייך לאוקמי באגם אומר ר"ת דאיירי באילן יבש שאינו מתקן כלום:</blockquote><p><span class="say">מה התוספות אומרים:</span> את המשנה, על המלקט עצים, אי אפשר להעמיד באגם. רבנו תם מעמיד אותה בעץ יבש, שהליקוט ממנו אינו מתקן דבר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מחלוקת התוספות והערוך</h3>
+    <div data-hl="T4a" class="voice t"><span class="tag">תוספות</span><blockquote>לא צריכא דעביד בארעא דחבריה – פי' בערוך (ערך סבר) דבפסיק רישיה דלא ניחא ליה כגון דקעביד בארעא דחבריה וכגון באחר שאינו אוהבו והקוצץ בהרת בשעת מילה שאין לו הנאה מותר לכתחילה ואפילו איסור דרבנן ליכא והתיר ר' חבית שפקקוהו בפשתן להסיר הפקק ולמשוך ממנו יין בשבת אע"פ שא"א שלא יסחוט כשמסיר הפקק והוי פסיק רישיה כיון דאינו נהנה בסחיטה זאת שהיין נופל לארץ מותר</blockquote><p><span class="say">מה התוספות אומרים:</span> הערוך פירש שמעשה שתוצאתו ודאית אבל אינו נוח לו, כמו בשדה של אדם אחר שאינו אוהבו, מותר לגמרי, אפילו לכתחילה. וכך הותר להסיר מחבית פקק של פשתן, אף שהפשתן נסחט, כי היין נופל לארץ ואינו נהנה ממנו.</p></div>
+    <div data-hl="T4b" class="voice t"><span class="tag">תוספות</span><blockquote>ואינו נראה דהא מפיס מורסא להוציא ממנו ליחה היה אסור אי לאו משום צערא דגופא אע"פ שאינו נהנה כלל בבנין הפתח ואינו מתכוין כלל לבנין הפתח אלא לנקיבה בעלמא וכן הביא רשב"א ממחט של יד ליטול בה את הקוץ דמוקי לה בהנחנקין (סנהדרין דף פד:) כר"ש דאמר מלאכה שאינה צריכה לגופה פטור עליה ומשום צערא שרי ואע"פ שאינו נהנה בחבורה היה אסור אי לאו משום צערא דגופא והא דקאמר לא צריכא דעביד בארעא …</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות דוחים: מי שפותח מורסה, בלי צער הגוף היה הדבר אסור, אף שאינו נהנה מן הפתח ואינו מתכוון אליו. וכך גם במחט שנוטלים בה קוץ. לכן בשדה של חברו אין חיוב חטאת, אבל איסור יש.</p></div>
+    <div data-hl="T4c" class="voice t"><span class="tag">תוספות</span><blockquote>והא דקאמר בשילהי כל התדיר (זבחים דף צא:) המתנדב יין מביאו ומזלפו על גבי האישים ופריך והא קא מכבה ומוקי לה כר"ש דאמר דבר שאין מתכוין מותר מיירי דלא הוי פסיק רישיה שמזלפו בטיפות דקות א"נ על גבי האיברים אפשר שלא יכבה האש ובפרק לולב הגזול (סוכה דף לג:) גבי אין ממעטין בי"ט משום ר"א. בר"ש אמרו ממעטין ופריך והא קא מתקן מנא ומשני כגון שליקטן לאכילה ודבר שאין מתכוין מותר ופריך והא אביי …</blockquote><p><span class="say">מה התוספות אומרים:</span> במסכת זבחים התירו לזלף יין על האש כרבי שמעון, והתוספות מסבירים שאין שם "פסיק רישיה", כי אפשר שהאש לא תכבה. במסכת סוכה התירו, משום רבי אלעזר ברבי שמעון, למעט את ענבי ההדס ביום טוב כשיש לו הדס אחר, ומשם משמע כערוך. התוספות מיישבים שתיקון מועט כזה אסור רק מדברי חכמים, ובו לא גזרו כשאינו נהנה.</p></div>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>בארעא דחבריה – פי' דהויא מלאכה שא"צ לגופה:</blockquote><p><span class="say">מה התוספות אומרים:</span> בשדה של חברו זו מלאכה שאינה צריכה לגופה.</p></div>
+  </div>
+  <p class="godeep">האם מעשה בשדה של חברו מותר לגמרי, או רק פטור מחטאת? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה השיעור במלקט עצים להסקה?</summary><p>כדי לבשל ביצה קלה.</p></details>
+  <details><summary>למה ראויה חרישה כל שהוא?</summary><p>לזרוע בה גרעין של דלעת.</p></details>
+  <details><summary>איך רבה ורב יוסף מיישבים את הברייתא?</summary><p>היא נשנתה באגם, שאין צורך ליפות.</p></details>
+  <details><summary>למה בשדה של חברו אין חיוב?</summary><p>כי לא אכפת לו ליפות קרקע של אחר.</p></details>
+  <details class="deepq"><summary>במה חולקים התוספות על הערוך?</summary><p>לערוך מותר לגמרי; לתוספות פטור מחטאת אבל אסור.</p></details>
+  <details class="deepq"><summary>איך רבנו תם מעמיד את המשנה?</summary><p>בעץ יבש, שהליקוט ממנו אינו מתקן דבר.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G8,G9,G10">
+  <div class="kicker">יחידה 4 · משנה</div>
+  <h2>הכותב שתי אותיות</h2>
+  <p class="lead">משנה חדשה: מי שכותב בשבת שתי אותיות חייב, בכל יד, בכל צבע ובכל כתב. רבי יוסי ורבי יהודה מוסיפים טעמים, והגמרא שואלת על הכותב בשמאל.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הכותב שתי אותיות</td><td>הכותב שתי אותיות,</td></tr>
+      <tr><td>בין בימינו בין בשמאלו</td><td>בין בימינו בין בשמאלו,</td></tr>
+      <tr><td>בין משם אחד בין משתי שמות</td><td>בין משם אחד בין משני שמות,</td></tr>
+      <tr><td>בין משתי סמניות בכל לשון חייב</td><td>בין בשני צבעים, בכל לשון: חייב.</td></tr>
+      <tr><td>לא חייבו שתי אותיות אלא משום רושם</td><td>לא חייבו על שתי אותיות אלא משום סימן,</td></tr>
+      <tr><td>שכך כותבין על קרשי המשכן</td><td>שכך כותבים על קרשי המשכן,</td></tr>
+      <tr><td>לידע איזו בן זוגו</td><td>לדעת איזה הוא בן זוגו.</td></tr>
+      <tr><td>מצינו שם קטן משם גדול</td><td>מצאנו שם קטן משם גדול.</td></tr>
+      <tr><td>הא אין דרך כתיבה בכך</td><td>הרי אין דרך כתיבה בכך!</td></tr>
+      <tr><td>באטר יד שנו</td><td>במי שהוא שמאלי שנו.</td></tr>
+      <tr><td>ותהוי שמאל דידיה כימין דכ"ע</td><td>ותהיה השמאל שלו כמו ימין של כל אדם!</td></tr>
+      <tr><td>אלא אמר אביי בשולט בשתי ידיו</td><td>אלא אמר אביי: במי ששולט בשתי ידיו.</td></tr>
+      <tr><td>כולה רבי יוסי היא</td><td>כולה רבי יוסי היא.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> הכותב שתי אותיות חייב, בימין או בשמאל, אותיות זהות או שונות, בשני צבעים ובכל כתב.</p>
+  <p><b>רבי יוסי:</b> החיוב הוא משום "רושם", סימן. כך סימנו את קרשי המשכן, כדי להעמיד כל קרש ליד בן זוגו. <b>רבי יהודה:</b> מצאנו שם קטן מתוך שם גדול, כמו "שם" מתוך "שמעון".</p>
+  <p><b>הכותב בשמאל:</b> אין זו דרך כתיבה. רבי ירמיה מעמיד בשמאלי, אבל אז השמאל שלו היא הימין. לכן אביי מעמיד במי ששולט בשתי ידיו.</p>
+  <p><b>רב יעקב:</b> כל המשנה היא כרבי יוסי, שמחייב משום סימן, ובשמאל יש לפחות סימן.</p>
+  <div data-hl="R21,R22,R23" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' בין משם אחד – שתיהן אלפין:</blockquote><blockquote>משתי שמות – אלף בית:</blockquote><blockquote>משתי סמניות – אחת בדיו ואחת בסיקרא:</blockquote><p><span class="say">מה רש"י אומר:</span> "משם אחד" הן אותיות זהות, כמו שתי אלף. "משני שמות" הן אותיות שונות, כמו אלף ובית. "משתי סמניות", אחת בדיו ואחת בצבע אדום.</p></div>
+  <div data-hl="R25" class="voice r"><span class="tag">רש"י</span><blockquote>משום רושם – סימן שהיו עושים בקרשי המשכן מפני שמפרקין אותו ולכשיקימוהו לא יחלפו סדר הקרשים ואתא ר' יוסי למימר דאפילו לא כתב אלא רשם שני רשימות בעלמא לסימן חייב:</blockquote><p><span class="say">מה רש"י אומר:</span> המשכן פורק, וכדי שבהקמה הבאה לא יחליפו את סדר הקרשים, סימנו אותם. ולרבי יוסי אפילו מי שרשם שני סימנים בלבד חייב.</p></div>
+  <div data-hl="R26" class="voice r"><span class="tag">רש"י</span><blockquote>מצינו שם קטן כו' – הא אתא לאשמועינן רבי יהודה דאע"ג שלא נגמר מלאכתו שנתכוין לכתוב תיבה גדולה וכתב מקצת ואותו מקצת הויא תיבה המתקיימת במקום אחר חייב:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי יהודה מלמד שמי שהתכוון לכתוב מילה גדולה וכתב רק חלק ממנה, חייב, אם החלק הוא מילה שמתקיימת במקום אחר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שני הסברים לכותב בשמאל</h3>
+    <p>אביי מעמיד את המשנה כפשוטה, בכתיבה ממש, ולכן צריך אדם שכותב היטב בשתי ידיו. רב יעקב מעמיד אותה כרבי יוסי: אין צורך בכתיבה ממש, די בסימן, ובשמאל יש סימן.</p>
+    <div data-hl="R27" class="voice r"><span class="tag">רש"י</span><blockquote>גמ' הא מני רבי יוסי היא – דלא בעי כתיבה אלא רושם בעלמא ובשמאלו רושם מיהא הוה:</blockquote><p><span class="say">מה רש"י אומר:</span> לרבי יוסי אין צורך בכתיבה אלא ברושם בלבד, ובשמאל יש לפחות רושם.</p></div>
+  </div>
+  <p class="godeep">איך רבי יוסי מסביר את החיוב בשמאל? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה טעמו של רבי יוסי?</summary><p>החיוב הוא משום סימן, כמו שסימנו את קרשי המשכן.</p></details>
+  <details><summary>למה נדחה ההסבר של רבי ירמיה?</summary><p>כי לשמאלי השמאל היא כימין, והיה צריך לחייב בשמאל ולא בימין.</p></details>
+  <details><summary>מה מפרש רש"י "משתי סמניות"?</summary><p>אחת בדיו ואחת בצבע אדום.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מה מלמד רבי יהודה?</summary><p>מי שהתכוון למילה גדולה וכתב חלק ממנה, חייב אם החלק הוא מילה במקום אחר.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G11,G12,G13">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>רבי יהודה ו"ועשה אחת"</h2>
+  <p class="lead">מדברי רבי יהודה מדייקים שאינו מחייב על שתי אותיות זהות. הגמרא מביאה ברייתא שדורשת את הפסוק "ועשה אחת", והיא נמשכת בעמוד הבא.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>שתי אותיות והן שני שמות הוא דמחייב</td><td>על שתי אותיות שהן שני שמות הוא מחייב,</td></tr>
+      <tr><td>שתי אותיות והן שם אחד לא מחייב</td><td>על שתי אותיות שהן שם אחד אינו מחייב.</td></tr>
+      <tr><td>ועשה אחת</td><td>"ועשה אחת".</td></tr>
+      <tr><td>יכול עד שיכתוב כל השם</td><td>יכול שאינו חייב עד שיכתוב את כל השם,</td></tr>
+      <tr><td>ועד שיארוג כל הבגד</td><td>ועד שיארוג את כל הבגד,</td></tr>
+      <tr><td>ועד שיעשה כל הנפה</td><td>ועד שיעשה את כל הנפה?</td></tr>
+      <tr><td>ת"ל מאחת</td><td>לכן נאמר "מאחת".</td></tr>
+      <tr><td>אי מאחת יכול אפילו לא כתב אלא אות אחת</td><td>אם "מאחת", יכול אפילו לא כתב אלא אות אחת,</td></tr>
+      <tr><td>ולא ארג אלא חוט אחד</td><td>ולא ארג אלא חוט אחד,</td></tr>
+      <tr><td>ולא עשה אלא בית אחד בנפה</td><td>ולא עשה אלא "בית" אחד בנפה?</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הדיוק:</b> כל הדוגמאות של רבי יהודה הן אותיות שונות. משמע שעל אותיות זהות, כמו "שש", אינו מחייב.</p>
+  <p><b>הברייתא:</b> בפסוק נאמר "ועשה אחת". "אחת" משמע מלאכה שלמה, כל המילה וכל הבגד. "מאחת" משמע חלק ממנה.</p>
+  <p><b>ואם רק "מאחת":</b> אולי חייב אפילו על אות אחת, חוט אחד או "בית" אחד בנפה. הברייתא ממשיכה בעמוד הבא, והיא מקשה על הדיוק מרבי יהודה.</p>
+  <div data-hl="R28,R29" class="voice r"><span class="tag">רש"י</span><blockquote>והן שני שמות – כגון הנך דנקט במתני' שאינן שוות:</blockquote><blockquote>הא ב' אותיות והן שם אחד – כגון שש מששך או תת מתתנן או חח מחחים לא מיחייב מדלא נקט רבי יהודה חד מהנך:</blockquote><p><span class="say">מה רש"י אומר:</span> "שני שמות" הן אותיות שאינן שוות, כמו הדוגמאות שבמשנה. "שם אחד" הן כמו "שש" מתוך "ששך", ורבי יהודה לא הביא דוגמה כזו.</p></div>
+  <div data-hl="R30,R31" class="voice r"><span class="tag">רש"י</span><blockquote>אחת – כולה במשמע:</blockquote><blockquote>כל השם – התיבה קרוי שם:</blockquote><p><span class="say">מה רש"י אומר:</span> "אחת" משמע את כולה, ו"שם" פירושו מילה.</p></div>
+  <div data-hl="R32" class="voice r"><span class="tag">רש"י</span><blockquote>בית אחד בנפה – לאחר שהסיך נצרים של שתי עושה באריגת ערב נצר אחד מלמטה ואחד ממעלה והן קרוין בתים והם עונבין את השתי כדרך רכיבתו ועומד האריג ובית אחד אין מתקיים ומשום דלאו חוטין נינהו קרי להו בית כמו בתי נירין שאין לה בתי נירין אחרים:</blockquote><p><span class="say">מה רש"י אומר:</span> בנפה, האורג מעביר בין נצרי השתי נצר אחד מלמטה ונצר אחד מלמעלה. אלה נקראים "בתים", והם מחזיקים את השתי. "בית" אחד אינו מתקיים.</p></div>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה מדייקים מדברי רבי יהודה?</summary><p>שהוא מחייב רק על שתי אותיות שונות, ולא על זהות.</p></details>
+  <details><summary>מה משמע "אחת"?</summary><p>מלאכה שלמה: כל המילה, כל הבגד, כל הנפה.</p></details>
+  <details><summary>מה החשש אם נדרוש רק "מאחת"?</summary><p>שיתחייב אפילו על אות אחת או חוט אחד.</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה "בית" אחד בנפה אינו מספיק?</summary><p>כי "בית" אחד אינו מתקיים.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>הקודח:</b> לרב זה בניין. לשמואל מדובר כשהשאיר את המסמר בחור, וזה גמר מלאכה.</li>
+      <li><b>זה הכלל:</b> מוסיף מי שחקק מידה קטנה בגוש שעשוי למידה גדולה.</li>
+      <li><b>המכה על הסדן:</b> חייב כי כך עשו מרדדי טסי המשכן, ולא מפני שמאמן את ידו.</li>
+      <li><b>החורש והמלקט:</b> החורש חייב בכל שהוא. המלקט חייב בכל שהוא כשכוונתו לתקן, ובשיעור לפי המטרה כשכוונתו לבהמה או להסקה.</li>
+      <li><b>שדה של חברו:</b> כשאינו רוצה ביפוי הקרקע אין חיוב חטאת. הערוך מתיר לגמרי, והתוספות אוסרים.</li>
+      <li><b>הכותב שתי אותיות:</b> חייב בכל יד ובכל כתב. לרבי יוסי משום סימן, ולרבי יהודה גם שם קטן משם גדול.</li>
+      <li><b>נשאר פתוח:</b> הברייתא על "אחת" ו"מאחת" נמשכת בעמוד הבא.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>בשלמא</td><td>זה מובן. כך פותחים: דבר אחד מובן, ורק השני קשה</td></tr>
+      <tr><td>הכא במאי עסקינן</td><td>במה מדובר כאן</td></tr>
+      <tr><td>לאתויי מאי</td><td>מה הוא בא להוסיף</td></tr>
+      <tr><td>קשו בה</td><td>הקשו על כך</td></tr>
+      <tr><td>אלא מעתה</td><td>אם כך</td></tr>
+      <tr><td>תניא נמי הכי</td><td>כך גם שנינו בברייתא</td></tr>
+      <tr><td>דאמרי תרוייהו</td><td>שאמרו שניהם</td></tr>
+      <tr><td>אטו</td><td>וכי</td></tr>
+      <tr><td>פסיק רישיה ולא ימות</td><td>&quot;יחתוך את ראשו ולא ימות?&quot;: מעשה שתוצאתו ודאית</td></tr>
+      <tr><td>לא צריכא</td><td>&quot;לא נצרכה&quot;: הדברים נאמרו רק במקרה מסוים</td></tr>
+      <tr><td>הא מני</td><td>של מי היא זו</td></tr>
+      <tr><td>אטר יד</td><td>שמאלי</td></tr>
+      <tr><td>שולט בשתי ידיו</td><td>עושה היטב בשתי ידיו</td></tr>
+      <tr><td>ת&quot;ל</td><td>תלמוד לומר: לכן נאמר בפסוק</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-102b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-103b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ק&quot;ג עמוד א&#x27;, לומדים: הקודח לשמואל, ו"זה הכלל"; המכה בקורנס על הסדן; החורש והמלקט, ותיקון הקרקע; הכותב שתי אותיות; רבי יהודה ו"ועשה אחת".</p><details><summary>ההסבר צעד אחר צעד, כטקסט (37 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד א&#x27;: &quot;תא שמע&quot; מן הקודח</h3><p>העמוד הקודם עסק במחלוקת רב ושמואל: האם המסתת חייב משום בונה או משום מכה בפטיש. בסופו הגמרא אמרה &quot;תא שמע&quot;, בוא ושמע. כאן באה הראיה: המשנה אומרת שהקודח כל שהוא חייב.</p></li><li><h3><span class="w">גמרא</span> · &quot;הקודח כל שהוא חייב&quot;</h3><p>הגמרא מביאה את המשנה: מי שקודח חור, אפילו קטן מאוד, חייב. רש&quot;י מפרש: כל קידוח נעשה כדי למלא את החור, לתקוע בו יתד. חור שאינו עשוי למילוי נקרא &quot;נוקב&quot;.</p></li><li><h3><span class="w">גמרא</span> · לרב זה מובן</h3><p>&quot;בשלמא לרב&quot;, לדעת רב זה מובן: &quot;מיחזי כמאן דחר חורתא לבניינא&quot;, זה נראה כמי שקודח חור לבניין. רש&quot;י מפרש: לרב, נקב הוא בניין, ואף שימלא את החור, הקידוח הועיל לבניין.</p></li><li><h3><span class="w">גמרא</span> · אבל לשמואל קשה</h3><p>&quot;אלא לשמואל&quot;, לדעת שמואל זה אינו גמר מלאכה. רש&quot;י מפרש: שמואל אומר שהנוקב אינו בונה. את הנקב בלול אפשר לחייב משום מכה בפטיש, אבל חור שעומד להיסתם אינו גמר מלאכה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מה ההבדל בין רב לשמואל כאן</h3><p>החור הזה אינו דומה לנקב בלול, שעשוי להכניס ולהוציא. בכל זאת רב מחייב בו, משום בניין כל שהוא, כמו ביתד במעדר ובמסתת. אבל שמואל אינו מחייב משום בניין כל שהוא, ולכן קשה: אין כאן גמר מלאכה.</p></li><li><h3><span class="w">גמרא</span> · התשובה: מסמר שנשאר בחור</h3><p>&quot;הכא במאי עסקינן&quot;, במה מדובר כאן? &quot;דבזעיה ברמצא דפרזלא&quot;, כשניקב את החור ב&quot;רמצא&quot; של ברזל, ורש&quot;י מפרש: מסמר ארוך של ברזל. והוא השאיר את המסמר בתוך החור. זה גמר מלאכה.</p></li><li><h3><span class="w">גמרא</span> · &quot;זה הכלל&quot; להוסיף קפיזא</h3><p>&quot;זה הכלל&quot; שבמשנה, מה הוא בא להוסיף? מי שחקק &quot;קפיזא&quot;, כלי מדידה קטן, בגוש שעשוי לקב. רש&quot;י מפרש: בגוש גדול שראוי לחקוק בו כלי של קב, חקק כלי של שלושה לוגים. אף שעתיד להוסיף ולחקוק, יש מי שמשאיר כך.</p><p>קב ולוג הן מידות נפח. בקב ארבעה לוגים, ולפי רש&quot;י כאן הקפיזא היא שלושה לוגים.</p></li><li><h3><span class="w">גמרא</span> · רבה ורב יוסף: מאמן את ידו</h3><p>מה עושה המכה בפטיש על הסדן, לדעת רבן שמעון בן גמליאל? רבה ורב יוסף אומרים שניהם: הוא &quot;מאמן את ידו&quot;. רש&quot;י מפרש: הוא מרגיל את ידו ומכוון אותה למכה שהמלאכה צריכה, מכה גדולה או מכה קטנה.</p></li><li><h3><span class="w">גמרא</span> · הקושיה של בני רחבה</h3><p>&quot;קשו בה בני רחבה&quot;, הקשו על כך בני רחבה: &quot;אלא מעתה&quot;, אם כך, מי שראה בשבת אומנות ולמד אותה, גם הוא יתחייב?</p></li><li><h3><span class="w">גמרא</span> · אביי ורבא: כך עשו מרדדי הטסים</h3><p>אלא אביי ורבא אומרים שניהם: כך עשו מרדדי הטסים של המשכן. רש&quot;י מפרש: הטסים שימשו לציפוי הקרשים. מכים שלוש מכות על הטס ואחת על הסדן, כדי להחליק את הפטיש שלא יבקע את הטס הדק. ורש&quot;י מעיד שראה עושי מטבעות במקומו עושים כך.</p></li><li><h3><span class="w">גמרא</span> · ברייתא מסייעת</h3><p>&quot;תניא נמי הכי&quot;, כך גם שנינו בברייתא. רבן שמעון בן גמליאל אומר שהמכה בקורנס על הסדן בשעת המלאכה חייב, ומוסיף את הטעם: כך עשו מרדדי טסי המשכן.</p></li><li><h3><span class="w">משנה</span> · משנה חדשה: החורש והמנכש</h3><p>משנה חדשה בעניין מלאכות השדה. החורש כל שהוא חייב. וכן המנכש, שעוקר עשבים, המקרסם והמזרד, חייבים בכל שהוא.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: מקרסם ומזרד</h3><p>&quot;מקרסם&quot; קוצץ ענפים יבשים מן העץ כדי לתקן אותו. &quot;מזרד&quot; קוצץ זרדים, ענפים לחים וחדשים של השנה הזו. לפעמים הם רבים ומחלישים את העץ, ומתייבשים, ולכן קוצצים אותם.</p></li><li><h3><span class="w">משנה</span> · המלקט עצים ועשבים</h3><p>המלקט עצים: אם כדי לתקן, בכל שהוא. אם להסקה, כדי לבשל ביצה קלה. המלקט עשבים: אם לתקן, בכל שהוא. אם לבהמה, כמלוא פי הגדי. רש&quot;י מפרש: &quot;לתקן&quot; את העץ או את הקרקע, כשקצץ מן המחובר. ו&quot;ביצה קלה&quot; היא כגרוגרת מביצת תרנגולת, שהיא הקלה לבישול מכל הביצים.</p><p>גרוגרת היא תאנה מיובשת. היא שיעור נפוץ במלאכות שבת.</p></li><li><h3><span class="w">גמרא</span> · חורש כל שהוא: לזרע של דלעת</h3><p>&quot;למאי חזי&quot;, למה ראויה חרישה כל שהוא? היא ראויה לזרוע בה גרעין של דלעת. וכמותה במשכן: גומה כזו ראויה לקלח אחד של &quot;סמנין&quot;, צמחי הצבע. רש&quot;י מסביר: במוציא זרעי דלעת השיעור שניים, כי אין אדם זורע גרעין אחד לבדו. אבל בחרישה כל גומה נעשית לעצמה.</p></li><li><h3><span class="w">גמרא</span> · ברייתא: התולש עולשין והמזרד</h3><p>תנו רבנן: התולש עולשין והמזרד זרדים, השיעור תלוי במטרה. לאכילת אדם כגרוגרת, למאכל בהמה כמלוא פי גדי, ולהסקה כדי בישול ביצה קלה. ומי שתלש כדי ליפות את הקרקע, חייב בכל שהוא. רש&quot;י מפרש: עולשין הם עשב. זרדים הם מין קנים: כשהם רכים הם מאכל אדם, כשהתקשו מעט מאכל בהמה, וכשיבשו עומדים להסקה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שיעור הבהמה וההסקה</h3><p>מדובר בזרדים שאינם ראויים לאכילת אדם. אילו היו ראויים, היה חייב בשיעור הקטן יותר, כמו שאמרו: המוציא תבן כמלוא פי פרה לגמל, חייב.</p></li><li><h3><span class="w">גמרא</span> · &quot;אטו&quot;: הרי הכול מייפה את הקרקע</h3><p>&quot;אטו&quot;, וכי כל אלה אינם מייפים את הקרקע? רש&quot;י מפרש: הקרקע מתייפה ממילא כשתולשים. אם כך, איך יש שיעור גדול לאכילה ולהסקה?</p></li><li><h3><span class="w">גמרא</span> · רבה ורב יוסף: באגם</h3><p>רבה ורב יוסף אומרים שניהם: הברייתא נשנתה &quot;באגם&quot;. רש&quot;י מפרש: באגם אין צורך ליפות את הקרקע.</p></li><li><h3><span class="w">תוספות</span> · התוספות: המשנה שלנו</h3><p>המשנה שלנו, על המלקט עצים, אי אפשר להעמיד באגם. רבנו תם אומר שהיא עוסקת בעץ יבש, שהליקוט ממנו אינו מתקן דבר.</p></li><li><h3><span class="w">גמרא</span> · אביי: כשאינו מתכוון</h3><p>אביי אומר: אפשר להעמיד גם בשדה, כשאינו מתכוון ליפות. מקשים: והרי אביי ורבא אמרו שניהם שרבי שמעון מודה ב&quot;פסיק רישיה ולא ימות&quot;?</p><p>רבי שמעון סובר ש&quot;דבר שאין מתכוון מותר&quot;: מעשה מותר שאולי תצא ממנו מלאכה, ואינו מתכוון אליה. &quot;פסיק רישיה ולא ימות&quot;, יחתוך את ראשו ולא ימות? זה כינוי למעשה שתוצאתו ודאית, ובו גם רבי שמעון מודה.</p></li><li><h3><span class="w">גמרא</span> · בשדה של חברו</h3><p>&quot;לא צריכא&quot;, הדברים נאמרו רק כשהוא עושה כך בשדה של חברו. רש&quot;י מפרש: לא אכפת לו ליפות קרקע של אחר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מלאכה שאינה צריכה לגופה</h3><p>בשדה של חברו, זו מלאכה שאינה צריכה לגופה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שיטת הערוך</h3><p>בעל הערוך פירש: &quot;פסיק רישיה&quot; שאינו נוח לו מותר אפילו לכתחילה, ואין בו אפילו איסור של חכמים. כך הוא בעושה בשדה של חברו, כשזה אדם אחר שאינו אוהבו, וכך בקוצץ בהרת, נגע בעור, בשעת מילה, שאין לו הנאה מכך. ועוד מובא שם היתר: חבית שסתמו אותה בפקק של פשתן, מותר להסיר את הפקק ולמשוך ממנה יין בשבת. אי אפשר שלא יסחט את הפשתן כשהוא מסיר אותו, וזה &quot;פסיק רישיה&quot;, אבל היין הנסחט נופל לארץ והוא אינו נהנה מן הסחיטה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: דחיית הערוך</h3><p>התוספות אינם מקבלים זאת. מי שפותח מורסה כדי להוציא ממנה ליחה, בלי צער הגוף היה הדבר אסור. וזאת אף שאינו נהנה כלל מבניין הפתח ואינו מתכוון אליו, אלא לנקב בלבד. ראיה נוספת מובאת ממחט שנוטלים בה קוץ: במסכת סנהדרין העמידו זאת כרבי שמעון, שפוטר על מלאכה שאינה צריכה לגופה, והתירו מפני הצער. ואף שאינו נהנה מן החבורה, בלי צער הגוף היה הדבר אסור. לכן &quot;לא צריכא דעביד בארעא דחבריה&quot; פירושו שאינו חייב חטאת, אבל איסור יש.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שתי סוגיות, מזבחים ומסוכה</h3><p>התוספות דנים בשתי סוגיות. א&#x27;, במסכת זבחים: המתנדב יין מזלף אותו על האש שעל המזבח. הקשו שם שהוא מכבה, והעמידו כרבי שמעון, שדבר שאין מתכוון מותר. התוספות מסבירים שאין שם &quot;פסיק רישיה&quot;: הוא מזלף בטיפות דקות, או על האיברים, ואפשר שהאש לא תכבה. ב&#x27;, במסכת סוכה: משום רבי אלעזר ברבי שמעון אמרו שממעטים ביום טוב את ענבי ההדס. הקשו שם שהוא מתקן כלי, ותירצו שליקט אותם לאכילה, ודבר שאין מתכוון מותר. וכשהקשו מ&quot;פסיק רישיה&quot;, תירצו שיש לו &quot;הושענא אחריתי&quot;, הדס אחר. משם משמע כערוך, שכשאינו נהנה מותר אף בפסיק רישיה. ואין לומר שמי שיש לו הדס אחר אינו מתקן דבר, כי אז לא היו אומרים שם שהוא סובר כאביו, שדבר שאין מתכוון מותר. אבל התוספות מיישבים: תיקון מועט כזה אסור רק מדברי חכמים, ובו לא גזרו כשאינו נהנה.</p></li><li><h3><span class="w">משנה</span> · משנה חדשה: הכותב שתי אותיות</h3><p>הכותב שתי אותיות, בין בימינו בין בשמאלו, בין משם אחד בין משני שמות, חייב. רש&quot;י מפרש: &quot;משם אחד&quot; הן שתי אותיות זהות, כמו שתי אלף. &quot;משני שמות&quot; הן אותיות שונות, כמו אלף ובית.</p></li><li><h3><span class="w">משנה</span> · צבעים ולשונות</h3><p>גם הכותב בשני צבעים, ובכל לשון, חייב. רש&quot;י מפרש: אחת בדיו ואחת בצבע אדום. ו&quot;בכל לשון&quot; פירושו בכתב של כל אומה.</p></li><li><h3><span class="w">משנה</span> · רבי יוסי: משום רושם</h3><p>רבי יוסי אומר: לא חייבו על שתי אותיות אלא משום &quot;רושם&quot;, סימן. כך כתבו על קרשי המשכן, כדי לדעת איזה קרש הוא בן זוגו של איזה. רש&quot;י מפרש: את המשכן פירקו, ובהקמה הבאה לא רצו להחליף את סדר הקרשים. ולדעת רבי יוסי, אפילו מי שרשם שני סימנים בלבד חייב.</p></li><li><h3><span class="w">משנה</span> · רבי יהודה: שם קטן משם גדול</h3><p>רבי יהודה אומר: מצאנו שם קטן מתוך שם גדול. &quot;שם&quot; מתוך &quot;שמעון&quot; ו&quot;שמואל&quot;, &quot;נח&quot; מתוך &quot;נחור&quot;, &quot;דן&quot; מתוך &quot;דניאל&quot;, &quot;גד&quot; מתוך &quot;גדיאל&quot;. רש&quot;י מפרש: מי שהתכוון לכתוב מילה גדולה וכתב רק חלק ממנה, חייב, אם החלק הוא מילה שמתקיימת במקום אחר.</p></li><li><h3><span class="w">גמרא</span> · הכותב בשמאלו: אטר יד</h3><p>בימין מובן שחייב, כי כך דרך כתיבה. אבל למה בשמאל? רבי ירמיה אומר: במי שהוא &quot;אטר יד&quot;, שמאלי. מקשים: אם כך, השמאל שלו כמו ימין של כל אדם, ויתחייב על השמאל ולא על הימין.</p></li><li><h3><span class="w">גמרא</span> · אביי: שולט בשתי ידיו</h3><p>אלא אביי אומר: המשנה עוסקת במי ששולט בשתי ידיו, וכותב היטב בשתיהן.</p></li><li><h3><span class="w">גמרא</span> · רב יעקב: כולה רבי יוסי</h3><p>רב יעקב, בנה של בת יעקב, אומר: המשנה הזו היא כרבי יוסי, שמחייב משום רושם. רש&quot;י מפרש: בשמאל יש לפחות רושם. מקשים: סוף המשנה הוא רבי יוסי, ומשמע שתחילתה אינה כמותו. והתשובה: כל המשנה היא רבי יוסי.</p></li><li><h3><span class="w">גמרא</span> · הדיוק מדברי רבי יהודה</h3><p>רבי יהודה מביא רק דוגמאות של אותיות שונות. משמע שהוא מחייב רק כשהן &quot;שני שמות&quot;, ולא כשהן &quot;שם אחד&quot;, אותיות זהות. רש&quot;י מוסיף: כמו &quot;שש&quot; מתוך &quot;ששך&quot;, או &quot;תת&quot; מתוך &quot;תתנן&quot;. רבי יהודה לא הביא דוגמה כזו, ולכן אינו מחייב בה.</p></li><li><h3><span class="w">גמרא</span> · ברייתא: &quot;ועשה אחת&quot;</h3><p>הגמרא מקשה על הדיוק מברייתא, והקושיה עצמה תבוא בהמשך הברייתא, בעמוד הבא. נאמר &quot;ועשה אחת&quot;. הייתי חושב שאינו חייב עד שיכתוב את כל השם, יארוג את כל הבגד, ויעשה את כל הנפה. לכן נאמר &quot;מאחת&quot;. רש&quot;י מפרש: &quot;אחת&quot; משמע הכול, ו&quot;שם&quot; פירושו מילה.</p></li><li><h3><span class="w">גמרא</span> · &quot;אי מאחת&quot;: אות אחת?</h3><p>ואם &quot;מאחת&quot;, הייתי חושב שחייב אפילו על אות אחת, חוט אחד, או &quot;בית&quot; אחד בנפה. רש&quot;י מפרש: אחרי שמתח את הנצרים של השתי, האורג מעביר בערב נצר אחד מלמטה ונצר אחד מלמעלה. אלה נקראים &quot;בתים&quot;, והם מחזיקים את השתי. &quot;בית&quot; אחד אינו מתקיים. והם נקראים &quot;בית&quot; ולא &quot;חוט&quot; מפני שאינם חוטים.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>הקודח חייב גם לשמואל, כשהשאיר את המסמר בחור. המכה על הסדן חייב כי כך עשו מרדדי טסי המשכן. החורש חייב בכל שהוא, ובמלקט השיעור תלוי במטרה. ומי שתולש בשדה של חברו ואינו מתכוון ליפות אותה, אינו חייב על היפוי. במשנת הכותב רבי יוסי מחייב משום רושם, ורבי יהודה מחייב על שם קטן מתוך שם גדול. העמוד הבא ממשיך את הברייתא, וקובע איך יוצאים מ&quot;אחת&quot; ומ&quot;מאחת&quot;.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-103b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "הקודח כל שהוא חייב בשלמא לרב מיחזי כמאן דחר חורתא לבניינא אלא לשמואל לאו גמר מלאכה הוא הכא במאי עסקינן דבזעיה ברמצא דפרזלא ושבקיה בגוויה דהיינו גמר מלאכה:", false, ""], ["G2", "זה הכלל: זה הכלל לאתויי מאי לאתויי דחק קפיזא בקבא:", false, ""], ["G3", "רשב\"ג אומר המכה בקורנס על הסדן כו': מאי קעביד רבה ורב יוסף דאמרי תרוייהו מפני שמאמן את ידו קשו בה בני רחבה אלא מעתה חזא אומנתא בשבתא וגמר הכי נמי דמיחייב אלא אביי ורבא דאמרי תרוייהו שכן מרדדי טסי משכן עושין כן תניא נמי הכי רשב\"ג אומר אף המכה בקורנס על הסדן בשעת מלאכה חייב שכן מרדדי טסי משכן עושין כן:", false, ""], ["G4", "החורש כל שהוא המנכש והמקרסם והמזרד כל שהוא חייב המלקט עצים אם לתקן כל שהן אם להיסק כדי לבשל ביצה קלה המלקט עשבים אם לתקן כל שהוא אם לבהמה כמלא פי הגדי:", false, "מתני׳"], ["G5", "למאי חזי חזי לביזרא דקרא דכוותה גבי משכן שכן ראוי לקלח אחד של סמנין:", false, "גמ׳"], ["G6", "המנכש והמקרסם והמזרד: ת\"ר התולש עולשין והמזרד זרדים אם לאכילה כגרוגרת אם לבהמה כמלא פי הגדי אם להיסק כדי לבשל ביצה קלה אם לייפות את הקרקע כל שהן", false, ""], ["G7", "אטו כולהו לא ליפות את הקרקע נינהו רבה ורב יוסף דאמרי תרוייהו באגם שנו אביי אמר אפילו תימא בשדה דלאו אגם וכגון דלא קמיכוין והא אביי ורבא דאמרי תרוייהו מודה רבי שמעון בפסיק רישיה ולא ימות לא צריכא דקעביד בארעא דחבריה:", false, ""], ["G8", "הכותב שתי אותיות בין בימינו בין בשמאלו בין משם אחד בין משתי שמות בין משתי סמניות בכל לשון חייב אמר רבי יוסי לא חייבו שתי אותיות אלא משום רושם שכך כותבין על קרשי המשכן לידע איזו בן זוגו א\"ר יהודה מצינו שם קטן משם גדול שם משמעון ומשמואל נח מנחור דן מדניאל גד מגדיאל:", false, "מתני׳"], ["G9", "בשלמא אימין ליחייב משום דדרך כתיבה בכך אלא אשמאל אמאי הא אין דרך כתיבה בכך א\"ר ירמיה באטר יד שנו ותהוי שמאל דידיה כימין דכ\"ע ואשמאל ליחייב אימין לא ליחייב אלא אמר אביי בשולט בשתי ידיו", false, "גמ׳"], ["G10", "רב יעקב בריה דבת יעקב אמר הא מני ר' יוסי היא דאמר לא חייבו שתי אותיות אלא משום רושם והא מדסיפא ר' יוסי היא רישא לאו ר' יוסי כולה רבי יוסי היא:", false, ""], ["G11", "א\"ר יהודה מצינו: אלא ר' יהודה שתי אותיות והן שני שמות הוא דמחייב שתי אותיות והן שם אחד לא מחייב", false, ""], ["G12", "והתניא (ויקרא ד, כב) ועשה אחת יכול עד שיכתוב כל השם ועד שיארוג כל הבגד ועד שיעשה כל הנפה ת\"ל מאחת", false, ""], ["G13", "אי מאחת יכול אפילו לא כתב אלא אות אחת ולא ארג אלא חוט אחד ולא עשה אלא בית אחד בנפה", false, ""]], "R": [["R1", "הקודח", "וכל הקודח ע\"מ למלאות הוא לתקוע בו יתד ושלא למלאות קרי נוקב:", false], ["R2", "בשלמא לרב", "דאמר נקב הוי בנין האי נמי בנין הוה כל שהוא ואע\"פ שימלאנו הרי הועיל לבנין שקודח החור:", false], ["R3", "חד חורתא", "קדח חור:", false], ["R4", "אלא לשמואל", "דאמר נוקב לאו בונה הוא בשלמא נקב דלול איכא למימר מכה בפטיש אבל זה שעומד לסתום לאו גמר מלאכה הוא:", false], ["R5", "דבזעיה ברמצא דפרזלא", "במסמר ארוך של ברזל:", false], ["R6", "ושבקיה בגוויה", "לתלוש בה:", false], ["R7", "דחק קפיזא בקבא", "בגולם גדול הראוי לחוק בו קב חקק שלש לוגין ואע\"פ שעתיד להוסיף יש שמקיימין כן:", false], ["R8", "מאמן ידיו", "מרגילם ומכוונם להכאה הראוייה למלאכה מכה גדולה או מכה קטנה:", false], ["R9", "מרדדי טסי משכן", "לציפוי קרשים:", false], ["R10", "עושין כן", "מכין ג' על הטס ואחת על הסדן להחליק הקורנס שלא יבקע הטס שהוא דק ובעלי מטבע במקומנו ראיתי עושין כן:", false], ["R11", "מתני' מקרסם", "קוצץ ענפים יבשים מן אילן לתקנו:", false], ["R12", "מזרד", "זרדין לחין חדשים של שנה זו ופעמים שהן מרובין ומכחישים האילן ומתייבשין וקוצצין אותם ממנו:", false], ["R13", "אם לתקן", "את האילן או את הקרקע וקצצו מן המחובר:", false], ["R14", "ביצה קלה", "כגרוגרת מביצת תרנגולת שקלה היא לבשל מכל הביצים:", false], ["R15", "גמ' לביזרא דקרא", "לזרוע בתוכה נימא של דלעת ואע\"ג דשנינו (לעיל שבת דף צ:) לענין הוצאת זרע דלועין שנים שאין אדם טורח בנימא אחת ה\"מ הוצאה דכי מפיק תרתי מפיק כי הדדי שאינו זורע אחת לבדה אבל לענין חרישה כל גומא וגומא באפי נפשה עביד לה:", false], ["R16", "עולשין", "עשב שקורין קרישפ\"ל:", false], ["R17", "זרדין", "מין קנים הם ובעודן רכים זורדין אותם למאכל אדם נתקשו מעט ראויין למאכל בהמה יבשו עומדין להסקה:", false], ["R18", "אטו כולהו לא ליפות את הקרקע נינהו", "הרי הקרקע מתייפה מאליו:", false], ["R19", "באגם", "שאין צריך ליפות:", false], ["R20", "בארעא דחבריה", "לא איכפת ליה ליפות:", false], ["R21", "מתני' בין משם אחד", "שתיהן אלפין:", false], ["R22", "משתי שמות", "אלף בית:", false], ["R23", "משתי סמניות", "אחת בדיו ואחת בסיקרא:", false], ["R24", "בכל לשון", "של כל כתבים וגופן של כל אומה ואומה:", false], ["R25", "משום רושם", "סימן שהיו עושים בקרשי המשכן מפני שמפרקין אותו ולכשיקימוהו לא יחלפו סדר הקרשים ואתא ר' יוסי למימר דאפילו לא כתב אלא רשם שני רשימות בעלמא לסימן חייב:", false], ["R26", "מצינו שם קטן כו'", "הא אתא לאשמועינן רבי יהודה דאע\"ג שלא נגמר מלאכתו שנתכוין לכתוב תיבה גדולה וכתב מקצת ואותו מקצת הויא תיבה המתקיימת במקום אחר חייב:", false], ["R27", "גמ' הא מני רבי יוסי היא", "דלא בעי כתיבה אלא רושם בעלמא ובשמאלו רושם מיהא הוה:", false], ["R28", "והן שני שמות", "כגון הנך דנקט במתני' שאינן שוות:", false], ["R29", "הא ב' אותיות והן שם אחד", "כגון שש מששך או תת מתתנן או חח מחחים לא מיחייב מדלא נקט רבי יהודה חד מהנך:", false], ["R30", "אחת", "כולה במשמע:", false], ["R31", "כל השם", "התיבה קרוי שם:", false], ["R32", "בית אחד בנפה", "לאחר שהסיך נצרים של שתי עושה באריגת ערב נצר אחד מלמטה ואחד ממעלה והן קרוין בתים והם עונבין את השתי כדרך רכיבתו ועומד האריג ובית אחד אין מתקיים ומשום דלאו חוטין נינהו קרי להו בית כמו בתי נירין שאין לה בתי נירין אחרים:", false]], "T": [["T1", "בשלמא לרב מיחזי כמאן דחר חורתא לבניינא", "אע\"ג דלא דמי לעושה נקב בלול של תרנגולין דהתם עשוי להכניס ולהוציא מ\"מ מטעם בנין כל דהו מיחייב כמו מעייל שופתא בקופינא דמרא ומסתת אלא לשמואל דמשום בנין כל דהו לא מיחייב אמאי חייב הא אין כאן גמר מלאכה:", false], ["T2", "אם לבהמה כמלא פי הגדי ואם להיסק", "פירוש שאינם ראויין לאכילה דאי לאו הכי מיחייב אשיעורא זוטא כדאמר לעיל (שבת דף עו.) המוציא תבן כמלא פי פרה לגמל חייב:", false], ["T3", "באגם שנו", "ומתני' דלא שייך לאוקמי באגם אומר ר\"ת דאיירי באילן יבש שאינו מתקן כלום:", false], ["T4a", "לא צריכא דעביד בארעא דחבריה", "פי' בערוך (ערך סבר) דבפסיק רישיה דלא ניחא ליה כגון דקעביד בארעא דחבריה וכגון באחר שאינו אוהבו והקוצץ בהרת בשעת מילה שאין לו הנאה מותר לכתחילה ואפילו איסור דרבנן ליכא והתיר ר' חבית שפקקוהו בפשתן להסיר הפקק ולמשוך ממנו יין בשבת אע\"פ שא\"א שלא יסחוט כשמסיר הפקק והוי פסיק רישיה כיון דאינו נהנה בסחיטה זאת שהיין נופל לארץ מותר", false], ["T4b", "", "ואינו נראה דהא מפיס מורסא להוציא ממנו ליחה היה אסור אי לאו משום צערא דגופא אע\"פ שאינו נהנה כלל בבנין הפתח ואינו מתכוין כלל לבנין הפתח אלא לנקיבה בעלמא וכן הביא רשב\"א ממחט של יד ליטול בה את הקוץ דמוקי לה בהנחנקין (סנהדרין דף פד:) כר\"ש דאמר מלאכה שאינה צריכה לגופה פטור עליה ומשום צערא שרי ואע\"פ שאינו נהנה בחבורה היה אסור אי לאו משום צערא דגופא והא דקאמר לא צריכא דעביד בארעא דחבריה היינו דלא מיחייב חטאת אבל איסורא איכא", false], ["T4c", "", "והא דקאמר בשילהי כל התדיר (זבחים דף צא:) המתנדב יין מביאו ומזלפו על גבי האישים ופריך והא קא מכבה ומוקי לה כר\"ש דאמר דבר שאין מתכוין מותר מיירי דלא הוי פסיק רישיה שמזלפו בטיפות דקות א\"נ על גבי האיברים אפשר שלא יכבה האש ובפרק לולב הגזול (סוכה דף לג:) גבי אין ממעטין בי\"ט משום ר\"א. בר\"ש אמרו ממעטין ופריך והא קא מתקן מנא ומשני כגון שליקטן לאכילה ודבר שאין מתכוין מותר ופריך והא אביי ורבא דאמרי תרוייהו מודה ר\"ש בפסיק רישיה ולא ימות ומשני לא צריכא דאית ליה הושענא אחריתי משמע כפי' הערוך דכשאינו נהנה מותר אע\"ג דהוי פסיק רישיה וליכא למימר כיון דאית ליה הושענא יתירתא אינו מתקן כלום דא\"כ אמאי קאמר התם דסבר לה כאבוה דאמר דבר שאינו מתכוין מותר מיהו י\"ל דאותו תיקון מועט כמו . מיעוט ענבים דלא אסיר אלא מדרבנן לא גזרו חכמים כשאינו נהנה:", false], ["T5", "בארעא דחבריה", "פי' דהויא מלאכה שא\"צ לגופה:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': \"תא שמע\" מן הקודח", "x": "העמוד הקודם עסק במחלוקת רב ושמואל: האם המסתת חייב משום בונה או משום מכה בפטיש. בסופו הגמרא אמרה \"תא שמע\", בוא ושמע. כאן באה הראיה: המשנה אומרת שהקודח כל שהוא חייב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "\"הקודח כל שהוא חייב\"", "x": "הגמרא מביאה את המשנה: מי שקודח חור, אפילו קטן מאוד, חייב. רש\"י מפרש: כל קידוח נעשה כדי למלא את החור, לתקוע בו יתד. חור שאינו עשוי למילוי נקרא \"נוקב\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R2", "R3"], "t": "לרב זה מובן", "x": "\"בשלמא לרב\", לדעת רב זה מובן: \"מיחזי כמאן דחר חורתא לבניינא\", זה נראה כמי שקודח חור לבניין. רש\"י מפרש: לרב, נקב הוא בניין, ואף שימלא את החור, הקידוח הועיל לבניין.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R4"], "t": "אבל לשמואל קשה", "x": "\"אלא לשמואל\", לדעת שמואל זה אינו גמר מלאכה. רש\"י מפרש: שמואל אומר שהנוקב אינו בונה. את הנקב בלול אפשר לחייב משום מכה בפטיש, אבל חור שעומד להיסתם אינו גמר מלאכה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1"], "t": "התוספות: מה ההבדל בין רב לשמואל כאן", "x": "החור הזה אינו דומה לנקב בלול, שעשוי להכניס ולהוציא. בכל זאת רב מחייב בו, משום בניין כל שהוא, כמו ביתד במעדר ובמסתת. אבל שמואל אינו מחייב משום בניין כל שהוא, ולכן קשה: אין כאן גמר מלאכה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R5", "R6"], "t": "התשובה: מסמר שנשאר בחור", "x": "\"הכא במאי עסקינן\", במה מדובר כאן? \"דבזעיה ברמצא דפרזלא\", כשניקב את החור ב\"רמצא\" של ברזל, ורש\"י מפרש: מסמר ארוך של ברזל. והוא השאיר את המסמר בתוך החור. זה גמר מלאכה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R7"], "t": "\"זה הכלל\" להוסיף קפיזא", "x": "\"זה הכלל\" שבמשנה, מה הוא בא להוסיף? מי שחקק \"קפיזא\", כלי מדידה קטן, בגוש שעשוי לקב. רש\"י מפרש: בגוש גדול שראוי לחקוק בו כלי של קב, חקק כלי של שלושה לוגים. אף שעתיד להוסיף ולחקוק, יש מי שמשאיר כך.", "a": "קב ולוג הן מידות נפח. בקב ארבעה לוגים, ולפי רש\"י כאן הקפיזא היא שלושה לוגים."}, {"w": "גמרא", "cols": false, "hl": ["G3", "R8"], "t": "רבה ורב יוסף: מאמן את ידו", "x": "מה עושה המכה בפטיש על הסדן, לדעת רבן שמעון בן גמליאל? רבה ורב יוסף אומרים שניהם: הוא \"מאמן את ידו\". רש\"י מפרש: הוא מרגיל את ידו ומכוון אותה למכה שהמלאכה צריכה, מכה גדולה או מכה קטנה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3"], "t": "הקושיה של בני רחבה", "x": "\"קשו בה בני רחבה\", הקשו על כך בני רחבה: \"אלא מעתה\", אם כך, מי שראה בשבת אומנות ולמד אותה, גם הוא יתחייב?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R9", "R10"], "t": "אביי ורבא: כך עשו מרדדי הטסים", "x": "אלא אביי ורבא אומרים שניהם: כך עשו מרדדי הטסים של המשכן. רש\"י מפרש: הטסים שימשו לציפוי הקרשים. מכים שלוש מכות על הטס ואחת על הסדן, כדי להחליק את הפטיש שלא יבקע את הטס הדק. ורש\"י מעיד שראה עושי מטבעות במקומו עושים כך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3"], "t": "ברייתא מסייעת", "x": "\"תניא נמי הכי\", כך גם שנינו בברייתא. רבן שמעון בן גמליאל אומר שהמכה בקורנס על הסדן בשעת המלאכה חייב, ומוסיף את הטעם: כך עשו מרדדי טסי המשכן.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G4"], "t": "משנה חדשה: החורש והמנכש", "x": "משנה חדשה בעניין מלאכות השדה. החורש כל שהוא חייב. וכן המנכש, שעוקר עשבים, המקרסם והמזרד, חייבים בכל שהוא.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G4", "R11", "R12"], "t": "רש\"י: מקרסם ומזרד", "x": "\"מקרסם\" קוצץ ענפים יבשים מן העץ כדי לתקן אותו. \"מזרד\" קוצץ זרדים, ענפים לחים וחדשים של השנה הזו. לפעמים הם רבים ומחלישים את העץ, ומתייבשים, ולכן קוצצים אותם.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G4", "R13", "R14"], "t": "המלקט עצים ועשבים", "x": "המלקט עצים: אם כדי לתקן, בכל שהוא. אם להסקה, כדי לבשל ביצה קלה. המלקט עשבים: אם לתקן, בכל שהוא. אם לבהמה, כמלוא פי הגדי. רש\"י מפרש: \"לתקן\" את העץ או את הקרקע, כשקצץ מן המחובר. ו\"ביצה קלה\" היא כגרוגרת מביצת תרנגולת, שהיא הקלה לבישול מכל הביצים.", "a": "גרוגרת היא תאנה מיובשת. היא שיעור נפוץ במלאכות שבת."}, {"w": "גמרא", "cols": false, "hl": ["G5", "R15"], "t": "חורש כל שהוא: לזרע של דלעת", "x": "\"למאי חזי\", למה ראויה חרישה כל שהוא? היא ראויה לזרוע בה גרעין של דלעת. וכמותה במשכן: גומה כזו ראויה לקלח אחד של \"סמנין\", צמחי הצבע. רש\"י מסביר: במוציא זרעי דלעת השיעור שניים, כי אין אדם זורע גרעין אחד לבדו. אבל בחרישה כל גומה נעשית לעצמה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R16", "R17"], "t": "ברייתא: התולש עולשין והמזרד", "x": "תנו רבנן: התולש עולשין והמזרד זרדים, השיעור תלוי במטרה. לאכילת אדם כגרוגרת, למאכל בהמה כמלוא פי גדי, ולהסקה כדי בישול ביצה קלה. ומי שתלש כדי ליפות את הקרקע, חייב בכל שהוא. רש\"י מפרש: עולשין הם עשב. זרדים הם מין קנים: כשהם רכים הם מאכל אדם, כשהתקשו מעט מאכל בהמה, וכשיבשו עומדים להסקה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T2"], "t": "התוספות: שיעור הבהמה וההסקה", "x": "מדובר בזרדים שאינם ראויים לאכילת אדם. אילו היו ראויים, היה חייב בשיעור הקטן יותר, כמו שאמרו: המוציא תבן כמלוא פי פרה לגמל, חייב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R18"], "t": "\"אטו\": הרי הכול מייפה את הקרקע", "x": "\"אטו\", וכי כל אלה אינם מייפים את הקרקע? רש\"י מפרש: הקרקע מתייפה ממילא כשתולשים. אם כך, איך יש שיעור גדול לאכילה ולהסקה?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R19"], "t": "רבה ורב יוסף: באגם", "x": "רבה ורב יוסף אומרים שניהם: הברייתא נשנתה \"באגם\". רש\"י מפרש: באגם אין צורך ליפות את הקרקע.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T3"], "t": "התוספות: המשנה שלנו", "x": "המשנה שלנו, על המלקט עצים, אי אפשר להעמיד באגם. רבנו תם אומר שהיא עוסקת בעץ יבש, שהליקוט ממנו אינו מתקן דבר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "אביי: כשאינו מתכוון", "x": "אביי אומר: אפשר להעמיד גם בשדה, כשאינו מתכוון ליפות. מקשים: והרי אביי ורבא אמרו שניהם שרבי שמעון מודה ב\"פסיק רישיה ולא ימות\"?", "a": "רבי שמעון סובר ש\"דבר שאין מתכוון מותר\": מעשה מותר שאולי תצא ממנו מלאכה, ואינו מתכוון אליה. \"פסיק רישיה ולא ימות\", יחתוך את ראשו ולא ימות? זה כינוי למעשה שתוצאתו ודאית, ובו גם רבי שמעון מודה."}, {"w": "גמרא", "cols": false, "hl": ["G7", "R20"], "t": "בשדה של חברו", "x": "\"לא צריכא\", הדברים נאמרו רק כשהוא עושה כך בשדה של חברו. רש\"י מפרש: לא אכפת לו ליפות קרקע של אחר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T5"], "t": "התוספות: מלאכה שאינה צריכה לגופה", "x": "בשדה של חברו, זו מלאכה שאינה צריכה לגופה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T4a"], "t": "התוספות: שיטת הערוך", "x": "בעל הערוך פירש: \"פסיק רישיה\" שאינו נוח לו מותר אפילו לכתחילה, ואין בו אפילו איסור של חכמים. כך הוא בעושה בשדה של חברו, כשזה אדם אחר שאינו אוהבו, וכך בקוצץ בהרת, נגע בעור, בשעת מילה, שאין לו הנאה מכך. ועוד מובא שם היתר: חבית שסתמו אותה בפקק של פשתן, מותר להסיר את הפקק ולמשוך ממנה יין בשבת. אי אפשר שלא יסחט את הפשתן כשהוא מסיר אותו, וזה \"פסיק רישיה\", אבל היין הנסחט נופל לארץ והוא אינו נהנה מן הסחיטה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T4b"], "t": "התוספות: דחיית הערוך", "x": "התוספות אינם מקבלים זאת. מי שפותח מורסה כדי להוציא ממנה ליחה, בלי צער הגוף היה הדבר אסור. וזאת אף שאינו נהנה כלל מבניין הפתח ואינו מתכוון אליו, אלא לנקב בלבד. ראיה נוספת מובאת ממחט שנוטלים בה קוץ: במסכת סנהדרין העמידו זאת כרבי שמעון, שפוטר על מלאכה שאינה צריכה לגופה, והתירו מפני הצער. ואף שאינו נהנה מן החבורה, בלי צער הגוף היה הדבר אסור. לכן \"לא צריכא דעביד בארעא דחבריה\" פירושו שאינו חייב חטאת, אבל איסור יש.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T4c"], "t": "התוספות: שתי סוגיות, מזבחים ומסוכה", "x": "התוספות דנים בשתי סוגיות. א', במסכת זבחים: המתנדב יין מזלף אותו על האש שעל המזבח. הקשו שם שהוא מכבה, והעמידו כרבי שמעון, שדבר שאין מתכוון מותר. התוספות מסבירים שאין שם \"פסיק רישיה\": הוא מזלף בטיפות דקות, או על האיברים, ואפשר שהאש לא תכבה. ב', במסכת סוכה: משום רבי אלעזר ברבי שמעון אמרו שממעטים ביום טוב את ענבי ההדס. הקשו שם שהוא מתקן כלי, ותירצו שליקט אותם לאכילה, ודבר שאין מתכוון מותר. וכשהקשו מ\"פסיק רישיה\", תירצו שיש לו \"הושענא אחריתי\", הדס אחר. משם משמע כערוך, שכשאינו נהנה מותר אף בפסיק רישיה. ואין לומר שמי שיש לו הדס אחר אינו מתקן דבר, כי אז לא היו אומרים שם שהוא סובר כאביו, שדבר שאין מתכוון מותר. אבל התוספות מיישבים: תיקון מועט כזה אסור רק מדברי חכמים, ובו לא גזרו כשאינו נהנה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G8", "R21", "R22"], "t": "משנה חדשה: הכותב שתי אותיות", "x": "הכותב שתי אותיות, בין בימינו בין בשמאלו, בין משם אחד בין משני שמות, חייב. רש\"י מפרש: \"משם אחד\" הן שתי אותיות זהות, כמו שתי אלף. \"משני שמות\" הן אותיות שונות, כמו אלף ובית.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G8", "R23", "R24"], "t": "צבעים ולשונות", "x": "גם הכותב בשני צבעים, ובכל לשון, חייב. רש\"י מפרש: אחת בדיו ואחת בצבע אדום. ו\"בכל לשון\" פירושו בכתב של כל אומה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G8", "R25"], "t": "רבי יוסי: משום רושם", "x": "רבי יוסי אומר: לא חייבו על שתי אותיות אלא משום \"רושם\", סימן. כך כתבו על קרשי המשכן, כדי לדעת איזה קרש הוא בן זוגו של איזה. רש\"י מפרש: את המשכן פירקו, ובהקמה הבאה לא רצו להחליף את סדר הקרשים. ולדעת רבי יוסי, אפילו מי שרשם שני סימנים בלבד חייב.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G8", "R26"], "t": "רבי יהודה: שם קטן משם גדול", "x": "רבי יהודה אומר: מצאנו שם קטן מתוך שם גדול. \"שם\" מתוך \"שמעון\" ו\"שמואל\", \"נח\" מתוך \"נחור\", \"דן\" מתוך \"דניאל\", \"גד\" מתוך \"גדיאל\". רש\"י מפרש: מי שהתכוון לכתוב מילה גדולה וכתב רק חלק ממנה, חייב, אם החלק הוא מילה שמתקיימת במקום אחר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "הכותב בשמאלו: אטר יד", "x": "בימין מובן שחייב, כי כך דרך כתיבה. אבל למה בשמאל? רבי ירמיה אומר: במי שהוא \"אטר יד\", שמאלי. מקשים: אם כך, השמאל שלו כמו ימין של כל אדם, ויתחייב על השמאל ולא על הימין.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9"], "t": "אביי: שולט בשתי ידיו", "x": "אלא אביי אומר: המשנה עוסקת במי ששולט בשתי ידיו, וכותב היטב בשתיהן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R27"], "t": "רב יעקב: כולה רבי יוסי", "x": "רב יעקב, בנה של בת יעקב, אומר: המשנה הזו היא כרבי יוסי, שמחייב משום רושם. רש\"י מפרש: בשמאל יש לפחות רושם. מקשים: סוף המשנה הוא רבי יוסי, ומשמע שתחילתה אינה כמותו. והתשובה: כל המשנה היא רבי יוסי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R28", "R29"], "t": "הדיוק מדברי רבי יהודה", "x": "רבי יהודה מביא רק דוגמאות של אותיות שונות. משמע שהוא מחייב רק כשהן \"שני שמות\", ולא כשהן \"שם אחד\", אותיות זהות. רש\"י מוסיף: כמו \"שש\" מתוך \"ששך\", או \"תת\" מתוך \"תתנן\". רבי יהודה לא הביא דוגמה כזו, ולכן אינו מחייב בה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R30", "R31"], "t": "ברייתא: \"ועשה אחת\"", "x": "הגמרא מקשה על הדיוק מברייתא, והקושיה עצמה תבוא בהמשך הברייתא, בעמוד הבא. נאמר \"ועשה אחת\". הייתי חושב שאינו חייב עד שיכתוב את כל השם, יארוג את כל הבגד, ויעשה את כל הנפה. לכן נאמר \"מאחת\". רש\"י מפרש: \"אחת\" משמע הכול, ו\"שם\" פירושו מילה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R32"], "t": "\"אי מאחת\": אות אחת?", "x": "ואם \"מאחת\", הייתי חושב שחייב אפילו על אות אחת, חוט אחד, או \"בית\" אחד בנפה. רש\"י מפרש: אחרי שמתח את הנצרים של השתי, האורג מעביר בערב נצר אחד מלמטה ונצר אחד מלמעלה. אלה נקראים \"בתים\", והם מחזיקים את השתי. \"בית\" אחד אינו מתקיים. והם נקראים \"בית\" ולא \"חוט\" מפני שאינם חוטים.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "הקודח חייב גם לשמואל, כשהשאיר את המסמר בחור. המכה על הסדן חייב כי כך עשו מרדדי טסי המשכן. החורש חייב בכל שהוא, ובמלקט השיעור תלוי במטרה. ומי שתולש בשדה של חברו ואינו מתכוון ליפות אותה, אינו חייב על היפוי. במשנת הכותב רבי יוסי מחייב משום רושם, ורבי יהודה מחייב על שם קטן מתוך שם גדול. העמוד הבא ממשיך את הברייתא, וקובע איך יוצאים מ\"אחת\" ומ\"מאחת\".", "a": ""}], "audio": "shabbat/daf-103a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

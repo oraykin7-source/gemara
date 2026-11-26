@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף פ&quot;ח עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-88a.html">
+<meta name="description" content="מסכת שבת, דף פ&quot;ח עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף פ\"ח עמוד א'", "url": "https://gemara.co.il/shabbat-88a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף פ&quot;ח עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>אמר רבי עקיבא</span><span>פרק תשיעי</span><span>שבת<b>פח.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-87b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-88b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 173</div>
+  <h1>מסכת שבת, דף פ&quot;ח עמוד א&#x27;</h1>
+  <p class="sub">פרק תשיעי, &quot;אמר רבי עקיבא&quot;. סוף החשבון של יום מתן תורה, ההר שנכפה כגיגית, הכתרים של &quot;נעשה ונשמע&quot;, והצדוקי שראה את רבא.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף פ&quot;ח עמוד א&#x27;, לומדים: יום מתן תורה: חכמים ורבי יוסי; תורה משולשת וההר שנכפה כגיגית; הארץ יראה ושקטה; "נעשה ונשמע": הכתרים, הסוד והתפוח; הצדוקי: "עמא פזיזא".</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. יום מתן תורה: חכמים ורבי יוסי</a><a href="#u2">2. תורה משולשת וההר שנכפה כגיגית</a><a href="#u3">3. הארץ יראה ושקטה</a><a href="#u4">4. "נעשה ונשמע": הכתרים, הסוד והתפוח</a><a href="#u5">5. הצדוקי: "עמא פזיזא"</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4a">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>יום מתן תורה: חכמים ורבי יוסי</h2>
+  <p class="lead">הגמרא מסיימת את החשבון של ראשי החודשים, ובודקת שתי ברייתות: האם הן מתאימות לחכמים, שלדעתם התורה ניתנה בשישי בסיון, או לרבי יוסי, שלדעתו בשביעי.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לרבנן ח' חסרים עבוד</td><td>לחכמים, שמונה (חודשים) חסרים עשו.</td></tr>
+      <tr><td>ת"ש דתניא בסדר עולם</td><td>בוא ושמע, ששנינו בסדר עולם:</td></tr>
+      <tr><td>בארבעה עשר שחטו פסחיהן</td><td>בארבעה עשר (בניסן) שחטו את פסחיהם,</td></tr>
+      <tr><td>בחמשה עשר יצאו</td><td>בחמישה עשר יצאו,</td></tr>
+      <tr><td>ואותו היום ע"ש היה</td><td>ואותו היום ערב שבת היה.</td></tr>
+      <tr><td>קשיא לר' יוסי</td><td>קשה לרבי יוסי.</td></tr>
+      <tr><td>אמר לך ר' יוסי הא מני רבנן היא</td><td>יאמר לך רבי יוסי: זו של מי? של חכמים היא.</td></tr>
+      <tr><td>בשני עלה משה וירד</td><td>בשני עלה משה וירד,</td></tr>
+      <tr><td>בד' ירד ושוב לא עלה</td><td>ברביעי ירד ושוב לא עלה.</td></tr>
+      <tr><td>ומאחר שלא עלה מהיכן ירד</td><td>ואם לא עלה, מהיכן ירד?</td></tr>
+      <tr><td>בחמישי בנה מזבח והקריב עליו קרבן</td><td>בחמישי בנה מזבח והקריב עליו קרבן,</td></tr>
+      <tr><td>בששי לא היה לו פנאי</td><td>בשישי לא היה לו זמן פנוי.</td></tr>
+      <tr><td>מאי לאו משום תורה</td><td>האם לא מפני התורה?</td></tr>
+      <tr><td>לא משום טורח שבת</td><td>לא, מפני הטורח של שבת.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>סוף החשבון:</b> לדעת חכמים עשו באותה שנה שמונה חודשים חסרים. רש"י מסביר שכך ההפרש בין הפסח של שנה אחת לפסח של השנה הבאה היה יומיים בלבד בימי השבוע.</p>
+  <p><b>הברייתא מ"סדר עולם":</b> יציאת מצרים, בחמישה עשר בניסן, הייתה ביום שישי. אם כך, ראש חודש סיון חל ביום שני, וזה קשה לרבי יוסי, שלדעתו חל ביום ראשון. התשובה: הברייתא הזו היא כשיטת חכמים.</p>
+  <p><b>הברייתא של רבי יוסי:</b> בשני, בשלישי וברביעי עלה משה וירד, בחמישי בנה מזבח, ובשישי לא היה לו פנאי. הגמרא מציעה שזה מפני שבשישי ניתנה התורה, כשיטת חכמים. התשובה: לא, הסיבה היא הטורח של שבת. לשיטת רבי יוסי השישי בחודש היה ערב שבת, והתורה ניתנה למחרת.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>לרבנן ח' חסרים עבוד – ולא היו בין פסח דאשתקד לפסח דהאידנא אלא ב' ימים ונמצא דאשתקד בע"ש:</blockquote><p><span class="say">מה רש"י אומר:</span> בין הפסח של השנה שעברה לפסח של השנה הזו היה הפרש של יומיים בלבד, ונמצא שבשנה שעברה חל ביום שישי.</p></div>
+  <div data-hl="R2,R3,R4" class="voice r"><span class="tag">רש"י</span><blockquote>בשני עלה משה – ושמע ואתם תהיו לי וירד והגיד:</blockquote><blockquote>בג' עלה – ושמע הגבלה וירד והגיד:</blockquote><blockquote>בד' ירד – להפרישם:</blockquote><p><span class="say">מה רש"י אומר:</span> בשני שמע משה "ואתם תהיו לי" וירד להגיד, בשלישי שמע את מצוות ההגבלה וירד להגיד, וברביעי ירד כדי להפריש את העם.</p></div>
+  <div data-hl="R8" class="voice r"><span class="tag">רש"י</span><blockquote>מאי לאו משום תורה – לא היה לו פנאי לעלות שקבלו כולן יחד את הדברות:</blockquote><p><span class="say">מה רש"י אומר:</span> בשישי לא היה לו פנאי לעלות, כי כולם קיבלו יחד את הדברות.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שתי ברייתות ושתי תשובות שונות</h3>
+    <p>שתי הברייתות נראות מתאימות לחכמים. על הברייתא מ"סדר עולם" הגמרא עונה שהיא אכן כשיטת חכמים, ורבי יוסי אינו סובר כמותה. על הברייתא של רבי יוסי עצמו אי אפשר לענות כך, ולכן הגמרא מפרשת אחרת את הסיבה שבשישי לא היה פנאי.</p>
+    <div data-hl="R5,R6" class="voice r"><span class="tag">רש"י</span><blockquote>ושוב לא עלה – עד קבלת הדברות שעלו כולם:</blockquote><blockquote>ומאחר שלא עלה מהיכן ירד – דאמר' בד' ירד ולא אמרת עלה וירד אלא אימא בד' עלה וירד ושוב לא עלה:</blockquote><p><span class="say">מה רש"י אומר:</span> הברייתא תיקנה את עצמה. "ברביעי ירד" אינו יכול להיות בלי עלייה לפניו, ולכן צריך לומר שברביעי עלה וירד, ו"שוב לא עלה" פירושו עד קבלת הדברות, שאז עלו כולם.</p></div>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>לרבנן ח' חסירין עבוד – אומר ר' יצחק דלא הוי צ"ל ח' חסירין עבוד אלא ז' חסירין ואייר דההיא שתא עבורי עברוה כדאמר לעיל אלא משום דלר"י איצטריך למימר דשבעה חסירין עבוד דהא תניא לעיל דאותו יום ה' בשבת היה נקט נמי לרבנן שמנה:</blockquote><p><span class="say">מה התוספות אומרים:</span> לדעת חכמים לא היה הכרח לומר שמונה. אפשר היה לומר גם לשיטתם שבעה חודשים חסרים, ושאת חודש אייר עיברו. אלא שלרבי יוסי הוצרכה הגמרא לומר שבעה, כי נשנה למעלה שיום יציאת מצרים היה יום חמישי, ומכיוון שאמרה מספר לרבי יוסי, אמרה גם לחכמים מספר, שמונה.</p></div>
+  </div>
+  <p class="godeep">למה הגמרא אינה עונה על הברייתא של רבי יוסי כמו על הברייתא מ"סדר עולם"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מתי ניתנה התורה לדעת חכמים, ומתי לדעת רבי יוסי?</summary><p>לחכמים בשישי בסיון, לרבי יוסי בשביעי בו.</p></details>
+  <details><summary>באיזה יום בשבוע הייתה יציאת מצרים לפי "סדר עולם"?</summary><p>ביום שישי, ערב שבת.</p></details>
+  <details><summary>למה, לפי המסקנה, לא היה למשה פנאי בשישי?</summary><p>מפני הטורח של שבת. לשיטת רבי יוסי השישי בחודש היה ערב שבת.</p></details>
+  <details class="deepq"><summary>מה פירוש "ושוב לא עלה" לפי רש"י?</summary><p>לא עלה עד קבלת הדברות, שאז עלו כולם.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G4b,G5a,G5b,G5c">
+  <div class="kicker">יחידה 2 · אגדה</div>
+  <h2>תורה משולשת וההר שנכפה כגיגית</h2>
+  <p class="lead">דרשה על המספר שלוש במתן תורה, ואחריה דרשה קשה: ההר נכפה על ישראל כגיגית. מה פירוש הדבר, ומתי קיבלו ישראל את התורה מרצונם?</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>בריך רחמנא דיהב אוריאן תליתאי</td><td>ברוך הרחמן, שנתן תורה משולשת</td></tr>
+      <tr><td>לעם תליתאי על ידי תליתאי</td><td>לעם משולש, על ידי שלישי,</td></tr>
+      <tr><td>ביום תליתאי בירחא תליתאי</td><td>ביום השלישי, בחודש השלישי.</td></tr>
+      <tr><td>כמאן כרבנן</td><td>כשיטת מי? כשיטת חכמים.</td></tr>
+      <tr><td>ויתיצבו בתחתית ההר</td><td>"ויתיצבו בתחתית ההר":</td></tr>
+      <tr><td>מלמד שכפה הקב"ה עליהם את ההר כגיגית</td><td>מלמד שכפה הקדוש ברוך הוא עליהם את ההר כגיגית,</td></tr>
+      <tr><td>אם אתם מקבלים התורה מוטב</td><td>אם אתם מקבלים את התורה, מוטב,</td></tr>
+      <tr><td>ואם לאו שם תהא קבורתכם</td><td>ואם לא, שם תהיה קבורתכם.</td></tr>
+      <tr><td>מכאן מודעא רבה לאורייתא</td><td>מכאן מודעה גדולה לתורה.</td></tr>
+      <tr><td>אעפ"כ הדור קבלוה בימי אחשורוש</td><td>אף על פי כן, חזרו וקיבלו אותה בימי אחשורוש,</td></tr>
+      <tr><td>קימו וקבלו היהודים</td><td>"קימו וקבלו היהודים":</td></tr>
+      <tr><td>קיימו מה שקיבלו כבר</td><td>קיימו מה שכבר קיבלו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הכול משולש:</b> אדם מן הגליל דרש לפני רב חסדא: תורה משולשת, לעם משולש, על ידי שלישי, ביום שלישי, בחודש השלישי. הגמרא קובעת שהדרשה הזו כשיטת חכמים. רש"י מפרש שהיום השלישי הוא השלישי לפרישה, ולשיטת רבי יוסי התורה ניתנה ביום הרביעי לפרישה, כי משה הוסיף יום אחד מדעתו.</p>
+  <p><b>ההר כגיגית:</b> מן המילים "בתחתית ההר" דרש רבי אבדימי שהקדוש ברוך הוא כפה את ההר על ישראל ואמר: אם תקבלו את התורה, מוטב, ואם לא, שם תהיה קבורתכם.</p>
+  <p><b>מודעא רבה:</b> רבי אחא בר יעקב אמר שמכאן יש לישראל טענה גדולה: קיבלו את התורה באונס. <b>ורבא:</b> אף על פי כן, בימי אחשורוש חזרו וקיבלו אותה, כמו שכתוב "קימו וקבלו היהודים", קיימו מה שכבר קיבלו.</p>
+  <div data-hl="R10,R11,R12" class="voice r"><span class="tag">רש"י</span><blockquote>אוריאן תליתאי – תורה נביאים וכתובים:</blockquote><blockquote>לעם תליתאי – כהנים לוים וישראלים:</blockquote><blockquote>על יד תליתאי – משה תליתאי לבטן מרים אהרן ומשה:</blockquote><p><span class="say">מה רש"י אומר:</span> תורה, נביאים וכתובים; כהנים, לויים וישראלים; ומשה, השלישי מבין ילדי אמו, אחרי מרים ואהרן.</p></div>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>מודעא רבה – שאם יזמינם לדין למה לא קיימתם מה שקבלתם עליכם יש להם תשובה שקבלוה באונס:</blockquote><p><span class="say">מה רש"י אומר:</span> אם יתבע אותם לדין למה לא קיימו מה שקיבלו עליהם, יש להם תשובה: קיבלו אותה באונס.</p></div>
+  <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>בימי אחשורוש – מאהבת הנס שנעשה להם:</blockquote><p><span class="say">מה רש"י אומר:</span> בימי אחשורוש קיבלו אותה מאהבת הנס שנעשה להם.</p></div>
+  <div data-hl="T2a" class="voice t"><span class="tag">תוספות</span><blockquote>כפה עליהן הר כגיגית – ואע"פ שכבר הקדימו נעשה לנשמע שמא יהיו חוזרים כשיראו האש הגדולה שיצאתה נשמתן</blockquote><p><span class="say">מה התוספות אומרים:</span> ישראל כבר הקדימו "נעשה" ל"נשמע", ובכל זאת נכפה עליהם ההר, שמא יחזרו בהם כשיראו את האש הגדולה שמפניה יצאה נשמתם.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מתי הקבלה נחשבת מרצון</h3>
+    <div data-hl="T3a" class="voice t"><span class="tag">תוספות</span><blockquote>מודעא רבה לאורייתא – והא דאמר בנדרים (דף כה.) שכרת משה ברית עם ישראל על התורה והמצות והשביעם על כך ובפ' אלו נאמרין (סוטה לז:) שקבלו את כל התורה בהר גרזים ובהר עיבל אור"ת דע"פ הדיבור היה והרי כבעל כרחם אבל בימי אחשורוש קבלו מדעתם מאהבת הנס</blockquote><p><span class="say">מה התוספות אומרים:</span> במסכת נדרים נאמר שמשה כרת ברית עם ישראל על התורה, ובמסכת סוטה שקיבלו אותה בהר גריזים ובהר עיבל. רבנו תם אומר שאלה נעשו על פי הדיבור, ולכן הם כמו בעל כורחם. בימי אחשורוש קיבלו מדעתם, מאהבת הנס.</p></div>
+    <div data-hl="T3b" class="voice t"><span class="tag">תוספות</span><blockquote>ומה שכרת עמהן ברית יהושע לעבוד את ה' התם לא קבלו אלא שלא לעבוד ע"ז כדכתיב (יהושע כד) חלילה לנו מעזוב את ה' וכן משמע כוליה עניינא:</blockquote><p><span class="say">מה התוספות אומרים:</span> בברית שכרת יהושע קיבלו רק שלא לעבוד עבודה זרה, כמו שכתוב "חלילה לנו מעזוב את ה'".</p></div>
+    <div data-hl="T2b" class="voice t"><span class="tag">תוספות</span><blockquote>והא דאמר בפ"ק דמס' ע"ז (דף ב:) כלום כפית עלינו הר כגיגית דמשמע דאם היה כופה עליהן לא היה להן תשובה והכא אמר דמודעא רבה לאורייתא היינו על מה שלא קבלוה אבל מה שלא קיימוה איכא תשובה:</blockquote><p><span class="say">מה התוספות אומרים:</span> במסכת עבודה זרה אומות העולם טוענות "כלום כפית עלינו הר כגיגית", ומשמע שאילו כפה עליהן את ההר, לא הייתה להן תשובה. וכאן הכפייה עצמה היא תשובה. התוספות מיישבים: שם מדובר על כך שלא קיבלו את התורה, אבל על כך שלא קיימו אותה יש תשובה, שקיבלו באונס.</p></div>
+    <h3>פסוק אחד ושתי דרשות</h3>
+    <div data-hl="T4a" class="voice t"><span class="tag">תוספות</span><blockquote>אמר רבא הדר קבלוה בימי אחשורוש – תימה לר"י דבמגילה (דף ז.) גבי אסתר ברוח הקודש נאמרה אמר רב יהודה אמר שמואל אי הואי התם ה"א להו דידי עדיפא מדידהו קיימו וקבלו היהודים קיימו למעלה מה שקבלו למטה ואמר רבא כולהו אית להו פירכא לבר משמואל דלית ליה פירכא והשתא דשמואל נמי אית ליה פירכא דרבא גופיה מוקי האי קרא לדרשה אחריתי ובפ"ק דחגיגה (דף י.) גבי היתר נדרים פורחין באויר קאמר כולהו אית …</blockquote><p><span class="say">מה התוספות אומרים:</span> במסכת מגילה שמואל לומד מ"קימו וקבלו" שמגילת אסתר נאמרה ברוח הקודש, ורבא אמר שם שרק על הראיה של שמואל אין פירכא. והרי רבא עצמו דורש כאן את הפסוק לדרשה אחרת, ובמסכת חגיגה נחשב לפירכא זה שהפסוק נצרך לדרשה אחרת.</p></div>
+    <div data-hl="T4b" class="voice t"><span class="tag">תוספות</span><blockquote>ואי גרסינן התם רבה אתא שפיר אי נמי ה"ק במגילה כולהו אית להו פירכא ששאר תנאים מוקשים בסברתם כדאמר התם אבל שמואל אינו מוקשה כל כך אלא דאיצטריך קרא לדרשה אחריתי:</blockquote><p><span class="say">מה התוספות אומרים:</span> תשובה א': אם גורסים שם "רבה" ולא "רבא", אין קושיה. תשובה ב': שאר התנאים שם מוקשים בסברתם, ושמואל אינו מוקשה כל כך, ויש עליו רק זה שהפסוק נצרך לדרשה אחרת.</p></div>
+  </div>
+  <p class="godeep">אם קיבלו באונס, מה השתנה בימי אחשורוש? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה המשולש בדרשה של האדם מן הגליל?</summary><p>התורה, העם, משה, היום והחודש.</p></details>
+  <details><summary>מה פירוש "מודעא רבה לאורייתא"?</summary><p>יש לישראל טענה שקיבלו את התורה באונס.</p></details>
+  <details><summary>מאיזה פסוק לומד רבא שחזרו וקיבלו את התורה?</summary><p>"קימו וקבלו היהודים": קיימו מה שכבר קיבלו.</p></details>
+  <details class="deepq"><summary>לפי רבנו תם, למה הברית בהר גריזים ובהר עיבל אינה נחשבת קבלה מרצון?</summary><p>כי נעשתה על פי הדיבור, ולכן היא כמו בעל כורחם.</p></details>
+  <details class="deepq"><summary>למה כפה את ההר, אם כבר אמרו "נעשה ונשמע", לפי התוספות?</summary><p>שמא יחזרו בהם כשיראו את האש הגדולה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G6a,G6b">
+  <div class="kicker">יחידה 3 · אגדה</div>
+  <h2>הארץ יראה ושקטה</h2>
+  <p class="lead">פסוק בתהלים אומר שהארץ "יראה ושקטה". חזקיה מסביר את הסתירה, וריש לקיש מגלה מה הפחיד את הארץ: קיומה היה תלוי בקבלת התורה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>משמים השמעת דין ארץ יראה ושקטה</td><td>"משמים השמעת דין, ארץ יראה ושקטה".</td></tr>
+      <tr><td>אם יראה למה שקטה</td><td>אם יראה, למה שקטה?</td></tr>
+      <tr><td>ואם שקטה למה יראה</td><td>ואם שקטה, למה יראה?</td></tr>
+      <tr><td>אלא בתחילה יראה ולבסוף שקטה</td><td>אלא: בתחילה יראה, ולבסוף שקטה.</td></tr>
+      <tr><td>ולמה יראה כדריש לקיש</td><td>ולמה יראה? כדברי ריש לקיש.</td></tr>
+      <tr><td>ויהי ערב ויהי בקר יום הששי</td><td>"ויהי ערב ויהי בקר יום הששי":</td></tr>
+      <tr><td>ה' יתירה למה לי</td><td>ה"א נוספת, לשם מה?</td></tr>
+      <tr><td>מלמד שהתנה הקב"ה עם מעשה בראשית</td><td>מלמד שהתנה הקדוש ברוך הוא עם מעשה בראשית:</td></tr>
+      <tr><td>אם ישראל מקבלים התורה אתם מתקיימין</td><td>אם ישראל מקבלים את התורה, אתם מתקיימים,</td></tr>
+      <tr><td>ואם לאו אני מחזיר אתכם לתוהו ובוהו</td><td>ואם לא, אני מחזיר אתכם לתוהו ובוהו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הסתירה:</b> בפסוק נאמר שהארץ "יראה ושקטה". אם פחדה, אינה שקטה, ואם שקטה, אינה פוחדת. חזקיה עונה: בתחילה פחדה, ולבסוף שקטה.</p>
+  <p><b>ממה פחדה:</b> ריש לקיש דורש את הה"א הנוספת ב"יום הששי": הקדוש ברוך הוא התנה עם הבריאה, שקיומה תלוי בקבלת התורה. אם ישראל יקבלו אותה, העולם יתקיים, ואם לא, יחזור לתוהו ובוהו.</p>
+  <p><b>ולכן:</b> לפי רש"י, הארץ פחדה לפני שאמרו ישראל "נעשה ונשמע", שמא לא יקבלו את התורה, ושקטה כשקיבלו.</p>
+  <div data-hl="R18,R19,R20,R21" class="voice r"><span class="tag">רש"י</span><blockquote>דין – תורה:</blockquote><blockquote>בתחילה – קודם שאמרו ישראל נעשה ונשמע:</blockquote><blockquote>יראה – שמא לא יקבלוה ויחזור העולם לתהו ובהו כדר"ל:</blockquote><blockquote>ולבסוף – כשקבלוה:</blockquote><p><span class="say">מה רש"י אומר:</span> "דין" הוא התורה. בתחילה, לפני שאמרו "נעשה ונשמע", הארץ פחדה שמא לא יקבלו ויחזור העולם לתוהו ובוהו, ולבסוף, כשקיבלו, שקטה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>היום השישי המיוחד</h3>
+    <div data-hl="R22,R23" class="voice r"><span class="tag">רש"י</span><blockquote>יום הששי – מאי שנא דכתיב ה' ביום גמר מעשה בראשית:</blockquote><blockquote>מלמד שהתנה כו' – הששי משמע הששי המיוחד במקום אחר כדאמרינן בעלמא (חולין דף צא.) הירך המיומנת אף כאן ויהי ערב ויהי בקר של גמר בראשית תלוי ביום הששי והוא ו' בסיון שנתנה בו תורה מריבוי דה' דריש ביה נמי הא:</blockquote><p><span class="say">מה רש"י אומר:</span> במה שונה יום גמר מעשה בראשית, שנכתבה בו ה"א? "הששי" משמע שישי מסוים ומיוחד, כמו שדרשו על "הירך": "הירך המיומנת", ירך מסוימת ולא כל ירך. הערב והבוקר של גמר מעשה בראשית תלויים ב"יום הששי" המיוחד, והוא שישי בסיון, שבו ניתנה התורה.</p></div>
+    <p>כך שתי הדרשות מתחברות: הפסוק בתהלים מתאר את רגע מתן תורה, והפסוק בבראשית מגלה שכבר בבריאה נקבע שהעולם תלוי ברגע הזה.</p>
+  </div>
+  <p class="godeep">איך קשורה ה"א של "יום הששי" ליום מתן תורה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הסתירה בפסוק "ארץ יראה ושקטה"?</summary><p>אם פחדה, למה שקטה? ואם שקטה, למה פחדה?</p></details>
+  <details><summary>ממה דורש ריש לקיש את התנאי עם מעשה בראשית?</summary><p>מן הה"א הנוספת ב"יום הששי".</p></details>
+  <details><summary>מה היה התנאי?</summary><p>אם ישראל מקבלים את התורה, העולם מתקיים, ואם לא, חוזר לתוהו ובוהו.</p></details>
+  <details class="deepq"><summary>לפי רש"י, איזה "שישי" הוא היום המיוחד?</summary><p>שישי בסיון, שבו ניתנה התורה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G7a,G7b,G7c,G7d,G8a,G8b">
+  <div class="kicker">יחידה 4 · אגדה</div>
+  <h2>"נעשה ונשמע": הכתרים, הסוד והתפוח</h2>
+  <p class="lead">כמה דרשות על הרגע שבו ישראל הקדימו "נעשה" ל"נשמע": הכתרים שקיבלו ואיבדו, הסוד של מלאכי השרת, והתפוח שפריו קודם לעליו.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>בשעה שהקדימו ישראל נעשה לנשמע</td><td>בשעה שהקדימו ישראל "נעשה" ל"נשמע",</td></tr>
+      <tr><td>באו ששים ריבוא של מלאכי השרת</td><td>באו שישים ריבוא של מלאכי השרת,</td></tr>
+      <tr><td>קשרו לו שני כתרים</td><td>קשרו לו שני כתרים,</td></tr>
+      <tr><td>אחד כנגד נעשה ואחד כנגד נשמע</td><td>אחד כנגד "נעשה" ואחד כנגד "נשמע".</td></tr>
+      <tr><td>וכיון שחטאו ישראל</td><td>וכיון שחטאו ישראל,</td></tr>
+      <tr><td>ירדו מאה ועשרים ריבוא מלאכי חבלה ופירקום</td><td>ירדו מאה ועשרים ריבוא מלאכי חבלה ופירקו אותם.</td></tr>
+      <tr><td>בחורב טענו בחורב פרקו</td><td>בחורב טענו, בחורב פרקו.</td></tr>
+      <tr><td>וכולן זכה משה ונטלן</td><td>ובכולם זכה משה ונטל אותם.</td></tr>
+      <tr><td>עתיד הקב"ה להחזירן לנו</td><td>עתיד הקדוש ברוך הוא להחזיר אותם לנו.</td></tr>
+      <tr><td>שמחה שמעולם על ראשם</td><td>שמחה שמעולם (שהייתה להם כבר) על ראשם.</td></tr>
+      <tr><td>מי גילה לבני רז זה</td><td>מי גילה לבניי את הסוד הזה,</td></tr>
+      <tr><td>שמלאכי השרת משתמשין בו</td><td>שמלאכי השרת משתמשים בו?</td></tr>
+      <tr><td>ברישא עושי והדר לשמוע</td><td>בתחילה "עושי" ואחר כך "לשמוע".</td></tr>
+      <tr><td>מה תפוח זה פריו קודם לעליו</td><td>מה תפוח זה, פריו קודם לעליו,</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הכתרים:</b> רבי סימאי דרש שכאשר הקדימו ישראל "נעשה" ל"נשמע", קשרו מלאכי השרת לכל אחד שני כתרים. כשחטאו, מלאכי חבלה פירקו אותם, כמו שנאמר "ויתנצלו בני ישראל את עדים מהר חורב".</p>
+  <p><b>לאן הלכו:</b> רבי יוחנן אמר שמשה זכה בכולם, כי סמוך לפסוק כתוב "ומשה יקח את האהל". וריש לקיש אמר שהקדוש ברוך הוא עתיד להחזיר אותם, כמו שנאמר "ושמחת עולם על ראשם", שמחה שמעולם.</p>
+  <p><b>הסוד:</b> רבי אלעזר אמר שבת קול שאלה: מי גילה לבניי את הסוד של מלאכי השרת? הם "עושי דברו לשמוע", קודם עושים ואחר כך שומעים. ורבי חמא ברבי חנינא המשיל את ישראל לתפוח, שפריו קודם לעליו.</p>
+  <div data-hl="R24,R25" class="voice r"><span class="tag">רש"י</span><blockquote>שני כתרים – מזיו שכינה:</blockquote><blockquote>מאה ועשרים – [כל א' וא' נטל כתר]:</blockquote><p><span class="say">מה רש"י אומר:</span> הכתרים היו מזיו השכינה, וכל אחד ממלאכי החבלה נטל כתר אחד.</p></div>
+  <div data-hl="R28" class="voice r"><span class="tag">רש"י</span><blockquote>ומשה יקח – אותו עדי לשון אחר את האהל לשון בהלו נרו (איוב כ״ט:ג׳) והוא היה קירון עור פניו:</blockquote><p><span class="say">מה רש"י אומר:</span> "ומשה יקח" את העדי הזה. ובפירוש אחר: "האהל" מלשון "בהלו נרו", אור, והוא קרן עור פניו.</p></div>
+  <div data-hl="R29" class="voice r"><span class="tag">רש"י</span><blockquote>עושי דברו לשמוע – מוכנין לעשות קודם שישמעו ולא כדרך שאר עבדים ששומעים תחילה את הדבר לידע אם יכולין לקבלן עליהם אם לאו:</blockquote><p><span class="say">מה רש"י אומר:</span> מלאכי השרת מוכנים לעשות לפני שישמעו, ולא כדרך עבדים אחרים, ששומעים תחילה כדי לדעת אם יוכלו לקבל את הדבר.</p></div>
+  <div class="eg"><b>להמחשה:</b> לדוגמה, עובד שמבקש לקרוא את כל תנאי העבודה לפני שהוא מסכים, לעומת מי שאומר מראש "מה שתבקש, אעשה".</div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>כתר אחד לכל מלאך חבלה</h3>
+    <div data-hl="T6" class="voice t"><span class="tag">תוספות</span><blockquote>ירדו ק"כ ריבוא – מדכתיב ויתנצלו דריש תרי זימני ויש ספרים שכתוב בהן בהדיא וינצלו לא נאמר אלא ויתנצלו ואע"ג דגדולה מדה טובה ממדת פורענות הכא נמי גדולה היא שמלאך טוב היה קושר שני כתרים ומלאך חבלה לא היה בו כח כי אם להסיר אחד:</blockquote><p><span class="say">מה התוספות אומרים:</span> "ויתנצלו" נדרש פעמיים, ולכן היו מלאכי החבלה כפליים. ואף שמידה טובה מרובה ממידת פורענות, גם כאן היא מרובה: מלאך טוב קשר שני כתרים, ומלאך חבלה יכול היה להסיר רק אחד.</p></div>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>שני כתרים – של הוד היו לפיכך כשנטל משה קרן עור פניו:</blockquote><p><span class="say">מה התוספות אומרים:</span> הכתרים היו של הוד, ולכן כשנטל אותם משה, קרן עור פניו.</p></div>
+    <div data-hl="R26,R27" class="voice r"><span class="tag">רש"י</span><blockquote>טענו – הכתרים והכי משמע את עדים [אשר היו להם] מהר חורב:</blockquote><blockquote>בחורב פרקו – דמשמע נמי ויתנצלו את עדים מהר חורב:</blockquote><p><span class="say">מה רש"י אומר:</span> הטעינה והפריקה נלמדות מאותו פסוק: "את עדים מהר חורב" הם העדיים שקיבלו בחורב, ו"ויתנצלו" משמע שגם הסירו אותם שם.</p></div>
+    <h3>התפוח שבפסוק</h3>
+    <div data-hl="R30" class="voice r"><span class="tag">רש"י</span><blockquote>פריו קודם לעליו – כך דרכו וחלוק משאר אילנות חנטת פירותיו קודם לעליו:</blockquote><p><span class="say">מה רש"י אומר:</span> כך דרכו של התפוח, ובזה הוא שונה משאר האילנות: הפירות שלו מתחילים לצמוח לפני העלים.</p></div>
+    <div data-hl="T7a" class="voice t"><span class="tag">תוספות</span><blockquote>פריו קודם לעליו – הקשה ר"ת שהרי אנו רואים שגדל כשאר אילנות ומפרש דתפוח היינו אתרוג וריח אפך כתפוחים מתרגמינן כריחא דאתרוגא ואתרוג פריו קודם לעליו שדר באילן משנה לשנה ואחר שנה נושרין עליו של אשתקד ובאין עלין אחרים הוי פריו קודם לאותם עלים</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם הקשה שהתפוח גדל כשאר האילנות. לכן פירש שהתפוח הוא אתרוג, שנשאר על האילן משנה לשנה, ואחרי שנה באים לו עלים חדשים, כך שהפרי קודם להם.</p></div>
+    <div data-hl="T7b" class="voice t"><span class="tag">תוספות</span><blockquote>אך תימה שמביא קרא כתפוח בעצי היער דבהאי קרא לא נמשלו ישראל לתפוח אלא הקב"ה כדכתיב כן דודי בין הבנים וקרא דריח אפך כתפוחים (שיר השירים ז׳:ט׳) הוה ליה לאתויי טפי:</blockquote><p><span class="say">מה התוספות אומרים:</span> אבל בפסוק "כתפוח בעצי היער" לא ישראל נמשלו לתפוח אלא הקדוש ברוך הוא, ולכן היה מתאים יותר להביא את "וריח אפך כתפוחים".</p></div>
+  </div>
+  <p class="godeep">למה לפי התוספות היו מלאכי החבלה פי שניים ממלאכי השרת? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>כמה כתרים קיבל כל אחד מישראל, וכנגד מה?</summary><p>שניים: אחד כנגד "נעשה" ואחד כנגד "נשמע".</p></details>
+  <details><summary>מה עלה בגורל הכתרים לפי רבי יוחנן ולפי ריש לקיש?</summary><p>לרבי יוחנן משה זכה בהם, ולריש לקיש הקדוש ברוך הוא עתיד להחזיר אותם.</p></details>
+  <details><summary>מה הסוד של מלאכי השרת?</summary><p>הם עושים לפני שהם שומעים: "עושי דברו לשמוע".</p></details>
+  <details class="deepq"><summary>לפי רבנו תם, איזה פרי הוא ה"תפוח" שפריו קודם לעליו?</summary><p>האתרוג.</p></details>
+  <details class="deepq"><summary>לפי התוספות, איך כתר הוד של משה קשור לקירון פניו?</summary><p>הכתרים היו של הוד, וכשנטל אותם משה, קרן עור פניו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G9">
+  <div class="kicker">יחידה 5 · אגדה</div>
+  <h2>הצדוקי: "עמא פזיזא"</h2>
+  <p class="lead">צדוקי ראה את רבא שקוע בלימוד עד שלא הרגיש באצבעותיו המדממות, ותקף את ישראל על שקיבלו את התורה לפני ששמעו מה כתוב בה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ההוא צדוקי דחזייה לרבא</td><td>צדוקי אחד שראה את רבא</td></tr>
+      <tr><td>דקא מעיין בשמעתא</td><td>שהיה מעיין בסוגיה,</td></tr>
+      <tr><td>ויתבה אצבעתא דידיה תותי כרעא</td><td>ואצבעות ידיו מונחות תחת רגלו,</td></tr>
+      <tr><td>וקא מייץ בהו</td><td>והיה מועך אותן,</td></tr>
+      <tr><td>וקא מבען אצבעתיה דמא</td><td>ואצבעותיו פולטות דם.</td></tr>
+      <tr><td>א"ל עמא פזיזא</td><td>אמר לו: עם נמהר,</td></tr>
+      <tr><td>דקדמיתו פומייכו לאודנייכו</td><td>שהקדמתם את פיכם לאוזניכם,</td></tr>
+      <tr><td>אכתי בפחזותייכו קיימיתו</td><td>עדיין בפזיזותכם אתם עומדים.</td></tr>
+      <tr><td>ברישא איבעי' לכו למשמע</td><td>בתחילה הייתם צריכים לשמוע:</td></tr>
+      <tr><td>אי מציתו קבליתו</td><td>אם אתם יכולים, תקבלו,</td></tr>
+      <tr><td>ואי לא לא קבליתו</td><td>ואם לא, לא תקבלו.</td></tr>
+      <tr><td>א"ל אנן</td><td>אמר לו: אנחנו...</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המעשה:</b> רבא היה שקוע בעיון בסוגיה, ואצבעותיו היו מונחות תחת רגלו. הוא מעך אותן עד שיצא דם, ולא הרגיש.</p>
+  <p><b>הטענה:</b> הצדוקי ראה בכך פזיזות, וקרא לישראל "עמא פזיזא", עם נמהר. לדבריו, ישראל הקדימו את הפה לאוזן: אמרו "נעשה" לפני ששמעו, ועדיין הם נוהגים כך.</p>
+  <p><b>מה היה צריך לעשות לדעתו:</b> קודם לשמוע, ורק אם יוכלו לעמוד בדבר, לקבל. רבא מתחיל לענות, "אנן", אנחנו, והתשובה ממשיכה בעמוד הבא.</p>
+  <div data-hl="R31,R32" class="voice r"><span class="tag">רש"י</span><blockquote>אצבעתא דידיה – אצבעות ידיו:</blockquote><blockquote>וקא מייץ בהו – היה ממעכן ברגליו ואינו מבין מתוך טירדא:</blockquote><p><span class="say">מה רש"י אומר:</span> אצבעות ידיו. היה מועך אותן ברגליו ולא הרגיש, מתוך שהיה טרוד בלימוד.</p></div>
+  <div data-hl="R34" class="voice r"><span class="tag">רש"י</span><blockquote>דקדמיתו פומייכו לאודנייכו – קודם ששמעתם אותה היאך היא קשה ואם תוכלו לעמוד בה קבלתם עליכם לקיימה:</blockquote><p><span class="say">מה רש"י אומר:</span> הצדוקי טען שקיבלו עליהם לקיים את התורה לפני ששמעו כמה היא קשה, ואם יוכלו לעמוד בה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>אותה טענה, שני צדדים</h3>
+    <p>הצדוקי מביא כנגד ישראל את אותו דבר שבדרשות הקודמות בעמוד הזה נדרש לשבחם: הקדמת "נעשה" ל"נשמע". מה שמלאכי השרת עושים, לפי רבי אלעזר, הוא בעיני הצדוקי פזיזות.</p>
+    <p>הצדוקי קושר את הטענה למה שראה: רבא אינו מרגיש באצבעותיו מרוב עיון, והצדוקי אומר "אכתי בפחזותייכו קיימיתו", עדיין אתם עומדים בפזיזותכם. תשובת רבא באה בעמוד הבא.</p>
+  </div>
+  <p class="godeep">איך הצדוקי הופך את "נעשה ונשמע" לטענה נגד ישראל? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה ראה הצדוקי?</summary><p>את רבא שקוע בעיון, מועך את אצבעותיו תחת רגלו עד שיצא מהן דם.</p></details>
+  <details><summary>מה פירוש "עמא פזיזא"?</summary><p>עם נמהר.</p></details>
+  <details><summary>מה לדעת הצדוקי היו ישראל צריכים לעשות?</summary><p>קודם לשמוע, ורק אם יוכלו לעמוד בדבר, לקבל.</p></details>
+  <details class="deepq"><summary>איזו דרשה בעמוד מציגה את אותו מעשה לשבח?</summary><p>דרשת רבי אלעזר: "עושי דברו לשמוע", הסוד של מלאכי השרת.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>סוף החשבון:</b> לדעת חכמים עשו באותה שנה שמונה חודשים חסרים, ולדעת רבי יוסי שבעה.</li>
+      <li><b>שתי ברייתות:</b> הברייתא מ"סדר עולם" היא כשיטת חכמים, ובברייתא של רבי יוסי הסיבה שבשישי לא היה פנאי היא טורח השבת.</li>
+      <li><b>תורה משולשת:</b> תורה, עם, משה, יום וחודש, כולם שלישיים.</li>
+      <li><b>ההר כגיגית:</b> מכאן מודעה גדולה לתורה, אבל בימי אחשורוש חזרו וקיבלו אותה.</li>
+      <li><b>הארץ יראה ושקטה:</b> קיום הבריאה היה תלוי בקבלת התורה בשישי בסיון.</li>
+      <li><b>נעשה ונשמע:</b> שני כתרים לכל אחד, הסוד של מלאכי השרת, והתפוח שפריו קודם לעליו.</li>
+      <li><b>הצדוקי:</b> טען שישראל עם נמהר, שהקדים את הפה לאוזן. תשובת רבא ממשיכה בעמוד הבא.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>עבוד</td><td>עשו</td></tr>
+      <tr><td>תא שמע</td><td>&quot;בוא ושמע&quot;: ראיה ממקור אחר</td></tr>
+      <tr><td>הא מני</td><td>&quot;זו של מי?&quot;: כשיטת מי נשנתה</td></tr>
+      <tr><td>מאי לאו</td><td>&quot;האם לא?&quot;: כך מציעים הסבר שמביא ראיה</td></tr>
+      <tr><td>פנאי</td><td>זמן פנוי</td></tr>
+      <tr><td>תליתאי</td><td>שלישי, משולש</td></tr>
+      <tr><td>גיגית</td><td>כלי גדול שמטילים בו שכר</td></tr>
+      <tr><td>מודעא רבה</td><td>&quot;מודעה גדולה&quot;: טענה שהדבר נעשה באונס</td></tr>
+      <tr><td>הדור קבלוה</td><td>חזרו וקיבלו אותה</td></tr>
+      <tr><td>יתירה</td><td>נוספת, מיותרת</td></tr>
+      <tr><td>למה לי</td><td>לשם מה נצרך</td></tr>
+      <tr><td>עמא פזיזא</td><td>עם נמהר</td></tr>
+      <tr><td>ברישא</td><td>בתחילה</td></tr>
+      <tr><td>אכתי</td><td>עדיין</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-87b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-88b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף פ&quot;ח עמוד א&#x27;, לומדים: יום מתן תורה: חכמים ורבי יוסי; תורה משולשת וההר שנכפה כגיגית; הארץ יראה ושקטה; "נעשה ונשמע": הכתרים, הסוד והתפוח; הצדוקי: "עמא פזיזא".</p><details><summary>ההסבר צעד אחר צעד, כטקסט (35 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד א&#x27;: סוף חשבון הימים של מתן תורה</h3><p>בעמוד הקודם הגמרא חישבה באיזה יום בשבוע חלו ראשי החודשים בשנה של יציאת מצרים ובשנה שאחריה. ברקע עומדת מחלוקת: לדעת חכמים התורה ניתנה בשישי בסיון, ולדעת רבי יוסי בשביעי בו, ולדעת שניהם ביום שבת. העמוד הקודם נגמר בתשובה: לדעת רבי יוסי עשו באותה שנה שבעה חודשים חסרים. כאן נגמר המשפט, ואחריו באות דרשות על מתן תורה.</p></li><li><h3><span class="w">גמרא</span> · ולחכמים: שמונה חודשים חסרים</h3><p>&quot;לרבנן ח&#x27; חסרים עבוד&quot;, ולדעת חכמים עשו באותה שנה שמונה חודשים חסרים. רש&quot;י מפרש: כך היה בין הפסח של השנה שעברה לפסח של השנה הזו הפרש של יומיים בלבד בימי השבוע, ונמצא שבשנה שעברה חל ביום שישי.</p><p>חודש חסר הוא חודש של עשרים ותשעה ימים, וחודש מלא הוא חודש של שלושים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה דווקא שמונה</h3><p>רבי יצחק אומר: לדעת חכמים לא היה הכרח לומר שמונה חודשים חסרים. אפשר היה לומר גם לשיטתם שבעה חסרים, ושאת חודש אייר של אותה שנה עיברו, כלומר עשו אותו מלא, כמו שהגמרא ענתה למעלה. אלא שלרבי יוסי הוצרכה הגמרא לומר שבעה חסרים, שהרי נשנה למעלה שאותו היום, יום יציאת מצרים, היה יום חמישי. ומכיוון שאמרה מספר לרבי יוסי, אמרה גם לחכמים מספר, שמונה.</p><p>בשבעה חסרים הפסח של יציאת מצרים חל ביום חמישי. אם ניסן ואייר שניהם מלאים, ראש חודש סיון חל ביום שני, כשיטת חכמים.</p></li><li><h3><span class="w">גמרא</span> · ברייתא מספר &quot;סדר עולם&quot;</h3><p>&quot;תא שמע&quot;, בוא ושמע ראיה מברייתא בספר &quot;סדר עולם&quot;: בניסן שבו יצאו ישראל ממצרים, בארבעה עשר בו שחטו את הפסחים, ובחמישה עשר יצאו, ואותו היום היה ערב שבת. ומכיוון שראש חודש ניסן חל בערב שבת, שהרי האחד בחודש והחמישה עשר בו חלים באותו יום בשבוע, ראש חודש אייר חל ביום ראשון, וראש חודש סיון ביום שני.</p></li><li><h3><span class="w">גמרא</span> · קושיה על רבי יוסי, ותשובתו</h3><p>זה קשה לרבי יוסי, שלדעתו ראש חודש סיון חל ביום ראשון. התשובה: &quot;אמר לך רבי יוסי, הא מני, רבנן היא&quot;. רבי יוסי יאמר: הברייתא הזו נשנתה כשיטת חכמים, והוא אינו סובר כמותה.</p></li><li><h3><span class="w">גמרא</span> · רבי יוסי: מה עשה משה בכל יום</h3><p>ראיה נוספת, מברייתא של רבי יוסי עצמו: ביום השני לחודש עלה משה וירד, בשלישי עלה וירד, וברביעי ירד ושוב לא עלה. רש&quot;י מפרש: בשני שמע &quot;ואתם תהיו לי&quot; וירד להגיד לעם, בשלישי שמע את מצוות ההגבלה סביב ההר, וברביעי ירד כדי להפריש את העם.</p></li><li><h3><span class="w">גמרא</span> · תיקון: ברביעי עלה וירד</h3><p>הברייתא עצמה שואלת: אם לא עלה, מהיכן ירד? אלא כך יש לומר: ברביעי עלה וירד, ושוב לא עלה. רש&quot;י מוסיף ש&quot;שוב לא עלה&quot; פירושו עד קבלת הדברות, שאז עלו כולם.</p></li><li><h3><span class="w">גמרא</span> · בחמישי מזבח, ובשישי &quot;לא היה לו פנאי&quot;</h3><p>בחמישי בנה משה מזבח והקריב עליו קרבן, כמו שכתוב &quot;ויבן מזבח תחת ההר&quot;. בשישי לא היה לו פנאי. הגמרא שואלת: &quot;מאי לאו משום תורה&quot;, האם לא מפני שבשישי ניתנה התורה? רש&quot;י מפרש: לא היה לו פנאי לעלות, כי כולם קיבלו יחד את הדברות.</p><p>אם כך, הברייתא של רבי יוסי עצמו מתאימה לשיטת חכמים, שהתורה ניתנה בשישי בחודש.</p></li><li><h3><span class="w">גמרא</span> · לא, בגלל טורח השבת</h3><p>התשובה: &quot;לא, משום טורח שבת&quot;. בשישי לא היה לו פנאי לא מפני מתן תורה, אלא מפני הטורח של השבת. לכן אין מכאן ראיה נגד רבי יוסי.</p><p>החודש התחיל לרבי יוסי ביום ראשון, ולכן ימי החודש שבברייתא שלו הם גם ימי השבוע: השישי בחודש היה יום שישי, ערב שבת, והתורה ניתנה למחרת, בשבת, שביעי בחודש.</p></li><li><h3><span class="w">גמרא</span> · דרשה של אדם מן הגליל</h3><p>&quot;דרש ההוא גלילאה עליה דרב חסדא&quot;, אדם אחד מן הגליל דרש לפני רב חסדא. רש&quot;י מסביר למה נאמר &quot;עליה&quot;, מעליו: רב חסדא ישב והדרשן עמד, והעומד נראה כמי שנמצא למעלה מן היושב.</p></li><li><h3><span class="w">גמרא</span> · הכול משולש</h3><p>&quot;בריך רחמנא&quot;, ברוך הרחמן, שנתן תורה משולשת, לעם משולש, על ידי שלישי, ביום שלישי, בחודש השלישי. רש&quot;י מפרש: תורה, נביאים וכתובים; כהנים, לויים וישראלים; משה, השלישי מבין ילדי אמו, אחרי מרים ואהרן; והיום השלישי הוא השלישי לפרישה. והגמרא שואלת &quot;כמאן&quot;, כשיטת מי הדרשה הזו? ועונה: &quot;כרבנן&quot;, כשיטת חכמים.</p><p>לדעת חכמים התורה ניתנה ביום השלישי לפרישה. לדעת רבי יוסי משה הוסיף יום אחד מדעתו, כמו שנאמר בדף פ&quot;ז, והתורה ניתנה ביום הרביעי לפרישה.</p></li><li><h3><span class="w">גמרא</span> · ההר כגיגית</h3><p>על הפסוק &quot;ויתיצבו בתחתית ההר&quot; אמר רבי אבדימי בר חמא בר חסא: הפסוק מלמד שהקדוש ברוך הוא כפה עליהם את ההר כגיגית, ואמר להם: אם אתם מקבלים את התורה, מוטב, ואם לא, שם תהיה קבורתכם. רש&quot;י: &quot;בתחתית ההר&quot; פירושו מתחת להר ממש, ו&quot;גיגית&quot; היא כלי גדול שמטילים בו שכר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה היה צורך לכפות</h3><p>והרי ישראל כבר הקדימו &quot;נעשה&quot; ל&quot;נשמע&quot;. התוספות עונים: הקדוש ברוך הוא כפה עליהם את ההר שמא יחזרו בהם כשיראו את האש הגדולה, שמפניה יצאה נשמתם.</p></li><li><h3><span class="w">גמרא</span> · &quot;מודעא רבה לאורייתא&quot;</h3><p>רבי אחא בר יעקב אמר: מכאן &quot;מודעא רבה לאורייתא&quot;, מודעה גדולה לתורה. רש&quot;י מפרש: אם יתבע אותם לדין למה לא קיימו מה שקיבלו עליהם, יש להם תשובה: קיבלו אותה באונס.</p><p>&quot;מודעא&quot; היא הודעה שמעשה נעשה באונס ולא מרצון.</p></li><li><h3><span class="w">תוספות</span> · התוספות: סתירה ממסכת עבודה זרה</h3><p>במסכת עבודה זרה אומות העולם טוענות: &quot;כלום כפית עלינו הר כגיגית&quot;, האם כפית עלינו את ההר כמו שכפית על ישראל? משם משמע שאילו כפה עליהן את ההר, לא הייתה להן תשובה. וכאן נאמר שהכפייה עצמה היא תשובה, &quot;מודעא רבה&quot;. התוספות מיישבים: שם מדובר על כך שלא קיבלו את התורה. מי שנכפה עליו ההר אינו יכול לטעון על כך. אבל על כך שלא קיימו אותה יש תשובה: קיבלו באונס.</p></li><li><h3><span class="w">גמרא</span> · רבא: קיבלו שוב בימי אחשורוש</h3><p>אמר רבא: אף על פי כן, חזרו וקיבלו אותה בימי אחשורוש, שכתוב &quot;קימו וקבלו היהודים&quot;: קיימו מה שכבר קיבלו. רש&quot;י מוסיף שקיבלו אותה מאהבת הנס שנעשה להם.</p></li><li><h3><span class="w">תוספות</span> · התוספות: והקבלות שלפני כן?</h3><p>במסכת נדרים נאמר שמשה כרת ברית עם ישראל על התורה והמצוות והשביע אותם, ובמסכת סוטה נאמר שקיבלו את כל התורה בהר גריזים ובהר עיבל. רבנו תם אומר: אלה נעשו על פי הדיבור, ולכן הם כמו בעל כורחם. אבל בימי אחשורוש קיבלו מדעתם, מאהבת הנס.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הברית של יהושע</h3><p>והברית שכרת יהושע עם העם לעבוד את ה&#x27;? שם קיבלו רק שלא לעבוד עבודה זרה, כמו שכתוב &quot;חלילה לנו מעזוב את ה&#x27;&quot;, וכך משמע מכל העניין שם.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירכא על דברי שמואל</h3><p>רבי יצחק תמה: במסכת מגילה, בדיון על כך שמגילת אסתר נאמרה ברוח הקודש, אמר רב יהודה בשם שמואל: אילו הייתי שם, הייתי אומר להם ראיה עדיפה משלהם, &quot;קימו וקבלו היהודים&quot;, קיימו למעלה מה שקיבלו למטה. ורבא אמר שם שלכל הראיות יש פירכא חוץ מזו של שמואל. והרי גם על שמואל יש פירכא: רבא עצמו דורש כאן את הפסוק לדרשה אחרת, ובמסכת חגיגה נחשב לפירכא זה שהפסוק נצרך לדרשה אחרת.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שתי תשובות</h3><p>א&#x27;: אם גורסים שם &quot;רבה&quot; ולא &quot;רבא&quot;, הדברים מיושבים, שהרי אז מי שאמר שאין פירכא על שמואל אינו רבא, שדורש כאן את הפסוק אחרת. ב&#x27;: כוונת הגמרא במגילה היא ששאר התנאים מוקשים בסברתם, כמו שנאמר שם, ואילו שמואל אינו מוקשה כל כך, ויש עליו רק זה שהפסוק נצרך לדרשה אחרת.</p></li><li><h3><span class="w">גמרא</span> · &quot;ארץ יראה ושקטה&quot;</h3><p>חזקיה שואל על הפסוק &quot;משמים השמעת דין ארץ יראה ושקטה&quot;: אם יראה, למה שקטה? ואם שקטה, למה יראה? אלא בתחילה יראה ולבסוף שקטה. רש&quot;י: &quot;דין&quot; הוא התורה, &quot;בתחילה&quot; הוא לפני שאמרו ישראל &quot;נעשה ונשמע&quot;, הארץ יראה שמא לא יקבלו אותה, ו&quot;לבסוף&quot; הוא כשקיבלו.</p></li><li><h3><span class="w">גמרא</span> · ריש לקיש: התנאי עם מעשה בראשית</h3><p>ולמה יראה? כדברי ריש לקיש: בפסוק &quot;ויהי ערב ויהי בקר יום הששי&quot;, למה נוספה האות ה&quot;א? היא מלמדת שהקדוש ברוך הוא התנה עם מעשה בראשית: אם ישראל מקבלים את התורה, אתם מתקיימים, ואם לא, אני מחזיר אתכם לתוהו ובוהו.</p><p>בשאר ימי הבריאה כתוב בלי ה&quot;א, כמו &quot;יום שני&quot; ו&quot;יום שלישי&quot;.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: איזה יום שישי</h3><p>רש&quot;י מפרש את השאלה: במה שונה יום גמר מעשה בראשית, שנכתבה בו ה&quot;א? ואת הדרשה: &quot;הששי&quot; עם ה&quot;א משמע שישי מסוים ומיוחד, שנזכר במקום אחר, כמו שדרשו במסכת חולין על המילה &quot;הירך&quot;: &quot;הירך המיומנת&quot;, ירך מסוימת ולא כל ירך. אף כאן, הערב והבוקר של גמר מעשה בראשית תלויים ב&quot;יום הששי&quot; המיוחד, והוא שישי בסיון, שבו ניתנה התורה. גם זה נדרש מן הה&quot;א הנוספת.</p></li><li><h3><span class="w">גמרא</span> · שני כתרים לכל אחד</h3><p>רבי סימאי דרש: בשעה שהקדימו ישראל &quot;נעשה&quot; ל&quot;נשמע&quot;, באו שישים ריבוא מלאכי השרת, וקשרו לכל אחד מישראל שני כתרים, אחד כנגד &quot;נעשה&quot; ואחד כנגד &quot;נשמע&quot;. וכשחטאו ישראל, ירדו מאה ועשרים ריבוא מלאכי חבלה ופירקו אותם, שנאמר &quot;ויתנצלו בני ישראל את עדים מהר חורב&quot;. רש&quot;י: הכתרים היו מזיו השכינה, וכל מלאך חבלה נטל כתר אחד.</p><p>ריבוא הוא עשרת אלפים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה מאה ועשרים ריבוא</h3><p>המילה &quot;ויתנצלו&quot; נדרשת פעמיים, ויש ספרים שכתוב בהם במפורש: לא נאמר &quot;וינצלו&quot; אלא &quot;ויתנצלו&quot;. ואף שמידה טובה מרובה ממידת פורענות, גם כאן היא מרובה: מלאך טוב קשר שני כתרים, ומלאך חבלה היה בו כוח להסיר רק אחד.</p></li><li><h3><span class="w">גמרא</span> · בחורב טענו, בחורב פרקו</h3><p>רבי חמא ברבי חנינא אמר: בחורב טענו את הכתרים, ובחורב פרקו אותם. רש&quot;י: שני הדברים נלמדים מאותו פסוק. &quot;את עדים מהר חורב&quot; פירושו העדיים שהיו להם מהר חורב, ו&quot;ויתנצלו&quot; משמע שגם הסירו אותם שם.</p></li><li><h3><span class="w">גמרא</span> · משה זכה בכולם</h3><p>רבי יוחנן אמר: משה זכה בכל הכתרים ונטל אותם, שהרי סמוך לפסוק כתוב &quot;ומשה יקח את האהל&quot;. רש&quot;י: יקח את העדי הזה. ובפירוש אחר: &quot;האהל&quot; מלשון &quot;בהלו נרו&quot;, אור, והוא קרן עור פניו. והתוספות מוסיפים: הכתרים היו של הוד, ולכן כשנטל אותם משה, קרן עור פניו.</p></li><li><h3><span class="w">גמרא</span> · ריש לקיש: עתידים לחזור</h3><p>ריש לקיש אמר: הקדוש ברוך הוא עתיד להחזיר אותם לנו, שנאמר &quot;ופדויי ה&#x27; ישובון ובאו ציון ברנה ושמחת עולם על ראשם&quot;. &quot;שמחת עולם&quot; נדרש: שמחה שמעולם, שהייתה להם כבר פעם, על ראשם.</p></li><li><h3><span class="w">גמרא</span> · הסוד של מלאכי השרת</h3><p>רבי אלעזר אמר: כשהקדימו ישראל &quot;נעשה&quot; ל&quot;נשמע&quot;, יצאה בת קול ואמרה: מי גילה לבניי את הסוד הזה, שמלאכי השרת משתמשים בו? שכתוב &quot;ברכו ה&#x27; מלאכיו גבורי כח עושי דברו לשמוע בקול דברו&quot;: קודם &quot;עושי&quot; ואחר כך &quot;לשמוע&quot;. רש&quot;י: הם מוכנים לעשות לפני שישמעו, ולא כדרך עבדים אחרים, ששומעים תחילה כדי לדעת אם יוכלו לקבל את הדבר.</p></li><li><h3><span class="w">גמרא</span> · ישראל נמשלו לתפוח</h3><p>רבי חמא ברבי חנינא שואל על הפסוק &quot;כתפוח בעצי היער&quot;: למה נמשלו ישראל לתפוח? כמו שבתפוח הפרי קודם לעלים, כך ישראל הקדימו &quot;נעשה&quot; ל&quot;נשמע&quot;. רש&quot;י: כך דרכו, ובזה הוא שונה משאר האילנות, שהפירות שלו מתחילים לצמוח לפני העלים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: התפוח הוא אתרוג</h3><p>רבנו תם הקשה: הרי אנו רואים שהתפוח גדל כשאר האילנות. ופירש שה&quot;תפוח&quot; כאן הוא אתרוג, שהרי &quot;וריח אפך כתפוחים&quot; מתורגם בארמית &quot;כריחא דאתרוגא&quot;. האתרוג נשאר על האילן משנה לשנה, ואחרי שנה נושרים העלים הישנים ובאים עלים חדשים, וכך הפרי קודם לעלים האלה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיה על הפסוק שהובא</h3><p>אבל קשה להם: בפסוק &quot;כתפוח בעצי היער&quot; לא ישראל נמשלו לתפוח אלא הקדוש ברוך הוא, כמו שכתוב בהמשכו &quot;כן דודי בין הבנים&quot;. היה מתאים יותר להביא את הפסוק &quot;וריח אפך כתפוחים&quot;.</p></li><li><h3><span class="w">גמרא</span> · הצדוקי רואה את רבא</h3><p>צדוקי אחד ראה את רבא שקוע בעיון בסוגיה. אצבעות ידיו היו מונחות תחת רגלו, והוא מעך אותן עד שיצא מהן דם. רש&quot;י: היה מועך אותן ברגליו ולא הרגיש, מתוך שהיה טרוד בלימוד.</p></li><li><h3><span class="w">גמרא</span> · &quot;עמא פזיזא&quot;</h3><p>אמר לו הצדוקי: &quot;עמא פזיזא&quot;, עם נמהר, שהקדמתם את פיכם לאוזניכם, עדיין אתם עומדים בפזיזותכם. קודם הייתם צריכים לשמוע: אם תוכלו, תקבלו, ואם לא, לא תקבלו. רש&quot;י: קיבלתם עליכם לקיים את התורה לפני ששמעתם כמה היא קשה, ואם תוכלו לעמוד בה.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>החשבון של ראשי החודשים נגמר, והגמרא דנה בברייתות על הימים שלפני מתן תורה, לפי שיטות חכמים ורבי יוסי. אחר כך באו דרשות על מתן תורה: ההר שנכפה כגיגית וקבלת התורה מחדש בימי אחשורוש, התנאי עם מעשה בראשית, הכתרים של &quot;נעשה ונשמע&quot;, והתפוח שפריו קודם לעליו. העמוד נגמר במילה הראשונה של תשובת רבא לצדוקי, &quot;אנן&quot;, אנחנו. העמוד הבא ממשיך: עלינו, שהולכים בתמימות, נאמר &quot;תומת ישרים תנחם&quot;.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-88b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "לרבנן ח' חסרים עבוד", false, ""], ["G2", "ת\"ש דתניא בסדר עולם ניסן שבו יצאו ישראל ממצרים בארבעה עשר שחטו פסחיהן בחמשה עשר יצאו ואותו היום ע\"ש היה ומדריש ירחא דניסן ערב שבת ריש ירחא דאייר חד בשבא וסיון בתרי בשבא קשיא לר' יוסי אמר לך ר' יוסי הא מני רבנן היא", false, ""], ["G3", "ת\"ש רבי יוסי אומר בשני עלה משה וירד בשלישי עלה וירד בד' ירד ושוב לא עלה ומאחר שלא עלה מהיכן ירד אלא ברביעי עלה וירד בחמישי בנה מזבח והקריב עליו קרבן בששי לא היה לו פנאי מאי לאו משום תורה", false, ""], ["G4a", "לא משום טורח שבת", false, ""], ["G4b", "דרש ההוא גלילאה עליה דרב חסדא בריך רחמנא דיהב אוריאן תליתאי לעם תליתאי על ידי תליתאי ביום תליתאי בירחא תליתאי כמאן כרבנן:", false, ""], ["G5a", "(שמות יט, יז) ויתיצבו בתחתית ההר א\"ר אבדימי בר חמא בר חסא מלמד שכפה הקב\"ה עליהם את ההר כגיגית ואמר להם אם אתם מקבלים התורה מוטב ואם לאו שם תהא קבורתכם", false, ""], ["G5b", "א\"ר אחא בר יעקב מכאן מודעא רבה לאורייתא", false, ""], ["G5c", "אמר רבא אעפ\"כ הדור קבלוה בימי אחשורוש דכתיב (אסתר ט, כז) קימו וקבלו היהודים קיימו מה שקיבלו כבר", false, ""], ["G6a", "אמר חזקיה מאי דכתיב (תהלים עו, ט) משמים השמעת דין ארץ יראה ושקטה אם יראה למה שקטה ואם שקטה למה יראה אלא בתחילה יראה ולבסוף שקטה", false, ""], ["G6b", "ולמה יראה כדריש לקיש דאמר ריש לקיש מאי דכתיב (בראשית א, לא) ויהי ערב ויהי בקר יום הששי ה' יתירה למה לי מלמד שהתנה הקב\"ה עם מעשה בראשית ואמר להם אם ישראל מקבלים התורה אתם מתקיימין ואם לאו אני מחזיר אתכם לתוהו ובוהו:", false, ""], ["G7a", "דרש ר' סימאי בשעה שהקדימו ישראל נעשה לנשמע באו ששים ריבוא של מלאכי השרת לכל אחד ואחד מישראל קשרו לו שני כתרים אחד כנגד נעשה ואחד כנגד נשמע וכיון שחטאו ישראל ירדו מאה ועשרים ריבוא מלאכי חבלה ופירקום שנאמר (שמות לג, ו) ויתנצלו בני ישראל את עדים מהר חורב", false, ""], ["G7b", "א\"ר חמא בר' חנינא בחורב טענו בחורב פרקו בחורב טענו כדאמרן בחורב פרקו דכתיב ויתנצלו בני ישראל וגו'", false, ""], ["G7c", "א\"ר יוחנן וכולן זכה משה ונטלן דסמיך ליה ומשה יקח את האהל", false, ""], ["G7d", "אמר ר\"ל עתיד הקב\"ה להחזירן לנו שנאמר (ישעיהו לה, י) ופדויי ה' ישובון ובאו ציון ברנה ושמחת עולם על ראשם שמחה שמעולם על ראשם", false, ""], ["G8a", "אמר רבי אלעזר בשעה שהקדימו ישראל נעשה לנשמע יצתה בת קול ואמרה להן מי גילה לבני רז זה שמלאכי השרת משתמשין בו דכתיב (תהלים קג, כ) ברכו ה' מלאכיו גבורי כח עושי דברו לשמוע בקול דברו ברישא עושי והדר לשמוע", false, ""], ["G8b", "א\"ר חמא ברבי חנינא מ\"ד (שיר השירים ב, ג) כתפוח בעצי היער וגו' למה נמשלו ישראל לתפוח לומר לך מה תפוח זה פריו קודם לעליו אף ישראל הקדימו נעשה לנשמע", false, ""], ["G9", "ההוא צדוקי דחזייה לרבא דקא מעיין בשמעתא ויתבה אצבעתא דידיה תותי כרעא וקא מייץ בהו וקא מבען אצבעתיה דמא א\"ל עמא פזיזא דקדמיתו פומייכו לאודנייכו אכתי בפחזותייכו קיימיתו ברישא איבעי' לכו למשמע אי מציתו קבליתו ואי לא לא קבליתו א\"ל אנן", false, ""]], "R": [["R1", "לרבנן ח' חסרים עבוד", "ולא היו בין פסח דאשתקד לפסח דהאידנא אלא ב' ימים ונמצא דאשתקד בע\"ש:", false], ["R2", "בשני עלה משה", "ושמע ואתם תהיו לי וירד והגיד:", false], ["R3", "בג' עלה", "ושמע הגבלה וירד והגיד:", false], ["R4", "בד' ירד", "להפרישם:", false], ["R5", "ושוב לא עלה", "עד קבלת הדברות שעלו כולם:", false], ["R6", "ומאחר שלא עלה מהיכן ירד", "דאמר' בד' ירד ולא אמרת עלה וירד אלא אימא בד' עלה וירד ושוב לא עלה:", false], ["R7", "ובחמישי בנה מזבח", "כדכתיב ויבן מזבח תחת ההר:", false], ["R8", "מאי לאו משום תורה", "לא היה לו פנאי לעלות שקבלו כולן יחד את הדברות:", false], ["R9", "עליה דרב חסדא", "לפני רב חסדא לפי שרב חסדא יושב והדרשן עומד קאמר עליה דדומה כמו שהעומד למעלה מן היושב:", false], ["R10", "אוריאן תליתאי", "תורה נביאים וכתובים:", false], ["R11", "לעם תליתאי", "כהנים לוים וישראלים:", false], ["R12", "על יד תליתאי", "משה תליתאי לבטן מרים אהרן ומשה:", false], ["R13", "ביום תליתאי", "לפרישה:", false], ["R14", "תחתית ההר", "תחת ההר ממש:", false], ["R15", "גיגית", "קובא שמטילין בה שכר:", false], ["R16", "מודעא רבה", "שאם יזמינם לדין למה לא קיימתם מה שקבלתם עליכם יש להם תשובה שקבלוה באונס:", false], ["R17", "בימי אחשורוש", "מאהבת הנס שנעשה להם:", false], ["R18", "דין", "תורה:", false], ["R19", "בתחילה", "קודם שאמרו ישראל נעשה ונשמע:", false], ["R20", "יראה", "שמא לא יקבלוה ויחזור העולם לתהו ובהו כדר\"ל:", false], ["R21", "ולבסוף", "כשקבלוה:", false], ["R22", "יום הששי", "מאי שנא דכתיב ה' ביום גמר מעשה בראשית:", false], ["R23", "מלמד שהתנה כו'", "הששי משמע הששי המיוחד במקום אחר כדאמרינן בעלמא (חולין דף צא.) הירך המיומנת אף כאן ויהי ערב ויהי בקר של גמר בראשית תלוי ביום הששי והוא ו' בסיון שנתנה בו תורה מריבוי דה' דריש ביה נמי הא:", false], ["R24", "שני כתרים", "מזיו שכינה:", false], ["R25", "מאה ועשרים", "[כל א' וא' נטל כתר]:", false], ["R26", "טענו", "הכתרים והכי משמע את עדים [אשר היו להם] מהר חורב:", false], ["R27", "בחורב פרקו", "דמשמע נמי ויתנצלו את עדים מהר חורב:", false], ["R28", "ומשה יקח", "אותו עדי לשון אחר את האהל לשון בהלו נרו (איוב כ״ט:ג׳) והוא היה קירון עור פניו:", false], ["R29", "עושי דברו לשמוע", "מוכנין לעשות קודם שישמעו ולא כדרך שאר עבדים ששומעים תחילה את הדבר לידע אם יכולין לקבלן עליהם אם לאו:", false], ["R30", "פריו קודם לעליו", "כך דרכו וחלוק משאר אילנות חנטת פירותיו קודם לעליו:", false], ["R31", "אצבעתא דידיה", "אצבעות ידיו:", false], ["R32", "וקא מייץ בהו", "היה ממעכן ברגליו ואינו מבין מתוך טירדא:", false], ["R33", "עמא פזיזא", "נמהר:", false], ["R34", "דקדמיתו פומייכו לאודנייכו", "קודם ששמעתם אותה היאך היא קשה ואם תוכלו לעמוד בה קבלתם עליכם לקיימה:", false]], "T": [["T1", "לרבנן ח' חסירין עבוד", "אומר ר' יצחק דלא הוי צ\"ל ח' חסירין עבוד אלא ז' חסירין ואייר דההיא שתא עבורי עברוה כדאמר לעיל אלא משום דלר\"י איצטריך למימר דשבעה חסירין עבוד דהא תניא לעיל דאותו יום ה' בשבת היה נקט נמי לרבנן שמנה:", false], ["T2a", "כפה עליהן הר כגיגית", "ואע\"פ שכבר הקדימו נעשה לנשמע שמא יהיו חוזרים כשיראו האש הגדולה שיצאתה נשמתן", false], ["T2b", "", "והא דאמר בפ\"ק דמס' ע\"ז (דף ב:) כלום כפית עלינו הר כגיגית דמשמע דאם היה כופה עליהן לא היה להן תשובה והכא אמר דמודעא רבה לאורייתא היינו על מה שלא קבלוה אבל מה שלא קיימוה איכא תשובה:", false], ["T3a", "מודעא רבה לאורייתא", "והא דאמר בנדרים (דף כה.) שכרת משה ברית עם ישראל על התורה והמצות והשביעם על כך ובפ' אלו נאמרין (סוטה לז:) שקבלו את כל התורה בהר גרזים ובהר עיבל אור\"ת דע\"פ הדיבור היה והרי כבעל כרחם אבל בימי אחשורוש קבלו מדעתם מאהבת הנס", false], ["T3b", "", "ומה שכרת עמהן ברית יהושע לעבוד את ה' התם לא קבלו אלא שלא לעבוד ע\"ז כדכתיב (יהושע כד) חלילה לנו מעזוב את ה' וכן משמע כוליה עניינא:", false], ["T4a", "אמר רבא הדר קבלוה בימי אחשורוש", "תימה לר\"י דבמגילה (דף ז.) גבי אסתר ברוח הקודש נאמרה אמר רב יהודה אמר שמואל אי הואי התם ה\"א להו דידי עדיפא מדידהו קיימו וקבלו היהודים קיימו למעלה מה שקבלו למטה ואמר רבא כולהו אית להו פירכא לבר משמואל דלית ליה פירכא והשתא דשמואל נמי אית ליה פירכא דרבא גופיה מוקי האי קרא לדרשה אחריתי ובפ\"ק דחגיגה (דף י.) גבי היתר נדרים פורחין באויר קאמר כולהו אית להו פירכא וחשיב פירכא הא דצריך קרא לדרשה אחריתי", false], ["T4b", "", "ואי גרסינן התם רבה אתא שפיר אי נמי ה\"ק במגילה כולהו אית להו פירכא ששאר תנאים מוקשים בסברתם כדאמר התם אבל שמואל אינו מוקשה כל כך אלא דאיצטריך קרא לדרשה אחריתי:", false], ["T5", "שני כתרים", "של הוד היו לפיכך כשנטל משה קרן עור פניו:", false], ["T6", "ירדו ק\"כ ריבוא", "מדכתיב ויתנצלו דריש תרי זימני ויש ספרים שכתוב בהן בהדיא וינצלו לא נאמר אלא ויתנצלו ואע\"ג דגדולה מדה טובה ממדת פורענות הכא נמי גדולה היא שמלאך טוב היה קושר שני כתרים ומלאך חבלה לא היה בו כח כי אם להסיר אחד:", false], ["T7a", "פריו קודם לעליו", "הקשה ר\"ת שהרי אנו רואים שגדל כשאר אילנות ומפרש דתפוח היינו אתרוג וריח אפך כתפוחים מתרגמינן כריחא דאתרוגא ואתרוג פריו קודם לעליו שדר באילן משנה לשנה ואחר שנה נושרין עליו של אשתקד ובאין עלין אחרים הוי פריו קודם לאותם עלים", false], ["T7b", "", "אך תימה שמביא קרא כתפוח בעצי היער דבהאי קרא לא נמשלו ישראל לתפוח אלא הקב\"ה כדכתיב כן דודי בין הבנים וקרא דריח אפך כתפוחים (שיר השירים ז׳:ט׳) הוה ליה לאתויי טפי:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': סוף חשבון הימים של מתן תורה", "x": "בעמוד הקודם הגמרא חישבה באיזה יום בשבוע חלו ראשי החודשים בשנה של יציאת מצרים ובשנה שאחריה. ברקע עומדת מחלוקת: לדעת חכמים התורה ניתנה בשישי בסיון, ולדעת רבי יוסי בשביעי בו, ולדעת שניהם ביום שבת. העמוד הקודם נגמר בתשובה: לדעת רבי יוסי עשו באותה שנה שבעה חודשים חסרים. כאן נגמר המשפט, ואחריו באות דרשות על מתן תורה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "ולחכמים: שמונה חודשים חסרים", "x": "\"לרבנן ח' חסרים עבוד\", ולדעת חכמים עשו באותה שנה שמונה חודשים חסרים. רש\"י מפרש: כך היה בין הפסח של השנה שעברה לפסח של השנה הזו הפרש של יומיים בלבד בימי השבוע, ונמצא שבשנה שעברה חל ביום שישי.", "a": "חודש חסר הוא חודש של עשרים ותשעה ימים, וחודש מלא הוא חודש של שלושים."}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1"], "t": "התוספות: למה דווקא שמונה", "x": "רבי יצחק אומר: לדעת חכמים לא היה הכרח לומר שמונה חודשים חסרים. אפשר היה לומר גם לשיטתם שבעה חסרים, ושאת חודש אייר של אותה שנה עיברו, כלומר עשו אותו מלא, כמו שהגמרא ענתה למעלה. אלא שלרבי יוסי הוצרכה הגמרא לומר שבעה חסרים, שהרי נשנה למעלה שאותו היום, יום יציאת מצרים, היה יום חמישי. ומכיוון שאמרה מספר לרבי יוסי, אמרה גם לחכמים מספר, שמונה.", "a": "בשבעה חסרים הפסח של יציאת מצרים חל ביום חמישי. אם ניסן ואייר שניהם מלאים, ראש חודש סיון חל ביום שני, כשיטת חכמים."}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "ברייתא מספר \"סדר עולם\"", "x": "\"תא שמע\", בוא ושמע ראיה מברייתא בספר \"סדר עולם\": בניסן שבו יצאו ישראל ממצרים, בארבעה עשר בו שחטו את הפסחים, ובחמישה עשר יצאו, ואותו היום היה ערב שבת. ומכיוון שראש חודש ניסן חל בערב שבת, שהרי האחד בחודש והחמישה עשר בו חלים באותו יום בשבוע, ראש חודש אייר חל ביום ראשון, וראש חודש סיון ביום שני.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2"], "t": "קושיה על רבי יוסי, ותשובתו", "x": "זה קשה לרבי יוסי, שלדעתו ראש חודש סיון חל ביום ראשון. התשובה: \"אמר לך רבי יוסי, הא מני, רבנן היא\". רבי יוסי יאמר: הברייתא הזו נשנתה כשיטת חכמים, והוא אינו סובר כמותה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R2", "R3", "R4"], "t": "רבי יוסי: מה עשה משה בכל יום", "x": "ראיה נוספת, מברייתא של רבי יוסי עצמו: ביום השני לחודש עלה משה וירד, בשלישי עלה וירד, וברביעי ירד ושוב לא עלה. רש\"י מפרש: בשני שמע \"ואתם תהיו לי\" וירד להגיד לעם, בשלישי שמע את מצוות ההגבלה סביב ההר, וברביעי ירד כדי להפריש את העם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R5", "R6"], "t": "תיקון: ברביעי עלה וירד", "x": "הברייתא עצמה שואלת: אם לא עלה, מהיכן ירד? אלא כך יש לומר: ברביעי עלה וירד, ושוב לא עלה. רש\"י מוסיף ש\"שוב לא עלה\" פירושו עד קבלת הדברות, שאז עלו כולם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R7", "R8"], "t": "בחמישי מזבח, ובשישי \"לא היה לו פנאי\"", "x": "בחמישי בנה משה מזבח והקריב עליו קרבן, כמו שכתוב \"ויבן מזבח תחת ההר\". בשישי לא היה לו פנאי. הגמרא שואלת: \"מאי לאו משום תורה\", האם לא מפני שבשישי ניתנה התורה? רש\"י מפרש: לא היה לו פנאי לעלות, כי כולם קיבלו יחד את הדברות.", "a": "אם כך, הברייתא של רבי יוסי עצמו מתאימה לשיטת חכמים, שהתורה ניתנה בשישי בחודש."}, {"w": "גמרא", "cols": false, "hl": ["G4a"], "t": "לא, בגלל טורח השבת", "x": "התשובה: \"לא, משום טורח שבת\". בשישי לא היה לו פנאי לא מפני מתן תורה, אלא מפני הטורח של השבת. לכן אין מכאן ראיה נגד רבי יוסי.", "a": "החודש התחיל לרבי יוסי ביום ראשון, ולכן ימי החודש שבברייתא שלו הם גם ימי השבוע: השישי בחודש היה יום שישי, ערב שבת, והתורה ניתנה למחרת, בשבת, שביעי בחודש."}, {"w": "גמרא", "cols": false, "hl": ["G4b", "R9"], "t": "דרשה של אדם מן הגליל", "x": "\"דרש ההוא גלילאה עליה דרב חסדא\", אדם אחד מן הגליל דרש לפני רב חסדא. רש\"י מסביר למה נאמר \"עליה\", מעליו: רב חסדא ישב והדרשן עמד, והעומד נראה כמי שנמצא למעלה מן היושב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4b", "R10", "R11", "R12", "R13"], "t": "הכול משולש", "x": "\"בריך רחמנא\", ברוך הרחמן, שנתן תורה משולשת, לעם משולש, על ידי שלישי, ביום שלישי, בחודש השלישי. רש\"י מפרש: תורה, נביאים וכתובים; כהנים, לויים וישראלים; משה, השלישי מבין ילדי אמו, אחרי מרים ואהרן; והיום השלישי הוא השלישי לפרישה. והגמרא שואלת \"כמאן\", כשיטת מי הדרשה הזו? ועונה: \"כרבנן\", כשיטת חכמים.", "a": "לדעת חכמים התורה ניתנה ביום השלישי לפרישה. לדעת רבי יוסי משה הוסיף יום אחד מדעתו, כמו שנאמר בדף פ\"ז, והתורה ניתנה ביום הרביעי לפרישה."}, {"w": "גמרא", "cols": false, "hl": ["G5a", "R14", "R15"], "t": "ההר כגיגית", "x": "על הפסוק \"ויתיצבו בתחתית ההר\" אמר רבי אבדימי בר חמא בר חסא: הפסוק מלמד שהקדוש ברוך הוא כפה עליהם את ההר כגיגית, ואמר להם: אם אתם מקבלים את התורה, מוטב, ואם לא, שם תהיה קבורתכם. רש\"י: \"בתחתית ההר\" פירושו מתחת להר ממש, ו\"גיגית\" היא כלי גדול שמטילים בו שכר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5a", "T2a"], "t": "התוספות: למה היה צורך לכפות", "x": "והרי ישראל כבר הקדימו \"נעשה\" ל\"נשמע\". התוספות עונים: הקדוש ברוך הוא כפה עליהם את ההר שמא יחזרו בהם כשיראו את האש הגדולה, שמפניה יצאה נשמתם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5b", "R16"], "t": "\"מודעא רבה לאורייתא\"", "x": "רבי אחא בר יעקב אמר: מכאן \"מודעא רבה לאורייתא\", מודעה גדולה לתורה. רש\"י מפרש: אם יתבע אותם לדין למה לא קיימו מה שקיבלו עליהם, יש להם תשובה: קיבלו אותה באונס.", "a": "\"מודעא\" היא הודעה שמעשה נעשה באונס ולא מרצון."}, {"w": "תוספות", "cols": false, "hl": ["G5b", "T2b"], "t": "התוספות: סתירה ממסכת עבודה זרה", "x": "במסכת עבודה זרה אומות העולם טוענות: \"כלום כפית עלינו הר כגיגית\", האם כפית עלינו את ההר כמו שכפית על ישראל? משם משמע שאילו כפה עליהן את ההר, לא הייתה להן תשובה. וכאן נאמר שהכפייה עצמה היא תשובה, \"מודעא רבה\". התוספות מיישבים: שם מדובר על כך שלא קיבלו את התורה. מי שנכפה עליו ההר אינו יכול לטעון על כך. אבל על כך שלא קיימו אותה יש תשובה: קיבלו באונס.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5c", "R17"], "t": "רבא: קיבלו שוב בימי אחשורוש", "x": "אמר רבא: אף על פי כן, חזרו וקיבלו אותה בימי אחשורוש, שכתוב \"קימו וקבלו היהודים\": קיימו מה שכבר קיבלו. רש\"י מוסיף שקיבלו אותה מאהבת הנס שנעשה להם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5b", "T3a"], "t": "התוספות: והקבלות שלפני כן?", "x": "במסכת נדרים נאמר שמשה כרת ברית עם ישראל על התורה והמצוות והשביע אותם, ובמסכת סוטה נאמר שקיבלו את כל התורה בהר גריזים ובהר עיבל. רבנו תם אומר: אלה נעשו על פי הדיבור, ולכן הם כמו בעל כורחם. אבל בימי אחשורוש קיבלו מדעתם, מאהבת הנס.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5b", "T3b"], "t": "התוספות: הברית של יהושע", "x": "והברית שכרת יהושע עם העם לעבוד את ה'? שם קיבלו רק שלא לעבוד עבודה זרה, כמו שכתוב \"חלילה לנו מעזוב את ה'\", וכך משמע מכל העניין שם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5c", "T4a"], "t": "התוספות: פירכא על דברי שמואל", "x": "רבי יצחק תמה: במסכת מגילה, בדיון על כך שמגילת אסתר נאמרה ברוח הקודש, אמר רב יהודה בשם שמואל: אילו הייתי שם, הייתי אומר להם ראיה עדיפה משלהם, \"קימו וקבלו היהודים\", קיימו למעלה מה שקיבלו למטה. ורבא אמר שם שלכל הראיות יש פירכא חוץ מזו של שמואל. והרי גם על שמואל יש פירכא: רבא עצמו דורש כאן את הפסוק לדרשה אחרת, ובמסכת חגיגה נחשב לפירכא זה שהפסוק נצרך לדרשה אחרת.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5c", "T4b"], "t": "התוספות: שתי תשובות", "x": "א': אם גורסים שם \"רבה\" ולא \"רבא\", הדברים מיושבים, שהרי אז מי שאמר שאין פירכא על שמואל אינו רבא, שדורש כאן את הפסוק אחרת. ב': כוונת הגמרא במגילה היא ששאר התנאים מוקשים בסברתם, כמו שנאמר שם, ואילו שמואל אינו מוקשה כל כך, ויש עליו רק זה שהפסוק נצרך לדרשה אחרת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6a", "R18", "R19", "R20", "R21"], "t": "\"ארץ יראה ושקטה\"", "x": "חזקיה שואל על הפסוק \"משמים השמעת דין ארץ יראה ושקטה\": אם יראה, למה שקטה? ואם שקטה, למה יראה? אלא בתחילה יראה ולבסוף שקטה. רש\"י: \"דין\" הוא התורה, \"בתחילה\" הוא לפני שאמרו ישראל \"נעשה ונשמע\", הארץ יראה שמא לא יקבלו אותה, ו\"לבסוף\" הוא כשקיבלו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6b"], "t": "ריש לקיש: התנאי עם מעשה בראשית", "x": "ולמה יראה? כדברי ריש לקיש: בפסוק \"ויהי ערב ויהי בקר יום הששי\", למה נוספה האות ה\"א? היא מלמדת שהקדוש ברוך הוא התנה עם מעשה בראשית: אם ישראל מקבלים את התורה, אתם מתקיימים, ואם לא, אני מחזיר אתכם לתוהו ובוהו.", "a": "בשאר ימי הבריאה כתוב בלי ה\"א, כמו \"יום שני\" ו\"יום שלישי\"."}, {"w": "רש\"י", "cols": false, "hl": ["G6b", "R22", "R23"], "t": "רש\"י: איזה יום שישי", "x": "רש\"י מפרש את השאלה: במה שונה יום גמר מעשה בראשית, שנכתבה בו ה\"א? ואת הדרשה: \"הששי\" עם ה\"א משמע שישי מסוים ומיוחד, שנזכר במקום אחר, כמו שדרשו במסכת חולין על המילה \"הירך\": \"הירך המיומנת\", ירך מסוימת ולא כל ירך. אף כאן, הערב והבוקר של גמר מעשה בראשית תלויים ב\"יום הששי\" המיוחד, והוא שישי בסיון, שבו ניתנה התורה. גם זה נדרש מן הה\"א הנוספת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7a", "R24", "R25"], "t": "שני כתרים לכל אחד", "x": "רבי סימאי דרש: בשעה שהקדימו ישראל \"נעשה\" ל\"נשמע\", באו שישים ריבוא מלאכי השרת, וקשרו לכל אחד מישראל שני כתרים, אחד כנגד \"נעשה\" ואחד כנגד \"נשמע\". וכשחטאו ישראל, ירדו מאה ועשרים ריבוא מלאכי חבלה ופירקו אותם, שנאמר \"ויתנצלו בני ישראל את עדים מהר חורב\". רש\"י: הכתרים היו מזיו השכינה, וכל מלאך חבלה נטל כתר אחד.", "a": "ריבוא הוא עשרת אלפים."}, {"w": "תוספות", "cols": false, "hl": ["G7a", "T6"], "t": "התוספות: למה מאה ועשרים ריבוא", "x": "המילה \"ויתנצלו\" נדרשת פעמיים, ויש ספרים שכתוב בהם במפורש: לא נאמר \"וינצלו\" אלא \"ויתנצלו\". ואף שמידה טובה מרובה ממידת פורענות, גם כאן היא מרובה: מלאך טוב קשר שני כתרים, ומלאך חבלה היה בו כוח להסיר רק אחד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7b", "R26", "R27"], "t": "בחורב טענו, בחורב פרקו", "x": "רבי חמא ברבי חנינא אמר: בחורב טענו את הכתרים, ובחורב פרקו אותם. רש\"י: שני הדברים נלמדים מאותו פסוק. \"את עדים מהר חורב\" פירושו העדיים שהיו להם מהר חורב, ו\"ויתנצלו\" משמע שגם הסירו אותם שם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7c", "R28", "T5"], "t": "משה זכה בכולם", "x": "רבי יוחנן אמר: משה זכה בכל הכתרים ונטל אותם, שהרי סמוך לפסוק כתוב \"ומשה יקח את האהל\". רש\"י: יקח את העדי הזה. ובפירוש אחר: \"האהל\" מלשון \"בהלו נרו\", אור, והוא קרן עור פניו. והתוספות מוסיפים: הכתרים היו של הוד, ולכן כשנטל אותם משה, קרן עור פניו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7d"], "t": "ריש לקיש: עתידים לחזור", "x": "ריש לקיש אמר: הקדוש ברוך הוא עתיד להחזיר אותם לנו, שנאמר \"ופדויי ה' ישובון ובאו ציון ברנה ושמחת עולם על ראשם\". \"שמחת עולם\" נדרש: שמחה שמעולם, שהייתה להם כבר פעם, על ראשם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8a", "R29"], "t": "הסוד של מלאכי השרת", "x": "רבי אלעזר אמר: כשהקדימו ישראל \"נעשה\" ל\"נשמע\", יצאה בת קול ואמרה: מי גילה לבניי את הסוד הזה, שמלאכי השרת משתמשים בו? שכתוב \"ברכו ה' מלאכיו גבורי כח עושי דברו לשמוע בקול דברו\": קודם \"עושי\" ואחר כך \"לשמוע\". רש\"י: הם מוכנים לעשות לפני שישמעו, ולא כדרך עבדים אחרים, ששומעים תחילה כדי לדעת אם יוכלו לקבל את הדבר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8b", "R30"], "t": "ישראל נמשלו לתפוח", "x": "רבי חמא ברבי חנינא שואל על הפסוק \"כתפוח בעצי היער\": למה נמשלו ישראל לתפוח? כמו שבתפוח הפרי קודם לעלים, כך ישראל הקדימו \"נעשה\" ל\"נשמע\". רש\"י: כך דרכו, ובזה הוא שונה משאר האילנות, שהפירות שלו מתחילים לצמוח לפני העלים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8b", "T7a"], "t": "התוספות: התפוח הוא אתרוג", "x": "רבנו תם הקשה: הרי אנו רואים שהתפוח גדל כשאר האילנות. ופירש שה\"תפוח\" כאן הוא אתרוג, שהרי \"וריח אפך כתפוחים\" מתורגם בארמית \"כריחא דאתרוגא\". האתרוג נשאר על האילן משנה לשנה, ואחרי שנה נושרים העלים הישנים ובאים עלים חדשים, וכך הפרי קודם לעלים האלה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8b", "T7b"], "t": "התוספות: קושיה על הפסוק שהובא", "x": "אבל קשה להם: בפסוק \"כתפוח בעצי היער\" לא ישראל נמשלו לתפוח אלא הקדוש ברוך הוא, כמו שכתוב בהמשכו \"כן דודי בין הבנים\". היה מתאים יותר להביא את הפסוק \"וריח אפך כתפוחים\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R31", "R32"], "t": "הצדוקי רואה את רבא", "x": "צדוקי אחד ראה את רבא שקוע בעיון בסוגיה. אצבעות ידיו היו מונחות תחת רגלו, והוא מעך אותן עד שיצא מהן דם. רש\"י: היה מועך אותן ברגליו ולא הרגיש, מתוך שהיה טרוד בלימוד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R33", "R34"], "t": "\"עמא פזיזא\"", "x": "אמר לו הצדוקי: \"עמא פזיזא\", עם נמהר, שהקדמתם את פיכם לאוזניכם, עדיין אתם עומדים בפזיזותכם. קודם הייתם צריכים לשמוע: אם תוכלו, תקבלו, ואם לא, לא תקבלו. רש\"י: קיבלתם עליכם לקיים את התורה לפני ששמעתם כמה היא קשה, ואם תוכלו לעמוד בה.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "החשבון של ראשי החודשים נגמר, והגמרא דנה בברייתות על הימים שלפני מתן תורה, לפי שיטות חכמים ורבי יוסי. אחר כך באו דרשות על מתן תורה: ההר שנכפה כגיגית וקבלת התורה מחדש בימי אחשורוש, התנאי עם מעשה בראשית, הכתרים של \"נעשה ונשמע\", והתפוח שפריו קודם לעליו. העמוד נגמר במילה הראשונה של תשובת רבא לצדוקי, \"אנן\", אנחנו. העמוד הבא ממשיך: עלינו, שהולכים בתמימות, נאמר \"תומת ישרים תנחם\".", "a": ""}], "audio": "shabbat/daf-88a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

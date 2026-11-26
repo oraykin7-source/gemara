@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף כ&#x27; עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-20b.html">
+<meta name="description" content="מסכת שבת, דף כ&#x27; עמוד ב&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף כ' עמוד ב'", "url": "https://gemara.co.il/shabbat-20b.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף כ&#x27; עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>שבת</span><span>פרק שני</span><span>במה מדליקין</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-20a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-21a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 38</div>
+  <h1>מסכת שבת, דף כ&#x27; עמוד ב&#x27;</h1>
+  <p class="sub">סוף פרק ראשון ותחילת פרק שני, &quot;במה מדליקין&quot;. מדורות שאינן צריכות רוב, המשנה על פתילות ושמנים שאין מדליקים בהם, וזיהוי פסולי הפתילות.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף כ&#x27; עמוד ב&#x27;, לומדים: מדורות שאינן צריכות רוב; פרק שני: "במה מדליקין"; לכש, חוסן וכלך; אידן, פתילת המדבר, ירוקה, צמר ושער; פסולי שמנים: זפת ושעווה.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. מדורות שאינן צריכות רוב</a><a href="#u2">2. פרק שני: "במה מדליקין"</a><a href="#u3">3. לכש, חוסן וכלך</a><a href="#u4">4. אידן, פתילת המדבר, ירוקה, צמר ושער</a><a href="#u5">5. פסולי שמנים: זפת ושעווה</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3a,G3b,G3c">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>מדורות שאינן צריכות רוב</h2>
+  <p class="lead">הגמרא מסיימת את הדיון במדורה של ערב שבת: אילו מדורות צריכות שהאש תאחוז ברובן מבעוד יום, ואילו נדלקות היטב גם בלי זה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>קנים שאגדן צריכין רוב</td><td>קנים שאגד אותם צריכים רוב;</td></tr>
+      <tr><td>לא אגדן אין צריכין רוב</td><td>לא אגד אותם, אינם צריכים רוב.</td></tr>
+      <tr><td>גרעינין צריכין רוב</td><td>גרעינים צריכים רוב;</td></tr>
+      <tr><td>נתנן בחותלות אין צריכין רוב</td><td>נתן אותם בחותלות, אינם צריכים רוב.</td></tr>
+      <tr><td>ארבע מדורות אין צריכין רוב</td><td>ארבע מדורות אינן צריכות רוב:</td></tr>
+      <tr><td>של זפת ושל גפרית ושל גבינה ושל רבב</td><td>של זפת, של גופרית, של גבינה ושל רבב.</td></tr>
+      <tr><td>במתניתא תנא אף של קש ושל גבבא</td><td>בברייתא שנו: גם של קש ושל גבבא.</td></tr>
+      <tr><td>עצים של בבל אין צריכין רוב</td><td>עצים של בבל אינם צריכים רוב.</td></tr>
+      <tr><td>מאי היא אילימא סילתי</td><td>מה הם? אם תאמר עצים דקים,</td></tr>
+      <tr><td>השתא פתילה</td><td>עכשיו, פתילה,</td></tr>
+      <tr><td>המדליק צריך שידליק ברוב היוצא</td><td>המדליק צריך שידליק ברוב היוצא (מן הנר),</td></tr>
+      <tr><td>סילתי מבעיא</td><td>עצים דקים, האם צריך לומר?</td></tr>
+      <tr><td>אלא אמר רב יוסף שוכא דארזא</td><td>אלא אמר רב יוסף: ענף של ארז.</td></tr>
+      <tr><td>רמי בר אבא אמר זאזא</td><td>רמי בר אבא אמר: זאזא.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רב כהנא:</b> בקנים הוא אומר כרב הונא, שאגודים צריכים רוב ופזורים אינם צריכים. בגרעינים הוא אומר כרב חסדא, שפזורים צריכים רוב, ובחותלות אינם צריכים.</p>
+  <p><b>מדורות שנדלקות בקלות:</b> רב יוסף שנה שמדורות של זפת, גופרית, גבינה ורבב אינן צריכות רוב, ובברייתא הוסיפו גם קש וגבבא.</p>
+  <p><b>עצים של בבל:</b> רבי יוחנן אמר שאינם צריכים רוב. רב יוסף דוחה את האפשרות שמדובר בעצים דקים: עולא אמר שגם פתילה, שנוחה להידלק, צריכה רוב, וקל וחומר עצים דקים. לכן הוא מפרש "שוכא דארזא", ורמי בר אבא מפרש "זאזא".</p>
+  <div data-hl="R1,R2" class="voice r"><span class="tag">רש"י</span><blockquote>רב כהנא אמר קנים שאגדן צריכין רוב – כרב הונא דלא עיילא בהן נורא ולאבדורי לא חיישינן דארוכין הן וכבדין:</blockquote><blockquote>גרעינין שנתנן בחותלות אין צריכין רוב – כרב חסדא שנוחין לידלק אבל בלא חותלות מבדרי:</blockquote><p><span class="say">מה רש"י אומר:</span> בקנים רב כהנא הולך בשיטת רב הונא: האש אינה נכנסת בין הקנים האגודים, ולהתפזרות אין חוששים, כי הקנים ארוכים וכבדים. בגרעינים הוא כרב חסדא: בחותלות הם נוחים להידלק, ובלעדיהן הם מתפזרים.</p></div>
+  <div data-hl="R4,R5,R6" class="voice r"><span class="tag">רש"י</span><blockquote>רבב – שומן ושעוה וכל דבר הניתך:</blockquote><blockquote>גבבא – שגובבין מן השדה בל"א שטובל"א:</blockquote><blockquote>קש – זנבות שבולין אשטרי"ס:</blockquote><p><span class="say">מה רש"י אומר:</span> רבב הוא שומן, שעווה וכל דבר שנמס. קש הוא זנבות השיבולים, וגבבא היא מה שמלקטים מן השדה.</p></div>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>שוכא דארזא – יבש הוא ודק ויש כמין צמר בין קליפה לעץ והוא מבעירו משאחזה בו אור:</blockquote><p><span class="say">מה רש"י אומר:</span> שוכא דארזא יבש ודק, ויש בין הקליפה לעץ כמין צמר, שמבעיר אותו משאחזה בו האש.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>קל וחומר מן הפתילה</h3>
+    <div data-hl="R8,R9" class="voice r"><span class="tag">רש"י</span><blockquote>השתא פתילה – של בגד הטבולה בשמן ונוח לידלק:</blockquote><blockquote>אמר עולא המדליק – נר של שבת צריך שידליק ברוב היוצא מראש הפתילה חוץ לנר:</blockquote><p><span class="say">מה רש"י אומר:</span> הפתילה היא בגד טבול בשמן, ולכן נוחה להידלק. ובכל זאת עולא אומר שהמדליק נר שבת צריך שידליק ברוב מה שיוצא מראש הפתילה מחוץ לנר.</p></div>
+    <p>מכאן בנוי הקל וחומר של רב יוסף: אם הפתילה, הנוחה להידלק, צריכה רוב, עצים דקים ודאי צריכים. לכן "עצים של בבל" שאינם צריכים רוב חייבים להיות עצים שיש בהם דבר מיוחד, כמו הצמר שבשוכא דארזא.</p>
+  </div>
+  <p class="godeep">למה רב יוסף אינו מקבל שעצים של בבל הם עצים דקים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>במה רב כהנא אומר כרב הונא, ובמה כרב חסדא?</summary><p>בקנים כרב הונא, ובגרעינים כרב חסדא.</p></details>
+  <details><summary>מה הן ארבע המדורות של רב יוסף?</summary><p>של זפת, של גופרית, של גבינה ושל רבב.</p></details>
+  <details><summary>מה אמר עולא על המדליק?</summary><p>שצריך שידליק ברוב היוצא מן הנר.</p></details>
+  <details class="deepq"><summary>לפי רש"י, מה מיוחד בשוכא דארזא?</summary><p>יש בין הקליפה לעץ כמין צמר, שמבעיר אותו משאחזה בו האש.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G4,G5a,G5b">
+  <div class="kicker">יחידה 2 · משנה</div>
+  <h2>פרק שני: "במה מדליקין"</h2>
+  <p class="lead">הפרק הראשון נגמר, והפרק השני נפתח במשנה שמונה פתילות ושמנים שאין מדליקים בהם את נר השבת.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הדרן עלך יציאות השבת</td><td>נחזור אליך, "יציאות השבת".</td></tr>
+      <tr><td>במה מדליקין ובמה אין מדליקין</td><td>במה מדליקים, ובמה אין מדליקים?</td></tr>
+      <tr><td>אין מדליקין לא בלכש ולא בחוסן</td><td>אין מדליקים לא בלכש ולא בחוסן,</td></tr>
+      <tr><td>ולא בכלך ולא בפתילת האידן</td><td>ולא בכלך ולא בפתילת האידן,</td></tr>
+      <tr><td>ולא בפתילת המדבר</td><td>ולא בפתילת המדבר,</td></tr>
+      <tr><td>ולא בירוקה שעל פני המים</td><td>ולא בירוקה שעל פני המים.</td></tr>
+      <tr><td>ולא בזפת ולא בשעוה</td><td>ולא בזפת ולא בשעווה,</td></tr>
+      <tr><td>ולא בשמן קיק ולא בשמן שריפה</td><td>ולא בשמן קיק ולא בשמן שריפה,</td></tr>
+      <tr><td>ולא באליה ולא בחלב</td><td>ולא באליה ולא בחלב.</td></tr>
+      <tr><td>נחום המדי אומר מדליקין בחלב מבושל</td><td>נחום המדי אומר: מדליקים בחלב מבושל.</td></tr>
+      <tr><td>וחכ"א אחד מבושל ואחד שאינו מבושל</td><td>וחכמים אומרים: אחד מבושל ואחד שאינו מבושל,</td></tr>
+      <tr><td>אין מדליקין בו</td><td>אין מדליקים בו.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>פרק חדש:</b> "הדרן עלך יציאות השבת" חותם את הפרק הראשון. הפרק השני, "במה מדליקין", עוסק בנר השבת.</p>
+  <p><b>שתי רשימות:</b> המשנה מונה קודם שישה דברים שאין עושים מהם פתילה: לכש, חוסן, כלך, פתילת האידן, פתילת המדבר וירוקה שעל פני המים. אחריהם היא מונה דברים שאין נותנים בנר במקום שמן: זפת, שעווה, שמן קיק, שמן שריפה, אליה וחלב.</p>
+  <p><b>מחלוקת:</b> נחום המדי מתיר חלב מבושל, וחכמים אוסרים חלב בין מבושל ובין שאינו מבושל.</p>
+  <div data-hl="R12,R13" class="voice r"><span class="tag">רש"י</span><blockquote>במה מדליקין – לעשות פתילה כל הני דמתני' מפרש בגמרא:</blockquote><blockquote>לא בזפת ולא בשעוה – לאו לענין פתילה אלא לתת במקום שמן וכל הני מזפת ואילך פסולי שמנים הן:</blockquote><p><span class="say">מה רש"י אומר:</span> השאלה "במה מדליקין" היא ממה עושים פתילה, וכל הדברים מתפרשים בגמרא. מן הזפת והלאה אין הכוונה לפתילה, אלא למה שנותנים בנר במקום שמן.</p></div>
+  <div data-hl="R14" class="voice r"><span class="tag">רש"י</span><blockquote>הכי גרסינן נחום אומר מדליקין בחלב מבושל – והוא מהותך:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י גורס "מדליקין בחלב מבושל", ומפרש שהוא חלב מותך.</p></div>
+  <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>מתני' במה מדליקין כו' – פעמים מפרש מאי דסליק מיניה ופעמים במה שהתחיל:</blockquote><p><span class="say">מה התוספות אומרים:</span> המשנה שאלה "במה מדליקין ובמה אין מדליקין", ופתחה בפירוט של "אין מדליקין". לפעמים המשנה מפרשת קודם את מה שסיימה בו, ולפעמים את מה שפתחה בו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>סדר הדברים במשנה</h3>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>אחד מבושל כו' – הכא מזכיר שאינו פשוט תחילה וכן בכמה מקומות ומה שקשה על גירסת רש"י דסוכה [דף ז.] מפורש במקום אחר:</blockquote><p><span class="say">מה התוספות אומרים:</span> חכמים אמרו "אחד מבושל ואחד שאינו מבושל", והזכירו קודם את המבושל, שאיסורו אינו פשוט. כך גם בכמה מקומות.</p></div>
+    <p>גם בשאלה הפותחת וגם בדברי חכמים, התוספות מעירים על הסדר. המשנה שאלה קודם "במה מדליקין" ואחר כך "במה אין מדליקין", ופירטה קודם את "אין מדליקין", שבו סיימה. ובדברי חכמים היא מזכירה קודם את החלב המבושל, שאיסורו אינו פשוט.</p>
+  </div>
+  <p class="godeep">מה ההבדל בין שתי הרשימות שבמשנה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>באיזה פרק מתחיל העמוד, ובאיזה הוא נגמר?</summary><p>מתחיל בסוף פרק "יציאות השבת", ונגמר בתחילת פרק "במה מדליקין".</p></details>
+  <details><summary>לפי רש"י, מן הזפת והלאה, במה מדובר?</summary><p>בדברים שנותנים בנר במקום שמן.</p></details>
+  <details><summary>מה מתיר נחום המדי?</summary><p>להדליק בחלב מבושל.</p></details>
+  <details class="deepq"><summary>מה כתבו התוספות על הפתיחה "במה מדליקין"?</summary><p>לפעמים המשנה מפרשת את מה שסיימה בו, ולפעמים את מה שפתחה בו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G6,G7,G8,G9,G10">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>לכש, חוסן וכלך</h2>
+  <p class="lead">הגמרא מתחילה לזהות את פסולי הפתילות שבמשנה, אחד אחד: לכש, חוסן וכלך.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לכש שוכא דארזא</td><td>לכש: ענף של ארז.</td></tr>
+      <tr><td>שוכא דארזא עץ בעלמא הוא</td><td>ענף של ארז הוא סתם עץ!</td></tr>
+      <tr><td>בעמרניתא דאית ביה</td><td>(הכוונה) לצמר שיש בו.</td></tr>
+      <tr><td>אמר רב יוסף נעורת של פשתן</td><td>אמר רב יוסף: נעורת של פשתן.</td></tr>
+      <tr><td>והיה החסון לנעורת</td><td>"והיה החסון לנעורת".</td></tr>
+      <tr><td>אלא אמר אביי כיתנא דדייק ולא נפיץ</td><td>אלא אמר אביי: פשתן שנכתש ולא נופץ.</td></tr>
+      <tr><td>שאלתינהו לכל נחותי ימא</td><td>שאלתי את כל יורדי הים,</td></tr>
+      <tr><td>כולכא שמיה</td><td>"כולכא" שמו.</td></tr>
+      <tr><td>רב יצחק בר זעירא אמר גושקרא</td><td>רב יצחק בר זעירא אמר: גושקרא.</td></tr>
+      <tr><td>חזייה דהוה לביש מטכסא</td><td>ראה אותו שהיה לבוש "מטכסא".</td></tr>
+      <tr><td>היינו כלך דתנן</td><td>זה הכלך ששנינו.</td></tr>
+      <tr><td>אנן שירא פרנדא קרינן ליה</td><td>אנחנו "שירא פרנדא" קוראים לו.</td></tr>
+      <tr><td>השיראים והכלך והסיריקין חייבין בציצית</td><td>השיראים, הכלך והסיריקין חייבים בציצית.</td></tr>
+      <tr><td>שירא לחוד ושירא פרנדא לחוד</td><td>שירא לחוד, ושירא פרנדא לחוד.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>לכש:</b> הוא "שוכא דארזא". הגמרא שואלת: הרי זה סתם עץ! ועונה שהכוונה לחומר דמוי הצמר שיש בו, בין הקליפה לעץ.</p>
+  <p><b>חוסן:</b> רב יוסף אמר נעורת של פשתן. אביי דחה מן הפסוק "והיה החסון לנעורת", שמשמע שחסון אינו נעורת, ופירש: פשתן שנכתש ולא נופץ.</p>
+  <p><b>כלך:</b> שמואל שמע מיורדי הים שהוא נקרא "כולכא", ורב יצחק בר זעירא אמר "גושקרא". רבין ראה את רבנא נחמיה לבוש "מטכסא" ואמר שזה הכלך, ואביי אמר שהם קוראים לו "שירא פרנדא". מן הברייתא על ציצית, שמונה שיראים וכלך בנפרד, מקשים על רבין. ועונים ש"שירא" ו"שירא פרנדא" אינם אותו דבר: השיראים שבברייתא הם שירא, והכלך הוא שירא פרנדא.</p>
+  <div data-hl="R15,R16" class="voice r"><span class="tag">רש"י</span><blockquote>גמ' עץ בעלמא הוא – ופשיטא דלא חזי לפתילה אלא למדורה:</blockquote><blockquote>עמרניתא – כמין צמר יש בין קליפתו לעצו:</blockquote><p><span class="say">מה רש"י אומר:</span> עץ סתם ודאי אינו ראוי לפתילה אלא למדורה. "עמרניתא" היא כמין צמר שבין הקליפה לעץ.</p></div>
+  <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>כיתנא דדייק ולא נפיץ – דכיון דלא נפיץ אין שמן נמשך אחריו נפיץ קרפר"י לפורר ונעורת מן הדק שבו והכי קאמר קרא פשתן החזק יהפך לנעורת כלומר הגבור יהיה חלש:</blockquote><p><span class="say">מה רש"י אומר:</span> פשתן שלא נופץ אין השמן נמשך אחריו. והפסוק פירושו: הפשתן החזק ייהפך לנעורת, כלומר החזק יהיה חלש.</p></div>
+  <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>גושקרא – פסולת של משי העשוי ככובעים והוא בית התולעת וקורין לו פולויי"ל ונופצים אותו וטווהו ועושה ממנו בגד ואסור לעשות ממנו פתילה כדאמר בכל פסולי פתילות דמתניתין שהאור מסכסכת בהן קופצת ונפסקת ואין השלהבת עומדת במקומה:</blockquote><p><span class="say">מה רש"י אומר:</span> גושקרא היא פסולת של משי, בית התולעת. ואין עושים ממנה פתילה, כמו כל פסולי הפתילות שבמשנה, שהאש מקפצת בהם ונפסקת, ואין השלהבת עומדת במקומה.</p></div>
+  <div data-hl="R24" class="voice r"><span class="tag">רש"י</span><blockquote>חייבין בציצית – ודלא כמאן דאמר כל בגדי צמר ופשתים דוקא חייבין בציצית מדאורייתא אי נמי מדרבנן קתני מיהא השיראים והכלך אלמא שיראין לאו היינו כלך:</blockquote><p><span class="say">מה רש"י אומר:</span> הברייתא על ציצית מונה "השיראים והכלך" זה אחר זה. מכאן ששיראים אינם כלך.</p></div>
+  <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>בעמרניתא דאית ביה – וא"ת הא מסיפא שמעינן ליה כל היוצא מן העץ אין מדליקין בו אלא פשתן וכן קשה גבי אידן ויש לומר דאין למדין מן הכללות אפילו במקום שנאמר בהן חוץ:</blockquote><p><span class="say">מה התוספות אומרים:</span> ממשנה שבהמשך הפרק אנו שומעים שכל היוצא מן העץ אין מדליקים בו אלא פשתן, ולמה צריך להזכיר את הלכש? התשובה: אין למדים מן הכללים, אפילו במקום שנאמר בהם "חוץ".</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מטכסא ושירא פרנדא</h3>
+    <div data-hl="T4a" class="voice t"><span class="tag">תוספות</span><blockquote>אנן שירא פרנדא קרינן ליה – פר"ת דכלך דמתניתין קרינן שירא פרנדא אבל מטכסא לאו היינו שירא פרנדא דלא הוה אחר חורבן כדאמר בפ' בתרא דסוטה (דף מו:) משחרב בית המקדש בטל שמיר וזכוכית לבנה ושירא פרנדא</blockquote><p><span class="say">מה התוספות אומרים:</span> לפי רבנו תם, הכלך שבמשנה הוא שירא פרנדא, אבל המטכסא שלבש רבנא נחמיה אינו שירא פרנדא, כי במסכת סוטה נאמר שמשחרב בית המקדש בטל שירא פרנדא.</p></div>
+    <div data-hl="T4b" class="voice t"><span class="tag">תוספות</span><blockquote>ור"י מפרש דקאי נמי אמטכסא והא דקאמר התם בטל לא לגמרי בטל אלא שלא היה נמצא כ"כ דהא זכוכי' לבנה היתה אחר חורבן דאמרי' בפ' אין עומדין (ברכות דף לא.) תבר קמייהו זכוכית חיורתא בחופת בנו:</blockquote><p><span class="say">מה התוספות אומרים:</span> לפי רבנו יצחק, דברי אביי עוסקים גם במטכסא. "בטל" אין פירושו לגמרי, אלא שלא היה מצוי כל כך, שהרי זכוכית לבנה, שנמנתה עמו, הייתה גם אחרי החורבן.</p></div>
+    <p>המחלוקת תלויה בשאלה אחת: האם ייתכן שבימי אביי היה בגד של שירא פרנדא. רבנו תם אומר שלא, ולכן אביי רק אמר איך הם קוראים לכלך. רבנו יצחק אומר שכן, ולכן אביי דיבר גם על הבגד עצמו.</p>
+  </div>
+  <p class="godeep">על מה חולקים רבנו תם ורבנו יצחק? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הקשה אביי על רב יוסף בעניין החוסן?</summary><p>מן הפסוק "והיה החסון לנעורת" משמע שחסון אינו נעורת.</p></details>
+  <details><summary>מה פירוש "כיתנא דדייק ולא נפיץ"?</summary><p>פשתן שנכתש ולא נופץ.</p></details>
+  <details><summary>מאיזו ברייתא מקשים על רבין?</summary><p>"השיראים והכלך והסיריקין חייבין בציצית", שמונה שיראים וכלך בנפרד.</p></details>
+  <details class="deepq"><summary>מה עונים התוספות על השאלה למה המשנה מזכירה את הלכש?</summary><p>אין למדים מן הכללים, אפילו במקום שנאמר בהם "חוץ".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G11a,G11b,G12,G13">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>אידן, פתילת המדבר, ירוקה, צמר ושער</h2>
+  <p class="lead">הגמרא ממשיכה לזהות את פסולי הפתילות, ומביאה ברייתא שהוסיפה עליהם צמר ושער.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ולא בפתילת האידן</td><td>ולא בפתילת האידן:</td></tr>
+      <tr><td>רבין ואביי הוו קאזלו בפקתא דטמרוריתא</td><td>רבין ואביי היו הולכים בבקעה של טמרוריתא.</td></tr>
+      <tr><td>חזינהו להנהו ארבתא</td><td>ראו את אותן ערבות.</td></tr>
+      <tr><td>היינו אידן דתנן</td><td>זה האידן ששנינו.</td></tr>
+      <tr><td>ההיא עץ בעלמא הוא</td><td>זה סתם עץ!</td></tr>
+      <tr><td>קלף ואחוי ליה עמרניתא דביני ביני</td><td>קילף והראה לו את הצמר שבין (הקליפה לעץ).</td></tr>
+      <tr><td>מאי היא אילימא אוכמתא דחריצי</td><td>מה היא? אם תאמר הירוקה שבחריצים,</td></tr>
+      <tr><td>איפרוכי מפרכן</td><td>הרי היא מתפוררת.</td></tr>
+      <tr><td>אלא אמר רב פפא אוכמתא דארבא</td><td>אלא אמר רב פפא: הירוקה שעל הספינה.</td></tr>
+      <tr><td>הוסיפו עליהן של צמר ושל שער</td><td>הוסיפו עליהם (פתילות) של צמר ושל שער.</td></tr>
+      <tr><td>ותנא דידן צמר מכווץ כוויץ</td><td>והתנא שלנו? צמר מתכווץ,</td></tr>
+      <tr><td>שער איחרוכי מיחרך</td><td>שער נחרך.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>אידן:</b> הוא "אחוינא", ולפי רש"י זו ערבה. רבין ואביי ראו ערבות בדרכם, ורבין אמר שזה האידן. אביי אמר שזה סתם עץ, ורבין קילף והראה לו את הצמר שבין הקליפה לעץ.</p>
+  <p><b>פתילת המדבר וירוקה:</b> פתילת המדבר היא "שברא", מין עשב ארוך. הירוקה אינה זו שבחריצי המים, כי היא מתפוררת, אלא, לדברי רב פפא, הירוקה שגדלה על ספינה.</p>
+  <p><b>צמר ושער:</b> ברייתא הוסיפה פתילות של צמר ושל שער. המשנה לא מנתה אותם, כי הצמר מתכווץ והשער נחרך.</p>
+  <div data-hl="R25,R27" class="voice r"><span class="tag">רש"י</span><blockquote>אחווינא – ערבה ויש כמין צמר בין קליפה לעץ:</blockquote><blockquote>עץ בעלמא הוא – והיכי ליחזי לפתילה:</blockquote><p><span class="say">מה רש"י אומר:</span> אחוינא היא ערבה, ויש בה כמין צמר בין הקליפה לעץ. והשאלה "עץ בעלמא הוא" פירושה: איך עץ יתאים לפתילה?</p></div>
+  <div data-hl="R30,R31" class="voice r"><span class="tag">רש"י</span><blockquote>איפרוכי מיפרכן – ולא מצי ליעבד פתילה מינה:</blockquote><blockquote>אוכמתא דארבא – ספינה המתעכבת במקום אחד במים גדל ירקרוקת סביב שוליה מבחוץ:</blockquote><p><span class="say">מה רש"י אומר:</span> הירוקה של החריצים מתפוררת, ואי אפשר לעשות ממנה פתילה. אוכמתא דארבא היא ירקרוקת שגדלה מבחוץ סביב תחתית ספינה שעומדת במקום אחד במים.</p></div>
+  <div data-hl="R32" class="voice r"><span class="tag">רש"י</span><blockquote>מכווץ כווץ – מפני האור ואין דולק כלל ואין שלהבת אוחזת בו ולא צריך למתנייה:</blockquote><p><span class="say">מה רש"י אומר:</span> הצמר מתכווץ מפני האש ואינו דולק כלל, ולכן לא היה צורך לשנות אותו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה המשנה לא מנתה צמר ושער</h3>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>ותנא דידן צמר מכווץ כווץ ושער איחרוכי מחרך – ולא איצטריך תנא דמתני' למיתני וא"ת כיון דמתני' נמי סברה דצמר ושער פסולים להדלקה א"כ מאי הוסיפו וי"ל דהוסיפו היינו טעמא מפני שאין מושכין השמן יפה ותנא דמתניתין פסיל להו משום דצמר כוויץ ושער מחרך ולא איצטריך למתני:</blockquote><p><span class="say">מה התוספות אומרים:</span> אם גם המשנה סוברת שצמר ושער פסולים, מה "הוסיפו"? הברייתא פוסלת אותם מפני שאינם מושכים את השמן היטב. המשנה פוסלת אותם מפני שהצמר מתכווץ והשער נחרך, ולכן לא היה צריך לשנות אותם.</p></div>
+    <p>כלומר, יש שני טעמים שונים לאותו פסול. לפי הברייתא הבעיה היא בשמן שאינו נמשך. לפי המשנה הבעיה היא שהם כלל אינם דולקים כפתילה, ומה שאינו דולק כלל אין צורך למנות.</p>
+  </div>
+  <p class="godeep">למה המשנה לא מנתה צמר ושער בין פסולי הפתילות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הראה רבין לאביי כשקילף את הערבה?</summary><p>את הצמר שבין הקליפה לעץ.</p></details>
+  <details><summary>למה הירוקה אינה זו שבחריצים?</summary><p>כי היא מתפוררת, ואי אפשר לעשות ממנה פתילה.</p></details>
+  <details><summary>מה הוסיפה הברייתא על פסולי הפתילות?</summary><p>צמר ושער.</p></details>
+  <details class="deepq"><summary>לפי התוספות, מה הטעם של הברייתא לפסול צמר ושער?</summary><p>מפני שאינם מושכים את השמן היטב.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G14a,G14b,G15">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>פסולי שמנים: זפת ושעווה</h2>
+  <p class="lead">הגמרא מגיעה לחלק השני של הרשימה: הדברים שאין נותנים בנר במקום שמן. היא קובעת היכן עובר הגבול בין פסולי הפתילות לפסולי השמנים.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>זפת זיפתא שעוה קירותא</td><td>זפת היא זיפתא, שעווה היא קירותא.</td></tr>
+      <tr><td>תנא עד כאן פסול פתילות</td><td>שנו: עד כאן פסולי פתילות,</td></tr>
+      <tr><td>מכאן ואילך פסול שמנים</td><td>מכאן והלאה פסולי שמנים.</td></tr>
+      <tr><td>פשיטא שעוה איצטריכא ליה</td><td>זה ברור! השעווה נצרכה לו.</td></tr>
+      <tr><td>מהו דתימא לפתילות נמי לא חזיא</td><td>היית אומר: גם לפתילות אינה ראויה.</td></tr>
+      <tr><td>קא משמע לן</td><td>משמיע לנו.</td></tr>
+      <tr><td>עטרנא פסולתא דזיפתא</td><td>עטרן הוא פסולת של זפת.</td></tr>
+      <tr><td>שעוה פסולתא דדובשא</td><td>שעווה היא פסולת של דבש.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הגבול:</b> ברייתא אומרת שעד הירוקה שעל פני המים מנו פסולי פתילות, ומן הזפת והלאה פסולי שמנים.</p>
+  <p><b>למה צריך לומר:</b> זה נראה ברור מן הסדר. אבל הדבר נצרך בשביל השעווה: אפשר היה לחשוב שגם פתילה ממנה פסולה, והברייתא מלמדת שהיא פסולה רק במקום שמן.</p>
+  <p><b>רמי בר אבין:</b> עטרן הוא פסולת של זפת, ושעווה היא פסולת של דבש.</p>
+  <div data-hl="R34" class="voice r"><span class="tag">רש"י</span><blockquote>מכאן ואילך פסול שמנים – שלא יתן חתיכה זפת או שעוה בנר במקום שמן:</blockquote><p><span class="say">מה רש"י אומר:</span> פסול שמנים פירושו שלא ייתן בנר חתיכת זפת או שעווה במקום שמן.</p></div>
+  <div data-hl="R35" class="voice r"><span class="tag">רש"י</span><blockquote>שעוה איצטריכא ליה – לפי שרגילין לעשות כמין פתילה ארוכה והפתילה לתוכה כמו שאנו עושין:</blockquote><p><span class="say">מה רש"י אומר:</span> השעווה נצרכה, כי נוהגים לעשות ממנה כמין פתילה ארוכה והפתילה בתוכה, כמו שאנו עושים.</p></div>
+  <div data-hl="R37" class="voice r"><span class="tag">רש"י</span><blockquote>פסולתא דזיפתא – לאחר שיוצא הזפת מן העץ זב ממנו על ידי האור פסולת צלול כשמן והוא עיטרן:</blockquote><p><span class="say">מה רש"י אומר:</span> אחרי שהזפת יוצאת מן העץ, זב ממנו על ידי האש נוזל צלול כמו שמן, והוא העטרן.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>נר השעווה שלנו</h3>
+    <div data-hl="T6a" class="voice t"><span class="tag">תוספות</span><blockquote>עד כאן פסול פתילות מכאן ואילך פסול שמנים – בני נרבונא אוסרין נר שעוה שלנו ומפרשי הכי מהו דתימא לפתילות נמי לא שאם שם נר שעוה בנר שמן יהא אסור קמ"ל מכאן ואילך פסול שמנים כיון שיש בו שמן כשר מותר אבל נר של שעוה בלא שמן אסור להדליק</blockquote><p><span class="say">מה התוספות אומרים:</span> אנשי נרבונא אוסרים את נר השעווה. לפי פירושם, החידוש הוא שנר שעווה שהונח בתוך נר של שמן כשר מותר. אבל נר שעווה בלי שמן אסור.</p></div>
+    <div data-hl="T6b" class="voice t"><span class="tag">תוספות</span><blockquote>ולי נראה דאם אסור להדליק בלא שמן כי הניחה בשמן נמי אסור כדאמרינן לקמן כרך דבר שמדליקין על גבי דבר שאין מדליקין דאסור אלא ודאי כי לא הניח בשמן נמי שרי:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות חולקים: אילו היה אסור בלי שמן, גם בשמן היה אסור, כמו מי שכורך דבר שמדליקים בו על גבי דבר שאין מדליקים בו. אלא ודאי שמותר גם בלי שמן.</p></div>
+    <p>שתי הקריאות נבדלות במשמעות של "גם לפתילות אינה ראויה". לפי רש"י והתוספות, השעווה כשרה כפתילה, ופסולה רק כשנותנים אותה במקום שמן. לפי אנשי נרבונא, ההיתר הוא רק כשיש לצידה שמן כשר.</p>
+  </div>
+  <p class="godeep">האם מותר להדליק נר של שעווה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>איפה עובר הגבול בין פסולי הפתילות לפסולי השמנים?</summary><p>עד הירוקה שעל פני המים פסולי פתילות, ומן הזפת והלאה פסולי שמנים.</p></details>
+  <details><summary>בשביל מה נצרכה הברייתא?</summary><p>בשביל השעווה, שלא נחשוב שגם כפתילה היא פסולה.</p></details>
+  <details><summary>מה אמר רמי בר אבין?</summary><p>עטרן הוא פסולת של זפת, ושעווה היא פסולת של דבש.</p></details>
+  <details class="deepq"><summary>מה הראיה של התוספות נגד אנשי נרבונא?</summary><p>אילו נר שעווה היה אסור בלי שמן, גם בשמן היה אסור, כמו כורך דבר שמדליקים בו על גבי דבר שאין מדליקים בו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>רב כהנא:</b> בקנים כרב הונא, ובגרעינים כרב חסדא.</li>
+      <li><b>מדורות שאינן צריכות רוב:</b> זפת, גופרית, גבינה ורבב, ולפי הברייתא גם קש וגבבא. ועצים של בבל הם שוכא דארזא או זאזא.</li>
+      <li><b>פרק חדש:</b> "במה מדליקין" מונה פסולי פתילות ופסולי שמנים לנר השבת.</li>
+      <li><b>לכש, חוסן וכלך:</b> לכש הוא שוכא דארזא, חוסן הוא פשתן שנכתש ולא נופץ, וכלך הוא כולכא או גושקרא.</li>
+      <li><b>אידן, מדבר וירוקה:</b> אחוינא, שברא, והירוקה שעל הספינה. צמר ושער לא נמנו במשנה, כי הצמר מתכווץ והשער נחרך.</li>
+      <li><b>הגבול:</b> עד הירוקה פסולי פתילות, ומן הזפת פסולי שמנים. השעווה פסולה רק במקום שמן.</li>
+      <li><b>בעמוד הבא:</b> מה יוצא למעשה מזיהוי העטרן והשעווה.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>במתניתא תנא</td><td>בברייתא שנו</td></tr>
+      <tr><td>אילימא</td><td>אם תאמר</td></tr>
+      <tr><td>סילתי מבעיא</td><td>עצים דקים, האם צריך לומר? כלומר, לא כל שכן</td></tr>
+      <tr><td>הדרן עלך</td><td>&quot;נחזור אליך&quot;: המילים שבסוף כל פרק</td></tr>
+      <tr><td>עץ בעלמא הוא</td><td>סתם עץ הוא</td></tr>
+      <tr><td>נחותי ימא</td><td>יורדי הים</td></tr>
+      <tr><td>מיתיבי</td><td>מקשים מברייתא</td></tr>
+      <tr><td>תיובתא</td><td>קושיה שדוחה את הדברים</td></tr>
+      <tr><td>איבעית אימא</td><td>ואם תרצה, אמור</td></tr>
+      <tr><td>פשיטא</td><td>זה ברור</td></tr>
+      <tr><td>מהו דתימא</td><td>היה עולה על דעתך לומר</td></tr>
+      <tr><td>קא משמע לן</td><td>משמיע לנו</td></tr>
+      <tr><td>תנא דידן</td><td>התנא שלנו, של המשנה</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-20a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-21a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף כ&#x27; עמוד ב&#x27;, לומדים: מדורות שאינן צריכות רוב; פרק שני: "במה מדליקין"; לכש, חוסן וכלך; אידן, פתילת המדבר, ירוקה, צמר ושער; פסולי שמנים: זפת ושעווה.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (38 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · רב כהנא, ואחריו פרק חדש</h3><p>העמוד הקודם עסק במדורה בערב שבת: מתי צריך שהאש תאחוז ברובה. רב הונא אמר שקנים וגרעינים פזורים אינם צריכים רוב, ואגודים צריכים, ורב חסדא אמר להפך. העמוד נגמר במילים &quot;איתמר נמי&quot;, וכאן באים דברי רב כהנא. מיד אחריהם נגמר הפרק, ומשנה חדשה פותחת את הפרק הבא.</p></li><li><h3><span class="w">גמרא</span> · רב כהנא: בקנים כרב הונא</h3><p>רב כהנא אמר: קנים שאגד אותם צריכים רוב, ושלא אגד אינם צריכים רוב. רש&quot;י: בזה הוא כרב הונא, כי האש אינה נכנסת בהם. ולהתפזרות אין חוששים, כי הקנים ארוכים וכבדים.</p></li><li><h3><span class="w">גמרא</span> · ובגרעינים כרב חסדא</h3><p>גרעינים צריכים רוב, ואם נתן אותם בחותלות אינם צריכים רוב. רש&quot;י: בזה הוא כרב חסדא, כי בחותלות הם נוחים להידלק, ובלי חותלות הם מתפזרים.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף: ארבע מדורות</h3><p>רב יוסף שנה: ארבע מדורות אינן צריכות רוב: של זפת, של גופרית, של גבינה ושל &quot;רבב&quot;. רש&quot;י: מדורה היא היסק גדול. ורבב הוא שומן, שעווה וכל דבר שנמס.</p></li><li><h3><span class="w">גמרא</span> · ועוד שתיים בברייתא</h3><p>&quot;במתניתא תנא&quot;, בברייתא שנו: גם של קש ושל &quot;גבבא&quot;. רש&quot;י: קש הוא זנבות השיבולים, וגבבא היא מה שמלקטים מן השדה.</p></li><li><h3><span class="w">גמרא</span> · רבי יוחנן: עצים של בבל</h3><p>רבי יוחנן אמר: עצים של בבל אינם צריכים רוב.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף: לא ייתכן שמדובר בעצים דקים</h3><p>רב יוסף מקשה: מה הם העצים האלה? אם הם &quot;סילתי&quot;, עצים שביקעו אותם לחתיכות דקות, שלפי רש&quot;י כך נוהגים בבבל, הרי עולא אמר שהמדליק נר שבת צריך שידליק ברוב הפתילה שיוצא מן הנר. אם פתילה, שנוחה להידלק, צריכה רוב, עצים דקים לא כל שכן?</p></li><li><h3><span class="w">גמרא</span> · שוכא דארזא, או זאזא</h3><p>אלא אמר רב יוסף: &quot;שוכא דארזא&quot;, ענף של ארז. רמי בר אבא אמר: &quot;זאזא&quot;. רש&quot;י: שוכא דארזא יבש ודק, ויש בין הקליפה לעץ כמין צמר, שמבעיר אותו משאחזה בו האש.</p></li><li><h3><span class="w">הדף</span> · סוף הפרק הראשון</h3><p>&quot;הדרן עלך יציאות השבת&quot;: כאן נגמר הפרק הראשון של המסכת, &quot;יציאות השבת&quot;.</p></li><li><h3><span class="w">משנה</span> · פרק שני: במה מדליקין</h3><p>כאן מתחיל הפרק השני, &quot;במה מדליקין&quot;. המשנה שואלת במה מדליקים את נר השבת ובמה אין מדליקים. רש&quot;י: השאלה היא ממה עושים פתילה, וכל הדברים שבמשנה מתפרשים בגמרא. אין מדליקים בלכש, בחוסן, בכלך, בפתילת האידן, בפתילת המדבר ובירוקה שעל פני המים.</p></li><li><h3><span class="w">משנה</span> · פסולי השמנים</h3><p>ולא בזפת, ולא בשעווה, ולא בשמן קיק, ולא בשמן שריפה, ולא באליה ולא בחלב. רש&quot;י: מן הזפת והלאה אין הכוונה לפתילה, אלא למה שנותנים בנר במקום שמן. אלה הם פסולי השמנים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: המשנה מפרשת קודם את מה שסיימה בו</h3><p>המשנה שאלה &quot;במה מדליקין ובמה אין מדליקין&quot;, ופתחה בפירוט של השאלה השנייה: &quot;אין מדליקין&quot;. התוספות כותבים: לפעמים המשנה מפרשת קודם את מה שסיימה בו, ולפעמים את מה שפתחה בו.</p></li><li><h3><span class="w">משנה</span> · נחום המדי וחכמים</h3><p>נחום המדי אומר: מדליקים בחלב מבושל. רש&quot;י גורס כך, ומפרש: חלב מבושל הוא חלב מותך. וחכמים אומרים: אחד מבושל ואחד שאינו מבושל, אין מדליקים בו.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קודם מה שאינו פשוט</h3><p>חכמים אמרו &quot;אחד מבושל&quot; והזכירו קודם את המבושל, שאיסורו אינו פשוט. התוספות מעירים שכך גם בכמה מקומות. ומה שקשה על גרסת רש&quot;י במסכת סוכה, מפורש במקום אחר.</p></li><li><h3><span class="w">גמרא</span> · לכש: שוכא דארזא</h3><p>&quot;לכש&quot; הוא &quot;שוכא דארזא&quot;. הגמרא שואלת: שוכא דארזא הוא סתם עץ! רש&quot;י: וברור שאינו ראוי לפתילה, אלא למדורה. התשובה: הכוונה ל&quot;עמרניתא&quot; שיש בו, כמין צמר שבין הקליפה לעץ.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה המשנה מפרטת</h3><p>התוספות שואלים: ממשנה שבהמשך הפרק אנו שומעים שכל היוצא מן העץ אין מדליקים בו אלא פשתן. אם כן, למה צריך להזכיר את הלכש? וכן קשה על האידן. התשובה: אין למדים מן הכללים, אפילו במקום שנאמר בהם &quot;חוץ&quot;.</p></li><li><h3><span class="w">גמרא</span> · חוסן: רב יוסף ואביי</h3><p>&quot;ולא בחוסן&quot;: רב יוסף אמר, נעורת של פשתן. אמר לו אביי: והרי כתוב &quot;והיה החסון לנעורת&quot;. רש&quot;י: משמע שחסון אינו נעורת.</p></li><li><h3><span class="w">גמרא</span> · אביי: פשתן שנכתש ולא נופץ</h3><p>אלא אמר אביי: &quot;כיתנא דדייק ולא נפיץ&quot;, פשתן שנכתש ולא נופץ. רש&quot;י: מכיון שלא נופץ, השמן אינו נמשך אחריו. נעורת היא החלק הדק שבפשתן. והפסוק פירושו: הפשתן החזק ייהפך לנעורת, כלומר החזק יהיה חלש.</p></li><li><h3><span class="w">גמרא</span> · כלך: כולכא או גושקרא</h3><p>&quot;ולא בכלך&quot;: שמואל אמר, שאלתי את כל יורדי הים, ואמרו שהוא נקרא &quot;כולכא&quot;. רב יצחק בר זעירא אמר: &quot;גושקרא&quot;. רש&quot;י: זו פסולת של משי, בית התולעת. מנפצים אותה, טווים ועושים ממנה בגד. ואין עושים ממנה פתילה, כמו כל פסולי הפתילות שבמשנה, שהאש מקפצת בהם ונפסקת, ואין השלהבת עומדת במקומה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: השם גושקרא</h3><p>השם הוא על שם הפסולת. וכך נקרא במסכת גיטין גם פת של סובין.</p></li><li><h3><span class="w">גמרא</span> · רבין ואביי אצל רבנא נחמיה</h3><p>רבין ואביי ישבו לפני רבנא נחמיה, אחיו של ראש הגולה. רבין ראה שהוא לבוש &quot;מטכסא&quot;. לפי רש&quot;י זה בגד שעשוי מאותו כלך. אמר רבין לאביי: זה הכלך ששנינו במשנה. אמר לו אביי: אנחנו קוראים לו &quot;שירא פרנדא&quot;.</p></li><li><h3><span class="w">גמרא</span> · קושיה מדין ציצית</h3><p>&quot;מיתיבי&quot;, מקשים מברייתא: &quot;השיראים והכלך והסיריקין חייבים בציצית&quot;. רש&quot;י: הברייתא מונה את השיראים ואת הכלך בנפרד, ומכאן ששיראים אינם כלך. &quot;תיובתא&quot;, זו קושיה שדוחה את הדברים, ולפי המילים שבסוגריים בדף היא קושיה על רבין, שאמר שבגד המשי הזה הוא הכלך. &quot;איבעית אימא&quot;, ואם תרצה אמור: &quot;שירא&quot; לחוד, ו&quot;שירא פרנדא&quot; לחוד. כלומר השיראים שבברייתא הם &quot;שירא&quot;, והכלך הוא &quot;שירא פרנדא&quot;, מין אחר, ואין קושיה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רבנו תם</h3><p>רבנו תם מפרש: את הכלך שבמשנה אנחנו קוראים &quot;שירא פרנדא&quot;. אבל ה&quot;מטכסא&quot; שלבש רבנא נחמיה אינו שירא פרנדא, כי שירא פרנדא לא היה אחרי החורבן. כך נאמר במסכת סוטה: משחרב בית המקדש בטלו השמיר, הזכוכית הלבנה והשירא פרנדא.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רבנו יצחק</h3><p>רבנו יצחק מפרש שדברי אביי עוסקים גם במטכסא. ומה שנאמר שם &quot;בטל&quot;, אין פירושו שבטל לגמרי, אלא שלא היה מצוי כל כך. שהרי זכוכית לבנה הייתה גם אחרי החורבן, כמו שמסופר במסכת ברכות על מי ששבר לפניהם זכוכית לבנה בחופת בנו.</p></li><li><h3><span class="w">גמרא</span> · פתילת האידן: אחוינא</h3><p>&quot;ולא בפתילת האידן&quot;: &quot;אחוינא&quot;. רש&quot;י: זו ערבה, ויש בה כמין צמר בין הקליפה לעץ. רבין ואביי הלכו בבקעה של טמרוריתא, וראו שם &quot;ארבתא&quot;, ערבות. רבין אמר שאלה הן האידן שבמשנה.</p></li><li><h3><span class="w">גמרא</span> · הצמר שבין הקליפה לעץ</h3><p>אמר לו אביי: זה סתם עץ! רש&quot;י: ואיך יתאים לפתילה? רבין קילף את הקליפה והראה לו את ה&quot;עמרניתא&quot;, כמין צמר שבין הקליפה לעץ.</p></li><li><h3><span class="w">גמרא</span> · פתילת המדבר: שברא</h3><p>&quot;ולא בפתילת המדבר&quot;: &quot;שברא&quot;. רש&quot;י: מין עשב ארוך.</p></li><li><h3><span class="w">גמרא</span> · ירוקה: לא של החריצים</h3><p>&quot;ולא בירוקה שעל פני המים&quot;: מה היא? אם היא &quot;אוכמתא דחריצי&quot;, הירקרוקת שגדלה לפי רש&quot;י במקום שמים נקווים, הרי היא מתפוררת, ואי אפשר לעשות ממנה פתילה.</p></li><li><h3><span class="w">גמרא</span> · רב פפא: של הספינה</h3><p>אלא אמר רב פפא: &quot;אוכמתא דארבא&quot;. רש&quot;י: ספינה שעומדת במקום אחד במים, גדלה סביב תחתיתה מבחוץ ירקרוקת.</p></li><li><h3><span class="w">גמרא</span> · צמר ושער</h3><p>&quot;תנא&quot;, שנו בברייתא: הוסיפו עליהם של צמר ושל שער. והתנא של המשנה שלנו לא מנה אותם, כי צמר מתכווץ ושער נחרך. רש&quot;י: הצמר מתכווץ מפני האש ואינו דולק כלל, והשלהבת אינה אוחזת בו, ולכן אין צורך לשנות אותו.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מה &quot;הוסיפו&quot;</h3><p>התוספות שואלים: אם גם המשנה סוברת שצמר ושער פסולים, מה &quot;הוסיפו&quot;? התשובה: הברייתא פוסלת אותם מפני שאינם מושכים את השמן היטב. והתנא של המשנה פוסל אותם מפני שהצמר מתכווץ והשער נחרך, ולכן לא היה צריך לשנות אותם.</p></li><li><h3><span class="w">גמרא</span> · זפת ושעווה</h3><p>&quot;ולא בזפת&quot;: זפת היא &quot;זיפתא&quot;, ושעווה היא &quot;קירותא&quot;.</p></li><li><h3><span class="w">גמרא</span> · פסולי פתילות ופסולי שמנים</h3><p>&quot;תנא&quot;, שנו: עד כאן פסולי פתילות, מכאן והלאה פסולי שמנים. רש&quot;י: עד &quot;ירוקה שעל פני המים&quot; הם פסולי פתילות. ומכאן והלאה הכוונה שלא ייתן בנר חתיכת זפת או שעווה במקום שמן.</p></li><li><h3><span class="w">גמרא</span> · למה צריך לומר זאת</h3><p>&quot;פשיטא&quot;, זה ברור! הגמרא עונה: הדבר נצרך בשביל השעווה. &quot;מהו דתימא&quot;, היית אומר שגם לפתילה אינה ראויה, &quot;קא משמע לן&quot;, לכן משמיעים לנו שהיא פסולה רק כשמן. רש&quot;י: נוהגים לעשות משעווה כמין פתילה ארוכה והפתילה בתוכה, כמו שאנו עושים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: בני נרבונא אוסרים</h3><p>אנשי נרבונא אוסרים את נר השעווה שלנו. לפי פירושם, הגמרא אומרת: היית אומר שאם שם נר שעווה בתוך נר של שמן יהיה אסור. &quot;קא משמע לן&quot; שזה רק פסול שמנים, וכיון שיש שם שמן כשר מותר. אבל נר שעווה בלי שמן אסור להדליק.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ולי נראה שמותר</h3><p>התוספות חולקים: אילו היה אסור להדליק נר שעווה בלי שמן, גם כשהניח אותו בשמן היה אסור. כך אומרים בהמשך: מי שכרך דבר שמדליקים בו על גבי דבר שאין מדליקים בו, אסור. אלא ודאי, גם כשלא הניח אותו בשמן, מותר.</p></li><li><h3><span class="w">גמרא</span> · רמי בר אבין: עטרן ושעווה</h3><p>רמי בר אבין אמר: &quot;עטרנא&quot;, עטרן, הוא פסולת של זפת, ושעווה היא פסולת של דבש. רש&quot;י: אחרי שהזפת יוצאת מן העץ, זב ממנו על ידי האש נוזל צלול כמו שמן, והוא העטרן.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>הפרק הראשון נגמר בדיני הרוב במדורות, והפרק השני נפתח במשנה &quot;במה מדליקין&quot;: פתילות ושמנים שאין מדליקים בהם את נר השבת. הגמרא זיהתה את פסולי הפתילות, ולמדה שעד הירוקה שעל פני המים הם פסולי פתילות, ומשם והלאה פסולי שמנים. העמוד הבא פותח בשאלה &quot;למאי נפקא מינה&quot;, מה יוצא למעשה מדברי רמי בר אבין.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-21a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "אמר רב כהנא קנים שאגדן צריכין רוב לא אגדן אין צריכין רוב גרעינין צריכין רוב נתנן בחותלות אין צריכין רוב", false, ""], ["G2", "תני רב יוסף ארבע מדורות אין צריכין רוב של זפת ושל גפרית ושל גבינה ושל רבב במתניתא תנא אף של קש ושל גבבא", false, ""], ["G3a", "א\"ר יוחנן עצים של בבל אין צריכין רוב", false, ""], ["G3b", "מתקיף לה רב יוסף מאי היא אילימא סילתי השתא פתילה אמר עולא המדליק צריך שידליק ברוב היוצא סילתי מבעיא", false, ""], ["G3c", "אלא אמר רב יוסף שוכא דארזא רמי בר אבא אמר זאזא:", false, ""], ["G4", "הדרן עלך יציאות השבת", false, ""], ["G5a", "במה מדליקין ובמה אין מדליקין אין מדליקין לא בלכש ולא בחוסן ולא בכלך ולא בפתילת האידן ולא בפתילת המדבר ולא בירוקה שעל פני המים ולא בזפת ולא בשעוה ולא בשמן קיק ולא בשמן שריפה ולא באליה ולא בחלב", false, "מתני׳"], ["G5b", "נחום המדי אומר מדליקין בחלב מבושל וחכ\"א אחד מבושל ואחד שאינו מבושל אין מדליקין בו:", false, ""], ["G6", "לכש שוכא דארזא שוכא דארזא עץ בעלמא הוא בעמרניתא דאית ביה:", false, "גמ׳"], ["G7", "ולא בחוסן: אמר רב יוסף נעורת של פשתן אמר ליה אביי והכתיב (ישעיהו א, לא) והיה החסון לנעורת (מכלל דחוסן לאו נעורת הוא) אלא אמר אביי כיתנא דדייק ולא נפיץ:", false, ""], ["G8", "ולא בכלך: אמר שמואל שאלתינהו לכל נחותי ימא ואמרי (לה) כולכא שמיה רב יצחק בר זעירא אמר גושקרא", false, ""], ["G9", "רבין ואביי הוו יתבי קמיה דרבנא נחמיה אחוה דריש גלותא חזייה דהוה לביש מטכסא א\"ל רבין לאביי היינו כלך דתנן א\"ל אנן שירא פרנדא קרינן ליה", false, ""], ["G10", "מיתיבי השיראים והכלך והסיריקין חייבין בציצית (תיובתא דרבין) תיובתא איבעית אימא שירא לחוד ושירא פרנדא לחוד:", false, ""], ["G11a", "ולא בפתילת האידן: אחוינא: רבין ואביי הוו קאזלו בפקתא דטמרוריתא חזינהו להנהו ארבתא אמר ליה רבין לאביי היינו אידן דתנן אמר ליה ההיא עץ בעלמא הוא קלף ואחוי ליה עמרניתא דביני ביני:", false, ""], ["G11b", "ולא בפתילת המדבר: שברא:", false, ""], ["G12", "ולא בירוקה שעל כו': מאי היא אילימא אוכמתא דחריצי איפרוכי מפרכן אלא אמר רב פפא אוכמתא דארבא", false, ""], ["G13", "תנא הוסיפו עליהן של צמר ושל שער ותנא דידן צמר מכווץ כוויץ שער איחרוכי מיחרך:", false, ""], ["G14a", "ולא בזפת: זפת זיפתא שעוה קירותא", false, ""], ["G14b", "תנא עד כאן פסול פתילות מכאן ואילך פסול שמנים פשיטא שעוה איצטריכא ליה מהו דתימא לפתילות נמי לא חזיא קא משמע לן", false, ""], ["G15", "אמר רמי בר אבין עטרנא פסולתא דזיפתא שעוה פסולתא דדובשא", false, ""]], "R": [["R1", "רב כהנא אמר קנים שאגדן צריכין רוב", "כרב הונא דלא עיילא בהן נורא ולאבדורי לא חיישינן דארוכין הן וכבדין:", false], ["R2", "גרעינין שנתנן בחותלות אין צריכין רוב", "כרב חסדא שנוחין לידלק אבל בלא חותלות מבדרי:", false], ["R3", "מדורה", "לשון היסק גדול:", false], ["R4", "רבב", "שומן ושעוה וכל דבר הניתך:", false], ["R5", "גבבא", "שגובבין מן השדה בל\"א שטובל\"א:", false], ["R6", "קש", "זנבות שבולין אשטרי\"ס:", false], ["R7", "סילתי", "לאחר שעשאום עצים דקים ובבבל נוהגין כן:", false], ["R8", "השתא פתילה", "של בגד הטבולה בשמן ונוח לידלק:", false], ["R9", "אמר עולא המדליק", "נר של שבת צריך שידליק ברוב היוצא מראש הפתילה חוץ לנר:", false], ["R10", "שוכא דארזא", "יבש הוא ודק ויש כמין צמר בין קליפה לעץ והוא מבעירו משאחזה בו אור:", false], ["R11", "זאזא", "מולש\"א בלעז:", false], ["R12", "במה מדליקין", "לעשות פתילה כל הני דמתני' מפרש בגמרא:", false], ["R13", "לא בזפת ולא בשעוה", "לאו לענין פתילה אלא לתת במקום שמן וכל הני מזפת ואילך פסולי שמנים הן:", false], ["R14", "הכי גרסינן נחום אומר מדליקין בחלב מבושל", "והוא מהותך:", false], ["R15", "גמ' עץ בעלמא הוא", "ופשיטא דלא חזי לפתילה אלא למדורה:", false], ["R16", "עמרניתא", "כמין צמר יש בין קליפתו לעצו:", false], ["R17", "והיה החסון לנעורת", "אלמא חסון לאו נעורת הוא:", false], ["R18", "כיתנא דדייק ולא נפיץ", "דכיון דלא נפיץ אין שמן נמשך אחריו נפיץ קרפר\"י לפורר ונעורת מן הדק שבו והכי קאמר קרא פשתן החזק יהפך לנעורת כלומר הגבור יהיה חלש:", false], ["R19", "גושקרא", "פסולת של משי העשוי ככובעים והוא בית התולעת וקורין לו פולויי\"ל ונופצים אותו וטווהו ועושה ממנו בגד ואסור לעשות ממנו פתילה כדאמר בכל פסולי פתילות דמתניתין שהאור מסכסכת בהן קופצת ונפסקת ואין השלהבת עומדת במקומה:", false], ["R20", "גושקרא", "על שם פסולת וגם פת סובין כמו כן נקראת במסכת גיטין (דף נו:):", false], ["R21", "מטכסא", "לבוש העשוי מאותו כלך:", false], ["R22", "שיראים", "מעיל העשוי מעיקר המשי:", false], ["R23", "סיריקין", "עשוי מן המשי הרך המתפצל ומצוי במשי וקורין לו במקומנו יד\"ש:", false], ["R24", "חייבין בציצית", "ודלא כמאן דאמר כל בגדי צמר ופשתים דוקא חייבין בציצית מדאורייתא אי נמי מדרבנן קתני מיהא השיראים והכלך אלמא שיראין לאו היינו כלך:", false], ["R25", "אחווינא", "ערבה ויש כמין צמר בין קליפה לעץ:", false], ["R26", "בפקתא", "בקעה:", false], ["R27", "עץ בעלמא הוא", "והיכי ליחזי לפתילה:", false], ["R28", "שברא", "מין עשב ארוך וקורין אותו אורטי\"א:", false], ["R29", "אוכמתא דחריצי", "מקום כנוס מים גדל עליהם כמין ירקרוקת:", false], ["R30", "איפרוכי מיפרכן", "ולא מצי ליעבד פתילה מינה:", false], ["R31", "אוכמתא דארבא", "ספינה המתעכבת במקום אחד במים גדל ירקרוקת סביב שוליה מבחוץ:", false], ["R32", "מכווץ כווץ", "מפני האור ואין דולק כלל ואין שלהבת אוחזת בו ולא צריך למתנייה:", false], ["R33", "עד כאן", "עד ירוקה שעל פני המים פסול פתילות:", false], ["R34", "מכאן ואילך פסול שמנים", "שלא יתן חתיכה זפת או שעוה בנר במקום שמן:", false], ["R35", "שעוה איצטריכא ליה", "לפי שרגילין לעשות כמין פתילה ארוכה והפתילה לתוכה כמו שאנו עושין:", false], ["R36", "מהו דתימא לפתילה נמי", "קאסר לה:", false], ["R37", "פסולתא דזיפתא", "לאחר שיוצא הזפת מן העץ זב ממנו על ידי האור פסולת צלול כשמן והוא עיטרן:", false]], "T": [["T1", "מתני' במה מדליקין כו'", "פעמים מפרש מאי דסליק מיניה ופעמים במה שהתחיל:", false], ["T2", "אחד מבושל כו'", "הכא מזכיר שאינו פשוט תחילה וכן בכמה מקומות ומה שקשה על גירסת רש\"י דסוכה [דף ז.] מפורש במקום אחר:", false], ["T3", "בעמרניתא דאית ביה", "וא\"ת הא מסיפא שמעינן ליה כל היוצא מן העץ אין מדליקין בו אלא פשתן וכן קשה גבי אידן ויש לומר דאין למדין מן הכללות אפילו במקום שנאמר בהן חוץ:", false], ["T4a", "אנן שירא פרנדא קרינן ליה", "פר\"ת דכלך דמתניתין קרינן שירא פרנדא אבל מטכסא לאו היינו שירא פרנדא דלא הוה אחר חורבן כדאמר בפ' בתרא דסוטה (דף מו:) משחרב בית המקדש בטל שמיר וזכוכית לבנה ושירא פרנדא", false], ["T4b", "", "ור\"י מפרש דקאי נמי אמטכסא והא דקאמר התם בטל לא לגמרי בטל אלא שלא היה נמצא כ\"כ דהא זכוכי' לבנה היתה אחר חורבן דאמרי' בפ' אין עומדין (ברכות דף לא.) תבר קמייהו זכוכית חיורתא בחופת בנו:", false], ["T5", "ותנא דידן צמר מכווץ כווץ ושער איחרוכי מחרך", "ולא איצטריך תנא דמתני' למיתני וא\"ת כיון דמתני' נמי סברה דצמר ושער פסולים להדלקה א\"כ מאי הוסיפו וי\"ל דהוסיפו היינו טעמא מפני שאין מושכין השמן יפה ותנא דמתניתין פסיל להו משום דצמר כוויץ ושער מחרך ולא איצטריך למתני:", false], ["T6a", "עד כאן פסול פתילות מכאן ואילך פסול שמנים", "בני נרבונא אוסרין נר שעוה שלנו ומפרשי הכי מהו דתימא לפתילות נמי לא שאם שם נר שעוה בנר שמן יהא אסור קמ\"ל מכאן ואילך פסול שמנים כיון שיש בו שמן כשר מותר אבל נר של שעוה בלא שמן אסור להדליק", false], ["T6b", "", "ולי נראה דאם אסור להדליק בלא שמן כי הניחה בשמן נמי אסור כדאמרינן לקמן כרך דבר שמדליקין על גבי דבר שאין מדליקין דאסור אלא ודאי כי לא הניח בשמן נמי שרי:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "רב כהנא, ואחריו פרק חדש", "x": "העמוד הקודם עסק במדורה בערב שבת: מתי צריך שהאש תאחוז ברובה. רב הונא אמר שקנים וגרעינים פזורים אינם צריכים רוב, ואגודים צריכים, ורב חסדא אמר להפך. העמוד נגמר במילים \"איתמר נמי\", וכאן באים דברי רב כהנא. מיד אחריהם נגמר הפרק, ומשנה חדשה פותחת את הפרק הבא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "רב כהנא: בקנים כרב הונא", "x": "רב כהנא אמר: קנים שאגד אותם צריכים רוב, ושלא אגד אינם צריכים רוב. רש\"י: בזה הוא כרב הונא, כי האש אינה נכנסת בהם. ולהתפזרות אין חוששים, כי הקנים ארוכים וכבדים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R2"], "t": "ובגרעינים כרב חסדא", "x": "גרעינים צריכים רוב, ואם נתן אותם בחותלות אינם צריכים רוב. רש\"י: בזה הוא כרב חסדא, כי בחותלות הם נוחים להידלק, ובלי חותלות הם מתפזרים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R3", "R4"], "t": "רב יוסף: ארבע מדורות", "x": "רב יוסף שנה: ארבע מדורות אינן צריכות רוב: של זפת, של גופרית, של גבינה ושל \"רבב\". רש\"י: מדורה היא היסק גדול. ורבב הוא שומן, שעווה וכל דבר שנמס.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R5", "R6"], "t": "ועוד שתיים בברייתא", "x": "\"במתניתא תנא\", בברייתא שנו: גם של קש ושל \"גבבא\". רש\"י: קש הוא זנבות השיבולים, וגבבא היא מה שמלקטים מן השדה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3a"], "t": "רבי יוחנן: עצים של בבל", "x": "רבי יוחנן אמר: עצים של בבל אינם צריכים רוב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3b", "R7", "R8", "R9"], "t": "רב יוסף: לא ייתכן שמדובר בעצים דקים", "x": "רב יוסף מקשה: מה הם העצים האלה? אם הם \"סילתי\", עצים שביקעו אותם לחתיכות דקות, שלפי רש\"י כך נוהגים בבבל, הרי עולא אמר שהמדליק נר שבת צריך שידליק ברוב הפתילה שיוצא מן הנר. אם פתילה, שנוחה להידלק, צריכה רוב, עצים דקים לא כל שכן?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3c", "R10", "R11"], "t": "שוכא דארזא, או זאזא", "x": "אלא אמר רב יוסף: \"שוכא דארזא\", ענף של ארז. רמי בר אבא אמר: \"זאזא\". רש\"י: שוכא דארזא יבש ודק, ויש בין הקליפה לעץ כמין צמר, שמבעיר אותו משאחזה בו האש.", "a": ""}, {"w": "הדף", "cols": false, "hl": ["G4"], "t": "סוף הפרק הראשון", "x": "\"הדרן עלך יציאות השבת\": כאן נגמר הפרק הראשון של המסכת, \"יציאות השבת\".", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G5a", "R12"], "t": "פרק שני: במה מדליקין", "x": "כאן מתחיל הפרק השני, \"במה מדליקין\". המשנה שואלת במה מדליקים את נר השבת ובמה אין מדליקים. רש\"י: השאלה היא ממה עושים פתילה, וכל הדברים שבמשנה מתפרשים בגמרא. אין מדליקים בלכש, בחוסן, בכלך, בפתילת האידן, בפתילת המדבר ובירוקה שעל פני המים.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G5a", "R13"], "t": "פסולי השמנים", "x": "ולא בזפת, ולא בשעווה, ולא בשמן קיק, ולא בשמן שריפה, ולא באליה ולא בחלב. רש\"י: מן הזפת והלאה אין הכוונה לפתילה, אלא למה שנותנים בנר במקום שמן. אלה הם פסולי השמנים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5a", "T1"], "t": "התוספות: המשנה מפרשת קודם את מה שסיימה בו", "x": "המשנה שאלה \"במה מדליקין ובמה אין מדליקין\", ופתחה בפירוט של השאלה השנייה: \"אין מדליקין\". התוספות כותבים: לפעמים המשנה מפרשת קודם את מה שסיימה בו, ולפעמים את מה שפתחה בו.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G5b", "R14"], "t": "נחום המדי וחכמים", "x": "נחום המדי אומר: מדליקים בחלב מבושל. רש\"י גורס כך, ומפרש: חלב מבושל הוא חלב מותך. וחכמים אומרים: אחד מבושל ואחד שאינו מבושל, אין מדליקים בו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5b", "T2"], "t": "התוספות: קודם מה שאינו פשוט", "x": "חכמים אמרו \"אחד מבושל\" והזכירו קודם את המבושל, שאיסורו אינו פשוט. התוספות מעירים שכך גם בכמה מקומות. ומה שקשה על גרסת רש\"י במסכת סוכה, מפורש במקום אחר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R15", "R16"], "t": "לכש: שוכא דארזא", "x": "\"לכש\" הוא \"שוכא דארזא\". הגמרא שואלת: שוכא דארזא הוא סתם עץ! רש\"י: וברור שאינו ראוי לפתילה, אלא למדורה. התשובה: הכוונה ל\"עמרניתא\" שיש בו, כמין צמר שבין הקליפה לעץ.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G6", "T3"], "t": "התוספות: למה המשנה מפרטת", "x": "התוספות שואלים: ממשנה שבהמשך הפרק אנו שומעים שכל היוצא מן העץ אין מדליקים בו אלא פשתן. אם כן, למה צריך להזכיר את הלכש? וכן קשה על האידן. התשובה: אין למדים מן הכללים, אפילו במקום שנאמר בהם \"חוץ\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R17"], "t": "חוסן: רב יוסף ואביי", "x": "\"ולא בחוסן\": רב יוסף אמר, נעורת של פשתן. אמר לו אביי: והרי כתוב \"והיה החסון לנעורת\". רש\"י: משמע שחסון אינו נעורת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R18"], "t": "אביי: פשתן שנכתש ולא נופץ", "x": "אלא אמר אביי: \"כיתנא דדייק ולא נפיץ\", פשתן שנכתש ולא נופץ. רש\"י: מכיון שלא נופץ, השמן אינו נמשך אחריו. נעורת היא החלק הדק שבפשתן. והפסוק פירושו: הפשתן החזק ייהפך לנעורת, כלומר החזק יהיה חלש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R19"], "t": "כלך: כולכא או גושקרא", "x": "\"ולא בכלך\": שמואל אמר, שאלתי את כל יורדי הים, ואמרו שהוא נקרא \"כולכא\". רב יצחק בר זעירא אמר: \"גושקרא\". רש\"י: זו פסולת של משי, בית התולעת. מנפצים אותה, טווים ועושים ממנה בגד. ואין עושים ממנה פתילה, כמו כל פסולי הפתילות שבמשנה, שהאש מקפצת בהם ונפסקת, ואין השלהבת עומדת במקומה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G8", "R20"], "t": "רש\"י: השם גושקרא", "x": "השם הוא על שם הפסולת. וכך נקרא במסכת גיטין גם פת של סובין.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R21"], "t": "רבין ואביי אצל רבנא נחמיה", "x": "רבין ואביי ישבו לפני רבנא נחמיה, אחיו של ראש הגולה. רבין ראה שהוא לבוש \"מטכסא\". לפי רש\"י זה בגד שעשוי מאותו כלך. אמר רבין לאביי: זה הכלך ששנינו במשנה. אמר לו אביי: אנחנו קוראים לו \"שירא פרנדא\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R22", "R23", "R24"], "t": "קושיה מדין ציצית", "x": "\"מיתיבי\", מקשים מברייתא: \"השיראים והכלך והסיריקין חייבים בציצית\". רש\"י: הברייתא מונה את השיראים ואת הכלך בנפרד, ומכאן ששיראים אינם כלך. \"תיובתא\", זו קושיה שדוחה את הדברים, ולפי המילים שבסוגריים בדף היא קושיה על רבין, שאמר שבגד המשי הזה הוא הכלך. \"איבעית אימא\", ואם תרצה אמור: \"שירא\" לחוד, ו\"שירא פרנדא\" לחוד. כלומר השיראים שבברייתא הם \"שירא\", והכלך הוא \"שירא פרנדא\", מין אחר, ואין קושיה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G9", "T4a"], "t": "התוספות: רבנו תם", "x": "רבנו תם מפרש: את הכלך שבמשנה אנחנו קוראים \"שירא פרנדא\". אבל ה\"מטכסא\" שלבש רבנא נחמיה אינו שירא פרנדא, כי שירא פרנדא לא היה אחרי החורבן. כך נאמר במסכת סוטה: משחרב בית המקדש בטלו השמיר, הזכוכית הלבנה והשירא פרנדא.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G9", "T4b"], "t": "התוספות: רבנו יצחק", "x": "רבנו יצחק מפרש שדברי אביי עוסקים גם במטכסא. ומה שנאמר שם \"בטל\", אין פירושו שבטל לגמרי, אלא שלא היה מצוי כל כך. שהרי זכוכית לבנה הייתה גם אחרי החורבן, כמו שמסופר במסכת ברכות על מי ששבר לפניהם זכוכית לבנה בחופת בנו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11a", "R25", "R26"], "t": "פתילת האידן: אחוינא", "x": "\"ולא בפתילת האידן\": \"אחוינא\". רש\"י: זו ערבה, ויש בה כמין צמר בין הקליפה לעץ. רבין ואביי הלכו בבקעה של טמרוריתא, וראו שם \"ארבתא\", ערבות. רבין אמר שאלה הן האידן שבמשנה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11a", "R27"], "t": "הצמר שבין הקליפה לעץ", "x": "אמר לו אביי: זה סתם עץ! רש\"י: ואיך יתאים לפתילה? רבין קילף את הקליפה והראה לו את ה\"עמרניתא\", כמין צמר שבין הקליפה לעץ.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11b", "R28"], "t": "פתילת המדבר: שברא", "x": "\"ולא בפתילת המדבר\": \"שברא\". רש\"י: מין עשב ארוך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R29", "R30"], "t": "ירוקה: לא של החריצים", "x": "\"ולא בירוקה שעל פני המים\": מה היא? אם היא \"אוכמתא דחריצי\", הירקרוקת שגדלה לפי רש\"י במקום שמים נקווים, הרי היא מתפוררת, ואי אפשר לעשות ממנה פתילה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R31"], "t": "רב פפא: של הספינה", "x": "אלא אמר רב פפא: \"אוכמתא דארבא\". רש\"י: ספינה שעומדת במקום אחד במים, גדלה סביב תחתיתה מבחוץ ירקרוקת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R32"], "t": "צמר ושער", "x": "\"תנא\", שנו בברייתא: הוסיפו עליהם של צמר ושל שער. והתנא של המשנה שלנו לא מנה אותם, כי צמר מתכווץ ושער נחרך. רש\"י: הצמר מתכווץ מפני האש ואינו דולק כלל, והשלהבת אינה אוחזת בו, ולכן אין צורך לשנות אותו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G13", "T5"], "t": "התוספות: מה \"הוסיפו\"", "x": "התוספות שואלים: אם גם המשנה סוברת שצמר ושער פסולים, מה \"הוסיפו\"? התשובה: הברייתא פוסלת אותם מפני שאינם מושכים את השמן היטב. והתנא של המשנה פוסל אותם מפני שהצמר מתכווץ והשער נחרך, ולכן לא היה צריך לשנות אותם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14a"], "t": "זפת ושעווה", "x": "\"ולא בזפת\": זפת היא \"זיפתא\", ושעווה היא \"קירותא\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14b", "R33", "R34"], "t": "פסולי פתילות ופסולי שמנים", "x": "\"תנא\", שנו: עד כאן פסולי פתילות, מכאן והלאה פסולי שמנים. רש\"י: עד \"ירוקה שעל פני המים\" הם פסולי פתילות. ומכאן והלאה הכוונה שלא ייתן בנר חתיכת זפת או שעווה במקום שמן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14b", "R35", "R36"], "t": "למה צריך לומר זאת", "x": "\"פשיטא\", זה ברור! הגמרא עונה: הדבר נצרך בשביל השעווה. \"מהו דתימא\", היית אומר שגם לפתילה אינה ראויה, \"קא משמע לן\", לכן משמיעים לנו שהיא פסולה רק כשמן. רש\"י: נוהגים לעשות משעווה כמין פתילה ארוכה והפתילה בתוכה, כמו שאנו עושים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G14b", "T6a"], "t": "התוספות: בני נרבונא אוסרים", "x": "אנשי נרבונא אוסרים את נר השעווה שלנו. לפי פירושם, הגמרא אומרת: היית אומר שאם שם נר שעווה בתוך נר של שמן יהיה אסור. \"קא משמע לן\" שזה רק פסול שמנים, וכיון שיש שם שמן כשר מותר. אבל נר שעווה בלי שמן אסור להדליק.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G14b", "T6b"], "t": "התוספות: ולי נראה שמותר", "x": "התוספות חולקים: אילו היה אסור להדליק נר שעווה בלי שמן, גם כשהניח אותו בשמן היה אסור. כך אומרים בהמשך: מי שכרך דבר שמדליקים בו על גבי דבר שאין מדליקים בו, אסור. אלא ודאי, גם כשלא הניח אותו בשמן, מותר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R37"], "t": "רמי בר אבין: עטרן ושעווה", "x": "רמי בר אבין אמר: \"עטרנא\", עטרן, הוא פסולת של זפת, ושעווה היא פסולת של דבש. רש\"י: אחרי שהזפת יוצאת מן העץ, זב ממנו על ידי האש נוזל צלול כמו שמן, והוא העטרן.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "הפרק הראשון נגמר בדיני הרוב במדורות, והפרק השני נפתח במשנה \"במה מדליקין\": פתילות ושמנים שאין מדליקים בהם את נר השבת. הגמרא זיהתה את פסולי הפתילות, ולמדה שעד הירוקה שעל פני המים הם פסולי פתילות, ומשם והלאה פסולי שמנים. העמוד הבא פותח בשאלה \"למאי נפקא מינה\", מה יוצא למעשה מדברי רמי בר אבין.", "a": ""}], "audio": "shabbat/daf-20b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

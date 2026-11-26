@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף נ&quot;ז עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-57a.html">
+<meta name="description" content="מסכת שבת, דף נ&quot;ז עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף נ\"ז עמוד א'", "url": "https://gemara.co.il/shabbat-57a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף נ&quot;ז עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>במה אשה</span><span>פרק שישי</span><span>שבת<b>נז.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-56b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-57b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 111</div>
+  <h1>מסכת שבת, דף נ&quot;ז עמוד א&#x27;</h1>
+  <p class="sub">פרק שישי, &quot;במה אשה&quot;. פתיחת הפרק: במה אשה יוצאת בשבת. חוטי צמר ופשתן בשערה, הגזירה משום טבילה, ומה חוצץ בטבילה.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף נ&quot;ז עמוד א&#x27;, לומדים: פתיחת הפרק: במה אשה אינה יוצאת; למה המשנה מזכירה טבילה; "תיכי חלילתא": דבר ארוג ודבר שמקפידים עליו; חוטים בראשי הבנות ובצוואר.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 4 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. פתיחת הפרק: במה אשה אינה יוצאת</a><a href="#u2">2. למה המשנה מזכירה טבילה</a><a href="#u3">3. "תיכי חלילתא": דבר ארוג ודבר שמקפידים עליו</a><a href="#u4">4. חוטים בראשי הבנות ובצוואר</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4,G5">
+  <div class="kicker">יחידה 1 · משנה</div>
+  <h2>פתיחת הפרק: במה אשה אינה יוצאת</h2>
+  <p class="lead">הפרק השישי נפתח במשנה שמונה דברים שאשה לא תצא בהם בשבת לרשות הרבים: חוטים ורצועות בשער, תכשיטי ראש, וכמה תכשיטים אחרים. ובסוף: אם יצאה, אינה חייבת חטאת.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>במה אשה יוצאה ובמה אינה יוצאה</td><td>במה אשה יוצאת, ובמה אינה יוצאת.</td></tr>
+      <tr><td>לא תצא אשה לא בחוטי צמר</td><td>לא תצא אשה בחוטי צמר,</td></tr>
+      <tr><td>ולא בחוטי פשתן ולא ברצועות שבראשה</td><td>ולא בחוטי פשתן, ולא ברצועות שבראשה,</td></tr>
+      <tr><td>ולא תטבול בהן עד שתרפם</td><td>ולא תטבול בהן עד שתרפה אותן.</td></tr>
+      <tr><td>ולא בטוטפת ולא בסרביטין</td><td>ולא בטוטפת ולא בסרביטין,</td></tr>
+      <tr><td>בזמן שאינן תפורים</td><td>בזמן שאינם תפורים,</td></tr>
+      <tr><td>ולא בכבול לרה"ר</td><td>ולא בכבול לרשות הרבים.</td></tr>
+      <tr><td>ולא בעיר של זהב ולא בקטלא</td><td>ולא ב"עיר של זהב", ולא בקטלא,</td></tr>
+      <tr><td>ולא בנזמים</td><td>ולא בנזמים,</td></tr>
+      <tr><td>ולא בטבעת שאין עליה חותם</td><td>ולא בטבעת שאין עליה חותם,</td></tr>
+      <tr><td>ולא במחט שאינה נקובה</td><td>ולא במחט שאין בה חור.</td></tr>
+      <tr><td>ואם יצאת אינה חייבת חטאת</td><td>ואם יצאה, אינה חייבת חטאת.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>מה המשנה שואלת:</b> במה אשה יוצאת בשבת לרשות הרבים. תכשיט שעל הגוף אינו נחשב משא, אבל חכמים גזרו על חלק מן התכשיטים.</p>
+  <p><b>הרשימה:</b> חוטי צמר ופשתן ורצועות שקולעת בהם את שערה; טוטפת וסרביטין כשאינם תפורים; כבול לרשות הרבים; עיר של זהב, קטלא, נזמים, טבעת בלי חותם ומחט בלי חור. ובאמצע הרשימה נאמר שלא תטבול בחוטים עד שתרפה אותם.</p>
+  <p><b>הסיום:</b> אם יצאה באחד מהם, אינה חייבת חטאת. מן התורה אלה תכשיטים, והאיסור הוא גזירה של חכמים.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' במה אשה יוצאה – דהוי תכשיט ולא משוי ואיכא דהוי תכשיט וגזור ביה רבנן דילמא שלפא ומחויא לחברתה חשיבותו ודילמא אתי לאיתויי ד' אמות:</blockquote><p><span class="say">מה רש"י אומר:</span> יש תכשיטים שחכמים גזרו עליהם, שמא תוריד אותם להראות לחברתה כמה הם חשובים, ותבוא לשאת אותם ארבע אמות ברשות הרבים.</p></div>
+  <div data-hl="R4,R5" class="voice r"><span class="tag">רש"י</span><blockquote>ולא תטבול בהן – משום חציצה:</blockquote><blockquote>עד שתרפם – שתתירם קצת שיהיו רפויין ויכנסו המים ביניהם לשער:</blockquote><p><span class="say">מה רש"י אומר:</span> "ולא תטבול בהן" משום חציצה. עליה להתיר אותם מעט, כדי שהמים ייכנסו ביניהם אל השער.</p></div>
+  <div data-hl="R7" class="voice r"><span class="tag">רש"י</span><blockquote>בזמן שאין תפורין – עם השבכה שקורין שקופיי"א אבל תפורין ליכא למיחש לאחוויי שאינה נוטלת השבכה מראשה ברה"ר שתגלה כל שערה:</blockquote><p><span class="say">מה רש"י אומר:</span> טוטפת וסרביטין שתפורים לשבכה מותרים, כי לא תסיר את השבכה ברשות הרבים ותגלה את כל שערה.</p></div>
+  <div data-hl="R14" class="voice r"><span class="tag">רש"י</span><blockquote>ואם יצאת אינה חייבת חטאת – דכולהו תכשיטין נינהו ורבנן הוא דגזור בהו דילמא שלפא ומחויא:</blockquote><p><span class="say">מה רש"י אומר:</span> אינה חייבת חטאת, כי כולם תכשיטים, ורק חכמים גזרו בהם שמא תוריד ותראה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>כבול: לחצר מותר</h3>
+    <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>לרה"ר – אבל לחצר שרי וכל הנזכרים למעלה אסורים אף לחצר שמא תרגילם ברה"ר וחדא גזירה היא דגזור בהם שלא תתקשט בהם בשבת כלל ובכבול התירו כדמפרש לקמן בפרקין (שבת דף סד:) שלא לאסור את כל תכשיטיה ותתגנה על בעלה:</blockquote><p><span class="say">מה רש"י אומר:</span> כל הדברים שלפני הכבול אסורים גם בחצר, שמא תתרגל ותצא בהם לרשות הרבים, וגזרו שלא תתקשט בהם בשבת כלל. בכבול התירו לחצר, כדי שלא לאסור את כל תכשיטיה ותתגנה על בעלה.</p></div>
+    <p>לכן המילים "לרשות הרבים" נאמרו במשנה רק על הכבול. בשאר הדברים האיסור כולל גם את החצר.</p>
+  </div>
+  <p class="godeep">למה המשנה אומרת "לרשות הרבים" רק על הכבול? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה אינה חייבת חטאת אם יצאה?</summary><p>כי אלה תכשיטים, והאיסור הוא גזירת חכמים.</p></details>
+  <details><summary>ממה חששו חכמים בתכשיטים?</summary><p>שמא תוריד אותם להראות לחברתה, ותשא אותם ארבע אמות ברשות הרבים.</p></details>
+  <details><summary>מתי מותר לצאת בטוטפת ובסרביטין, לפי המשנה ורש"י?</summary><p>כשהם תפורים לשבכה.</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה התירו כבול בחצר?</summary><p>כדי שלא לאסור את כל תכשיטיה ותתגנה על בעלה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G6,G7">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>למה המשנה מזכירה טבילה</h2>
+  <p class="lead">הגמרא שואלת מה עניין טבילה להלכות שבת. התשובה: האיסור לצאת בחוטים בשבת נובע מדין הטבילה בחול.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>טבילה מאן דכר שמה</td><td>טבילה, מי הזכיר את שמה?</td></tr>
+      <tr><td>מה טעם קאמר</td><td>המשנה נותנת טעם:</td></tr>
+      <tr><td>מה טעם לא תצא אשה</td><td>מה הטעם שלא תצא אשה</td></tr>
+      <tr><td>מפני שאמרו חכמים בחול</td><td>מפני שאמרו חכמים: בחול</td></tr>
+      <tr><td>לא תטבול בהן עד שתרפם</td><td>לא תטבול בהן עד שתרפה אותן.</td></tr>
+      <tr><td>בשבת לא תצא</td><td>בשבת לא תצא,</td></tr>
+      <tr><td>דילמא מיתרמי לה טבילה של מצוה</td><td>שמא תזדמן לה טבילה של מצווה,</td></tr>
+      <tr><td>ושריא להו</td><td>ותתיר אותן,</td></tr>
+      <tr><td>ואתי לאתויינהו ד' אמות ברה"ר</td><td>ותבוא לשאת אותן ארבע אמות ברשות הרבים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>השאלה:</b> המשנה עוסקת בהלכות שבת. למה היא אומרת "ולא תטבול בהן עד שתרפם"?</p>
+  <p><b>התשובה של רב נחמן בר יצחק בשם רבה בר אבוה:</b> המשנה נותנת טעם. בחול אסור לטבול בחוטים עד שירפו. לכן בשבת לא תצא בהם, שמא תזדמן לה טבילה של מצווה, תתיר אותם, ותשא אותם ארבע אמות ברשות הרבים.</p>
+  <p><b>הגזירה כשרשרת:</b> הטבילה עצמה מותרת בשבת. החשש הוא ממה שיבוא אחריה: התרת החוטים, ונשיאתם.</p>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>גמ' טבילה מאן דכר שמה – מה ענין טבילה אצל הלכות שבת:</blockquote><p><span class="say">מה רש"י אומר:</span> השאלה "מאן דכר שמה" פירושה: מה עניין טבילה להלכות שבת?</p></div>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>ושריא להו – ומתרת אותם לטבול בשבת שעל הטבילה לא גזרו כדאמרינן במסכת ביצה (דף יח.) אדם נראה כמיקר ואין נראה כמתקן עצמו:</blockquote><p><span class="say">מה רש"י אומר:</span> על הטבילה בשבת לא גזרו, כמו שאמרו במסכת ביצה: האדם נראה כמי שמתקרר במים, ואינו נראה כמי שמתקן את עצמו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>אילו חוטים בכלל הגזירה</h3>
+    <div data-hl="T1a" class="voice t"><span class="tag">תוספות</span><blockquote>מתני' במה אשה כו' לא בחוטי צמר – מפרש בגמ' משום דילמא מיתרמי לה טבילה של מצוה ושרי להו ואתי לאתויינהו ארבע אמות ברה"ר אומר ר"י דהיינו דוקא בחוטין שאינן נתונין בקליעת השער אבל חוטין הנתונין בקליעת השער יוצאה בהן דבהנהו ליכא למיגזר דילמא שריא להו כדתנן בהמצניע (לקמן שבת דף צד:) דאיכא לכל הפחות איסור שבות בגודלת וסברא הוא דכי היכי דיש איסור בעשיית קליעה ה"נ יש איסור בסתירת קליעה</blockquote><p><span class="say">מה התוספות אומרים:</span> רבי יצחק אומר שהגזירה היא רק בחוטים שאינם בתוך קליעת השער. בחוטים קלועים אין לגזור שמא תתיר, כי בשבת יש לפחות איסור דרבנן בסתירת קליעה, כמו שיש איסור בעשייתה, ולכן לא תסתור אותה.</p></div>
+    <div data-hl="T1b" class="voice t"><span class="tag">תוספות</span><blockquote>וא"ת מהאי טעמא תהא אשה אסורה לצאת בטלית דהא ודאי שריא לה בשעת טבילה וניחוש דילמא אתי לאתויי וי"ל דבדברים שהם עיקר מלבוש ליכא למיגזר דאפילו בחול אין דרך ללכת כלל ממקומו עד שילבישם אלא דוקא בדברים קטנים יש לחוש שאין מקפיד אם אינם עליו ורגילות הוא בחול כשמתירן פעמים נושאן בידו עד ביתו</blockquote><p><span class="say">מה התוספות אומרים:</span> ולמה לא גוזרים על טלית, שגם אותה מסירים בטבילה? כי בבגד שהוא עיקר הלבוש אין חשש. אדם אינו זז ממקומו עד שילבש אותו. רק דברים קטנים, שלא אכפת לה אם אינם עליה, היא נושאת לפעמים בידה עד ביתה.</p></div>
+    <h3>הכלל של רבי יצחק</h3>
+    <div data-hl="T1c" class="voice t"><span class="tag">תוספות</span><blockquote>ונראה לר"י דדוקא בדברים שרגילות להסירן כדי להראותן או משום חציצה או משום קפידא גזרו שלא לצאת דשמא כשיסיר ישכח שהוא שבת ואתי לאתויי אבל דברים שמותר לצאת בהן שאין רגילות להסירן מותר לקשור ולהתיר ברה"ר דליכא למיחש למידי דאם יהא זכור שבת בשעת התרה לא אתי לאתויי ואם לא יהיה זכור שבת אפילו נאסר להתיר ולהסיר לא יועיל</blockquote><p><span class="say">מה התוספות אומרים:</span> גזרו רק בדברים שרגילות להסיר: כדי להראות, משום חציצה, או משום הקפדה. בהם יש חשש שתשכח שהיום שבת. אבל דבר שאין רגילות להסירו, מותר לקשור ולהתיר אפילו ברשות הרבים. אם תזכור שהיום שבת, לא תשא אותו, ואם לא תזכור, גם איסור התרה לא יועיל.</p></div>
+    <div data-hl="T1d" class="voice t"><span class="tag">תוספות</span><blockquote>וכ"מ לקמן (שבת דף סא.) דקתני בברייתא וקושר ומתיר קמיע אפילו ברה"ר והא דאיצטריך התם לאשמעי' דשרי אע"פ שכל דבר מותר להסיר כדפרישית איצטריך לאשמעינן דלא אסרינן משום דמיחזי דקושרו עליו שלא לרפואה ומתכוין להוציא כי היכי דאסור בפילפל וגרגיר מלח לכתחילה לתת בפה בשבת או להחזיר אלא כמלבוש גמור חשיב מחמת הרפואה:</blockquote><p><span class="say">מה התוספות אומרים:</span> וכך משמע מן הברייתא שקושר ומתיר קמיע אפילו ברשות הרבים. ואף שכל דבר כזה מותר להסיר, שם הוצרכו ללמד זאת, כדי שלא נאסור משום שנראה שהוא קושר אותו שלא לרפואה ומתכוון להוציא. הקמיע נחשב כמו לבוש גמור, מפני הרפואה.</p></div>
+  </div>
+  <p class="godeep">לפי התוספות, למה לא גוזרים על טלית? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה שואלת הגמרא בפתיחתה?</summary><p>"טבילה מאן דכר שמה": מה עניין טבילה להלכות שבת?</p></details>
+  <details><summary>מה החשש בשבת?</summary><p>שמא תזדמן לה טבילה של מצווה, תתיר את החוטים ותשא אותם ארבע אמות ברשות הרבים.</p></details>
+  <details><summary>האם מותר לטבול בשבת?</summary><p>כן. על הטבילה עצמה לא גזרו.</p></details>
+  <details class="deepq"><summary>לפי רבי יצחק בתוספות, האם מותר לצאת בחוטים שקלועים בשער?</summary><p>כן, כי אין לחשוש שתתיר אותם.</p></details>
+  <details class="deepq"><summary>לפי התוספות, באילו דברים גזרו?</summary><p>בדברים שרגילות להסיר: כדי להראות, משום חציצה או משום הקפדה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G8,G9,G10,G11">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>"תיכי חלילתא": דבר ארוג ודבר שמקפידים עליו</h2>
+  <p class="lead">רב כהנא שואל על שרשראות חוטים חלולות. יש שתי לשונות בתשובה, ומחלוקת ביניהן במקרה שהחוטים התלכלכו.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>בעא מיניה רב כהנא מרב</td><td>שאל רב כהנא את רב:</td></tr>
+      <tr><td>תיכי חלילתא מאי</td><td>שרשראות חלולות, מה דינן?</td></tr>
+      <tr><td>א"ל אריג קאמרת</td><td>אמר לו: על דבר ארוג אתה שואל?</td></tr>
+      <tr><td>כל שהוא אריג לא גזרו</td><td>כל דבר ארוג, לא גזרו.</td></tr>
+      <tr><td>ואיכא דאמרי</td><td>ויש אומרים:</td></tr>
+      <tr><td>חזינא לאחוותי דלא קפדן עלייהו</td><td>ראיתי את אחיותי, שאינן מקפידות עליהן.</td></tr>
+      <tr><td>מאי איכא בין הך לישנא ובין הך לישנא</td><td>מה ההבדל בין הלשון הזו ללשון הזו?</td></tr>
+      <tr><td>איכא בינייהו דטניפן</td><td>ההבדל ביניהן: כשהן מלוכלכות.</td></tr>
+      <tr><td>הני נמי ארוג</td><td>גם אלה ארוגות.</td></tr>
+      <tr><td>ולהך לישנא דאמרת משום קפידא</td><td>וללשון שאמרת "משום הקפדה",</td></tr>
+      <tr><td>כיון דטניפא מקפד קפדא עלייהו</td><td>כיוון שהן מלוכלכות, היא מקפידה עליהן.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>השאלה:</b> "תיכי חלילתא" הן שרשראות חוטים חלולות ועגולות. האם מותר לקלוע בהן את השער ולצאת בשבת?</p>
+  <p><b>לשון א':</b> כל דבר ארוג, לא גזרו. כך אמר רב, וכך אמר גם רב הונא בנו של רב יהושע. <b>לשון ב':</b> רב הונא בנו של רב יהושע אמר שאחיותיו אינן מקפידות עליהן.</p>
+  <p><b>ההבדל:</b> כשהחוטים מלוכלכים. לפי הלשון הראשונה, גם הם ארוגים, ומותר. לפי הלשון השנייה, כשהם מלוכלכים האשה מקפידה עליהם, ואסור.</p>
+  <div data-hl="R17,R18" class="voice r"><span class="tag">רש"י</span><blockquote>תיכי חלילתא – שרשרות של חוטין חלולות ועגולות:</blockquote><blockquote>מהו – לקלוע בהן שערה ולצאת בשבת שאינה יכולה למותחן ולדוחקן על השער בחזקה והמים נכנסין בה ומיבעיא ליה מי הוי חציצה ולא תצא בהן בשבת משום גזירת טבילה מצוה או לא הוי חציצה:</blockquote><p><span class="say">מה רש"י אומר:</span> השרשראות האלה אי אפשר למתוח ולהדק בחוזק על השער, והמים נכנסים. השאלה היא אם יש בהן חציצה, ואז אסור לצאת בהן משום הגזירה של טבילה, או שאין בהן חציצה.</p></div>
+  <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>כל שהוא אריג לא גזרו – לצאת בו בשבת דלענין חציצה לא חייץ דלא מצי לאהדוקי שפיר:</blockquote><p><span class="say">מה רש"י אומר:</span> דבר ארוג אינו חוצץ, כי אי אפשר להדק אותו היטב. לכן לא גזרו לצאת בו.</p></div>
+  <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>לאחוותי דלא קפדן עלייהו – ליטלן מראשן כשהן רוחצות בחמין אלמא עיילי בהו מיא שפיר אפילו להנאת רחיצה וכיון שכן לענין טבילה נמי לא צריכין להתירן ומותר לצאת בהן בשבת דהא אי מתרמי טבילה לא שרו להו לא משום חציצה ולא משום קפידא:</blockquote><p><span class="say">מה רש"י אומר:</span> הן אינן מסירות אותן כשרוחצות במים חמים, ומשמע שהמים נכנסים בהן היטב. לכן גם בטבילה לא יתירו אותן, לא משום חציצה ולא משום הקפדה, ומותר לצאת בהן.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה ההקפדה בחוטים מלוכלכים</h3>
+    <div data-hl="R21,R22a" class="voice r"><span class="tag">רש"י</span><blockquote>דמיטנפי – שנטנפו הנך תיכי בטיט:</blockquote><blockquote>הא נמי אריג הוא – והא קאמר לא גזרו כלל לצאת ולהאי לישנא דלא קפדי משמע דאי קפדי לנטלן מראשן כשהן רוחצות אסור לצאת בהן בשבת ואע"ג דלענין איהדוקי לא חייצי ומותרות לטבול בהן הלכך הני כיון דמיטנפי מקפד קפדן שלא להיות בראשן בשעת טבילתן מפני שהמים ממחין את הטיט ומלכלך בשרן בעלייתן מן הטבילה ואע"ג דחציצה לא הוי דהא עיילי בהו מיא מיהו כיון דשקלי לה משום טינוף אתי לאיתויינהו ואסור לצאת …</blockquote><p><span class="say">מה רש"י אומר:</span> החוטים התלכלכו בטיט. בטבילה המים ממיסים את הטיט, והוא מלכלך את בשרה כשהיא עולה, ולכן היא מסירה אותם. אין זו חציצה, שהרי המים נכנסים. אבל כיוון שהיא מסירה אותם, היא עלולה לשאת אותם, ולכן לפי הלשון השנייה אסור לצאת בהם.</p></div>
+    <p>לפי רש"י, לפי הלשון הראשונה הגזירה תלויה בחציצה בלבד. לפי הלשון השנייה היא תלויה גם בהקפדה, כי כל דבר שהאשה מסירה עלול לבוא לידי נשיאה.</p>
+    <h3>רש"י חולק על רבותיו</h3>
+    <div data-hl="R22b" class="voice r"><span class="tag">רש"י</span><blockquote>ורבותי מפרשין הך קפידא לענין חציצה כדקי"ל רובו ומקפיד עליו חוצץ (עירובין דף ד:) וקשיא לי בגוה טובא חדא דכי איתמר ההוא במידי דמיהדק איתמר ואשמעינן דאע"ג דלא עיילי ביה מיא כיון דלא קפיד עליה חשיב כגופיה ובטל לגבי שערו אבל במידי דלא מיהדק ועיילי ביה מיא מאי חוצץ איכא למימר הא לאו חוצץ הוא ואי אתית למימר דההוא חוצץ דהתם לא דק בלישניה ומיהו כל מידי דקפיד עלייהו אסור היכי אמרינן הכא …</blockquote><p><span class="say">מה רש"י אומר:</span> רבותיו פירשו שההקפדה היא לעניין חציצה, לפי הכלל "רובו ומקפיד עליו חוצץ". רש"י מקשה: הכלל ההוא נאמר בדבר מהודק, שהמים אינם נכנסים בו, וכאן המים נכנסים. ועוד, אילו הקפדה הייתה עושה חציצה גם כאן, הלשון הראשונה לא הייתה מתירה חוטים מלוכלכים משום שהם ארוגים, כי רב הונא בנו של רב יהושע לא בא לחלוק על הלכה למשה מסיני.</p></div>
+  </div>
+  <p class="godeep">לפי רש"י, האם ההקפדה כאן עושה את החוטים לחוצצים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מהן "תיכי חלילתא"?</summary><p>שרשראות של חוטים, חלולות ועגולות.</p></details>
+  <details><summary>מה הכלל בלשון הראשונה?</summary><p>כל דבר ארוג, לא גזרו.</p></details>
+  <details><summary>במה שתי הלשונות חלוקות?</summary><p>כשהחוטים מלוכלכים: לראשונה מותר, לשנייה אסור.</p></details>
+  <details class="deepq"><summary>לפי רש"י, למה אשה מסירה חוטים מלוכלכים בטבילה?</summary><p>כי המים ממיסים את הטיט, והוא מלכלך את בשרה כשהיא עולה.</p></details>
+  <details class="deepq"><summary>מה הקושיה הראשונה של רש"י על רבותיו?</summary><p>הכלל של "רובו ומקפיד" נאמר בדבר מהודק, וכאן המים נכנסים.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G12a,G12b,G13,G14,G15,G16,G17">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>חוטים בראשי הבנות ובצוואר</h2>
+  <p class="lead">משנה במסכת מקוואות מונה חוטים שחוצצים בטבילה. רב הונא אומר שזה רק בראשי הבנות, ורב יוסף מחפש מה בא להוציא, ומגיע לטעם שאין אשה חונקת את עצמה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ואלו חוצצין באדם</td><td>ואלה חוצצים באדם:</td></tr>
+      <tr><td>חוטי צמר וחוטי פשתן והרצועות שבראשי הבנות</td><td>חוטי צמר, חוטי פשתן, והרצועות שבראשי הבנות.</td></tr>
+      <tr><td>ר' יהודה אומר של צמר ושל שער אין חוצצין</td><td>רבי יהודה אומר: של צמר ושל שער אינם חוצצים,</td></tr>
+      <tr><td>מפני שהמים באין בהן</td><td>מפני שהמים באים בהם.</td></tr>
+      <tr><td>וכולן בראשי הבנות שנינו</td><td>וכולם בראשי הבנות שנינו.</td></tr>
+      <tr><td>מתקיף לה רב יוסף למעוטי מאי</td><td>מקשה רב יוסף: להוציא מה?</td></tr>
+      <tr><td>אילימא למעוטי דצואר</td><td>אם תאמר: להוציא את אלה שבצוואר,</td></tr>
+      <tr><td>השתא רך על גבי קשה חוצץ</td><td>עכשיו, רך על גבי קשה חוצץ,</td></tr>
+      <tr><td>רך על גבי רך מיבעיא</td><td>רך על גבי רך, האם צריך לומר?</td></tr>
+      <tr><td>קשה על גבי רך מיבעיא</td><td>קשה על גבי רך, האם צריך לומר?</td></tr>
+      <tr><td>לפי שאין אשה חונקת את עצמה</td><td>מפני שאין אשה חונקת את עצמה.</td></tr>
+      <tr><td>הבנות יוצאות בחוטין שבאזניהן</td><td>הבנות יוצאות בחוטים שבאוזניהן,</td></tr>
+      <tr><td>אבל לא בחבקין שבצואריהן</td><td>אבל לא בחבקים שבצווארן.</td></tr>
+      <tr><td>חבקין שבצואריהן אמאי לא</td><td>חבקים שבצווארן, למה לא?</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה במקוואות:</b> חוטי צמר, חוטי פשתן והרצועות שבראשי הבנות חוצצים בטבילה. רבי יהודה אומר שחוטי צמר ושער אינם חוצצים, כי המים באים בהם. ורב הונא אומר שכל אלה נשנו בראשי הבנות בלבד.</p>
+  <p><b>הקושיה של רב יוסף:</b> מה בא רב הונא להוציא? אם חוטים שבצוואר, אז אם בשער, הקשה, הם חוצצים, בבשר, הרך, ודאי יחצצו. כך בצמר, שהוא רך, וכך בפשתן, שהוא קשה. בשני המקרים הצוואר צריך להיות חמור יותר, לא קל.</p>
+  <p><b>התשובה:</b> רב יוסף עצמו אומר: אשה אינה חונקת את עצמה. היא קושרת חוטים בצוואר ברפיון, ולכן שם אינם חוצצים.</p>
+  <p><b>קושיית אביי:</b> ברייתא אומרת שהבנות יוצאות בחוטים שבאוזניהן, אבל לא בחבקים שבצווארן. אם אשה אינה חונקת את עצמה, למה החבקים אסורים? רבינא מתחיל לענות, ותשובתו בעמוד הבא.</p>
+  <div data-hl="R25,R26" class="voice r"><span class="tag">רש"י</span><blockquote>וכולן בראשי הבנות שנינו – לא תימא שבראשי הבנות ארצועות לחודייהו קאי אלא אחוטין נמי קאי:</blockquote><blockquote>הבנות קטנות – ואורחא דמילתא נקט:</blockquote><p><span class="say">מה רש"י אומר:</span> "וכולן בראשי הבנות" נאמר גם על החוטים, ולא רק על הרצועות. ו"הבנות" הן קטנות, והמשנה דיברה בהן מפני שכך רגיל.</p></div>
+  <div data-hl="R29,R30,R31,R32" class="voice r"><span class="tag">רש"י</span><blockquote>ודמאי – הי חוטין אתא למעוטי דלא חייצי בצואר צמר קרוי רך לגבי פשתן ולגבי שער:</blockquote><blockquote>על גבי קשה – שער:</blockquote><blockquote>ע"ג רך – בשר:</blockquote><blockquote>מיבעיא – בתמיה הא ודאי על גבי רך טפי מיהדק:</blockquote><p><span class="say">מה רש"י אומר:</span> צמר נקרא רך לעומת פשתן ושער. ה"קשה" הוא השער, וה"רך" הוא הבשר. "מיבעיא" נאמר בתמיהה: על הבשר החוט ודאי מהודק יותר.</p></div>
+  <div data-hl="R33" class="voice r"><span class="tag">רש"י</span><blockquote>לפי שאין אשה חונקת עצמה – להדק חוטין בצוארה וקושרתן בריוח שיהו רפין:</blockquote><p><span class="say">מה רש"י אומר:</span> אשה אינה מהדקת חוטים על צווארה, אלא קושרת אותם בריווח, שיהיו רפויים.</p></div>
+  <div data-hl="R34,R35" class="voice r"><span class="tag">רש"י</span><blockquote>בחוטין שבאזניהם – שנותנין שם שלא יסתם הנקב:</blockquote><blockquote>חבקין – ענקי רצועות שאינן מוזהבות רחבות דלאו לתכשיט עבידן דומיא דחוטין שבאזניהן:</blockquote><p><span class="say">מה רש"י אומר:</span> את החוטים שבאוזניים שמים כדי שהנקב לא ייסתם. חבקים הם ענקים של רצועות רחבות שאינן מוזהבות, ואינם עשויים לתכשיט.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה רב הונא בא להוציא דבר מה</h3>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>השתא רך על גבי קשה חוצץ כו' – וא"ת דילמא רב הונא נקט וכולן בראשי הבנות לרבותא דאפילו בראשי הבנות דהוי רך ע"ג קשה חוצץ ואור"י דבלאו רב הונא הוה ידעינן דבכל מקום חוצצין אפילו בראש אלא ודאי למעוטי שום דבר אתא:</blockquote><p><span class="say">מה התוספות אומרים:</span> ואולי רב הונא בא לחדש שאפילו בראשי הבנות, שהם רך על קשה, החוטים חוצצים? רבי יצחק עונה: זאת היינו יודעים גם בלעדיו. אלא ודאי בא להוציא משהו.</p></div>
+    <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>השתא קשה ע"ג קשה חוצץ – סבר הש"ס דקשה ע"ג רך חייץ טפי מקשה ע"ג קשה ורך ע"ג קשה לא חייץ כקשה ע"ג קשה דהא לר' יהודה חוטי צמר אין חוצצין דהוי רך על גבי קשה וחוטי פשתן דהוי קשה ע"ג קשה חוצצין וחוטי שיער דהוי נמי קשה על גבי קשה לכ"ע אין חוצצין אף על פי שחוטי פשתן חוצצין לכולי עלמא:</blockquote><p><span class="say">מה התוספות אומרים:</span> הגמרא מניחה שקשה על רך חוצץ יותר מקשה על קשה, ושרך על קשה חוצץ פחות מקשה על קשה. כך לרבי יהודה: צמר על השער אינו חוצץ, ופשתן על השער חוצץ. והתוספות מעירים שחוטי שער, שגם הם קשה על קשה, אינם חוצצים לדעת הכול.</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>אלא א"ר יוסף – לפי שרב יוסף בעצמו מקשה שייך לומר אלא:</blockquote><p><span class="say">מה התוספות אומרים:</span> המילה "אלא" מתאימה כאן, כי רב יוסף עצמו הקשה, ועכשיו הוא עצמו מציע הסבר.</p></div>
+    <p>כך המהלך: רב יוסף שולל את ההסבר שהחוט עצמו קובע, ועובר לטעם שתלוי בדרך שבה האשה קושרת. בצוואר היא קושרת ברפיון, ולכן אין חציצה, בלי קשר לסוג החוט.</p>
+  </div>
+  <p class="godeep">למה רב יוסף אינו מקבל שרב הונא בא להוציא חוטים בצוואר מסיבת הרכות או הקשיות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אומר רבי יהודה על חוטי צמר ושער?</summary><p>שאינם חוצצים, כי המים באים בהם.</p></details>
+  <details><summary>מה אמר רב הונא?</summary><p>שכל אלה, גם החוטים, נשנו בראשי הבנות.</p></details>
+  <details><summary>מה הטעם של רב יוסף?</summary><p>שאין אשה חונקת את עצמה, ולכן בצוואר החוטים רפויים.</p></details>
+  <details><summary>מה הקשה אביי?</summary><p>למה הבנות אינן יוצאות בחבקים שבצווארן, אם אשה אינה חונקת את עצמה?</p></details>
+  <details class="deepq"><summary>לפי התוספות, מה חוצץ יותר: קשה על רך או קשה על קשה?</summary><p>קשה על רך.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>פרק חדש:</b> "במה אשה יוצאה". המשנה מונה חוטים, רצועות ותכשיטים שאשה לא תצא בהם בשבת, ואם יצאה אינה חייבת חטאת.</li>
+      <li><b>הגזירה משום טבילה:</b> בחול לא תטבול בחוטים עד שתרפם. לכן בשבת לא תצא בהם, שמא תתיר לטבילה ותשא אותם.</li>
+      <li><b>התוספות:</b> הגזירה היא בדברים קטנים שרגילות להסיר, ולא בחוטים קלועים בשער או בבגד שהוא עיקר הלבוש.</li>
+      <li><b>"כל שהוא אריג לא גזרו":</b> ולפי לשון אחרת, הכל תלוי בהקפדה, וההבדל הוא בחוטים מלוכלכים.</li>
+      <li><b>חציצה בטבילה:</b> חוטי צמר ופשתן ורצועות חוצצים, ולרבי יהודה צמר ושער אינם חוצצים. רב הונא: רק בראשי הבנות.</li>
+      <li><b>אין אשה חונקת את עצמה:</b> כך מסביר רב יוסף למה בצוואר החוטים אינם חוצצים.</li>
+      <li><b>נשאר פתוח:</b> אביי הקשה מן החבקים שבצוואר, ורבינא עונה בעמוד הבא.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>במה אשה יוצאה</td><td>במה מותר לאשה לצאת לרשות הרבים בשבת</td></tr>
+      <tr><td>שתרפם</td><td>שתרפה אותם, תשחרר אותם מעט</td></tr>
+      <tr><td>חציצה</td><td>דבר שמפריד בין הגוף למים בטבילה</td></tr>
+      <tr><td>מאן דכר שמה</td><td>מי הזכיר את שמה? כלומר מה עניינה לכאן</td></tr>
+      <tr><td>מה טעם קאמר</td><td>המשנה נותנת טעם</td></tr>
+      <tr><td>דילמא מיתרמי לה</td><td>שמא יזדמן לה</td></tr>
+      <tr><td>אריג</td><td>ארוג</td></tr>
+      <tr><td>לא גזרו</td><td>חכמים לא גזרו</td></tr>
+      <tr><td>לא קפדן</td><td>אינן מקפידות</td></tr>
+      <tr><td>מאי איכא בינייהו</td><td>מה ההבדל ביניהם</td></tr>
+      <tr><td>תנן התם</td><td>שנינו שם, במשנה אחרת</td></tr>
+      <tr><td>למעוטי מאי</td><td>להוציא מה</td></tr>
+      <tr><td>השתא · מיבעיא</td><td>עכשיו · האם צריך לומר? לשון של כל שכן</td></tr>
+      <tr><td>איתיביה</td><td>הקשה עליו מברייתא</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-56b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-57b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף נ&quot;ז עמוד א&#x27;, לומדים: פתיחת הפרק: במה אשה אינה יוצאת; למה המשנה מזכירה טבילה; "תיכי חלילתא": דבר ארוג ודבר שמקפידים עליו; חוטים בראשי הבנות ובצוואר.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (36 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · פרק חדש: &quot;במה אשה&quot;</h3><p>בעמוד הקודם נסתיים הפרק החמישי, &quot;במה בהמה&quot;, שעסק במה שבהמה יוצאת בו בשבת. כאן נפתח הפרק השישי במשנה חדשה: במה אשה יוצאת בשבת לרשות הרבים, ובמה אינה יוצאת. הגמרא שואלת למה המשנה מזכירה טבילה, ומשם עוברת לדיני חציצה בטבילה.</p></li><li><h3><span class="w">משנה</span> · פתיחת הפרק: במה אשה יוצאה</h3><p>&quot;מתניתין&quot;, המשנה הפותחת את הפרק השישי: במה אשה יוצאת ובמה אינה יוצאת. רש&quot;י מפרש: יש דברים שהם תכשיט ולא משא, ומותר לצאת בהם. ויש תכשיטים שחכמים גזרו עליהם, שמא תוריד אותם כדי להראות לחברתה כמה הם חשובים, ותבוא לשאת אותם ארבע אמות ברשות הרבים.</p></li><li><h3><span class="w">משנה</span> · חוטים ורצועות שבראשה</h3><p>לא תצא אשה בחוטי צמר, בחוטי פשתן, או ברצועות שבראשה. רש&quot;י מפרש: אלה חוטים ורצועות שקולעת בהם את שערה. והמילה &quot;שבראשה&quot; נאמרה על כולם, והגמרא תפרש את הטעם.</p></li><li><h3><span class="w">משנה</span> · &quot;ולא תטבול בהן עד שתרפם&quot;</h3><p>וגם לא תטבול כשהם עליה, עד שתרפה אותם. רש&quot;י מפרש: משום חציצה. עליה להתיר אותם מעט, כדי שיהיו רפויים, והמים ייכנסו ביניהם אל השער.</p><p>חציצה היא דבר שמפריד בין הגוף למי המקווה, ופוסל את הטבילה.</p></li><li><h3><span class="w">משנה</span> · טוטפת וסרביטין שאינם תפורים</h3><p>ולא תצא בטוטפת ובסרביטין, בזמן שאינם תפורים. רש&quot;י מפרש: הגמרא תסביר מה הם. הם חשובים, ויש לחשוש שתוריד אותם להראות. אם הם תפורים לשבכה, אין חשש, כי לא תסיר את השבכה ברשות הרבים ותגלה את כל שערה.</p><p>השבכה היא רשת שאשה מכסה בה את שערה.</p></li><li><h3><span class="w">משנה</span> · ולא בכבול לרשות הרבים</h3><p>ולא תצא בכבול לרשות הרבים. מהו כבול, רש&quot;י כותב שהגמרא תפרש. ועל &quot;לרשות הרבים&quot; הוא מפרש: לחצר מותר. כל הדברים שלפני כן אסורים גם לחצר, שמא תתרגל ותצא בהם לרשות הרבים. וגזרו שלא תתקשט בהם בשבת כלל. ובכבול התירו לחצר, כמו שיתפרש בהמשך הפרק, כדי שלא לאסור את כל תכשיטיה ותתגנה על בעלה.</p></li><li><h3><span class="w">משנה</span> · עיר של זהב וקטלא</h3><p>ולא תצא ב&quot;עיר של זהב&quot; ולא בקטלא. רש&quot;י מפרש: עיר של זהב היא מעין סיכת נוי, שמציירים בה צורה כמו של עיר. ואת הקטלא מפרשת הגמרא בהמשך.</p></li><li><h3><span class="w">משנה</span> · נזמים, טבעת ומחט</h3><p>ולא בנזמים, ולא בטבעת שאין עליה חותם, ולא במחט שאין בה חור. רש&quot;י מפרש: החותם הוא צורה שחותמים בה מכתב או כל דבר סגור. ומחט שאינה נקובה היא סיכה.</p></li><li><h3><span class="w">משנה</span> · ואם יצאה, אינה חייבת חטאת</h3><p>ואם יצאה באחד מהם, אינה חייבת קרבן חטאת. רש&quot;י מסביר: כולם תכשיטים, ולכן מן התורה אין בהם איסור. רק חכמים גזרו בהם, שמא תוריד ותראה לחברתה.</p></li><li><h3><span class="w">גמרא</span> · &quot;טבילה מאן דכר שמה&quot;</h3><p>&quot;מאן דכר שמה&quot;, מי הזכיר את שמה? רש&quot;י מפרש: מה עניין טבילה להלכות שבת?</p></li><li><h3><span class="w">גמרא</span> · הטעם: גזירה משום טבילה</h3><p>רב נחמן בר יצחק אמר בשם רבה בר אבוה: המשנה נותנת טעם. למה לא תצא בחוטי צמר ופשתן? כי חכמים אמרו שבחול לא תטבול בהם עד שתרפה אותם. ולכן בשבת לא תצא בהם, שמא תזדמן לה טבילה של מצווה, תתיר אותם, ותבוא לשאת אותם ארבע אמות ברשות הרבים.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: והרי טובלים בשבת</h3><p>&quot;ושריא להו&quot;, ותתיר אותם כדי לטבול בשבת. על הטבילה עצמה לא גזרו, כמו שאמרו במסכת ביצה: האדם נראה כמי שמתקרר במים, ואינו נראה כמי שמתקן את עצמו.</p></li><li><h3><span class="w">תוספות</span> · התוספות: חוטים שבתוך הקליעה</h3><p>רבי יצחק אומר: הגזירה היא רק בחוטים שאינם בתוך קליעת השער. בחוטים שקלועים בשער מותר לצאת, כי בהם אין לגזור שמא תתיר אותם. בפרק &quot;המצניע&quot; שנינו שיש לפחות איסור דרבנן בקליעת שער בשבת, ומסתבר שכמו שיש איסור בעשיית קליעה, כך יש איסור בסתירתה. לכן היא לא תסתור את הקליעה בשבת.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ולמה לא גוזרים על טלית?</h3><p>ואם תאמר: לפי הטעם הזה, גם בטלית לא תצא, שהרי ודאי תסיר אותה בשעת הטבילה? התשובה: בבגדים שהם עיקר הלבוש אין לגזור, כי אפילו בחול אדם אינו זז ממקומו עד שילבש אותם. רק בדברים קטנים יש לחשוש. לא אכפת לה אם אינם עליה, ובחול כשהיא מתירה אותם, פעמים שהיא נושאת אותם בידה עד ביתה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: אילו דברים גזרו</h3><p>ורבי יצחק מוסיף: גזרו רק בדברים שרגילות להסיר, כדי להראות, משום חציצה, או משום שהן מקפידות עליהם. בהם יש חשש שכשתסיר, תשכח שהיום שבת ותשא אותם. אבל דבר שמותר לצאת בו ואין רגילות להסירו, מותר לקשור ולהתיר אפילו ברשות הרבים. אם תזכור שהיום שבת, לא תשא אותו. ואם לא תזכור, גם איסור להתיר לא יועיל.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ראיה מקמיע</h3><p>וכך משמע בהמשך הפרק, בברייתא שאומרת שקושר ומתיר קמיע אפילו ברשות הרבים. ואם כל דבר כזה מותר להסיר, למה הברייתא הוצרכה ללמד זאת בקמיע? כדי שלא נאסור משום שנראה שהוא קושר אותו שלא לרפואה ומתכוון להוציא, כמו שאסור לכתחילה לתת פלפל או גרגיר מלח בפה בשבת, או להחזיר אותם. אלא הקמיע נחשב כמו לבוש גמור, מפני הרפואה.</p></li><li><h3><span class="w">גמרא</span> · רב כהנא שואל: &quot;תיכי חלילתא&quot;</h3><p>רב כהנא שאל את רב: &quot;תיכי חלילתא&quot;, מה דינם? רש&quot;י מפרש: שרשראות של חוטים, חלולות ועגולות. השאלה היא אם מותר לקלוע בהן את השער ולצאת בשבת. אי אפשר למתוח ולהדק אותן בחוזק על השער, והמים נכנסים. האם זו חציצה, ואסור לצאת בהן משום הגזירה של טבילה, או לא?</p></li><li><h3><span class="w">גמרא</span> · &quot;כל שהוא אריג לא גזרו&quot;</h3><p>רב ענה: &quot;אריג קאמרת&quot;, על דבר ארוג אתה שואל? כל דבר ארוג, לא גזרו. וכך אמר גם רב הונא בנו של רב יהושע. רש&quot;י מפרש: לא גזרו לצאת בו בשבת, כי לעניין חציצה הוא אינו חוצץ, שהרי אי אפשר להדק אותו היטב.</p></li><li><h3><span class="w">גמרא</span> · לשון אחרת: &quot;אחיותי אינן מקפידות&quot;</h3><p>&quot;ואיכא דאמרי&quot;, ויש אומרים: רב הונא בנו של רב יהושע אמר: ראיתי את אחיותי, שאינן מקפידות עליהן. רש&quot;י מפרש: הן אינן מסירות אותן מן הראש כשרוחצות במים חמים. משמע שהמים נכנסים בהן היטב, ולכן גם לטבילה אין צורך להתיר אותן. ומותר לצאת בהן, כי אם תזדמן טבילה, לא יתירו אותן, לא משום חציצה ולא משום הקפדה.</p></li><li><h3><span class="w">גמרא</span> · מה בין שתי הלשונות</h3><p>&quot;מאי איכא בינייהו&quot;, מה ההבדל? ההבדל הוא כשהחוטים התלכלכו בטיט. לפי הלשון &quot;כל שהוא אריג לא גזרו&quot;, גם אלה ארוגים, ומותר. ולפי הלשון שתולה בהקפדה, כשהם מלוכלכים היא מקפידה עליהם, ואסור.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: למה מקפידה על חוטים מלוכלכים</h3><p>כשהם מלוכלכים, היא אינה רוצה שיהיו בראשה בשעת הטבילה, כי המים ממיסים את הטיט, והוא מלכלך את בשרה כשהיא עולה. אין כאן חציצה, שהרי המים נכנסים. אבל כיוון שהיא מסירה אותם בגלל הלכלוך, היא עלולה לשאת אותם, ולכן אסור לצאת בהם. ולפי הלשון הראשונה, גזרו רק בדבר שחוצץ לטבילה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: דוחה את פירוש רבותיו</h3><p>רבותיו של רש&quot;י פירשו שההקפדה כאן היא לעניין חציצה, לפי הכלל &quot;רובו ומקפיד עליו חוצץ&quot;: דבר שנמצא על רובו של האדם, והוא מקפיד עליו, חוצץ. רש&quot;י מקשה על כך. א&#x27;: הכלל ההוא נאמר בדבר מהודק. הוא מלמד שאף שהמים אינם נכנסים בו, אם האדם אינו מקפיד עליו, הוא נחשב כגופו ובטל אל שערו. אבל דבר שאינו מהודק והמים נכנסים בו, אינו חוצץ כלל. ב&#x27;: ואם תאמר שכל דבר שמקפידים עליו אסור בטבילה, איך אומרת הלשון הראשונה שגם החוטים המלוכלכים מותרים, כי הם ארוגים? הרי ברור שעל המלוכלכים היא מקפידה, ואם כן הם חוצצים. ורב הונא בנו של רב יהושע לא בא לחלוק על הלכה למשה מסיני.</p></li><li><h3><span class="w">גמרא</span> · המשנה במקוואות: אלו חוצצין באדם</h3><p>&quot;תנן התם&quot;, שנינו שם, במסכת מקוואות: אלה חוצצים באדם: חוטי צמר, חוטי פשתן, והרצועות שבראשי הבנות. רבי יהודה אומר: של צמר ושל שער אינם חוצצים, כי המים באים בהם. רש&quot;י מפרש: מפני ששנויה שם גם רשימה של &quot;אלו חוצצין בכלים&quot;, נאמר על טבילת אדם &quot;ואלו חוצצין באדם&quot;.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: דעת רבי יהודה</h3><p>חוטים של צמר ושל שער אינם מהודקים על השער, ולכן המים נכנסים.</p></li><li><h3><span class="w">גמרא</span> · רב הונא: &quot;וכולן בראשי הבנות&quot;</h3><p>רב הונא אמר: כל אלה שנינו בראשי הבנות. רש&quot;י מפרש: אל תאמר ש&quot;בראשי הבנות&quot; נאמר רק על הרצועות. הוא נאמר גם על החוטים. ו&quot;הבנות&quot; הן קטנות, והמשנה דיברה בהן מפני שכך רגיל.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף: את מה בא למעט?</h3><p>רב יוסף מקשה: &quot;למעוטי מאי&quot;, מה בא רב הונא להוציא? אם בא להוציא חוטים שקשורים בצוואר, שבהם אינם חוצצים, באילו חוטים מדובר? רש&quot;י מפרש: רב הונא לימד שגם החוטים נשנו בראשי הבנות, ומשמע שבמקום אחר אינם חוצצים.</p></li><li><h3><span class="w">גמרא</span> · אם חוטי צמר: רך על רך</h3><p>אם כוונתו לחוטי צמר, יש קושיה. &quot;השתא&quot;, עכשיו, אם רך על קשה חוצץ, רך על רך לא כל שכן? רש&quot;י מפרש: צמר נקרא רך לעומת פשתן ושער. ה&quot;קשה&quot; הוא השער, ה&quot;רך&quot; הוא הבשר. ועל הבשר, הרך, החוט ודאי מהודק יותר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: ואולי רב הונא בא לחדש?</h3><p>ואם תאמר: אולי רב הונא אמר &quot;וכולן בראשי הבנות&quot; כדי לחדש, שאפילו בראשי הבנות, שהוא רך על קשה, הם חוצצים? רבי יצחק עונה: גם בלי רב הונא היינו יודעים שהם חוצצים בכל מקום, אפילו בראש. אלא ודאי הוא בא להוציא דבר מה.</p></li><li><h3><span class="w">גמרא</span> · אם חוטי פשתן: קשה על רך</h3><p>ואם כוונתו להוציא חוטי פשתן, חוזרת אותה קושיה בכיוון אחר. פשתן על השער הוא קשה על גבי קשה, והוא חוצץ. על הבשר הוא קשה על גבי רך, ושם ודאי יחצוץ.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מה חוצץ יותר</h3><p>הגמרא מניחה שקשה על רך חוצץ יותר מקשה על קשה. ורך על קשה אינו חוצץ כמו קשה על קשה. כי לרבי יהודה חוטי צמר, שהם רך על קשה, אינם חוצצים, וחוטי פשתן, שהם קשה על קשה, חוצצים. והתוספות מעירים שחוטי שער, שגם הם קשה על קשה, לדעת הכול אינם חוצצים, אף שחוטי פשתן חוצצים לדעת הכול.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף: אין אשה חונקת את עצמה</h3><p>&quot;אלא&quot;, כך אמר רב יוסף: זה טעמו של רב הונא, מפני שאין אשה חונקת את עצמה. רש&quot;י מפרש: היא אינה מהדקת חוטים על צווארה, אלא קושרת אותם בריווח, שיהיו רפויים. לכן בצוואר אינם חוצצים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה &quot;אלא&quot;</h3><p>התוספות מעירים שהמילה &quot;אלא&quot; מתאימה כאן, כי רב יוסף עצמו הקשה קודם, ועכשיו הוא עצמו מציע הסבר אחר.</p></li><li><h3><span class="w">גמרא</span> · אביי מקשה מברייתא</h3><p>&quot;איתיביה אביי&quot;, אביי הקשה על רב יוסף: הבנות יוצאות בחוטים שבאוזניהן, אבל לא ב&quot;חבקין&quot; שבצווארן. ואם אין אשה חונקת את עצמה, למה אסור לצאת בחבקין שבצוואר? רש&quot;י מפרש: את החוטים שבאוזניים שמים כדי שהנקב לא ייסתם.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: מהם &quot;חבקין&quot;</h3><p>חבקין הם ענקים של רצועות רחבות, שאינן מוזהבות. הם אינם עשויים לתכשיט, כמו החוטים שבאוזניים. והמילה מלשון &quot;חבק&quot;, רצועה שקושרים בה סוס.</p></li><li><h3><span class="w">גמרא</span> · רבינא עונה</h3><p>&quot;אמר רבינא&quot;, רבינא פותח בתשובה לקושיה של אביי, ותשובתו באה בעמוד הבא.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>פרק &quot;במה אשה&quot; נפתח במשנה שמונה מה אשה אינה יוצאת בו בשבת. הגמרא הסבירה שחוטי צמר ופשתן נאסרו משום טבילה של מצווה, ודנה בדבר ארוג ובדבר שמקפידים עליו. רב הונא אמר שהחוטים חוצצים רק בראשי הבנות, ורב יוסף הסביר שבצוואר אשה אינה חונקת את עצמה. על כך הקשה אביי מן החבקין, ובראש העמוד הבא רבינא עונה שמדובר בקטלא.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-57b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "במה אשה יוצאה ובמה אינה יוצאה", false, "מתני׳"], ["G2", "לא תצא אשה לא בחוטי צמר ולא בחוטי פשתן ולא ברצועות שבראשה ולא תטבול בהן עד שתרפם", false, ""], ["G3", "ולא בטוטפת ולא בסרביטין בזמן שאינן תפורים ולא בכבול לרה\"ר", false, ""], ["G4", "ולא בעיר של זהב ולא בקטלא ולא בנזמים ולא בטבעת שאין עליה חותם ולא במחט שאינה נקובה", false, ""], ["G5", "ואם יצאת אינה חייבת חטאת:", false, ""], ["G6", "טבילה מאן דכר שמה", false, "גמ׳"], ["G7", "אמר רב נחמן בר יצחק אמר רבה בר אבוה מה טעם קאמר מה טעם לא תצא אשה לא בחוטי צמר ולא בחוטי פשתן מפני שאמרו חכמים בחול לא תטבול בהן עד שתרפם וכיון דבחול לא תטבול בהן עד שתרפם בשבת לא תצא דילמא מיתרמי לה טבילה של מצוה ושריא להו ואתי לאתויינהו ד' אמות ברה\"ר", false, ""], ["G8", "בעא מיניה רב כהנא מרב תיכי חלילתא מאי א\"ל אריג קאמרת כל שהוא אריג לא גזרו איתמר נמי אמר רב הונא בריה דרב יהושע כל שהוא אריג לא גזרו", true, ""], ["G9", "ואיכא דאמרי אמר רב הונא בריה דרב יהושע חזינא לאחוותי דלא קפדן עלייהו", false, ""], ["G10", "מאי איכא בין הך לישנא ובין הך לישנא", false, ""], ["G11", "איכא בינייהו דטניפן להך לישנא דאמר כל שהוא אריג לא גזרו הני נמי ארוג ולהך לישנא דאמרת משום קפידא כיון דטניפא מקפד קפדא עלייהו", false, ""], ["G12a", "תנן התם ואלו חוצצין באדם חוטי צמר וחוטי פשתן והרצועות שבראשי הבנות ר' יהודה אומר של צמר ושל שער אין חוצצין מפני שהמים באין בהן", true, ""], ["G12b", "אמר רב הונא וכולן בראשי הבנות שנינו", false, ""], ["G13", "מתקיף לה רב יוסף למעוטי מאי אילימא למעוטי דצואר ודמאי אילימא למעוטי דצמר השתא רך על גבי קשה חוצץ רך על גבי רך מיבעיא", false, ""], ["G14", "ואלא למעוטי דחוטי פשתן השתא קשה על גבי קשה חוצץ קשה על גבי רך מיבעיא", false, ""], ["G15", "אלא אמר רב יוסף היינו טעמא דרב הונא לפי שאין אשה חונקת את עצמה", false, ""], ["G16", "איתיביה אביי הבנות יוצאות בחוטין שבאזניהן אבל לא בחבקין שבצואריהן ואי אמרת אין אשה חונקת עצמה חבקין שבצואריהן אמאי לא", false, ""], ["G17", "אמר רבינא", false, ""]], "R": [["R1", "מתני' במה אשה יוצאה", "דהוי תכשיט ולא משוי ואיכא דהוי תכשיט וגזור ביה רבנן דילמא שלפא ומחויא לחברתה חשיבותו ודילמא אתי לאיתויי ד' אמות:", false], ["R2", "לא בחוטי צמר ופשתן ורצועה שבראשה", "שקולעת בהן שערה:", false], ["R3", "שבראשה", "אכולהו קאי ובגמ' מפרש טעמא:", false], ["R4", "ולא תטבול בהן", "משום חציצה:", false], ["R5", "עד שתרפם", "שתתירם קצת שיהיו רפויין ויכנסו המים ביניהם לשער:", false], ["R6", "טוטפת וסרביטין", "מפרש בגמרא וחשובין הן וחיישינן דילמא שלפא ומחויא לחברתה:", false], ["R7", "בזמן שאין תפורין", "עם השבכה שקורין שקופיי\"א אבל תפורין ליכא למיחש לאחוויי שאינה נוטלת השבכה מראשה ברה\"ר שתגלה כל שערה:", false], ["R8", "כבול", "מפרש בגמ':", false], ["R9", "לרה\"ר", "אבל לחצר שרי וכל הנזכרים למעלה אסורים אף לחצר שמא תרגילם ברה\"ר וחדא גזירה היא דגזור בהם שלא תתקשט בהם בשבת כלל ובכבול התירו כדמפרש לקמן בפרקין (שבת דף סד:) שלא לאסור את כל תכשיטיה ותתגנה על בעלה:", false], ["R10", "עיר של זהב", "כמין נושקא ומציירין בה כמין עיר:", false], ["R11", "קטלא", "מפרש בגמרא (לקמן שבת דף נט:):", false], ["R12", "חותם", "צורה לחתום בה איגרת או כל דבר סגור:", false], ["R13", "שאינה נקובה", "כגון אישפיגל\"א:", false], ["R14", "ואם יצאת אינה חייבת חטאת", "דכולהו תכשיטין נינהו ורבנן הוא דגזור בהו דילמא שלפא ומחויא:", false], ["R15", "גמ' טבילה מאן דכר שמה", "מה ענין טבילה אצל הלכות שבת:", false], ["R16", "ושריא להו", "ומתרת אותם לטבול בשבת שעל הטבילה לא גזרו כדאמרינן במסכת ביצה (דף יח.) אדם נראה כמיקר ואין נראה כמתקן עצמו:", false], ["R17", "תיכי חלילתא", "שרשרות של חוטין חלולות ועגולות:", false], ["R18", "מהו", "לקלוע בהן שערה ולצאת בשבת שאינה יכולה למותחן ולדוחקן על השער בחזקה והמים נכנסין בה ומיבעיא ליה מי הוי חציצה ולא תצא בהן בשבת משום גזירת טבילה מצוה או לא הוי חציצה:", false], ["R19", "כל שהוא אריג לא גזרו", "לצאת בו בשבת דלענין חציצה לא חייץ דלא מצי לאהדוקי שפיר:", false], ["R20", "לאחוותי דלא קפדן עלייהו", "ליטלן מראשן כשהן רוחצות בחמין אלמא עיילי בהו מיא שפיר אפילו להנאת רחיצה וכיון שכן לענין טבילה נמי לא צריכין להתירן ומותר לצאת בהן בשבת דהא אי מתרמי טבילה לא שרו להו לא משום חציצה ולא משום קפידא:", false], ["R21", "דמיטנפי", "שנטנפו הנך תיכי בטיט:", false], ["R22a", "הא נמי אריג הוא", "והא קאמר לא גזרו כלל לצאת ולהאי לישנא דלא קפדי משמע דאי קפדי לנטלן מראשן כשהן רוחצות אסור לצאת בהן בשבת ואע\"ג דלענין איהדוקי לא חייצי ומותרות לטבול בהן הלכך הני כיון דמיטנפי מקפד קפדן שלא להיות בראשן בשעת טבילתן מפני שהמים ממחין את הטיט ומלכלך בשרן בעלייתן מן הטבילה ואע\"ג דחציצה לא הוי דהא עיילי בהו מיא מיהו כיון דשקלי לה משום טינוף אתי לאיתויינהו ואסור לצאת בהן וללישנא קמא לא גזרו אלא במידי דחייץ לטבילה", false], ["R22b", "", "ורבותי מפרשין הך קפידא לענין חציצה כדקי\"ל רובו ומקפיד עליו חוצץ (עירובין דף ד:) וקשיא לי בגוה טובא חדא דכי איתמר ההוא במידי דמיהדק איתמר ואשמעינן דאע\"ג דלא עיילי ביה מיא כיון דלא קפיד עליה חשיב כגופיה ובטל לגבי שערו אבל במידי דלא מיהדק ועיילי ביה מיא מאי חוצץ איכא למימר הא לאו חוצץ הוא ואי אתית למימר דההוא חוצץ דהתם לא דק בלישניה ומיהו כל מידי דקפיד עלייהו אסור היכי אמרינן הכא האי נמי אריג הוא ומותר כיון דפשיטא לן דהיכא דמיטנפי מקפד קפדן על כרחיך חייץ דהא רב הונא בריה דרב יהושע אהלכה למשה מסיני לא אתא לאיפלוגי:", false], ["R23", "ואלו חוצצין באדם", "משום דתני התם אלו חוצצין בכלים תני לענין טבילת אדם ואלו חוצצין באדם:", false], ["R24", "של צמר ושל שער אין חוצצין", "דלא מיהדק על גבי שער:", false], ["R25", "וכולן בראשי הבנות שנינו", "לא תימא שבראשי הבנות ארצועות לחודייהו קאי אלא אחוטין נמי קאי:", false], ["R26", "הבנות קטנות", "ואורחא דמילתא נקט:", false], ["R27", "למעוטי מאי", "אשמעינן רב הונא דחוטין נמי בראשי הבנות שנינו:", false], ["R28", "אילימא למעוטי", "חוטין הקשורין בצוארן דלא חייצי:", false], ["R29", "ודמאי", "הי חוטין אתא למעוטי דלא חייצי בצואר צמר קרוי רך לגבי פשתן ולגבי שער:", false], ["R30", "על גבי קשה", "שער:", false], ["R31", "ע\"ג רך", "בשר:", false], ["R32", "מיבעיא", "בתמיה הא ודאי על גבי רך טפי מיהדק:", false], ["R33", "לפי שאין אשה חונקת עצמה", "להדק חוטין בצוארה וקושרתן בריוח שיהו רפין:", false], ["R34", "בחוטין שבאזניהם", "שנותנין שם שלא יסתם הנקב:", false], ["R35", "חבקין", "ענקי רצועות שאינן מוזהבות רחבות דלאו לתכשיט עבידן דומיא דחוטין שבאזניהן:", false], ["R36", "חבקין", "לשון קילקלי וחבק (לקמן שבת דף סד.) צינגל\"א לאסור בו סוס:", false]], "T": [["T1a", "מתני' במה אשה כו' לא בחוטי צמר", "מפרש בגמ' משום דילמא מיתרמי לה טבילה של מצוה ושרי להו ואתי לאתויינהו ארבע אמות ברה\"ר אומר ר\"י דהיינו דוקא בחוטין שאינן נתונין בקליעת השער אבל חוטין הנתונין בקליעת השער יוצאה בהן דבהנהו ליכא למיגזר דילמא שריא להו כדתנן בהמצניע (לקמן שבת דף צד:) דאיכא לכל הפחות איסור שבות בגודלת וסברא הוא דכי היכי דיש איסור בעשיית קליעה ה\"נ יש איסור בסתירת קליעה", false], ["T1b", "", "וא\"ת מהאי טעמא תהא אשה אסורה לצאת בטלית דהא ודאי שריא לה בשעת טבילה וניחוש דילמא אתי לאתויי וי\"ל דבדברים שהם עיקר מלבוש ליכא למיגזר דאפילו בחול אין דרך ללכת כלל ממקומו עד שילבישם אלא דוקא בדברים קטנים יש לחוש שאין מקפיד אם אינם עליו ורגילות הוא בחול כשמתירן פעמים נושאן בידו עד ביתו", false], ["T1c", "", "ונראה לר\"י דדוקא בדברים שרגילות להסירן כדי להראותן או משום חציצה או משום קפידא גזרו שלא לצאת דשמא כשיסיר ישכח שהוא שבת ואתי לאתויי אבל דברים שמותר לצאת בהן שאין רגילות להסירן מותר לקשור ולהתיר ברה\"ר דליכא למיחש למידי דאם יהא זכור שבת בשעת התרה לא אתי לאתויי ואם לא יהיה זכור שבת אפילו נאסר להתיר ולהסיר לא יועיל", false], ["T1d", "", "וכ\"מ לקמן (שבת דף סא.) דקתני בברייתא וקושר ומתיר קמיע אפילו ברה\"ר והא דאיצטריך התם לאשמעי' דשרי אע\"פ שכל דבר מותר להסיר כדפרישית איצטריך לאשמעינן דלא אסרינן משום דמיחזי דקושרו עליו שלא לרפואה ומתכוין להוציא כי היכי דאסור בפילפל וגרגיר מלח לכתחילה לתת בפה בשבת או להחזיר אלא כמלבוש גמור חשיב מחמת הרפואה:", false], ["T2", "השתא רך על גבי קשה חוצץ כו'", "וא\"ת דילמא רב הונא נקט וכולן בראשי הבנות לרבותא דאפילו בראשי הבנות דהוי רך ע\"ג קשה חוצץ ואור\"י דבלאו רב הונא הוה ידעינן דבכל מקום חוצצין אפילו בראש אלא ודאי למעוטי שום דבר אתא:", false], ["T3", "השתא קשה ע\"ג קשה חוצץ", "סבר הש\"ס דקשה ע\"ג רך חייץ טפי מקשה ע\"ג קשה ורך ע\"ג קשה לא חייץ כקשה ע\"ג קשה דהא לר' יהודה חוטי צמר אין חוצצין דהוי רך על גבי קשה וחוטי פשתן דהוי קשה ע\"ג קשה חוצצין וחוטי שיער דהוי נמי קשה על גבי קשה לכ\"ע אין חוצצין אף על פי שחוטי פשתן חוצצין לכולי עלמא:", false], ["T4", "אלא א\"ר יוסף", "לפי שרב יוסף בעצמו מקשה שייך לומר אלא:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "פרק חדש: \"במה אשה\"", "x": "בעמוד הקודם נסתיים הפרק החמישי, \"במה בהמה\", שעסק במה שבהמה יוצאת בו בשבת. כאן נפתח הפרק השישי במשנה חדשה: במה אשה יוצאת בשבת לרשות הרבים, ובמה אינה יוצאת. הגמרא שואלת למה המשנה מזכירה טבילה, ומשם עוברת לדיני חציצה בטבילה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G1", "R1"], "t": "פתיחת הפרק: במה אשה יוצאה", "x": "\"מתניתין\", המשנה הפותחת את הפרק השישי: במה אשה יוצאת ובמה אינה יוצאת. רש\"י מפרש: יש דברים שהם תכשיט ולא משא, ומותר לצאת בהם. ויש תכשיטים שחכמים גזרו עליהם, שמא תוריד אותם כדי להראות לחברתה כמה הם חשובים, ותבוא לשאת אותם ארבע אמות ברשות הרבים.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G2", "R2", "R3"], "t": "חוטים ורצועות שבראשה", "x": "לא תצא אשה בחוטי צמר, בחוטי פשתן, או ברצועות שבראשה. רש\"י מפרש: אלה חוטים ורצועות שקולעת בהם את שערה. והמילה \"שבראשה\" נאמרה על כולם, והגמרא תפרש את הטעם.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G2", "R4", "R5"], "t": "\"ולא תטבול בהן עד שתרפם\"", "x": "וגם לא תטבול כשהם עליה, עד שתרפה אותם. רש\"י מפרש: משום חציצה. עליה להתיר אותם מעט, כדי שיהיו רפויים, והמים ייכנסו ביניהם אל השער.", "a": "חציצה היא דבר שמפריד בין הגוף למי המקווה, ופוסל את הטבילה."}, {"w": "משנה", "cols": false, "hl": ["G3", "R6", "R7"], "t": "טוטפת וסרביטין שאינם תפורים", "x": "ולא תצא בטוטפת ובסרביטין, בזמן שאינם תפורים. רש\"י מפרש: הגמרא תסביר מה הם. הם חשובים, ויש לחשוש שתוריד אותם להראות. אם הם תפורים לשבכה, אין חשש, כי לא תסיר את השבכה ברשות הרבים ותגלה את כל שערה.", "a": "השבכה היא רשת שאשה מכסה בה את שערה."}, {"w": "משנה", "cols": false, "hl": ["G3", "R8", "R9"], "t": "ולא בכבול לרשות הרבים", "x": "ולא תצא בכבול לרשות הרבים. מהו כבול, רש\"י כותב שהגמרא תפרש. ועל \"לרשות הרבים\" הוא מפרש: לחצר מותר. כל הדברים שלפני כן אסורים גם לחצר, שמא תתרגל ותצא בהם לרשות הרבים. וגזרו שלא תתקשט בהם בשבת כלל. ובכבול התירו לחצר, כמו שיתפרש בהמשך הפרק, כדי שלא לאסור את כל תכשיטיה ותתגנה על בעלה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G4", "R10", "R11"], "t": "עיר של זהב וקטלא", "x": "ולא תצא ב\"עיר של זהב\" ולא בקטלא. רש\"י מפרש: עיר של זהב היא מעין סיכת נוי, שמציירים בה צורה כמו של עיר. ואת הקטלא מפרשת הגמרא בהמשך.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G4", "R12", "R13"], "t": "נזמים, טבעת ומחט", "x": "ולא בנזמים, ולא בטבעת שאין עליה חותם, ולא במחט שאין בה חור. רש\"י מפרש: החותם הוא צורה שחותמים בה מכתב או כל דבר סגור. ומחט שאינה נקובה היא סיכה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G5", "R14"], "t": "ואם יצאה, אינה חייבת חטאת", "x": "ואם יצאה באחד מהם, אינה חייבת קרבן חטאת. רש\"י מסביר: כולם תכשיטים, ולכן מן התורה אין בהם איסור. רק חכמים גזרו בהם, שמא תוריד ותראה לחברתה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R15"], "t": "\"טבילה מאן דכר שמה\"", "x": "\"מאן דכר שמה\", מי הזכיר את שמה? רש\"י מפרש: מה עניין טבילה להלכות שבת?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "הטעם: גזירה משום טבילה", "x": "רב נחמן בר יצחק אמר בשם רבה בר אבוה: המשנה נותנת טעם. למה לא תצא בחוטי צמר ופשתן? כי חכמים אמרו שבחול לא תטבול בהם עד שתרפה אותם. ולכן בשבת לא תצא בהם, שמא תזדמן לה טבילה של מצווה, תתיר אותם, ותבוא לשאת אותם ארבע אמות ברשות הרבים.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G7", "R16"], "t": "רש\"י: והרי טובלים בשבת", "x": "\"ושריא להו\", ותתיר אותם כדי לטבול בשבת. על הטבילה עצמה לא גזרו, כמו שאמרו במסכת ביצה: האדם נראה כמי שמתקרר במים, ואינו נראה כמי שמתקן את עצמו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1a"], "t": "התוספות: חוטים שבתוך הקליעה", "x": "רבי יצחק אומר: הגזירה היא רק בחוטים שאינם בתוך קליעת השער. בחוטים שקלועים בשער מותר לצאת, כי בהם אין לגזור שמא תתיר אותם. בפרק \"המצניע\" שנינו שיש לפחות איסור דרבנן בקליעת שער בשבת, ומסתבר שכמו שיש איסור בעשיית קליעה, כך יש איסור בסתירתה. לכן היא לא תסתור את הקליעה בשבת.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1b"], "t": "התוספות: ולמה לא גוזרים על טלית?", "x": "ואם תאמר: לפי הטעם הזה, גם בטלית לא תצא, שהרי ודאי תסיר אותה בשעת הטבילה? התשובה: בבגדים שהם עיקר הלבוש אין לגזור, כי אפילו בחול אדם אינו זז ממקומו עד שילבש אותם. רק בדברים קטנים יש לחשוש. לא אכפת לה אם אינם עליה, ובחול כשהיא מתירה אותם, פעמים שהיא נושאת אותם בידה עד ביתה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1c"], "t": "התוספות: אילו דברים גזרו", "x": "ורבי יצחק מוסיף: גזרו רק בדברים שרגילות להסיר, כדי להראות, משום חציצה, או משום שהן מקפידות עליהם. בהם יש חשש שכשתסיר, תשכח שהיום שבת ותשא אותם. אבל דבר שמותר לצאת בו ואין רגילות להסירו, מותר לקשור ולהתיר אפילו ברשות הרבים. אם תזכור שהיום שבת, לא תשא אותו. ואם לא תזכור, גם איסור להתיר לא יועיל.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G2", "T1d"], "t": "התוספות: ראיה מקמיע", "x": "וכך משמע בהמשך הפרק, בברייתא שאומרת שקושר ומתיר קמיע אפילו ברשות הרבים. ואם כל דבר כזה מותר להסיר, למה הברייתא הוצרכה ללמד זאת בקמיע? כדי שלא נאסור משום שנראה שהוא קושר אותו שלא לרפואה ומתכוון להוציא, כמו שאסור לכתחילה לתת פלפל או גרגיר מלח בפה בשבת, או להחזיר אותם. אלא הקמיע נחשב כמו לבוש גמור, מפני הרפואה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R17", "R18"], "t": "רב כהנא שואל: \"תיכי חלילתא\"", "x": "רב כהנא שאל את רב: \"תיכי חלילתא\", מה דינם? רש\"י מפרש: שרשראות של חוטים, חלולות ועגולות. השאלה היא אם מותר לקלוע בהן את השער ולצאת בשבת. אי אפשר למתוח ולהדק אותן בחוזק על השער, והמים נכנסים. האם זו חציצה, ואסור לצאת בהן משום הגזירה של טבילה, או לא?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R19"], "t": "\"כל שהוא אריג לא גזרו\"", "x": "רב ענה: \"אריג קאמרת\", על דבר ארוג אתה שואל? כל דבר ארוג, לא גזרו. וכך אמר גם רב הונא בנו של רב יהושע. רש\"י מפרש: לא גזרו לצאת בו בשבת, כי לעניין חציצה הוא אינו חוצץ, שהרי אי אפשר להדק אותו היטב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R20"], "t": "לשון אחרת: \"אחיותי אינן מקפידות\"", "x": "\"ואיכא דאמרי\", ויש אומרים: רב הונא בנו של רב יהושע אמר: ראיתי את אחיותי, שאינן מקפידות עליהן. רש\"י מפרש: הן אינן מסירות אותן מן הראש כשרוחצות במים חמים. משמע שהמים נכנסים בהן היטב, ולכן גם לטבילה אין צורך להתיר אותן. ומותר לצאת בהן, כי אם תזדמן טבילה, לא יתירו אותן, לא משום חציצה ולא משום הקפדה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "G11", "R21"], "t": "מה בין שתי הלשונות", "x": "\"מאי איכא בינייהו\", מה ההבדל? ההבדל הוא כשהחוטים התלכלכו בטיט. לפי הלשון \"כל שהוא אריג לא גזרו\", גם אלה ארוגים, ומותר. ולפי הלשון שתולה בהקפדה, כשהם מלוכלכים היא מקפידה עליהם, ואסור.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G11", "R22a"], "t": "רש\"י: למה מקפידה על חוטים מלוכלכים", "x": "כשהם מלוכלכים, היא אינה רוצה שיהיו בראשה בשעת הטבילה, כי המים ממיסים את הטיט, והוא מלכלך את בשרה כשהיא עולה. אין כאן חציצה, שהרי המים נכנסים. אבל כיוון שהיא מסירה אותם בגלל הלכלוך, היא עלולה לשאת אותם, ולכן אסור לצאת בהם. ולפי הלשון הראשונה, גזרו רק בדבר שחוצץ לטבילה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G11", "R22b"], "t": "רש\"י: דוחה את פירוש רבותיו", "x": "רבותיו של רש\"י פירשו שההקפדה כאן היא לעניין חציצה, לפי הכלל \"רובו ומקפיד עליו חוצץ\": דבר שנמצא על רובו של האדם, והוא מקפיד עליו, חוצץ. רש\"י מקשה על כך. א': הכלל ההוא נאמר בדבר מהודק. הוא מלמד שאף שהמים אינם נכנסים בו, אם האדם אינו מקפיד עליו, הוא נחשב כגופו ובטל אל שערו. אבל דבר שאינו מהודק והמים נכנסים בו, אינו חוצץ כלל. ב': ואם תאמר שכל דבר שמקפידים עליו אסור בטבילה, איך אומרת הלשון הראשונה שגם החוטים המלוכלכים מותרים, כי הם ארוגים? הרי ברור שעל המלוכלכים היא מקפידה, ואם כן הם חוצצים. ורב הונא בנו של רב יהושע לא בא לחלוק על הלכה למשה מסיני.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12a", "R23"], "t": "המשנה במקוואות: אלו חוצצין באדם", "x": "\"תנן התם\", שנינו שם, במסכת מקוואות: אלה חוצצים באדם: חוטי צמר, חוטי פשתן, והרצועות שבראשי הבנות. רבי יהודה אומר: של צמר ושל שער אינם חוצצים, כי המים באים בהם. רש\"י מפרש: מפני ששנויה שם גם רשימה של \"אלו חוצצין בכלים\", נאמר על טבילת אדם \"ואלו חוצצין באדם\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G12a", "R24"], "t": "רש\"י: דעת רבי יהודה", "x": "חוטים של צמר ושל שער אינם מהודקים על השער, ולכן המים נכנסים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12b", "R25", "R26"], "t": "רב הונא: \"וכולן בראשי הבנות\"", "x": "רב הונא אמר: כל אלה שנינו בראשי הבנות. רש\"י מפרש: אל תאמר ש\"בראשי הבנות\" נאמר רק על הרצועות. הוא נאמר גם על החוטים. ו\"הבנות\" הן קטנות, והמשנה דיברה בהן מפני שכך רגיל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R27", "R28"], "t": "רב יוסף: את מה בא למעט?", "x": "רב יוסף מקשה: \"למעוטי מאי\", מה בא רב הונא להוציא? אם בא להוציא חוטים שקשורים בצוואר, שבהם אינם חוצצים, באילו חוטים מדובר? רש\"י מפרש: רב הונא לימד שגם החוטים נשנו בראשי הבנות, ומשמע שבמקום אחר אינם חוצצים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R29", "R30", "R31", "R32"], "t": "אם חוטי צמר: רך על רך", "x": "אם כוונתו לחוטי צמר, יש קושיה. \"השתא\", עכשיו, אם רך על קשה חוצץ, רך על רך לא כל שכן? רש\"י מפרש: צמר נקרא רך לעומת פשתן ושער. ה\"קשה\" הוא השער, ה\"רך\" הוא הבשר. ועל הבשר, הרך, החוט ודאי מהודק יותר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G13", "T2"], "t": "התוספות: ואולי רב הונא בא לחדש?", "x": "ואם תאמר: אולי רב הונא אמר \"וכולן בראשי הבנות\" כדי לחדש, שאפילו בראשי הבנות, שהוא רך על קשה, הם חוצצים? רבי יצחק עונה: גם בלי רב הונא היינו יודעים שהם חוצצים בכל מקום, אפילו בראש. אלא ודאי הוא בא להוציא דבר מה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14"], "t": "אם חוטי פשתן: קשה על רך", "x": "ואם כוונתו להוציא חוטי פשתן, חוזרת אותה קושיה בכיוון אחר. פשתן על השער הוא קשה על גבי קשה, והוא חוצץ. על הבשר הוא קשה על גבי רך, ושם ודאי יחצוץ.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G14", "T3"], "t": "התוספות: מה חוצץ יותר", "x": "הגמרא מניחה שקשה על רך חוצץ יותר מקשה על קשה. ורך על קשה אינו חוצץ כמו קשה על קשה. כי לרבי יהודה חוטי צמר, שהם רך על קשה, אינם חוצצים, וחוטי פשתן, שהם קשה על קשה, חוצצים. והתוספות מעירים שחוטי שער, שגם הם קשה על קשה, לדעת הכול אינם חוצצים, אף שחוטי פשתן חוצצים לדעת הכול.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R33"], "t": "רב יוסף: אין אשה חונקת את עצמה", "x": "\"אלא\", כך אמר רב יוסף: זה טעמו של רב הונא, מפני שאין אשה חונקת את עצמה. רש\"י מפרש: היא אינה מהדקת חוטים על צווארה, אלא קושרת אותם בריווח, שיהיו רפויים. לכן בצוואר אינם חוצצים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T4"], "t": "התוספות: למה \"אלא\"", "x": "התוספות מעירים שהמילה \"אלא\" מתאימה כאן, כי רב יוסף עצמו הקשה קודם, ועכשיו הוא עצמו מציע הסבר אחר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R34"], "t": "אביי מקשה מברייתא", "x": "\"איתיביה אביי\", אביי הקשה על רב יוסף: הבנות יוצאות בחוטים שבאוזניהן, אבל לא ב\"חבקין\" שבצווארן. ואם אין אשה חונקת את עצמה, למה אסור לצאת בחבקין שבצוואר? רש\"י מפרש: את החוטים שבאוזניים שמים כדי שהנקב לא ייסתם.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G16", "R35", "R36"], "t": "רש\"י: מהם \"חבקין\"", "x": "חבקין הם ענקים של רצועות רחבות, שאינן מוזהבות. הם אינם עשויים לתכשיט, כמו החוטים שבאוזניים. והמילה מלשון \"חבק\", רצועה שקושרים בה סוס.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17"], "t": "רבינא עונה", "x": "\"אמר רבינא\", רבינא פותח בתשובה לקושיה של אביי, ותשובתו באה בעמוד הבא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "פרק \"במה אשה\" נפתח במשנה שמונה מה אשה אינה יוצאת בו בשבת. הגמרא הסבירה שחוטי צמר ופשתן נאסרו משום טבילה של מצווה, ודנה בדבר ארוג ובדבר שמקפידים עליו. רב הונא אמר שהחוטים חוצצים רק בראשי הבנות, ורב יוסף הסביר שבצוואר אשה אינה חונקת את עצמה. על כך הקשה אביי מן החבקין, ובראש העמוד הבא רבינא עונה שמדובר בקטלא.", "a": ""}], "audio": "shabbat/daf-57a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

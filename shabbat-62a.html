@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף ס&quot;ב עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-62a.html">
+<meta name="description" content="מסכת שבת, דף ס&quot;ב עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ס\"ב עמוד א'", "url": "https://gemara.co.il/shabbat-62a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף ס&quot;ב עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>במה אשה</span><span>פרק שישי</span><span>שבת<b>סב.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-61b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-62b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 121</div>
+  <h1>מסכת שבת, דף ס&quot;ב עמוד א&#x27;</h1>
+  <p class="sub">פרק שישי, &quot;במה אשה&quot;. קמיע מכוסה עור ותפילין, שריון קסדה ומגפיים, משנה חדשה: טבעת עם חותם, כוליאר וכובלת, ושיטת עולא &quot;וחילופיהן באיש&quot;.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ס&quot;ב עמוד א&#x27;, לומדים: קמיע מכוסה עור, ותפילין; כלי מלחמה, ומשנה חדשה על האשה; עולא: "וחילופיהן באיש"; טבעת על האצבע: הוצאה שלא כדרכה?; הכובלת: שלוש שיטות.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. קמיע מכוסה עור, ותפילין</a><a href="#u2">2. כלי מלחמה, ומשנה חדשה על האשה</a><a href="#u3">3. עולא: "וחילופיהן באיש"</a><a href="#u4">4. טבעת על האצבע: הוצאה שלא כדרכה?</a><a href="#u5">5. הכובלת: שלוש שיטות</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>קמיע מכוסה עור, ותפילין</h2>
+  <p class="lead">בעמוד הקודם נאמר שקמיע מומחה, מכיוון שהוא מרפא, מותר אפילו לאחוז ביד ברשות הרבים. כאן הגמרא מקשה על כך מרבי אושעיא, מעמידה את המשנה בקמיע מכוסה עור, ומסבירה למה תפילין שונות.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ובלבד שלא יאחזנו בידו</td><td>ובלבד שלא יאחז אותו בידו</td></tr>
+      <tr><td>ויעבירנו ארבע אמות ברשות הרבים</td><td>ויעביר אותו ארבע אמות ברשות הרבים.</td></tr>
+      <tr><td>הכא במאי עסקינן במחופה עור</td><td>כאן במה אנחנו עוסקים? בקמיע מכוסה עור.</td></tr>
+      <tr><td>והרי תפילין דמחופה עור</td><td>והרי תפילין, שמכוסות עור,</td></tr>
+      <tr><td>הנכנס לבית הכסא חולץ תפילין</td><td>מי שנכנס לבית הכיסא חולץ את התפילין</td></tr>
+      <tr><td>ברחוק ארבע אמות ונכנס</td><td>במרחק ארבע אמות, ונכנס.</td></tr>
+      <tr><td>התם משום שי"ן</td><td>שם (הטעם) משום השי"ן.</td></tr>
+      <tr><td>שי"ן של תפילין הלכה למשה מסיני</td><td>השי"ן של התפילין היא הלכה למשה מסיני.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הקושיה:</b> רבי אושעיא התיר לצאת בקמיע רק בתנאי שלא יאחז אותו בידו ויעביר אותו ארבע אמות ברשות הרבים. אם כך, אי אפשר לומר שהקמיע מרפא ולכן מותר לאחוז אותו ביד.</p>
+  <p><b>התשובה:</b> המשנה מדברת בקמיע שמכוסה עור. אין גנאי להיכנס איתו לבית הכיסא, ולכן אין צורך להסיר אותו ולאחוז אותו ביד. כך אין מן המשנה ראיה שאין בקמיעות קדושה.</p>
+  <p><b>תפילין:</b> גם הן מכוסות עור, ובכל זאת חולצים אותן ארבע אמות לפני בית הכיסא. הסיבה היא השי"ן שעל התפילין, שהיא הלכה למשה מסיני, והיא עשויה מן העור החיצון עצמו.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>שלא יאחזנו – דלא הוי תכשיט שלו אלא דרך מלבוש:</blockquote><p><span class="say">מה רש"י אומר:</span> הקמיע אינו תכשיט של האדם אלא כשהוא עליו כדרך מלבוש. כשהוא ביד, הוא משא.</p></div>
+  <div data-hl="R2" class="voice r"><span class="tag">רש"י</span><blockquote>במכוסה עור – דליכא גנותא אי מעייל לבית הכסא ולא בעי למישקליה:</blockquote><p><span class="say">מה רש"י אומר:</span> בקמיע מכוסה עור אין גנאי אם נכנס איתו לבית הכיסא, ולכן אינו צריך ליטול אותו.</p></div>
+  <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>התם משום שי"ן – שעשויה מעור החיצון עצמו קומט בו ג' קמטין כעין שי"ן משדי והדלי"ת והיו"ד עשויין בקשר שקושר הרצועה אחת לצפון ואחת למזרח כמין ד' ורצועה קטנה מאד תלויה בה ואין בה אלא כפיפה כמין יו"ד וכופאה בעוד העור לח והיא כפופה לעולם:</blockquote><p><span class="say">מה רש"י אומר:</span> השי"ן עשויה מן העור החיצון עצמו, שבו קומטים שלושה קמטים כצורת שי"ן. הדל"ת עשויה בקשר של הרצועות, והיו"ד היא רצועה קטנה וכפופה שתלויה בקשר.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>האם האיסור לאחוז ביד הוא מן התורה</h3>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>והתניא ר' אושעיא אומר ובלבד כו' – תימה לר"י דילמא משום מראית העין דוקא הוא אסור מדרבנן כמו קושר בשיר ובטבעת דהשתא ליכא למיגזר דאפילו מייתי לה ליכא איסורא מדאורייתא ואומר ר"י דשלא יאחזנו בידו משמע אפילו בקומצו דליכא מראית העין אלא איסורא דאורייתא איכא ואפילו למ"ד כל דבר שאסרו חכמים משום מראית העין אפילו בחדרי חדרים אסור הכא לא שייך למיגזר דאפילו עומד בשוק ונושאן בקומצו אין כאן …</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק שואל: אולי רבי אושעיא אוסר לאחוז ביד רק מדרבנן, משום מראית העין, ואז אין סיבה לגזור שלא יצא בקמיע שמא ישא אותו ביד. והוא עונה: "שלא יאחזנו בידו" כולל גם אחיזה בתוך כף יד סגורה, שאין בה מראית העין. מכאן שזה איסור תורה של הוצאה.</p></div>
+    <h3>הגרסה בדברי אביי</h3>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>שי"ן של תפילין – ול"ג דלי"ת ויו"ד של תפילין כו' כדמוכח בפ' במה מדליקין (לעיל שבת כח:) גבי הא דתני רב יוסף לא הוכשרו למלאכת שמים כו' ומוקי לה לרצועותיהן ולא פריך דלי"ת של תפילין הלכה למשה מסיני כדפריך גבי שי"ן:</blockquote><p><span class="say">מה התוספות אומרים:</span> התוספות אינם גורסים את דברי אביי על הדל"ת והיו"ד של התפילין. ראייתם מדף כ"ח עמוד ב': שם הגמרא הקשתה מן השי"ן כשדיברה על עור הבתים, אבל כשדיברה על הרצועות לא הקשתה מן הדל"ת.</p></div>
+  </div>
+  <p class="godeep">האם האיסור של רבי אושעיא הוא רק משום מראית העין? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה התנה רבי אושעיא?</summary><p>שלא יאחז את הקמיע בידו ויעביר אותו ארבע אמות ברשות הרבים.</p></details>
+  <details><summary>באיזה קמיע מעמידה הגמרא את ההיתר?</summary><p>בקמיע שמכוסה עור.</p></details>
+  <details><summary>למה תפילין מכוסות עור חולצים לפני בית הכיסא?</summary><p>משום השי"ן שעליהן, שהיא הלכה למשה מסיני.</p></details>
+  <details class="deepq"><summary>איך רבנו יצחק מוכיח שהאיסור הוא מן התורה?</summary><p>"שלא יאחזנו בידו" כולל גם אחיזה בכף יד סגורה, שאין בה מראית העין.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G5,G6,G7,G8">
+  <div class="kicker">יחידה 2 · משנה</div>
+  <h2>כלי מלחמה, ומשנה חדשה על האשה</h2>
+  <p class="lead">הגמרא מסיימת את המשנה הקודמת, שעסקה במה שאיש לא יצא בו, ומתחילה משנה חדשה: חפצים שאשה לא תצא בהם בשבת.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ולא בשריון ולא בקסדא ולא במגפיים</td><td>ולא בשריון, ולא בקסדה, ולא במגפיים.</td></tr>
+      <tr><td>שריון זרדא</td><td>שריון הוא "זרדא".</td></tr>
+      <tr><td>לא תצא אשה במחט הנקובה</td><td>לא תצא אשה במחט שיש בה נקב,</td></tr>
+      <tr><td>ולא בטבעת שיש עליה חותם</td><td>ולא בטבעת שיש עליה חותם,</td></tr>
+      <tr><td>ולא בכוליאר ולא בכובלת</td><td>ולא בכוליאר, ולא בכובלת,</td></tr>
+      <tr><td>ולא בצלוחית של פלייטון</td><td>ולא בצלוחית של שמן פלייטון.</td></tr>
+      <tr><td>ואם יצתה חייבת חטאת דברי ר' מאיר</td><td>ואם יצאה, חייבת חטאת, כדברי רבי מאיר.</td></tr>
+      <tr><td>וחכמים פוטרין בכובלת ובצלוחית של פלייטון</td><td>וחכמים פוטרים בכובלת ובצלוחית של פלייטון.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>סוף המשנה הקודמת:</b> איש לא יצא בשבת בשריון, בקסדה ובמגפיים. הגמרא נותנת לכל אחד מהם שם בלשון של זמנה.</p>
+  <p><b>המשנה החדשה:</b> חמישה דברים שאשה לא תצא בהם: מחט נקובה, טבעת שיש עליה חותם, כוליאר, כובלת וצלוחית של פלייטון.</p>
+  <p><b>המחלוקת:</b> לדעת רבי מאיר, מי שיצאה באחד מהם חייבת חטאת. חכמים פוטרים בכובלת ובצלוחית של פלייטון.</p>
+  <div data-hl="R5,R6,R7" class="voice r"><span class="tag">רש"י</span><blockquote>זרדא – ברוני"א:</blockquote><blockquote>סנוארתא – כובע עור תחת כובע המתכת:</blockquote><blockquote>פזמקי – אנפלייאות של ברזל במלחמה:</blockquote><p><span class="say">מה רש"י אומר:</span> על "זרדא" רש"י נותן את שם השריון בלשון לעז. "סנוארתא" היא כובע עור שמתחת לכובע המתכת. "פזמקי" הם כיסויי רגליים של ברזל, למלחמה.</p></div>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>פלייטון – בלסמ"א משחא דאפרסמא:</blockquote><p><span class="say">מה רש"י אומר:</span> פלייטון הוא שמן אפרסמון.</p></div>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>חייבת חטאת – קסבר לאו תכשיט נינהו:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי מאיר מחייב חטאת, כי לדעתו אלה אינם תכשיטים.</p></div>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הם "זרדא", "סנוארתא" ו"פזמקי"?</summary><p>שריון, כובע עור שמתחת לכובע המתכת, וכיסויי רגליים של ברזל.</p></details>
+  <details><summary>באילו דברים חכמים פוטרים?</summary><p>בכובלת ובצלוחית של פלייטון.</p></details>
+  <details><summary>מהו פלייטון, לפי רש"י?</summary><p>שמן אפרסמון.</p></details>
+  <details class="deepq"><summary>מה טעמו של רבי מאיר, לפי רש"י?</summary><p>לדעתו אלה אינם תכשיטים, ולכן מי שיצאה בהם הוציאה משא.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G9,G10,G11,G12,G13">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>עולא: "וחילופיהן באיש"</h2>
+  <p class="lead">עולא אומר שבאיש הדין הפוך. הגמרא מנסה להבין את שיטתו: האם מה שמתאים לאחד אינו מתאים לשני, או שנשים הן עם בפני עצמן.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אמר עולא וחילופיהן באיש</td><td>אמר עולא: והפוך מזה באיש.</td></tr>
+      <tr><td>אלמא קסבר עולא</td><td>מכאן שסובר עולא:</td></tr>
+      <tr><td>כל מידי דחזי לאיש לא חזי לאשה</td><td>כל דבר שמתאים לאיש אינו מתאים לאשה.</td></tr>
+      <tr><td>הרועים יוצאין בשקין</td><td>הרועים יוצאים בשקים,</td></tr>
+      <tr><td>ולא הרועים בלבד אמרו אלא כל אדם</td><td>ולא רק הרועים אמרו, אלא כל אדם.</td></tr>
+      <tr><td>נשים עם בפני עצמן הן</td><td>נשים הן עם בפני עצמן.</td></tr>
+      <tr><td>המוצא תפילין מכניסן זוג זוג</td><td>מי שמוצא תפילין, מכניס אותן זוג אחר זוג,</td></tr>
+      <tr><td>אחד האיש ואחד האשה</td><td>אחד האיש ואחד האשה.</td></tr>
+      <tr><td>והא מצות עשה שהזמן גרמא הוא</td><td>והרי זו מצוות עשה שהזמן גורם לה!</td></tr>
+      <tr><td>לילה זמן תפילין הוא ושבת זמן תפילין הוא</td><td>לילה הוא זמן תפילין, ושבת היא זמן תפילין.</td></tr>
+      <tr><td>וכל מצות עשה שלא הזמן גרמא נשים חייבות</td><td>ובכל מצוות עשה שאין הזמן גורם לה, נשים חייבות.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>עולא:</b> לפי רש"י, הדברים אמורים על הטבעת. איש שיצא בטבעת עם חותם פטור, ובטבעת בלי חותם חייב. הגמרא מסיקה שעולא סובר שמה שמתאים לאיש אינו מתאים לאשה, וההפך.</p>
+  <p><b>רב יוסף מקשה:</b> בשקים יוצאים לא רק הרועים, אלא כל אדם. משמע שדבר שהוא תכשיט לאחד, הוא תכשיט גם לשני. לכן רב יוסף מפרש: לדעת עולא, נשים הן עם בפני עצמן.</p>
+  <p><b>אביי מקשה:</b> המוצא תפילין בשבת מכניס אותן זוג אחר זוג, גם איש וגם אשה. והרי תפילין הן מצוות עשה שהזמן גרמא, ונשים פטורות מהן. אם נשים הן עם בפני עצמן, התפילין אינן תכשיט להן, ואיך מותר לאשה להכניס אותן?</p>
+  <p><b>התשובה:</b> הברייתא היא לדעת רבי מאיר, שלדעתו לילה ושבת הם זמן תפילין. לכן אין זו מצווה שהזמן גרמא, ונשים חייבות בה, והתפילין הן תכשיט גם להן.</p>
+  <div data-hl="R13" class="voice r"><span class="tag">רש"י</span><blockquote>אלא כל אדם – אלמא אע"ג דלא רגילי ביה מגו דלגבי האי תכשיט לגבי האי נמי תכשיט הוא:</blockquote><p><span class="say">מה רש"י אומר:</span> מן הברייתא על השקים עולה: אף שאחרים אינם רגילים בכך, כיוון שלאחד זה תכשיט, גם לשני זה תכשיט.</p></div>
+  <div data-hl="R15,R16" class="voice r"><span class="tag">רש"י</span><blockquote>מכניסן – לעיר דרך מלבוש:</blockquote><blockquote>זוג זוג – כדרך שהוא לובש בחול אחד בראש ואחד בזרוע וחולצן וחוזר ומניח זוג אחר ומכניסן וכן כולן:</blockquote><p><span class="say">מה רש"י אומר:</span> המוצא מכניס את התפילין לעיר כדרך מלבוש: אחת בראש ואחת בזרוע. הוא חולץ אותן וחוזר ומניח זוג אחר, וכך כולן.</p></div>
+  <div data-hl="R17" class="voice r"><span class="tag">רש"י</span><blockquote>ואחד האשה – ואע"ג דלאו תכשיט דאשה נינהו מגו דהוו תכשיט לאיש שרי אף לאשה:</blockquote><p><span class="say">מה רש"י אומר:</span> הברייתא מתירה גם לאשה: אף שתפילין אינן תכשיט של אשה, מכיוון שהן תכשיט לאיש, מותר גם לה.</p></div>
+  <div data-hl="T3" class="voice t"><span class="tag">תוספות</span><blockquote>וחילופיהן באיש – אור"ת דאחיוב חטאת קאי:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם אומר ש"וחילופיהן" אמור על חיוב החטאת: מה שהאשה חייבת עליו חטאת האיש אינו חייב עליו, ומה שהיא אינה חייבת עליו הוא חייב עליו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה צריך גם לילה וגם שבת</h3>
+    <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>לילה זמן תפילין הוא וכן שבת – הלכך לעולם זמנם הוא ואין להם זמן קבוע שתהא מצותן מצות עשה שהזמן גרמא להפטר נשים מהן הלכך נקט לילה ושבת משום דפלוגתא בתרווייהו ואי הוי סבירא ליה לרבי מאיר בחד מינייהו דלאו זמן תפילין הוא נמצא זמן קבוע לתפילין והוו להו נשים פטורות:</blockquote><p><span class="say">מה רש"י אומר:</span> אילו רבי מאיר היה סובר שאחד מהם, לילה או שבת, אינו זמן תפילין, היה לתפילין זמן קבוע, והנשים היו פטורות. רק כששניהם זמן תפילין, אין להן זמן קבוע.</p></div>
+    <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>נשים חייבות – הלכך תכשיטין הן לה:</blockquote><p><span class="say">מה רש"י אומר:</span> מכיוון שנשים חייבות בתפילין, התפילין הן תכשיט לאשה.</p></div>
+    <h3>למה לא התירו לאשה משום בזיון התפילין</h3>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>וכל מצות עשה שהזמן גרמא נשים פטורות – פירוש דהוי משוי וליתסר וא"ת והא הוצאה כלאחר יד היא ושריא משום בזיון תפילין וי"ל כיון דמשוי הוא ויכול לבא לידי חיוב חטאת היכא דמוציא בלא שינוי משום בזיון לא שרינן ליה:</blockquote><p><span class="say">מה התוספות אומרים:</span> הקושיה של אביי היא שלאשה התפילין הן משא, והיה צריך לאסור עליה להכניס אותן. התוספות שואלים: הרי היא מוציאה אותן שלא כדרך המוציאים, ויש להתיר לה כדי שהתפילין לא יתבזו. הם עונים: מכיוון שזה משא, ומי שמוציא אותו בלי שינוי יכול להגיע לחיוב חטאת, לא התירו משום בזיון התפילין.</p></div>
+  </div>
+  <p class="godeep">למה הגמרא צריכה שרבי מאיר יסבור שגם לילה וגם שבת הם זמן תפילין? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הסיקה הגמרא תחילה משיטת עולא?</summary><p>שכל מה שמתאים לאיש אינו מתאים לאשה, וההפך.</p></details>
+  <details><summary>מה הקשה רב יוסף?</summary><p>מן הברייתא שכל אדם יוצא בשקים, ולא רק הרועים.</p></details>
+  <details><summary>איך רב יוסף מפרש את עולא?</summary><p>נשים הן עם בפני עצמן.</p></details>
+  <details><summary>איך עונה הגמרא לקושיית אביי מן התפילין?</summary><p>הברייתא לדעת רבי מאיר, שלילה ושבת זמן תפילין, ולכן נשים חייבות בהן.</p></details>
+  <details class="deepq"><summary>מה היה קורה, לפי רש"י, אילו רק אחד מהם, לילה או שבת, היה זמן תפילין?</summary><p>היה לתפילין זמן קבוע, והנשים היו פטורות.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G14,G15a,G15b,G16">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>טבעת על האצבע: הוצאה שלא כדרכה?</h2>
+  <p class="lead">הגמרא שואלת על המשנה: איך אשה חייבת חטאת על טבעת עם חותם, אם אינה תכשיט שלה והיא מוציאה אותה על האצבע?</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>והא הוצאה כלאחר יד היא</td><td>והרי זו הוצאה שלא כדרך!</td></tr>
+      <tr><td>באשה גזברית עסקינן</td><td>באשה גזברית אנחנו עוסקים.</td></tr>
+      <tr><td>תרצת אשה איש מאי איכא למימר</td><td>יישבת את האשה; על האיש מה יש לומר?</td></tr>
+      <tr><td>פעמים שאדם נותן לאשתו טבעת</td><td>לפעמים אדם נותן לאשתו טבעת</td></tr>
+      <tr><td>שיש עליה חותם להוליכה לקופסא</td><td>שיש עליה חותם, כדי להוליך אותה לקופסה,</td></tr>
+      <tr><td>ומניחתה בידה עד שמגעת לקופסא</td><td>והיא מניחה אותה על ידה עד שמגיעה לקופסה.</td></tr>
+      <tr><td>ופעמים שהאשה נותנת לבעלה</td><td>ולפעמים האשה נותנת לבעלה</td></tr>
+      <tr><td>טבעת שאין עליה חותם</td><td>טבעת שאין עליה חותם</td></tr>
+      <tr><td>להוליכה אצל אומן לתקן</td><td>כדי להוליך אותה לאומן, לתיקון,</td></tr>
+      <tr><td>ומניחה בידו עד שמגיע אצל אומן</td><td>והוא מניח אותה על ידו עד שמגיע לאומן.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הקושיה:</b> מי שמוציא דבר שאינו תכשיט שלו מוציא אותו בידיים, ולא על האצבע. אם כך, אשה שמוציאה טבעת עם חותם על אצבעה מוציאה שלא כדרכה, ולמה תתחייב חטאת?</p>
+  <p><b>רבי ירמיה:</b> מדובר באשה גזברית, שרגילה לשלוח חותמות ולכן נושאת את טבעת החותם על אצבעה. <b>רבה מקשה:</b> זה מיישב את האשה, אבל עולא אמר שאיש חייב על טבעת בלי חותם, ומה נאמר עליו?</p>
+  <p><b>רבא:</b> זו דרך רגילה להוליך טבעת. אשה מוליכה את טבעת החותם של בעלה לקופסה על אצבעה, ואיש מוליך את הטבעת של אשתו לאומן על אצבעו.</p>
+  <div class="eg"><b>להמחשה:</b> מי שמתבקש להביא שעון של מישהו אחר לתיקון, לפעמים עונד אותו על ידו בדרך, אף שאינו השעון שלו.</div>
+  <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>והא הוצאה כלאחר יד הוא – אמתני' קאי והוצאת טבעת שמוציאתה דרך מלבוש באצבע וזה שאינו תכשיט לה אמאי חייבת חטאת הרי לא הוציאה כדרך כל המוציאין שכל המוציא דבר שאינו תכשיט לו מוציאין אותו בידים ולא דרך מלבוש:</blockquote><p><span class="say">מה רש"י אומר:</span> הקושיה היא על המשנה: האשה מוציאה את הטבעת על אצבעה כדרך מלבוש, אבל לה אין זה תכשיט, ודבר שאינו תכשיט מוציאים בידיים.</p></div>
+  <div data-hl="R21" class="voice r"><span class="tag">רש"י</span><blockquote>גזברית – ששולחת חותמות תמיד לממונין תחתיה לאמר תנו כך וכך מעות לפלוני והרי חותמה בידה הלכך רגילה היא להניחה באצבעה ומיהו תכשיט לא הוי לדידה דאין דרך נשים בכך ומיהו דרך הוצאתה של זו בכך:</blockquote><p><span class="say">מה רש"י אומר:</span> הגזברית שולחת חותמות לממונים תחתיה, שיתנו כסף לפלוני, ולכן רגילה לשים את החותם על אצבעה. אין זה תכשיט לה, אבל כך היא מוציאה אותו.</p></div>
+  <div data-hl="R24" class="voice r"><span class="tag">רש"י</span><blockquote>אצל אומן לתקנה ומניחה באצבעו – אלמא דרך הוצאה היא:</blockquote><p><span class="say">מה רש"י אומר:</span> מן הדוגמאות של רבא עולה שזו דרך הוצאה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מהי הקופסה</h3>
+    <div data-hl="R23" class="voice r"><span class="tag">רש"י</span><blockquote>לקופסא – אישקריינ"ה בלע"ז כדי להצניעה שם וי"מ שהקופסא חתומה בו וכשפותחה חוזרה וחותמת בה ולא נהירא דאם כן מנחתה באצבעה עד שמחזירתה לבעלה מיבעי ליה:</blockquote><p><span class="say">מה רש"י אומר:</span> הקופסה היא מקום שבו מצניעים את הטבעת. יש מפרשים שהקופסה נחתמת בטבעת, ורש"י דוחה זאת: אז הגמרא הייתה צריכה לומר שהיא מניחה את הטבעת באצבעה עד שמחזירה אותה לבעלה.</p></div>
+    <p>התשובה של רבי ירמיה מתאימה רק לאשה מסוימת. התשובה של רבא רחבה יותר: היא מתאימה גם לאשה וגם לאיש, ולכן היא מיישבת גם את דברי עולא.</p>
+  </div>
+  <p class="godeep">למה התשובה של רבא עדיפה על התשובה של רבי ירמיה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הקושיה "הוצאה כלאחר יד"?</summary><p>האשה מוציאה דבר שאינו תכשיט שלה על האצבע, וזו אינה הדרך שמוציאים בה דבר כזה.</p></details>
+  <details><summary>מהי אשה גזברית, לפי רש"י?</summary><p>אשה ששולחת חותמות לממונים תחתיה, ולכן רגילה לשאת חותם על אצבעה.</p></details>
+  <details><summary>מה הקשה רבה על רבי ירמיה?</summary><p>התשובה מיישבת את האשה, אבל לא את האיש של עולא.</p></details>
+  <details class="deepq"><summary>למה רש"י דוחה את הפירוש שהקופסה נחתמת בטבעת?</summary><p>כי אז היה צריך לומר שהיא מניחה אותה עד שמחזירה אותה לבעלה, ולא עד שמגיעה לקופסה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G17,G18,G19a,G19b,G20,G21">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>הכובלת: שלוש שיטות</h2>
+  <p class="lead">הגמרא מפרשת מהם כוליאר וכובלת, ומביאה ברייתא שבה שלוש שיטות בכובלת: חטאת, פטור אבל אסור, ומותר לכתחילה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מאי כוליאר א"ר מכבנתא</td><td>מהו כוליאר? אמר רב: "מכבנתא", סיכה שסוגרת את הבגד.</td></tr>
+      <tr><td>כובלת אמר רב חומרתא דפילון</td><td>כובלת, אמר רב: קשר של בושם פילון.</td></tr>
+      <tr><td>לא תצא ואם יצתה פטורה</td><td>לא תצא, ואם יצאה, פטורה.</td></tr>
+      <tr><td>יוצאה אשה בכובלת לכתחלה</td><td>אשה יוצאת בכובלת לכתחילה.</td></tr>
+      <tr><td>רבי מאיר סבר משאוי הוא</td><td>רבי מאיר סובר: משא הוא.</td></tr>
+      <tr><td>ורבנן סברי תכשיט הוא</td><td>וחכמים סוברים: תכשיט הוא,</td></tr>
+      <tr><td>ודילמא שלפא ומחויא ואתיא לאיתוייה</td><td>ושמא תסיר אותה ותראה, ותבוא לשאת אותה.</td></tr>
+      <tr><td>מאן דרכה למירמיה אשה שריחה רע</td><td>מי דרכה לשים אותה? אשה שריחה רע.</td></tr>
+      <tr><td>לא שלפא ומחויא</td><td>אינה מוציאה ומראה.</td></tr>
+      <tr><td>לא קשיא</td><td>אין קושיה.</td></tr>
+      <tr><td>כי קאי אדרבנן דאמרי פטור אבל אסור</td><td>כשהוא עומד מול חכמים, שאומרים פטור אבל אסור,</td></tr>
+      <tr><td>אמר איהו מותר לכתחלה</td><td>אמר הוא: מותר לכתחילה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>ההגדרות:</b> כוליאר הוא סיכה שקושרת את פתחי הבגד. כובלת היא קשר שבתוכו בושם בשם פילון, ואשה שריחה רע נושאת אותו.</p>
+  <p><b>שלוש השיטות:</b> לרבי מאיר הכובלת היא משא, ולכן חייבת חטאת. לחכמים היא תכשיט, ולכן פטורה, אבל לכתחילה לא תצא בה שמא תוציא אותה להראות ותשא אותה ברשות הרבים. לרבי אליעזר מותר לכתחילה, כי אשה שריחה רע לא תוציא ותראה.</p>
+  <p><b>הקושיה והתשובה:</b> בברייתא אחרת רבי אליעזר "פוטר", ומשמע שאסור. התשובה: שם הוא עונה לרבי מאיר, שמחייב חטאת, ולכן די לומר "פטור". כאן הוא עונה לחכמים, שכבר אמרו פטור, ולכן הוא מוסיף "מותר לכתחילה".</p>
+  <div data-hl="R25,R26" class="voice r"><span class="tag">רש"י</span><blockquote>מכבנתא – נושקא"ה ע"ש שמכבנת וקושרת מפתחי החלוק:</blockquote><blockquote>חומרתא דפילון – קשר שקשור בו סם ששמו פילון וריחו ערב ובלע"ז בלסמ"ו ואשה שריחה רע טוענתו עליה:</blockquote><p><span class="say">מה רש"י אומר:</span> "מכבנתא" היא סיכה שקושרת את פתחי החלוק. "חומרתא דפילון" היא קשר שבו בושם בשם פילון, שריחו נעים, ואשה שריחה רע נושאת אותו.</p></div>
+  <div data-hl="R29" class="voice r"><span class="tag">רש"י</span><blockquote>ה"ג ואשה שריחה רע לא שלפא ומחויא – שגנות הוא לה:</blockquote><p><span class="say">מה רש"י אומר:</span> אשה שריחה רע לא תוציא את הכובלת להראות, כי זה גנאי לה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך מיישבים שתי ברייתות של אותו חכם</h3>
+    <div data-hl="R32,R33" class="voice r"><span class="tag">רש"י</span><blockquote>כי קאי אר' מאיר – בההיא מתנית' לא איירו רבנן אלא ר"מ לחודיה וגבי חיוב דר"מ שייך למיתני רבי אליעזר פוטר ואע"פ שהוא מתיר לכתחלה:</blockquote><blockquote>הא כי קאי ארבנן – במתנית' דלעיל דאיירו רבנן בה ואמרו פטור פריש ר' אליעזר בהדיא למילתיה לאיפלוגי עלייהו ואמר יוצאה לכתחלה:</blockquote><p><span class="say">מה רש"י אומר:</span> בברייתא שבה רבי אליעזר "פוטר" לא דיברו חכמים, אלא רבי מאיר לבדו. מול חיוב חטאת מתאים לשנות "פוטר", אף שרבי אליעזר מתיר לכתחילה. בברייתא שבה חכמים אמרו "פטור", רבי אליעזר פירש את דבריו במפורש כדי לחלוק עליהם.</p></div>
+    <p>כך המילה "פטור" אינה בהכרח "פטור אבל אסור". משמעה תלוי במה שהיא עונה עליו: מול "חייב חטאת" היא יכולה לכלול גם היתר מלא.</p>
+  </div>
+  <p class="godeep">איך אפשר שאותו חכם אומר פעם "פוטר" ופעם "מותר לכתחילה"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מהו כוליאר ומהי כובלת?</summary><p>כוליאר הוא סיכה; כובלת היא קשר של בושם פילון.</p></details>
+  <details><summary>מה טעם חכמים שלא תצא בכובלת לכתחילה?</summary><p>שמא תוציא אותה להראות ותעביר אותה ברשות הרבים.</p></details>
+  <details><summary>למה רבי אליעזר מתיר לכתחילה?</summary><p>כי אשה שריחה רע לא תוציא ותראה את הכובלת.</p></details>
+  <details class="deepq"><summary>למה בברייתא אחת רבי אליעזר אומר רק "פוטר"?</summary><p>כי שם הוא עונה לרבי מאיר, שמחייב חטאת, ומולו מתאים לומר "פטור".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>קמיע ותפילין:</b> קמיע מכוסה עור אין צריך להסיר לפני בית הכיסא. תפילין חולצים, משום השי"ן שהיא הלכה למשה מסיני.</li>
+      <li><b>כלי מלחמה:</b> שריון, קסדה ומגפיים מתורגמים בגמרא, ורש"י מפרש אותם.</li>
+      <li><b>משנה חדשה:</b> אשה לא תצא במחט נקובה, בטבעת עם חותם, בכוליאר, בכובלת ובצלוחית של פלייטון.</li>
+      <li><b>עולא:</b> באיש הדין הפוך. רב יוסף מפרש שנשים הן עם בפני עצמן, ומן התפילין הגמרא עונה לדעת רבי מאיר.</li>
+      <li><b>טבעת על האצבע:</b> רבא מסביר שזו דרך הוצאה רגילה, כשמוליכים טבעת של אחר.</li>
+      <li><b>הכובלת:</b> רבי מאיר מחייב, חכמים פוטרים ואוסרים, ורבי אליעזר מתיר לכתחילה.</li>
+      <li><b>נשאר פתוח:</b> העמוד הבא מברר איזו ברייתא של רבי מאיר עומדת מול "פוטר" של רבי אליעזר.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>הכא במאי עסקינן</td><td>כאן במה אנחנו עוסקים: כך מעמידים דין במקרה מסוים</td></tr>
+      <tr><td>הלכה למשה מסיני</td><td>דין שנמסר למשה בעל פה, ואינו כתוב בתורה</td></tr>
+      <tr><td>וחילופיהן</td><td>והפוך מזה</td></tr>
+      <tr><td>אלמא</td><td>מכאן, אם כן</td></tr>
+      <tr><td>מתיב</td><td>מקשה מתוך משנה או ברייתא</td></tr>
+      <tr><td>עם בפני עצמן</td><td>קבוצה נפרדת, שמה שנחשב תכשיט לה אינו נלמד מאחרים</td></tr>
+      <tr><td>איתיביה</td><td>הקשה לו ממשנה או מברייתא</td></tr>
+      <tr><td>מצות עשה שהזמן גרמא</td><td>מצוות עשה שיש לה זמן קבוע, ונשים פטורות ממנה</td></tr>
+      <tr><td>כלאחר יד</td><td>שלא כדרך הרגילה</td></tr>
+      <tr><td>תרצת</td><td>יישבת, תירצת</td></tr>
+      <tr><td>שלפא ומחויא</td><td>מוציאה ומראה</td></tr>
+      <tr><td>לכתחלה</td><td>מראש: מותר לעשות כך, ולא רק שפטורים אחרי מעשה</td></tr>
+      <tr><td>כי קאי אדרבי מאיר</td><td>כשהוא עומד מול דברי רבי מאיר ועונה לו</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-61b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-62b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ס&quot;ב עמוד א&#x27;, לומדים: קמיע מכוסה עור, ותפילין; כלי מלחמה, ומשנה חדשה על האשה; עולא: "וחילופיהן באיש"; טבעת על האצבע: הוצאה שלא כדרכה?; הכובלת: שלוש שיטות.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (30 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד א&#x27;: קמיע, בית הכיסא ותפילין</h3><p>העמוד הקודם שאל אם יש בקמיעות קדושה, ואם מותר להיכנס איתם לבית הכיסא. הגמרא ניסתה להוכיח מן המשנה, שמתירה לצאת בשבת בקמיע מומחה: אילו הייתה בו קדושה, היה צריך להסיר אותו לפני בית הכיסא, והיה עלול לשאת אותו ארבע אמות ברשות הרבים. הראיה נדחתה שם כך: מכיוון שהקמיע מרפא, גם אם יאחז אותו בידו אין בכך איסור. כאן הגמרא מקשה על הדחייה הזו. אחר כך היא עוברת לסוף המשנה הקודמת, ולמשנה חדשה על מה שאשה לא תצא בו בשבת.</p></li><li><h3><span class="w">גמרא</span> · קושיה: רבי אושעיא</h3><p>&quot;והתניא&quot;, והרי שנינו בברייתא: רבי אושעיא אומר שמותר, ובלבד שלא יאחז את הקמיע בידו ויעביר אותו ארבע אמות ברשות הרבים. רש&quot;י מסביר: הקמיע אינו תכשיט של האדם אלא כשהוא עליו כדרך מלבוש. ביד הוא משא.</p></li><li><h3><span class="w">תוספות</span> · התוספות: אולי זה רק משום מראית העין?</h3><p>רבנו יצחק מתקשה: אולי רבי אושעיא אוסר לאחוז את הקמיע ביד רק מדרבנן, משום מראית העין, כמו שאסרו לקשור אותו בצמיד או בטבעת. ואם כך, אין מקום לגזור שלא יצא בקמיע שמא יבוא לשאת אותו ביד, כי גם אם ישא אותו כך אין בזה איסור תורה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: איסור תורה</h3><p>רבנו יצחק עונה: &quot;שלא יאחזנו בידו&quot; משמע אפילו בתוך כף היד הסגורה, שאין בה מראית העין, ומשמע שיש כאן איסור תורה. ואפילו לדעה שדבר שאסרו משום מראית העין אסור גם בחדרי חדרים, כאן אין שייך לגזור, כי גם מי שעומד בשוק ונושא אותו בכף ידו אין בזה מראית העין.</p></li><li><h3><span class="w">גמרא</span> · התשובה: קמיע מכוסה עור</h3><p>&quot;אלא הכא במאי עסקינן&quot;, אלא כאן במה אנחנו עוסקים? בקמיע שמכוסה בעור. רש&quot;י מסביר: אין בזה גנאי אם נכנס איתו לבית הכיסא, ולכן אינו צריך להסיר אותו. כך אין מן המשנה ראיה: גם אם יש בקמיע קדושה, מי שיוצא בו לא יבוא לשאת אותו ביד.</p></li><li><h3><span class="w">גמרא</span> · והרי תפילין מכוסות עור</h3><p>הגמרא מקשה: תפילין מכוסות בעור, ובכל זאת שנינו שמי שנכנס לבית הכיסא חולץ את התפילין במרחק ארבע אמות ונכנס. רש&quot;י מפרש: הפרשיות של התפילין נתונות בתוך בתים של עור.</p></li><li><h3><span class="w">גמרא</span> · שם, משום השי&quot;ן</h3><p>&quot;התם&quot;, שם הטעם אחר: בתפילין יש אות שי&quot;ן, ואביי אמר שהשי&quot;ן של התפילין היא הלכה למשה מסיני. ואביי אמר כך גם על הדל&quot;ת ועל היו&quot;ד של התפילין. רש&quot;י מתאר: השי&quot;ן עשויה מן העור החיצון עצמו, שמקמטים בו שלושה קמטים. הדל&quot;ת עשויה בקשר של הרצועות, והיו&quot;ד היא רצועה קטנה מאוד שתלויה בקשר וכפופה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הגרסה בדברי אביי</h3><p>התוספות אינם גורסים בגמרא את דברי אביי על הדל&quot;ת והיו&quot;ד. הראיה שלהם היא מפרק &quot;במה מדליקין&quot;, בדף כ&quot;ח עמוד ב&#x27;. שם רב יוסף שנה שלמלאכת שמים הוכשר רק עור של בהמה טהורה. כשהגמרא ניסתה להעמיד את דבריו בעור הבתים של התפילין, היא הקשתה מדברי אביי על השי&quot;ן. אבל כשהעמידה אותם ברצועות, לא הקשתה שהדל&quot;ת של התפילין היא הלכה למשה מסיני. מכאן שאביי לא אמר זאת.</p></li><li><h3><span class="w">גמרא</span> · סוף המשנה הקודמת: שריון, קסדה ומגפיים</h3><p>המשנה הקודמת אמרה שאיש לא יצא בשבת בשריון, בקסדה ובמגפיים. הגמרא מתרגמת: שריון הוא &quot;זרדא&quot;, קסדה היא לדברי רב &quot;סנוארתא&quot;, ומגפיים לדברי רב הם &quot;פזמקי&quot;.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: כלי המלחמה</h3><p>על &quot;זרדא&quot; רש&quot;י נותן את שם השריון בלשון לעז. &quot;סנוארתא&quot; היא כובע של עור שלובשים מתחת לכובע המתכת. &quot;פזמקי&quot; הם כיסויי רגליים של ברזל, שלובשים במלחמה.</p></li><li><h3><span class="w">משנה</span> · משנה חדשה: במה אשה לא תצא</h3><p>אשה לא תצא בשבת במחט שיש בה נקב, ולא בטבעת שיש עליה חותם, ולא ב&quot;כוליאר&quot;, ולא ב&quot;כובלת&quot;, ולא בצלוחית של &quot;פלייטון&quot;. רש&quot;י אומר שכוליאר וכובלת יתפרשו בגמרא, ופלייטון הוא שמן אפרסמון.</p></li><li><h3><span class="w">משנה</span> · חטאת, או פטור</h3><p>ואם יצאה, חייבת קרבן חטאת, כדברי רבי מאיר. וחכמים פוטרים בכובלת ובצלוחית של פלייטון. רש&quot;י מסביר שרבי מאיר מחייב כי לדעתו אלה אינם תכשיטים.</p></li><li><h3><span class="w">גמרא</span> · עולא: &quot;וחילופיהן באיש&quot;</h3><p>עולא אמר: והפוך מזה באיש. רש&quot;י מפרש שהדברים אמורים על הטבעת: איש שיצא בטבעת שיש עליה חותם פטור, ואם יצא בטבעת שאין עליה חותם חייב חטאת. &quot;אלמא&quot;, מכאן שעולא סובר שכל דבר שמתאים לאיש אינו מתאים לאשה, ומה שמתאים לאשה אינו מתאים לאיש.</p></li><li><h3><span class="w">תוספות</span> · התוספות: על מה אמר עולא</h3><p>רבנו תם אומר שדברי עולא, &quot;וחילופיהן&quot;, אמורים על חיוב החטאת: מה שהאשה חייבת עליו חטאת, האיש אינו חייב עליו, ומה שהאשה אינה חייבת עליו, האיש חייב עליו.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף מקשה: הרועים בשקים</h3><p>רב יוסף מקשה מברייתא: הרועים יוצאים בשבת בשקים, ולא רק הרועים אלא כל אדם, אלא שדרכם של הרועים לצאת בהם. רש&quot;י מסביר: השקים הם מלבוש שמתכסים בו מפני הגשמים. ומכאן שגם מי שאינו רגיל בדבר, כיוון שלאחד הוא תכשיט, גם לשני הוא תכשיט.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף: נשים הן עם בפני עצמן</h3><p>&quot;אלא&quot;, לכן רב יוסף מפרש אחרת: עולא סובר שנשים הן עם בפני עצמן. כלומר, ההבדל אינו בין כל בני האדם, אלא דווקא בין נשים לאנשים.</p></li><li><h3><span class="w">גמרא</span> · אביי מקשה: המוצא תפילין</h3><p>אביי מקשה מברייתא: מי שמוצא תפילין בשבת מכניס אותן זוג אחר זוג, בין איש ובין אשה. רש&quot;י מפרש: מצא אותן בשוק או בדרך, ומכניס אותן לעיר כדרך מלבוש, אחת בראש ואחת בזרוע, חולץ, וחוזר ומניח זוג אחר. ואף שתפילין אינן תכשיט של אשה, מכיוון שהן תכשיט לאיש, מותר גם לה. ועל זה אביי מקשה: אם נשים הן עם בפני עצמן, הרי תפילין הן מצוות עשה שהזמן גרמא, ונשים פטורות ממנה, ואיך מותר לאשה להכניס אותן?</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה שלא יותר לה ממילא</h3><p>פירוש הקושיה: לאשה, שפטורה מהן, התפילין הן משא, והיה צריך להיות אסור לה להכניס אותן. ואם תשאל: הרי היא מוציאה אותן שלא כדרך המוציאים, ויש להתיר לה כדי שהתפילין לא יתבזו? התוספות עונים: מכיוון שזה משא, ומי שמוציא אותו בלי שינוי יכול להגיע לחיוב חטאת, לא התירו לה משום בזיון התפילין.</p></li><li><h3><span class="w">גמרא</span> · התשובה: לדעת רבי מאיר</h3><p>&quot;התם&quot;, שם הברייתא היא לדעת רבי מאיר, שסובר שגם לילה וגם שבת הם זמן תפילין. לכן זו מצוות עשה שאין הזמן גורם לה, ובמצווה כזו נשים חייבות. רש&quot;י מוסיף: לכן התפילין הן תכשיט גם לאשה. והוא מסביר שהגמרא הזכירה גם לילה וגם שבת, כי אילו אחד מהם לא היה זמן תפילין, היה להן זמן קבוע, והנשים היו פטורות.</p></li><li><h3><span class="w">גמרא</span> · קושיה: הרי זו הוצאה שלא כדרכה</h3><p>הגמרא חוזרת למשנה: &quot;והא הוצאה כלאחר יד היא&quot;, הרי זו הוצאה שלא כדרך המוציאים. רש&quot;י מסביר: האשה מוציאה את הטבעת שיש עליה חותם על האצבע, כדרך מלבוש. אבל לה זה אינו תכשיט, ומי שמוציא דבר שאינו תכשיט לו מוציא אותו בידיים. אם כך, למה היא חייבת חטאת?</p></li><li><h3><span class="w">גמרא</span> · רבי ירמיה: אשה גזברית</h3><p>רבי ירמיה אמר: מדובר באשה גזברית. רש&quot;י מפרש: היא שולחת תמיד חותמות לממונים תחתיה, שיתנו סכום מסוים לפלוני, ולכן רגילה להניח את טבעת החותם על אצבעה. הטבעת אינה תכשיט בשבילה, כי אין דרך נשים בכך, אבל זו הדרך שבה אשה כזו מוציאה אותה.</p></li><li><h3><span class="w">גמרא</span> · רבה: ומה עם האיש?</h3><p>רבה אמר: &quot;תרצת אשה&quot;, יישבת את דין האשה, אבל מה תאמר על האיש? רש&quot;י מסביר: עולא אמר שאיש חייב על טבעת שאין עליה חותם, והרי גם זו הוצאה שלא כדרכה, כי אין דרכו להוציא אותה על האצבע.</p></li><li><h3><span class="w">גמרא</span> · רבא: מוליכים טבעת על האצבע</h3><p>&quot;אלא&quot;, לכן רבא מסביר אחרת: לפעמים אדם נותן לאשתו טבעת שיש עליה חותם, כדי שתוליך אותה לקופסה, והיא מניחה אותה על אצבעה עד שמגיעה לקופסה. ולפעמים אשה נותנת לבעלה טבעת שאין עליה חותם כדי להוליך אותה לאומן לתיקון, והוא מניח אותה על אצבעו עד שמגיע לאומן. רש&quot;י מסיק: מכאן שזו דרך הוצאה.</p><p>רש&quot;י מפרש שהקופסה היא מקום להצניע בו את הטבעת. הוא דוחה פירוש שהקופסה נחתמת בטבעת, כי אז הגמרא הייתה צריכה לומר שהיא מניחה אותה באצבעה עד שמחזירה אותה לבעלה.</p></li><li><h3><span class="w">גמרא</span> · מהם כוליאר וכובלת</h3><p>מה הוא &quot;כוליאר&quot;? אמר רב: &quot;מכבנתא&quot;. רש&quot;י מפרש: סיכה שמחברת וקושרת את פתחי החלוק. &quot;כובלת&quot;, אמר רב: &quot;חומרתא דפילון&quot;, וכן אמר רב אסי. רש&quot;י מפרש: קשר שקשור בו בושם בשם פילון, שריחו נעים, ואשה שריחה רע נושאת אותו עליה.</p></li><li><h3><span class="w">גמרא</span> · ברייתא: שלוש שיטות בכובלת</h3><p>&quot;תנו רבנן&quot;, שנו חכמים: לא תצא בכובלת, ואם יצאה חייבת חטאת, כדברי רבי מאיר. וחכמים אומרים: לא תצא, ואם יצאה פטורה. רבי אליעזר אומר: אשה יוצאת בכובלת לכתחילה.</p></li><li><h3><span class="w">גמרא</span> · רבי מאיר וחכמים</h3><p>&quot;במאי קמיפלגי&quot;, במה הם חולקים? רבי מאיר סובר שהכובלת היא משא. וחכמים סוברים שהיא תכשיט, ולכן מי שיצאה בה פטורה. ובכל זאת לכתחילה לא תצא בה, שמא &quot;שלפא ומחויא&quot;, תוציא אותה ותראה לחברותיה, ותבוא לשאת אותה ברשות הרבים.</p></li><li><h3><span class="w">גמרא</span> · רבי אליעזר: מי נושאת אותה</h3><p>ורבי אליעזר סובר: מי דרכה לשים אותה? אשה שריחה רע. ואשה שריחה רע אינה מוציאה ומראה, ולא תבוא לשאת אותה ארבע אמות ברשות הרבים. רש&quot;י מוסיף: היא לא תראה אותה כי זה גנאי לה, ו&quot;למירמיה&quot; פירושו לתלות בצוואר.</p></li><li><h3><span class="w">גמרא</span> · קושיה מברייתא אחרת</h3><p>&quot;והתניא&quot;, והרי שנינו בברייתא אחרת: רבי אליעזר פוטר בכובלת ובצלוחית של פלייטון. &quot;פוטר&quot; משמע שאסור לכתחילה, ואילו כאן הוא מתיר לכתחילה.</p></li><li><h3><span class="w">גמרא</span> · התשובה: למי הוא עונה</h3><p>אין קושיה. כשהוא עונה לרבי מאיר, שאמר שחייבת חטאת, אמר לו רבי אליעזר &quot;פטור&quot;. וכשהוא עונה לחכמים, שאמרו פטור אבל אסור, אמר &quot;מותר לכתחילה&quot;. רש&quot;י מסביר: בברייתא ההיא חכמים לא דיברו, אלא רבי מאיר לבדו, ומול חיוב החטאת מתאים לשנות &quot;פוטר&quot;, אף שרבי אליעזר מתיר לכתחילה.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>קמיע מכוסה עור אינו צריך להסיר לפני בית הכיסא, ותפילין שונות בגלל השי&quot;ן. במשנה החדשה רבי מאיר מחייב אשה שיצאה בטבעת עם חותם ובכובלת, ועולא אמר שבאיש הדין הפוך. בכובלת יש שלוש שיטות: חייבת, פטורה אבל אסור, ומותר לכתחילה. העמוד הבא שואל: איזו ברייתא של רבי מאיר לבדו היא זו שרבי אליעזר עונה עליה &quot;פוטר&quot;.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-62b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "והתניא רבי אושעיא אומר ובלבד שלא יאחזנו בידו ויעבירנו ארבע אמות ברשות הרבים", false, ""], ["G2", "[אלא] הכא במאי עסקינן במחופה עור", false, ""], ["G3", "והרי תפילין דמחופה עור ותניא הנכנס לבית הכסא חולץ תפילין ברחוק ארבע אמות ונכנס", false, ""], ["G4", "התם משום שי\"ן דאמר אביי שי\"ן של תפילין הלכה למשה מסיני ואמר אביי ד' של תפילין הלכה למשה מסיני ואמר אביי יו\"ד של תפילין הלכה למשה מסיני:", false, ""], ["G5", "ולא בשריון ולא בקסדא ולא במגפיים:", true, ""], ["G6", "שריון זרדא קסדא אמר רב סנוארתא מגפיים אמר רב פזמקי:", false, ""], ["G7", "לא תצא אשה במחט הנקובה ולא בטבעת שיש עליה חותם ולא בכוליאר ולא בכובלת ולא בצלוחית של פלייטון", false, "מתני׳"], ["G8", "ואם יצתה חייבת חטאת דברי ר' מאיר וחכמים פוטרין בכובלת ובצלוחית של פלייטון:", false, ""], ["G9", "אמר עולא וחילופיהן באיש אלמא קסבר עולא כל מידי דחזי לאיש לא חזי לאשה ומידי דחזי לאשה לא חזי לאיש", false, "גמ׳"], ["G10", "מתיב רב יוסף הרועים יוצאין בשקין ולא הרועים בלבד אמרו אלא כל אדם אלא שדרכן של הרועים לצאת בשקין", false, ""], ["G11", "[אלא] אמר רב יוסף קסבר עולא נשים עם בפני עצמן הן", false, ""], ["G12", "איתיביה אביי המוצא תפילין מכניסן זוג זוג אחד האיש ואחד האשה ואי אמרת נשים עם בפני עצמן הן והא מצות עשה שהזמן גרמא הוא וכל מצות עשה שהזמן גרמא נשים פטורות", false, ""], ["G13", "התם קסבר ר\"מ לילה זמן תפילין הוא ושבת זמן תפילין הוא הוה ליה מצות עשה שלא הזמן גרמא וכל מצות עשה שלא הזמן גרמא נשים חייבות", false, ""], ["G14", "והא הוצאה כלאחר יד היא", false, ""], ["G15a", "אמר רבי ירמיה באשה גזברית עסקינן", false, ""], ["G15b", "אמר רבה (בר בר חנה אמר רבי יוחנן) תרצת אשה איש מאי איכא למימר", false, ""], ["G16", "אלא אמר רבא פעמים שאדם נותן לאשתו טבעת שיש עליה חותם להוליכה לקופסא ומניחתה בידה עד שמגעת לקופסא ופעמים שהאשה נותנת לבעלה טבעת שאין עליה חותם להוליכה אצל אומן לתקן ומניחה בידו עד שמגיע אצל אומן:", false, ""], ["G17", "ולא בכוליאר ולא בכובלת: מאי כוליאר א\"ר מכבנתא כובלת אמר רב חומרתא דפילון וכן אמר רב אסי חומרתא דפילון", true, ""], ["G18", "ת\"ר לא תצא בכובלת ואם יצתה חייבת חטאת דברי ר\"מ וחכמים אומרים לא תצא ואם יצתה פטורה רבי אליעזר אומר יוצאה אשה בכובלת לכתחלה", false, ""], ["G19a", "במאי קמיפלגי רבי מאיר סבר משאוי הוא ורבנן סברי תכשיט הוא ודילמא שלפא ומחויא ואתיא לאיתוייה", false, ""], ["G19b", "ורבי אליעזר סבר מאן דרכה למירמיה אשה שריחה רע אשה שריחה רע לא שלפא ומחויא ולא אתיא לאתוייה ארבע אמות ברשות הרבים", false, ""], ["G20", "והתניא ר' אליעזר פוטר בכובלת ובצלוחית של פלייטון", false, ""], ["G21", "לא קשיא הא כי קאי אדרבי מאיר הא כי קאי אדרבנן כי קאי אדרבי מאיר דאמר חייב חטאת אמר ליה פטור כי קאי אדרבנן דאמרי פטור אבל אסור אמר איהו מותר לכתחלה", false, ""]], "R": [["R1", "שלא יאחזנו", "דלא הוי תכשיט שלו אלא דרך מלבוש:", false], ["R2", "במכוסה עור", "דליכא גנותא אי מעייל לבית הכסא ולא בעי למישקליה:", false], ["R3", "חולץ תפילין", "ואע\"ג דמכוסה עור שהארבע אגרות שהפרשיות כתובות בהן תחובות בדפוסין של עור:", false], ["R4", "התם משום שי\"ן", "שעשויה מעור החיצון עצמו קומט בו ג' קמטין כעין שי\"ן משדי והדלי\"ת והיו\"ד עשויין בקשר שקושר הרצועה אחת לצפון ואחת למזרח כמין ד' ורצועה קטנה מאד תלויה בה ואין בה אלא כפיפה כמין יו\"ד וכופאה בעוד העור לח והיא כפופה לעולם:", false], ["R5", "זרדא", "ברוני\"א:", false], ["R6", "סנוארתא", "כובע עור תחת כובע המתכת:", false], ["R7", "פזמקי", "אנפלייאות של ברזל במלחמה:", false], ["R8", "מתני' בכוליאר", "מפרש בגמרא וכן כובלת:", false], ["R9", "פלייטון", "בלסמ\"א משחא דאפרסמא:", false], ["R10", "חייבת חטאת", "קסבר לאו תכשיט נינהו:", false], ["R11", "גמ' אמר עולא וחילופיהן באיש", "אטבעת קאי דטבעת שיש עליו חותם אם יצא פטור ואם אין עליו חותם ויצא חייב חטאת:", false], ["R12", "בשקין", "שמתכסין בהן מפני הגשמים שקין מלבוש שק:", false], ["R13", "אלא כל אדם", "אלמא אע\"ג דלא רגילי ביה מגו דלגבי האי תכשיט לגבי האי נמי תכשיט הוא:", false], ["R14", "המוצא תפילין", "בשבת בשוק או בדרך:", false], ["R15", "מכניסן", "לעיר דרך מלבוש:", false], ["R16", "זוג זוג", "כדרך שהוא לובש בחול אחד בראש ואחד בזרוע וחולצן וחוזר ומניח זוג אחר ומכניסן וכן כולן:", false], ["R17", "ואחד האשה", "ואע\"ג דלאו תכשיט דאשה נינהו מגו דהוו תכשיט לאיש שרי אף לאשה:", false], ["R18", "לילה זמן תפילין הוא וכן שבת", "הלכך לעולם זמנם הוא ואין להם זמן קבוע שתהא מצותן מצות עשה שהזמן גרמא להפטר נשים מהן הלכך נקט לילה ושבת משום דפלוגתא בתרווייהו ואי הוי סבירא ליה לרבי מאיר בחד מינייהו דלאו זמן תפילין הוא נמצא זמן קבוע לתפילין והוו להו נשים פטורות:", false], ["R19", "נשים חייבות", "הלכך תכשיטין הן לה:", false], ["R20", "והא הוצאה כלאחר יד הוא", "אמתני' קאי והוצאת טבעת שמוציאתה דרך מלבוש באצבע וזה שאינו תכשיט לה אמאי חייבת חטאת הרי לא הוציאה כדרך כל המוציאין שכל המוציא דבר שאינו תכשיט לו מוציאין אותו בידים ולא דרך מלבוש:", false], ["R21", "גזברית", "ששולחת חותמות תמיד לממונין תחתיה לאמר תנו כך וכך מעות לפלוני והרי חותמה בידה הלכך רגילה היא להניחה באצבעה ומיהו תכשיט לא הוי לדידה דאין דרך נשים בכך ומיהו דרך הוצאתה של זו בכך:", false], ["R22", "איש מאי איכא למימר", "דקאמר עולא וחילופיהם באיש דמחייב אטבעת שאין עליה חותם והא הוצאה כלאחר יד הוא שאין דרכו להוציא בזו דרך מלבוש:", false], ["R23", "לקופסא", "אישקריינ\"ה בלע\"ז כדי להצניעה שם וי\"מ שהקופסא חתומה בו וכשפותחה חוזרה וחותמת בה ולא נהירא דאם כן מנחתה באצבעה עד שמחזירתה לבעלה מיבעי ליה:", false], ["R24", "אצל אומן לתקנה ומניחה באצבעו", "אלמא דרך הוצאה היא:", false], ["R25", "מכבנתא", "נושקא\"ה ע\"ש שמכבנת וקושרת מפתחי החלוק:", false], ["R26", "חומרתא דפילון", "קשר שקשור בו סם ששמו פילון וריחו ערב ובלע\"ז בלסמ\"ו ואשה שריחה רע טוענתו עליה:", false], ["R27", "ורבנן סברי תכשיט הוא", "הלכך אם יצאת פטורה ומיהו לכתחלה לא תצא דילמא שלפא ומחויא:", false], ["R28", "למרמיה", "להניח בצוארה כמו שקיל ורמי:", false], ["R29", "ה\"ג ואשה שריחה רע לא שלפא ומחויא", "שגנות הוא לה:", false], ["R30", "והתניא ר' אליעזר פוטר", "והכא שרי לכתחלה:", false], ["R31", "הא", "דקתני פוטר:", false], ["R32", "כי קאי אר' מאיר", "בההיא מתנית' לא איירו רבנן אלא ר\"מ לחודיה וגבי חיוב דר\"מ שייך למיתני רבי אליעזר פוטר ואע\"פ שהוא מתיר לכתחלה:", false], ["R33", "הא כי קאי ארבנן", "במתנית' דלעיל דאיירו רבנן בה ואמרו פטור פריש ר' אליעזר בהדיא למילתיה לאיפלוגי עלייהו ואמר יוצאה לכתחלה:", false]], "T": [["T1", "והתניא ר' אושעיא אומר ובלבד כו'", "תימה לר\"י דילמא משום מראית העין דוקא הוא אסור מדרבנן כמו קושר בשיר ובטבעת דהשתא ליכא למיגזר דאפילו מייתי לה ליכא איסורא מדאורייתא ואומר ר\"י דשלא יאחזנו בידו משמע אפילו בקומצו דליכא מראית העין אלא איסורא דאורייתא איכא ואפילו למ\"ד כל דבר שאסרו חכמים משום מראית העין אפילו בחדרי חדרים אסור הכא לא שייך למיגזר דאפילו עומד בשוק ונושאן בקומצו אין כאן מראית העין:", false], ["T2", "שי\"ן של תפילין", "ול\"ג דלי\"ת ויו\"ד של תפילין כו' כדמוכח בפ' במה מדליקין (לעיל שבת כח:) גבי הא דתני רב יוסף לא הוכשרו למלאכת שמים כו' ומוקי לה לרצועותיהן ולא פריך דלי\"ת של תפילין הלכה למשה מסיני כדפריך גבי שי\"ן:", false], ["T3", "וחילופיהן באיש", "אור\"ת דאחיוב חטאת קאי:", false], ["T4", "וכל מצות עשה שהזמן גרמא נשים פטורות", "פירוש דהוי משוי וליתסר וא\"ת והא הוצאה כלאחר יד היא ושריא משום בזיון תפילין וי\"ל כיון דמשוי הוא ויכול לבא לידי חיוב חטאת היכא דמוציא בלא שינוי משום בזיון לא שרינן ליה:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': קמיע, בית הכיסא ותפילין", "x": "העמוד הקודם שאל אם יש בקמיעות קדושה, ואם מותר להיכנס איתם לבית הכיסא. הגמרא ניסתה להוכיח מן המשנה, שמתירה לצאת בשבת בקמיע מומחה: אילו הייתה בו קדושה, היה צריך להסיר אותו לפני בית הכיסא, והיה עלול לשאת אותו ארבע אמות ברשות הרבים. הראיה נדחתה שם כך: מכיוון שהקמיע מרפא, גם אם יאחז אותו בידו אין בכך איסור. כאן הגמרא מקשה על הדחייה הזו. אחר כך היא עוברת לסוף המשנה הקודמת, ולמשנה חדשה על מה שאשה לא תצא בו בשבת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "קושיה: רבי אושעיא", "x": "\"והתניא\", והרי שנינו בברייתא: רבי אושעיא אומר שמותר, ובלבד שלא יאחז את הקמיע בידו ויעביר אותו ארבע אמות ברשות הרבים. רש\"י מסביר: הקמיע אינו תכשיט של האדם אלא כשהוא עליו כדרך מלבוש. ביד הוא משא.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1"], "t": "התוספות: אולי זה רק משום מראית העין?", "x": "רבנו יצחק מתקשה: אולי רבי אושעיא אוסר לאחוז את הקמיע ביד רק מדרבנן, משום מראית העין, כמו שאסרו לקשור אותו בצמיד או בטבעת. ואם כך, אין מקום לגזור שלא יצא בקמיע שמא יבוא לשאת אותו ביד, כי גם אם ישא אותו כך אין בזה איסור תורה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1"], "t": "התוספות: איסור תורה", "x": "רבנו יצחק עונה: \"שלא יאחזנו בידו\" משמע אפילו בתוך כף היד הסגורה, שאין בה מראית העין, ומשמע שיש כאן איסור תורה. ואפילו לדעה שדבר שאסרו משום מראית העין אסור גם בחדרי חדרים, כאן אין שייך לגזור, כי גם מי שעומד בשוק ונושא אותו בכף ידו אין בזה מראית העין.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R2"], "t": "התשובה: קמיע מכוסה עור", "x": "\"אלא הכא במאי עסקינן\", אלא כאן במה אנחנו עוסקים? בקמיע שמכוסה בעור. רש\"י מסביר: אין בזה גנאי אם נכנס איתו לבית הכיסא, ולכן אינו צריך להסיר אותו. כך אין מן המשנה ראיה: גם אם יש בקמיע קדושה, מי שיוצא בו לא יבוא לשאת אותו ביד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R3"], "t": "והרי תפילין מכוסות עור", "x": "הגמרא מקשה: תפילין מכוסות בעור, ובכל זאת שנינו שמי שנכנס לבית הכיסא חולץ את התפילין במרחק ארבע אמות ונכנס. רש\"י מפרש: הפרשיות של התפילין נתונות בתוך בתים של עור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R4"], "t": "שם, משום השי\"ן", "x": "\"התם\", שם הטעם אחר: בתפילין יש אות שי\"ן, ואביי אמר שהשי\"ן של התפילין היא הלכה למשה מסיני. ואביי אמר כך גם על הדל\"ת ועל היו\"ד של התפילין. רש\"י מתאר: השי\"ן עשויה מן העור החיצון עצמו, שמקמטים בו שלושה קמטים. הדל\"ת עשויה בקשר של הרצועות, והיו\"ד היא רצועה קטנה מאוד שתלויה בקשר וכפופה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G4", "T2"], "t": "התוספות: הגרסה בדברי אביי", "x": "התוספות אינם גורסים בגמרא את דברי אביי על הדל\"ת והיו\"ד. הראיה שלהם היא מפרק \"במה מדליקין\", בדף כ\"ח עמוד ב'. שם רב יוסף שנה שלמלאכת שמים הוכשר רק עור של בהמה טהורה. כשהגמרא ניסתה להעמיד את דבריו בעור הבתים של התפילין, היא הקשתה מדברי אביי על השי\"ן. אבל כשהעמידה אותם ברצועות, לא הקשתה שהדל\"ת של התפילין היא הלכה למשה מסיני. מכאן שאביי לא אמר זאת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "G6"], "t": "סוף המשנה הקודמת: שריון, קסדה ומגפיים", "x": "המשנה הקודמת אמרה שאיש לא יצא בשבת בשריון, בקסדה ובמגפיים. הגמרא מתרגמת: שריון הוא \"זרדא\", קסדה היא לדברי רב \"סנוארתא\", ומגפיים לדברי רב הם \"פזמקי\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G6", "R5", "R6", "R7"], "t": "רש\"י: כלי המלחמה", "x": "על \"זרדא\" רש\"י נותן את שם השריון בלשון לעז. \"סנוארתא\" היא כובע של עור שלובשים מתחת לכובע המתכת. \"פזמקי\" הם כיסויי רגליים של ברזל, שלובשים במלחמה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G7", "R8", "R9"], "t": "משנה חדשה: במה אשה לא תצא", "x": "אשה לא תצא בשבת במחט שיש בה נקב, ולא בטבעת שיש עליה חותם, ולא ב\"כוליאר\", ולא ב\"כובלת\", ולא בצלוחית של \"פלייטון\". רש\"י אומר שכוליאר וכובלת יתפרשו בגמרא, ופלייטון הוא שמן אפרסמון.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G8", "R10"], "t": "חטאת, או פטור", "x": "ואם יצאה, חייבת קרבן חטאת, כדברי רבי מאיר. וחכמים פוטרים בכובלת ובצלוחית של פלייטון. רש\"י מסביר שרבי מאיר מחייב כי לדעתו אלה אינם תכשיטים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R11"], "t": "עולא: \"וחילופיהן באיש\"", "x": "עולא אמר: והפוך מזה באיש. רש\"י מפרש שהדברים אמורים על הטבעת: איש שיצא בטבעת שיש עליה חותם פטור, ואם יצא בטבעת שאין עליה חותם חייב חטאת. \"אלמא\", מכאן שעולא סובר שכל דבר שמתאים לאיש אינו מתאים לאשה, ומה שמתאים לאשה אינו מתאים לאיש.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G9", "T3"], "t": "התוספות: על מה אמר עולא", "x": "רבנו תם אומר שדברי עולא, \"וחילופיהן\", אמורים על חיוב החטאת: מה שהאשה חייבת עליו חטאת, האיש אינו חייב עליו, ומה שהאשה אינה חייבת עליו, האיש חייב עליו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R12", "R13"], "t": "רב יוסף מקשה: הרועים בשקים", "x": "רב יוסף מקשה מברייתא: הרועים יוצאים בשבת בשקים, ולא רק הרועים אלא כל אדם, אלא שדרכם של הרועים לצאת בהם. רש\"י מסביר: השקים הם מלבוש שמתכסים בו מפני הגשמים. ומכאן שגם מי שאינו רגיל בדבר, כיוון שלאחד הוא תכשיט, גם לשני הוא תכשיט.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11"], "t": "רב יוסף: נשים הן עם בפני עצמן", "x": "\"אלא\", לכן רב יוסף מפרש אחרת: עולא סובר שנשים הן עם בפני עצמן. כלומר, ההבדל אינו בין כל בני האדם, אלא דווקא בין נשים לאנשים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R14", "R15", "R16", "R17"], "t": "אביי מקשה: המוצא תפילין", "x": "אביי מקשה מברייתא: מי שמוצא תפילין בשבת מכניס אותן זוג אחר זוג, בין איש ובין אשה. רש\"י מפרש: מצא אותן בשוק או בדרך, ומכניס אותן לעיר כדרך מלבוש, אחת בראש ואחת בזרוע, חולץ, וחוזר ומניח זוג אחר. ואף שתפילין אינן תכשיט של אשה, מכיוון שהן תכשיט לאיש, מותר גם לה. ועל זה אביי מקשה: אם נשים הן עם בפני עצמן, הרי תפילין הן מצוות עשה שהזמן גרמא, ונשים פטורות ממנה, ואיך מותר לאשה להכניס אותן?", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G12", "T4"], "t": "התוספות: למה שלא יותר לה ממילא", "x": "פירוש הקושיה: לאשה, שפטורה מהן, התפילין הן משא, והיה צריך להיות אסור לה להכניס אותן. ואם תשאל: הרי היא מוציאה אותן שלא כדרך המוציאים, ויש להתיר לה כדי שהתפילין לא יתבזו? התוספות עונים: מכיוון שזה משא, ומי שמוציא אותו בלי שינוי יכול להגיע לחיוב חטאת, לא התירו לה משום בזיון התפילין.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R18", "R19"], "t": "התשובה: לדעת רבי מאיר", "x": "\"התם\", שם הברייתא היא לדעת רבי מאיר, שסובר שגם לילה וגם שבת הם זמן תפילין. לכן זו מצוות עשה שאין הזמן גורם לה, ובמצווה כזו נשים חייבות. רש\"י מוסיף: לכן התפילין הן תכשיט גם לאשה. והוא מסביר שהגמרא הזכירה גם לילה וגם שבת, כי אילו אחד מהם לא היה זמן תפילין, היה להן זמן קבוע, והנשים היו פטורות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R20"], "t": "קושיה: הרי זו הוצאה שלא כדרכה", "x": "הגמרא חוזרת למשנה: \"והא הוצאה כלאחר יד היא\", הרי זו הוצאה שלא כדרך המוציאים. רש\"י מסביר: האשה מוציאה את הטבעת שיש עליה חותם על האצבע, כדרך מלבוש. אבל לה זה אינו תכשיט, ומי שמוציא דבר שאינו תכשיט לו מוציא אותו בידיים. אם כך, למה היא חייבת חטאת?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15a", "R21"], "t": "רבי ירמיה: אשה גזברית", "x": "רבי ירמיה אמר: מדובר באשה גזברית. רש\"י מפרש: היא שולחת תמיד חותמות לממונים תחתיה, שיתנו סכום מסוים לפלוני, ולכן רגילה להניח את טבעת החותם על אצבעה. הטבעת אינה תכשיט בשבילה, כי אין דרך נשים בכך, אבל זו הדרך שבה אשה כזו מוציאה אותה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15b", "R22"], "t": "רבה: ומה עם האיש?", "x": "רבה אמר: \"תרצת אשה\", יישבת את דין האשה, אבל מה תאמר על האיש? רש\"י מסביר: עולא אמר שאיש חייב על טבעת שאין עליה חותם, והרי גם זו הוצאה שלא כדרכה, כי אין דרכו להוציא אותה על האצבע.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R23", "R24"], "t": "רבא: מוליכים טבעת על האצבע", "x": "\"אלא\", לכן רבא מסביר אחרת: לפעמים אדם נותן לאשתו טבעת שיש עליה חותם, כדי שתוליך אותה לקופסה, והיא מניחה אותה על אצבעה עד שמגיעה לקופסה. ולפעמים אשה נותנת לבעלה טבעת שאין עליה חותם כדי להוליך אותה לאומן לתיקון, והוא מניח אותה על אצבעו עד שמגיע לאומן. רש\"י מסיק: מכאן שזו דרך הוצאה.", "a": "רש\"י מפרש שהקופסה היא מקום להצניע בו את הטבעת. הוא דוחה פירוש שהקופסה נחתמת בטבעת, כי אז הגמרא הייתה צריכה לומר שהיא מניחה אותה באצבעה עד שמחזירה אותה לבעלה."}, {"w": "גמרא", "cols": false, "hl": ["G17", "R25", "R26"], "t": "מהם כוליאר וכובלת", "x": "מה הוא \"כוליאר\"? אמר רב: \"מכבנתא\". רש\"י מפרש: סיכה שמחברת וקושרת את פתחי החלוק. \"כובלת\", אמר רב: \"חומרתא דפילון\", וכן אמר רב אסי. רש\"י מפרש: קשר שקשור בו בושם בשם פילון, שריחו נעים, ואשה שריחה רע נושאת אותו עליה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18"], "t": "ברייתא: שלוש שיטות בכובלת", "x": "\"תנו רבנן\", שנו חכמים: לא תצא בכובלת, ואם יצאה חייבת חטאת, כדברי רבי מאיר. וחכמים אומרים: לא תצא, ואם יצאה פטורה. רבי אליעזר אומר: אשה יוצאת בכובלת לכתחילה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19a", "R27"], "t": "רבי מאיר וחכמים", "x": "\"במאי קמיפלגי\", במה הם חולקים? רבי מאיר סובר שהכובלת היא משא. וחכמים סוברים שהיא תכשיט, ולכן מי שיצאה בה פטורה. ובכל זאת לכתחילה לא תצא בה, שמא \"שלפא ומחויא\", תוציא אותה ותראה לחברותיה, ותבוא לשאת אותה ברשות הרבים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19b", "R28", "R29"], "t": "רבי אליעזר: מי נושאת אותה", "x": "ורבי אליעזר סובר: מי דרכה לשים אותה? אשה שריחה רע. ואשה שריחה רע אינה מוציאה ומראה, ולא תבוא לשאת אותה ארבע אמות ברשות הרבים. רש\"י מוסיף: היא לא תראה אותה כי זה גנאי לה, ו\"למירמיה\" פירושו לתלות בצוואר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20", "R30"], "t": "קושיה מברייתא אחרת", "x": "\"והתניא\", והרי שנינו בברייתא אחרת: רבי אליעזר פוטר בכובלת ובצלוחית של פלייטון. \"פוטר\" משמע שאסור לכתחילה, ואילו כאן הוא מתיר לכתחילה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21", "R31", "R32", "R33"], "t": "התשובה: למי הוא עונה", "x": "אין קושיה. כשהוא עונה לרבי מאיר, שאמר שחייבת חטאת, אמר לו רבי אליעזר \"פטור\". וכשהוא עונה לחכמים, שאמרו פטור אבל אסור, אמר \"מותר לכתחילה\". רש\"י מסביר: בברייתא ההיא חכמים לא דיברו, אלא רבי מאיר לבדו, ומול חיוב החטאת מתאים לשנות \"פוטר\", אף שרבי אליעזר מתיר לכתחילה.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "קמיע מכוסה עור אינו צריך להסיר לפני בית הכיסא, ותפילין שונות בגלל השי\"ן. במשנה החדשה רבי מאיר מחייב אשה שיצאה בטבעת עם חותם ובכובלת, ועולא אמר שבאיש הדין הפוך. בכובלת יש שלוש שיטות: חייבת, פטורה אבל אסור, ומותר לכתחילה. העמוד הבא שואל: איזו ברייתא של רבי מאיר לבדו היא זו שרבי אליעזר עונה עליה \"פוטר\".", "a": ""}], "audio": "shabbat/daf-62a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

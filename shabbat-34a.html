@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף ל&quot;ד עמוד א&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-34a.html">
+<meta name="description" content="מסכת שבת, דף ל&quot;ד עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ל\"ד עמוד א'", "url": "https://gemara.co.il/shabbat-34a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף ל&quot;ד עמוד א&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>במה מדליקין</span><span>פרק שני</span><span>שבת<b>לד.</b></span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-33b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-34b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 65</div>
+  <h1>מסכת שבת, דף ל&quot;ד עמוד א&#x27;</h1>
+  <p class="sub">פרק שני, &quot;במה מדליקין&quot;. סוף סיפור רבי שמעון בר יוחאי, המשנה על שלושה דברים בערב שבת, ובין השמשות בעירובין ובהטמנה.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ל&quot;ד עמוד א&#x27;, לומדים: סוף הסיפור: טיהור השוק; שלושה דברים, ומה עושים בספק חשכה; המקור, בנחת, ותחומין מול חצרות; רבא: שני עירובים בבין השמשות; למה אין טומנים משחשכה.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. סוף הסיפור: טיהור השוק</a><a href="#u2">2. שלושה דברים, ומה עושים בספק חשכה</a><a href="#u3">3. המקור, בנחת, ותחומין מול חצרות</a><a href="#u4">4. רבא: שני עירובים בבין השמשות</a><a href="#u5">5. למה אין טומנים משחשכה</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2a,G2b">
+  <div class="kicker">יחידה 1 · אגדה</div>
+  <h2>סוף הסיפור: טיהור השוק</h2>
+  <p class="lead">כיוון שנעשה לו נס, רבי שמעון בר יוחאי רצה לתקן דבר. הוא טיהר שוק שהיה בו ספק טומאה. הזקן שלעג לכך מת, וכך גם יהודה בן גרים, שדרכו נשמעו הדברים למלכות.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ואית להו צערא לכהנים לאקופי</td><td>והכוהנים מצטערים שעליהם להקיף.</td></tr>
+      <tr><td>איכא איניש דידע דאיתחזק הכא טהרה</td><td>יש אדם שיודע שהוחזקה כאן טהרה?</td></tr>
+      <tr><td>כאן קיצץ בן זכאי תורמסי תרומה</td><td>כאן קיצץ בן זכאי תורמוסים של תרומה.</td></tr>
+      <tr><td>עבד איהו נמי הכי</td><td>עשה גם הוא כך:</td></tr>
+      <tr><td>כל היכא דהוה קשי טהריה</td><td>כל מקום שהיה קשה, טיהר אותו,</td></tr>
+      <tr><td>וכל היכא דהוה רפי צייניה</td><td>וכל מקום שהיה רך, סימן אותו.</td></tr>
+      <tr><td>טיהר בן יוחי בית הקברות</td><td>בן יוחאי טיהר בית קברות!</td></tr>
+      <tr><td>יפה אתה אומר</td><td>יפה אתה אומר.</td></tr>
+      <tr><td>עכשיו שהיית עמנו ונמנית עמנו</td><td>עכשיו, שהיית איתנו ונמנית איתנו,</td></tr>
+      <tr><td>יאמרו זונות מפרכסות זו את זו</td><td>יאמרו: זונות מייפות זו את זו,</td></tr>
+      <tr><td>תלמידי חכמים לא כל שכן</td><td>תלמידי חכמים, לא כל שכן?</td></tr>
+      <tr><td>יהב ביה עיניה ונח נפשיה</td><td>נתן בו את עיניו, והוא מת.</td></tr>
+      <tr><td>עדיין יש לזה בעולם</td><td>עדיין יש לזה (מקום) בעולם?</td></tr>
+      <tr><td>נתן בו עיניו ועשהו גל של עצמות</td><td>נתן בו את עיניו ועשה אותו גל של עצמות.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הבעיה:</b> במקום אחד היה ספק טומאה, והכוהנים, שאסור להם להיטמא, נאלצו להקיף אותו בדרך ארוכה. רבי שמעון שאל אם יש מי שיודע שהמקום הוחזק טהור.</p>
+  <p><b>העדות והמעשה:</b> זקן אחד סיפר שבן זכאי קיצץ שם תורמוסים של תרומה, שצריך לשמור בטהרה. רבי שמעון עשה כמוהו: מקום שהיה קשה טיהר, ומקום שהיה רך סימן.</p>
+  <p><b>הלעג:</b> זקן אחד לעג ואמר "טיהר בן יוחי בית הקברות". רבי שמעון אמר לו: אילו לא היית עמנו, או היית ולא נמנית עמנו, יפה היית אומר. אבל היית ונמנית, ועכשיו יאמרו: אפילו זונות מייפות זו את זו, ותלמידי חכמים לא כל שכן? הזקן מת. ואחריו מת גם יהודה בן גרים, שסיפר את דבריהם והם נשמעו למלכות.</p>
+  <div data-hl="R1,R2" class="voice r"><span class="tag">רש"י</span><blockquote>ואית להו צערא לאקופי – שהיה אותו שוק שהספק בו מקום מעבר העיר לרבים והכהנים לא היו יכולין ליכנס שם מפני טומאה וצריך להקיף דרך אחר ארוך:</blockquote><blockquote>איכא דידע דאיתחזק טהרה – בהאי שוק מימיו שלא היה בית הקברות גמור ולא ניתן לפנותו:</blockquote><p><span class="say">מה רש"י אומר:</span> המקום היה שוק שהרבים עוברים בו, והכוהנים לא יכלו להיכנס אליו מפני הטומאה, והלכו בדרך אחרת וארוכה. השאלה הייתה אם ידוע שהשוק מעולם לא היה בית קברות גמור, שאין רשות לפנותו.</p></div>
+  <div data-hl="R3,R4" class="voice r"><span class="tag">רש"י</span><blockquote>כאן קיצץ בן זכאי – שתלן ועקרן לאחר גידולן:</blockquote><blockquote>תורמסי תרומה – הצריכות לשמרן בטהרה וגם הוא היה כהן כדאמרינן [בתוספתא דפרה] (פ"ג) אם מה שעשו ידי שכחתי:</blockquote><p><span class="say">מה רש"י אומר:</span> בן זכאי שתל את התורמוסים ועקר אותם אחרי שגדלו. תורמוסי תרומה צריך לשמור בטהרה, וגם הוא עצמו היה כוהן.</p></div>
+  <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>עבד איהו נמי הכי – היה מקצץ תורמסין ומשליכן שם ונעשה נס וצף המת במקום שהוא שם וציינו למקום הקבר הכי מפרש בפסיקתא דפרשת העומר ובסדר זרעים ירושלמי:</blockquote><p><span class="say">מה רש"י אומר:</span> רבי שמעון קיצץ תורמוסים והשליך אותם שם, ונעשה נס: המת צף במקומו, וסימנו את מקום הקבר. רש"י מביא זאת מן הפסיקתא ומן הירושלמי.</p></div>
+  <div data-hl="R6,R7,R8" class="voice r"><span class="tag">רש"י</span><blockquote>היית – במעמד:</blockquote><blockquote>ונמנית – הסכמת לדעתנו להיות מן המנין:</blockquote><blockquote>מפרכסות זו את זו – את שער חברתה להיות נאה:</blockquote><p><span class="say">מה רש"י אומר:</span> "היית" פירושו שהיית במעמד, "נמנית" שהסכמת לדעתנו. "מפרכסות" פירושו שמסדרות זו לזו את השיער כדי שתהיה נאה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה פירוש "עבד איהו נמי הכי"</h3>
+    <div data-hl="R5" class="voice r"><span class="tag">רש"י</span><blockquote>עבד איהו נמי הכי – היה מקצץ תורמסין ומשליכן שם ונעשה נס וצף המת במקום שהוא שם וציינו למקום הקבר הכי מפרש בפסיקתא דפרשת העומר ובסדר זרעים ירושלמי:</blockquote><p><span class="say">מה רש"י אומר:</span> לפי רש"י "הכי" חוזר אל בן זכאי: גם רבי שמעון קיצץ תורמוסים, ונעשה לו נס שהמת צף, וכך ידע איפה הקבר.</p></div>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>עבד איהו נמי הכי – מפר"ת כמו יעקב אבינו ותיקן מילתא:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם מפרש שרבי שמעון עשה כמו יעקב אבינו ותיקן דבר. לפי זה "הכי" חוזר אל יעקב, שהגמרא הזכירה בעמוד הקודם.</p></div>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>כל היכא דהוה קשי טהריה – כדאיתא בנדה בפרק האשה (דף סא. ושם) דתניא אמר רבי יוסי בן שאול מעשה בסלע שהיו מחזיקין בה טומאה כו' אמר להו הביאו לי סדינין הביאו לו ושראן במים ופרסו עליו מקום טומאה לח מקום טהרה נגוב:</blockquote><p><span class="say">מה התוספות אומרים:</span> על "קשה" ו"רך" התוספות מביאים מעשה ממסכת נידה: סלע שהחזיקו בה טומאה, ופרסו עליה סדינים שנשרו במים. מקום הטומאה היה לח, ומקום הטהרה נגוב, כלומר יבש.</p></div>
+  </div>
+  <p class="godeep">איך רש"י ורבנו תם מפרשים את המילים "עבד איהו נמי הכי"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה הכוהנים הצטערו?</summary><p>הם לא יכלו לעבור במקום מפני ספק טומאה, והיו צריכים להקיף.</p></details>
+  <details><summary>מה סיפר הזקן הראשון?</summary><p>שבן זכאי קיצץ שם תורמוסים של תרומה.</p></details>
+  <details><summary>מה קרה ליהודה בן גרים?</summary><p>רבי שמעון נתן בו את עיניו ועשה אותו גל של עצמות.</p></details>
+  <details class="deepq"><summary>אל מי חוזרת המילה "הכי" לפי רש"י, ואל מי לפי רבנו תם?</summary><p>לפי רש"י אל בן זכאי: גם רבי שמעון קיצץ תורמוסים. לפי רבנו תם אל יעקב אבינו: גם רבי שמעון תיקן דבר.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G3a,G3b">
+  <div class="kicker">יחידה 2 · משנה</div>
+  <h2>שלושה דברים, ומה עושים בספק חשכה</h2>
+  <p class="lead">המשנה מונה שלושה דברים שאדם אומר בביתו סמוך לשבת, ואחר כך מבחינה בין מה שאסור לעשות בספק חשכה לבין מה שמותר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>ג' דברים צריך אדם לומר בתוך ביתו</td><td>שלושה דברים צריך אדם לומר בתוך ביתו</td></tr>
+      <tr><td>ערב שבת עם חשכה</td><td>בערב שבת, סמוך לחשכה:</td></tr>
+      <tr><td>עשרתם ערבתם הדליקו את הנר</td><td>עישרתם? עירבתם? הדליקו את הנר.</td></tr>
+      <tr><td>ספק חשכה ספק אינו חשכה</td><td>ספק חשכה, ספק אינו חשכה:</td></tr>
+      <tr><td>אין מעשרין את הודאי</td><td>אין מעשרים את הוודאי,</td></tr>
+      <tr><td>ואין מטבילין את הכלים</td><td>ואין מטבילים את הכלים,</td></tr>
+      <tr><td>ואין מדליקין את הנרות</td><td>ואין מדליקים את הנרות.</td></tr>
+      <tr><td>אבל מעשרין את הדמאי</td><td>אבל מעשרים את הדמאי,</td></tr>
+      <tr><td>ומערבין וטומנין את החמין</td><td>ומערבים, וטומנים את החמין.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>שלושה דברים:</b> סמוך לחשכה אדם שואל את בני ביתו אם עישרו ואם עירבו, ומורה להם להדליק את הנר.</p>
+  <p><b>ספק חשכה:</b> בזמן שאין יודעים אם כבר חשכה, אין מעשרים פירות שוודאי לא עושרו, אין מטבילים כלים, ואין מדליקים נרות.</p>
+  <p><b>מה מותר:</b> מעשרים דמאי, מערבים, וטומנים את החמין, כלומר עוטפים את התבשיל החם כדי לשמור את חומו.</p>
+  <div data-hl="R10" class="voice r"><span class="tag">רש"י</span><blockquote>מתני' עם חשכה – שאם ימהר להזכירם מבעוד יום יפשעו ויאמרו עדיין יש שהות:</blockquote><p><span class="say">מה רש"י אומר:</span> דווקא סמוך לחשכה, כי אם יזכיר מוקדם, בני הבית יתרשלו ויאמרו שעדיין יש זמן.</p></div>
+  <div data-hl="R12" class="voice r"><span class="tag">רש"י</span><blockquote>ערבתם – ערובי תחומין וחצירות והני תרי שייכי למימרינהו בלשון שאלה דשמא כבר עשו אבל בנר לא שייך הדלקתם דדבר הנראה לעין הוא:</blockquote><p><span class="say">מה רש"י אומר:</span> "עשרתם" ו"ערבתם" נאמרים בלשון שאלה, כי אולי כבר נעשו. בנר אין לשאול, כי רואים אותו, ולכן נאמר "הדליקו".</p></div>
+  <div data-hl="R16" class="voice r"><span class="tag">רש"י</span><blockquote>אבל מעשרין את הדמאי – דלא דמי למתקן דרוב ע"ה מעשרין הן:</blockquote><p><span class="say">מה רש"י אומר:</span> עישור דמאי אינו דומה לתיקון, כי רוב עמי הארץ מעשרים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה אסור ולמה מותר</h3>
+    <div data-hl="R13,R14" class="voice r"><span class="tag">רש"י</span><blockquote>ספק חשכה – כגון בין השמשות אין מעשרין את הודאי דתיקון מעליא הוא אע"ג דשבות בעלמא היא קסבר גזרו על השבות אף על בהש"מ:</blockquote><blockquote>ואין מטבילין את הכלים – דהוי נמי שבות כדאמרינן במסכת ביצה (דף יח.) דנראה כמתקן כלי:</blockquote><p><span class="say">מה רש"י אומר:</span> עישור הוודאי והטבלת הכלים הם שבות, איסור מדברי חכמים. ובכל זאת הם אסורים בבין השמשות, כי זה תיקון של ממש, ותנא המשנה סובר שגזרו על השבות גם בבין השמשות.</p></div>
+    <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>ואין מדליקין את הנרות – כ"ש דספיקא דאורייתא היא וזו ואין צריך לומר זו קתני:</blockquote><p><span class="say">מה רש"י אומר:</span> בהדלקת נרות הספק הוא באיסור תורה, ולכן היא אסורה כל שכן. המשנה שונה "זו ואין צריך לומר זו".</p></div>
+    <div data-hl="R11" class="voice r"><span class="tag">רש"י</span><blockquote>עשרתם – פירות האילן לסעודת שבת שאף אכילת עראי של שבת קובעת למעשר כדאמרינן במסכת ביצה (דף לד:) דשבת עונג איקרי מכל שהוא הוי עונג:</blockquote><p><span class="say">מה רש"י אומר:</span> הפירות צריכים עישור כי אפילו אכילת עראי של שבת קובעת למעשר, שהשבת נקראת עונג.</p></div>
+    <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>וטומנין את החמין – נותנן בקופה של מוכין להיות חומם משתמר בהן אבל משחשכה ודאי אין טומנין בהן כדמפרש בגמ':</blockquote><p><span class="say">מה רש"י אומר:</span> "טומנין" פירושו שנותנים את החמין בקופה של מוכין. משחשכה ודאי אין טומנים, והגמרא תסביר למה.</p></div>
+  </div>
+  <p class="godeep">למה עישור הוודאי אסור בבין השמשות, ועישור הדמאי מותר? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מהם שלושת הדברים?</summary><p>עישרתם, עירבתם, הדליקו את הנר.</p></details>
+  <details><summary>מה אסור לעשות בספק חשכה?</summary><p>לעשר את הוודאי, להטביל כלים ולהדליק נרות.</p></details>
+  <details><summary>מה מותר בספק חשכה?</summary><p>לעשר את הדמאי, לערב ולטמון את החמין.</p></details>
+  <details class="deepq"><summary>למה אומרים "הדליקו" ולא "הדלקתם"?</summary><p>כי הנר נראה לעין, ואין צורך לשאול עליו.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G4a,G4b,G5,G6,G7">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>המקור, בנחת, ותחומין מול חצרות</h2>
+  <p class="lead">הגמרא מביאה מקור לשלושת הדברים, מלמדת איך לומר אותם, ומיישבת סתירה בין "עם חשכה" לבין "ספק חשכה מערבין".</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מנא הני מילי</td><td>מניין הדברים האלה?</td></tr>
+      <tr><td>וידעת כי שלום אהלך</td><td>"וידעת כי שלום אהלך,</td></tr>
+      <tr><td>ופקדת נוך ולא תחטא</td><td>ופקדת נוך ולא תחטא".</td></tr>
+      <tr><td>צריך למימרינהו בניחותא</td><td>צריך לומר אותם בנחת,</td></tr>
+      <tr><td>כי היכי דליקבלינהו מיניה</td><td>כדי שיקבלו אותם ממנו.</td></tr>
+      <tr><td>אנא לא שמיע לי</td><td>אני לא שמעתי</td></tr>
+      <tr><td>וקיימתי מסברא</td><td>וקיימתי (אותה) מסברה.</td></tr>
+      <tr><td>הא גופא קשיא</td><td>זו עצמה קשה:</td></tr>
+      <tr><td>עם חשכה אין ספק חשכה ספק אינו חשכה לא</td><td>עם חשכה כן, ספק חשכה ספק אינו חשכה לא.</td></tr>
+      <tr><td>והדר תני</td><td>ואחר כך שנה:</td></tr>
+      <tr><td>לא קשיא</td><td>אין קושיה:</td></tr>
+      <tr><td>כאן בעירובי תחומין כאן בעירובי חצרות</td><td>כאן בעירובי תחומין, כאן בעירובי חצרות.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המקור:</b> רבי יהושע בן לוי לומד את שלושת הדברים מן הפסוק "וידעת כי שלום אהלך ופקדת נוך ולא תחטא": מי שפוקד את ביתו לא יחטא.</p>
+  <p><b>בנחת:</b> רבה בר רב הונא מוסיף שצריך לומר את הדברים בנחת, כדי שבני הבית יקבלו. רב אשי אומר שלא שמע זאת, ובכל זאת נהג כך מסברה.</p>
+  <p><b>הסתירה:</b> בתחילת המשנה "ערבתם" נאמר עם חשכה, כלומר לא בספק חשכה. ובסופה שנינו שבספק חשכה מערבים. <b>התשובה:</b> "ערבתם" הוא בעירובי תחומין, ו"מערבין" בספק חשכה הוא בעירובי חצרות.</p>
+  <div data-hl="R19" class="voice r"><span class="tag">רש"י</span><blockquote>גמ' עם חשכה – מבעוד יום הוא ויש שהות לעשר ולערב:</blockquote><p><span class="say">מה רש"י אומר:</span> "עם חשכה" הוא עדיין יום, ויש זמן לעשר ולערב.</p></div>
+  <div data-hl="R20" class="voice r"><span class="tag">רש"י</span><blockquote>בעירובי תחומין – תיקון מעליא דאסמכוה רבנן תחומין אקראי ואפי' למאן דאמר תחומין דרבנן כדאמרינן בעירובין (דף נא.) ילפינן מקום ממקום ומקום מניסה כו' אבל עירובי חצרות חומרא בעלמא הוא ולא מיקרי שביתה מעלייתא וספקא דבין השמשות שפיר דמי:</blockquote><p><span class="say">מה רש"י אומר:</span> עירובי תחומין הם תיקון של ממש, כי חכמים סמכו את התחומים על פסוק. עירובי חצרות הם חומרא בלבד, ולכן מותר לערב אותם בספק בין השמשות.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איזה עירוב חמור יותר</h3>
+    <div data-hl="T3a" class="voice t"><span class="tag">תוספות</span><blockquote>לא קשיא כאן בעירובי תחומין כו' – נראה לר"ת כפירוש הקונטרס דבעירובי תחומין מחמרינן משום דאית להו סמך מן המקרא וכן פר"ח וכן יש בירושלמי וכן משמע בפרק מי שהוציאוהו (עירובין דף מו: וסם) גבי הא דקאמר הלכה כדברי המיקל בעירוב רב פפא אמר איצטריך סד"א ה"מ עירובי חצרות אבל בעירובי תחומין אימא לא</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו תם מסכים לרש"י שעירובי תחומין חמורים, כי יש להם סמך מן המקרא. ראיה ממסכת עירובין: רב פפא אמר שהכלל "הלכה כדברי המיקל בעירוב" היה צריך להיאמר, כי היינו חושבים שהוא רק בעירובי חצרות.</p></div>
+    <div data-hl="T3b" class="voice t"><span class="tag">תוספות</span><blockquote>ומעיקרא היה מפרש ר"ת דעירובי חצרות חמירי טפי דאין מערבין אלא בפת כדמשמע בפרק הדר (עירובין דף עא:) ובחלון (שם דף פא. ושם) אבל בעירובי תחומין מערבין בכל דבר חוץ ממים ומלח ואין נראה דהא ר"מ ס"ל דתחומין דאורייתא בפרק בכל מערבין (עירובין לה.) ואפ"ה אית ליה בהדר דעירובי חצרות בפת ובעירובי תחומין מערבין בכל דבר דלא אשכחן דפליג ר"מ אסתם משנה דבכל מערבין וטעמא דמקילי בתחומים דלא בעי פת …</blockquote><p><span class="say">מה התוספות אומרים:</span> בתחילה פירש רבנו תם שעירובי חצרות חמורים, כי הם רק בפת. התוספות דוחים: רבי מאיר סובר שתחומין מן התורה, ובכל זאת גם לדעתו עירובי תחומין בכל דבר. ההקלה בתחומין היא מפני שמערבים אותם רק לדבר מצווה.</p></div>
+    <p>מכאן שהשאלה "איזה עירוב קל" יכולה להיבחן בשני עניינים שונים: מתי מותר לערב, ובמה מערבים. התוספות מראים שההקלה בעניין אחד אינה מלמדת על העניין האחר.</p>
+  </div>
+  <p class="godeep">למה ההקלה שעירובי תחומין אינם צריכים פת אינה מוכיחה שהם קלים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מאיזה פסוק לומדים את שלושת הדברים?</summary><p>"וידעת כי שלום אהלך ופקדת נוך ולא תחטא".</p></details>
+  <details><summary>מה הוסיף רבה בר רב הונא?</summary><p>שצריך לומר את הדברים בנחת, כדי שיקבלו אותם.</p></details>
+  <details><summary>איך הגמרא מיישבת את הסתירה במשנה?</summary><p>"ערבתם" עם חשכה הוא בעירובי תחומין, ו"מערבין" בספק חשכה הוא בעירובי חצרות.</p></details>
+  <details class="deepq"><summary>מה היה פירושו הראשון של רבנו תם, ולמה נדחה?</summary><p>שעירובי חצרות חמורים כי הם בפת. נדחה כי גם רבי מאיר, שסובר שתחומין מן התורה, מתיר בהם כל דבר.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G8,G9">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>רבא: שני עירובים בבין השמשות</h2>
+  <p class="lead">רבא מביא מקרה שבו שני עירובים קונים, אף שלכאורה רק אחד מהם יכול לקנות.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>אמרו לו שנים צא וערב עלינו</td><td>שניים אמרו לו: צא וערב עלינו.</td></tr>
+      <tr><td>לאחד עירב עליו מבעוד יום</td><td>לאחד עירב עליו בעוד יום,</td></tr>
+      <tr><td>ולאחד עירב עליו בין השמשות</td><td>ולאחד עירב עליו בבין השמשות.</td></tr>
+      <tr><td>נאכל עירובו בין השמשות</td><td>נאכל עירובו בבין השמשות,</td></tr>
+      <tr><td>נאכל עירובו משחשכה</td><td>נאכל עירובו משחשכה.</td></tr>
+      <tr><td>שניהם קנה עירוב</td><td>שניהם קנו עירוב.</td></tr>
+      <tr><td>מה נפשך</td><td>מה שתרצה:</td></tr>
+      <tr><td>אי בין השמשות יממא הוא</td><td>אם בין השמשות יום הוא,</td></tr>
+      <tr><td>בתרא ליקני קמא לא ליקני</td><td>האחרון יקנה, הראשון לא יקנה.</td></tr>
+      <tr><td>ואי בין השמשות ליליא הוא</td><td>ואם בין השמשות לילה הוא,</td></tr>
+      <tr><td>בין השמשות ספקא הוא</td><td>בין השמשות ספק הוא,</td></tr>
+      <tr><td>וספקא דרבנן לקולא</td><td>וספק של דברי חכמים להקל.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המקרה:</b> שליח עירב לשני אנשים. עירובו של הראשון הונח ביום ונאכל בבין השמשות. עירובו של השני הונח בבין השמשות ונאכל אחרי שחשכה. רבא אומר ששניהם קנו עירוב.</p>
+  <p><b>הקושי:</b> אם בין השמשות יום, רק השני קונה, כי עירובו של הראשון כבר לא היה קיים בכניסת הלילה. ואם בין השמשות לילה, רק הראשון קונה, כי עירובו של השני הונח כשכבר היה לילה.</p>
+  <p><b>התשובה:</b> בין השמשות הוא ספק, וספק בדבר שמדברי חכמים הולכים בו להקל. לכן מקילים בשני המקרים.</p>
+  <div data-hl="R22,R23" class="voice r"><span class="tag">רש"י</span><blockquote>נאכל – שאכלו כלב או אדם:</blockquote><blockquote>שעירב עליו מבעוד יום – הניח עירוב לסוף התחום מבעוד יום ולא הספיק להחשיך ממש עד שנאכל בין השמשות:</blockquote><p><span class="say">מה רש"י אומר:</span> "נאכל" פירושו שאכלו כלב או אדם. מדובר בעירוב שהונח בסוף התחום.</p></div>
+  <div data-hl="R24" class="voice r"><span class="tag">רש"י</span><blockquote>שניהם קנו עירוב – דלגבי האי שנאכל בין השמשות משוינן ליה ליליא ואמרינן כבר קדש היום בעוד העירוב קיים וקנה עירוב דהלכה כר' יוסי דאמר בעירובין (דף לה.) ספק עירוב כשר ולגבי דהאי שהונח עליו בין השמשות ונתקיים עד שחשכה משוינן לבין השמשות יממא ועדיין לא קדש היום כשהונח ונמצא שהיה שם כבר בשעת קניית עירוב:</blockquote><p><span class="say">מה רש"י אומר:</span> במי שעירובו נאכל בבין השמשות מחשיבים את בין השמשות כלילה, ובמי שעירובו הונח בבין השמשות מחשיבים אותו כיום.</p></div>
+  <div data-hl="R27" class="voice r"><span class="tag">רש"י</span><blockquote>ה"ג ספקא דרבנן היא – כלומר הא מילתא דמספקא לן אי בין השמשות יממא או ליליא במילתא דרבנן איתרע לן בעירובי תחומין דרבנן וכל ספקא דרבנן לקולא:</blockquote><p><span class="say">מה רש"י אומר:</span> הספק אם בין השמשות יום או לילה נפל כאן בעירובי תחומין, שהם מדברי חכמים, וכל ספק בדברי חכמים להקל.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>באיזה עירוב מדובר</h3>
+    <div data-hl="T5a" class="voice t"><span class="tag">תוספות</span><blockquote>שניהם קנו עירוב – פירש בקונטרס דרבא איירי בעירובי תחומין וכן משמע לשון צא וערב ואע"פ דספק חשכה אין מערבין עירובי תחומין ה"מ לכתחילה אבל בדיעבד כשר כר' יוסי דאמר (עירובין פ"ג דף לה.) ספק עירוב כשר</blockquote><p><span class="say">מה התוספות אומרים:</span> רש"י פירש שרבא מדבר בעירובי תחומין, כמשמע מן הלשון "צא וערב". אף שבספק חשכה אין מערבים עירובי תחומין לכתחילה, בדיעבד העירוב כשר כרבי יוסי, שאמר "ספק עירוב כשר".</p></div>
+    <div data-hl="T5b" class="voice t"><span class="tag">תוספות</span><blockquote>וקשה לרשב"א דר' יוסי לית ליה התם גבי נפל עליו גל או נשרף או תרומה ונטמאה ספק עירוב [כשר] אלא משום חזקה כדתניא התם בהדיא (דף לו.) כיצד אמר רבי יוסי ספק עירוב כשר כו' אבל בספק כי הכא שהניחו בין השמשות או נאכל בין השמשות לא מכשר</blockquote><p><span class="say">מה התוספות אומרים:</span> הרשב"א מקשה: רבי יוסי מכשיר ספק עירוב רק מפני החזקה, כגון שנפל עליו גל או שנשרף. בספק כמו כאן, שהעירוב הונח או נאכל בבין השמשות, הוא אינו מכשיר.</p></div>
+    <div data-hl="T5c" class="voice t"><span class="tag">תוספות</span><blockquote>ומפר"ת דהכא מיירי בעירובי חצרות וכן פר"ח וכן מוכח בסוף הדר (עירובין דף עו.) וצא אשכחן נמי דלאו חוץ לעיר קאמר כמו צא ושכור לנו פועלים (ב"מ דף פג.):</blockquote><p><span class="say">מה התוספות אומרים:</span> לכן רבנו תם מפרש שמדובר בעירובי חצרות, וכך רבנו חננאל. "צא" אינו מחוץ לעיר, כמו "צא ושכור לנו פועלים".</p></div>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>נאכל עירובו משחשכה – לאו דווקא וה"ה לא נאכל:</blockquote><p><span class="say">מה התוספות אומרים:</span> "נאכל עירובו משחשכה" לא נאמר בדיוק. הדין אותו דין גם אם לא נאכל.</p></div>
+  </div>
+  <p class="godeep">האם רבא מדבר בעירובי תחומין או בעירובי חצרות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה אמר רבא על שני העירובים?</summary><p>ששניהם קנו עירוב.</p></details>
+  <details><summary>למה לכאורה רק אחד מהם יכול לקנות?</summary><p>כי בין השמשות הוא או יום או לילה, ובכל אחת מן האפשרויות רק אחד מן העירובים היה קיים בזמן הנכון.</p></details>
+  <details><summary>מה התשובה?</summary><p>בין השמשות ספק, וספק בדברי חכמים להקל.</p></details>
+  <details class="deepq"><summary>מה קשה לרשב"א בפירוש רש"י?</summary><p>רבי יוסי מכשיר ספק עירוב רק מפני החזקה, ולא בספק של בין השמשות כמו כאן.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G10,G11">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>למה אין טומנים משחשכה</h2>
+  <p class="lead">המשנה התירה לטמון בספק חשכה. רבא מסביר למה אסור לטמון משחשכה, ומדוע הגזירה אינה חלה בבין השמשות.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מפני מה אמרו</td><td>מפני מה אמרו</td></tr>
+      <tr><td>אין טומנין בדבר שאינו מוסיף הבל משחשכה</td><td>אין טומנים בדבר שאינו מוסיף חום משחשכה?</td></tr>
+      <tr><td>גזרה שמא ירתיח</td><td>גזירה, שמא ירתיח.</td></tr>
+      <tr><td>אמר ליה אביי</td><td>אמר לו אביי:</td></tr>
+      <tr><td>אי הכי בין השמשות נמי ניגזר</td><td>אם כך, גם בבין השמשות נגזור!</td></tr>
+      <tr><td>סתם קדירות רותחות הן</td><td>סתם קדרות רותחות הן.</td></tr>
+      <tr><td>ואמר רבא</td><td>ועוד אמר רבא:</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הגזירה:</b> משחשכה אין טומנים אפילו בדבר שאינו מוסיף חום, כגון צמר ומוכין. הטעם: שמא ירתיח את התבשיל קודם.</p>
+  <p><b>קושיית אביי:</b> אם יש חשש כזה, למה לא נגזור גם בבין השמשות? הרי המשנה התירה לטמון בספק חשכה.</p>
+  <p><b>התשובה:</b> בדרך כלל הקדרות רותחות בשעה הזו, ואין חשש שירתיח אותן.</p>
+  <div data-hl="R28" class="voice r"><span class="tag">רש"י</span><blockquote>ה"ג אמר רבא מפני מה אמרו אין טומנין בדבר שאינו מוסיף הבל – כגון צמר ומוכין:</blockquote><p><span class="say">מה רש"י אומר:</span> "דבר שאינו מוסיף הבל" הוא כגון צמר ומוכין.</p></div>
+  <div data-hl="R29" class="voice r"><span class="tag">רש"י</span><blockquote>משחשכה – כדתנן במתניתין וטומנין את החמין טעמא דספק חשכה הא ודאי חשכה אין טומנין וסתם הטמנה בדבר שאינו מוסיף הבל דאילו בדבר המוסיף הבל אפי׳ מבעוד יום אסור כדתנן בפ״ד (דף מז:) אין טומנין לא בגפת כו׳ גזירה שמא ימצא קדרתו שנצטננה כשירצה להטמינה וירתיחנה תחילה ונמצא מבשל בשבת:</blockquote><p><span class="say">מה רש"י אומר:</span> כשירצה להטמין ימצא שהקדרה התקררה, ירתיח אותה קודם, ונמצא מבשל בשבת. בדבר שמוסיף חום אסור להטמין אפילו ביום, כפי שנשנה בפרק רביעי.</p></div>
+  <div data-hl="R31" class="voice r"><span class="tag">רש"י</span><blockquote>רותחות הן – שסמוך לביה"ש הוא מעבירם מעל האור וליכא למיחש לשמא נצטננה וירתיחנה:</blockquote><p><span class="say">מה רש"י אומר:</span> סמוך לבין השמשות מסירים את הקדרות מעל האש, ולכן אין לחשוש שהתקררו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה אביי מקשה דווקא מבין השמשות</h3>
+    <div data-hl="R30" class="voice r"><span class="tag">רש"י</span><blockquote>אי הכא בין השמשות נמי ניגזר – דהא שבות מעלייתא היא דהא איכא גזירת איסור דאורייתא ותנא דמתניתין אית ליה דגזרו על השבות ביה"ש דקתני אין מעשרין את הודאי:</blockquote><p><span class="say">מה רש"י אומר:</span> גזירה זו היא שבות של ממש, כי היא שומרת מאיסור תורה. ותנא המשנה סובר שגזרו על השבות בבין השמשות, שהרי שנה "אין מעשרין את הודאי". לכן היה מקום לגזור גם כאן.</p></div>
+    <p>התשובה אינה משנה את העיקרון. היא אומרת שבבין השמשות סיבת הגזירה אינה קיימת: החשש הוא שהקדרה התקררה, ובשעה הזו הקדרות עדיין רותחות.</p>
+  </div>
+  <p class="godeep">למה אביי חשב שצריך לגזור גם בבין השמשות? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הטעם שאין טומנים משחשכה?</summary><p>גזירה שמא ירתיח.</p></details>
+  <details><summary>מה קשה לאביי?</summary><p>שאם כך, צריך לגזור גם בבין השמשות.</p></details>
+  <details><summary>מה ענה רבא?</summary><p>בדרך כלל הקדרות רותחות בשעה הזו.</p></details>
+  <details class="deepq"><summary>מה הראיה של רש"י שתנא המשנה גוזר שבות בבין השמשות?</summary><p>שהמשנה שונה "אין מעשרין את הודאי" בספק חשכה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>טיהור השוק:</b> רבי שמעון בר יוחאי טיהר מקום של ספק טומאה, והעניש את מי שלעג ואת יהודה בן גרים.</li>
+      <li><b>שלושה דברים:</b> סמוך לחשכה אדם אומר בביתו "עשרתם, ערבתם, הדליקו את הנר", ואומר אותם בנחת.</li>
+      <li><b>ספק חשכה:</b> אין מעשרים את הוודאי, אין מטבילים כלים ואין מדליקים, אבל מעשרים דמאי, מערבים וטומנים.</li>
+      <li><b>תחומין וחצרות:</b> "ערבתם" עם חשכה בעירובי תחומין, ו"מערבין" בספק חשכה בעירובי חצרות.</li>
+      <li><b>שני עירובים:</b> בין השמשות ספק, וספק של דברי חכמים להקל, ולכן שני העירובים קנו.</li>
+      <li><b>הטמנה:</b> משחשכה אין טומנים שמא ירתיח, ובבין השמשות מותר כי הקדרות רותחות.</li>
+      <li><b>ממשיך:</b> העמוד הבא פותח בשאלה למה אין טומנים בדבר המוסיף חום אפילו ביום.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>אית להו צערא</td><td>יש להם צער, קשה להם</td></tr>
+      <tr><td>לאקופי</td><td>להקיף, ללכת בדרך מסביב</td></tr>
+      <tr><td>איתחזק</td><td>הוחזק, נקבע כדבר ידוע</td></tr>
+      <tr><td>יהב ביה עיניה</td><td>נתן בו את עיניו</td></tr>
+      <tr><td>נח נפשיה</td><td>&quot;נחה נפשו&quot;: מת</td></tr>
+      <tr><td>מנא הני מילי</td><td>מניין הדברים האלה</td></tr>
+      <tr><td>בניחותא</td><td>בנחת</td></tr>
+      <tr><td>מסברא</td><td>מדעת עצמי, בלי ששמעתי ממישהו</td></tr>
+      <tr><td>הא גופא קשיא</td><td>הדבר עצמו קשה: סתירה בתוך אותו מקור</td></tr>
+      <tr><td>לא קשיא</td><td>אין קושיה: כל דבר עוסק במקרה אחר</td></tr>
+      <tr><td>מבעוד יום</td><td>בעוד שעדיין יום</td></tr>
+      <tr><td>מה נפשך</td><td>&quot;מה שתרצה&quot;: בכל אחת משתי האפשרויות</td></tr>
+      <tr><td>יממא · ליליא</td><td>יום · לילה</td></tr>
+      <tr><td>ספקא דרבנן לקולא</td><td>ספק בדבר שמדברי חכמים, הולכים בו להקל</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-33b.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-34b.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ל&quot;ד עמוד א&#x27;, לומדים: סוף הסיפור: טיהור השוק; שלושה דברים, ומה עושים בספק חשכה; המקור, בנחת, ותחומין מול חצרות; רבא: שני עירובים בבין השמשות; למה אין טומנים משחשכה.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (37 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד א&#x27;: סוף סיפור רבי שמעון בר יוחאי</h3><p>העמוד הקודם סיפר שרבי שמעון בר יוחאי ובנו יצאו מן המערה, ורבי שמעון אמר: הואיל ונעשה לי נס, אלך ואתקן דבר. אמרו לו שיש מקום שיש בו ספק טומאה. כאן הסיפור נגמר, ואחריו באה המשנה על שלושה דברים שאדם אומר בביתו בערב שבת, ודיני בין השמשות.</p></li><li><h3><span class="w">גמרא</span> · הכוהנים נאלצים להקיף</h3><p>&quot;ואית להו צערא לכהנים לאקופי&quot;, והכוהנים מצטערים שעליהם להקיף. רש&quot;י מסביר שהמקום היה שוק שהרבים עוברים בו, והכוהנים לא יכלו להיכנס אליו מפני הטומאה, והלכו בדרך אחרת וארוכה. רבי שמעון שאל: יש מי שיודע שהוחזקה כאן טהרה? רש&quot;י: שהשוק הזה מעולם לא היה בית קברות גמור, שאין רשות לפנותו.</p></li><li><h3><span class="w">גמרא</span> · &quot;כאן קיצץ בן זכאי&quot;</h3><p>זקן אחד אמר לו: כאן קיצץ בן זכאי תורמוסים של תרומה. רש&quot;י מפרש: שתל אותם ועקר אותם אחרי שגדלו. תורמוסי תרומה צריך לשמור בטהרה, ורש&quot;י מוסיף שגם בן זכאי עצמו היה כוהן. כך ענה הזקן על השאלה אם הוחזקה שם טהרה.</p></li><li><h3><span class="w">גמרא</span> · &quot;עבד איהו נמי הכי&quot;</h3><p>&quot;עבד איהו נמי הכי&quot;, גם הוא עשה כך. כל מקום שהיה קשה טיהר, וכל מקום שהיה רך סימן אותו. רש&quot;י מביא מן הפסיקתא ומן הירושלמי: הוא קיצץ תורמוסים והשליך אותם שם, ונעשה נס, המת צף במקום שהיה בו, וסימנו את מקום הקבר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: כמו יעקב אבינו</h3><p>רבנו תם מפרש את &quot;עבד איהו נמי הכי&quot; כך: גם רבי שמעון עשה כמו יעקב אבינו, ותיקן דבר. לפי פירוש זה המילה &quot;הכי&quot; חוזרת אל יעקב, ולא אל בן זכאי.</p></li><li><h3><span class="w">תוספות</span> · התוספות: מעשה דומה במסכת נידה</h3><p>על &quot;כל מקום שהיה קשה טיהר&quot; התוספות מביאים ברייתא ממסכת נידה. רבי יוסי בן שאול סיפר על סלע שהחזיקו בה טומאה. נאמר שם: &quot;הביאו לי סדינים&quot;. הביאו לו, והוא שרה אותם במים, ופרסו אותם על הסלע. מקום הטומאה היה לח, ומקום הטהרה נגוב, כלומר יבש.</p></li><li><h3><span class="w">גמרא</span> · &quot;טיהר בן יוחי בית הקברות&quot;</h3><p>זקן אחד אמר בלעג: בן יוחאי טיהר בית קברות! רבי שמעון אמר לו: אילו לא היית איתנו, או שהיית איתנו ולא נמנית איתנו, יפה היית אומר. רש&quot;י: &quot;היית&quot; פירושו שהיית במעמד, ו&quot;נמנית&quot; פירושו שהסכמת לדעתנו והיית מן המניין.</p></li><li><h3><span class="w">גמרא</span> · &quot;זונות מפרכסות זו את זו&quot;</h3><p>אבל עכשיו, שהיית איתנו ונמנית איתנו, יאמרו: זונות מפרכסות זו את זו, ותלמידי חכמים לא כל שכן? רש&quot;י: מסדרות זו לזו את השיער כדי שתהיה נאה. כלומר, אם אפילו הן מייפות זו את זו, תלמידי חכמים על אחת כמה וכמה שהיה להם לנהוג כבוד זה בזה.</p></li><li><h3><span class="w">גמרא</span> · הזקן מת</h3><p>&quot;יהב ביה עיניה ונח נפשיה&quot;. רבי שמעון נתן בו את עיניו, והזקן מת.</p></li><li><h3><span class="w">גמרא</span> · יהודה בן גרים</h3><p>רבי שמעון יצא לשוק וראה את יהודה בן גרים. בעמוד הקודם נאמר שהוא סיפר את דבריהם, והם נשמעו למלכות. אמר: עדיין יש לזה מקום בעולם? נתן בו את עיניו ועשה אותו גל של עצמות. רש&quot;י: כמו מת שבשרו נרקב ונפל מזמן רב.</p></li><li><h3><span class="w">משנה</span> · המשנה: שלושה דברים בערב שבת</h3><p>&quot;שלשה דברים צריך אדם לומר בתוך ביתו ערב שבת עם חשכה: עשרתם, ערבתם, הדליקו את הנר.&quot; רש&quot;י: דווקא סמוך לחשכה, כי אם יזכיר אותם מוקדם, בני הבית יתרשלו ויאמרו שעדיין יש זמן.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: &quot;עשרתם&quot;</h3><p>מדובר בפירות האילן לסעודת שבת. אפילו אכילת עראי של שבת קובעת את הפירות למעשר, כי השבת נקראת עונג, ואפילו אכילה כל שהיא בשבת היא עונג. כך נאמר במסכת ביצה.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: שאלה, ולא ציווי</h3><p>&quot;ערבתם&quot; פירושו עירובי תחומין ועירובי חצרות. את שני הדברים הראשונים מתאים לומר בלשון שאלה, כי אולי כבר עשו אותם. אבל בנר אין לשאול &quot;הדלקתם&quot;, כי זה דבר שהעין רואה, ולכן נאמר &quot;הדליקו&quot;.</p></li><li><h3><span class="w">משנה</span> · ספק חשכה: אין מעשרים את הוודאי</h3><p>&quot;ספק חשכה ספק אינו חשכה&quot;, כגון בין השמשות, &quot;אין מעשרין את הודאי&quot;, כלומר פירות שוודאי לא עושרו. רש&quot;י: זה תיקון של ממש. אף שהאיסור הוא רק שבות, מדברי חכמים, התנא סובר שגזרו על השבות גם בבין השמשות.</p></li><li><h3><span class="w">רש&quot;י</span> · אין מטבילים כלים ואין מדליקים</h3><p>גם הטבלת כלים היא שבות, כי נראה כמתקן כלי, כמו שנאמר במסכת ביצה. ואין מדליקים נרות, וזה כל שכן, כי שם הספק הוא באיסור מן התורה. רש&quot;י מסביר שהמשנה שונה בדרך &quot;זו ואין צריך לומר זו&quot;.</p></li><li><h3><span class="w">משנה</span> · מה מותר בבין השמשות</h3><p>&quot;אבל מעשרין את הדמאי ומערבין וטומנין את החמין&quot;. רש&quot;י: עישור דמאי אינו דומה לתיקון, כי רוב עמי הארץ מעשרים. על &quot;ומערבין&quot; הגמרא תקשה. ו&quot;טומנין&quot; פירושו שנותנים את החמין בקופה של מוכין כדי שחומם יישמר. אחרי שחשכה ודאי אין טומנים, כפי שהגמרא תפרש.</p><p>&quot;דמאי&quot; הם פירות שנקנו מעם הארץ, ויש ספק אם עישר אותם.</p></li><li><h3><span class="w">גמרא</span> · מניין לשלושת הדברים</h3><p>&quot;מנא הני מילי&quot;, מניין הדברים האלה? רבי יהושע בן לוי אומר: אמר הכתוב &quot;וידעת כי שלום אהלך ופקדת נוך ולא תחטא&quot;. כלומר, תפקוד את ביתך, ולא תחטא.</p></li><li><h3><span class="w">גמרא</span> · לומר בנחת</h3><p>רבה בר רב הונא אמר: אף שאמרו חכמים שאדם צריך לומר שלושה דברים, עליו לומר אותם &quot;בניחותא&quot;, בנחת, כדי שבני ביתו יקבלו ממנו. רב אשי אמר: את דברי רבה בר רב הונא לא שמעתי, וקיימתי אותם מסברה.</p></li><li><h3><span class="w">גמרא</span> · סתירה בתוך המשנה</h3><p>&quot;הא גופא קשיא&quot;, המשנה עצמה קשה. בתחילתה נאמר &quot;עם חשכה&quot;: עם חשכה כן, בספק חשכה לא. ואחר כך היא שונה שבספק חשכה מערבים. רש&quot;י: &quot;עם חשכה&quot; הוא עדיין יום, ויש זמן לעשר ולערב.</p></li><li><h3><span class="w">גמרא</span> · סימן</h3><p>לפני הדברים הבאים הגמרא נותנת סימן: &quot;בגופיא זימרא ציפרא בחבלא דמילתא&quot;. סימן הוא צירוף מילים שעוזר לזכור את סדר הדברים שאחריו.</p></li><li><h3><span class="w">גמרא</span> · &quot;לא קשיא&quot;: תחומין וחצרות</h3><p>רבי אבא אמר בשם רב חייא בר אשי בשם רב: אין סתירה. &quot;ערבתם&quot;, שנאמר עם חשכה, מדבר בעירובי תחומין. ו&quot;מערבין&quot;, שנאמר בספק חשכה, מדבר בעירובי חצרות.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: למה תחומין חמורים</h3><p>עירובי תחומין הם תיקון של ממש, כי חכמים סמכו את התחומים על פסוק. כך אפילו לדעה שתחומין מדברי חכמים, כמו שלומדים במסכת עירובין &quot;מקום&quot; מ&quot;מקום&quot;. אבל עירובי חצרות הם חומרא בלבד, ואינם שביתה של ממש, ולכן בספק בין השמשות מותר לערב אותם.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רבנו תם כפירוש רש&quot;י</h3><p>רבנו תם מסכים לפירוש רש&quot;י: בעירובי תחומין מחמירים, כי יש להם סמך מן המקרא. כך פירש גם רבנו חננאל, וכך בירושלמי. וכך משמע במסכת עירובין, שעל הכלל &quot;הלכה כדברי המיקל בעירוב&quot; אמר רב פפא שהיה צורך לומר אותו, כי היינו חושבים שהוא נאמר רק בעירובי חצרות ולא בעירובי תחומין.</p></li><li><h3><span class="w">תוספות</span> · התוספות: הפירוש הראשון של רבנו תם נדחה</h3><p>בתחילה פירש רבנו תם להפך: עירובי חצרות חמורים יותר, כי מערבים אותם רק בפת, ואילו עירובי תחומין מערבים בכל דבר חוץ ממים ומלח. התוספות דוחים זאת: רבי מאיר סובר שתחומין מן התורה, ובכל זאת גם לדעתו עירובי חצרות בפת ועירובי תחומין בכל דבר, שהרי לא מצאנו שרבי מאיר חולק על סתם המשנה &quot;בכל מערבין&quot;. הטעם שמקלים בתחומין ואינם צריכים פת הוא שמערבים אותם רק לדבר מצווה.</p></li><li><h3><span class="w">גמרא</span> · רבא: שני עירובים</h3><p>ועוד אמר רבא: שניים אמרו לאחד &quot;צא וערב עלינו&quot;. לאחד עירב עוד ביום, ולשני עירב בבין השמשות. העירוב שהונח ביום נאכל בבין השמשות, והעירוב שהונח בבין השמשות נאכל אחרי שחשכה. שניהם קנו עירוב. רש&quot;י: &quot;נאכל&quot;, כגון שאכלו כלב או אדם, ומדובר בעירוב שהונח בסוף התחום.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: איך שניהם קנו</h3><p>בין השמשות הוא תחילת קדושת היום, ואז העירוב קונה. במי שעירובו נאכל בבין השמשות מחשיבים את בין השמשות כלילה: היום כבר קדש בעוד שהעירוב קיים. וזה כרבי יוסי, שאמר &quot;ספק עירוב כשר&quot;, והלכה כמותו. ובמי שעירובו הונח בבין השמשות מחשיבים אותו כיום: כשהונח עוד לא קדש היום, והעירוב היה שם בשעה שהוא קונה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: &quot;נאכל&quot; לאו דווקא</h3><p>&quot;נאכל עירובו משחשכה&quot; לא נאמר בדיוק. הדין אותו דין גם אם העירוב לא נאכל כלל.</p></li><li><h3><span class="w">גמרא</span> · &quot;מה נפשך&quot;</h3><p>&quot;מה נפשך&quot;, בכל אחת מן האפשרויות יש קושי. אם בין השמשות הוא יום, האחרון, שעירובו הונח בבין השמשות, יקנה, והראשון לא יקנה, כי עירובו נאכל ביום. ואם בין השמשות הוא לילה, הראשון יקנה והאחרון לא. איך קנו שניהם?</p></li><li><h3><span class="w">גמרא</span> · ספק של חכמים להקל</h3><p>התשובה: בין השמשות הוא ספק, וספק בדבר שמדברי חכמים הולכים בו להקל. רש&quot;י גורס &quot;ספקא דרבנן היא&quot;: הספק אם בין השמשות יום או לילה נפל כאן בעירובי תחומין, שהם מדברי חכמים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש רש&quot;י, עירובי תחומין</h3><p>רש&quot;י פירש שרבא מדבר בעירובי תחומין, וכך משמע מן הלשון &quot;צא וערב&quot;. ואף שבספק חשכה אין מערבים עירובי תחומין, זה רק לכתחילה. בדיעבד העירוב כשר, כרבי יוסי שאמר &quot;ספק עירוב כשר&quot;.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיית הרשב&quot;א</h3><p>הרשב&quot;א מקשה: רבי יוסי מכשיר שם ספק עירוב רק מפני החזקה, כגון שנפל על העירוב גל, או שנשרף, או שהיה תרומה ונטמא. כך מפורש בברייתא במסכת עירובין. אבל בספק כמו כאן, שהעירוב הונח או נאכל בבין השמשות, הוא אינו מכשיר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רבנו תם, עירובי חצרות</h3><p>לכן רבנו תם מפרש שכאן מדובר בעירובי חצרות. כך פירש גם רבנו חננאל, וכך מוכח בסוף פרק &quot;הדר&quot; במסכת עירובין. והמילה &quot;צא&quot; אינה אומרת שיוצא מחוץ לעיר, כמו &quot;צא ושכור לנו פועלים&quot;.</p></li><li><h3><span class="w">גמרא</span> · רבא: למה אין טומנים משחשכה</h3><p>רבא שאל: מפני מה אמרו שמשחשכה אין טומנים בדבר שאינו מוסיף חום? רש&quot;י: כגון צמר ומוכין. התשובה: &quot;גזרה שמא ירתיח&quot;. רש&quot;י: כשירצה להטמין ימצא שהקדרה התקררה, ירתיח אותה קודם, ונמצא מבשל בשבת.</p><p>רש&quot;י מוסיף: בדבר שמוסיף חום אסור להטמין אפילו ביום, כפי שנשנה בפרק רביעי, ולכן הטמנה סתם היא בדבר שאינו מוסיף חום.</p></li><li><h3><span class="w">גמרא</span> · אביי: נגזור גם בבין השמשות</h3><p>אביי אמר לו: אם כך, נגזור גם בבין השמשות. רש&quot;י: זו שבות של ממש, גזירה מפני איסור תורה, ותנא המשנה סובר שגזרו על השבות בבין השמשות, שהרי שנה &quot;אין מעשרין את הודאי&quot;.</p></li><li><h3><span class="w">גמרא</span> · &quot;סתם קדירות רותחות הן&quot;</h3><p>רבא ענה: &quot;סתם קדירות רותחות הן&quot;, בדרך כלל הקדרות רותחות בשעה הזו. רש&quot;י: סמוך לבין השמשות מסירים אותן מעל האש, ואין לחשוש שהתקררו ושירתיח אותן.</p></li><li><h3><span class="w">גמרא</span> · &quot;ואמר רבא&quot;</h3><p>העמוד מסתיים במילים &quot;ואמר רבא&quot;, ועוד אמר רבא. דבריו ממשיכים בעמוד הבא.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>סיפור רבי שמעון בר יוחאי נגמר בטיהור השוק. המשנה מנתה שלושה דברים שאדם אומר בביתו סמוך לחשכה, ומה עושים ומה אין עושים בספק חשכה. הגמרא מצאה לכך מקור בפסוק, ויישבה סתירה במשנה: &quot;ערבתם&quot; נאמר בעירובי תחומין, ו&quot;מערבין&quot; בעירובי חצרות. רבא לימד שבין השמשות הוא ספק, ובדבר של חכמים מקלים בו, והסביר מדוע אין טומנים משחשכה. העמוד הבא פותח בשאלה למה אין טומנים בדבר המוסיף חום אפילו ביום.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-34b.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "ואית להו צערא לכהנים לאקופי אמר איכא איניש דידע דאיתחזק הכא טהרה א\"ל ההוא סבא כאן קיצץ בן זכאי תורמסי תרומה עבד איהו נמי הכי כל היכא דהוה קשי טהריה וכל היכא דהוה רפי צייניה", false, ""], ["G2a", "אמר ההוא סבא טיהר בן יוחי בית הקברות א\"ל אילמלי (לא) היית עמנו ואפי' היית עמנו ולא נמנית עמנו יפה אתה אומר עכשיו שהיית עמנו ונמנית עמנו יאמרו זונות מפרכסות זו את זו תלמידי חכמים לא כל שכן יהב ביה עיניה ונח נפשיה", false, ""], ["G2b", "נפק לשוקא חזייה ליהודה בן גרים אמר עדיין יש לזה בעולם נתן בו עיניו ועשהו גל של עצמות:", false, ""], ["G3a", "ג' דברים צריך אדם לומר בתוך ביתו ערב שבת עם חשכה עשרתם ערבתם הדליקו את הנר", false, "מתני׳"], ["G3b", "ספק חשכה ספק אינו חשכה אין מעשרין את הודאי ואין מטבילין את הכלים ואין מדליקין את הנרות אבל מעשרין את הדמאי ומערבין וטומנין את החמין:", false, ""], ["G4a", "מנא הני מילי א\"ר יהושע בן לוי אמר קרא (איוב ה, כד) וידעת כי שלום אהלך ופקדת נוך ולא תחטא", false, "גמ׳"], ["G4b", "אמר רבה בר רב הונא אע\"ג דאמור רבנן שלשה דברים צריך אדם לומר וכו' צריך למימרינהו בניחותא כי היכי דליקבלינהו מיניה אמר רב אשי אנא לא שמיע לי הא דרבה בר רב הונא וקיימתי מסברא", false, ""], ["G5", "הא גופא קשיא אמרת שלשה דברים צריך אדם לומר בתוך ביתו ערב שבת עם חשכה עם חשכה אין ספק חשכה ספק אינו חשכה לא והדר תני ספק חשכה ספק אינו חשכה מערב:", false, ""], ["G6", "סימן בגופיא זימרא ציפרא בחבלא דמילתא:", false, ""], ["G7", "א\"ר אבא אמר רב חייא בר אשי אמר רב לא קשיא כאן בעירובי תחומין כאן בעירובי חצרות", true, ""], ["G8", "ואמר רבא אמרו לו שנים צא וערב עלינו לאחד עירב עליו מבעוד יום ולאחד עירב עליו בין השמשות זה שעירב עליו מבעוד יום נאכל עירובו בין השמשות וזה שעירב עליו בין השמשות נאכל עירובו משחשכה שניהם קנה עירוב", false, ""], ["G9", "מה נפשך אי בין השמשות יממא הוא בתרא ליקני קמא לא ליקני ואי בין השמשות ליליא הוא קמא ליקני בתרא לא ליקני בין השמשות ספקא הוא וספקא דרבנן לקולא:", false, ""], ["G10", "(ואמר) רבא מפני מה אמרו אין טומנין בדבר שאינו מוסיף הבל משחשכה גזרה שמא ירתיח אמר ליה אביי אי הכי בין השמשות נמי ניגזר א\"ל סתם קדירות רותחות הן", true, ""], ["G11", "ואמר רבא", false, ""]], "R": [["R1", "ואית להו צערא לאקופי", "שהיה אותו שוק שהספק בו מקום מעבר העיר לרבים והכהנים לא היו יכולין ליכנס שם מפני טומאה וצריך להקיף דרך אחר ארוך:", false], ["R2", "איכא דידע דאיתחזק טהרה", "בהאי שוק מימיו שלא היה בית הקברות גמור ולא ניתן לפנותו:", false], ["R3", "כאן קיצץ בן זכאי", "שתלן ועקרן לאחר גידולן:", false], ["R4", "תורמסי תרומה", "הצריכות לשמרן בטהרה וגם הוא היה כהן כדאמרינן [בתוספתא דפרה] (פ\"ג) אם מה שעשו ידי שכחתי:", false], ["R5", "עבד איהו נמי הכי", "היה מקצץ תורמסין ומשליכן שם ונעשה נס וצף המת במקום שהוא שם וציינו למקום הקבר הכי מפרש בפסיקתא דפרשת העומר ובסדר זרעים ירושלמי:", false], ["R6", "היית", "במעמד:", false], ["R7", "ונמנית", "הסכמת לדעתנו להיות מן המנין:", false], ["R8", "מפרכסות זו את זו", "את שער חברתה להיות נאה:", false], ["R9", "גל מעצמות", "כמת שנרקב בשרו ונפל מזמן הרבה:", false], ["R10", "מתני' עם חשכה", "שאם ימהר להזכירם מבעוד יום יפשעו ויאמרו עדיין יש שהות:", false], ["R11", "עשרתם", "פירות האילן לסעודת שבת שאף אכילת עראי של שבת קובעת למעשר כדאמרינן במסכת ביצה (דף לד:) דשבת עונג איקרי מכל שהוא הוי עונג:", false], ["R12", "ערבתם", "ערובי תחומין וחצירות והני תרי שייכי למימרינהו בלשון שאלה דשמא כבר עשו אבל בנר לא שייך הדלקתם דדבר הנראה לעין הוא:", false], ["R13", "ספק חשכה", "כגון בין השמשות אין מעשרין את הודאי דתיקון מעליא הוא אע\"ג דשבות בעלמא היא קסבר גזרו על השבות אף על בהש\"מ:", false], ["R14", "ואין מטבילין את הכלים", "דהוי נמי שבות כדאמרינן במסכת ביצה (דף יח.) דנראה כמתקן כלי:", false], ["R15", "ואין מדליקין את הנרות", "כ\"ש דספיקא דאורייתא היא וזו ואין צריך לומר זו קתני:", false], ["R16", "אבל מעשרין את הדמאי", "דלא דמי למתקן דרוב ע\"ה מעשרין הן:", false], ["R17", "ומערבין", "עירוב ובגמרא פריך הא תנן לעיל עם חשכה ערבתם מקמי דליהוי ספק:", false], ["R18", "וטומנין את החמין", "נותנן בקופה של מוכין להיות חומם משתמר בהן אבל משחשכה ודאי אין טומנין בהן כדמפרש בגמ':", false], ["R19", "גמ' עם חשכה", "מבעוד יום הוא ויש שהות לעשר ולערב:", false], ["R20", "בעירובי תחומין", "תיקון מעליא דאסמכוה רבנן תחומין אקראי ואפי' למאן דאמר תחומין דרבנן כדאמרינן בעירובין (דף נא.) ילפינן מקום ממקום ומקום מניסה כו' אבל עירובי חצרות חומרא בעלמא הוא ולא מיקרי שביתה מעלייתא וספקא דבין השמשות שפיר דמי:", false], ["R21", "בין השמשות קונה עירוב", "שהוא תחילת קדושת היום:", false], ["R22", "נאכל", "שאכלו כלב או אדם:", false], ["R23", "שעירב עליו מבעוד יום", "הניח עירוב לסוף התחום מבעוד יום ולא הספיק להחשיך ממש עד שנאכל בין השמשות:", false], ["R24", "שניהם קנו עירוב", "דלגבי האי שנאכל בין השמשות משוינן ליה ליליא ואמרינן כבר קדש היום בעוד העירוב קיים וקנה עירוב דהלכה כר' יוסי דאמר בעירובין (דף לה.) ספק עירוב כשר ולגבי דהאי שהונח עליו בין השמשות ונתקיים עד שחשכה משוינן לבין השמשות יממא ועדיין לא קדש היום כשהונח ונמצא שהיה שם כבר בשעת קניית עירוב:", false], ["R25", "בתרא ליקני", "זה שהונח עליו בין השמשות:", false], ["R26", "קמא לא ליקני", "שהרי נאכל מבעוד יום:", false], ["R27", "ה\"ג ספקא דרבנן היא", "כלומר הא מילתא דמספקא לן אי בין השמשות יממא או ליליא במילתא דרבנן איתרע לן בעירובי תחומין דרבנן וכל ספקא דרבנן לקולא:", false], ["R28", "ה\"ג אמר רבא מפני מה אמרו אין טומנין בדבר שאינו מוסיף הבל", "כגון צמר ומוכין:", false], ["R29", "משחשכה", "כדתנן במתניתין וטומנין את החמין טעמא דספק חשכה הא ודאי חשכה אין טומנין וסתם הטמנה בדבר שאינו מוסיף הבל דאילו בדבר המוסיף הבל אפי׳ מבעוד יום אסור כדתנן בפ״ד (דף מז:) אין טומנין לא בגפת כו׳ גזירה שמא ימצא קדרתו שנצטננה כשירצה להטמינה וירתיחנה תחילה ונמצא מבשל בשבת:", false], ["R30", "אי הכא בין השמשות נמי ניגזר", "דהא שבות מעלייתא היא דהא איכא גזירת איסור דאורייתא ותנא דמתניתין אית ליה דגזרו על השבות ביה\"ש דקתני אין מעשרין את הודאי:", false], ["R31", "רותחות הן", "שסמוך לביה\"ש הוא מעבירם מעל האור וליכא למיחש לשמא נצטננה וירתיחנה:", false]], "T": [["T1", "עבד איהו נמי הכי", "מפר\"ת כמו יעקב אבינו ותיקן מילתא:", false], ["T2", "כל היכא דהוה קשי טהריה", "כדאיתא בנדה בפרק האשה (דף סא. ושם) דתניא אמר רבי יוסי בן שאול מעשה בסלע שהיו מחזיקין בה טומאה כו' אמר להו הביאו לי סדינין הביאו לו ושראן במים ופרסו עליו מקום טומאה לח מקום טהרה נגוב:", false], ["T3a", "לא קשיא כאן בעירובי תחומין כו'", "נראה לר\"ת כפירוש הקונטרס דבעירובי תחומין מחמרינן משום דאית להו סמך מן המקרא וכן פר\"ח וכן יש בירושלמי וכן משמע בפרק מי שהוציאוהו (עירובין דף מו: וסם) גבי הא דקאמר הלכה כדברי המיקל בעירוב רב פפא אמר איצטריך סד\"א ה\"מ עירובי חצרות אבל בעירובי תחומין אימא לא", false], ["T3b", "", "ומעיקרא היה מפרש ר\"ת דעירובי חצרות חמירי טפי דאין מערבין אלא בפת כדמשמע בפרק הדר (עירובין דף עא:) ובחלון (שם דף פא. ושם) אבל בעירובי תחומין מערבין בכל דבר חוץ ממים ומלח ואין נראה דהא ר\"מ ס\"ל דתחומין דאורייתא בפרק בכל מערבין (עירובין לה.) ואפ\"ה אית ליה בהדר דעירובי חצרות בפת ובעירובי תחומין מערבין בכל דבר דלא אשכחן דפליג ר\"מ אסתם משנה דבכל מערבין וטעמא דמקילי בתחומים דלא בעי פת משום דאין מערבין אלא לדבר מצוה:", false], ["T4", "נאכל עירובו משחשכה", "לאו דווקא וה\"ה לא נאכל:", false], ["T5a", "שניהם קנו עירוב", "פירש בקונטרס דרבא איירי בעירובי תחומין וכן משמע לשון צא וערב ואע\"פ דספק חשכה אין מערבין עירובי תחומין ה\"מ לכתחילה אבל בדיעבד כשר כר' יוסי דאמר (עירובין פ\"ג דף לה.) ספק עירוב כשר", false], ["T5b", "", "וקשה לרשב\"א דר' יוסי לית ליה התם גבי נפל עליו גל או נשרף או תרומה ונטמאה ספק עירוב [כשר] אלא משום חזקה כדתניא התם בהדיא (דף לו.) כיצד אמר רבי יוסי ספק עירוב כשר כו' אבל בספק כי הכא שהניחו בין השמשות או נאכל בין השמשות לא מכשר", false], ["T5c", "", "ומפר\"ת דהכא מיירי בעירובי חצרות וכן פר\"ח וכן מוכח בסוף הדר (עירובין דף עו.) וצא אשכחן נמי דלאו חוץ לעיר קאמר כמו צא ושכור לנו פועלים (ב\"מ דף פג.):", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד א': סוף סיפור רבי שמעון בר יוחאי", "x": "העמוד הקודם סיפר שרבי שמעון בר יוחאי ובנו יצאו מן המערה, ורבי שמעון אמר: הואיל ונעשה לי נס, אלך ואתקן דבר. אמרו לו שיש מקום שיש בו ספק טומאה. כאן הסיפור נגמר, ואחריו באה המשנה על שלושה דברים שאדם אומר בביתו בערב שבת, ודיני בין השמשות.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1", "R2"], "t": "הכוהנים נאלצים להקיף", "x": "\"ואית להו צערא לכהנים לאקופי\", והכוהנים מצטערים שעליהם להקיף. רש\"י מסביר שהמקום היה שוק שהרבים עוברים בו, והכוהנים לא יכלו להיכנס אליו מפני הטומאה, והלכו בדרך אחרת וארוכה. רבי שמעון שאל: יש מי שיודע שהוחזקה כאן טהרה? רש\"י: שהשוק הזה מעולם לא היה בית קברות גמור, שאין רשות לפנותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R3", "R4"], "t": "\"כאן קיצץ בן זכאי\"", "x": "זקן אחד אמר לו: כאן קיצץ בן זכאי תורמוסים של תרומה. רש\"י מפרש: שתל אותם ועקר אותם אחרי שגדלו. תורמוסי תרומה צריך לשמור בטהרה, ורש\"י מוסיף שגם בן זכאי עצמו היה כוהן. כך ענה הזקן על השאלה אם הוחזקה שם טהרה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R5"], "t": "\"עבד איהו נמי הכי\"", "x": "\"עבד איהו נמי הכי\", גם הוא עשה כך. כל מקום שהיה קשה טיהר, וכל מקום שהיה רך סימן אותו. רש\"י מביא מן הפסיקתא ומן הירושלמי: הוא קיצץ תורמוסים והשליך אותם שם, ונעשה נס, המת צף במקום שהיה בו, וסימנו את מקום הקבר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T1"], "t": "התוספות: כמו יעקב אבינו", "x": "רבנו תם מפרש את \"עבד איהו נמי הכי\" כך: גם רבי שמעון עשה כמו יעקב אבינו, ותיקן דבר. לפי פירוש זה המילה \"הכי\" חוזרת אל יעקב, ולא אל בן זכאי.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G1", "T2"], "t": "התוספות: מעשה דומה במסכת נידה", "x": "על \"כל מקום שהיה קשה טיהר\" התוספות מביאים ברייתא ממסכת נידה. רבי יוסי בן שאול סיפר על סלע שהחזיקו בה טומאה. נאמר שם: \"הביאו לי סדינים\". הביאו לו, והוא שרה אותם במים, ופרסו אותם על הסלע. מקום הטומאה היה לח, ומקום הטהרה נגוב, כלומר יבש.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a", "R6", "R7"], "t": "\"טיהר בן יוחי בית הקברות\"", "x": "זקן אחד אמר בלעג: בן יוחאי טיהר בית קברות! רבי שמעון אמר לו: אילו לא היית איתנו, או שהיית איתנו ולא נמנית איתנו, יפה היית אומר. רש\"י: \"היית\" פירושו שהיית במעמד, ו\"נמנית\" פירושו שהסכמת לדעתנו והיית מן המניין.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a", "R8"], "t": "\"זונות מפרכסות זו את זו\"", "x": "אבל עכשיו, שהיית איתנו ונמנית איתנו, יאמרו: זונות מפרכסות זו את זו, ותלמידי חכמים לא כל שכן? רש\"י: מסדרות זו לזו את השיער כדי שתהיה נאה. כלומר, אם אפילו הן מייפות זו את זו, תלמידי חכמים על אחת כמה וכמה שהיה להם לנהוג כבוד זה בזה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2a"], "t": "הזקן מת", "x": "\"יהב ביה עיניה ונח נפשיה\". רבי שמעון נתן בו את עיניו, והזקן מת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2b", "R9"], "t": "יהודה בן גרים", "x": "רבי שמעון יצא לשוק וראה את יהודה בן גרים. בעמוד הקודם נאמר שהוא סיפר את דבריהם, והם נשמעו למלכות. אמר: עדיין יש לזה מקום בעולם? נתן בו את עיניו ועשה אותו גל של עצמות. רש\"י: כמו מת שבשרו נרקב ונפל מזמן רב.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G3a", "R10"], "t": "המשנה: שלושה דברים בערב שבת", "x": "\"שלשה דברים צריך אדם לומר בתוך ביתו ערב שבת עם חשכה: עשרתם, ערבתם, הדליקו את הנר.\" רש\"י: דווקא סמוך לחשכה, כי אם יזכיר אותם מוקדם, בני הבית יתרשלו ויאמרו שעדיין יש זמן.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G3a", "R11"], "t": "רש\"י: \"עשרתם\"", "x": "מדובר בפירות האילן לסעודת שבת. אפילו אכילת עראי של שבת קובעת את הפירות למעשר, כי השבת נקראת עונג, ואפילו אכילה כל שהיא בשבת היא עונג. כך נאמר במסכת ביצה.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G3a", "R12"], "t": "רש\"י: שאלה, ולא ציווי", "x": "\"ערבתם\" פירושו עירובי תחומין ועירובי חצרות. את שני הדברים הראשונים מתאים לומר בלשון שאלה, כי אולי כבר עשו אותם. אבל בנר אין לשאול \"הדלקתם\", כי זה דבר שהעין רואה, ולכן נאמר \"הדליקו\".", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G3b", "R13"], "t": "ספק חשכה: אין מעשרים את הוודאי", "x": "\"ספק חשכה ספק אינו חשכה\", כגון בין השמשות, \"אין מעשרין את הודאי\", כלומר פירות שוודאי לא עושרו. רש\"י: זה תיקון של ממש. אף שהאיסור הוא רק שבות, מדברי חכמים, התנא סובר שגזרו על השבות גם בבין השמשות.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G3b", "R14", "R15"], "t": "אין מטבילים כלים ואין מדליקים", "x": "גם הטבלת כלים היא שבות, כי נראה כמתקן כלי, כמו שנאמר במסכת ביצה. ואין מדליקים נרות, וזה כל שכן, כי שם הספק הוא באיסור מן התורה. רש\"י מסביר שהמשנה שונה בדרך \"זו ואין צריך לומר זו\".", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G3b", "R16", "R17", "R18"], "t": "מה מותר בבין השמשות", "x": "\"אבל מעשרין את הדמאי ומערבין וטומנין את החמין\". רש\"י: עישור דמאי אינו דומה לתיקון, כי רוב עמי הארץ מעשרים. על \"ומערבין\" הגמרא תקשה. ו\"טומנין\" פירושו שנותנים את החמין בקופה של מוכין כדי שחומם יישמר. אחרי שחשכה ודאי אין טומנים, כפי שהגמרא תפרש.", "a": "\"דמאי\" הם פירות שנקנו מעם הארץ, ויש ספק אם עישר אותם."}, {"w": "גמרא", "cols": false, "hl": ["G4a"], "t": "מניין לשלושת הדברים", "x": "\"מנא הני מילי\", מניין הדברים האלה? רבי יהושע בן לוי אומר: אמר הכתוב \"וידעת כי שלום אהלך ופקדת נוך ולא תחטא\". כלומר, תפקוד את ביתך, ולא תחטא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4b"], "t": "לומר בנחת", "x": "רבה בר רב הונא אמר: אף שאמרו חכמים שאדם צריך לומר שלושה דברים, עליו לומר אותם \"בניחותא\", בנחת, כדי שבני ביתו יקבלו ממנו. רב אשי אמר: את דברי רבה בר רב הונא לא שמעתי, וקיימתי אותם מסברה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R19"], "t": "סתירה בתוך המשנה", "x": "\"הא גופא קשיא\", המשנה עצמה קשה. בתחילתה נאמר \"עם חשכה\": עם חשכה כן, בספק חשכה לא. ואחר כך היא שונה שבספק חשכה מערבים. רש\"י: \"עם חשכה\" הוא עדיין יום, ויש זמן לעשר ולערב.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6"], "t": "סימן", "x": "לפני הדברים הבאים הגמרא נותנת סימן: \"בגופיא זימרא ציפרא בחבלא דמילתא\". סימן הוא צירוף מילים שעוזר לזכור את סדר הדברים שאחריו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7"], "t": "\"לא קשיא\": תחומין וחצרות", "x": "רבי אבא אמר בשם רב חייא בר אשי בשם רב: אין סתירה. \"ערבתם\", שנאמר עם חשכה, מדבר בעירובי תחומין. ו\"מערבין\", שנאמר בספק חשכה, מדבר בעירובי חצרות.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G7", "R20"], "t": "רש\"י: למה תחומין חמורים", "x": "עירובי תחומין הם תיקון של ממש, כי חכמים סמכו את התחומים על פסוק. כך אפילו לדעה שתחומין מדברי חכמים, כמו שלומדים במסכת עירובין \"מקום\" מ\"מקום\". אבל עירובי חצרות הם חומרא בלבד, ואינם שביתה של ממש, ולכן בספק בין השמשות מותר לערב אותם.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T3a"], "t": "התוספות: רבנו תם כפירוש רש\"י", "x": "רבנו תם מסכים לפירוש רש\"י: בעירובי תחומין מחמירים, כי יש להם סמך מן המקרא. כך פירש גם רבנו חננאל, וכך בירושלמי. וכך משמע במסכת עירובין, שעל הכלל \"הלכה כדברי המיקל בעירוב\" אמר רב פפא שהיה צורך לומר אותו, כי היינו חושבים שהוא נאמר רק בעירובי חצרות ולא בעירובי תחומין.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G7", "T3b"], "t": "התוספות: הפירוש הראשון של רבנו תם נדחה", "x": "בתחילה פירש רבנו תם להפך: עירובי חצרות חמורים יותר, כי מערבים אותם רק בפת, ואילו עירובי תחומין מערבים בכל דבר חוץ ממים ומלח. התוספות דוחים זאת: רבי מאיר סובר שתחומין מן התורה, ובכל זאת גם לדעתו עירובי חצרות בפת ועירובי תחומין בכל דבר, שהרי לא מצאנו שרבי מאיר חולק על סתם המשנה \"בכל מערבין\". הטעם שמקלים בתחומין ואינם צריכים פת הוא שמערבים אותם רק לדבר מצווה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G8", "R22", "R23"], "t": "רבא: שני עירובים", "x": "ועוד אמר רבא: שניים אמרו לאחד \"צא וערב עלינו\". לאחד עירב עוד ביום, ולשני עירב בבין השמשות. העירוב שהונח ביום נאכל בבין השמשות, והעירוב שהונח בבין השמשות נאכל אחרי שחשכה. שניהם קנו עירוב. רש\"י: \"נאכל\", כגון שאכלו כלב או אדם, ומדובר בעירוב שהונח בסוף התחום.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G8", "R21", "R24"], "t": "רש\"י: איך שניהם קנו", "x": "בין השמשות הוא תחילת קדושת היום, ואז העירוב קונה. במי שעירובו נאכל בבין השמשות מחשיבים את בין השמשות כלילה: היום כבר קדש בעוד שהעירוב קיים. וזה כרבי יוסי, שאמר \"ספק עירוב כשר\", והלכה כמותו. ובמי שעירובו הונח בבין השמשות מחשיבים אותו כיום: כשהונח עוד לא קדש היום, והעירוב היה שם בשעה שהוא קונה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8", "T4"], "t": "התוספות: \"נאכל\" לאו דווקא", "x": "\"נאכל עירובו משחשכה\" לא נאמר בדיוק. הדין אותו דין גם אם העירוב לא נאכל כלל.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R25", "R26"], "t": "\"מה נפשך\"", "x": "\"מה נפשך\", בכל אחת מן האפשרויות יש קושי. אם בין השמשות הוא יום, האחרון, שעירובו הונח בבין השמשות, יקנה, והראשון לא יקנה, כי עירובו נאכל ביום. ואם בין השמשות הוא לילה, הראשון יקנה והאחרון לא. איך קנו שניהם?", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R27"], "t": "ספק של חכמים להקל", "x": "התשובה: בין השמשות הוא ספק, וספק בדבר שמדברי חכמים הולכים בו להקל. רש\"י גורס \"ספקא דרבנן היא\": הספק אם בין השמשות יום או לילה נפל כאן בעירובי תחומין, שהם מדברי חכמים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8", "T5a"], "t": "התוספות: פירוש רש\"י, עירובי תחומין", "x": "רש\"י פירש שרבא מדבר בעירובי תחומין, וכך משמע מן הלשון \"צא וערב\". ואף שבספק חשכה אין מערבים עירובי תחומין, זה רק לכתחילה. בדיעבד העירוב כשר, כרבי יוסי שאמר \"ספק עירוב כשר\".", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8", "T5b"], "t": "התוספות: קושיית הרשב\"א", "x": "הרשב\"א מקשה: רבי יוסי מכשיר שם ספק עירוב רק מפני החזקה, כגון שנפל על העירוב גל, או שנשרף, או שהיה תרומה ונטמא. כך מפורש בברייתא במסכת עירובין. אבל בספק כמו כאן, שהעירוב הונח או נאכל בבין השמשות, הוא אינו מכשיר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G8", "T5c"], "t": "התוספות: רבנו תם, עירובי חצרות", "x": "לכן רבנו תם מפרש שכאן מדובר בעירובי חצרות. כך פירש גם רבנו חננאל, וכך מוכח בסוף פרק \"הדר\" במסכת עירובין. והמילה \"צא\" אינה אומרת שיוצא מחוץ לעיר, כמו \"צא ושכור לנו פועלים\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R28", "R29"], "t": "רבא: למה אין טומנים משחשכה", "x": "רבא שאל: מפני מה אמרו שמשחשכה אין טומנים בדבר שאינו מוסיף חום? רש\"י: כגון צמר ומוכין. התשובה: \"גזרה שמא ירתיח\". רש\"י: כשירצה להטמין ימצא שהקדרה התקררה, ירתיח אותה קודם, ונמצא מבשל בשבת.", "a": "רש\"י מוסיף: בדבר שמוסיף חום אסור להטמין אפילו ביום, כפי שנשנה בפרק רביעי, ולכן הטמנה סתם היא בדבר שאינו מוסיף חום."}, {"w": "גמרא", "cols": false, "hl": ["G10", "R30"], "t": "אביי: נגזור גם בבין השמשות", "x": "אביי אמר לו: אם כך, נגזור גם בבין השמשות. רש\"י: זו שבות של ממש, גזירה מפני איסור תורה, ותנא המשנה סובר שגזרו על השבות בבין השמשות, שהרי שנה \"אין מעשרין את הודאי\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R31"], "t": "\"סתם קדירות רותחות הן\"", "x": "רבא ענה: \"סתם קדירות רותחות הן\", בדרך כלל הקדרות רותחות בשעה הזו. רש\"י: סמוך לבין השמשות מסירים אותן מעל האש, ואין לחשוש שהתקררו ושירתיח אותן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11"], "t": "\"ואמר רבא\"", "x": "העמוד מסתיים במילים \"ואמר רבא\", ועוד אמר רבא. דבריו ממשיכים בעמוד הבא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "סיפור רבי שמעון בר יוחאי נגמר בטיהור השוק. המשנה מנתה שלושה דברים שאדם אומר בביתו סמוך לחשכה, ומה עושים ומה אין עושים בספק חשכה. הגמרא מצאה לכך מקור בפסוק, ויישבה סתירה במשנה: \"ערבתם\" נאמר בעירובי תחומין, ו\"מערבין\" בעירובי חצרות. רבא לימד שבין השמשות הוא ספק, ובדבר של חכמים מקלים בו, והסביר מדוע אין טומנים משחשכה. העמוד הבא פותח בשאלה למה אין טומנים בדבר המוסיף חום אפילו ביום.", "a": ""}], "audio": "shabbat/daf-34a", "side": "right", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

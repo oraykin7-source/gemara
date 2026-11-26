@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף ס&quot;ו עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-66b.html">
+<meta name="description" content="מסכת שבת, דף ס&quot;ו עמוד ב&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ס\"ו עמוד ב'", "url": "https://gemara.co.il/shabbat-66b.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף ס&quot;ו עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>שבת</span><span>פרק שישי</span><span>במה אשה</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-66a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-67a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 130</div>
+  <h1>מסכת שבת, דף ס&quot;ו עמוד ב&#x27;</h1>
+  <p class="sub">פרק שישי, &quot;במה אשה&quot;. סוף דין הקיטע והלוקטמין, משנת &quot;הבנים יוצאין בקשרים&quot;, ורפואות ולחשים שהגמרא מביאה בעקבותיה.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ס&quot;ו עמוד ב&#x27;, לומדים: סוף הדיון בכלי הקיטעים; הבנים יוצאים בקשרים; מה מותר לעשות בשבת: הלכות אבין בר הונא; לחשים ואבן תקומה; רפואות לקדחת יומית.</p>
+</header>
+<div class="layers"><span class="m"><b>המשנה</b> קובעת את ההלכה</span><i>←</i><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. סוף הדיון בכלי הקיטעים</a><a href="#u2">2. הבנים יוצאים בקשרים</a><a href="#u3">3. מה מותר לעשות בשבת: הלכות אבין בר הונא</a><a href="#u4">4. לחשים ואבן תקומה</a><a href="#u5">5. רפואות לקדחת יומית</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4,G5">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>סוף הדיון בכלי הקיטעים</h2>
+  <p class="lead">הגמרא מסיימת את המשנה על הקיטעים: רבא עונה לאביי על המקל, רבי יוחנן מתקן את נוסח המשנה, והגמרא מפרשת מה הם לוקטמין.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לתרוצי סוגיא עבידא</td><td>(המקל) עשוי ליישר את ההליכה.</td></tr>
+      <tr><td>הכא לסמוך עילויה הוא דעבידא</td><td>כאן (הקב) עשוי לסמוך עליו,</td></tr>
+      <tr><td>וסמיך עליה</td><td>והוא נשען עליו.</td></tr>
+      <tr><td>תני תנא קמיה דר' יוחנן</td><td>שנה תנא לפני רבי יוחנן:</td></tr>
+      <tr><td>נכנסין בהן לעזרה</td><td>נכנסים בהם לעזרה.</td></tr>
+      <tr><td>אני שונה אשה חולצת בו</td><td>אני שונה: אשה חולצת בו,</td></tr>
+      <tr><td>ואת אמרת נכנסין</td><td>ואתה אומר: נכנסים?</td></tr>
+      <tr><td>תני אין נכנסין בהן לעזרה</td><td>שנה: אין נכנסים בהם לעזרה.</td></tr>
+      <tr><td>מאי לוקטמין</td><td>מה הם לוקטמין?</td></tr>
+      <tr><td>אמר ר' אבהו חמרא דאכפא</td><td>אמר רבי אבהו: חמור של הכתף.</td></tr>
+      <tr><td>רבא בר פפא אמר קשירי</td><td>רבא בר פפא אמר: קשירי.</td></tr>
+      <tr><td>רבא בר רב הונא אמר פרמי</td><td>רבא בר רב הונא אמר: פרמי.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>תשובת רבא:</b> אביי הביא ראיה מן המקל של הזקנים, שאינו טמא מדרס אף שנשענים עליו. רבא עונה שהמקל עשוי ליישר את ההליכה, ואילו הקב עשוי כדי לסמוך עליו, ולכן הוא טמא מדרס.</p>
+  <p><b>נוסח המשנה:</b> תנא שנה לפני רבי יוחנן שנכנסים לעזרה בסמוכות של הכיסא. רבי יוחנן תיקן: מפני שאשה חולצת בהן, הן נחשבות נעל, ולכן אין נכנסים בהן לעזרה.</p>
+  <p><b>לוקטמין:</b> שלושה אמוראים מפרשים את המילה. רבי אבהו: חמור של הכתף, ש<b>ליצנים</b> עושים. רבא בר פפא: קשירי, כלים להליכה בטיט. רבא בר רב הונא: פרמי, מעין מסכה שקושרים על הפנים להבהיל ילדים.</p>
+  <div data-hl="R1" class="voice r"><span class="tag">רש"י</span><blockquote>לתרוצי סוגיא – לתקן פסיעותיו ולזקוף קומה מפני שרגליו ושוקיו רותתות ולא לסמיכת כל גופו:</blockquote><p><span class="say">מה רש"י אומר:</span> המקל עשוי לתקן את הצעדים ולזקוף את הקומה, כי רגלי הזקן רועדות, ולא לסמיכת כל הגוף.</p></div>
+  <div data-hl="R2" class="voice r"><span class="tag">רש"י</span><blockquote>אני שונה אשה חולצת בהן – אלמא נעל קרינא ביה:</blockquote><p><span class="say">מה רש"י אומר:</span> אם אשה חולצת בהן, הן נקראות נעל.</p></div>
+  <div data-hl="R3,R5" class="voice r"><span class="tag">רש"י</span><blockquote>חמרא דאכפא – חמור הנישא בכתפיים הליצנים עושין אותו ונראה כמי שרוכב עליו ובמקומנו נקרא ארדפיס"א:</blockquote><blockquote>פרמי – טלמוסא הנקשרת על הפרצוף להבעית הבנים קטנים:</blockquote><p><span class="say">מה רש"י אומר:</span> חמור של הכתף נישא על הכתפיים ונראה כאילו רוכבים עליו. פרמי נקשרים על הפנים להבהיל ילדים קטנים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למה הקשירי טהורים ממדרס</h3>
+    <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>קישורי – אשקצ"ש שמהלכין בהם במקום טיט וקשיא לי נהי דטהורין מטומאת מגע דפשוטי כלי עץ נינהו אבל מן המדרס למה טהורין:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מקשה על הפירוש "קשירי": הם טהורים מטומאת מגע כי הם פשוטי כלי עץ, כלי עץ שאין להם בית קיבול. אבל למה הם טהורים ממדרס?</p></div>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>קישורי – פי' הקונטרס אשקצ"ש והקשה בקונטרס ור"י תירץ דכיון שאינם עשויים אלא ללכת דרך העברה בטיט אינו טמא מדרס ובערוך פירש דקישורי היינו אשקצ"ש שעושין הליצני והן גבוהין מאד ואינן אלא לרקד עליהן ולא להילוך עבידי:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק עונה: הם עשויים רק כדי לעבור בטיט, ולכן אינם טמאים מדרס. והערוך מפרש שהם כלים גבוהים מאוד שליצנים רוקדים עליהם, ואינם עשויים להליכה.</p></div>
+    <p>בשתי התשובות העיקרון הוא אותו עיקרון שעלה בעמוד הקודם: מה קובע הוא למה הכלי עשוי, ולא רק אם לפעמים משתמשים בו לסמיכה או להליכה.</p>
+  </div>
+  <p class="godeep">למה רש"י מתקשה בפירוש "קשירי"? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>איך רבא מבחין בין המקל לקב?</summary><p>המקל עשוי ליישר את ההליכה, והקב עשוי לסמוך עליו.</p></details>
+  <details><summary>למה אין נכנסים לעזרה בסמוכות של הכיסא?</summary><p>כי אשה חולצת בהן, ולכן הן נעל.</p></details>
+  <details><summary>מה הם הפירושים ל"לוקטמין"?</summary><p>חמור של הכתף, קשירי, ופרמי.</p></details>
+  <details class="deepq"><summary>מה עונה רבנו יצחק על קושיית רש"י בקשירי?</summary><p>הם עשויים רק לעבור בטיט, ולכן אינם טמאים מדרס.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G6,G7,G8,G9,G10,G11">
+  <div class="kicker">יחידה 2 · משנה</div>
+  <h2>הבנים יוצאים בקשרים</h2>
+  <p class="lead">משנה חדשה מתירה לבנים לצאת בקשרים ולבני מלכים בפעמונים. הגמרא מנסה לפרש מה הם הקשרים, דוחה פירוש אחד, ומציעה אחר.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>הבנים יוצאין בקשרים</td><td>הבנים יוצאים בקשרים,</td></tr>
+      <tr><td>ובני מלכים בזוגין</td><td>ובני מלכים בפעמונים,</td></tr>
+      <tr><td>וכל אדם אלא שדברו חכמים בהווה</td><td>וכל אדם, אלא שחכמים דיברו במצוי.</td></tr>
+      <tr><td>מאי קשרים</td><td>מה הם הקשרים?</td></tr>
+      <tr><td>קשורי פואה</td><td>קשרים של פואה.</td></tr>
+      <tr><td>תלתא מוקמי חמשה מסו</td><td>שלושה מעמידים, חמישה מרפאים,</td></tr>
+      <tr><td>שבעה אפילו לכשפים מעלי</td><td>שבעה מועילים אפילו נגד כשפים.</td></tr>
+      <tr><td>נפל פותא בבירא</td><td>נפלה הפואה לבור.</td></tr>
+      <tr><td>מאי איריא בנים אפי' בנות נמי</td><td>למה דווקא בנים? גם בנות!</td></tr>
+      <tr><td>בן שיש געגועין על אביו</td><td>בן שיש לו געגועים על אביו:</td></tr>
+      <tr><td>נוטל רצועה ממנעל של ימין</td><td>לוקח רצועה מן המנעל של ימין</td></tr>
+      <tr><td>וקושר לו בשמאלו</td><td>וקושר לו על השמאל.</td></tr>
+      <tr><td>וסימניך תפילין וחילופא סכנתא</td><td>והסימן שלך: תפילין. וההפך מסוכן.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>המשנה:</b> בנים יוצאים בשבת בקשרים, ובני מלכים בפעמונים. וכל אדם מותר בהם, אלא שחכמים דיברו במה שמצוי.</p>
+  <p><b>פירוש א':</b> רב יהודה אומר שהקשרים הם קשרי פואה: צמח שקושרים בקשרים ותולים בצוואר לרפואה. אביי מביא בשם אמו את מספר הקשרים: שלושה עוצרים את המחלה, חמישה מרפאים, ושבעה מועילים גם נגד כשפים. רב אחא בר יעקב מוסיף תנאים רבים, ורב נחמן בר יצחק אומר על כך "נפלה הפואה לבור". לפי רש"י כוונתו שאין אדם שנזהר בכל התנאים.</p>
+  <p><b>הקושיה:</b> אם מדובר ברפואה, למה המשנה אומרת דווקא בנים? הרי גם בנות, וגם גדולים, יכולים להזדקק לה.</p>
+  <p><b>פירוש ב':</b> אבין בר הונא בשם רבי חמא בר גוריא: הקשרים הם רצועה מן המנעל הימני שקושרים על השמאל לבן שמתגעגע לאביו. הסימן הוא תפילין, שיד ימין קושרת על שמאל, וההפך מסוכן.</p>
+  <div data-hl="R9" class="voice r"><span class="tag">רש"י</span><blockquote>קשרי פואה – גרנצ"א קושרים בקשרים ותולין בצואר לרפואה ולא ידעתי לאיזה חולי:</blockquote><p><span class="say">מה רש"י אומר:</span> את הפואה קושרים בקשרים ותולים בצוואר לרפואה, ורש"י כותב שאינו יודע לאיזו מחלה.</p></div>
+  <div data-hl="R14" class="voice r"><span class="tag">רש"י</span><blockquote>נפל פותא בבירא – נפל רפואת הפואה בבור דאין אדם נזהר בכל אלו:</blockquote><p><span class="say">מה רש"י אומר:</span> "נפל פותא בבירא" פירושו שרפואת הפואה נפלה לבור, כלומר אבדה, כי אין אדם שנזהר בכל אלה.</p></div>
+  <div data-hl="R16,R18" class="voice r"><span class="tag">רש"י</span><blockquote>געגועין – ברמור"ט מגעגע עליו ואינו יכול ליפרד ממנו ורפואה זו לא שייכא בנקבות שאין האב מחבבן כל כך מתחילתן שיהיו מגעגעין עליו:</blockquote><blockquote>סכנתא – שמגעגע יותר מדאי:</blockquote><p><span class="say">מה רש"י אומר:</span> הבן מתגעגע לאביו ואינו יכול להיפרד ממנו. אם עושים הפוך, הוא מתגעגע יותר מדי.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך הגמרא דוחה פירוש מלשון המשנה</h3>
+    <p>המשנה אומרת "הבנים". אם הקשרים הם רפואה כללית, המילה הזו מיותרת. לכן הגמרא מחפשת פירוש שבו יש סיבה לומר דווקא בנים, ומוצאת אותו בבן שמתגעגע לאביו.</p>
+    <div data-hl="R15,R16" class="voice r"><span class="tag">רש"י</span><blockquote>מאי איריא בנים – לרב יהודה פריך אי קישורין דמתני' לרפואת חולי נינהו מאי איריא בנים:</blockquote><blockquote>געגועין – ברמור"ט מגעגע עליו ואינו יכול ליפרד ממנו ורפואה זו לא שייכא בנקבות שאין האב מחבבן כל כך מתחילתן שיהיו מגעגעין עליו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מדגיש שהקושיה היא על רב יהודה, שפירש קשרים לרפואת מחלה. ולפי הפירוש החדש הוא מסביר שהרפואה אינה שייכת בבנות, ומנמק זאת בכך שהאב אינו מחבב אותן מתחילתן כל כך שיתגעגעו אליו.</p></div>
+  </div>
+  <p class="godeep">איזו מילה במשנה הביאה את הגמרא לדחות את הפירוש הראשון? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הם הקשרים לפי רב יהודה?</summary><p>קשרים של פואה, שתולים בצוואר לרפואה.</p></details>
+  <details><summary>מה הקושיה על פירוש זה?</summary><p>למה דווקא בנים, ולמה דווקא קטנים.</p></details>
+  <details><summary>מה הסימן "תפילין" בא לזכור?</summary><p>שקושרים רצועה מן המנעל הימני על השמאל.</p></details>
+  <details class="deepq"><summary>מה פירוש "דברו חכמים בהווה"?</summary><p>חכמים דיברו במה שמצוי, אבל גם כל אדם מותר.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G12,G13,G14a,G14b,G15,G16,G17">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>מה מותר לעשות בשבת: הלכות אבין בר הונא</h2>
+  <p class="lead">בעקבות דברי אבין בר הונא בשם רב חמא בר גוריא, הגמרא מביאה עוד הלכות שלו: פעולות של רפואה ושל טיפול שמותר לעשות בשבת.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>סחופי כסא אטיבורי בשבתא שפיר דמי</td><td>לכפות כוס על הטבור בשבת מותר.</td></tr>
+      <tr><td>מותר לסוך שמן ומלח בשבת</td><td>מותר לסוך שמן ומלח בשבת.</td></tr>
+      <tr><td>כי הוו מיבסמי</td><td>כשהיו שתויים,</td></tr>
+      <tr><td>מייתי משחא ומילחא</td><td>היו מביאים שמן ומלח.</td></tr>
+      <tr><td>כי היכי דציל הא מישחא</td><td>כמו שהשמן הזה נעשה צלול,</td></tr>
+      <tr><td>ליציל חמריה דפלניא בר פלניתא</td><td>ייעשה צלול היין של פלוני בן פלונית.</td></tr>
+      <tr><td>מייתי שיעא דדנא ושרי ליה במיא</td><td>מביא מגופת חבית ושורה אותה במים.</td></tr>
+      <tr><td>מותר לחנק בשבת</td><td>מותר "לחנוק" בשבת.</td></tr>
+      <tr><td>לפופי ינוקא בשבתא שפיר דמי</td><td>לעטוף תינוק בשבת מותר.</td></tr>
+      <tr><td>רב פפא מתני בנים</td><td>רב פפא שונה "בנים",</td></tr>
+      <tr><td>רב זביד מתני בן</td><td>רב זביד שונה "בן".</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>כוס על הטבור:</b> מי שחש במעיו, כופים על הטבור כוס חמה. לפי רש"י הכוס מושכת אליה את הבשר ומחזירה את המעיים למקומם. מותר לעשות זאת בשבת.</p>
+  <p><b>שמן ומלח:</b> מותר לסוך בשבת שמן ומלח בכפות הידיים והרגליים. כך נהגו ברב הונא, ברב וברבי חייא כשחזרו שתויים מבית רבם, ואמרו: כמו שהשמן נעשה צלול, כך ייעשה צלול היין של פלוני. "ואי לא", ואם לא, שרו במים את מגופת החבית ואמרו כך עליה.</p>
+  <p><b>"לחנק" ולפיפה:</b> מותר לתלות בראשו אדם שחוליית צווארו נשמטה, כדי שצווארו יימתח. ומותר לעטוף תינוק בבגדים ובחגורה, כדי שאיבריו יתיישבו במקומם.</p>
+  <p><b>מי אמר:</b> רב פפא שונה ששתי ההלכות על ילדים, הגעגועים והלפיפה, נאמרו בשם אבין בר הונא. רב זביד שונה בשמו רק את הראשונה, ואת הלפיפה בשם רבה בר בר חנה.</p>
+  <div data-hl="R22,R24" class="voice r"><span class="tag">רש"י</span><blockquote>מבסמי – שכורין שהיו משקין את התלמידים ואלו מפני שחשובין הן היו עושין להן דבר להפג את יינן:</blockquote><blockquote>דצייל – שהולך ונעשה צלול כל שעה מחום הבשר:</blockquote><p><span class="say">מה רש"י אומר:</span> בבית הרב השקו את התלמידים, ולאלה, מפני שהיו חשובים, עשו דבר כדי שיפוג יינם. השמן הולך ונעשה צלול מחום הבשר.</p></div>
+  <div data-hl="R27" class="voice r"><span class="tag">רש"י</span><blockquote>ליחנק – מי שנפרקה חוליא של מפרקת צוארו ונופלת בגרונו תולין אותו בראשו שיהא צוארו נפשט ודומה לחניקה:</blockquote><p><span class="say">מה רש"י אומר:</span> "לחנק" הוא טיפול במי שחוליה של צווארו נשמטה: תולים אותו בראשו, וזה דומה לחניקה.</p></div>
+  <div data-hl="R28" class="voice r"><span class="tag">רש"י</span><blockquote>לפופי – לכורכו בבגדים וקושרו בחגורה רחבה ומתיישבין פרקי אבריו שהן רכין ונשמטין בחבלי הלידה וקורין אנמלטויי"ר בלע"ז:</blockquote><p><span class="say">מה רש"י אומר:</span> לפיפה היא כריכת התינוק בבגדים וקשירתו בחגורה רחבה, כי פרקי איבריו רכים ונשמטו בלידה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>"בנים" ו"בן"</h3>
+    <div data-hl="R29,R30,R31" class="voice r"><span class="tag">רש"י</span><blockquote>מתני בנים – שתי שמועות דאיירי בקטנים היה שונה בשם רבי (אבא) בר הונא משמיה דרב חמא בר גוריא:</blockquote><blockquote>בן – חדא שמעתא דאיירי בקטן מתני בשמיה:</blockquote><blockquote>תרוייהו – געגועין ולפופי:</blockquote><p><span class="say">מה רש"י אומר:</span> לפי רש"י, "בנים" פירושו שתי הלכות שעוסקות בקטנים, הגעגועים והלפיפה, ו"בן" פירושו הלכה אחת בלבד. כך שני האמוראים זוכרים בשם מי נאמרה כל הלכה.</p></div>
+    <p>המחלוקת בין רב פפא לרב זביד אינה בדין, אלא בשאלה למי לייחס את ההלכה על הלפיפה. לפי שניהם מותר לעטוף תינוק בשבת.</p>
+  </div>
+  <p class="godeep">במה נחלקו רב פפא ורב זביד? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>למה כופים כוס על הטבור, לפי רש"י?</summary><p>למי שחש במעיו: הכוס מושכת את המעיים ומחזירה אותם למקומם.</p></details>
+  <details><summary>מה אמרו כשמשחו לחכמים שמן ומלח?</summary><p>כמו שהשמן נעשה צלול, כך ייעשה צלול היין של פלוני.</p></details>
+  <details><summary>מה פירוש "לפופי ינוקא"?</summary><p>לעטוף תינוק בבגדים ובחגורה כדי שאיבריו יתיישבו.</p></details>
+  <details class="deepq"><summary>בשם מי שונה רב זביד את ההלכה על הלפיפה?</summary><p>בשם רבה בר בר חנה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G18,G19,G20a,G20b,G20c">
+  <div class="kicker">יחידה 4 · גמרא</div>
+  <h2>לחשים ואבן תקומה</h2>
+  <p class="lead">אביי מביא בשם אמו כללים ללחשים ולקשרים, וברייתא מתירה לצאת בשבת באבן תקומה ובמשקל שלה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>כל מנייני בשמא דאימא</td><td>כל הלחשים בשם האם,</td></tr>
+      <tr><td>וכל קטרי בשמאלא</td><td>וכל הקשרים בשמאל.</td></tr>
+      <tr><td>כל מנייני דמפרשי כדמפרשי</td><td>כל הלחשים שמספרם מפורש, כמו שמפורש,</td></tr>
+      <tr><td>ודלא מפרשי ארבעין וחד זימני</td><td>ושאינם מפורשים, ארבעים ואחת פעמים.</td></tr>
+      <tr><td>יוצאין באבן תקומה בשבת</td><td>יוצאים באבן תקומה בשבת.</td></tr>
+      <tr><td>אף במשקל אבן תקומה</td><td>גם במשקל של אבן תקומה.</td></tr>
+      <tr><td>ולא שהפילה אלא שמא תפיל</td><td>ולא (רק) שהפילה, אלא (גם) שמא תפיל,</td></tr>
+      <tr><td>ולא שעיברה אלא שמא תתעבר ותפיל</td><td>ולא (רק) שהתעברה, אלא (גם) שמא תתעבר ותפיל.</td></tr>
+      <tr><td>והוא דאיכוון ואיתקל</td><td>ובלבד שנמצא שווה במשקלו.</td></tr>
+      <tr><td>בעי אביי משקל דמשקל מאי תיקו</td><td>שאל אביי: משקל של משקל, מהו? תעמוד.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>כללי הלחשים:</b> לפי אביי בשם אמו, לחשים נאמרים בשם האם, "פלוני בן פלונית", והקשרים נקשרים בשמאל. לחש שמספר הפעמים שלו מפורש, אומרים כמספר הזה, ולחש שאין לו מספר, אומרים ארבעים ואחת פעמים.</p>
+  <p><b>אבן תקומה:</b> ברייתא מתירה לצאת בשבת באבן שנשים מעוברות נושאות כדי שלא יפילו. בשם רבי מאיר מתירים גם דבר ששקלו כנגדה. וההיתר אינו רק לאשה שכבר הפילה או שכבר התעברה, אלא גם לאשה שחוששת לכך.</p>
+  <p><b>תנאי המשקל:</b> לפי רב יימר בר שלמיא בשם אביי, המשקל מועיל רק אם נמצא שווה לאבן מעצמו. ואביי שאל מה דין משקל של המשקל, והשאלה נשארה "תיקו", בלי הכרעה.</p>
+  <div data-hl="R32,R33" class="voice r"><span class="tag">רש"י</span><blockquote>כל מנייני – כל לחישות ומפני שכופלין אותן יש ג' פעמים ויש יותר קרי להו מנייני:</blockquote><blockquote>בשמא דאמא – פלוני בן פלונית:</blockquote><p><span class="say">מה רש"י אומר:</span> "מנייני" הם הלחשים, שנקראים כך כי כופלים אותם שלוש פעמים ויותר. "בשם האם" פירושו פלוני בן פלונית.</p></div>
+  <div data-hl="R36,R37" class="voice r"><span class="tag">רש"י</span><blockquote>אבן תקומה – אבן שנושאות אותה נשים עוברות שלא יפילו וקורין לה קוטאנ"א בלע"ז:</blockquote><blockquote>במשקל – שום דבר ששקלוהו כנגדה:</blockquote><p><span class="say">מה רש"י אומר:</span> אבן תקומה היא אבן שנשים מעוברות נושאות כדי שלא יפילו. "משקל" הוא כל דבר ששקלו כנגדה.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>למי ההיתר</h3>
+    <div data-hl="R38,R39" class="voice r"><span class="tag">רש"י</span><blockquote>ולא שהפילה – ולא תאמר שלא התירו לצאת בה אלא לאשה שעלולה להפיל עוברה שהפילה כבר עובר אחר:</blockquote><blockquote>ולא שעיברה – שידוע לה שהיא מעוברת:</blockquote><p><span class="say">מה רש"י אומר:</span> אין לומר שהתירו רק לאשה שכבר הפילה עובר אחר, ולכן היא עלולה להפיל. וגם אין צורך שיהיה ידוע לה שהיא מעוברת.</p></div>
+    <div data-hl="R40" class="voice r"><span class="tag">רש"י</span><blockquote>והוא דאיכוין ותקל – שנמצא החפץ מאליו למשקל האבן ולא שחיסרו ממנו או הוסיפו עליו לכוונו:</blockquote><p><span class="say">מה רש"י אומר:</span> "איכוון ואיתקל" פירושו שהחפץ נמצא מעצמו במשקל האבן, ולא שהוסיפו עליו או הורידו ממנו כדי להשוות.</p></div>
+    <p>הברייתא מרחיבה את ההיתר בשני כיוונים: בחפץ, שאפשר לצאת גם במשקל של האבן, ובאשה, שגם מי שרק חוששת מותרת. אביי שואל אם אפשר להרחיב עוד צעד, למשקל של המשקל, והשאלה נשארת פתוחה.</p>
+  </div>
+  <p class="godeep">באילו שני כיוונים הברייתא מרחיבה את ההיתר? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "בשמא דאימא"?</summary><p>בשם האם: פלוני בן פלונית.</p></details>
+  <details><summary>כמה פעמים אומרים לחש שמספרו אינו מפורש?</summary><p>ארבעים ואחת פעמים.</p></details>
+  <details><summary>מהי אבן תקומה?</summary><p>אבן שנשים מעוברות נושאות כדי שלא יפילו.</p></details>
+  <details class="deepq"><summary>מה התנאי של רב יימר בר שלמיא בשם אביי?</summary><p>שהמשקל נמצא שווה לאבן מעצמו, בלי הוספה או הפחתה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G21,G22a,G22b,G23">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>רפואות לקדחת יומית</h2>
+  <p class="lead">אביי מביא בשם אמו שלוש רפואות לקדחת שתוקפת בכל יום. ברפואה השנייה רב אחא בנו של רב הונא מתקן את הנוסח.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>לאשתא בת יומא</td><td>לקדחת שבאה בכל יום,</td></tr>
+      <tr><td>לישקול זוזא חיוורא</td><td>ייקח מטבע לבן,</td></tr>
+      <tr><td>וליזיל למלחתא</td><td>וילך למלחה,</td></tr>
+      <tr><td>וליתקול מתקליה מילחא</td><td>וישקול כמשקלו מלח.</td></tr>
+      <tr><td>ואי לא ליתוב אפרשת דרכים</td><td>ואם לא, ישב בפרשת דרכים.</td></tr>
+      <tr><td>טעונך עלי וטעונאי עלך</td><td>המשא שלך עליי, והמשא שלי עלייך.</td></tr>
+      <tr><td>ודילמא איניש אשכחיה ואיפסק ביה</td><td>ואולי אדם (אחר) מצא אותה, ומחלתו פסקה על ידה?</td></tr>
+      <tr><td>אלא לימא ליה טעונאי וטעונך עלך</td><td>אלא יאמר לה: המשא שלי והמשא שלך עלייך.</td></tr>
+      <tr><td>נהרא נהרא אוזפן כוזא דמיא</td><td>נהר, נהר, הלווה לי כד מים</td></tr>
+      <tr><td>לאורחא דאיקלע לי</td><td>לאורח שבא אליי.</td></tr>
+      <tr><td>ביומיה אתא וביומיה אזל</td><td>ביומו בא, וביומו הלך.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רפואה א':</b> לוקחים מטבע לבן, שוקלים כנגדו מלח במלחה, וקושרים את המלח בחלל הצוואר בחוט של שיער.</p>
+  <p><b>רפואה ב':</b> יושבים בפרשת דרכים, לוקחים נמלה גדולה שנושאת משהו, סוגרים אותה בצינור נחושת סתום וחתום, ואומרים לה: המשא שלך עליי והמשא שלי עלייך.</p>
+  <p><b>התיקון של רב אחא:</b> אולי אדם אחר כבר נתן בנמלה את מחלתו, ואז "המשא שלך עליי" יעביר אליו את מחלת האחר. לכן יאמר: המשא שלי והמשא שלך עלייך.</p>
+  <p><b>רפואה ג':</b> לוקחים כד חדש, "לווים" מן הנהר כד מים לאורח, מסובבים אותו שבע פעמים סביב הראש, שופכים את המים לאחור, ואומרים לנהר: קח את המים, כי האורח ביומו בא וביומו הלך.</p>
+  <div data-hl="R41,R42" class="voice r"><span class="tag">רש"י</span><blockquote>בת יומא – שאחזתו בכל יום:</blockquote><blockquote>זוזא חיוורא – צרוף וחדש:</blockquote><p><span class="say">מה רש"י אומר:</span> "בת יומא" היא קדחת שתוקפת בכל יום. "זוזא חיוורא" הוא מטבע צרוף וחדש.</p></div>
+  <div data-hl="R52" class="voice r"><span class="tag">רש"י</span><blockquote>גושפנקי – חותמות ולאו דוקא שיתין נקט ולאו דוקא חותמות של צורה אלא סתימות הרבה זו על זו שעוה על העופרת ושוב זפת ושוב טיט:</blockquote><p><span class="say">מה רש"י אומר:</span> "שישים חותמות" אינו מספר מדויק, ואין הכוונה לחותמות של ציור, אלא לסתימות רבות זו על זו: שעווה על העופרת, אחר כך זפת, ואחר כך טיט.</p></div>
+  <div data-hl="R56,R57" class="voice r"><span class="tag">רש"י</span><blockquote>טעונך עלי – מה שהיית נושא אשאנו:</blockquote><blockquote>וטעונאי – החולי שלי:</blockquote><p><span class="say">מה רש"י אומר:</span> "טעונך עלי" פירושו: מה שנשאת אשא אני. "וטעונאי" פירושו המחלה שלי.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>הדיוק בנוסח של רב אחא</h3>
+    <div data-hl="R58" class="voice r"><span class="tag">רש"י</span><blockquote>איניש אשכחיה ואיפסיק ביה – חולי כזה שזה עושה וכי אמר ליה טעונך עלי זהו חולי של חברו:</blockquote><p><span class="say">מה רש"י אומר:</span> רש"י מסביר את החשש: אולי אדם אחר מצא את הנמלה ונתן בה מחלה כזו, ואם יאמר "המשא שלך עליי", יקבל את המחלה של חברו.</p></div>
+    <p>הנוסח החדש, "טעונאי וטעונך עלך", מעביר את שני המשאות אל הנמלה ואינו מקבל דבר ממנה. רב אחא אינו חולק על הרפואה עצמה, אלא מתקן את המילים שנאמרות בה.</p>
+  </div>
+  <p class="godeep">למה רב אחא שינה את הנוסח שאומרים לנמלה? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה עושים במטבע הלבן?</summary><p>שוקלים כנגדו מלח וקושרים את המלח בחלל הצוואר.</p></details>
+  <details><summary>מה אומרים לנמלה לפי הנוסח המתוקן?</summary><p>"טעונאי וטעונך עלך": המשא שלי והמשא שלך עלייך.</p></details>
+  <details><summary>מה אומרים לנהר בסוף הרפואה השלישית?</summary><p>קח את המים, כי האורח ביומו בא וביומו הלך.</p></details>
+  <details class="deepq"><summary>מה החשש בנוסח "טעונך עלי", לפי רש"י?</summary><p>שאדם אחר כבר נתן בנמלה את מחלתו, והוא יקבל אותה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>המקל והקב:</b> רבא מבחין בין המקל, שעשוי ליישר את ההליכה, לבין הקב, שעשוי לסמיכה.</li>
+      <li><b>אין נכנסים לעזרה:</b> רבי יוחנן מתקן את נוסח המשנה, כי מה שחולצים בו נחשב נעל.</li>
+      <li><b>לוקטמין:</b> שלושה פירושים: חמור של הכתף, קשירי ופרמי.</li>
+      <li><b>קשרים לבנים:</b> הפירוש "קשרי פואה" נדחה מלשון המשנה, והקשרים הם רצועה לבן שמתגעגע לאביו.</li>
+      <li><b>מותר בשבת:</b> כוס על הטבור, שמן ומלח, טיפול בצוואר, ולפיפת תינוק.</li>
+      <li><b>לחשים ואבן תקומה:</b> לחשים בשם האם, ויוצאים בשבת באבן תקומה ובמשקל שלה.</li>
+      <li><b>קדחת יומית:</b> שלוש רפואות בשם אמו של אביי. העמוד הבא ממשיך בדברי רב הונא.</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>מאי איריא</td><td>למה דווקא זה</td></tr>
+      <tr><td>אמרה לי אם</td><td>אמא אמרה לי. כך אביי מביא דברים בשם אמו</td></tr>
+      <tr><td>שפיר דמי</td><td>מותר, טוב הדבר</td></tr>
+      <tr><td>סימניך</td><td>הסימן שלך לזכור</td></tr>
+      <tr><td>וחילופא</td><td>וההפך</td></tr>
+      <tr><td>מיבסמי</td><td>שתויים מיין</td></tr>
+      <tr><td>פלניא בר פלניתא</td><td>פלוני בן פלונית</td></tr>
+      <tr><td>מתני</td><td>שונה, מוסר את ההלכה בנוסח מסוים</td></tr>
+      <tr><td>תרוייהו</td><td>שניהם</td></tr>
+      <tr><td>מנייני</td><td>לחשים שכופלים אותם כמה פעמים</td></tr>
+      <tr><td>ת&quot;ר</td><td>&quot;תנו רבנן&quot;, שנו חכמים: פתיחה של ברייתא</td></tr>
+      <tr><td>בעי</td><td>שאל</td></tr>
+      <tr><td>תיקו</td><td>השאלה נשארת בלי הכרעה</td></tr>
+      <tr><td>ודילמא</td><td>ואולי</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-66a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-67a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף ס&quot;ו עמוד ב&#x27;, לומדים: סוף הדיון בכלי הקיטעים; הבנים יוצאים בקשרים; מה מותר לעשות בשבת: הלכות אבין בר הונא; לחשים ואבן תקומה; רפואות לקדחת יומית.</p><details><summary>ההסבר צעד אחר צעד, כטקסט (35 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד ב&#x27;: תשובת רבא על המקל</h3><p>העמוד הקודם הסתיים בראיה של אביי: מקל של זקנים טהור מכל טומאה, אף שנשענים עליו לפעמים, ומכאן שגם הקב של הקיטע אינו טמא מדרס. רבא התחיל להשיב במילה &quot;התם&quot;, שם, וכאן באה תשובתו. אחר כך הגמרא מסיימת את המשנה על הקיטעים, ועוברת למשנה חדשה על קשרים שהבנים יוצאים בהם.</p></li><li><h3><span class="w">גמרא</span> · רבא: המקל עשוי לתקן את הצעדים</h3><p>&quot;לתרוצי סוגיא עבידא&quot;, המקל עשוי ליישר את ההליכה. רש&quot;י מפרש: לתקן את הצעדים ולזקוף את הקומה, כי רגליו ושוקיו של הזקן רועדות, ולא כדי שכל גופו ייסמך עליו. אבל הקב של הקיטע עשוי לשם סמיכה, והקיטע נשען עליו.</p></li><li><h3><span class="w">משנה</span> · חוזרים למשנה: הכיסא והסמוכות שלו</h3><p>הגמרא מצטטת את המשנה על הכיסא של הקיטע והסמוכות שלו: הם טמאים מדרס, אין יוצאים בהם בשבת, ואין נכנסים בהם לעזרה.</p></li><li><h3><span class="w">גמרא</span> · תנא שנה &quot;נכנסין&quot;</h3><p>תנא, אדם ששינן משניות וברייתות בעל פה, שנה לפני רבי יוחנן את המשנה בנוסח אחר: &quot;נכנסין בהן לעזרה&quot;.</p></li><li><h3><span class="w">גמרא</span> · רבי יוחנן מתקן: &quot;אין נכנסין&quot;</h3><p>אמר לו רבי יוחנן: אני שונה שאשה חולצת בו, ואתה אומר שנכנסים בהן לעזרה? שנה &quot;אין נכנסין&quot;. רש&quot;י מסביר: אם חולצים בו, משמע שהוא נקרא נעל, ובנעל אסור להיכנס לעזרה.</p></li><li><h3><span class="w">גמרא</span> · מה הם לוקטמין?</h3><p>המשנה אמרה שלוקטמין טהורים. הגמרא שואלת מה הם, ומביאה שלוש תשובות. רבי אבהו אומר &quot;חמרא דאכפא&quot;, חמור של הכתף. רבא בר פפא אומר &quot;קשירי&quot;. רבא בר רב הונא אומר &quot;פרמי&quot;.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: חמור של הכתף</h3><p>חמור שנישא על הכתפיים. הליצנים עושים אותו, ונראה כאילו הנושא רוכב עליו. רש&quot;י מביא גם את שמו בלעז.</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: קשירי ופרמי</h3><p>&quot;קשירי&quot; הם כלים שהולכים בהם במקום של טיט, ורש&quot;י מביא את שמם בלעז. רש&quot;י מקשה: נניח שהם טהורים מטומאת מגע, כי הם פשוטי כלי עץ, כלי עץ שאין להם בית קיבול. אבל למה הם טהורים ממדרס? &quot;פרמי&quot; הם מעין מסכה, דבר שקושרים על הפנים כדי להבהיל ילדים קטנים.</p></li><li><h3><span class="w">תוספות</span> · התוספות: שתי תשובות לקושיית רש&quot;י</h3><p>רבנו יצחק תירץ: הקשירי עשויים רק לעבור דרך הטיט, ולכן אינם טמאים מדרס. ובספר הערוך פירש שהקשירי הם כלים גבוהים מאוד שהליצנים עושים, והם עשויים רק לרקוד עליהם ולא להליכה.</p></li><li><h3><span class="w">משנה</span> · משנה: הבנים יוצאים בקשרים</h3><p>משנה חדשה. &quot;הבנים יוצאין בקשרים&quot;, ובני מלכים יוצאים בזגים, פעמונים. וכל אדם מותר בהם, אלא שחכמים דיברו בהווה, כלומר במה שמצוי. רש&quot;י אומר שהגמרא תפרש מה הם הקשרים, ושהזגים הם פעמונים של זהב לנוי.</p></li><li><h3><span class="w">גמרא</span> · רב יהודה: קשרי פואה</h3><p>מה הם הקשרים? אדא מרי מסר בשרשרת של חכמים בשם רב יהודה: &quot;קשורי פואה&quot;. פואה היא צמח, ורש&quot;י מביא את שמו בלעז. רש&quot;י מפרש: קושרים אותה בקשרים ותולים בצוואר לרפואה, והוא כותב שאינו יודע לאיזו מחלה.</p><p>רש&quot;י מעיר ש&quot;אדא מרי&quot; הוא שמו של החכם.</p></li><li><h3><span class="w">גמרא</span> · אביי: שלושה, חמישה, שבעה</h3><p>אביי אמר: אמא אמרה לי, שלושה קשרים &quot;מוקמי&quot;, מעמידים את המחלה שלא תגדל. חמישה &quot;מסו&quot;, מרפאים. שבעה מועילים אפילו נגד כשפים.</p></li><li><h3><span class="w">גמרא</span> · רב אחא בר יעקב: התנאים לרפואה</h3><p>רב אחא בר יעקב אמר: הרפואה מועילה רק אם השמש והירח לא ראו את הפואה, והיא לא ראתה גשם, ולא שמעה קול ברזל, קול תרנגולת וקול &quot;ניגרי&quot;, צעדים לפי רש&quot;י. רב נחמן בר יצחק אמר על כך: &quot;נפל פותא בבירא&quot;, הפואה נפלה לבור. רש&quot;י מסביר: רפואת הפואה אבדה, כי אין אדם שנזהר בכל אלה.</p></li><li><h3><span class="w">גמרא</span> · למה דווקא בנים?</h3><p>הגמרא מקשה על רב יהודה: &quot;מאי איריא בנים&quot;, למה דווקא בנים? גם בנות! ולמה דווקא קטנים? גם גדולים! רש&quot;י מסביר: אם הקשרים הם לרפואת מחלה, אין סיבה שיהיו דווקא לבנים.</p></li><li><h3><span class="w">גמרא</span> · הסבר חדש: בן שמתגעגע לאביו</h3><p>אלא מה הם הקשרים? אבין בר הונא אמר בשם רבי חמא בר גוריא: בן שיש לו געגועים על אביו, לוקחים רצועה מן המנעל הימני וקושרים לו על השמאל. רש&quot;י מפרש: הבן מתגעגע לאביו ואינו יכול להיפרד ממנו. רש&quot;י מוסיף שהרפואה הזו אינה שייכת בבנות, ומנמק זאת בכך שהאב אינו מחבב אותן מתחילתן כל כך שיתגעגעו אליו.</p></li><li><h3><span class="w">גמרא</span> · הסימן: תפילין</h3><p>רב נחמן בר יצחק נתן סימן: תפילין. רש&quot;י מפרש: כמו שיד ימין קושרת את התפילין על יד שמאל, וזה סימן לזכור את הנוסח. &quot;וחילופא סכנתא&quot;, ההפך מסוכן. רש&quot;י מפרש שאז הבן מתגעגע יותר מדי.</p></li><li><h3><span class="w">גמרא</span> · כוס על הטבור</h3><p>עוד אמר אבין בר הונא בשם רב חמא בר גוריא: לכפות כוס על הטבור בשבת מותר. רש&quot;י מתאר: כוס שיש בה חום, למשל שעירו ממנה מים חמים, כופים אותה על הטבור של מי שחש במעיו. הכוס אוחזת את הבשר, מושכת אליה את המעיים ומחזירה אותם למקומם.</p></li><li><h3><span class="w">גמרא</span> · שמן ומלח</h3><p>ועוד אמר: מותר לסוך שמן ומלח בשבת. רש&quot;י מפרש: בכפות הידיים והרגליים.</p></li><li><h3><span class="w">גמרא</span> · כשהיו שתויים</h3><p>כמו שנהגו ברב הונא כשבא מבית רבו רב, ברב כשבא מבית רבי חייא, וברבי חייא כשבא מבית רבי. כשהיו &quot;מיבסמי&quot;, שתויים, היו מביאים שמן ומלח ומשפשפים להם את תוך כפות הידיים והרגליים, ואומרים: כמו שהשמן הזה נעשה צלול, כך יהיה צלול היין של פלוני בן פלונית. רש&quot;י מסביר שבבית רבם השקו את התלמידים, ולאלה, מפני שהיו חשובים, עשו דבר כדי שיפוג יינם. והשמן הולך ונעשה צלול מחום הבשר.</p></li><li><h3><span class="w">גמרא</span> · ואם לא: מגופת החבית</h3><p>&quot;ואי לא&quot;, ואם לא, מביאים את &quot;שיעא דדנא&quot;, מגופת החבית לפי רש&quot;י, ושורים אותה במים. ואומרים: כמו שהמגופה הזו נעשית צלולה, כך יהיה צלול היין של פלוני בן פלונית. רש&quot;י מפרש שהמגופה נעשית צלולה מחמת המים.</p></li><li><h3><span class="w">גמרא</span> · &quot;לחנק&quot; בשבת</h3><p>ועוד הלכה בשמו: &quot;לחנק&quot; בשבת מותר. רש&quot;י מפרש: מי שחוליה של המפרקת שבצווארו נשמטה ונופלת לגרונו, תולים אותו בראשו כדי שצווארו יימתח. זה דומה לחניקה, ומכאן השם.</p></li><li><h3><span class="w">גמרא</span> · לפף תינוק</h3><p>עוד אמר: &quot;לפופי ינוקא&quot;, לעטוף תינוק בשבת, מותר. רש&quot;י מפרש: כורכים אותו בבגדים וקושרים בחגורה רחבה, כדי שפרקי איבריו, שהם רכים ונשמטו בלידה, יתיישבו במקומם.</p></li><li><h3><span class="w">גמרא</span> · מי אמר מה: &quot;בנים&quot; או &quot;בן&quot;</h3><p>רב פפא שונה &quot;בנים&quot;: שתי הלכות שעוסקות בקטנים, ושתיהן בשם אבין בר הונא. רש&quot;י מפרש שאלה הגעגועים והלפיפה. רב זביד שונה &quot;בן&quot;: רק את ההלכה הראשונה, של הגעגועים, הוא שונה בשם אבין בר הונא, ואת הלפיפה הוא שונה בשם רבה בר בר חנה.</p></li><li><h3><span class="w">גמרא</span> · אביי: לחשים בשם האם, וקשרים בשמאל</h3><p>אביי אמר: אמא אמרה לי, כל ה&quot;מנייני&quot; נאמרים בשם האם, וכל הקשרים בצד שמאל. רש&quot;י מפרש: &quot;מנייני&quot; הם הלחשים, שנקראים כך כי כופלים אותם שלוש פעמים ויותר. ובשם האם פירושו &quot;פלוני בן פלונית&quot;.</p></li><li><h3><span class="w">גמרא</span> · כמה פעמים אומרים לחש</h3><p>ועוד אמר אביי בשם אמו: לחש שמפורש בו כמה פעמים לומר אותו, אומרים כפי שמפורש. ולחש שאין בו מספר מפורש, אומרים ארבעים ואחת פעמים.</p></li><li><h3><span class="w">גמרא</span> · אבן תקומה</h3><p>&quot;תנו רבנן&quot;, שנו חכמים: יוצאים בשבת באבן תקומה. רש&quot;י מפרש: אבן שנשים מעוברות נושאות כדי שלא יפילו. בשם רבי מאיר אמרו: גם במשקל של אבן תקומה, כלומר בדבר ששקלו כנגדה.</p></li><li><h3><span class="w">גמרא</span> · לא רק מי שכבר הפילה</h3><p>ולא רק אשה שהפילה, אלא גם אשה שחוששת שמא תפיל. ולא רק אשה שהתעברה, אלא גם אשה שחוששת שמא תתעבר ותפיל. רש&quot;י מסביר שאין לומר שהתירו רק לאשה שכבר הפילה עובר אחר, ושאין צורך שיהיה ידוע לה שהיא מעוברת.</p></li><li><h3><span class="w">גמרא</span> · המשקל צריך להיות מקרי</h3><p>רב יימר בר שלמיא אמר בשם אביי: המשקל מועיל רק אם &quot;איכוון ואיתקל&quot;, נמצא שווה במשקלו. רש&quot;י מפרש: החפץ נמצא מעצמו במשקל האבן, ולא שהוסיפו עליו או הורידו ממנו כדי להשוות. אביי שאל: ומה דין משקל של המשקל? &quot;תיקו&quot;, השאלה נשארה בלי תשובה.</p></li><li><h3><span class="w">גמרא</span> · אביי: רפואה לקדחת יומית</h3><p>אביי אמר בשם אמו: לקדחת &quot;בת יומא&quot;, שתוקפת בכל יום, ייקח מטבע לבן, צרוף וחדש לפי רש&quot;י. ילך למקום שמפיקים בו מלח, ישקול כמשקלו מלח, ויקשור אותו בחלל הצוואר בחוט של שיער. רש&quot;י מתאר את המלחה: ממשיכים מי ים לבריכות רחבות, והשמש מייבשת את המים ונעשה מלח.</p><p>רש&quot;י מביא בשם רבנו הלוי שחלל הצוואר הוא מתחת לגרון, כנגד פתח החלוק.</p></li><li><h3><span class="w">גמרא</span> · ואם לא: הנמלה בצינור הנחושת</h3><p>ואם לא, ישב בפרשת דרכים. כשיראה נמלה גדולה שנושאת משהו, ייקח אותה ויכניס אותה לצינור של נחושת. יסתום את פיו בעופרת ויחתום אותו בשישים חותמות. רש&quot;י מפרש שאין הכוונה דווקא לשישים, ולא לחותמות של ציור, אלא סתימות רבות זו על זו: שעווה על העופרת, אחר כך זפת, ואחר כך טיט.</p></li><li><h3><span class="w">גמרא</span> · &quot;טעונך עלי וטעונאי עלך&quot;</h3><p>ינענע את הצינור, יישא אותו, ויאמר לנמלה: &quot;טעונך עלי וטעונאי עלך&quot;, המשא שלך עליי והמשא שלי עלייך. רש&quot;י מפרש: את מה שנשאת אשא אני, והמשא שלי הוא המחלה שלי.</p></li><li><h3><span class="w">גמרא</span> · רב אחא בריה דרב הונא: לשנות את הנוסח</h3><p>רב אחא בנו של רב הונא אמר לרב אשי: ואולי אדם אחר כבר מצא את הנמלה ונתן בה את מחלתו? רש&quot;י מפרש: אז &quot;המשא שלך עליי&quot; הוא המחלה של חברו. לכן יאמר: &quot;טעונאי וטעונך עלך&quot;, המשא שלי והמשא שלך עלייך.</p></li><li><h3><span class="w">גמרא</span> · ואם לא: כד חדש ונהר</h3><p>ואם לא, ייקח &quot;כוזא חדתא&quot;, כלי חרס קטן וחדש לפי רש&quot;י, ילך לנהר ויאמר: נהר נהר, הלווה לי כד מים לאורח שבא אליי. יסובב אותו שבע פעמים סביב ראשו, ישפוך את המים לאחוריו, ויאמר: נהר נהר, קח את המים שנתת לי, כי האורח שבא אליי ביומו בא וביומו הלך.</p></li><li><h3><span class="w">גמרא</span> · &quot;אמר רב הונא&quot;</h3><p>במילים &quot;אמר רב הונא&quot; נפתחת מימרה חדשה. המשפט נקטע בסוף העמוד, ודברי רב הונא עצמם באים בראש העמוד הבא.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>רבא הבחין בין המקל, שנועד לתקן את ההליכה, לבין הקב, שנשענים עליו. רבי יוחנן קבע שאין נכנסים לעזרה בסמוכות של הכיסא, כי חולצים בהן. משנת הקשרים פתחה פרק של רפואות: קשרי פואה, קשר לבן שמתגעגע לאביו, דברים שמותר לעשות לחולה ולתינוק בשבת, אבן תקומה, ורפואות לקדחת. העמוד הבא מביא את דברי רב הונא, רפואה לקדחת מסוג אחר.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-67a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "לתרוצי סוגיא עבידא הכא לסמוך עילויה הוא דעבידא וסמיך עליה:", false, ""], ["G2", "טמאין מדרס ואין יוצאין בהן בשבת ואין נכנסין בהן לעזרה:", false, ""], ["G3", "תני תנא קמיה דר' יוחנן נכנסין בהן לעזרה", false, ""], ["G4", "א\"ל אני שונה אשה חולצת בו ואת אמרת נכנסין תני אין נכנסין בהן לעזרה:", false, ""], ["G5", "לוקטמין טהורה: מאי לוקטמין אמר ר' אבהו חמרא דאכפא רבא בר פפא אמר קשירי רבא בר רב הונא אמר פרמי:", false, ""], ["G6", "הבנים יוצאין בקשרים ובני מלכים בזוגין וכל אדם אלא שדברו חכמים בהווה:", false, "מתני׳"], ["G7", "מאי קשרים אמר אדא מרי אמר רב נחמן בר ברוך אמר רב אשי בר אבין אמר רב יהודה קשורי פואה", false, "גמ׳"], ["G8", "אמר אביי אמרה לי אם תלתא מוקמי חמשה מסו שבעה אפילו לכשפים מעלי", false, ""], ["G9", "אמר רב אחא בר יעקב והוא דלא חזי ליה שמשא וסיהרא ולא חזי מיטרא ולא שמיע ליה קול ברזלא וקל תרנגולתא וקל ניגרי אמר רב נחמן בר יצחק נפל פותא בבירא", false, ""], ["G10", "מאי איריא בנים אפי' בנות נמי מאי איריא קטנים אפי' גדולים נמי", false, ""], ["G11", "אלא מאי קשרים כי הא דאמר אבין בר הונא א\"ר חמא בר גוריא בן שיש געגועין על אביו נוטל רצועה ממנעל של ימין וקושר לו בשמאלו אמר רב נחמן בר יצחק וסימניך תפילין וחילופא סכנתא", false, ""], ["G12", "אמר אבין בר הונא אמר רב חמא בר גוריא סחופי כסא אטיבורי בשבתא שפיר דמי", false, ""], ["G13", "ואמר אבין בר הונא אמר רב חמא בר גוריא מותר לסוך שמן ומלח בשבת", false, ""], ["G14a", "כי הא דרב הונא מבי רב ורב מבי ר' חייא ור' חייא מבי רבי כי הוו מיבסמי מייתי משחא ומילחא ושייפי להו לגוייתא דידייהו וגוייתא דכרעייהו ואמרי כי היכי דציל הא מישחא ליציל חמריה דפלניא בר פלניתא", false, ""], ["G14b", "ואי לא מייתי שיעא דדנא ושרי ליה במיא ואמר כי היכי דליציל האי שיעא ליציל חמריה דפלניא בר פלניתא", false, ""], ["G15", "ואמר אבין בר הונא אמר רב חמא בר גוריא מותר לחנק בשבת", false, ""], ["G16", "ואמר אבין בר הונא אמר רב חמא בר גוריא לפופי ינוקא בשבתא שפיר דמי", false, ""], ["G17", "רב פפא מתני בנים רב זביד מתני בן רב פפא מתני בנים ותרוייהו מתני להו באבין בר הונא רב זביד מתני בן קמייתא מתני באבין בר הונא והאי מתני לה ברבה בר בר חנה דאמר רבה בר בר חנה לפופי ינוקא בשבתא שפיר דמי", false, ""], ["G18", "אמר אביי אמרה לי אם כל מנייני בשמא דאימא וכל קטרי בשמאלא", false, ""], ["G19", "ואמר אביי אמרה לי אם כל מנייני דמפרשי כדמפרשי ודלא מפרשי ארבעין וחד זימני", false, ""], ["G20a", "ת\"ר יוצאין באבן תקומה בשבת משום ר\"מ אמרו אף במשקל אבן תקומה", false, ""], ["G20b", "ולא שהפילה אלא שמא תפיל ולא שעיברה אלא שמא תתעבר ותפיל", false, ""], ["G20c", "אמר רב יימר בר שלמיא משמיה דאביי והוא דאיכוון ואיתקל בעי אביי משקל דמשקל מאי תיקו", false, ""], ["G21", "ואמר אביי אמרה לי אם לאשתא בת יומא לישקול זוזא חיוורא וליזיל למלחתא וליתקול מתקליה מילחא ולצייריה בחללא דבי צואר בנירא ברקא", false, ""], ["G22a", "ואי לא ליתוב אפרשת דרכים וכי חזי שומשמנא גמלא דדרי מידי לישקליה ולישדייה בגובתא דנחשא וליסתמיא באברא וליחתמי בשיתין גושפנקי ולברזוליה ולידריה ולימא ליה טעונך עלי וטעונאי עלך", false, ""], ["G22b", "אמר ליה רב אחא בריה דרב הונא לרב אשי ודילמא איניש אשכחיה ואיפסק ביה אלא לימא ליה טעונאי וטעונך עלך", false, ""], ["G23", "ואי לא לישקול כוזא חדתא וליזיל לנהרא ולימא ליה נהרא נהרא אוזפן כוזא דמיא לאורחא דאיקלע לי וליהדר שב זימני על רישיה ולשדיין לאחוריה ולימא ליה נהרא נהרא שקול מיא דיהבת לי דאורחא דאיקלע לי ביומיה אתא וביומיה אזל", false, ""], ["G24", "אמר רב הונא", false, ""]], "R": [["R1", "לתרוצי סוגיא", "לתקן פסיעותיו ולזקוף קומה מפני שרגליו ושוקיו רותתות ולא לסמיכת כל גופו:", false], ["R2", "אני שונה אשה חולצת בהן", "אלמא נעל קרינא ביה:", false], ["R3", "חמרא דאכפא", "חמור הנישא בכתפיים הליצנים עושין אותו ונראה כמי שרוכב עליו ובמקומנו נקרא ארדפיס\"א:", false], ["R4", "קישורי", "אשקצ\"ש שמהלכין בהם במקום טיט וקשיא לי נהי דטהורין מטומאת מגע דפשוטי כלי עץ נינהו אבל מן המדרס למה טהורין:", false], ["R5", "פרמי", "טלמוסא הנקשרת על הפרצוף להבעית הבנים קטנים:", false], ["R6", "מתני' בקשרים", "מפרש בגמרא:", false], ["R7", "בזגין", "אישקליט\"ש של זהב לנוי:", false], ["R8", "גמ' אדא מרי", "כך שמו:", false], ["R9", "קשרי פואה", "גרנצ\"א קושרים בקשרים ותולין בצואר לרפואה ולא ידעתי לאיזה חולי:", false], ["R10", "מוקמי", "מעמידין החולי שלא יגדל:", false], ["R11", "ה'", "קשרים:", false], ["R12", "מסו", "מתרפאין:", false], ["R13", "נגרי", "פסיעות:", false], ["R14", "נפל פותא בבירא", "נפל רפואת הפואה בבור דאין אדם נזהר בכל אלו:", false], ["R15", "מאי איריא בנים", "לרב יהודה פריך אי קישורין דמתני' לרפואת חולי נינהו מאי איריא בנים:", false], ["R16", "געגועין", "ברמור\"ט מגעגע עליו ואינו יכול ליפרד ממנו ורפואה זו לא שייכא בנקבות שאין האב מחבבן כל כך מתחילתן שיהיו מגעגעין עליו:", false], ["R17", "תפילין", "שיד ימינו קושרתו לשמאלו זהו סימן לגירסא:", false], ["R18", "סכנתא", "שמגעגע יותר מדאי:", false], ["R19", "סחופי כסא", "כוס שיש בו הבל כגון שעירו ממנו מים חמין וכופהו על הטיבור למי שחש במעיו ואוחז הכוס את הבשר ומושך אליו את המעיים ומושיבן במקומן:", false], ["R20", "לסוך", "בכפות ידיו ורגליו:", false], ["R21", "דרב הונא מבי רב", "שהיה בא מבי רב שהוא רבו וכן רב מבי ר' חייא ור' חייא מבי רבי:", false], ["R22", "מבסמי", "שכורין שהיו משקין את התלמידים ואלו מפני שחשובין הן היו עושין להן דבר להפג את יינן:", false], ["R23", "לגוייתא דידייהו", "תוכי ידיהם דהיינו כף:", false], ["R24", "דצייל", "שהולך ונעשה צלול כל שעה מחום הבשר:", false], ["R25", "שיעא דדנא", "מגופת החבית:", false], ["R26", "דציל האי שיעא", "מחמת המים:", false], ["R27", "ליחנק", "מי שנפרקה חוליא של מפרקת צוארו ונופלת בגרונו תולין אותו בראשו שיהא צוארו נפשט ודומה לחניקה:", false], ["R28", "לפופי", "לכורכו בבגדים וקושרו בחגורה רחבה ומתיישבין פרקי אבריו שהן רכין ונשמטין בחבלי הלידה וקורין אנמלטויי\"ר בלע\"ז:", false], ["R29", "מתני בנים", "שתי שמועות דאיירי בקטנים היה שונה בשם רבי (אבא) בר הונא משמיה דרב חמא בר גוריא:", false], ["R30", "בן", "חדא שמעתא דאיירי בקטן מתני בשמיה:", false], ["R31", "תרוייהו", "געגועין ולפופי:", false], ["R32", "כל מנייני", "כל לחישות ומפני שכופלין אותן יש ג' פעמים ויש יותר קרי להו מנייני:", false], ["R33", "בשמא דאמא", "פלוני בן פלונית:", false], ["R34", "דמיפרשי", "כל לחשים שמפורש מניין כמה פעמים שיאמרו ויכפלו אותו:", false], ["R35", "כדמפרשי", "כופלין אותו כפי מניינו ודלא מיפרשי בהם סתם כפילתן ארבעין וחד זימנין:", false], ["R36", "אבן תקומה", "אבן שנושאות אותה נשים עוברות שלא יפילו וקורין לה קוטאנ\"א בלע\"ז:", false], ["R37", "במשקל", "שום דבר ששקלוהו כנגדה:", false], ["R38", "ולא שהפילה", "ולא תאמר שלא התירו לצאת בה אלא לאשה שעלולה להפיל עוברה שהפילה כבר עובר אחר:", false], ["R39", "ולא שעיברה", "שידוע לה שהיא מעוברת:", false], ["R40", "והוא דאיכוין ותקל", "שנמצא החפץ מאליו למשקל האבן ולא שחיסרו ממנו או הוסיפו עליו לכוונו:", false], ["R41", "בת יומא", "שאחזתו בכל יום:", false], ["R42", "זוזא חיוורא", "צרוף וחדש:", false], ["R43", "למלחתא", "למקום שריפת המים שעושין נגרים על שפת הים להמשיך מים לבריכות רחבות העשויות לכך וכשנתמלאו סותם החריצין והשמש שורף את המים שמלוחין הן ונעשה מלח:", false], ["R44", "בחללא דבי צוארו", "תחת גרונו כנגד מפתחי חלוקו לשון רבינו הלוי:", false], ["R45", "נירא ברקא", "ליצא של שער:", false], ["R46", "פרשת דרכים", "מקום ששני דרכים מתפרשים:", false], ["R47", "שומשמנא גמלא", "נמלה גדולה:", false], ["R48", "דדרי מידי", "שטוען כלום:", false], ["R49", "לישקליה", "לשומשמנא:", false], ["R50", "בגובתא דנחשא", "כמין קנה של נחשת:", false], ["R51", "ולסתמייה באברא", "יסתום פיה בעופרת:", false], ["R52", "גושפנקי", "חותמות ולאו דוקא שיתין נקט ולאו דוקא חותמות של צורה אלא סתימות הרבה זו על זו שעוה על העופרת ושוב זפת ושוב טיט:", false], ["R53", "וליברזוליה", "ינענענו:", false], ["R54", "ולידריה", "ישאנו:", false], ["R55", "ולימא ליה", "לשומשמנא:", false], ["R56", "טעונך עלי", "מה שהיית נושא אשאנו:", false], ["R57", "וטעונאי", "החולי שלי:", false], ["R58", "איניש אשכחיה ואיפסיק ביה", "חולי כזה שזה עושה וכי אמר ליה טעונך עלי זהו חולי של חברו:", false], ["R59", "כוזא חדתא", "כלי חרס קטן חדש:", false], ["R60", "אוזפן", "הלוני:", false], ["R61", "וליהדריה ז' זימני ארישיה", "יקיפנו סביבות ראשו:", false]], "T": [["T1", "קישורי", "פי' הקונטרס אשקצ\"ש והקשה בקונטרס ור\"י תירץ דכיון שאינם עשויים אלא ללכת דרך העברה בטיט אינו טמא מדרס ובערוך פירש דקישורי היינו אשקצ\"ש שעושין הליצני והן גבוהין מאד ואינן אלא לרקד עליהן ולא להילוך עבידי:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': תשובת רבא על המקל", "x": "העמוד הקודם הסתיים בראיה של אביי: מקל של זקנים טהור מכל טומאה, אף שנשענים עליו לפעמים, ומכאן שגם הקב של הקיטע אינו טמא מדרס. רבא התחיל להשיב במילה \"התם\", שם, וכאן באה תשובתו. אחר כך הגמרא מסיימת את המשנה על הקיטעים, ועוברת למשנה חדשה על קשרים שהבנים יוצאים בהם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "רבא: המקל עשוי לתקן את הצעדים", "x": "\"לתרוצי סוגיא עבידא\", המקל עשוי ליישר את ההליכה. רש\"י מפרש: לתקן את הצעדים ולזקוף את הקומה, כי רגליו ושוקיו של הזקן רועדות, ולא כדי שכל גופו ייסמך עליו. אבל הקב של הקיטע עשוי לשם סמיכה, והקיטע נשען עליו.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G2"], "t": "חוזרים למשנה: הכיסא והסמוכות שלו", "x": "הגמרא מצטטת את המשנה על הכיסא של הקיטע והסמוכות שלו: הם טמאים מדרס, אין יוצאים בהם בשבת, ואין נכנסים בהם לעזרה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3"], "t": "תנא שנה \"נכנסין\"", "x": "תנא, אדם ששינן משניות וברייתות בעל פה, שנה לפני רבי יוחנן את המשנה בנוסח אחר: \"נכנסין בהן לעזרה\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R2"], "t": "רבי יוחנן מתקן: \"אין נכנסין\"", "x": "אמר לו רבי יוחנן: אני שונה שאשה חולצת בו, ואתה אומר שנכנסים בהן לעזרה? שנה \"אין נכנסין\". רש\"י מסביר: אם חולצים בו, משמע שהוא נקרא נעל, ובנעל אסור להיכנס לעזרה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5"], "t": "מה הם לוקטמין?", "x": "המשנה אמרה שלוקטמין טהורים. הגמרא שואלת מה הם, ומביאה שלוש תשובות. רבי אבהו אומר \"חמרא דאכפא\", חמור של הכתף. רבא בר פפא אומר \"קשירי\". רבא בר רב הונא אומר \"פרמי\".", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5", "R3"], "t": "רש\"י: חמור של הכתף", "x": "חמור שנישא על הכתפיים. הליצנים עושים אותו, ונראה כאילו הנושא רוכב עליו. רש\"י מביא גם את שמו בלעז.", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5", "R4", "R5"], "t": "רש\"י: קשירי ופרמי", "x": "\"קשירי\" הם כלים שהולכים בהם במקום של טיט, ורש\"י מביא את שמם בלעז. רש\"י מקשה: נניח שהם טהורים מטומאת מגע, כי הם פשוטי כלי עץ, כלי עץ שאין להם בית קיבול. אבל למה הם טהורים ממדרס? \"פרמי\" הם מעין מסכה, דבר שקושרים על הפנים כדי להבהיל ילדים קטנים.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G5", "T1"], "t": "התוספות: שתי תשובות לקושיית רש\"י", "x": "רבנו יצחק תירץ: הקשירי עשויים רק לעבור דרך הטיט, ולכן אינם טמאים מדרס. ובספר הערוך פירש שהקשירי הם כלים גבוהים מאוד שהליצנים עושים, והם עשויים רק לרקוד עליהם ולא להליכה.", "a": ""}, {"w": "משנה", "cols": false, "hl": ["G6", "R6", "R7"], "t": "משנה: הבנים יוצאים בקשרים", "x": "משנה חדשה. \"הבנים יוצאין בקשרים\", ובני מלכים יוצאים בזגים, פעמונים. וכל אדם מותר בהם, אלא שחכמים דיברו בהווה, כלומר במה שמצוי. רש\"י אומר שהגמרא תפרש מה הם הקשרים, ושהזגים הם פעמונים של זהב לנוי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "R8", "R9"], "t": "רב יהודה: קשרי פואה", "x": "מה הם הקשרים? אדא מרי מסר בשרשרת של חכמים בשם רב יהודה: \"קשורי פואה\". פואה היא צמח, ורש\"י מביא את שמו בלעז. רש\"י מפרש: קושרים אותה בקשרים ותולים בצוואר לרפואה, והוא כותב שאינו יודע לאיזו מחלה.", "a": "רש\"י מעיר ש\"אדא מרי\" הוא שמו של החכם."}, {"w": "גמרא", "cols": false, "hl": ["G8", "R10", "R11", "R12"], "t": "אביי: שלושה, חמישה, שבעה", "x": "אביי אמר: אמא אמרה לי, שלושה קשרים \"מוקמי\", מעמידים את המחלה שלא תגדל. חמישה \"מסו\", מרפאים. שבעה מועילים אפילו נגד כשפים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R13", "R14"], "t": "רב אחא בר יעקב: התנאים לרפואה", "x": "רב אחא בר יעקב אמר: הרפואה מועילה רק אם השמש והירח לא ראו את הפואה, והיא לא ראתה גשם, ולא שמעה קול ברזל, קול תרנגולת וקול \"ניגרי\", צעדים לפי רש\"י. רב נחמן בר יצחק אמר על כך: \"נפל פותא בבירא\", הפואה נפלה לבור. רש\"י מסביר: רפואת הפואה אבדה, כי אין אדם שנזהר בכל אלה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G10", "R15"], "t": "למה דווקא בנים?", "x": "הגמרא מקשה על רב יהודה: \"מאי איריא בנים\", למה דווקא בנים? גם בנות! ולמה דווקא קטנים? גם גדולים! רש\"י מסביר: אם הקשרים הם לרפואת מחלה, אין סיבה שיהיו דווקא לבנים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R16"], "t": "הסבר חדש: בן שמתגעגע לאביו", "x": "אלא מה הם הקשרים? אבין בר הונא אמר בשם רבי חמא בר גוריא: בן שיש לו געגועים על אביו, לוקחים רצועה מן המנעל הימני וקושרים לו על השמאל. רש\"י מפרש: הבן מתגעגע לאביו ואינו יכול להיפרד ממנו. רש\"י מוסיף שהרפואה הזו אינה שייכת בבנות, ומנמק זאת בכך שהאב אינו מחבב אותן מתחילתן כל כך שיתגעגעו אליו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11", "R17", "R18"], "t": "הסימן: תפילין", "x": "רב נחמן בר יצחק נתן סימן: תפילין. רש\"י מפרש: כמו שיד ימין קושרת את התפילין על יד שמאל, וזה סימן לזכור את הנוסח. \"וחילופא סכנתא\", ההפך מסוכן. רש\"י מפרש שאז הבן מתגעגע יותר מדי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12", "R19"], "t": "כוס על הטבור", "x": "עוד אמר אבין בר הונא בשם רב חמא בר גוריא: לכפות כוס על הטבור בשבת מותר. רש\"י מתאר: כוס שיש בה חום, למשל שעירו ממנה מים חמים, כופים אותה על הטבור של מי שחש במעיו. הכוס אוחזת את הבשר, מושכת אליה את המעיים ומחזירה אותם למקומם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R20"], "t": "שמן ומלח", "x": "ועוד אמר: מותר לסוך שמן ומלח בשבת. רש\"י מפרש: בכפות הידיים והרגליים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14a", "R21", "R22", "R23", "R24"], "t": "כשהיו שתויים", "x": "כמו שנהגו ברב הונא כשבא מבית רבו רב, ברב כשבא מבית רבי חייא, וברבי חייא כשבא מבית רבי. כשהיו \"מיבסמי\", שתויים, היו מביאים שמן ומלח ומשפשפים להם את תוך כפות הידיים והרגליים, ואומרים: כמו שהשמן הזה נעשה צלול, כך יהיה צלול היין של פלוני בן פלונית. רש\"י מסביר שבבית רבם השקו את התלמידים, ולאלה, מפני שהיו חשובים, עשו דבר כדי שיפוג יינם. והשמן הולך ונעשה צלול מחום הבשר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14b", "R25", "R26"], "t": "ואם לא: מגופת החבית", "x": "\"ואי לא\", ואם לא, מביאים את \"שיעא דדנא\", מגופת החבית לפי רש\"י, ושורים אותה במים. ואומרים: כמו שהמגופה הזו נעשית צלולה, כך יהיה צלול היין של פלוני בן פלונית. רש\"י מפרש שהמגופה נעשית צלולה מחמת המים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R27"], "t": "\"לחנק\" בשבת", "x": "ועוד הלכה בשמו: \"לחנק\" בשבת מותר. רש\"י מפרש: מי שחוליה של המפרקת שבצווארו נשמטה ונופלת לגרונו, תולים אותו בראשו כדי שצווארו יימתח. זה דומה לחניקה, ומכאן השם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R28"], "t": "לפף תינוק", "x": "עוד אמר: \"לפופי ינוקא\", לעטוף תינוק בשבת, מותר. רש\"י מפרש: כורכים אותו בבגדים וקושרים בחגורה רחבה, כדי שפרקי איבריו, שהם רכים ונשמטו בלידה, יתיישבו במקומם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17", "R29", "R30", "R31"], "t": "מי אמר מה: \"בנים\" או \"בן\"", "x": "רב פפא שונה \"בנים\": שתי הלכות שעוסקות בקטנים, ושתיהן בשם אבין בר הונא. רש\"י מפרש שאלה הגעגועים והלפיפה. רב זביד שונה \"בן\": רק את ההלכה הראשונה, של הגעגועים, הוא שונה בשם אבין בר הונא, ואת הלפיפה הוא שונה בשם רבה בר בר חנה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18", "R32", "R33"], "t": "אביי: לחשים בשם האם, וקשרים בשמאל", "x": "אביי אמר: אמא אמרה לי, כל ה\"מנייני\" נאמרים בשם האם, וכל הקשרים בצד שמאל. רש\"י מפרש: \"מנייני\" הם הלחשים, שנקראים כך כי כופלים אותם שלוש פעמים ויותר. ובשם האם פירושו \"פלוני בן פלונית\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19", "R34", "R35"], "t": "כמה פעמים אומרים לחש", "x": "ועוד אמר אביי בשם אמו: לחש שמפורש בו כמה פעמים לומר אותו, אומרים כפי שמפורש. ולחש שאין בו מספר מפורש, אומרים ארבעים ואחת פעמים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20a", "R36", "R37"], "t": "אבן תקומה", "x": "\"תנו רבנן\", שנו חכמים: יוצאים בשבת באבן תקומה. רש\"י מפרש: אבן שנשים מעוברות נושאות כדי שלא יפילו. בשם רבי מאיר אמרו: גם במשקל של אבן תקומה, כלומר בדבר ששקלו כנגדה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20b", "R38", "R39"], "t": "לא רק מי שכבר הפילה", "x": "ולא רק אשה שהפילה, אלא גם אשה שחוששת שמא תפיל. ולא רק אשה שהתעברה, אלא גם אשה שחוששת שמא תתעבר ותפיל. רש\"י מסביר שאין לומר שהתירו רק לאשה שכבר הפילה עובר אחר, ושאין צורך שיהיה ידוע לה שהיא מעוברת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20c", "R40"], "t": "המשקל צריך להיות מקרי", "x": "רב יימר בר שלמיא אמר בשם אביי: המשקל מועיל רק אם \"איכוון ואיתקל\", נמצא שווה במשקלו. רש\"י מפרש: החפץ נמצא מעצמו במשקל האבן, ולא שהוסיפו עליו או הורידו ממנו כדי להשוות. אביי שאל: ומה דין משקל של המשקל? \"תיקו\", השאלה נשארה בלי תשובה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21", "R41", "R42", "R43", "R44", "R45"], "t": "אביי: רפואה לקדחת יומית", "x": "אביי אמר בשם אמו: לקדחת \"בת יומא\", שתוקפת בכל יום, ייקח מטבע לבן, צרוף וחדש לפי רש\"י. ילך למקום שמפיקים בו מלח, ישקול כמשקלו מלח, ויקשור אותו בחלל הצוואר בחוט של שיער. רש\"י מתאר את המלחה: ממשיכים מי ים לבריכות רחבות, והשמש מייבשת את המים ונעשה מלח.", "a": "רש\"י מביא בשם רבנו הלוי שחלל הצוואר הוא מתחת לגרון, כנגד פתח החלוק."}, {"w": "גמרא", "cols": false, "hl": ["G22a", "R46", "R47", "R48", "R49", "R50", "R51", "R52"], "t": "ואם לא: הנמלה בצינור הנחושת", "x": "ואם לא, ישב בפרשת דרכים. כשיראה נמלה גדולה שנושאת משהו, ייקח אותה ויכניס אותה לצינור של נחושת. יסתום את פיו בעופרת ויחתום אותו בשישים חותמות. רש\"י מפרש שאין הכוונה דווקא לשישים, ולא לחותמות של ציור, אלא סתימות רבות זו על זו: שעווה על העופרת, אחר כך זפת, ואחר כך טיט.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22a", "R53", "R54", "R55", "R56", "R57"], "t": "\"טעונך עלי וטעונאי עלך\"", "x": "ינענע את הצינור, יישא אותו, ויאמר לנמלה: \"טעונך עלי וטעונאי עלך\", המשא שלך עליי והמשא שלי עלייך. רש\"י מפרש: את מה שנשאת אשא אני, והמשא שלי הוא המחלה שלי.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22b", "R58"], "t": "רב אחא בריה דרב הונא: לשנות את הנוסח", "x": "רב אחא בנו של רב הונא אמר לרב אשי: ואולי אדם אחר כבר מצא את הנמלה ונתן בה את מחלתו? רש\"י מפרש: אז \"המשא שלך עליי\" הוא המחלה של חברו. לכן יאמר: \"טעונאי וטעונך עלך\", המשא שלי והמשא שלך עלייך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G23", "R59", "R60", "R61"], "t": "ואם לא: כד חדש ונהר", "x": "ואם לא, ייקח \"כוזא חדתא\", כלי חרס קטן וחדש לפי רש\"י, ילך לנהר ויאמר: נהר נהר, הלווה לי כד מים לאורח שבא אליי. יסובב אותו שבע פעמים סביב ראשו, ישפוך את המים לאחוריו, ויאמר: נהר נהר, קח את המים שנתת לי, כי האורח שבא אליי ביומו בא וביומו הלך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G24"], "t": "\"אמר רב הונא\"", "x": "במילים \"אמר רב הונא\" נפתחת מימרה חדשה. המשפט נקטע בסוף העמוד, ודברי רב הונא עצמם באים בראש העמוד הבא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "רבא הבחין בין המקל, שנועד לתקן את ההליכה, לבין הקב, שנשענים עליו. רבי יוחנן קבע שאין נכנסים לעזרה בסמוכות של הכיסא, כי חולצים בהן. משנת הקשרים פתחה פרק של רפואות: קשרי פואה, קשר לבן שמתגעגע לאביו, דברים שמותר לעשות לחולה ולתינוק בשבת, אבן תקומה, ורפואות לקדחת. העמוד הבא מביא את דברי רב הונא, רפואה לקדחת מסוג אחר.", "a": ""}], "audio": "shabbat/daf-66b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>

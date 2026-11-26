@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-level="basic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>גמרא · מסכת שבת, דף נ&quot;ג עמוד ב&#x27;</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&family=Noto+Rashi+Hebrew:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --surface:#fffdf8; --ink:#1f2430; --muted:#5b6270; --line:#e3dac8;
+  --mishna:#9a6a1f; --mishna-bg:#fbf3e1;
+  --gemara:#1f5a66; --gemara-bg:#e9f3f3;
+  --rashi:#2c5796; --rashi-bg:#eaf0fa;
+  --tos:#7a3b6c; --tos-bg:#f6ebf3;
+  --deep:#3d6b3a; --deep-bg:#edf4ea;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 20px rgba(40,30,10,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161b; --surface:#1c1f26; --ink:#ebe7df; --muted:#a4a9b4; --line:#2f333d;
+    --mishna:#e0b25c; --mishna-bg:#2a2416;
+    --gemara:#7cc3cf; --gemara-bg:#17282b;
+    --rashi:#8fb4ee; --rashi-bg:#1a2434;
+    --tos:#d79bc8; --tos-bg:#2a1c27;
+    --deep:#9ccf96; --deep-bg:#1b271a;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:18px;line-height:1.75}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 12px}
+.brand{font-weight:700;color:var(--gemara);letter-spacing:.02em;font-size:.95rem}
+h1{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:.15em 0 .2em}
+.sub{color:var(--muted);margin:0}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-direction:column;gap:8px;padding-top:10px;padding-bottom:10px}
+.levelrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.levelrow span{font-size:.9rem;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.92rem;font-weight:500;border:0;background:transparent;color:var(--ink);padding:6px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gemara);color:var(--surface)}
+.prog{margin-inline-start:auto;font-size:.88rem;color:var(--muted)}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+nav.chips a{white-space:nowrap;font-size:.86rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px}
+nav.chips a:hover{border-color:var(--gemara)}
+section{margin:34px 0}
+h2{font-family:"Frank Ruhl Libre",serif;font-size:1.6rem;line-height:1.3;margin:0 0 4px}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font-size:.85rem;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.lead{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.who{border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.who b{display:block;font-size:1.1rem}
+.who small{display:block;color:var(--muted);margin-bottom:6px}
+.who p{margin:0;font-size:.95rem;line-height:1.6}
+.who.m{border-top:4px solid var(--mishna)} .who.g{border-top:4px solid var(--gemara)}
+.who.r{border-top:4px solid var(--rashi)} .who.t{border-top:4px solid var(--tos)}
+.src{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.32rem;line-height:1.95;border-radius:12px;padding:16px 20px;margin:12px 0;border-inline-start:5px solid}
+.src .tag{display:block;font-family:Heebo,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;margin-bottom:4px}
+.src.m{background:var(--mishna-bg);border-color:var(--mishna)} .src.m .tag{color:var(--mishna)}
+.src.g{background:var(--gemara-bg);border-color:var(--gemara)} .src.g .tag{color:var(--gemara)}
+.voice{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--line)}
+.voice.r{background:var(--rashi-bg)} .voice.t{background:var(--tos-bg)}
+.voice .tag{font-size:.8rem;font-weight:700;letter-spacing:.05em}
+.voice.r .tag{color:var(--rashi)} .voice.t .tag{color:var(--tos)}
+.voice blockquote{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;line-height:1.8;margin:4px 0 8px;padding:0}
+.voice p{margin:6px 0}
+.say{font-weight:700}
+dl.words{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:10px 0;font-size:.97rem}
+dl.words dt{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:1.08rem}
+dl.words dd{margin:0;color:var(--muted)}
+table.tr{width:100%;border-collapse:collapse;margin:10px 0;font-size:.98rem}
+table.tr th{text-align:start;font-size:.8rem;color:var(--muted);font-weight:700;padding:4px 8px;border-bottom:1px solid var(--line)}
+table.tr td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tr td:first-child{font-family:"Frank Ruhl Libre",serif;font-size:1.12rem;font-weight:500;width:42%}
+table.ops{width:100%;border-collapse:collapse;margin:10px 0}
+table.ops th,table.ops td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.ops th{font-size:.82rem;color:var(--muted)}
+.deep{display:none;background:var(--deep-bg);border:1px solid var(--line);border-inline-start:5px solid var(--deep);border-radius:12px;padding:14px 18px;margin:14px 0}
+.deep>.tag{font-size:.8rem;font-weight:700;letter-spacing:.05em;color:var(--deep)}
+.deep h3{margin-top:12px}
+.deepq{display:none}
+html[data-level="deep"] .deep, html[data-level="deep"] .deepq{display:block}
+html[data-level="deep"] .godeep{display:none}
+.godeep{font-size:.92rem;color:var(--muted);margin:12px 0}
+.godeep button{font:inherit;color:var(--deep);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;font-weight:500}
+.eg{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.97rem}
+.eg b{color:var(--mishna)}
+details{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:500}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:8px 0 12px}
+details.full .srcfull{font-family:"Frank Ruhl Libre",serif;font-size:1.05rem;line-height:1.9}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.flow span{border-radius:10px;padding:6px 12px;border:1px solid var(--line);background:var(--surface);font-size:.95rem}
+.flow i{font-style:normal;color:var(--muted)}
+.done{display:flex;gap:10px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.done input{width:20px;height:20px;accent-color:var(--gemara)}
+ol.steps{padding-inline-start:22px;margin:8px 0}
+ol.steps li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding:20px 0 50px;margin-top:40px;line-height:1.7}
+:root{--hl-g:#ffe08a;--hl-r:#c9dcfb;--hl-t:#f0cbe5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hl-g:#6a5514;--hl-r:#27457a;--hl-t:#633059}}
+.dafwrap{max-width:1400px;margin:0 auto;padding:16px 16px 0}
+.dafwrap h2{font-size:1.35rem}
+.work{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;align-items:stretch;margin-top:14px}
+.layers{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.9rem;margin:10px 0 0}
+.layers span{border-radius:999px;padding:3px 12px;border:1px solid var(--line);background:var(--surface)}
+.layers span b{font-weight:700}
+.layers .m b{color:var(--mishna)} .layers .g b{color:var(--gemara)} .layers .r b{color:var(--rashi)} .layers .t b{color:var(--tos)}
+.layers i{font-style:normal;color:var(--muted)}
+.daf{background:var(--surface);border:1px solid var(--line);outline:3px double var(--line);outline-offset:3px;border-radius:6px;margin:3px;min-width:0;box-shadow:var(--shadow)}
+.daf-head{display:flex;justify-content:space-between;align-items:baseline;padding:8px 18px;border-bottom:1px solid var(--line);font-family:"Frank Ruhl Libre",serif}
+.daf-head b{font-size:1.3rem;min-width:2em} .daf-head span{font-size:1rem;color:var(--muted);letter-spacing:.06em}
+.daf-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr}
+.col{min-width:0;border-inline-start:1px solid var(--line);transition:background .4s}
+.col:first-child{border-inline-start:0}
+.col h4{margin:0;padding:6px 14px;font-size:.8rem;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+.col.rashi h4{color:var(--rashi)} .col.gem h4{color:var(--gemara)} .col.tos h4{color:var(--tos)}
+.col .scroll{position:relative;height:clamp(300px,calc(100vh - 300px),640px);overflow-y:auto;padding:12px 16px;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1rem;line-height:1.8;scrollbar-width:thin}
+.col.gem .scroll{font-size:1.28rem;line-height:2}
+.col p{margin:0 0 8px}
+.col .mk{font-size:1.25em;font-weight:700;color:var(--gemara);margin-inline-end:.3em}
+.col .brk{display:block;height:.6em}
+.daf [data-id]{cursor:pointer;border-radius:5px;padding:2px 3px;transition:background .35s,opacity .35s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.daf.has-hl [data-id]:not(.hl){opacity:.4}
+.col.gem .hl{background:var(--hl-g)} .col.rashi .hl{background:var(--hl-r)} .col.tos .hl{background:var(--hl-t)}
+.col.gem.colhl{background:var(--mishna-bg)} .col.rashi.colhl{background:var(--rashi-bg)} .col.tos.colhl{background:var(--tos-bg)}
+.guide{background:var(--surface);border:1px solid var(--line);border-inline-start:6px solid var(--muted);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.guide[data-role="m"]{border-inline-start-color:var(--mishna)} .guide[data-role="g"]{border-inline-start-color:var(--gemara)}
+.guide[data-role="r"]{border-inline-start-color:var(--rashi)} .guide[data-role="t"]{border-inline-start-color:var(--tos)}
+.g-top{display:flex;align-items:center;gap:10px}
+.g-who{font-size:.82rem;font-weight:700;color:var(--surface);background:var(--muted);border-radius:999px;padding:2px 14px}
+.guide[data-role="m"] .g-who{background:var(--mishna)} .guide[data-role="g"] .g-who{background:var(--gemara)}
+.guide[data-role="r"] .g-who{background:var(--rashi)} .guide[data-role="t"] .g-who{background:var(--tos)}
+.g-cnt{margin-inline-start:auto;font-size:.85rem;color:var(--muted)}
+.g-body{order:2;flex:1;min-height:0;overflow-y:auto}
+.g-t{font-family:"Frank Ruhl Libre",serif;font-size:1.22rem;font-weight:700;line-height:1.3;margin:10px 0 4px}
+.g-x{margin:0;font-size:.98rem;line-height:1.6}
+.g-add{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:var(--deep-bg);font-size:.9rem;line-height:1.55}
+.g-add:empty{display:none}
+.g-ctl{order:1;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 2px;align-items:center}
+.g-ctl button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.g-ctl button:disabled{opacity:.4;cursor:default}
+.g-ctl .nx{background:var(--gemara);color:var(--surface);border-color:var(--gemara);font-weight:700}
+.g-ctl .pl{background:var(--mishna);color:var(--surface);border-color:var(--mishna);font-weight:700;white-space:nowrap}
+.guide audio{display:none}
+@media (max-width:760px){.g-ctl{flex-wrap:wrap} .g-ctl button{padding:6px 14px} .g-ctl .g-bar{flex-basis:100%}}
+.g-bar{flex:1 0 100%;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.g-bar i{display:block;height:100%;width:0;background:var(--gemara);transition:width .4s}
+@media (max-width:1100px){
+  .work{grid-template-columns:1fr;gap:12px}
+  .col .scroll{height:clamp(200px,calc(100vh - 500px),440px)}
+  .g-body{flex:none;overflow:visible;min-height:5.5em}
+}
+@media (max-width:760px){
+  .daf-grid{grid-template-columns:1fr}
+  .col{border-inline-start:0;border-top:1px solid var(--line)} .col.gem{order:-1;border-top:0}
+  .col .scroll{height:auto;max-height:19vh;padding:8px 12px} .col.gem .scroll{font-size:1.12rem;line-height:1.85;max-height:19vh}
+  .col.idle{display:none}
+  .col h4{padding:4px 12px}
+  .g-body{min-height:0} .g-t{font-size:1.2rem;margin:6px 0 2px} .g-x{font-size:1rem;line-height:1.55} .g-add{font-size:.92rem;line-height:1.5;padding:6px 10px}
+  .guide{padding:10px 14px} .g-ctl{margin-top:8px}
+  .layers{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .dafwrap{padding-top:18px} .dafwrap .lead{font-size:.95rem}
+  .daf{margin-top:12px}
+}
+.film{margin:14px 0 20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0b1030;box-shadow:var(--shadow)}
+.stage{position:relative;aspect-ratio:16/9;container-type:inline-size;overflow:hidden;color:#fff;background:linear-gradient(#2d2f63,#8a5a78 70%,#d08a5c)}
+.stage .night{position:absolute;inset:0;background:linear-gradient(#060a22,#131c4c);opacity:0;transition:opacity 1.6s}
+.stage .stars{position:absolute;inset:0;opacity:0;transition:opacity 2s}
+.stage .stars i{position:absolute;width:max(.45cqw,2px);height:max(.45cqw,2px);border-radius:50%;background:#fff}
+.f-big,.f-mishna,.f-tl{opacity:0;transition:opacity .6s,transform .6s}
+.f-big.on,.f-mishna.on,.f-tl.on{opacity:1;transform:none}
+.f-big{position:absolute;inset:9% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:7.5cqw;line-height:1.2;transform:translateY(2cqw);text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.f-big.mid{inset:34% 6% auto}
+.f-mishna{position:absolute;inset:16% 6% auto;text-align:center;font-family:"Frank Ruhl Libre",serif;font-size:5.4cqw;line-height:1.9}
+.f-mishna span{display:inline-block;opacity:.4;transition:.5s;border-radius:1cqw;padding:0 1.2cqw}
+.f-mishna span.on{opacity:1;background:rgba(255,214,120,.2);color:#ffe2a0}
+.f-eq{display:block;font-family:Heebo,sans-serif;font-weight:700;font-size:5cqw;margin-top:2cqw;opacity:0;transition:opacity .8s .9s}
+.f-mishna.eq .f-eq{opacity:1}
+.f-tl{position:absolute;inset:auto 9% 12%;height:26cqw}
+.f-tl .bar{position:absolute;left:0;right:0;top:50%;height:1.8cqw;margin-top:-.9cqw;border-radius:1cqw;background:rgba(255,255,255,.2)}
+.f-tl .win{position:absolute;right:0;top:0;bottom:0;width:0;border-radius:1cqw;background:linear-gradient(to left,#ffd678,#ff9f6b);transition:width 1.1s}
+.f-tl .end{position:absolute;top:calc(50% + 2cqw);font-size:max(2.5cqw,11px);opacity:.8}
+.f-tl .end.s{right:0} .f-tl .end.e{left:0}
+.f-tl .mk{position:absolute;font-size:max(2.9cqw,11px);line-height:1.25;text-align:center;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.f-tl .mk.on{opacity:1}
+.f-tl .mk b{display:block;font-size:max(3.4cqw,12px)}
+.f-tl .mk::after{content:"";position:absolute;left:50%;width:2px;height:2.6cqw;background:#fff;margin-left:-1px}
+.f-tl .m1{right:33.33%;bottom:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m1::after{top:100%;margin-top:.3cqw}
+.f-tl .m2{right:50%;top:calc(50% + 3.2cqw);transform:translateX(50%)} .f-tl .m2::after{bottom:100%;margin-bottom:.3cqw}
+.f-tl .m3{left:0;bottom:calc(50% + 3.2cqw);text-align:left} .f-tl .m3::after{top:100%;left:1px;margin-top:.3cqw}
+.f-cap{background:#0b1030;color:#fff;text-align:center;padding:12px 18px;font-size:1.05rem;line-height:1.55;min-height:4.9em;display:flex;align-items:center;justify-content:center}
+.f-ctl{display:flex;align-items:center;gap:10px;padding:8px 12px 12px;background:#0b1030;color:#cfd3e6}
+.f-ctl button{font:inherit;font-size:.9rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:5px 14px;cursor:pointer}
+.f-ctl button.play{background:#ffd678;color:#1b1740;border-color:#ffd678;font-weight:700}
+.f-ctl .track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.2);overflow:hidden;direction:rtl}
+.f-ctl .fill{height:100%;width:0;background:#ffd678;transition:width .5s}
+.f-ctl .cnt{font-size:.82rem;min-width:5em;text-align:center;white-space:nowrap}
+.f-note{font-size:.85rem;color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion:reduce){.stage *{transition:none!important}}
+@media (max-width:560px){
+  .stage{aspect-ratio:4/3} .f-tl{inset:auto 7% 10%;height:34cqw} .f-big{font-size:9cqw} .f-mishna{font-size:6.6cqw}
+  .f-ctl{flex-wrap:wrap} .f-ctl .track{order:5;flex-basis:100%}
+  body{font-size:17px} .src{font-size:1.2rem;padding:14px}
+  table.tr td{display:block;width:100%!important;border:0;padding:2px 4px}
+  table.tr tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  table.tr thead{display:none}
+}
+footer a{color:var(--gemara)}
+
+/* ---- the lesson screen: the daf stays fixed on one side, every explanation is read against it ---- */
+html{scroll-padding-top:12px}
+.split{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);max-width:1600px;margin:0 auto}
+.pane-exp{grid-column:1;grid-row:1;padding:0 22px 40px;min-width:0}
+.pane-daf{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;align-self:start;display:flex;flex-direction:column;background:var(--bg);border-inline-start:1px solid var(--line)}
+.daf-scroll{flex:1;min-height:0;overflow:auto;padding:0 12px 18px;scrollbar-width:thin}
+.pane-title{display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:.8rem;color:var(--muted);padding:10px 16px 6px}
+.pt-tools{display:none}
+.g-more{display:none}
+.g-ded{margin:8px 0 4px;padding:6px 10px;border-block:1px solid var(--line);text-align:center;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.g-ded[hidden]{display:none}
+.g-ded b{display:block;font-size:1.02rem;color:var(--mishna);letter-spacing:.06em}
+.pane-title b{color:var(--ink);font-size:.95rem}
+.pane-exp header.top{padding:16px 0 10px}
+.pane-exp .guide{margin:6px 0 4px}
+.pane-exp .g-body{flex:none;overflow:visible;min-height:8.5em}
+.pane-exp section{margin:30px 0}
+.g-note{order:3;margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid var(--line)}
+.tools{display:flex;flex-direction:column;gap:8px;margin-bottom:6px}
+/* ---- the daf itself, in the form of the Vilna print: Gemara in the middle in square letters, Rashi and Tosafot around it in Rashi script ---- */
+.vilna{background:#fbf6ea;color:#191713;border:1px solid #d8cdb4;box-shadow:var(--shadow);padding:14px 20px 22px;min-width:600px}
+.v-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:1.25rem;padding:0 2px 8px;letter-spacing:.04em}
+.v-head span:last-child{text-align:left}
+.v-head b{font-size:1.15em;margin-inline-start:.9em}
+.v-body{position:relative;overflow:hidden}
+.v-layer{position:absolute;top:0;left:0;right:0;pointer-events:none;text-align:justify}
+.v-layer [data-id]{pointer-events:auto;cursor:pointer;border-radius:3px;transition:background .3s,opacity .3s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.v-main{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:500;font-size:19px;line-height:30px}
+.v-in,.v-out{font-family:"Noto Rashi Hebrew","Frank Ruhl Libre",serif;font-size:15px;line-height:21px}
+.v-in b{font-weight:700}
+.v-out b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-weight:700;font-size:.94em}
+.v-boxline{display:inline-block;text-align:center}
+.v-box{display:inline-block;margin:2px 0 6px;padding:0 26px;border:4px double currentColor;font-size:34px;line-height:48px;font-weight:700;letter-spacing:.08em}
+.v-mk{font-size:1.45em;font-weight:700}
+.sp{pointer-events:none}
+.vilna.has-hl [data-id]:not(.hl){opacity:.36}
+.vilna .v-main .hl{background:#ffe08a} .vilna .v-in .hl{background:#c9dcfb} .vilna .v-out .hl{background:#f0cbe5}
+.vilna.colhl .v-main{color:#7a5200} .vilna.colhl .v-in{color:#1f4f96} .vilna.colhl .v-out{color:#7a2f66}
+/* an explanation that is currently shown on the daf */
+.pane-exp [data-hl]{cursor:pointer;transition:box-shadow .3s}
+.pane-exp [data-hl].ondaf{box-shadow:5px 0 0 var(--mishna)}
+.pane-exp section[data-hl].ondaf{box-shadow:none}
+.pane-exp section[data-hl].ondaf>h2{box-shadow:8px 0 0 var(--bg),13px 0 0 var(--mishna)}
+/* ---- a narrow screen (phone): two cards on the page background, as on the wide screen: the daf above, the current explanation under it ---- */
+@media (max-width:900px){
+  :root{--dafh:45vh}
+  @supports (height:1dvh){:root{--dafh:45dvh}}
+  html{scroll-padding-top:calc(var(--dafh) + 8px)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .pane-daf{grid-column:1;grid-row:1;height:var(--dafh);z-index:6;border-inline-start:0;padding:0 8px}
+  .pane-title{align-items:center;padding:7px 6px 6px;font-size:.78rem}
+  .pane-title b{font-family:"Frank Ruhl Libre","Times New Roman",serif;font-size:1.08rem;letter-spacing:.01em}
+  .pane-title span{display:none}
+  .pt-tools{display:flex;gap:6px;align-items:center}
+  .pt-tools a,.pt-tools button{font:inherit;font-size:.8rem;font-weight:500;line-height:1.5;text-decoration:none;color:var(--gemara);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:2px 13px;cursor:pointer;box-shadow:0 1px 2px rgba(40,30,10,.06)}
+  .pt-tools button[aria-pressed="true"]{background:var(--gemara);border-color:var(--gemara);color:var(--surface)}
+  /* the daf is a sheet of paper in a rounded window; it moves inside the window to the passage being explained */
+  .daf-scroll{padding:0;border:1px solid #d8cdb4;border-radius:14px;background:#fbf6ea;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12);overscroll-behavior:contain}
+  .vilna{border:0;box-shadow:none;background:transparent;padding:10px 16px 16px;min-width:640px}
+  .pane-exp{grid-column:1;grid-row:2;padding:0 8px 40px;display:flex;flex-direction:column}
+  .pane-exp .guide{order:-1;height:calc(100vh - var(--dafh) - 18px);margin:10px 0 8px;padding:11px 15px 11px;border-radius:16px;box-shadow:0 1px 2px rgba(40,30,10,.08),0 8px 22px rgba(40,30,10,.12)}
+  @supports (height:1dvh){.pane-exp .guide{height:calc(100dvh - var(--dafh) - 18px)}}
+  .pane-exp .g-who{font-size:.84rem;padding:3px 16px}
+  .pane-exp .g-body{order:2;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:2px}
+  .pane-exp .g-t{font-size:1.24rem;line-height:1.3;margin:9px 0 4px}
+  .pane-exp .g-x{font-size:1.02rem;line-height:1.6;margin:0 0 6px}
+  .pane-exp .g-add{font-size:.93rem;line-height:1.5;margin-top:8px}
+  .pane-exp .g-ctl{order:3;flex-wrap:nowrap;gap:8px;margin:8px 0 0;position:relative;padding-top:12px}
+  .pane-exp .g-ctl .g-bar{position:absolute;top:0;left:0;right:0;flex:none;height:5px}
+  .pane-exp .g-ctl button{flex:1;min-height:38px;font-size:.95rem;padding:4px 8px;white-space:nowrap}
+  .pane-exp .g-ctl .nx,.pane-exp .g-ctl .pl{box-shadow:0 2px 6px rgba(40,30,10,.18)}
+  .pane-exp .g-ctl .pl{flex:1.5}
+  .pane-exp .g-ctl .pl[hidden]{display:none}
+  /* when the explanation is longer than its place: the last lines fade out and a marker says there is more below */
+  .pane-exp .guide.more .g-body{-webkit-mask-image:linear-gradient(#000 calc(100% - 46px),transparent);mask-image:linear-gradient(#000 calc(100% - 46px),transparent)}
+  .pane-exp .g-ctl .g-more{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:5px;flex:none;min-height:0;font-size:.82rem;font-weight:700;line-height:1.5;padding:2px 14px;border-radius:999px;border:0;background:var(--ink);color:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.25);animation:gmore 1.6s ease-in-out infinite}
+  .pane-exp .guide.more .g-ctl .g-more{display:block}
+  .pane-exp .g-more::after{content:"";display:inline-block;width:.42em;height:.42em;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg);margin:0 .5em .18em 0}
+  @keyframes gmore{0%,100%{margin-bottom:5px}50%{margin-bottom:1px}}
+  @media (prefers-reduced-motion:reduce){.pane-exp .g-ctl .g-more{animation:none}}
+  .pane-exp .g-note{order:4;margin:4px 0 0;font-size:.7rem;line-height:1.3;text-align:center}
+  .pane-exp header.top{padding:14px 6px 8px}
+  .pane-exp .booknav{padding-inline:2px}
+}
+
+.booknav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0 2px;font-size:.9rem}
+.booknav a,.booknav span{flex:1;text-align:center;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.booknav a:hover{border-color:var(--gemara);color:var(--gemara)}
+.booknav a.home{flex:1.2;font-weight:700;color:var(--gemara)}
+.booknav span{opacity:.4}
+.booknav a.all{flex:.9;color:var(--mishna)}
+@media (max-width:520px){.booknav{flex-wrap:wrap} .booknav a.all{flex-basis:100%}}
+.booknav.end{padding:26px 0 8px}
+.draft{font-size:.84rem;color:var(--muted);margin:6px 0 0}
+.dev-credit{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:14px 26px;max-width:560px;margin:22px auto 6px;padding-top:16px;border-top:1px solid rgba(122,90,30,.2)}.dev-credit .cell{display:flex;flex-direction:column;align-items:center;gap:7px}.dev-credit .lbl{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.05em;color:#8a7a5c}.dev-credit .brand{display:inline-flex;align-items:center;gap:9px;direction:ltr;height:46px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;padding:0 16px 0 10px;box-shadow:0 1px 4px rgba(60,40,10,.08)}.dev-credit .brand img{display:block;height:auto}.dev-credit .tag{font:500 12px/1 Heebo,Arial,sans-serif;letter-spacing:.08em;color:#1f1b14}.dev-credit .who{display:inline-flex;align-items:center;height:46px;padding:0 20px;background:#fff;border:1px solid #e6dcc6;border-radius:999px;box-shadow:0 1px 4px rgba(60,40,10,.08);font:700 19px/1 "Frank Ruhl Libre","Times New Roman",serif;color:#1f1b14;letter-spacing:.01em}.dev-credit .sep{align-self:center;width:1px;height:54px;background:linear-gradient(transparent,#c9a24a,transparent)}@media (max-width:460px){.dev-credit .sep{display:none}}.gm-brief{font-size:1.02rem;line-height:1.7;margin:10px 0 0;max-width:62ch}.gm-brief-m{display:none;margin:12px 0 4px}@media (max-width:900px){.gm-brief-m{display:block}}.gm-static{margin:26px auto;max-width:900px;border:1px solid #e2d6bd;border-radius:12px;background:#fffdf7;padding:4px 18px}.gm-static summary{cursor:pointer;font-weight:700;padding:12px 0}.gm-static h3{font-size:1.04rem;margin:16px 0 4px}.gm-static h3 .w{color:#7a5a1e;font-weight:700}.gm-static p{margin:0 0 .55em;line-height:1.75}.gm-static ol{list-style:none;margin:0;padding:0}</style>
+<link rel="canonical" href="https://gemara.co.il/shabbat-53b.html">
+<meta name="description" content="מסכת שבת, דף נ&quot;ג עמוד ב&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף נ\"ג עמוד ב'", "url": "https://gemara.co.il/shabbat-53b.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+</head>
+<body>
+<div class="split">
+<aside class="pane-daf" aria-label="הדף">
+  <div class="pane-title"><b>שבת, דף נ&quot;ג עמוד ב&#x27;</b><span>צורת הדף של דפוס וילנא · רש"י ותוספות בכתב רש"י</span><div class="pt-tools"><a href="shabbat.html#toc">תוכן</a><button type="button" id="fitB" aria-pressed="false">כל הדף</button></div></div>
+  <div class="daf-scroll" id="paneDaf">
+  <div class="vilna" id="dafBox">
+    <div class="v-head"><span>שבת</span><span>פרק חמישי</span><span>במה בהמה</span></div>
+    <div class="v-body" id="vBody">
+      <div class="v-layer v-main" id="colG"></div>
+      <div class="v-layer v-in" id="colR"></div>
+      <div class="v-layer v-out" id="colT"></div>
+    </div>
+  </div>
+  </div>
+</aside>
+<div class="pane-exp">
+<nav class="booknav" aria-label="מעבר בין עמודים"><a href="shabbat-53a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-54a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<header class="top">
+  <div class="brand">גמרא · שיעור 104</div>
+  <h1>מסכת שבת, דף נ&quot;ג עמוד ב&#x27;</h1>
+  <p class="sub">פרק חמישי, &quot;במה בהמה&quot;.</p>
+  <p class="gm-brief"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף נ&quot;ג עמוד ב&#x27;, לומדים: קמיע מומחה: לאדם ולבהמה; רפואה לבהמה בשבת; כיס בדדי העזים; נס ומזונות, וצניעות; "לבובין" ו"שחוזות".</p>
+</header>
+<div class="layers"><span class="g"><b>הגמרא</b> שואלת ומבררת</span><i>←</i><span class="r"><b>רש"י</b> מסביר את המילים</span><i>←</i><span class="t"><b>התוספות</b> מקשים ומרחיבים</span></div>
+<div class="guide" id="guide" data-role="d">
+  <div class="g-top"><span class="g-who"></span><span class="g-cnt"></span></div>
+  <div class="g-body" aria-live="polite">
+    <div class="g-t"></div>
+    <p class="g-x"></p>
+    <p class="g-add"></p>
+  </div>
+  <div class="g-ctl">
+    <div class="g-bar"><i></i></div>
+    <button type="button" class="pl">▶ השמע הסבר</button>
+    <button type="button" class="pv">הקודם</button>
+    <button type="button" class="nx">הבא</button>
+  </div>
+</div>
+<h2 class="more">ללמוד לעומק: יחידות, הרחבות ושאלות</h2>
+<div class="tools">
+  <div class="levelrow">
+    <span>רמת ההסבר:</span>
+    <div class="seg" role="group" aria-label="רמת ההסבר">
+      <button type="button" data-level="basic" aria-pressed="true">בפשטות</button>
+      <button type="button" data-level="deep" aria-pressed="false">לעומק</button>
+    </div>
+    <span class="prog" id="prog">0 מתוך 5 יחידות</span>
+  </div>
+  <nav class="chips" aria-label="יחידות השיעור"><a href="#u1">1. קמיע מומחה: לאדם ולבהמה</a><a href="#u2">2. רפואה לבהמה בשבת</a><a href="#u3">3. כיס בדדי העזים</a><a href="#u4">4. נס ומזונות, וצניעות</a><a href="#u5">5. "לבובין" ו"שחוזות"</a><a href="#sum">סיכום</a></nav>
+</div>
+
+<section id="u1" data-hl="G1,G2,G3,G4">
+  <div class="kicker">יחידה 1 · גמרא</div>
+  <h2>קמיע מומחה: לאדם ולבהמה</h2>
+  <p class="lead">הברייתא אוסרת לבהמה קמיע אף שהוא מומחה, ומשנה מתירה לאדם קמיע מומחה. הגמרא מיישבת, ומבררת על מה מוסבת החומרה בבהמה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>דומיא דקמיע</td><td>בדומה לקמיע.</td></tr>
+      <tr><td>ולא בקמיע אע"פ שהוא מומחה</td><td>ולא בקמיע, אף שהוא מומחה.</td></tr>
+      <tr><td>והא אנן תנן ולא בקמיע שאינו מומחה</td><td>והרי אנחנו שנינו: ולא בקמיע שאינו מומחה,</td></tr>
+      <tr><td>הא מומחה שפיר דמי</td><td>הא (קמיע) מומחה, מותר.</td></tr>
+      <tr><td>ה"נ שאינו מומחה</td><td>כך גם כאן, (קמיע) שאינו מומחה.</td></tr>
+      <tr><td>מומחה לאדם ואינו מומחה לבהמה</td><td>מומחה לאדם, ואינו מומחה לבהמה.</td></tr>
+      <tr><td>ומי איכא מומחה לאדם ולא הוי מומחה לבהמה</td><td>וכי יש (קמיע) שמומחה לאדם ואינו מומחה לבהמה?</td></tr>
+      <tr><td>אדם דאית ליה מזלא מסייע ליה</td><td>אדם, שיש לו מזל, (המזל) מסייע לו.</td></tr>
+      <tr><td>בהמה דלית לה מזלא לא מסייע לה</td><td>בהמה, שאין לה מזל, אינו מסייע לה.</td></tr>
+      <tr><td>מי סברת אקמיע קאי אסנדל קאי</td><td>וכי סבור אתה שעל הקמיע הוא מוסב? על הסנדל הוא מוסב.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הדיוק בסוף הקושיה הקודמת:</b> הטרסקל נשנה בברייתא יחד עם הקמיע, ודומה לו. רש"י: הקמיע הוא משום חולי, ולכן גם הטרסקל משום צער.</p>
+  <p><b>הסתירה:</b> הברייתא אוסרת לבהמה קמיע אף שהוא מומחה, ובמשנה על אדם משמע שקמיע מומחה מותר. התשובה: הקמיע מומחה לאדם, ואינו מומחה לבהמה. לאדם יש מזל שמסייע לו, ולבהמה אין.</p>
+  <p><b>"זו חומר בבהמה מבאדם":</b> אם כך, אין כאן חומרה בבהמה, כי גם אדם יוצא רק בקמיע מומחה לאדם. התשובה: החומרה אינה מוסבת על הקמיע אלא על הסנדל.</p>
+  <div data-hl="R2,R3" class="voice r"><span class="tag">רש"י</span><blockquote>והא אנן תנן – גבי אדם לקמן בפ' במה אשה (שבת דף ס.):</blockquote><blockquote>הא מומחה שפיר דמי – מאי שנא בהמה מאדם:</blockquote><p><span class="say">מה רש"י אומר:</span> המשנה על הקמיע עוסקת באדם, בפרק "במה אשה". והשאלה היא במה בהמה שונה מאדם.</p></div>
+  <div data-hl="R4" class="voice r"><span class="tag">רש"י</span><blockquote>מזליה – מלאך שלו ומליץ עליו:</blockquote><p><span class="say">מה רש"י אומר:</span> המזל הוא המלאך של האדם, שמליץ עליו.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך הגמרא חוזרת בה מן ההבנה הקודמת</h3>
+    <div data-hl="R5,R6,R7" class="voice r"><span class="tag">רש"י</span><blockquote>אי הכי – דבהמה נמי נפקא בקמיע המומחה לבהמה:</blockquote><blockquote>מאי זה חומר – אדם נמי לא נפיק אלא בקמיע מומחה לאדם:</blockquote><blockquote>אסנדל קאי – וזה חומר דקתני ולא בהמה בסנדל שברגליה:</blockquote><p><span class="say">מה רש"י אומר:</span> אם בהמה יוצאת בקמיע מומחה לבהמה, ואדם רק בקמיע מומחה לאדם, הדין שווה, ואין "חומר". לכן "זו חומר" מוסב על "ולא בהמה בסנדל שברגליה".</p></div>
+    <p>בעמוד הקודם רש"י כתב שבשלב ההוא סברו שהחומרה מוסבת על הקמיע. כאן הגמרא דוחה את ההבנה הזו, כי ההסבר החדש על הקמיע אינו משאיר בו חומרה.</p>
+  </div>
+  <p class="godeep">למה החומרה אינה יכולה להיות מוסבת על הקמיע? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה מוכיח הדיוק "דומיא דקמיע"?</summary><p>שהטרסקל בברייתא הוא משום צער, כמו הקמיע שהוא משום חולי.</p></details>
+  <details><summary>איך מיישבים את הברייתא עם המשנה על קמיע מומחה?</summary><p>הקמיע מומחה לאדם, ואינו מומחה לבהמה.</p></details>
+  <details><summary>למה קמיע יכול להועיל לאדם ולא לבהמה?</summary><p>לאדם יש מזל שמסייע לו, ולבהמה אין.</p></details>
+  <details class="deepq"><summary>על מה מוסבת "זו חומר בבהמה מבאדם" במסקנה?</summary><p>על הסנדל.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u1"> סיימתי את יחידה 1</label>
+</section>
+
+<section id="u2" data-hl="G5,G6,G7,G8,G9,G10,G11a,G11b">
+  <div class="kicker">יחידה 2 · גמרא</div>
+  <h2>רפואה לבהמה בשבת</h2>
+  <p class="lead">שתי ראיות שבבהמה אסור אפילו מה שהוא משום צער. הגמרא מיישבת, ומגיעה לגזירה משום שחיקת סממנים ולמחלוקת התנאים בה.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>סכין ומפרכסין לאדם</td><td>סכים ומפרכסים לאדם,</td></tr>
+      <tr><td>ואין סכין ומפרכסין לבהמה</td><td>ואין סכים ומפרכסים לבהמה.</td></tr>
+      <tr><td>מאי לאו דאיכא מכה ומשום צער</td><td>האם לא (כשיש) מכה, ומשום צער?</td></tr>
+      <tr><td>לא דגמר מכה ומשום תענוג</td><td>לא, שנרפאה המכה, ומשום תענוג.</td></tr>
+      <tr><td>אין מעמידין אותה במים בשביל שתצטנן</td><td>אין מעמידים אותה במים כדי שתתקרר.</td></tr>
+      <tr><td>גזירה משום שחיקת סממנין</td><td>גזירה משום שחיקת סממנים.</td></tr>
+      <tr><td>אדם נראה כמיקר</td><td>אדם נראה כמתקרר.</td></tr>
+      <tr><td>אין מיקר לבהמה</td><td>אין (דרך) לקרר בהמה.</td></tr>
+      <tr><td>ולבהמה מי גזרינן</td><td>ובבהמה האם גוזרים?</td></tr>
+      <tr><td>קורא לה והיא באה</td><td>קורא לה, והיא באה.</td></tr>
+      <tr><td>כגון שהיה תחום שלה מובלע בתוך תחום שלו</td><td>למשל שהיה התחום שלה בלוע בתוך התחום שלו.</td></tr>
+      <tr><td>בהמה שאכלה כרשינין לא יריצנה בחצר</td><td>בהמה שאכלה כרשינים, לא יריץ אותה בחצר.</td></tr>
+      <tr><td>ורבי אושעיא מתיר</td><td>ורבי אושעיא מתיר.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>סיכה ופירכוס:</b> אין סכים ומפרכסים לבהמה. אם מדובר במכה, ומשום צער, זו קושיה על רב ועל שמואל, שמתירים מרדעת. התשובה: מדובר כשהמכה נרפאה, והסיכה לתענוג.</p>
+  <p><b>בהמה שאחזה דם:</b> אין מעמידים אותה במים, ואדם מעמידים. עולא אומר שזו גזירה משום שחיקת סממנים: חכמים גזרו על דברי רפואה בשבת, שמא יבוא לשחוק סממנים. אדם נראה כמי שמתקרר, אבל אין דרך לקרר בהמה, ולכן ברור שזו רפואה.</p>
+  <p><b>האם גוזרים בבהמה?</b> בהמה שמחוץ לתחום, קוראים לה והיא באה, ואין גוזרים שמא יביא אותה. רבינא מעמיד שהתחום שלה בלוע בתוך התחום של בעליה. ורב נחמן בר יצחק אומר שהגזירה עצמה היא מחלוקת תנאים, ורבא דרש: הלכה כרבי אושעיא, שמתיר להריץ בהמה שאכלה כרשינים.</p>
+  <div data-hl="R8,R9" class="voice r"><span class="tag">רש"י</span><blockquote>סכין – שמן:</blockquote><blockquote>ומפרכסין – גלדי מכה:</blockquote><p><span class="say">מה רש"י אומר:</span> סכים בשמן, ומפרכסים את הגלדים של המכה.</p></div>
+  <div data-hl="R14" class="voice r"><span class="tag">רש"י</span><blockquote>גזירה משום שחיקת סממנים – במידי דרפואה גזור רבנן דאי שרית שום רפואה אתי למישרי שחיקת סממנים והוא איסורא דאורייתא דהוי טוחן:</blockquote><p><span class="say">מה רש"י אומר:</span> בדברי רפואה גזרו חכמים, כי מי שמתירים לו רפואה יבוא להתיר שחיקת סממנים, וזו מלאכת טוחן, איסור מן התורה.</p></div>
+  <div data-hl="R15" class="voice r"><span class="tag">רש"י</span><blockquote>אין מיקר לבהמה – אין דרך להקר בהמה הלכך כולי עלמא ידעי דלרפואה קמיכוין ואתי למישרי שחיקת סממנים:</blockquote><p><span class="say">מה רש"י אומר:</span> אין דרך לקרר בהמה, ולכן כולם יודעים שהוא מתכוון לרפואה.</p></div>
+  <div data-hl="R20,R21" class="voice r"><span class="tag">רש"י</span><blockquote>שאכלה כרשינין – הרבה ועל ידי אכילה מרובה אחזה חולי שקורין מינייזונ"א וצריכה להשתלשל ולהוציא רעי ומריצה:</blockquote><blockquote>כדי שתתרפה – גרסינן הכא לשון ריפוי שיהיו מיעיה רפויים בשילשול ומוציאה רעי:</blockquote><p><span class="say">מה רש"י אומר:</span> הבהמה אכלה הרבה וחלתה, וצריך שמעיה ישתלשלו. "שתתרפה" פירושו שמעיה יהיו רפויים.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>רב ושיטתו</h3>
+    <div data-hl="R10,R11" class="voice r"><span class="tag">רש"י</span><blockquote>ומשום צער – [ואפילו] הכי לבהמה לא וקשיא בין לרב בין לשמואל דשרי במרדעת:</blockquote><blockquote>לא דגמר מכה – שנתרפאה המכה וסיכה ופירכוס משום תענוג ולרב ודאי קשיא וההיא מתניתא קמייתא דאוכף נמי קשיא ליה דנהי נמי דלצינה ליכא צער תענוג מיהא הוא אלא רב תנא הוא ופליג:</blockquote><p><span class="say">מה רש"י אומר:</span> הקושיה הראשונה הייתה על רב ועל שמואל. אחרי התשובה, על רב עדיין קשה, כי הוא מתיר טרסקל לתענוג. וגם הברייתא של האוכף קשה לו. אלא שרב הוא תנא, וחולק.</p></div>
+    <h3>הבהמה שמחוץ לתחום</h3>
+    <div data-hl="R18" class="voice r"><span class="tag">רש"י</span><blockquote>שהיה תחום שלה מובלעת בתוך תחום שלו – דחוץ לתחום דקתני חוץ לתחום שלה שהבהמה המסורה לרועה המיוחד הרי היא כרגלי הרועה וזה הקורא לה בעליה ויכול לילך כגון שהוא שבת קרוב לאותו מקום ואפילו הכי לא יביאנה ממש בידיו הואיל והיא יצאה חוץ לתחומה אין לה אלא ד' אמות ומיהו קורא לה והיא באה דלא הוזהר הוא על תחום בהמתו ובלבד שלא יביאנה ממש בידיו:</blockquote><p><span class="say">מה רש"י אומר:</span> "חוץ לתחום" שבברייתא הוא מחוץ לתחום שלה: בהמה שמסורה לרועה מיוחד, דינה כרגלי הרועה. הבעלים עצמו יכול ללכת עד שם. כיון שיצאה מחוץ לתחומה, לא יביא אותה בידיו, אבל קורא לה והיא באה, כי הוא אינו מוזהר על התחום של בהמתו.</p></div>
+    <div data-hl="T1" class="voice t"><span class="tag">תוספות</span><blockquote>כגון שהיה תחום שלה מובלע כו' – ומ"מ לא התירו אלא דרך קריאה אבל לילך מעבר לבהמה ולרודפה לעיר לא:</blockquote><p><span class="say">מה התוספות אומרים:</span> ובכל זאת התירו רק בקריאה. ללכת אל מעבר לבהמה ולרדוף אותה אל העיר, לא התירו.</p></div>
+  </div>
+  <p class="godeep">למה רש"י אומר שגם אחרי התשובה עדיין קשה על רב? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירוש "אין מיקר לבהמה"?</summary><p>אין דרך לקרר בהמה, ולכן ברור שמתכוונים לרפואה.</p></details>
+  <details><summary>מה הגזירה של עולא?</summary><p>גזירה משום שחיקת סממנים.</p></details>
+  <details><summary>כמי ההלכה בבהמה שאכלה כרשינים?</summary><p>כרבי אושעיא, שמתיר להריץ אותה.</p></details>
+  <details class="deepq"><summary>איך רבינא מיישב את הברייתא על בהמה שמחוץ לתחום?</summary><p>התחום שלה בלוע בתוך התחום של בעליה, והוא רק קורא לה והיא באה.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u2"> סיימתי את יחידה 2</label>
+</section>
+
+<section id="u3" data-hl="G12,G13,G14,G15,G16">
+  <div class="kicker">יחידה 3 · גמרא</div>
+  <h2>כיס בדדי העזים</h2>
+  <p class="lead">ברייתא אחת אוסרת לעזים לצאת בכיס שבדדיהן, וברייתא אחרת מתירה. שלוש דרכים ליישב.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>והתניא יוצאות עזים בכיס שבדדיהן</td><td>והרי שנינו: יוצאות עזים בכיס שבדדיהן.</td></tr>
+      <tr><td>הא דמיהדק הא דלא מיהדק</td><td>זו כשהוא מהודק, וזו כשאינו מהודק.</td></tr>
+      <tr><td>תנאי שקלת מעלמא תנאי היא</td><td>תנאים לקחת מן העולם? מחלוקת תנאים היא.</td></tr>
+      <tr><td>ואיבעית אימא הא והא ר' יהודה</td><td>ואם תרצה, אמור: זו וזו רבי יהודה.</td></tr>
+      <tr><td>כאן ליבש כאן ליחלב</td><td>כאן כדי לייבש, כאן בשביל החלב.</td></tr>
+      <tr><td>מעשה בעזים בית אנטוכיא</td><td>מעשה בעזים של אנטוכיא,</td></tr>
+      <tr><td>שהיו דדיהן גסין</td><td>שהיו הדדים שלהן גסים,</td></tr>
+      <tr><td>ועשו להן כיסין</td><td>ועשו להן כיסים.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הסתירה:</b> ברייתא אחת אומרת שעזים אינן יוצאות בכיס שבדדיהן, וברייתא אחרת מתירה.</p>
+  <p><b>שלוש תשובות.</b> א', רב יהודה: כשהכיס מהודק מותר, וכשאינו מהודק אסור. ב', רב יוסף: זו מחלוקת תנאים במשנה, בין תנא קמא לבין רבי יוסי. ג': שתיהן כרבי יהודה, שמתיר ליבש ואוסר לחלב.</p>
+  <p><b>המעשה:</b> רבי יהודה סיפר על עזים של אנטוכיא שהדדים שלהן היו גסים, ועשו להן כיסים כדי שלא יישרטו.</p>
+  <div data-hl="R23" class="voice r"><span class="tag">רש"י</span><blockquote>דמיהדק – דליכא למיחש דילמא נפיל ואתי לאתויי:</blockquote><p><span class="say">מה רש"י אומר:</span> כשהכיס מהודק, אין לחשוש שייפול והוא יבוא לשאת אותו.</p></div>
+  <div data-hl="R24,R25" class="voice r"><span class="tag">רש"י</span><blockquote>תנאי שקלת מעלמא – איבדת כולם שאין אתה מוצא תנאים שנחלקו בכך דתוקי הנך תרתי מתניית' חדא כמר וחדא כמר:</blockquote><blockquote>תנאי היא – במתניתין ר"מ שרי ר' יוסי אסר:</blockquote><p><span class="say">מה רש"י אומר:</span> "תנאי שקלת מעלמא": וכי אין תנאים שנחלקו בכך? הרי במשנה רבי מאיר מתיר ורבי יוסי אוסר.</p></div>
+  <div data-hl="R26,R27" class="voice r"><span class="tag">רש"י</span><blockquote>ליבש – מיהדק שפיר ולענין משוי נמי לא הוי משוי דצורך גופה היא דחלבה מכחישה:</blockquote><blockquote>ליחלב – הוי משוי שטוענת את החלב בכיס:</blockquote><p><span class="say">מה רש"י אומר:</span> ליבש, הכיס מהודק, ואינו משא, כי הוא לצורך גופה. לחלב, הוא משא, כי היא נושאת את החלב בכיס.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>מה פירוש "לחלב"</h3>
+    <div data-hl="T3a" class="voice t"><span class="tag">תוספות</span><blockquote>כאן ליבש כאן ליחלב – פי' בקונט' ליחלב שיקבלו בכיס את החלב וקשה דהא ודאי משוי הוא ולכ"ע חייב דהויא מלאכה הצריכה לגופה</blockquote><p><span class="say">מה התוספות אומרים:</span> רש"י פירש שהחלב נאסף בכיס. התוספות מקשים: אם כך זה ודאי משא, ולדעת כולם חייב.</p></div>
+    <div data-hl="T3b" class="voice t"><span class="tag">תוספות</span><blockquote>ופי' ה"ר פור"ת ליחלב לשמור החלב בדדיהן שלא יזוב לארץ ושרי ת"ק דהוי כמו רחלים כבונות דחשבי' ליה מלבוש אף על פי שאינו עשוי לצורך עצמן אלא לשמור הצמר</blockquote><p><span class="say">מה התוספות אומרים:</span> הרב פורת פירש: הכיס שומר שהחלב לא יזוב לארץ, ותנא קמא מתיר, כמו רחלים כבונות שהכיסוי שלהן נחשב לבוש, אף שאינו לצורך גופן אלא לשמור על הצמר.</p></div>
+    <div data-hl="T3c" class="voice t"><span class="tag">תוספות</span><blockquote>ור"י פירש דבין ליבש ובין ליחלב תרווייהו עבדי להו כדי שלא יסרטו דדיהן כדאמרינן בסמוך וליבש בזמן שאינו חפץ בחלב שרי לפי שמהדקו וליכא למיחש דילמא נפיל ואתי לאתויי אבל ליחלב שאינו רוצה שיתייבשו אינו מיהדק איכא למימר דילמא נפיל ואתי לאתויי:</blockquote><p><span class="say">מה התוספות אומרים:</span> רבנו יצחק פירש: בשני המקרים הכיס הוא כדי שהדדים לא יישרטו. ליבש מהדקים אותו, ולחלב אינו מהודק, ויש לחשוש שייפול.</p></div>
+    <div data-hl="T2" class="voice t"><span class="tag">תוספות</span><blockquote>תנאי היא – רב יהודה ידע שפיר דתנאי היא אלא דניחא ליה לאוקמי תרי סתמי דברייתא אליבא דחד תנא:</blockquote><p><span class="say">מה התוספות אומרים:</span> רב יהודה ידע שזו מחלוקת תנאים, אלא שהעדיף להעמיד שתי ברייתות סתמיות כשיטת תנא אחד.</p></div>
+  </div>
+  <p class="godeep">למה רב יהודה לא אמר שזו מחלוקת תנאים? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה תשובת רב יהודה?</summary><p>כשהכיס מהודק מותר, וכשאינו מהודק אסור.</p></details>
+  <details><summary>מה טוען רב יוסף?</summary><p>זו מחלוקת תנאים במשנה.</p></details>
+  <details><summary>למה עשו כיסים לעזים של אנטוכיא?</summary><p>כי הדדים שלהן היו גסים, וכדי שלא יישרטו.</p></details>
+  <details class="deepq"><summary>מה הקושיה של התוספות על פירוש רש"י ל"לחלב"?</summary><p>אם החלב נאסף בכיס, זה ודאי משא, ולדעת כולם חייב.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u3"> סיימתי את יחידה 3</label>
+</section>
+
+<section id="u4" data-hl="G17,G18,G19,G20">
+  <div class="kicker">יחידה 4 · אגדה</div>
+  <h2>נס ומזונות, וצניעות</h2>
+  <p class="lead">שני מעשים שהגמרא מביאה כאן, ומה החכמים למדו מהם.</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מעשה באחד שמתה אשתו</td><td>מעשה באדם אחד שמתה אשתו</td></tr>
+      <tr><td>והניחה בן לינק</td><td>והשאירה בן לינוק,</td></tr>
+      <tr><td>ולא היה לו שכר מניקה ליתן</td><td>ולא היה לו לתת שכר למינקת.</td></tr>
+      <tr><td>ונעשה לו נס ונפתחו לו דדין</td><td>ונעשה לו נס, ונפתחו לו דדים.</td></tr>
+      <tr><td>בא וראה כמה גדול אדם זה</td><td>בוא וראה כמה גדול האדם הזה.</td></tr>
+      <tr><td>אדרבה כמה גרוע אדם זה</td><td>להפך, כמה גרוע האדם הזה,</td></tr>
+      <tr><td>שנשתנו לו סדרי בראשית</td><td>שנשתנו בשבילו סדרי בראשית.</td></tr>
+      <tr><td>כמה קשים מזונותיו של אדם</td><td>כמה קשים מזונותיו של אדם.</td></tr>
+      <tr><td>תדע דמתרחיש ניסא</td><td>דע לך: שנס מתרחש,</td></tr>
+      <tr><td>ולא אברו מזוני</td><td>ומזונות אינם נבראים.</td></tr>
+      <tr><td>שנשא אשה גידמת</td><td>שנשא אשה שידה קטועה,</td></tr>
+      <tr><td>ולא הכיר בה עד יום מותה</td><td>ולא הכיר בכך עד יום מותה.</td></tr>
+      <tr><td>זו דרכה בכך</td><td>זו דרכה.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>הנס:</b> לאדם שמתה אשתו ולא היה לו כסף למינקת נעשה נס, ונפתחו לו דדים, והוא הניק את בנו.</p>
+  <p><b>שלוש תגובות.</b> רב יוסף: כמה גדול האדם הזה, שנעשה לו נס כזה. אביי: כמה גרוע, שנשתנו בשבילו סדרי בראשית. רב יהודה: כמה קשים מזונותיו של אדם. ורב נחמן מוסיף: ניסים נעשים, ומזונות אינם נבראים.</p>
+  <p><b>הצניעות:</b> אדם נשא אשה שידה קטועה, ולא ידע עד יום מותה. רב אמר: כמה צנועה האשה. רבי חייא אמר: זו דרכה, אלא כמה צנוע האדם, שלא הכיר באשתו.</p>
+  <div data-hl="R29" class="voice r"><span class="tag">רש"י</span><blockquote>שנשתנו עליו כו' – ולא זכה ליפתח לו שערי שכר:</blockquote><p><span class="say">מה רש"י אומר:</span> הוא לא זכה שייפתחו לו שערי שכר, ולכן נשתנו בשבילו סדרי בראשית.</p></div>
+  <div data-hl="R31,R32" class="voice r"><span class="tag">רש"י</span><blockquote>דמרחשי ניסא – מן השמים לכמה הצלות לנפשות אדם:</blockquote><blockquote>ולא איברו מזוני – ואין נס זה רגיל שיבראו מזונות לצדיקים בביתם שימצאו חיטין גדילין באוצרותיהן:</blockquote><p><span class="say">מה רש"י אומר:</span> ניסים רבים נעשים להצלת נפשות, אבל אין זה נס רגיל שייבראו מזונות לצדיקים בביתם, שימצאו חיטים גדלות באוצרותיהם.</p></div>
+  <div data-hl="R34" class="voice r"><span class="tag">רש"י</span><blockquote>זו דרכה בכך – לכסות כל אשה עצמה וכ"ש זו שהיתה צריכה לכך:</blockquote><p><span class="say">מה רש"י אומר:</span> דרכה של כל אשה לכסות את עצמה, וכל שכן זו, שהייתה צריכה לכך.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>שני מבטים על אותו נס</h3>
+    <p>רב יוסף ואביי רואים את אותו נס ומסיקים הפוך. לרב יוסף הנס מעיד על גדולתו של האדם. לאביי עצם השינוי בסדרי בראשית הוא חיסרון שלו.</p>
+    <p>רב יהודה ורב נחמן מעבירים את הדיון מן האדם אל המזונות: מזונות קשים להשיג, ונס של מזון נדיר יותר מנס של הצלה.</p>
+  </div>
+  <p class="godeep">למה אביי אומר שהאדם הזה גרוע? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה הנס שנעשה לאדם?</summary><p>נפתחו לו דדים, והוא הניק את בנו.</p></details>
+  <details><summary>מה אמר רב נחמן?</summary><p>ניסים נעשים, ומזונות אינם נבראים.</p></details>
+  <details><summary>מה אמר רבי חייא על האשה הגידמת?</summary><p>זו דרכה, אלא כמה צנוע האדם שלא הכיר באשתו.</p></details>
+  <details class="deepq"><summary>לפי רש"י, איזה נס רגיל ואיזה אינו רגיל?</summary><p>ניסים להצלת נפשות רגילים, אבל לא נס שבו נבראים מזונות לצדיקים בביתם.</p></details>
+  <label class="done"><input type="checkbox" data-unit="u4"> סיימתי את יחידה 4</label>
+</section>
+
+<section id="u5" data-hl="G21,G22a,G22b,G23a,G23b,G24">
+  <div class="kicker">יחידה 5 · גמרא</div>
+  <h2>"לבובין" ו"שחוזות"</h2>
+  <p class="lead">הגמרא חוזרת למשנה ומפרשת את המילה "לבובין". שלושה אמוראים מציעים שלושה פירושים, ואחר כך מפרשים את "שחוזות".</p>
+  <h3>תרגום, משפט אחר משפט</h3>
+  <table class="tr">
+    <thead><tr><th>בדף</th><th>בעברית שלנו</th></tr></thead>
+    <tbody>
+      <tr><td>מאי לבובין אמר רב הונא תותרי</td><td>מה הם "לבובין"? אמר רב הונא: "תותרי".</td></tr>
+      <tr><td>לישנא דקרובי הוא</td><td>לשון קירוב הוא,</td></tr>
+      <tr><td>לבבתני אחותי כלה</td><td>"לבבתני אחותי כלה".</td></tr>
+      <tr><td>עור שקושרין להם כנגד לבם</td><td>עור שקושרים להם כנגד לבם,</td></tr>
+      <tr><td>כדי שלא יפלו עליהן זאבים</td><td>כדי שזאבים לא יתנפלו עליהם.</td></tr>
+      <tr><td>משום דמסגו בריש עדרא</td><td>מפני שהם הולכים בראש העדר.</td></tr>
+      <tr><td>אלא משום דשמני</td><td>אלא מפני שהם שמנים.</td></tr>
+      <tr><td>משום דזקפי חוטמייהו ומסגו כי דוו</td><td>מפני שזוקפים את חוטמם, והולכים ומביטים (לכאן ולכאן).</td></tr>
+      <tr><td>עור שקושרין להן תחת זכרותן</td><td>עור שקושרים להם תחת זכרותם,</td></tr>
+      <tr><td>כדי שלא יעלו על הנקבות</td><td>כדי שלא יעלו על הנקבות.</td></tr>
+      <tr><td>שאוחזין האליה שלהן למעלה</td><td>שאוחזים את האליה שלהן למעלה.</td></tr>
+      <tr><td>לישנא דגלויי הוא</td><td>לשון גילוי הוא.</td></tr>
+    </tbody>
+  </table>
+  <h3>בפשטות</h3>
+  <p><b>רב הונא:</b> "לבובין" הם "תותרי". רש"י מפרש שקושרים את הזכרים שניים שניים, שלא יברחו. וזה לשון קירוב, כמו "לבבתני אחותי כלה".</p>
+  <p><b>עולא:</b> עור שקושרים כנגד הלב, שזאבים לא יתנפלו עליהם. הגמרא שואלת למה דווקא על הזכרים, ודוחה שתי תשובות: שהם בראש העדר, ושהם שמנים. התשובה: הם זוקפים את חוטמם ומביטים לכאן ולכאן.</p>
+  <p><b>רב נחמן בר יצחק:</b> עור תחת זכרותם, שלא יעלו על הנקבות. הראיה מן הסיפא: "שחוזות" היא שאוחזים את האליה למעלה, כדי שהזכרים יעלו עליהן. ו"שחוזות" הוא לשון גילוי, כמו בפסוק "והנה אשה לקראתו".</p>
+  <div data-hl="R37" class="voice r"><span class="tag">רש"י</span><blockquote>דרך זאבים לאחוז בהמה בלבה:</blockquote><p><span class="say">מה רש"י אומר:</span> דרכם של זאבים לאחוז בבהמה בלבה.</p></div>
+  <div data-hl="R41" class="voice r"><span class="tag">רש"י</span><blockquote>כי דוו – מביטין כאן וכאן לפיכך מתקנאין בהם כסבורים שרוצים להלחם בהם:</blockquote><p><span class="say">מה רש"י אומר:</span> הזכרים מביטים לכאן ולכאן, והזאבים מתגרים בהם, כי הם סבורים שהזכרים רוצים להילחם בהם.</p></div>
+  <div data-hl="R42" class="voice r"><span class="tag">רש"י</span><blockquote>אליה – זנב שלהן קושרים כלפי גבן שלא יכסה ערותן:</blockquote><p><span class="say">מה רש"י אומר:</span> קושרים את הזנב כלפי הגב, שלא יכסה את ערוותן.</p></div>
+  <div class="deep"><span class="tag">לעומק</span>
+    <h3>איך לשון אחת מתפרשת בדרכים שונות</h3>
+    <div data-hl="T4" class="voice t"><span class="tag">תוספות</span><blockquote>שקושרין להן כנגד זכרותן כו' – ולשון לבובין הוי שלא לקרב כמו ובכל תבואתי תשרש (איוב לד) וכמוהו הרבה:</blockquote><p><span class="say">מה התוספות אומרים:</span> לפי רב נחמן בר יצחק, "לבובין" פירושו שלא להתקרב, ההפך מלשון קירוב, כמו "ובכל תבואתי תשרש", שבו המילה פירושה עקירת השורש.</p></div>
+    <div data-hl="T5" class="voice t"><span class="tag">תוספות</span><blockquote>ממאי מדקתני סיפא – טפי הוי ליה לאתויי כבולות דהוי ממש כעין זה אלא משום דשחוזות הוי ברישא:</blockquote><p><span class="say">מה התוספות אומרים:</span> יותר מתאים היה להביא ראיה מ"כבולות", שדומה ממש לדין הזה. אלא שהביא את "שחוזות", כי היא נשנתה לפניה.</p></div>
+    <p>רב הונא לומד מ"לבבתני" לשון קירוב, ורב נחמן בר יצחק מבין "לבובין" כמניעת קירוב. הראיה שלו אינה מן המילה עצמה, אלא מן הסיפא של המשנה, שבה ברור שהמשנה עוסקת בעלייה של הזכרים על הנקבות.</p>
+  </div>
+  <p class="godeep">מאיפה רב נחמן בר יצחק מביא ראיה לפירושו? <button type="button" data-go="deep">עבור לרמת "לעומק"</button></p>
+  <h3>בדוק את עצמך</h3>
+  <details><summary>מה פירש רב הונא, לפי רש"י?</summary><p>קושרים את הזכרים שניים שניים, שלא יברחו.</p></details>
+  <details><summary>למה הזאבים מתנפלים דווקא על הזכרים, לפי המסקנה?</summary><p>כי הם זוקפים את חוטמם ומביטים לכאן ולכאן.</p></details>
+  <details><summary>מה הן "שחוזות"?</summary><p>שאוחזים את האליה שלהן למעלה, כדי שהזכרים יעלו עליהן.</p></details>
+  <details class="deepq"><summary>למה לפי התוספות הגמרא הביאה ראיה מ"שחוזות" ולא מ"כבולות"?</summary><p>כי "שחוזות" נשנתה במשנה לפני "כבולות".</p></details>
+  <label class="done"><input type="checkbox" data-unit="u5"> סיימתי את יחידה 5</label>
+</section>
+
+<section id="sum">
+  <div class="kicker">סיכום</div>
+  <h2>מה למדנו בעמוד הזה</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>קמיע:</b> בבהמה אסור קמיע שאינו מומחה לבהמה, כי לבהמה אין מזל שמסייע לה. החומרה בבהמה מוסבת על הסנדל.</li>
+      <li><b>רפואה לבהמה:</b> סיכה לבהמה אסורה כשהיא לתענוג. בבהמה שאחזה דם גזרו משום שחיקת סממנים.</li>
+      <li><b>מחלוקת תנאים:</b> בבהמה שאכלה כרשינים רבי אושעיא מתיר להריץ אותה, ורבא דרש שהלכה כמותו.</li>
+      <li><b>כיס בדדי העזים:</b> מהודק או לא מהודק, מחלוקת תנאים, או ליבש ולחלב.</li>
+      <li><b>נס ומזונות:</b> האב שהניק את בנו, ומחלוקת רב יוסף ואביי אם זו מעלה שלו או חיסרון.</li>
+      <li><b>צניעות:</b> האשה הגידמת, ורבי חייא אומר שהצניעות היא של הבעל.</li>
+      <li><b>"לבובין" ו"שחוזות":</b> שלושה פירושים ל"לבובין", ו"שחוזות" הוא לשון גילוי. העמוד הבא משלים את הפסוק ומפרש את "כבולות".</li>
+    </ol>
+  </div>
+</section>
+<section id="words">
+  <div class="kicker">מילון</div>
+  <h2>ביטויים חדשים בעמוד הזה</h2>
+  <table class="tr">
+    <thead><tr><th>ביטוי</th><th>פירוש ושימוש</th></tr></thead>
+    <tbody>
+      <tr><td>אמר מר</td><td>אמר החכם: פתיחה לציטוט מברייתא שהובאה קודם</td></tr>
+      <tr><td>מי סברת</td><td>וכי סבור אתה?</td></tr>
+      <tr><td>אסנדל קאי</td><td>מוסב על הסנדל</td></tr>
+      <tr><td>מזלא</td><td>מזל, לפי רש&quot;י המלאך שמליץ על האדם</td></tr>
+      <tr><td>מאי לאו</td><td>האם לא?</td></tr>
+      <tr><td>גזירה משום</td><td>איסור של חכמים, כדי להתרחק מאיסור אחר</td></tr>
+      <tr><td>אי הכי</td><td>אם כך</td></tr>
+      <tr><td>מובלע</td><td>בלוע, נמצא כולו בתוך דבר אחר</td></tr>
+      <tr><td>דרש</td><td>אמר ברבים, בדרשה</td></tr>
+      <tr><td>תנאי שקלת מעלמא</td><td>&quot;תנאים לקחת מן העולם?&quot;: הרי יש תנאים שנחלקו בכך</td></tr>
+      <tr><td>ואיבעית אימא</td><td>ואם תרצה, אמור (תשובה נוספת)</td></tr>
+      <tr><td>סדרי בראשית</td><td>סדר הטבע כפי שנברא</td></tr>
+      <tr><td>תדע</td><td>דע לך: הבאת ראיה</td></tr>
+      <tr><td>ממאי</td><td>מניין?</td></tr>
+    </tbody>
+  </table>
+</section>
+<nav class="booknav end" aria-label="מעבר בין עמודים"><a href="shabbat-53a.html">העמוד הקודם</a><a class="home" href="shabbat.html#toc">תוכן העניינים</a><a href="shabbat-54a.html">העמוד הבא</a><a class="all" href="./">כל הש"ס</a></nav>
+<section class="gm-static" aria-label="ההסבר כטקסט"><p class="gm-brief gm-brief-m"><b>בקצרה:</b> בעמוד הזה, מסכת שבת, דף נ&quot;ג עמוד ב&#x27;, לומדים: קמיע מומחה: לאדם ולבהמה; רפואה לבהמה בשבת; כיס בדדי העזים; נס ומזונות, וצניעות; "לבובין" ו"שחוזות".</p><details><summary>ההסבר צעד אחר צעד, כטקסט (40 שלבים)</summary><ol><li><h3><span class="w">הדף</span> · עמוד ב&#x27;: סוף הדיוק בברייתא</h3><p>בסוף העמוד הקודם הגמרא הקשתה על שמואל מברייתא: &quot;ולא סייחים בטרסקלים שבפיהם לרשות הרבים&quot;, ומשמע שבחצר מותר. התשובה הייתה שמדובר בסייחים קטנים, שיש להם צער, והגמרא התחילה להביא דיוק לכך מלשון הברייתא.</p></li><li><h3><span class="w">גמרא</span> · &quot;דומיא דקמיע&quot;</h3><p>הדיוק: הטרסקל נשנה יחד עם הקמיע, ודומה לו. רש&quot;י: הקמיע הוא משום חולי, ולכן גם הטרסקל הוא משום צער. &quot;שמע מינה&quot;, כך יש ללמוד.</p></li><li><h3><span class="w">גמרא</span> · קמיע מומחה: סתירה למשנה</h3><p>&quot;אמר מר&quot;, אמר החכם בברייתא: &quot;ולא בקמיע אף שהוא מומחה&quot;. והרי שנינו במשנה: ולא בקמיע שאינו מומחה, ומשמע שבמומחה מותר. רש&quot;י: זו משנה על אדם, בפרק &quot;במה אשה&quot;, והשאלה היא במה בהמה שונה מאדם. הגמרא מציעה: גם בבהמה מדובר בקמיע שאינו מומחה.</p></li><li><h3><span class="w">גמרא</span> · מומחה לאדם ולא לבהמה</h3><p>והרי בברייתא נאמר &quot;אף שהוא מומחה&quot;! התשובה: מומחה לאדם, ואינו מומחה לבהמה. וכי יש קמיע שמומחה לאדם ולא לבהמה? כן. לאדם יש &quot;מזל&quot; שמסייע לו, ולבהמה אין מזל שיסייע לה. רש&quot;י: המזל הוא המלאך שלו, שמליץ עליו.</p></li><li><h3><span class="w">גמרא</span> · החומרה מוסבת על הסנדל</h3><p>&quot;אי הכי&quot;, אם כך, מה פירוש &quot;זו חומר בבהמה מבאדם&quot;? רש&quot;י: הרי גם בהמה יוצאת בקמיע מומחה לבהמה, וגם אדם יוצא רק בקמיע מומחה לאדם. התשובה: &quot;מי סברת&quot;, וכי סבור אתה שהחומרה מוסבת על הקמיע? היא מוסבת על הסנדל, &quot;ולא בהמה בסנדל שברגליה&quot;.</p></li><li><h3><span class="w">גמרא</span> · ראיה מסיכה ופירכוס</h3><p>&quot;תא שמע&quot;: סכים ומפרכסים לאדם, ואין סכים ומפרכסים לבהמה. רש&quot;י: סכים בשמן, ומפרכסים את הגלדים של המכה. האם לא מדובר כשיש מכה, ומשום צער?</p></li><li><h3><span class="w">רש&quot;י</span> · רש&quot;י: קושיה על רב ועל שמואל</h3><p>אם כך, אפילו משום צער אסור לבהמה. וזו קושיה גם על רב וגם על שמואל, ששניהם מתירים מרדעת.</p></li><li><h3><span class="w">גמרא</span> · התשובה: המכה כבר נרפאה</h3><p>התשובה: לא, מדובר כשהמכה כבר נרפאה, והסיכה היא משום תענוג. רש&quot;י: על רב זו ודאי קושיה, שהרי הוא מתיר טרסקל לתענוג. וגם הברייתא של האוכף קשה לו, כי גם אם אין בקירור צער, יש בו לפחות תענוג. אלא שרב הוא תנא, וחולק.</p><p>&quot;רב תנא הוא ופליג&quot;: רב נחשב כתנא, ולכן יכול לחלוק על ברייתא.</p></li><li><h3><span class="w">גמרא</span> · בהמה שאחזה דם</h3><p>&quot;תא שמע&quot;: בהמה שאחזה אותה דם, אין מעמידים אותה במים כדי שתתקרר. אדם שאחזו דם, מעמידים אותו במים כדי שיתקרר. רש&quot;י: מכאן שבבהמה אפילו צער אסור.</p></li><li><h3><span class="w">גמרא</span> · עולא: גזירה משום שחיקת סממנים</h3><p>עולא אמר: זו גזירה משום שחיקת סממנים. רש&quot;י: בדברים של רפואה גזרו חכמים, כי אם תתיר רפואה כלשהי, יבוא להתיר שחיקת סממנים. וזה איסור מן התורה, כי זו מלאכת טוחן.</p></li><li><h3><span class="w">גמרא</span> · &quot;אין מיקר לבהמה&quot;</h3><p>&quot;אי הכי&quot;, אם כך, גם באדם יגזרו! התשובה: אדם נראה כמי שמתקרר. ואם כך, גם בהמה תיראה כמתקררת? התשובה: &quot;אין מיקר לבהמה&quot;. רש&quot;י: אין דרך לקרר בהמה, ולכן כולם יודעים שהוא מתכוון לרפואה, ויבוא להתיר שחיקת סממנים.</p></li><li><h3><span class="w">גמרא</span> · ובבהמה גוזרים?</h3><p>&quot;ולבהמה מי גזרינן&quot;, ובבהמה האם גוזרים? והרי בברייתא שנינו: אם הייתה הבהמה עומדת מחוץ לתחום, קורא לה והיא באה, ואין גוזרים שמא יבוא להביא אותה. רש&quot;י: השאלה היא אם גוזרים במקום שיש הפסד כזה. ובשלב הזה סוברים שהבהמה עמדה מחוץ לתחום של בעליה.</p><p>תחום שבת הוא המרחק שמותר ללכת בשבת מן המקום שבו האדם שובת.</p></li><li><h3><span class="w">גמרא</span> · רבינא: התחום שלה בלוע בתחום שלו</h3><p>רבינא אמר: מדובר כשהתחום שלה היה בלוע בתוך התחום שלו. רש&quot;י: הבהמה יצאה מחוץ לתחום שלה, כי בהמה שמסורה לרועה מיוחד דינה כרגלי הרועה. הבעלים שקורא לה יכול ללכת עד שם, למשל כששבת קרוב לאותו מקום. לפי זה הבהמה לא עמדה מחוץ לתחום של הבעלים, ואין מן הברייתא ראיה שאין גוזרים בבהמה. ובכל זאת לא יביא אותה בידיו, כי מי שיצאה מחוץ לתחומה יש לה רק ארבע אמות. אבל קורא לה והיא באה, כי הוא אינו מוזהר על התחום של בהמתו.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רק בקריאה</h3><p>ובכל זאת התירו רק בדרך של קריאה. ללכת אל מעבר לבהמה ולרדוף אותה אל העיר, לא התירו.</p></li><li><h3><span class="w">גמרא</span> · רב נחמן בר יצחק: מחלוקת תנאים</h3><p>רב נחמן בר יצחק אמר: הגזירה משום שחיקת סממנים היא עצמה מחלוקת תנאים. בברייתא שנינו: בהמה שאכלה כרשינים, לא יריץ אותה בחצר כדי שתתרפה, ורבי אושעיא מתיר. רש&quot;י: היא אכלה הרבה וחלתה, וצריך שמעיה ישתלשלו ותוציא רעי, ולשם כך מריצים אותה. &quot;שתתרפה&quot; הוא לשון ריפוי, שמעיה יהיו רפויים. מי שאוסר גוזר על כל רפואה משום שחיקת סממנים, ויש מי שאינו גוזר.</p></li><li><h3><span class="w">גמרא</span> · רבא: הלכה כרבי אושעיא</h3><p>&quot;דרש רבא&quot;, רבא דרש ברבים: הלכה כרבי אושעיא.</p></li><li><h3><span class="w">גמרא</span> · כיס שבדדי העזים: סתירה</h3><p>&quot;אמר מר&quot;: בברייתא נאמר, לא יצא הזב בכיס שלו, ולא עזים בכיס שבדדיהן. והרי בברייתא אחרת שנינו: יוצאות עזים בכיס שבדדיהן.</p></li><li><h3><span class="w">גמרא</span> · רב יהודה: מהודק ואינו מהודק</h3><p>רב יהודה אמר: אין קושיה. כאן כשהכיס מהודק, וכאן כשאינו מהודק. רש&quot;י: כשהוא מהודק, אין לחשוש שייפול והוא יבוא לשאת אותו.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף: &quot;תנאי שקלת מעלמא&quot;</h3><p>רב יוסף אמר: &quot;תנאי שקלת מעלמא&quot;? רש&quot;י: וכי איבדת את כל התנאים, שאינך מוצא תנאים שנחלקו בכך, כדי להעמיד ברייתא אחת כחכם אחד והשנייה כחכם השני? זו מחלוקת תנאים במשנה: העזים יוצאות צרורות, ורבי יוסי אוסר. רש&quot;י: במשנה רבי מאיר מתיר, ורבי יוסי אוסר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: רב יהודה ידע</h3><p>רב יהודה ידע היטב שזו מחלוקת תנאים. אלא שהעדיף להעמיד שתי ברייתות סתמיות לפי שיטת תנא אחד.</p></li><li><h3><span class="w">גמרא</span> · ואיבעית אימא: שתיהן כרבי יהודה</h3><p>&quot;ואיבעית אימא&quot;, ואם תרצה, אמור: שתי הברייתות כרבי יהודה, ואין קושיה. כאן ליבש, וכאן לחלב. רש&quot;י: ליבש, הכיס מהודק היטב, וגם אין זה משא, כי זה לצורך גופה, שהחלב מחליש אותה. לחלב, זה משא, כי היא נושאת את החלב בכיס.</p></li><li><h3><span class="w">תוספות</span> · התוספות: קושיה על רש&quot;י</h3><p>רש&quot;י פירש &quot;לחלב&quot;: שהחלב נאסף בכיס. וקשה: זה ודאי משא, ולדעת כולם חייב, כי זו מלאכה הצריכה לגופה.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש הרב פורת</h3><p>הרב פורת פירש: &quot;לחלב&quot;, כדי לשמור את החלב בדדים שלא יזוב לארץ. ותנא קמא מתיר, כי זה כמו רחלים כבונות, שהכיסוי נחשב להן לבוש, אף שאינו עשוי לצורך גופן אלא לשמור על הצמר.</p></li><li><h3><span class="w">תוספות</span> · התוספות: פירוש רבנו יצחק</h3><p>רבנו יצחק פירש: גם ליבש וגם לחלב עושים את הכיס כדי שהדדים לא יישרטו, כמו שנאמר בסמוך. ליבש, כשאינו רוצה בחלב, מותר, כי מהדק אותו ואין לחשוש שייפול. לחלב, כשאינו רוצה שהדדים יתייבשו, הכיס אינו מהודק, ויש לחשוש שייפול והוא יבוא לשאת אותו.</p></li><li><h3><span class="w">גמרא</span> · מעשה בעזים של אנטוכיא</h3><p>בברייתא אמר רבי יהודה: היה מעשה בעזים של אנטוכיא, שהדדים שלהן היו גסים, ועשו להן כיסים כדי שהדדים לא יישרטו. רש&quot;י: הדדים היו גדולים, ונגררו על הקוצים ונשרטו.</p></li><li><h3><span class="w">גמרא</span> · מעשה באב שהניק את בנו</h3><p>&quot;תנו רבנן&quot;, חכמים שנו: היה מעשה באחד שמתה אשתו והשאירה בן לינוק, ולא היה לו כסף לשכר מינקת. נעשה לו נס, ונפתחו לו דדים כשני דדי אשה, והוא הניק את בנו.</p></li><li><h3><span class="w">גמרא</span> · רב יוסף ואביי</h3><p>רב יוסף אמר: בוא וראה כמה גדול האדם הזה, שנעשה לו נס כזה. אמר לו אביי: &quot;אדרבה&quot;, כמה גרוע האדם הזה, שנשתנו בשבילו סדרי בראשית.</p></li><li><h3><span class="w">גמרא</span> · רב יהודה: כמה קשים מזונותיו של אדם</h3><p>רב יהודה אמר: בוא וראה כמה קשים מזונותיו של אדם, שנשתנו בשבילו סדרי בראשית. רש&quot;י: ולא זכה שייפתחו לו שערי שכר.</p></li><li><h3><span class="w">גמרא</span> · רב נחמן: נס קורה, ומזון אינו נברא</h3><p>רב נחמן אמר: &quot;תדע&quot;, דע לך שהמזונות קשים, שהרי ניסים נעשים, ומזונות אינם נבראים. רש&quot;י: מן השמים נעשים ניסים רבים להצלת נפשות. אבל אין זה נס רגיל שייבראו מזונות לצדיקים בביתם, שימצאו חיטים גדלות באוצרותיהם.</p></li><li><h3><span class="w">גמרא</span> · מעשה באשה גידמת</h3><p>&quot;תנו רבנן&quot;: היה מעשה באדם שנשא אשה גידמת, ולא הכיר בכך עד יום מותה. רש&quot;י: גידמת היא אשה שידה קטועה. רב אמר: בוא וראה כמה צנועה האשה הזו, שבעלה לא הכיר בה.</p></li><li><h3><span class="w">גמרא</span> · רבי חייא: כמה צנוע האדם הזה</h3><p>אמר לו רבי חייא: זו דרכה. אלא כמה צנוע האדם הזה, שלא הכיר באשתו. רש&quot;י: דרכה של כל אשה לכסות את עצמה, וכל שכן זו, שהייתה צריכה לכך.</p></li><li><h3><span class="w">גמרא</span> · &quot;לבובין&quot;: רב הונא</h3><p>חוזרים למשנה: &quot;זכרים יוצאין לבובין&quot;. מה הם &quot;לבובין&quot;? רב הונא אמר: &quot;תותרי&quot;. רש&quot;י: קושרים אותם שניים שניים, שלא יברחו. ומניין ש&quot;לבובין&quot; הוא לשון קירוב? שנאמר &quot;לבבתני אחותי כלה&quot;. רש&quot;י: קירבת אותי אליך בגלל יופי מעשייך.</p></li><li><h3><span class="w">גמרא</span> · עולא: עור כנגד הלב</h3><p>עולא אמר: עור שקושרים להם כנגד לבם, כדי שזאבים לא יתנפלו עליהם. רש&quot;י: דרכם של זאבים לאחוז בבהמה בלבה.</p></li><li><h3><span class="w">גמרא</span> · למה דווקא הזכרים?</h3><p>האם זאבים מתנפלים על הזכרים ולא על הנקבות? תשובה: הזכרים הולכים בראש העדר, והזאבים מתנפלים בראש העדר. ובסוף העדר אינם מתנפלים? אלא כי הזכרים שמנים. ובנקבות אין שמנות? ועוד, וכי הזאבים מבחינים בין אלה לאלה? רש&quot;י: השאלות נאמרות בתמיהה.</p></li><li><h3><span class="w">גמרא</span> · התשובה: זוקפים את חוטמם</h3><p>אלא, הזכרים זוקפים את חוטמם, והולכים ומביטים לכאן ולכאן. רש&quot;י: לכן הזאבים מתגרים בהם, כי הם סבורים שהזכרים רוצים להילחם בהם.</p></li><li><h3><span class="w">גמרא</span> · רב נחמן בר יצחק: עור תחת זכרותן</h3><p>רב נחמן בר יצחק אמר: עור שקושרים להם תחת זכרותם, כדי שלא יעלו על הנקבות. התוספות: לפי זה &quot;לבובין&quot; פירושו שלא להתקרב, ההפך מלשון קירוב. כך גם בפסוק &quot;ובכל תבואתי תשרש&quot;, שבו המילה פירושה עקירת השורש, ויש עוד מילים רבות כמותו.</p></li><li><h3><span class="w">גמרא</span> · הראיה מן הסיפא: &quot;שחוזות&quot;</h3><p>&quot;ממאי&quot;, מניין? מן הסיפא: והרחלים יוצאות &quot;שחוזות&quot;. מה הן שחוזות? שאוחזים את האליה שלהן למעלה, כדי שהזכרים יעלו עליהן. ברישא, כדי שלא יעלו על הנקבות, ובסיפא, כדי שהזכרים יעלו עליהן. רש&quot;י: קושרים את הזנב כלפי הגב, שלא יכסה את ערוותן.</p></li><li><h3><span class="w">תוספות</span> · התוספות: למה לא הביא את &quot;כבולות&quot;</h3><p>יותר מתאים היה להביא ראיה מ&quot;כבולות&quot;, שדומה ממש לדין הזה. אלא שהביא את &quot;שחוזות&quot;, כי היא נשנתה לפניה.</p></li><li><h3><span class="w">גמרא</span> · &quot;שחוזות&quot;: לשון גילוי</h3><p>&quot;מאי משמע&quot;, מניין ש&quot;שחוזות&quot; הוא לשון גילוי? שנאמר &quot;והנה אשה לקראתו&quot;, והפסוק ממשיך בעמוד הבא.</p></li><li><h3><span class="w">הדף</span> · מה יצא מהעמוד</h3><p>החומרה בבהמה מוסבת על הסנדל, והקמיע אסור בבהמה כשאינו מומחה לבהמה. ברפואת בהמה גזרו משום שחיקת סממנים, ובשאלה זו יש מחלוקת תנאים, והלכה כרבי אושעיא המתיר. בכיס שבדדי העזים מחלקים בין מהודק לשאינו מהודק, או בין ליבש ובין לחלב. אחרי מעשים על נס ועל צניעות, הגמרא מפרשת את &quot;לבובין&quot; ואת &quot;שחוזות&quot;. העמוד הבא משלים את הפסוק, &quot;שית זונה ונצורת לב&quot;, ומפרש את &quot;כבולות&quot;.</p></li></ol></details></section>
+<footer>
+  <b>מקורות וזכויות.</b> נוסח המשנה והגמרא: תלמוד בבלי, דפוס וילנא, מתוך <a href="https://he.wikisource.org/wiki/תלמוד_בבלי" rel="noopener">ויקיטקסט</a>, ומופץ ברישיון <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.he" rel="license noopener">CC BY-SA</a>. רש"י ותוספות: דפוס וילנא, נחלת הכלל. הנוסחים נלקחו דרך <a href="https://www.sefaria.org.il" rel="noopener">ספריית ספריא</a>.<br>
+  ההסברים, התרגומים, השאלות והקריינות נכתבו והופקו עבור האתר.<br>
+  הדף מיועד ללימוד. אין לפסוק ממנו הלכה למעשה.
+<div class="dev-credit"><div class="cell"><span class="lbl">פיתוח ועיצוב</span><span class="brand"><img src="or-logo.png" alt="OR" width="44" height="32" loading="lazy"><span class="tag">Web Design · AI Automation</span></span></div><span class="sep" aria-hidden="true"></span><div class="cell"><span class="lbl">בשותפות עם</span><span class="who">שלום רווח</span></div></div></footer>
+</div>
+</div>
+<script>window.GM_NEXT="shabbat-54a.html";</script>
+<script>window.LESSON={"narrated": false, "G": [["G1", "דומיא דקמיע ש\"מ:", false, ""], ["G2", "אמר מר ולא בקמיע אע\"פ שהוא מומחה והא אנן תנן ולא בקמיע שאינו מומחה הא מומחה שפיר דמי ה\"נ שאינו מומחה", true, ""], ["G3", "והא אע\"פ שהוא מומחה קתני מומחה לאדם ואינו מומחה לבהמה ומי איכא מומחה לאדם ולא הוי מומחה לבהמה אין אדם דאית ליה מזלא מסייע ליה בהמה דלית לה מזלא לא מסייע לה", false, ""], ["G4", "אי הכי מאי זה חומר בבהמה מבאדם מי סברת אקמיע קאי אסנדל קאי", false, ""], ["G5", "ת\"ש סכין ומפרכסין לאדם ואין סכין ומפרכסין לבהמה מאי לאו דאיכא מכה ומשום צער לא דגמר מכה ומשום תענוג", true, ""], ["G6", "ת\"ש בהמה שאחזה דם אין מעמידין אותה במים בשביל שתצטנן אדם שאחזו דם מעמידין אותו במים בשביל שיצטנן אמר עולא גזירה משום שחיקת סממנין", false, ""], ["G7", "אי הכי אדם נמי אדם נראה כמיקר", false, ""], ["G8", "א\"ה בהמה נמי נראה כמיקר אין מיקר לבהמה", false, ""], ["G9", "ולבהמה מי גזרינן והתניא היתה עומדת חוץ לתחום קורא לה והיא באה ולא גזרינן דילמא אתי לאתויי", false, ""], ["G10", "אמר רבינא כגון שהיה תחום שלה מובלע בתוך תחום שלו", false, ""], ["G11a", "ר\"נ בר יצחק אמר שחיקת סממנין גופה תנאי היא דתני' בהמה שאכלה כרשינין לא יריצנה בחצר בשביל שתתרפה ורבי אושעיא מתיר", false, ""], ["G11b", "דרש רבא הלכה כרבי אושעיא:", false, ""], ["G12", "אמר מר לא יצא הזב בכיס שלו ולא עזים בכיס שבדדיהן והתניא יוצאות עזים בכיס שבדדיהן", true, ""], ["G13", "אמר רב יהודה לא קשיא הא דמיהדק הא דלא מיהדק", false, ""], ["G14", "רב יוסף אמר תנאי שקלת מעלמא תנאי היא דתנן העזים יוצאות צרורות רבי יוסי אוסר בכלן חוץ מן הרחילות הכבונות ר' יהודה אומר עזים יוצאות צרורות ליבש אבל לא ליחלב", false, ""], ["G15", "ואיבעית אימא הא והא ר' יהודה ולא קשיא כאן ליבש כאן ליחלב", false, ""], ["G16", "תניא אמר ר' יהודה מעשה בעזים בית אנטוכיא שהיו דדיהן גסין ועשו להן כיסין כדי שלא יסרטו דדיהן:", false, ""], ["G17", "ת\"ר מעשה באחד שמתה אשתו והניחה בן לינק ולא היה לו שכר מניקה ליתן ונעשה לו נס ונפתחו לו דדין כשני דדי אשה והניק את בנו", true, ""], ["G18", "אמר רב יוסף בא וראה כמה גדול אדם זה שנעשה לו נס כזה א\"ל אביי אדרבה כמה גרוע אדם זה שנשתנו לו סדרי בראשית", false, ""], ["G19", "אמר רב יהודה בא וראה כמה קשים מזונותיו של אדם שנשתנו עליו סדרי בראשית אמר רב נחמן תדע דמתרחיש ניסא ולא אברו מזוני:", false, ""], ["G20", "ת\"ר מעשה באדם אחד שנשא אשה גידמת ולא הכיר בה עד יום מותה אמר רב בא וראה כמה צנועה אשה זו שלא הכיר בה בעלה אמר לו רבי חייא זו דרכה בכך אלא כמה צנוע אדם זה שלא הכיר באשתו:", false, ""], ["G21", "זכרים יוצאין לבובין: מאי לבובין אמר רב הונא תותרי מאי משמע דהאי לבובין לישנא דקרובי הוא דכתיב (שיר השירים ד, ט) לבבתני אחותי כלה", true, ""], ["G22a", "עולא אמר עור שקושרין להם כנגד לבם כדי שלא יפלו עליהן זאבים", false, ""], ["G22b", "זאבים אזכרים נפלי אנקיבות לא נפלי משום דמסגו בריש עדרא וזאבין בריש עדרא נפלי בסוף עדרא לא נפלי אלא משום דשמני ובנקבות ליכא שמני ותו מי ידעי בין הני להני אלא משום דזקפי חוטמייהו ומסגו כי דוו", false, ""], ["G23a", "רב נחמן בר יצחק אמר עור שקושרין להן תחת זכרותן כדי שלא יעלו על הנקבות", false, ""], ["G23b", "ממאי מדקתני סיפא והרחלים יוצאות שחוזות מאי שחוזות שאוחזין האליה שלהן למעלה כדי שיעלו עליהן זכרים רישא כדי שלא יעלו על הנקבות וסיפא כדי שיעלו עליהן זכרים", false, ""], ["G24", "מאי משמע דהאי שחוזות לישנא דגלויי הוא דכתיב (משלי ז, י) והנה אשה לקראתו", false, ""]], "R": [["R1", "דומיא דקמיע", "משום חולי:", false], ["R2", "והא אנן תנן", "גבי אדם לקמן בפ' במה אשה (שבת דף ס.):", false], ["R3", "הא מומחה שפיר דמי", "מאי שנא בהמה מאדם:", false], ["R4", "מזליה", "מלאך שלו ומליץ עליו:", false], ["R5", "אי הכי", "דבהמה נמי נפקא בקמיע המומחה לבהמה:", false], ["R6", "מאי זה חומר", "אדם נמי לא נפיק אלא בקמיע מומחה לאדם:", false], ["R7", "אסנדל קאי", "וזה חומר דקתני ולא בהמה בסנדל שברגליה:", false], ["R8", "סכין", "שמן:", false], ["R9", "ומפרכסין", "גלדי מכה:", false], ["R10", "ומשום צער", "[ואפילו] הכי לבהמה לא וקשיא בין לרב בין לשמואל דשרי במרדעת:", false], ["R11", "לא דגמר מכה", "שנתרפאה המכה וסיכה ופירכוס משום תענוג ולרב ודאי קשיא וההיא מתניתא קמייתא דאוכף נמי קשיא ליה דנהי נמי דלצינה ליכא צער תענוג מיהא הוא אלא רב תנא הוא ופליג:", false], ["R12", "שאחזה דם", "אנפודור\"א:", false], ["R13", "אין מעמידין כו'", "אלמא אפילו צער נמי אסור:", false], ["R14", "גזירה משום שחיקת סממנים", "במידי דרפואה גזור רבנן דאי שרית שום רפואה אתי למישרי שחיקת סממנים והוא איסורא דאורייתא דהוי טוחן:", false], ["R15", "אין מיקר לבהמה", "אין דרך להקר בהמה הלכך כולי עלמא ידעי דלרפואה קמיכוין ואתי למישרי שחיקת סממנים:", false], ["R16", "ומי גזרינן", "במקום פסידא כי האי גוונא:", false], ["R17", "חוץ לתחום", "קס\"ד חוץ לתחום שלו היתה עומדת בהמה:", false], ["R18", "שהיה תחום שלה מובלעת בתוך תחום שלו", "דחוץ לתחום דקתני חוץ לתחום שלה שהבהמה המסורה לרועה המיוחד הרי היא כרגלי הרועה וזה הקורא לה בעליה ויכול לילך כגון שהוא שבת קרוב לאותו מקום ואפילו הכי לא יביאנה ממש בידיו הואיל והיא יצאה חוץ לתחומה אין לה אלא ד' אמות ומיהו קורא לה והיא באה דלא הוזהר הוא על תחום בהמתו ובלבד שלא יביאנה ממש בידיו:", false], ["R19", "תנאי היא", "דאיכא דלא גזר שאר רפואות אטו שחיקת סממנין:", false], ["R20", "שאכלה כרשינין", "הרבה ועל ידי אכילה מרובה אחזה חולי שקורין מינייזונ\"א וצריכה להשתלשל ולהוציא רעי ומריצה:", false], ["R21", "כדי שתתרפה", "גרסינן הכא לשון ריפוי שיהיו מיעיה רפויים בשילשול ומוציאה רעי:", false], ["R22", "לא יריצנה", "גזירה בכל רפואה אטו שחיקת סממנין:", false], ["R23", "דמיהדק", "דליכא למיחש דילמא נפיל ואתי לאתויי:", false], ["R24", "תנאי שקלת מעלמא", "איבדת כולם שאין אתה מוצא תנאים שנחלקו בכך דתוקי הנך תרתי מתניית' חדא כמר וחדא כמר:", false], ["R25", "תנאי היא", "במתניתין ר\"מ שרי ר' יוסי אסר:", false], ["R26", "ליבש", "מיהדק שפיר ולענין משוי נמי לא הוי משוי דצורך גופה היא דחלבה מכחישה:", false], ["R27", "ליחלב", "הוי משוי שטוענת את החלב בכיס:", false], ["R28", "גסין", "גדולין ונגררין על הקוצין ומסרטין דדיהן:", false], ["R29", "שנשתנו עליו כו'", "ולא זכה ליפתח לו שערי שכר:", false], ["R30", "תדע", "דקשין:", false], ["R31", "דמרחשי ניסא", "מן השמים לכמה הצלות לנפשות אדם:", false], ["R32", "ולא איברו מזוני", "ואין נס זה רגיל שיבראו מזונות לצדיקים בביתם שימצאו חיטין גדילין באוצרותיהן:", false], ["R33", "גידמת", "ידה קטועה:", false], ["R34", "זו דרכה בכך", "לכסות כל אשה עצמה וכ\"ש זו שהיתה צריכה לכך:", false], ["R35", "תותרי", "קופל\"א שמחברין אותם בקשר שנים שנים שלא יברחו:", false], ["R36", "לבבתני", "קרבתני אצלך מחמת נוי מעשיך:", false], ["R37", "", "דרך זאבים לאחוז בהמה בלבה:", false], ["R38", "אנקבות לא נפלי", "בתמיה:", false], ["R39", "דמסגי", "מהלכין:", false], ["R40", "בסוף עדרא לא נפלי", "בתמיה:", false], ["R41", "כי דוו", "מביטין כאן וכאן לפיכך מתקנאין בהם כסבורים שרוצים להלחם בהם:", false], ["R42", "אליה", "זנב שלהן קושרים כלפי גבן שלא יכסה ערותן:", false]], "T": [["T1", "כגון שהיה תחום שלה מובלע כו'", "ומ\"מ לא התירו אלא דרך קריאה אבל לילך מעבר לבהמה ולרודפה לעיר לא:", false], ["T2", "תנאי היא", "רב יהודה ידע שפיר דתנאי היא אלא דניחא ליה לאוקמי תרי סתמי דברייתא אליבא דחד תנא:", false], ["T3a", "כאן ליבש כאן ליחלב", "פי' בקונט' ליחלב שיקבלו בכיס את החלב וקשה דהא ודאי משוי הוא ולכ\"ע חייב דהויא מלאכה הצריכה לגופה", false], ["T3b", "", "ופי' ה\"ר פור\"ת ליחלב לשמור החלב בדדיהן שלא יזוב לארץ ושרי ת\"ק דהוי כמו רחלים כבונות דחשבי' ליה מלבוש אף על פי שאינו עשוי לצורך עצמן אלא לשמור הצמר", false], ["T3c", "", "ור\"י פירש דבין ליבש ובין ליחלב תרווייהו עבדי להו כדי שלא יסרטו דדיהן כדאמרינן בסמוך וליבש בזמן שאינו חפץ בחלב שרי לפי שמהדקו וליכא למיחש דילמא נפיל ואתי לאתויי אבל ליחלב שאינו רוצה שיתייבשו אינו מיהדק איכא למימר דילמא נפיל ואתי לאתויי:", false], ["T4", "שקושרין להן כנגד זכרותן כו'", "ולשון לבובין הוי שלא לקרב כמו ובכל תבואתי תשרש (איוב לד) וכמוהו הרבה:", false], ["T5", "ממאי מדקתני סיפא", "טפי הוי ליה לאתויי כבולות דהוי ממש כעין זה אלא משום דשחוזות הוי ברישא:", false]], "S": [{"w": "הדף", "cols": true, "hl": [], "t": "עמוד ב': סוף הדיוק בברייתא", "x": "בסוף העמוד הקודם הגמרא הקשתה על שמואל מברייתא: \"ולא סייחים בטרסקלים שבפיהם לרשות הרבים\", ומשמע שבחצר מותר. התשובה הייתה שמדובר בסייחים קטנים, שיש להם צער, והגמרא התחילה להביא דיוק לכך מלשון הברייתא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G1", "R1"], "t": "\"דומיא דקמיע\"", "x": "הדיוק: הטרסקל נשנה יחד עם הקמיע, ודומה לו. רש\"י: הקמיע הוא משום חולי, ולכן גם הטרסקל הוא משום צער. \"שמע מינה\", כך יש ללמוד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G2", "R2", "R3"], "t": "קמיע מומחה: סתירה למשנה", "x": "\"אמר מר\", אמר החכם בברייתא: \"ולא בקמיע אף שהוא מומחה\". והרי שנינו במשנה: ולא בקמיע שאינו מומחה, ומשמע שבמומחה מותר. רש\"י: זו משנה על אדם, בפרק \"במה אשה\", והשאלה היא במה בהמה שונה מאדם. הגמרא מציעה: גם בבהמה מדובר בקמיע שאינו מומחה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G3", "R4"], "t": "מומחה לאדם ולא לבהמה", "x": "והרי בברייתא נאמר \"אף שהוא מומחה\"! התשובה: מומחה לאדם, ואינו מומחה לבהמה. וכי יש קמיע שמומחה לאדם ולא לבהמה? כן. לאדם יש \"מזל\" שמסייע לו, ולבהמה אין מזל שיסייע לה. רש\"י: המזל הוא המלאך שלו, שמליץ עליו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G4", "R5", "R6", "R7"], "t": "החומרה מוסבת על הסנדל", "x": "\"אי הכי\", אם כך, מה פירוש \"זו חומר בבהמה מבאדם\"? רש\"י: הרי גם בהמה יוצאת בקמיע מומחה לבהמה, וגם אדם יוצא רק בקמיע מומחה לאדם. התשובה: \"מי סברת\", וכי סבור אתה שהחומרה מוסבת על הקמיע? היא מוסבת על הסנדל, \"ולא בהמה בסנדל שברגליה\".", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R8", "R9"], "t": "ראיה מסיכה ופירכוס", "x": "\"תא שמע\": סכים ומפרכסים לאדם, ואין סכים ומפרכסים לבהמה. רש\"י: סכים בשמן, ומפרכסים את הגלדים של המכה. האם לא מדובר כשיש מכה, ומשום צער?", "a": ""}, {"w": "רש\"י", "cols": false, "hl": ["G5", "R10"], "t": "רש\"י: קושיה על רב ועל שמואל", "x": "אם כך, אפילו משום צער אסור לבהמה. וזו קושיה גם על רב וגם על שמואל, ששניהם מתירים מרדעת.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G5", "R11"], "t": "התשובה: המכה כבר נרפאה", "x": "התשובה: לא, מדובר כשהמכה כבר נרפאה, והסיכה היא משום תענוג. רש\"י: על רב זו ודאי קושיה, שהרי הוא מתיר טרסקל לתענוג. וגם הברייתא של האוכף קשה לו, כי גם אם אין בקירור צער, יש בו לפחות תענוג. אלא שרב הוא תנא, וחולק.", "a": "\"רב תנא הוא ופליג\": רב נחשב כתנא, ולכן יכול לחלוק על ברייתא."}, {"w": "גמרא", "cols": false, "hl": ["G6", "R12", "R13"], "t": "בהמה שאחזה דם", "x": "\"תא שמע\": בהמה שאחזה אותה דם, אין מעמידים אותה במים כדי שתתקרר. אדם שאחזו דם, מעמידים אותו במים כדי שיתקרר. רש\"י: מכאן שבבהמה אפילו צער אסור.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G6", "R14"], "t": "עולא: גזירה משום שחיקת סממנים", "x": "עולא אמר: זו גזירה משום שחיקת סממנים. רש\"י: בדברים של רפואה גזרו חכמים, כי אם תתיר רפואה כלשהי, יבוא להתיר שחיקת סממנים. וזה איסור מן התורה, כי זו מלאכת טוחן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G7", "G8", "R15"], "t": "\"אין מיקר לבהמה\"", "x": "\"אי הכי\", אם כך, גם באדם יגזרו! התשובה: אדם נראה כמי שמתקרר. ואם כך, גם בהמה תיראה כמתקררת? התשובה: \"אין מיקר לבהמה\". רש\"י: אין דרך לקרר בהמה, ולכן כולם יודעים שהוא מתכוון לרפואה, ויבוא להתיר שחיקת סממנים.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G9", "R16", "R17"], "t": "ובבהמה גוזרים?", "x": "\"ולבהמה מי גזרינן\", ובבהמה האם גוזרים? והרי בברייתא שנינו: אם הייתה הבהמה עומדת מחוץ לתחום, קורא לה והיא באה, ואין גוזרים שמא יבוא להביא אותה. רש\"י: השאלה היא אם גוזרים במקום שיש הפסד כזה. ובשלב הזה סוברים שהבהמה עמדה מחוץ לתחום של בעליה.", "a": "תחום שבת הוא המרחק שמותר ללכת בשבת מן המקום שבו האדם שובת."}, {"w": "גמרא", "cols": false, "hl": ["G10", "R18"], "t": "רבינא: התחום שלה בלוע בתחום שלו", "x": "רבינא אמר: מדובר כשהתחום שלה היה בלוע בתוך התחום שלו. רש\"י: הבהמה יצאה מחוץ לתחום שלה, כי בהמה שמסורה לרועה מיוחד דינה כרגלי הרועה. הבעלים שקורא לה יכול ללכת עד שם, למשל כששבת קרוב לאותו מקום. לפי זה הבהמה לא עמדה מחוץ לתחום של הבעלים, ואין מן הברייתא ראיה שאין גוזרים בבהמה. ובכל זאת לא יביא אותה בידיו, כי מי שיצאה מחוץ לתחומה יש לה רק ארבע אמות. אבל קורא לה והיא באה, כי הוא אינו מוזהר על התחום של בהמתו.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G10", "T1"], "t": "התוספות: רק בקריאה", "x": "ובכל זאת התירו רק בדרך של קריאה. ללכת אל מעבר לבהמה ולרדוף אותה אל העיר, לא התירו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11a", "R19", "R20", "R21", "R22"], "t": "רב נחמן בר יצחק: מחלוקת תנאים", "x": "רב נחמן בר יצחק אמר: הגזירה משום שחיקת סממנים היא עצמה מחלוקת תנאים. בברייתא שנינו: בהמה שאכלה כרשינים, לא יריץ אותה בחצר כדי שתתרפה, ורבי אושעיא מתיר. רש\"י: היא אכלה הרבה וחלתה, וצריך שמעיה ישתלשלו ותוציא רעי, ולשם כך מריצים אותה. \"שתתרפה\" הוא לשון ריפוי, שמעיה יהיו רפויים. מי שאוסר גוזר על כל רפואה משום שחיקת סממנים, ויש מי שאינו גוזר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G11b"], "t": "רבא: הלכה כרבי אושעיא", "x": "\"דרש רבא\", רבא דרש ברבים: הלכה כרבי אושעיא.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G12"], "t": "כיס שבדדי העזים: סתירה", "x": "\"אמר מר\": בברייתא נאמר, לא יצא הזב בכיס שלו, ולא עזים בכיס שבדדיהן. והרי בברייתא אחרת שנינו: יוצאות עזים בכיס שבדדיהן.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G13", "R23"], "t": "רב יהודה: מהודק ואינו מהודק", "x": "רב יהודה אמר: אין קושיה. כאן כשהכיס מהודק, וכאן כשאינו מהודק. רש\"י: כשהוא מהודק, אין לחשוש שייפול והוא יבוא לשאת אותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G14", "R24", "R25"], "t": "רב יוסף: \"תנאי שקלת מעלמא\"", "x": "רב יוסף אמר: \"תנאי שקלת מעלמא\"? רש\"י: וכי איבדת את כל התנאים, שאינך מוצא תנאים שנחלקו בכך, כדי להעמיד ברייתא אחת כחכם אחד והשנייה כחכם השני? זו מחלוקת תנאים במשנה: העזים יוצאות צרורות, ורבי יוסי אוסר. רש\"י: במשנה רבי מאיר מתיר, ורבי יוסי אוסר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G13", "G14", "T2"], "t": "התוספות: רב יהודה ידע", "x": "רב יהודה ידע היטב שזו מחלוקת תנאים. אלא שהעדיף להעמיד שתי ברייתות סתמיות לפי שיטת תנא אחד.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G15", "R26", "R27"], "t": "ואיבעית אימא: שתיהן כרבי יהודה", "x": "\"ואיבעית אימא\", ואם תרצה, אמור: שתי הברייתות כרבי יהודה, ואין קושיה. כאן ליבש, וכאן לחלב. רש\"י: ליבש, הכיס מהודק היטב, וגם אין זה משא, כי זה לצורך גופה, שהחלב מחליש אותה. לחלב, זה משא, כי היא נושאת את החלב בכיס.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T3a"], "t": "התוספות: קושיה על רש\"י", "x": "רש\"י פירש \"לחלב\": שהחלב נאסף בכיס. וקשה: זה ודאי משא, ולדעת כולם חייב, כי זו מלאכה הצריכה לגופה.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T3b"], "t": "התוספות: פירוש הרב פורת", "x": "הרב פורת פירש: \"לחלב\", כדי לשמור את החלב בדדים שלא יזוב לארץ. ותנא קמא מתיר, כי זה כמו רחלים כבונות, שהכיסוי נחשב להן לבוש, אף שאינו עשוי לצורך גופן אלא לשמור על הצמר.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G15", "T3c"], "t": "התוספות: פירוש רבנו יצחק", "x": "רבנו יצחק פירש: גם ליבש וגם לחלב עושים את הכיס כדי שהדדים לא יישרטו, כמו שנאמר בסמוך. ליבש, כשאינו רוצה בחלב, מותר, כי מהדק אותו ואין לחשוש שייפול. לחלב, כשאינו רוצה שהדדים יתייבשו, הכיס אינו מהודק, ויש לחשוש שייפול והוא יבוא לשאת אותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G16", "R28"], "t": "מעשה בעזים של אנטוכיא", "x": "בברייתא אמר רבי יהודה: היה מעשה בעזים של אנטוכיא, שהדדים שלהן היו גסים, ועשו להן כיסים כדי שהדדים לא יישרטו. רש\"י: הדדים היו גדולים, ונגררו על הקוצים ונשרטו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G17"], "t": "מעשה באב שהניק את בנו", "x": "\"תנו רבנן\", חכמים שנו: היה מעשה באחד שמתה אשתו והשאירה בן לינוק, ולא היה לו כסף לשכר מינקת. נעשה לו נס, ונפתחו לו דדים כשני דדי אשה, והוא הניק את בנו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G18"], "t": "רב יוסף ואביי", "x": "רב יוסף אמר: בוא וראה כמה גדול האדם הזה, שנעשה לו נס כזה. אמר לו אביי: \"אדרבה\", כמה גרוע האדם הזה, שנשתנו בשבילו סדרי בראשית.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19", "R29"], "t": "רב יהודה: כמה קשים מזונותיו של אדם", "x": "רב יהודה אמר: בוא וראה כמה קשים מזונותיו של אדם, שנשתנו בשבילו סדרי בראשית. רש\"י: ולא זכה שייפתחו לו שערי שכר.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G19", "R30", "R31", "R32"], "t": "רב נחמן: נס קורה, ומזון אינו נברא", "x": "רב נחמן אמר: \"תדע\", דע לך שהמזונות קשים, שהרי ניסים נעשים, ומזונות אינם נבראים. רש\"י: מן השמים נעשים ניסים רבים להצלת נפשות. אבל אין זה נס רגיל שייבראו מזונות לצדיקים בביתם, שימצאו חיטים גדלות באוצרותיהם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20", "R33"], "t": "מעשה באשה גידמת", "x": "\"תנו רבנן\": היה מעשה באדם שנשא אשה גידמת, ולא הכיר בכך עד יום מותה. רש\"י: גידמת היא אשה שידה קטועה. רב אמר: בוא וראה כמה צנועה האשה הזו, שבעלה לא הכיר בה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G20", "R34"], "t": "רבי חייא: כמה צנוע האדם הזה", "x": "אמר לו רבי חייא: זו דרכה. אלא כמה צנוע האדם הזה, שלא הכיר באשתו. רש\"י: דרכה של כל אשה לכסות את עצמה, וכל שכן זו, שהייתה צריכה לכך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G21", "R35", "R36"], "t": "\"לבובין\": רב הונא", "x": "חוזרים למשנה: \"זכרים יוצאין לבובין\". מה הם \"לבובין\"? רב הונא אמר: \"תותרי\". רש\"י: קושרים אותם שניים שניים, שלא יברחו. ומניין ש\"לבובין\" הוא לשון קירוב? שנאמר \"לבבתני אחותי כלה\". רש\"י: קירבת אותי אליך בגלל יופי מעשייך.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22a", "R37"], "t": "עולא: עור כנגד הלב", "x": "עולא אמר: עור שקושרים להם כנגד לבם, כדי שזאבים לא יתנפלו עליהם. רש\"י: דרכם של זאבים לאחוז בבהמה בלבה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22b", "R38", "R39", "R40"], "t": "למה דווקא הזכרים?", "x": "האם זאבים מתנפלים על הזכרים ולא על הנקבות? תשובה: הזכרים הולכים בראש העדר, והזאבים מתנפלים בראש העדר. ובסוף העדר אינם מתנפלים? אלא כי הזכרים שמנים. ובנקבות אין שמנות? ועוד, וכי הזאבים מבחינים בין אלה לאלה? רש\"י: השאלות נאמרות בתמיהה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G22b", "R41"], "t": "התשובה: זוקפים את חוטמם", "x": "אלא, הזכרים זוקפים את חוטמם, והולכים ומביטים לכאן ולכאן. רש\"י: לכן הזאבים מתגרים בהם, כי הם סבורים שהזכרים רוצים להילחם בהם.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G23a", "T4"], "t": "רב נחמן בר יצחק: עור תחת זכרותן", "x": "רב נחמן בר יצחק אמר: עור שקושרים להם תחת זכרותם, כדי שלא יעלו על הנקבות. התוספות: לפי זה \"לבובין\" פירושו שלא להתקרב, ההפך מלשון קירוב. כך גם בפסוק \"ובכל תבואתי תשרש\", שבו המילה פירושה עקירת השורש, ויש עוד מילים רבות כמותו.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G23b", "R42"], "t": "הראיה מן הסיפא: \"שחוזות\"", "x": "\"ממאי\", מניין? מן הסיפא: והרחלים יוצאות \"שחוזות\". מה הן שחוזות? שאוחזים את האליה שלהן למעלה, כדי שהזכרים יעלו עליהן. ברישא, כדי שלא יעלו על הנקבות, ובסיפא, כדי שהזכרים יעלו עליהן. רש\"י: קושרים את הזנב כלפי הגב, שלא יכסה את ערוותן.", "a": ""}, {"w": "תוספות", "cols": false, "hl": ["G23b", "T5"], "t": "התוספות: למה לא הביא את \"כבולות\"", "x": "יותר מתאים היה להביא ראיה מ\"כבולות\", שדומה ממש לדין הזה. אלא שהביא את \"שחוזות\", כי היא נשנתה לפניה.", "a": ""}, {"w": "גמרא", "cols": false, "hl": ["G24"], "t": "\"שחוזות\": לשון גילוי", "x": "\"מאי משמע\", מניין ש\"שחוזות\" הוא לשון גילוי? שנאמר \"והנה אשה לקראתו\", והפסוק ממשיך בעמוד הבא.", "a": ""}, {"w": "הדף", "cols": true, "hl": [], "t": "מה יצא מהעמוד", "x": "החומרה בבהמה מוסבת על הסנדל, והקמיע אסור בבהמה כשאינו מומחה לבהמה. ברפואת בהמה גזרו משום שחיקת סממנים, ובשאלה זו יש מחלוקת תנאים, והלכה כרבי אושעיא המתיר. בכיס שבדדי העזים מחלקים בין מהודק לשאינו מהודק, או בין ליבש ובין לחלב. אחרי מעשים על נס ועל צניעות, הגמרא מפרשת את \"לבובין\" ואת \"שחוזות\". העמוד הבא משלים את הפסוק, \"שית זונה ונצורת לב\", ומפרש את \"כבולות\".", "a": ""}], "audio": "shabbat/daf-53b", "side": "left", "box": false};</script>
+<script>
+(function(){
+  if (!document.getElementById('prog')) return;
+  var root = document.documentElement, KEY = 'gm-' + ((window.LESSON && window.LESSON.audio) || 'b2a') + '-';
+  var btns = document.querySelectorAll('.seg button');
+  function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function setLevel(l){
+    root.dataset.level = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.level === l)); });
+    store('gm-level', l);
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLevel(b.dataset.level); }); });
+  document.querySelectorAll('[data-go]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var sec = b.closest('section');
+      setLevel(b.dataset.go);
+      var d = sec && sec.querySelector('.deep');
+      if (d) d.scrollIntoView({block:'start'});
+    });
+  });
+  var saved = load('gm-level');
+  if (saved === 'deep' || saved === 'basic') setLevel(saved);
+
+  var boxes = document.querySelectorAll('.done input');
+  var prog = document.getElementById('prog');
+  function refresh(){
+    var n = 0; boxes.forEach(function(c){ if (c.checked) n++; });
+    prog.textContent = n + ' מתוך ' + boxes.length + ' יחידות';
+  }
+  boxes.forEach(function(c){
+    c.checked = load(KEY + c.dataset.unit) === '1';
+    c.addEventListener('change', function(){ store(KEY + c.dataset.unit, c.checked ? '1' : '0'); refresh(); });
+  });
+  refresh();
+})();
+
+// The lesson engine: draws the daf in the form of the Vilna print, walks through it step by step with narration,
+// and shows on the daf where every explanation on the page is written.
+(function(){
+  var L = window.LESSON; if (!L) return;
+  var box = document.getElementById('dafBox'), body = document.getElementById('vBody'), pane = document.getElementById('paneDaf');
+  var layG = document.getElementById('colG'), layR = document.getElementById('colR'), layT = document.getElementById('colT');
+  var STEPS = L.S, ROLE = {'הדף':'d','משנה':'m','גמרא':'g','רש"י':'r','תוספות':'t'};
+  var inSide = L.side, outSide = inSide === 'right' ? 'left' : 'right';   // Rashi sits on the inner side of the page
+  function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function spacers(layer, n){ var a = []; for (var i = 0; i < n; i++){ var s = el('div', 'sp'); layer.appendChild(s); a.push(s); } return a; }
+  var MS = spacers(layG, 2), RS = spacers(layR, 3), TS = spacers(layT, 3), boxline = null;
+
+  // ---- the three texts ----
+  L.G.forEach(function(s, i){
+    if (s[3]){ layG.appendChild(el('b', 'v-mk', s[3])); layG.appendChild(document.createTextNode(' ')); }
+    var e = el('span'); e.dataset.id = s[0];
+    if (L.box && i === 0){
+      var k = s[1].indexOf(' '); boxline = el('span', 'v-boxline'); boxline.appendChild(el('span', 'v-box', s[1].slice(0, k)));
+      e.appendChild(boxline); e.appendChild(document.createTextNode(s[1].slice(k + 1)));
+    } else e.textContent = s[1];
+    layG.appendChild(e); layG.appendChild(document.createTextNode(' '));
+  });
+  function fill(layer, items){
+    items.forEach(function(s){
+      var e = el('span'); e.dataset.id = s[0];
+      if (s[1]){ e.appendChild(el('b', '', s[1] + '.')); e.appendChild(document.createTextNode(' ')); }
+      e.appendChild(document.createTextNode(s[2]));
+      layer.appendChild(e); layer.appendChild(document.createTextNode(' '));
+    });
+  }
+  fill(layR, L.R); fill(layT, L.T);
+  var endG = el('span', 'end'), endR = el('span', 'end'), endT = el('span', 'end');
+  layG.appendChild(endG); layR.appendChild(endR); layT.appendChild(endT);
+
+  // ---- the shape of the page ----
+  // Each commentary opens with four wide lines, then runs in a narrow column beside the Gemara,
+  // and whatever is longer than the Gemara spreads out underneath it, as on the printed page.
+  function px(e, w, h){ e.style.width = Math.max(0, Math.round(w)) + 'px'; e.style.height = Math.max(0, Math.round(h)) + 'px'; }
+  function bottom(layer, end){ return end.getBoundingClientRect().bottom - layer.getBoundingClientRect().top; }
+  function layout(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';   // measured at full size
+    var W = body.clientWidth; if (!W) return;
+    var LH = parseFloat(getComputedStyle(layR).lineHeight) || 21, startH = 4 * LH, gap = 16;
+    var Wc = Math.round(W * 0.255), half = W / 2, mainW = W - 2 * (Wc + gap);
+    if (boxline) boxline.style.width = (mainW - 6) + 'px';   // a little narrower than the column, or it drops below the commentaries
+    layG.style.paddingTop = (startH + 8) + 'px';
+    function prep(sps, textSide){
+      var o = textSide === 'right' ? 'left' : 'right';
+      sps.forEach(function(s){ s.style.cssFloat = o; s.style.clear = o; });
+      px(sps[0], half + gap / 2, startH); px(sps[1], W - Wc, 100000); px(sps[2], 0, 0);
+    }
+    prep(RS, inSide); prep(TS, outSide);
+    var hR0 = bottom(layR, endR), hT0 = bottom(layT, endT);
+    MS[0].style.cssFloat = inSide; MS[1].style.cssFloat = outSide;
+    px(MS[0], Wc + gap, hR0 - startH - 8); px(MS[1], Wc + gap, hT0 - startH - 8);
+    var B = bottom(layG, endG), rLong = hR0 > B + 2, tLong = hT0 > B + 2;
+    function wrap(sps, isLong, otherLong){
+      if (!isLong) return;
+      px(sps[1], W - Wc, Math.ceil((B + 6 - startH) / LH) * LH);
+      if (otherLong) px(sps[2], half + gap / 2, 100000);
+    }
+    wrap(RS, rLong, tLong); wrap(TS, tLong, rLong);
+    body.style.height = Math.ceil(Math.max(B, bottom(layR, endR), bottom(layT, endT)) + 12) + 'px';
+    applyFit();
+  }
+  // "the whole daf": on a narrow screen the page is wider than the window, so it can be shrunk to show its whole form
+  var fitB = document.getElementById('fitB'), fitOn = false, autoFit = false;
+  function applyFit(){
+    box.style.transform = ''; box.style.marginBottom = ''; box.style.marginLeft = '';
+    if (!fitOn) return;
+    var w = box.offsetWidth, s = Math.min(1, pane.clientWidth / w);
+    box.style.transformOrigin = 'top right'; box.style.transform = 'scale(' + s + ')';
+    box.style.marginBottom = -Math.floor(box.offsetHeight * (1 - s)) + 'px'; box.style.marginLeft = -Math.floor(w * (1 - s)) + 'px';
+  }
+  function setFit(on){
+    fitOn = on; applyFit();
+    if (fitB){ fitB.setAttribute('aria-pressed', on ? 'true' : 'false'); fitB.textContent = on ? 'הגדלה' : 'כל הדף'; }
+  }
+
+  // ---- highlighting, and bringing the highlighted place into view inside the daf pane ----
+  var segs = box.querySelectorAll('[data-id]');
+  function mark(ids){ segs.forEach(function(e){ e.classList.toggle('hl', ids.indexOf(e.dataset.id) >= 0); }); }
+  // focus: the text the explanation is about (Gemara, Rashi or Tosafot); on a narrow screen only that part can be brought into view
+  function reveal(focus){
+    var hs = focus ? focus.querySelectorAll('.hl') : [];
+    if (!hs.length) hs = box.querySelectorAll('.hl');
+    if (!hs.length){ pane.scrollTo({top: 0, behavior: 'smooth'}); return; }
+    var pr = pane.getBoundingClientRect(), top = Infinity, l = Infinity, r = -Infinity;
+    hs.forEach(function(e){ var c = e.getClientRects(); if (!c.length) return; top = Math.min(top, c[0].top); for (var i = 0; i < c.length; i++){ l = Math.min(l, c[i].left); r = Math.max(r, c[i].right); } });
+    var dx = 0;
+    if (pane.scrollWidth > pane.clientWidth + 4) dx = (r - l < pane.clientWidth) ? (l + r) / 2 - (pr.left + pr.width / 2) : r - (pr.right - 12);
+    pane.scrollBy({top: top - pr.top - pane.clientHeight * 0.18, left: dx, behavior: 'smooth'});
+  }
+
+  // ---- the walk-through ----
+  var guide = document.getElementById('guide');
+  var q = function(s){ return guide.querySelector(s); };
+  // a long explanation on a narrow screen scrolls inside its own area; say so when there is more below
+  var gBody = q('.g-body'), moreB = el('button', 'g-more', 'יש המשך למטה'); moreB.type = 'button'; q('.g-ctl').appendChild(moreB);
+  function checkMore(){ guide.classList.toggle('more', gBody.scrollHeight - gBody.scrollTop - gBody.clientHeight > 8); }
+  gBody.addEventListener('scroll', checkMore, {passive: true});
+  moreB.addEventListener('click', function(){ gBody.scrollBy({top: gBody.clientHeight * 0.7, behavior: 'smooth'}); });
+  var dedEl = el('p', 'g-ded'); dedEl.hidden = true;   // the dedication, shown when an amud is opened
+  if (window.GM_DED){ dedEl.appendChild(el('b', '', 'לעילוי נשמת')); dedEl.appendChild(document.createTextNode(window.GM_DED)); gBody.insertBefore(dedEl, gBody.firstChild); }
+  var cur = 0, shown = null, NEXT = window.GM_NEXT || '';   // the page of the next amud, when the lesson is part of the book
+  // Tosafot as a second round (window.GM_TOS_LATER): first the Gemara with Rashi, then, for those who want more, the Tosafot of the amud.
+  // PATH holds the steps of the current round (their numbers in STEPS, which are also the numbers of the audio clips).
+  var TL = !!window.GM_TOS_LATER && STEPS.some(function(s){ return s.w === 'תוספות'; }), MODE = TL ? 'main' : 'all', PATH = [];
+  var MODES = {main: 'גמרא ורש"י', tos: 'תוספות', all: 'הכול ביחד'}, modeBar = null;
+  function setPath(){ PATH = []; for (var i = 0; i < STEPS.length; i++){ var t = STEPS[i].w === 'תוספות'; if (MODE === 'all' || (MODE === 'tos') === t) PATH.push(i); } }
+  setPath();
+  function pos(){ var p = PATH.indexOf(cur); return p < 0 ? 0 : p; }
+  function setMode(m, start){
+    MODE = m; setPath();
+    if (modeBar) modeBar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
+    go(start != null && PATH.indexOf(start) >= 0 ? start : PATH[0]);
+  }
+  if (TL){
+    modeBar = el('div', 'g-mode'); modeBar.setAttribute('role', 'group'); modeBar.setAttribute('aria-label', 'מסלול הלימוד');
+    ['main', 'tos', 'all'].forEach(function(m){ var b = el('button', '', MODES[m]); b.type = 'button'; b.dataset.m = m; b.setAttribute('aria-pressed', String(m === MODE)); b.addEventListener('click', function(){ if (MODE !== m) setMode(m); }); modeBar.appendChild(b); });
+    guide.insertBefore(modeBar, guide.firstChild);
+    var st = document.createElement('style');
+    st.textContent = '.g-mode{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.g-mode button{font:500 13px/1.2 Heebo,Arial,sans-serif;border:1px solid #d9cdb3;background:#fffaf0;color:#5a4416;border-radius:999px;padding:5px 12px;cursor:pointer}.g-mode button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}';
+    document.head.appendChild(st);
+  }
+  function show(n, quiet){
+    cur = n; var s = STEPS[n];
+    if (shown){ shown.classList.remove('ondaf'); shown = null; }
+    box.classList.toggle('has-hl', !s.cols); box.classList.toggle('colhl', !!s.cols);
+    // on a narrow screen a step about the whole page shows the whole daf, and the next step goes back to reading size
+    if (window.matchMedia('(max-width:900px)').matches){
+      if (s.cols && !fitOn){ setFit(true); autoFit = true; } else if (!s.cols && autoFit){ setFit(false); autoFit = false; }
+    }
+    mark(s.hl); if (!quiet) reveal(s.w === 'רש"י' ? layR : s.w === 'תוספות' ? layT : layG);
+    guide.dataset.role = ROLE[s.w];
+    q('.g-who').textContent = s.w;
+    var P = pos(), N = PATH.length;
+    q('.g-cnt').textContent = (P + 1) + ' מתוך ' + N + (TL ? ' · ' + MODES[MODE] : '');
+    q('.g-t').textContent = s.t; q('.g-x').textContent = s.x; q('.g-add').textContent = s.a || '';
+    q('.g-bar i').style.width = ((P + 1) / N * 100) + '%';
+    dedEl.hidden = !(window.GM_DED && n === 0);
+    gBody.scrollTop = 0; checkMore();
+    var last = P === N - 1, toTos = last && MODE === 'main';
+    q('.pv').disabled = P === 0; q('.nx').disabled = last && !NEXT && !toTos;
+    q('.nx').textContent = toTos ? 'למעמיקים: התוספות' : last && NEXT ? 'לעמוד הבא' : 'הבא';
+  }
+  // narration: one audio file per step; when it ends, move to the next step
+  var au = document.createElement('audio'); au.preload = 'auto'; guide.appendChild(au);
+  var playing = false, playB = q('.pl');
+  if (!L.narrated){ playB.hidden = true; var note = el('p', 'g-note', 'הקריינות לעמוד הזה עוד לא הופקה. מתקדמים בכפתור "הבא".'); guide.appendChild(note); }
+  function speak(){ var k = L.audio + '/step-' + (cur < 10 ? '0' : '') + cur; au.src = (window.GM_AUDIO && window.GM_AUDIO[k]) || ('audio/' + k + '.mp3'); var p = au.play(); if (p && p.catch) p.catch(function(){ halt(); }); }
+  function halt(){ playing = false; au.pause(); playB.textContent = '▶ השמע הסבר'; }
+  function go(n){ show(n); if (playing) speak(); }
+  playB.addEventListener('click', function(){ if (playing) halt(); else { playing = true; playB.textContent = '⏸ עצור'; show(cur); speak(); } });
+  au.addEventListener('ended', function(){ if (!playing) return; var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else halt(); });
+  au.addEventListener('error', function(){ if (playing) halt(); });
+  q('.pv').addEventListener('click', function(){ var P = pos(); if (P > 0) go(PATH[P - 1]); });
+  q('.nx').addEventListener('click', function(){ var P = pos(); if (P < PATH.length - 1) go(PATH[P + 1]); else if (MODE === 'main') setMode('tos'); else if (NEXT) location.href = NEXT; });
+  if (fitB) fitB.addEventListener('click', function(){ autoFit = false; setFit(!fitOn); reveal(STEPS[cur].w === 'רש"י' ? layR : STEPS[cur].w === 'תוספות' ? layT : layG); });
+  segs.forEach(function(e){
+    e.addEventListener('click', function(){
+      if (fitOn) setFit(false);
+      for (var k = 1; k < STEPS.length; k++) if (STEPS[k].hl.indexOf(e.dataset.id) >= 0){
+        if (PATH.indexOf(k) < 0) setMode(STEPS[k].w === 'תוספות' ? 'tos' : 'main', k); else go(k);
+        guide.scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    });
+  });
+
+  // ---- every written explanation further down the page points at its place on the daf ----
+  var linked = [].slice.call(document.querySelectorAll('.pane-exp [data-hl]'));
+  function showBlock(b){
+    if (shown) shown.classList.remove('ondaf');
+    shown = b; if (!b){ show(cur); return; }
+    b.classList.add('ondaf'); box.classList.remove('colhl'); box.classList.add('has-hl');
+    var ids = b.dataset.hl.split(','), last = ids[ids.length - 1].charAt(0);
+    mark(ids); reveal(last === 'R' ? layR : last === 'T' ? layT : layG);
+  }
+  linked.forEach(function(b){
+    b.addEventListener('click', function(ev){
+      if (ev.target.closest('button, a, summary, input, label, .film')) return;
+      if (ev.target.closest('[data-hl]') !== b) return;
+      if (playing) halt(); showBlock(b);
+    });
+  });
+  var ticking = false, stackedMq = window.matchMedia('(max-width:900px)');
+  window.addEventListener('scroll', function(){
+    if (ticking || !linked.length) return; ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false; if (playing) return;
+      var topLimit = stackedMq.matches ? pane.getBoundingClientRect().bottom : 0;
+      var thr = topLimit + (window.innerHeight - topLimit) * 0.3;
+      if (guide.getBoundingClientRect().bottom > thr){ if (shown) showBlock(null); return; }   // the walk-through is in view, so it decides
+      var pick = null;
+      linked.forEach(function(b){ var r = b.getBoundingClientRect(); if (r.top <= thr && r.bottom >= thr) pick = b; });
+      if (pick && pick !== shown) showBlock(pick);
+    });
+  }, {passive: true});
+
+  layout(); show(0, true);
+  var t = null; function relayout(){ clearTimeout(t); t = setTimeout(function(){ layout(); checkMore(); }, 80); }
+  window.addEventListener('resize', relayout); window.addEventListener('load', layout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  if (document.fonts && document.fonts.load) Promise.all([document.fonts.load('15px "Noto Rashi Hebrew"', 'אבג'), document.fonts.load('500 19px "Frank Ruhl Libre"', 'אבג')]).then(layout, function(){});
+})();
+</script>
+<style id="a11y-css">
+#a11y-btn{position:fixed;left:0;top:42%;z-index:9999;width:44px;height:44px;border:0;border-radius:0 12px 12px 0;background:#1f5a66;color:#fff;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;padding:0}
+#a11y-btn svg{width:26px;height:26px}
+#a11y-panel{position:fixed;left:52px;top:calc(42% - 150px);z-index:9999;width:236px;max-width:calc(100vw - 64px);background:#fff;color:#1f2430;border:1px solid #cdb37a;border-radius:14px;padding:12px 12px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:15px/1.4 Heebo,Arial,sans-serif;direction:rtl;text-align:right}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font:700 16px/1.3 Heebo,Arial,sans-serif;margin:0 0 8px;color:#1f5a66}
+#a11y-panel .row{display:flex;gap:6px;margin:0 0 6px}
+#a11y-panel button{flex:1;font:500 14px/1.2 Heebo,Arial,sans-serif;color:#1f2430;background:#f4efe3;border:1px solid #d9cdb3;border-radius:9px;padding:8px 6px;cursor:pointer;text-align:center}
+#a11y-panel button[aria-pressed="true"]{background:#1f5a66;border-color:#1f5a66;color:#fff}
+#a11y-panel a{display:block;margin-top:6px;font-size:13px;color:#1f5a66}
+:focus-visible{outline:3px solid #e07a00 !important;outline-offset:2px !important}
+html.a11y-contrast{filter:contrast(1.45)}
+html.a11y-font body,html.a11y-font body *:not(svg):not(path){font-family:Arial,"Arial Hebrew",sans-serif !important}
+html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s !important;transition-duration:.001s !important;scroll-behavior:auto !important}}
+@media print{#a11y-btn,#a11y-panel{display:none !important}}
+</style>
+<script id="a11y-js">
+(function(){
+var KEY='gm-a11y',S={size:0,contrast:false,font:false,links:false,still:false},ZOOM=[1,1.15,1.3,1.5];
+try{var v=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in S)if(k in v)S[k]=v[k]}catch(e){}
+var R=document.documentElement;
+function apply(){R.style.zoom=ZOOM[S.size]===1?'':ZOOM[S.size];['contrast','font','links','still'].forEach(function(k){R.classList.toggle('a11y-'+k,!!S[k])});try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}sync()}
+var btn,panel;
+function sync(){if(!panel)return;panel.querySelectorAll('[data-k]').forEach(function(b){b.setAttribute('aria-pressed',String(!!S[b.getAttribute('data-k')]))});var z=panel.querySelector('[data-z]');if(z)z.textContent='גודל טקסט: '+Math.round(ZOOM[S.size]*100)+'%'}
+function build(){
+btn=document.createElement('button');btn.id='a11y-btn';btn.type='button';btn.setAttribute('aria-label','תפריט נגישות');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-controls','a11y-panel');
+btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="4" r="2.2"/><path d="M20 7.6c-2.6.7-5.3 1-8 1s-5.4-.3-8-1l-.5 1.9c2.1.6 4.3.9 6.5 1.1V14l-2.4 7.3 1.9.6L12 15l2.5 6.9 1.9-.6L14 14v-3.4c2.2-.2 4.4-.5 6.5-1.1z"/></svg>';
+panel=document.createElement('div');panel.id='a11y-panel';panel.setAttribute('role','dialog');panel.setAttribute('aria-label','תפריט נגישות');panel.hidden=true;
+panel.innerHTML='<h2>נגישות</h2><div class="row"><button type="button" data-act="bigger" aria-label="הגדלת טקסט">א+</button><button type="button" data-act="smaller" aria-label="הקטנת טקסט">א−</button></div><div class="row" style="font-size:13px;margin-bottom:8px"><span data-z aria-live="polite"></span></div><div class="row"><button type="button" data-k="contrast">ניגודיות גבוהה</button></div><div class="row"><button type="button" data-k="font">גופן קריא</button></div><div class="row"><button type="button" data-k="links">הדגשת קישורים</button></div><div class="row"><button type="button" data-k="still">עצירת אנימציות</button></div><div class="row"><button type="button" data-act="reset">איפוס</button></div>'+(window.GM_A11Y_LINK?'<a href="accessibility.html">הצהרת נגישות</a>':'');
+document.body.appendChild(btn);document.body.appendChild(panel);
+function open(o){panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o){var f=panel.querySelector('button');if(f)f.focus()}}
+btn.addEventListener('click',function(){open(panel.hidden)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden){open(false);btn.focus()}});
+document.addEventListener('click',function(e){if(!panel.hidden&&!panel.contains(e.target)&&e.target!==btn&&!btn.contains(e.target))open(false)});
+panel.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var k=b.getAttribute('data-k'),a=b.getAttribute('data-act');
+if(k)S[k]=!S[k];else if(a==='bigger')S.size=Math.min(ZOOM.length-1,S.size+1);else if(a==='smaller')S.size=Math.max(0,S.size-1);else if(a==='reset'){S={size:0,contrast:false,font:false,links:false,still:false}}apply()});
+sync()}
+apply();
+if(document.body)build();else document.addEventListener('DOMContentLoaded',build);
+})();
+</script>
+</body>
+</html>
