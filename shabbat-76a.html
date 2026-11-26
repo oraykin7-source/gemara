@@ -314,6 +314,161 @@ h2.more{font-size:1.3rem;margin:34px 0 8px;padding-top:22px;border-top:1px solid
 <link rel="canonical" href="https://gemara.co.il/shabbat-76a.html">
 <meta name="description" content="מסכת שבת, דף ע&quot;ו עמוד א&#x27;: לימוד גמרא צעד אחר צעד. נוסח הדף עם רש&quot;י ותוספות, הסבר בעברית פשוטה, תרגום משפט אחר משפט, שאלות לחזרה וקריינות.">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "מסכת שבת, דף ע\"ו עמוד א'", "url": "https://gemara.co.il/shabbat-76a.html", "inLanguage": "he", "learningResourceType": "שיעור", "isAccessibleForFree": true, "educationalUse": "לימוד עצמי", "about": "תלמוד בבלי", "isPartOf": {"@type": "Book", "name": "מסכת שבת", "url": "https://gemara.co.il/shabbat.html"}}</script>
+<style id="gm-shabbat-css">
+/* The closed screen of Shabbat and Yom Tov. See assets/shabbat.js. Put into every page by shabbat_gate.py. */
+html.gm-closed,html.gm-closed body{background:#efe7d6!important;overflow:hidden!important}
+html.gm-closed body>*:not(#gm-shabbat){display:none!important}
+#gm-shabbat{display:none}
+html.gm-closed #gm-shabbat{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;overflow:auto;box-sizing:border-box;padding:30px 20px;direction:rtl;text-align:center;
+  background:radial-gradient(ellipse at 50% 0%,#f7f1e3 0%,#efe7d6 55%,#e2d6bd 100%);color:#1c170d;font-family:"Frank Ruhl Libre","Times New Roman",serif;line-height:1.5}
+#gm-shabbat *{box-sizing:border-box}
+#gm-shabbat .gs-card{width:100%;max-width:600px;margin:auto;padding:34px 22px 30px;border:4px double #7a5a1e;outline:1px solid #cdb37a;outline-offset:7px;
+  background:linear-gradient(180deg,#fffdf6,#fbf3df);box-shadow:0 10px 30px rgba(60,40,10,.12)}
+#gm-shabbat svg{width:76px;height:62px;display:block;margin:0 auto 8px}
+#gm-shabbat .gs-k{font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:16px;font-weight:700;letter-spacing:.08em;color:#1f5a66}
+#gm-shabbat .gs-h{font-size:clamp(34px,9vw,54px);font-weight:900;line-height:1.2;margin:4px 0 0;color:#1c170d;text-wrap:balance}
+#gm-shabbat .gs-rule{width:46%;height:1px;margin:18px auto;background:linear-gradient(90deg,transparent,#7a5a1e,transparent)}
+#gm-shabbat p{margin:0;text-wrap:balance}
+#gm-shabbat .gs-p{font-size:clamp(20px,5vw,24px);font-weight:500}
+#gm-shabbat .gs-when{font-size:clamp(20px,5vw,24px);font-weight:700;color:#7a5a1e;margin-top:10px}
+#gm-shabbat .gs-own{font-family:Heebo,"Arial Hebrew",Arial,sans-serif;font-size:16px;color:#5b6270;margin-top:10px}
+#gm-shabbat .gs-own:empty{display:none}
+</style>
+<script id="gm-shabbat-js">
+(function (root) {
+  'use strict';
+  var BEFORE = 45;   // minutes before sunset in Jerusalem at which the site closes (Jerusalem's candle lighting is 40 minutes before sunset)
+  var AFTER = 75;    // minutes after sunset in Jerusalem at which the site opens again (Rabbenu Tam's nightfall is 72 minutes after sunset)
+  var LAT = 31.76904, LON = 35.21633;   // Jerusalem, sunset at sea level
+  var DAY = 86400000, MIN = 60000, RAD = Math.PI / 180;
+
+  function sunset(n) {
+    var T = (n + 0.65 + 2440587.5 - 2451545) / 36525;   // Julian centuries, taken near the time of sunset
+    var L0 = (280.46646 + T * (36000.76983 + 0.0003032 * T)) % 360;
+    var M = 357.52911 + T * (35999.05029 - 0.0001537 * T);
+    var e = 0.016708634 - T * (0.000042037 + 0.0000001267 * T);
+    var C = Math.sin(M * RAD) * (1.914602 - T * (0.004817 + 0.000014 * T)) + Math.sin(2 * M * RAD) * (0.019993 - 0.000101 * T) + Math.sin(3 * M * RAD) * 0.000289;
+    var om = 125.04 - 1934.136 * T;
+    var lam = L0 + C - 0.00569 - 0.00478 * Math.sin(om * RAD);
+    var eps = 23 + (26 + (21.448 - T * (46.815 + T * (0.00059 - T * 0.001813))) / 60) / 60 + 0.00256 * Math.cos(om * RAD);
+    var decl = Math.asin(Math.sin(eps * RAD) * Math.sin(lam * RAD));
+    var y = Math.tan(eps * RAD / 2); y *= y;
+    var eq = 4 / RAD * (y * Math.sin(2 * L0 * RAD) - 2 * e * Math.sin(M * RAD) + 4 * e * y * Math.sin(M * RAD) * Math.cos(2 * L0 * RAD)
+      - 0.5 * y * y * Math.sin(4 * L0 * RAD) - 1.25 * e * e * Math.sin(2 * M * RAD));   // the equation of time, in minutes
+    var HA = Math.acos(Math.cos(90.833 * RAD) / (Math.cos(LAT * RAD) * Math.cos(decl)) - Math.tan(LAT * RAD) * Math.tan(decl)) / RAD;
+    return n * DAY + (720 - 4 * LON - eq + 4 * HA) * MIN;
+  }
+
+  function elapsed(y) {
+    var m = Math.floor((235 * y - 234) / 19), d = 29 * m + Math.floor((12084 + 13753 * m) / 25920);
+    return (3 * (d + 1)) % 7 < 3 ? d + 1 : d;
+  }
+  function roshHashana(y) {
+    var a = elapsed(y - 1), b = elapsed(y), c = elapsed(y + 1);
+    return b + (c - b === 356 ? 2 : b - a === 382 ? 1 : 0) - 2092590;   // the calendar's first day, counted from 1.1.1970
+  }
+  var SHABBAT = 1, RH = 2, YK = 4, CHAG = 8;
+  function holy(n) {
+    var k = n % 7 === 2 ? SHABBAT : 0;   // 1.1.1970 was a Thursday
+    var rh = roshHashana(new Date(n * DAY).getUTCFullYear() + 3761), d;   // the Rosh Hashana that falls in this civil year
+    if (n >= rh) { d = n - rh; k |= d < 2 ? RH : d === 9 ? YK : (d === 14 || d === 21) ? CHAG : 0; }   // Tishri: 1-2, 10, 15, 22
+    else { d = rh - n; k |= (d === 163 || d === 157 || d === 113) ? CHAG : 0; }                          // 15 Nisan, 21 Nisan, 6 Sivan
+    return k;
+  }
+  function start(n) { return Math.floor((sunset(n - 1) - BEFORE * MIN) / MIN) * MIN; }   // rounded to whole minutes, towards "closed"
+  function end(n) { return Math.ceil((sunset(n) + AFTER * MIN) / MIN) * MIN; }
+
+  function closure(t) {
+    var n = Math.floor(t / DAY), k, a, b, i, kinds;
+    for (k = n; k <= n + 1; k++) {
+      if (!holy(k) || t < start(k) || t >= end(k)) continue;
+      a = b = k; while (holy(a - 1)) a--; while (holy(b + 1)) b++;
+      for (kinds = 0, i = a; i <= b; i++) kinds |= holy(i);
+      return { from: start(a), until: end(b), kinds: kinds, last: b };
+    }
+    return null;
+  }
+  function nextChange(t) {
+    var c = closure(t), n = Math.floor(t / DAY), k;
+    if (c) return c.until;
+    for (k = n; k <= n + 9; k++) if (holy(k) && start(k) > t) return start(k);
+    return t + DAY;
+  }
+
+  var WEEKDAY = ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת'];
+  function clock(t, zone) {   // HH:MM of the instant t, in Israel or (no zone) on the visitor's own clock
+    try {
+      var o = { hour: '2-digit', minute: '2-digit', hour12: false }; if (zone) o.timeZone = zone;
+      var p = new Intl.DateTimeFormat('en-GB', o).formatToParts(new Date(t)), h = '', m = '', i;
+      for (i = 0; i < p.length; i++) { if (p[i].type === 'hour') h = p[i].value; if (p[i].type === 'minute') m = p[i].value; }
+      return (h === '24' ? '00' : h) + ':' + m;
+    } catch (e) { return ''; }
+  }
+  function message(c) {
+    var g = [], lastKind = holy(c.last), isr = clock(c.until, 'Asia/Jerusalem'), own = clock(c.until), when;
+    if (c.kinds & SHABBAT) g.push('שבת שלום');
+    if (c.kinds & RH) g.push('שנה טובה'); else if (c.kinds & YK) g.push('גמר חתימה טובה'); else if (c.kinds & CHAG) g.push('חג שמח');
+    when = lastKind & SHABBAT ? 'במוצאי שבת' : (lastKind & YK ? 'במוצאי יום הכיפורים' : lastKind & RH ? 'במוצאי ראש השנה' : 'במוצאי החג') + ', ביום ' + WEEKDAY[(c.last + 4) % 7];
+    return {
+      greeting: g.join(' ו'),
+      line: 'האתר סגור בשבתות ובימים טובים.',
+      when: 'האתר ייפתח שוב ' + when + (isr ? (lastKind & SHABBAT ? ', ' : ' ') + 'בשעה ' + isr + ' לפי שעון ישראל' : '') + '.',
+      own: isr && own && own !== isr ? 'לפי השעון במכשיר שלך: ' + own : ''
+    };
+  }
+
+  var api = { BEFORE: BEFORE, AFTER: AFTER, sunset: sunset, roshHashana: roshHashana, holy: holy, closure: closure, nextChange: nextChange, message: message };
+  if (typeof module === 'object' && module.exports) { module.exports = api; return; }   // the tests load the rule from here
+  if (typeof document === 'undefined') return;
+
+  var doc = document, html = doc.documentElement, closed = false, timer = null, skew = 0;
+  if (/[Bb]ot\b|[Cc]rawl|[Ss]pider|Slurp|facebookexternalhit|Lighthouse|InspectionTool|GoogleOther|ChatGPT-User|Claude-User|Perplexity-User/.test(navigator.userAgent || '')) return;
+  if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) {
+    var q = /[?&]gm-now=([^&#]+)/.exec(location.search), t0 = q ? Date.parse(decodeURIComponent(q[1])) : NaN;
+    if (!isNaN(t0)) skew = t0 - Date.now();
+  }
+  function now() { return Date.now() + skew; }
+  function silence() {
+    var m = doc.querySelectorAll('audio,video'), i;
+    for (i = 0; i < m.length; i++) try { m[i].pause(); } catch (e) {}
+    try { if (root.speechSynthesis) root.speechSynthesis.cancel(); } catch (e) {}
+  }
+  doc.addEventListener('play', function (e) { if (closed && e.target && e.target.pause) e.target.pause(); }, true);   // nothing starts to play while closed
+  function el(tag, cls, txt) { var x = doc.createElement(tag); x.className = cls; if (txt != null) x.textContent = txt; return x; }
+  function shut(c) {
+    closed = true; html.classList.add('gm-closed'); silence();
+    if (!doc.body) return;   // the page is still loading: the style already hides it, the screen is drawn when the body arrives
+    var box = doc.getElementById('gm-shabbat'), card, m = message(c);
+    if (!box) {
+      box = el('div', ''); box.id = 'gm-shabbat'; box.setAttribute('role', 'alert'); box.setAttribute('lang', 'he'); box.setAttribute('dir', 'rtl'); box.setAttribute('data-nosnippet', '');
+      card = el('div', 'gs-card');
+      card.innerHTML = '<svg viewBox="0 0 96 78" aria-hidden="true"><g id="gs-c"><path d="M26 3c4 6 6.500 9 6.500 13a6.500 6.500 0 0 1-13 0c0-4 2.500-7 6.500-13z" fill="#e3a52a"/><path d="M26 9.500c2.100 3 3.200 4.800 3.200 6.900a3.200 3.200 0 0 1-6.400 0c0-2.100 1.100-3.900 3.200-6.900z" fill="#fbe7a6"/><rect x="25.200" y="22" width="1.600" height="5" fill="#3a2a10"/><rect x="21" y="26" width="10" height="27" rx="1.500" fill="#f6efdc" stroke="#7a5a1e" stroke-width="1.300"/><path d="M17 53h18l-3 5h-4.500v11H34a3 3 0 0 1 3 3v2H15v-2a3 3 0 0 1 3-3h6.500V58H20z" fill="#7a5a1e"/></g><use href="#gs-c" x="44"/></svg>';
+      card.appendChild(el('div', 'gs-k', 'גמרא'));
+      card.appendChild(el('h1', 'gs-h')); card.appendChild(el('div', 'gs-rule'));
+      card.appendChild(el('p', 'gs-p')); card.appendChild(el('p', 'gs-when')); card.appendChild(el('p', 'gs-own'));
+      box.appendChild(card); doc.body.appendChild(box);
+    }
+    box.querySelector('.gs-h').textContent = m.greeting; box.querySelector('.gs-p').textContent = m.line;
+    box.querySelector('.gs-when').textContent = m.when; box.querySelector('.gs-own').textContent = m.own;
+  }
+  function open() {
+    closed = false; html.classList.remove('gm-closed');
+    try { root.dispatchEvent(new Event('resize')); } catch (e) {}   // the daf is laid out again now that it is visible
+    if (!skew) location.reload();   // a fresh page: whatever was playing or half-done when the site closed starts clean
+  }
+  function tick() {
+    var t = now(), c = closure(t);
+    if (c) shut(c); else if (closed) open();
+    clearTimeout(timer);
+    timer = setTimeout(tick, Math.max(1000, Math.min(nextChange(t) - t + 300, 30000)));   // exactly at the change, and at least every half minute (a sleeping phone, a clock that was moved)
+  }
+  tick();
+  doc.addEventListener('DOMContentLoaded', tick);
+  doc.addEventListener('visibilitychange', tick);
+  root.addEventListener('pageshow', tick);
+  root.addEventListener('focus', tick);
+})(typeof window !== 'undefined' ? window : this);
+</script>
 </head>
 <body>
 <div class="split">
